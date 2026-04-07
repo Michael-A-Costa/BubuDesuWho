@@ -1,0 +1,518 @@
+{
+  "name": "LONELY TUNING",
+  "id": "tuning",
+  "group": "aqours",
+  "ogg": "sound/lonely_tuning.ogg",
+  "mp3": "sound/lonely_tuning.mp3",
+  "mapping": [
+    {
+      "range": [
+        19.5,
+        23.3
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        23.3,
+        27
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        27,
+        30.8
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        30.8,
+        38
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        38.7,
+        42.4
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        42.4,
+        46
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        46,
+        53
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        53,
+        56.9
+      ],
+      "ans": [
+        4
+      ]
+    },
+    {
+      "range": [
+        56.9,
+        60.8
+      ],
+      "ans": [
+        4
+      ]
+    },
+    {
+      "range": [
+        60.8,
+        66
+      ],
+      "ans": [
+        4
+      ]
+    },
+    {
+      "range": [
+        67.5,
+        71.5
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        71.5,
+        75
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        75,
+        78.9
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        78.9,
+        82.3
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        82.3,
+        86
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        84,
+        89.7
+      ],
+      "ans": [
+        4,
+        8
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        89.7,
+        94
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        91.5,
+        98
+      ],
+      "ans": [
+        4,
+        8
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        101,
+        105
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        105,
+        108.8
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        108.8,
+        115
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        116,
+        119.8
+      ],
+      "ans": [
+        4
+      ]
+    },
+    {
+      "range": [
+        119.8,
+        123.7
+      ],
+      "ans": [
+        4
+      ]
+    },
+    {
+      "range": [
+        122,
+        123
+      ],
+      "ans": [
+        7,
+        8
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        123.7,
+        126.8
+      ],
+      "ans": [
+        4
+      ]
+    },
+    {
+      "range": [
+        126.8,
+        134
+      ],
+      "ans": [
+        4
+      ]
+    },
+    {
+      "range": [
+        160,
+        167
+      ],
+      "ans": [
+        4
+      ]
+    },
+    {
+      "range": [
+        168,
+        171
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        171,
+        175.6
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        175.6,
+        176.4
+      ],
+      "ans": [
+        4
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        176.4,
+        180.3
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        180.3,
+        183.9
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        183.9,
+        187.6
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        187.6,
+        192
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        191.2,
+        195
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        195,
+        198.6
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        198.6,
+        202.3
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        202.3,
+        205
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        206,
+        210
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        208,
+        213.3
+      ],
+      "ans": [
+        4,
+        8
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        213.3,
+        217
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        215,
+        221
+      ],
+      "ans": [
+        4,
+        8
+      ],
+      "diff": 2
+    }
+  ],
+  "slots": [
+    {
+      "command": "group",
+      "members": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        21,
+        22
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        24,
+        25
+      ]
+    }
+  ],
+  "lyrics": [
+    "{DJ taimu DJ taimu aitai kokoro}",
+    "{happy taimu happy taimu tsunagaritai}",
+    "{Kiite kiite watashi wa itsumo}",
+    "{Sagashite iru no yo kimi o}",
+    "",
+    "{Nanimo kamo nagedashite}",
+    "{Kyou wa mou kaeritai to}",
+    "{Tameiki ga koko ni kita watashi no soko e kita}",
+    "",
+    "{Ganbatta tte owaranai}",
+    "{Son'na koto mo aru misshon}",
+    "{Tasukete agetai kono uta de}",
+    "",
+    "{DJ naito DJ naito daisuki datta}",
+    "{happy naito happy naito ano kyoku tachi}",
+    "{Nagasou nagasou hayaku todokete}",
+    "{Genki ni shitai yo}",
+    "{Kimi o} {(todoke todoke kimi e)}",
+    "{Nagasou} {(todoke todoke hayaku)}",
+    "",
+    "{Shitai no wa nandakke}",
+    "{Miushinau toki mo aru yo}",
+    "{Kyou wa mou kaerimashou sukoshi wa yasumanakya}",
+    "",
+    "{Ganbatta tte shitteru}",
+    "{Jibun ga shitteru no} {alright}",
+    "{Itsuka umaku iku yo}",
+    "{Dakara sukoshi dake yasumou}",
+    "",
+    "{Watashi no koe ga kikoetemasu ka}",
+    "{Chuuningu awasete}",
+    "{Watashi ni awasete}",
+    "",
+    "{(Stay tuned)}",
+    "",
+    "{DJ taimu DJ taimu aitai kokoro}",
+    "{happy taimu happy taimu tsunagaritai}",
+    "{Kiite kiite watashi wa itsumo}",
+    "{Sagashite iru no yo}",
+    "",
+    "{DJ naito DJ naito daisuki datta}",
+    "{happy naito happy naito ano kyoku tachi}",
+    "{Nagasou nagasou hayaku todokete}",
+    "{Genki ni shitai yo}",
+    "{Kimi o} {(todoke todoke kimi e)}",
+    "{Nagasou} {(todoke todoke hayaku) }"
+  ]
+}

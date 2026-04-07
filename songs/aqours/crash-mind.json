@@ -1,0 +1,238 @@
+{
+  "name": "CRASH MIND",
+  "ogg": "sound/crash_mind.ogg",
+  "id": "crash-mind",
+  "group": "saint-aqours-snow",
+  "added": "2026-04",
+  "hidden": false,
+  "slots": [
+
+  ],
+  "lines": [
+    {"lyric": "Saint crash!!",
+      "lyric_jp": "Saint CRASH!!",
+      "range": [8.45, 25.27], "ans": []},
+    "",
+    {"lyric": "Dareka no shinario Dreaming future",
+      "lyric_jp": "誰かのシナリオ Dreaming future",
+      "range": [25.27, 29.67], "ans": [11]},
+    {"lyric": "No more trick, no more trap!",
+      "lyric_jp": "No more trick, no more trap!",
+      "range": [29.67, 33.21], "ans": [10]},
+    {"lyric": "Damarasareta mama no Dreaming future",
+      "lyric_jp": "騙されたままの Dreaming future",
+      "range": [33.21, 37.08], "ans": [11]},
+    {"lyric": "Iranai yo Bye-bye",
+      "lyric_jp": "いらないよ Bye-bye",
+      "range": [37.08, 41.07], "ans": []},
+    "",
+    {"lyric": "Anzen na toko kara miteru tte",
+      "lyric_jp": "安全なとこから見てるって",
+      "range": [41.07, 46.04], "ans": [11]},
+    {"lyric": "Watashi wakaru yo",
+      "lyric_jp": "私わかるよ",
+      "range": [46.04, 48.43], "ans": [11]},
+    {
+      "lyric_jp": "その傲慢な笑顔 大人のやり方ね",
+      "parts": [
+        {"lyric": "Sono gouman na egao",
+          "range": [48.43, 52.41], "ans": []},
+        {"lyric": "Otona no yarikata ne",
+          "range": [52.41, 56.03], "ans": [11]}
+      ]
+    },
+    "",
+    {"lyric": "Crash mind",
+      "lyric_jp": "CRASH MIND",
+      "range": [56.03, 57.78], "ans": []},
+    {"lyric": "Kotae wa ima ga kowareta ato de arawareru",
+      "lyric_jp": "答えは今が壊れた後で現れる",
+      "range": [57.78, 63.96], "ans": []},
+    {"lyric": "Crash mind",
+      "lyric_jp": "CRASH MIND",
+      "range": [63.96, 65.9], "ans": []},
+    {"lyric": "Mayotte naite mo dame ni nanka naranai yo",
+      "lyric_jp": "迷って泣いても駄目になんかならないよ",
+      "range": [65.9, 72.47], "ans": []},
+    {
+      "lyric_jp": "何が起ころうとブレない My trust",
+      "parts": [
+        {"lyric": "Nani ga okorou to burenai",
+          "range": [72.47, 76.98], "ans": [11]},
+        {"lyric": "My trust",
+          "range": [76.98, 84.76], "ans": []}
+      ]
+    },
+    "",
+    {"lyric": "No more trick, no more trap!",
+      "lyric_jp": "No more trick, no more trap!",
+      "range": [84.76, 88.6], "ans": []},
+    {"lyric": "No more trick, no more trap!",
+      "lyric_jp": "No more trick, no more trap!",
+      "range": [88.6, 94.02], "ans": []},
+    "",
+    {"lyric": "Garasu no Treasure box daiji datta Toy’s box",
+      "lyric_jp": "硝子の Treasure box 大事だった Toy's box",
+      "range": [94.02, 98.39], "ans": [10]},
+    {"lyric": "Mou kitto iranai minna kokoro ni haitteru",
+      "lyric_jp": "もうきっといらない みんなココロに入ってる",
+      "range": [98.39, 101.83], "ans": [10]},
+    {
+      "lyric_jp": "No more trick 夢見よう",
+      "parts": [
+        {"lyric": "No more trick",
+          "range": [101.83, 102.96], "ans": [10]},
+        {"lyric": "Yume miyou",
+          "range": [102.96, 104.39], "ans": [11]}
+      ]
+    },
+    {
+      "lyric_jp": "No more trap 自分から",
+      "parts": [
+        {"lyric": "No more trap",
+          "range": [103.96, 105.07], "ans": [10]},
+        {"lyric": "Jibun kara",
+          "range": [105.07, 106.2], "ans": [11]}
+      ]
+    },
+    {
+      "lyric_jp": "Trickじゃない (No!) Trapじゃない (No!)",
+      "parts": [
+        {"lyric": "Trick janai",
+          "range": [106.2, 107.1], "ans": [10]},
+        {"lyric": "(no!)",
+          "range": [107.1, 107.65], "ans": [11]},
+        {"lyric": "Trap janai",
+          "range": [107.65, 108.2], "ans": [10]},
+        {"lyric": "(no!)",
+          "range": [108.2, 108.49], "ans": [11]}
+      ]
+    },
+    {
+      "lyric_jp": "Dream comes true!! (Yes!)",
+      "parts": [
+        {"lyric": "Dream comes true!!",
+          "range": [108.31, 109.91], "ans": [10]},
+        {"lyric": "(yes!)",
+          "range": [109.91, 110.22], "ans": [11]}
+      ]
+    },
+    "",
+    {"lyric": "Keiken no imi nante",
+      "lyric_jp": "経験の意味なんて",
+      "range": [109.89, 113.23], "ans": [11]},
+    {"lyric": "Sorezore chigau hazu desho",
+      "lyric_jp": "それぞれ違うはずでしょ",
+      "range": [113.23, 117.28], "ans": [11]},
+    {
+      "lyric_jp": "でも老獪さ気取る 大人は嘘つきね",
+      "parts": [
+        {"lyric": "Demo roukaisa kidoru",
+          "range": [117.28, 121.2], "ans": []},
+        {"lyric": "Otona wa usotsuki ne",
+          "range": [121.2, 125.07], "ans": [11]}
+      ]
+    },
+    "",
+    {"lyric": "Crash plan",
+      "lyric_jp": "CRASH PLAN",
+      "range": [125.07, 127.01], "ans": []},
+    {"lyric": "Tatoeba zenbu kowashitaku naru toki wa itsu?",
+      "lyric_jp": "例えばぜんぶ壊したくなる時はいつ？",
+      "range": [127.01, 132.93], "ans": []},
+    {"lyric": "Crash plan",
+      "lyric_jp": "CRASH PLAN",
+      "range": [132.93, 134.64], "ans": []},
+    {"lyric": "Agaita jikan ga muda to wa omowanai kara",
+      "lyric_jp": "足掻いた時間が無駄とは思わないから",
+      "range": [134.64, 141.53], "ans": []},
+    {
+      "lyric_jp": "何が起ころうと逃げない My heart",
+      "parts": [
+        {"lyric": "Nani ga okorou to nigenai",
+          "range": [141.53, 145.77], "ans": [11]},
+        {"lyric": "My heart",
+          "range": [145.77, 149.01], "ans": []}
+      ]
+    },
+    {"lyric": "Ok!",
+      "lyric_jp": "Ok!",
+      "range": [149.01, 151.94], "ans": []},
+    "",
+    "[next-col]",
+    {"lyric": "(Come on!)",
+      "lyric_jp": "Come on! Come on!",
+      "range": [151.94, 153.5], "ans": [10]},
+    {"lyric": "(Here we go!)",
+      "lyric_jp": "Come on! Come on!",
+      "range": [153.5, 157.2], "ans": [10]},
+    {"lyric": "Every go!",
+      "lyric_jp": "Every go!",
+      "range": [157.2, 162.39], "ans": []},
+    {"lyric": "(Go crash!)",
+      "lyric_jp": "Go CRASH!",
+      "range": [162.39, 162.96], "ans": [10]},
+    {"lyric": "Anzen na toko kara miteru tte",
+      "lyric_jp": "安全なとこから見てるって",
+      "range": [162.96, 168.13], "ans": [11]},
+    {"lyric": "Watashi wakaru yo",
+      "lyric_jp": "私わかるよ",
+      "range": [168.13, 170.64], "ans": [11]},
+    {
+      "lyric_jp": "その傲慢な笑顔 大人のやり方ね",
+      "parts": [
+        {"lyric": "Sono gouman na egao",
+          "range": [170.64, 174.42], "ans": [11]},
+        {"lyric": "Otona no yarikata ne",
+          "range": [174.42, 178.04], "ans": []}
+      ]
+    },
+    "",
+    {"lyric": "Crash mind",
+      "lyric_jp": "CRASH MIND",
+      "range": [178.04, 179.92], "ans": []},
+    {"lyric": "Kotae wa ima ga kowareta ato de arawareru",
+      "lyric_jp": "答えは今が壊れた後で現れる",
+      "range": [179.92, 185.97], "ans": []},
+    {"lyric": "Crash mind",
+      "lyric_jp": "CRASH MIND",
+      "range": [185.97, 187.93], "ans": []},
+    {"lyric": "Mayotte naite mo dame ni nanka naranai yo",
+      "lyric_jp": "迷って泣いても駄目になんかならないよ",
+      "range": [187.93, 194], "ans": []},
+    {"lyric": "Crash plan",
+      "lyric_jp": "CRASH PLAN",
+      "range": [194, 196.24], "ans": [11]},
+    {"lyric": "Kowashite!",
+      "lyric_jp": "壊して！",
+      "range": [196.24, 201.8], "ans": [11]},
+    {"lyric": "Crash plan",
+      "lyric_jp": "CRASH PLAN",
+      "range": [201.8, 203.57], "ans": [10]},
+    {
+      "lyric_jp": "足掻いた時間が無駄とは思わないから",
+      "parts": [
+        {"lyric": "Agaita",
+          "range": [203.57, 204.92], "ans": [10]},
+        {"lyric": "Jikan ga muda to wa omowanai kara",
+          "range": [204.92, 210.16], "ans": []}
+      ]
+    },
+    {"lyric": "Nani ga okorou to nigenai My heart",
+      "lyric_jp": "何が起ころうと逃げない My heart",
+      "range": [210.16, 222.47], "ans": []},
+    "",
+    {"lyric": "No more trick, no more trap!",
+      "lyric_jp": "No more trick, no more trap!",
+      "range": [222.47, 226.37], "ans": []},
+    {"lyric": "No more trick, no more trap!",
+      "lyric_jp": "No more trick, no more trap!",
+      "range": [226.37, 230.35], "ans": []},
+    {"lyric": "No more trick, no more trap!",
+      "lyric_jp": "No more trick, no more trap!",
+      "range": [230.35, 234.2], "ans": []},
+    {"lyric": "No more trick, no more trap!",
+      "lyric_jp": "No more trick, no more trap!",
+      "range": [234.2, 260], "ans": []}
+  ]
+}

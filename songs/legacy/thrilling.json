@@ -1,0 +1,925 @@
+{
+  "name": "Thrilling One Way",
+  "group": "aqours",
+  "id": "thrilling",
+  "mp3": "sound/thrilling_one_way.mp3",
+  "ogg": "sound/thrilling_one_way.ogg",
+  "mapping": [
+    {
+      "range": [
+        3,
+        9
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        5,
+        7.8
+      ],
+      "ans": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        7.8,
+        9
+      ],
+      "ans": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        10,
+        12.7
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        12.7,
+        14
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        25,
+        27.7
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        27.7,
+        30
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        30,
+        32
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        32,
+        33.7
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        33.7,
+        35
+      ],
+      "ans": [
+        5,
+        7
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        35,
+        37.3
+      ],
+      "ans": [
+        5,
+        7
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        37.3,
+        40
+      ],
+      "ans": [
+        5,
+        7
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        40,
+        41.8
+      ],
+      "ans": [
+        5,
+        7
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        41.8,
+        44.5
+      ],
+      "ans": [
+        5,
+        7
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        44.5,
+        47
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        45.2,
+        46.5
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        47,
+        49
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        48.5,
+        51
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        49.5,
+        53
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        51,
+        53
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        53,
+        55.3
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        54,
+        59.5
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        59.5,
+        64
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        66,
+        71
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        71,
+        76
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        76,
+        81
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        81,
+        86
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        96,
+        99
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        99,
+        101.5
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        101.5,
+        103.7
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        103.7,
+        105
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        105,
+        106.5
+      ],
+      "ans": [
+        2,
+        6
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        106.5,
+        108.8
+      ],
+      "ans": [
+        2,
+        6
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        108.8,
+        111
+      ],
+      "ans": [
+        2,
+        6
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        111,
+        113.5
+      ],
+      "ans": [
+        2,
+        6
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        113.5,
+        116
+      ],
+      "ans": [
+        2,
+        6
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        116,
+        118.3
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        116,
+        118
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        118.3,
+        120.5
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        120,
+        122
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        120.5,
+        124
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        122,
+        124
+      ],
+      "ans": [
+        4,
+        7
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        124,
+        128
+      ],
+      "ans": [
+        4,
+        7
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        125.5,
+        130.5
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        130.5,
+        135.5
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        137,
+        142
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        142,
+        147
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        147,
+        152
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        152,
+        157
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        159,
+        160.5
+      ],
+      "ans": [
+        8
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        161.5,
+        163
+      ],
+      "ans": [
+        4
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        164,
+        165.2
+      ],
+      "ans": [
+        7
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        165.2,
+        167
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        190,
+        198
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        199.5,
+        204
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        204.8,
+        207
+      ],
+      "ans": [
+        5
+      ]
+    },
+    {
+      "range": [
+        207,
+        211
+      ],
+      "ans": [
+        2
+      ]
+    },
+    {
+      "range": [
+        211,
+        216
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        216,
+        221
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        221,
+        226
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        226,
+        231.5
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        231.5,
+        234.2
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "command": "group",
+      "members": [
+        1,
+        2
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        14,
+        16,
+        18,
+        21,
+        22
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        17,
+        19,
+        20
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        36,
+        38,
+        40,
+        43,
+        44
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        39,
+        41,
+        42
+      ]
+    }
+  ],
+  "lyrics": [
+    "{(Watashitachi kagayakitai!)}",
+    "{Mai mirai torai・torai・torai rai} {Honki de hashire}",
+    "{Mai mirai torai・torai・torai rai} {Honki de hashire}",
+    "",
+    "{Gakkari wa shitakunai tte}",
+    "{Nani o mamoru tsumori sa?}",
+    "{Ochikonde mo ii janai ka}",
+    "{Agarou yo} {shiisoo geemu}",
+    "",
+    "{Nando datte naichau nda}",
+    "{Kankiwa maritai kara ne}",
+    "{Nanto naku wa iya janai ka}",
+    "{Kimeru nda happii choisu}",
+    "",
+    "{Girigiri} {(mienai)} {dakedo ne} {(yo no naka)}",
+    "{Hashiru mirai} {(mai mirai)}",
+    "{Suriringu・Wan Uei}",
+    "{Sore koso honmou dane}",
+    "{Ikiru atsusa o kanjitai dake sa}",
+    "",
+    "{Tomaranai yo tomaranai yo afuresouna omoi wa}",
+    "{Sekaijuu de asobitai tte kokoro kara no kibou}",
+    "{Tomaranai yo tomaranai yo afuresouna omoi wa}",
+    "{Dareka no tame janakute jibun katte na passhon}",
+    "",
+    "{Sappari ga jiman nano kai?}",
+    "{Akirame waruku ikou yo}",
+    "{Zettai ni hoshii mono wa}",
+    "{Nerau nda} {pookaa feisu}",
+    "",
+    "{Yuzuttari shinai yo datte}",
+    "{Aite ni mo shitsurei sa}",
+    "{Nanto naku wa son janai ka}",
+    "{Tsukamu nda rakkii sutaa}",
+    "",
+    "{Harahara} {(mayoi mo)} {motomete} {(michidzure)}",
+    "{Hashire mirai} {(mai mirai)}",
+    "{Suriringu・Wan Uei}",
+    "{Sore koso honmou dato}",
+    "{Inochi moyashite kanjitai dake sa}",
+    "",
+    "{Tomaranaide tomaranaide mechakucha na negai o}",
+    "{Sekaijuu de kanaeyou tte watashitachi no yabou}",
+    "{Tomaranaide tomaranaide mechakucha na negai o}",
+    "{Daremo ga kakushiteru yo jibun katte ni rettsu go!}",
+    "",
+    "{Atsuku natte}",
+    "{Atsuku natte}",
+    "{Ikiteru tte} {kanjitai yo}",
+    "",
+    "{Girigiri dakedo ne hashiru mirai}",
+    "{Sore koso honmou dane}",
+    "{Ikiru atsusa o} {kanjitai dake sa}",
+    "",
+    "{Tomaranai yo tomaranai yo afuresouna omoi wa}",
+    "{Sekaijuu de asobitai tte kokoro kara no kibou}",
+    "{Tomaranai yo tomaranai yo afuresouna omoi wa}",
+    "{Dareka no tame janakute jibun katte na passhon}",
+    "{Katte ni yacchae rettsu go!}"
+  ]
+}

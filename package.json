@@ -1,0 +1,32 @@
+{
+  "name": "ganbawhoby",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build && node scripts/copy-assets.js",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Michael-A-Costa/GanbaWhoby.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Michael-A-Costa/GanbaWhoby/issues"
+  },
+  "homepage": "https://github.com/Michael-A-Costa/GanbaWhoby#readme",
+  "description": "",
+  "devDependencies": {
+    "@anthropic-ai/sdk": "^0.82.0",
+    "@types/howler": "^2.2.12",
+    "howler": "^2.2.4",
+    "playwright": "^1.59.1",
+    "typescript": "^6.0.2",
+    "vite": "^8.0.3"
+  }
+}

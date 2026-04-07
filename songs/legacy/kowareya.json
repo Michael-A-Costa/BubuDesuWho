@@ -1,0 +1,444 @@
+{
+  "name": "Kowareyasuki",
+  "id": "kowareya",
+  "group": "aqours",
+  "mp3": "sound/kowareyasuki.mp3",
+  "ogg": "sound/kowareyasuki.ogg",
+  "mapping": [
+    {
+      "range": [
+        5.5,
+        7.3
+      ]
+    },
+    {
+      "range": [
+        10.8,
+        12.3
+      ]
+    },
+    {
+      "range": [
+        16.5,
+        21.6
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        21.6,
+        27
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        27,
+        32.1
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        32.1,
+        38
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        38,
+        47.8
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        47.8,
+        53
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        53,
+        58.4
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        58.4,
+        68.9
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        68.9,
+        79
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        83.7,
+        85.7
+      ]
+    },
+    {
+      "range": [
+        89.7,
+        94.8
+      ],
+      "ans": [
+        3,
+        6
+      ]
+    },
+    {
+      "range": [
+        94.8,
+        100
+      ],
+      "ans": [
+        3,
+        6
+      ]
+    },
+    {
+      "range": [
+        100,
+        105.1
+      ],
+      "ans": [
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        105.1,
+        111
+      ],
+      "ans": [
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        111,
+        121
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        121,
+        126.1
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        126.1,
+        131.5
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        131.5,
+        141
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        142,
+        153.7
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        170,
+        176
+      ],
+      "ans": [
+        6
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        181.4,
+        187
+      ],
+      "ans": [
+        3,
+        9
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        192.4,
+        197.5
+      ],
+      "ans": [
+        6
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        197.5,
+        203
+      ],
+      "ans": [
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        203,
+        210
+      ],
+      "ans": [
+        3
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        210,
+        214.7
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        214.7,
+        224.2
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        225.2,
+        236
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        236,
+        239.7
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        239.7,
+        245.5
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        246.5,
+        256
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        257,
+        262.3
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        267.2,
+        272.7
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        282,
+        283.7
+      ]
+    },
+    {
+      "range": [
+        287.3,
+        288.8
+      ]
+    },
+    {
+      "range": [
+        292.5,
+        294.1
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "command": "group",
+      "members": [
+        2,
+        3
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        4,
+        5
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        12,
+        13
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        14,
+        15
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        16,
+        17,
+        18
+      ]
+    }
+  ],
+  "lyrics": [
+    "{You're fragile}",
+    "{You're fragile}",
+    "",
+    "{Kimi wa itsumo osoreteru hohoemi nagara}",
+    "{Kirawaretakunai kimochi sore mo wakaru yo}",
+    "{Dakara nani mo iwanai ne hontou no koto o}",
+    "{Hitotsu iki o nomikonde gaman shiteru no wa}",
+    "",
+    "{Mou yamete watashi dake ni sotto kokoro o misenasai}",
+    "{Nakisouna me no kimi ga suki yo}",
+    "{Muboubi ni ikiru bukiyousa mo ne}",
+    "",
+    "{Kowaremono wa mamoranakute wa kowasareru yo}",
+    "{Watashi ga zutto kimi o mamoru yo dakishimeru yo}",
+    "",
+    "{You're fragile}",
+    "",
+    "{Kimi no mayoi tsutawaru yo mune ga itamu yo}",
+    "{Hoka no hito wa shiranai no son'na yasashisa o}",
+    "{Dakedo watashi kidzuiteru hontou no koto ni}",
+    "{Futari kiri ni nareta toki gaman shinaide yo}",
+    "",
+    "{Saa ima wa watashi dake ni subete nageki o misenasai}",
+    "{Kangae sugiru kimi ga suki yo}",
+    "{Watashi to wa kimi to hantai dakara}",
+    "",
+    "{Kowareyasuki hakanai omoi kowasanaide}",
+    "{Watashi ga zutto kimi o mamoru yo dakishimeru yo}",
+    "",
+    "{(wo...)}",
+    "{(wo...)}",
+    "",
+    "{Kizutsuite osorete} {kizutsuita kokoro de}",
+    "{Watashi o matteta no? Watashi wa} {mitsuketa yo kimi no Real Heart}",
+    "",
+    "{Kowaremono wa mamoranakute wa kowasareru yo}",
+    "{Watashi ga zutto kimi o mamoru yo dakishimeru yo}",
+    "{Kowareyasuki} {hakanai omoi kowasanaide}",
+    "{Watashi ga zutto kimi o mamoru yo dakishimeru yo}",
+    "{Kowareyasuki} {kowaremono yo}",
+    "",
+    "{You're fragile}",
+    "{Kowareyasuki}",
+    "{You're fragile }"
+  ]
+}

@@ -1,0 +1,646 @@
+{
+  "group": "aqours",
+  "name": "Shadow gate to love",
+  "id": "shadow",
+  "mp3": "sound/shadow_gate_to_love.mp3",
+  "ogg": "sound/shadow_gate_to_love.ogg",
+  "mapping": [
+    {
+      "range": [
+        20,
+        25.1
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        25.1,
+        27.8
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        29.3,
+        38
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        38,
+        38.7
+      ]
+    },
+    {
+      "range": [
+        38.7,
+        43
+      ],
+      "ans": [
+        6,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        43,
+        46.4
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        46.4,
+        48
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        48,
+        52
+      ],
+      "ans": [
+        6,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        52,
+        55.5
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        55.5,
+        57
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        57,
+        63.8
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        63.8,
+        66.1
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        66.1,
+        70.7
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        70.7,
+        75.2
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        79,
+        82
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        84.4,
+        89
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        89,
+        92
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        93.7,
+        101.9
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        101.9,
+        102.7
+      ]
+    },
+    {
+      "range": [
+        102.7,
+        107
+      ],
+      "ans": [
+        3,
+        6
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        107,
+        110.3
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        110.3,
+        111.9
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        111.9,
+        116.3
+      ],
+      "ans": [
+        3,
+        6
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        116.3,
+        121
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        122,
+        123.8
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        123.8,
+        130.7
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        130.7,
+        133
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        133,
+        137.7
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        137.7,
+        142
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        153.5,
+        162.2
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        164,
+        169.5
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        170.3,
+        171.6
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        174,
+        180.9
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        180.9,
+        183.4
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        183.4,
+        187.8
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        187.8,
+        192.5
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        192.5,
+        194.9
+      ],
+      "ans": [
+        3,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        193.7,
+        194.7
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        194.9,
+        197.1
+      ],
+      "ans": [
+        3,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        196,
+        197
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        197.1,
+        199.3
+      ],
+      "ans": [
+        3,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        199.3,
+        201.7
+      ],
+      "ans": [
+        3,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        201,
+        207.4
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        201.7,
+        206.4
+      ],
+      "ans": [
+        3,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        206.4,
+        208.2
+      ],
+      "ans": [
+        3,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        208.2,
+        209.7
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        209.7,
+        210.7
+      ],
+      "ans": [
+        3,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        210.7,
+        213
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        216.6,
+        219.5
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        221,
+        224.3
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        225.9,
+        228.8
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        227.7,
+        230.7
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        230.5,
+        234
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "command": "group",
+      "members": [
+        0,
+        1
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        5,
+        6
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        8,
+        9
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        15,
+        16
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        20,
+        21
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        23,
+        24
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        36,
+        38,
+        40,
+        41,
+        43,
+        44
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        37,
+        39
+      ]
+    }
+  ],
+  "lyrics": [
+    "{Nanika ga tarinai sou omotta toki wa}",
+    "{Kurai kaidan mite goran}",
+    "{Hikari sasanai sono basho de hiraku tobira ga aru kara} {(You need me)}",
+    "",
+    "{Jakou no tsuyosa matou me ni} {sasowarete mite}",
+    "{Himete ita} {ganbou ga kobore kakeru yoru wa} {shigekiteki kamo}",
+    "{Saa, doushitai?}",
+    "",
+    "{Watashi no kage ga anata no yume o nomikomita garu}",
+    "{Koishite mo ii yo}",
+    "{Tameiki no naka wana o shikaketa}",
+    "{Tabun kiiteru no shibiretekita desho?}",
+    "",
+    "{Oh baby shadow gate!}",
+    "",
+    "{Dare demo mieru wake janai no yo}",
+    "{Eranda anata dake}",
+    "{Hikari kobanda sono basho de hiraku tobira mitsuketara} {(You want me)}",
+    "",
+    "{Jumon wa itsuka shite mitai} {kisu no kazu nano}",
+    "{Moshikashite}...{nante omotteru fujun'na yoru wa} {shigekiteki da wa}",
+    "{Saa, doushiyou ka?}",
+    "",
+    "{Watashi to anata ura to omote no mujun o kakaete}",
+    "{Koi ni kawaru no yo}",
+    "{Kireina uso nara yurusareru hazu}",
+    "{Dakara anata mo ai o sasayaite}",
+    "",
+    "{Sono tobira ga kieru mae ni anata ni kitto aeru}",
+    "{Sou ne ashioto kikoeru} {saa, ima nano!}",
+    "",
+    "{Watashi no kage ga anata no yume o nomikomitagaru}",
+    "{Koishite mo ii yo}",
+    "{Tameiki no naka wana o shikaketa}",
+    "{Tabun kiiteru no shibiretekita desho?}",
+    "",
+    "{Watashi to anata} {(Oh baby)} {ura to omote no} {(Shadow gate, shadow gate)} {mujun o kakaete}",
+    "{Koi ni kawaru no yo}",
+    "{(Oh yeah...)}",
+    "{Kireina uso nara yurusareru hazu}",
+    "{Dakara anata mo} {watashi ga} {yumemiru} {ai o sasayaite}",
+    "",
+    "{Oh baby Shadow gate!} {Koishite ii yo}",
+    "{Oh baby Shadow gate!} {(Shadow gate!)} {Koishite ii yo }"
+  ]
+}

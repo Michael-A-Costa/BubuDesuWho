@@ -1,0 +1,537 @@
+[
+  {
+    "file": "aqours/banzai-digital-trippers.json",
+    "cover": "css/images/covers/banzai-digital-trippers.png"
+  },
+  {
+    "file": "aqours/yume-mirai-mugendai.json",
+    "cover": "css/images/covers/yume-mirai-mugendai.png"
+  },
+  {
+    "file": "aqours/ku-ru-ku-ru-cruller.json",
+    "cover": "css/images/covers/ku-ru-ku-ru-cruller.png"
+  },
+  {
+    "file": "aqours/brightest-melody.json",
+    "cover": "css/images/covers/brightest-melody.png"
+  },
+  {
+    "file": "aqours/next-sparkling.json",
+    "cover": "css/images/covers/next-sparkling.png"
+  },
+  {
+    "file": "aqours/thank-you-friends.json",
+    "cover": "css/images/covers/thank-you-friends.png"
+  },
+  {
+    "file": "aqours/hop-stop-nonstop.json",
+    "cover": "css/images/covers/hop-stop-nonstop.png"
+  },
+  {
+    "file": "aqours/hop-step-waai.json",
+    "cover": "css/images/covers/hop-step-waai.png"
+  },
+  {
+    "file": "aqours/jump-up-high.json",
+    "cover": "css/images/covers/jump-up-high.png"
+  },
+  {
+    "file": "aqours/kokoro-magic.json",
+    "cover": "css/images/covers/kokoro-magic.png"
+  },
+  {
+    "file": "aqours/over-the-next-rainbow.json",
+    "cover": "css/images/covers/over-the-next-rainbow.png"
+  },
+  {
+    "file": "aqours/mitaiken-horizon.json",
+    "cover": "css/images/covers/mitaiken-horizon.png"
+  },
+  {
+    "file": "aqours/dance-with-minotaurus.json",
+    "cover": "css/images/covers/dance-with-minotaurus.png"
+  },
+  {
+    "file": "aqours/fantastic-departure.json",
+    "cover": "css/images/covers/fantastic-departure.png"
+  },
+  {
+    "file": "aqours/braveheart-coaster.json",
+    "cover": "css/images/covers/braveheart-coaster.png"
+  },
+  {
+    "file": "aqours/dreamy-color.json"
+  },
+  {
+    "file": "aqours/tousou-meisou-mobius-loop.json",
+    "cover": "css/images/covers/tousou-meisou-mobius-loop.png"
+  },
+  {
+    "file": "aqours/marine-border-parasol.json",
+    "cover": "css/images/covers/marine-border-parasol.png"
+  },
+  {
+    "file": "aqours/pirates-desire.json",
+    "cover": "css/images/covers/pirates-desire.png"
+  },
+  {
+    "file": "aqours/no10.json",
+    "cover": "css/images/covers/no10.png"
+  },
+  {
+    "file": "aqours/deep-resonance.json",
+    "cover": "css/images/covers/deep-resonance.png"
+  },
+  {
+    "file": "aqours/wake-up-challenger.json",
+    "cover": "css/images/covers/wake-up-challenger.png"
+  },
+  {
+    "file": "aqours/bouken-type-a-b-c.json",
+    "cover": "css/images/covers/bouken-type-a-b-c.png"
+  },
+  {
+    "file": "aqours/kokoro-no-hane-yo-kimi-e-tondeke.json",
+    "cover": "css/images/covers/kokoro-no-hane-yo-kimi-e-tondeke.png"
+  },
+  {
+    "file": "aqours/nando-datte-yakusoku.json",
+    "cover": "css/images/covers/nando-datte-yakusoku.png"
+  },
+  {
+    "file": "aqours/jimo-ai-dash.json",
+    "cover": "css/images/covers/jimo-ai-dash.png"
+  },
+  {
+    "file": "aqours/suki-for-you-dream-for-you.json",
+    "cover": "css/images/covers/suki-for-you-dream-for-you.png"
+  },
+  {
+    "file": "aqours/smile-smile-ship-start.json",
+    "cover": "css/images/covers/smile-smile-ship-start.png"
+  },
+  {
+    "file": "aqours/sora-fuji-sunshine.json",
+    "cover": "css/images/covers/sora-fuji-sunshine.png"
+  },
+  {
+    "file": "aqours/ka-ga-ya-ki-ra-ri-ra.json",
+    "cover": "css/images/covers/ka-ga-ya-ki-ra-ri-ra.png"
+  },
+  {
+    "file": "aqours/game-on.json",
+    "cover": "css/images/covers/game-on.png"
+  },
+  {
+    "file": "aqours/genjitsu-mysterium.json",
+    "cover": "css/images/covers/genjitsu-mysterium.png"
+  },
+  {
+    "file": "aqours/silent-pain.json",
+    "cover": "css/images/covers/silent-pain.png"
+  },
+  {
+    "file": "aqours/bokura-no-umi-de-mata-aou.json",
+    "cover": "css/images/covers/bokura-no-umi-de-mata-aou.png"
+  },
+  {
+    "file": "aqours/misty-frosty-love.json",
+    "cover": "css/images/covers/misty-frosty-love.png"
+  },
+  {
+    "file": "aqours/la-la-yuuki-no-uta.json",
+    "cover": "css/images/covers/la-la-yuuki-no-uta.png"
+  },
+  {
+    "file": "aqours/gemstone-de-a-i.json",
+    "cover": "css/images/covers/gemstone-de-a-i.png"
+  },
+  {
+    "file": "aqours/future-flight.json",
+    "cover": "css/images/covers/future-flight.png"
+  },
+  {
+    "file": "aqours/kimi-no-tame-boku-no-tame.json",
+    "cover": "css/images/covers/kimi-no-tame-boku-no-tame.png"
+  },
+  {
+    "file": "aqours/kiseki-hikaru.json",
+    "cover": "css/images/covers/kiseki-hikaru.png"
+  },
+  {
+    "file": "aqours/i-n-g-i-try.json",
+    "cover": "css/images/covers/i-n-g-i-try.png"
+  },
+  {
+    "file": "aqours/namida-times.json",
+    "cover": "css/images/covers/namida-times.png"
+  },
+  {
+    "file": "aqours/not-alone-not-hitori.json",
+    "cover": "css/images/covers/not-alone-not-hitori.png"
+  },
+  {
+    "file": "aqours/bloom-of-colors.json",
+    "cover": "css/images/covers/bloom-of-colors.png"
+  },
+  {
+    "file": "aqours/live-with-a-smile.json",
+    "cover": "css/images/covers/live-with-a-smile.png"
+  },
+  {
+    "file": "aqours/dropout.json",
+    "cover": "css/images/covers/dropout.png"
+  },
+  {
+    "file": "aqours/crash-mind.json",
+    "cover": "css/images/covers/crash-mind.png"
+  },
+  {
+    "file": "aqours/numazu-yassa-yoisa-uta.json",
+    "cover": "css/images/covers/numazu-yassa-yoisa-uta.png"
+  },
+  {
+    "file": "aqours/believe-again.json",
+    "cover": "css/images/covers/believe-again.png"
+  },
+  {
+    "file": "aqours/bokuhashi.json",
+    "cover": "css/images/covers/bokuhashi.png"
+  },
+  {
+    "file": "muse/borarara.json"
+  },
+  {
+    "file": "legacy/koitan.json"
+  },
+  {
+    "file": "muse/rabumaji.json"
+  },
+  {
+    "file": "muse/ssh.json"
+  },
+  {
+    "file": "legacy/diapuri.json"
+  },
+  {
+    "file": "legacy/rabunobe.json"
+  },
+  {
+    "file": "legacy/shirarara.json"
+  },
+  {
+    "file": "legacy/anone.json"
+  },
+  {
+    "file": "legacy/mafesu1.json"
+  },
+  {
+    "file": "muse/mogyu.json"
+  },
+  {
+    "file": "legacy/aiban.json"
+  },
+  {
+    "file": "legacy/wonrush.json"
+  },
+  {
+    "file": "legacy/rabupi.json"
+  },
+  {
+    "file": "legacy/bokuima.json"
+  },
+  {
+    "file": "legacy/start.json"
+  },
+  {
+    "file": "legacy/binetsu.json"
+  },
+  {
+    "file": "legacy/kimikuse.json"
+  },
+  {
+    "file": "muse/cp.json"
+  },
+  {
+    "file": "legacy/natsuowa.json"
+  },
+  {
+    "file": "legacy/pgp.json"
+  },
+  {
+    "file": "legacy/anbara.json"
+  },
+  {
+    "file": "legacy/puwa.json"
+  },
+  {
+    "file": "legacy/eien.json"
+  },
+  {
+    "file": "legacy/nairabu.json"
+  },
+  {
+    "file": "legacy/akisora.json"
+  },
+  {
+    "file": "legacy/happiness.json"
+  },
+  {
+    "file": "legacy/yokan.json"
+  },
+  {
+    "file": "legacy/torabasu.json"
+  },
+  {
+    "file": "legacy/onajihoshi.json"
+  },
+  {
+    "file": "legacy/silent.json"
+  },
+  {
+    "file": "legacy/cheerday.json"
+  },
+  {
+    "file": "legacy/saipara.json"
+  },
+  {
+    "file": "legacy/otohime.json"
+  },
+  {
+    "file": "legacy/museum.json"
+  },
+  {
+    "file": "legacy/angel.json"
+  },
+  {
+    "file": "legacy/hellohoshi.json"
+  },
+  {
+    "file": "legacy/sds.json"
+  },
+  {
+    "file": "legacy/heartbeat.json"
+  },
+  {
+    "file": "muse/bokuhika.json"
+  },
+  {
+    "file": "legacy/fsuta.json"
+  },
+  {
+    "file": "legacy/waowao.json"
+  },
+  {
+    "file": "legacy/orion.json"
+  },
+  {
+    "file": "legacy/omoide.json"
+  },
+  {
+    "file": "legacy/shunjou.json"
+  },
+  {
+    "file": "legacy/sakkaku.json"
+  },
+  {
+    "file": "legacy/pf.json"
+  },
+  {
+    "file": "aqours/step.json"
+  },
+  {
+    "file": "aqours/heroes.json"
+  },
+  {
+    "file": "aqours/koiaqua.json"
+  },
+  {
+    "file": "aqours/mattete.json"
+  },
+  {
+    "file": "legacy/todohoshi.json"
+  },
+  {
+    "file": "legacy/genki.json"
+  },
+  {
+    "file": "aqours/yozora-test.json"
+  },
+  {
+    "file": "aqours/yozora.json"
+  },
+  {
+    "file": "legacy/strawberry.json"
+  },
+  {
+    "file": "aqours/guilty.json"
+  },
+  {
+    "file": "legacy/toriko.json"
+  },
+  {
+    "file": "legacy/tokimeki.json"
+  },
+  {
+    "file": "legacy/aozora.json"
+  },
+  {
+    "file": "legacy/humming.json"
+  },
+  {
+    "file": "legacy/kimeta.json"
+  },
+  {
+    "file": "legacy/daisuki.json"
+  },
+  {
+    "file": "aqours/yumeuta.json"
+  },
+  {
+    "file": "legacy/ondo.json"
+  },
+  {
+    "file": "aqours/yumetera.json"
+  },
+  {
+    "file": "aqours/mijuku.json"
+  },
+  {
+    "file": "legacy/pops.json"
+  },
+  {
+    "file": "aqours/sorahare.json"
+  },
+  {
+    "file": "aqours/omoi.json"
+  },
+  {
+    "file": "aqours/mirai.json"
+  },
+  {
+    "file": "aqours/jingle.json"
+  },
+  {
+    "file": "legacy/seinaru.json"
+  },
+  {
+    "file": "aqours/waku.json"
+  },
+  {
+    "file": "aqours/daydream.json"
+  },
+  {
+    "file": "aqours/cinderella.json"
+  },
+  {
+    "file": "aqours/thrilling.json"
+  },
+  {
+    "file": "legacy/taiyou.json"
+  },
+  {
+    "file": "aqours/mukougawa.json"
+  },
+  {
+    "file": "aqours/tuning.json"
+  },
+  {
+    "file": "legacy/fever.json"
+  },
+  {
+    "file": "aqours/hapitore.json"
+  },
+  {
+    "file": "aqours/sky.json"
+  },
+  {
+    "file": "legacy/shoujo.json"
+  },
+  {
+    "file": "legacy/kinhappi.json"
+  },
+  {
+    "file": "legacy/kaigan.json"
+  },
+  {
+    "file": "aqours/ginkaku.json"
+  },
+  {
+    "file": "legacy/innoba.json"
+  },
+  {
+    "file": "aqours/kowareya.json"
+  },
+  {
+    "file": "aqours/shadow.json"
+  },
+  {
+    "file": "legacy/landing.json"
+  },
+  {
+    "file": "legacy/natsubira.json"
+  },
+  {
+    "file": "legacy/manatsumono.json"
+  },
+  {
+    "file": "legacy/jimoai.json"
+  },
+  {
+    "file": "aqours/natsuoto.json"
+  },
+  {
+    "file": "wug/tachiagare.json"
+  },
+  {
+    "file": "wug/7war.json"
+  },
+  {
+    "file": "wug/gokusuma.json"
+  },
+  {
+    "file": "wug/sugaokiss.json"
+  },
+  {
+    "file": "legacy/shoujokyoku.json"
+  },
+  {
+    "file": "wug/btb.json"
+  },
+  {
+    "file": "wug/wugzoo.json"
+  },
+  {
+    "file": "aqours/miraboku.json"
+  },
+  {
+    "file": "aqours/kimihito.json"
+  },
+  {
+    "file": "aqours/yuukimi.json"
+  },
+  {
+    "file": "aqours/mylist.json"
+  },
+  {
+    "file": "aqours/maimai.json"
+  },
+  {
+    "file": "aqours/mirawave.json"
+  },
+  {
+    "file": "aqours/awakepower.json"
+  },
+  {
+    "file": "aqours/waterblue.json"
+  },
+  {
+    "file": "aqours/stories.json"
+  },
+  {
+    "file": "legacy/kimikoko.json"
+  },
+  {
+    "file": "aqours/nameless-love-song.json"
+  }
+]

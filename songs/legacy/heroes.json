@@ -1,0 +1,951 @@
+{
+  "name": "Aqours☆HEROES",
+  "mp3": "sound/aqours_heroes.mp3",
+  "ogg": "sound/aqours_heroes.ogg",
+  "id": "heroes",
+  "group": "aqours",
+  "mapping": [
+    {
+      "range": [
+        12.7,
+        13.7
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        20,
+        23.5
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        23.5,
+        27.5
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        27.5,
+        30.2
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        30.2,
+        30.7
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        30.7,
+        31.2
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        31.2,
+        31.6
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        31.6,
+        32
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        32,
+        32.8
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        32.8,
+        33.7
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        33.7,
+        36.3
+      ],
+      "ans": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        36.3,
+        37.3
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        37.3,
+        39.5
+      ],
+      "ans": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        39.5,
+        40.5
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        40.5,
+        44
+      ],
+      "ans": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        44,
+        44.5
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "range": [
+        44.2,
+        44.7
+      ],
+      "ans": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        44.9,
+        45.4
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "range": [
+        45.2,
+        45.7
+      ],
+      "ans": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        45.7,
+        47.1
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "range": [
+        47.1,
+        50.5
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        50.5,
+        52
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        52,
+        54
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        54,
+        57.5
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        57.5,
+        58.5
+      ],
+      "ans": [
+        2
+      ]
+    },
+    {
+      "range": [
+        58.5,
+        60.3
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        60.3,
+        60.8
+      ],
+      "ans": []
+    },
+    {
+      "range": [
+        60.8,
+        67.7
+      ],
+      "ans": []
+    },
+    {
+      "range": [
+        67.7,
+        74
+      ],
+      "ans": []
+    },
+    {
+      "range": [
+        74,
+        81
+      ],
+      "ans": []
+    },
+    {
+      "range": [
+        81,
+        85.7
+      ],
+      "ans": []
+    },
+    {
+      "range": [
+        85.7,
+        91
+      ],
+      "ans": []
+    },
+    {
+      "range": [
+        102,
+        105.5
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        105.5,
+        109.3
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        109.3,
+        112.2
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        112.2,
+        112.7
+      ],
+      "ans": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "range": [
+        112.7,
+        113.2
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        113.2,
+        113.6
+      ],
+      "ans": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "range": [
+        113.6,
+        114.1
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        114.1,
+        114.6
+      ],
+      "ans": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "range": [
+        114.6,
+        116
+      ],
+      "ans": []
+    },
+    {
+      "range": [
+        116,
+        117.5
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        117.5,
+        119.8
+      ],
+      "ans": [
+        4,
+        5,
+        6
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        119.8,
+        120.8
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        120.8,
+        123.3
+      ],
+      "ans": [
+        4,
+        5,
+        6
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        123.3,
+        124.3
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        124.3,
+        127.5
+      ],
+      "ans": [
+        4,
+        5,
+        6
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        127.5,
+        128.1
+      ],
+      "ans": [
+        5
+      ]
+    },
+    {
+      "range": [
+        127.8,
+        128.4
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        128.5,
+        129.1
+      ],
+      "ans": [
+        4
+      ]
+    },
+    {
+      "range": [
+        128.8,
+        129.2
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        9
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        129.2,
+        130.5
+      ],
+      "ans": [
+        4,
+        5
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        131,
+        134
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        134,
+        137.5
+      ],
+      "ans": [
+        1,
+        3
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        137.5,
+        141
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        141,
+        142.5
+      ],
+      "ans": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "range": [
+        142.5,
+        143
+      ],
+      "ans": []
+    },
+    {
+      "range": [
+        143,
+        144
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "range": [
+        144,
+        144.5
+      ],
+      "ans": []
+    },
+    {
+      "range": [
+        144.5,
+        147.5
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        146.5,
+        147.5
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        147.5,
+        149
+      ],
+      "ans": []
+    },
+    {
+      "range": [
+        149.3,
+        156.3
+      ],
+      "ans": []
+    },
+    {
+      "range": [
+        156.3,
+        162.8
+      ],
+      "ans": []
+    },
+    {
+      "range": [
+        162.8,
+        169.8
+      ],
+      "ans": []
+    },
+    {
+      "range": [
+        169.8,
+        174.7
+      ],
+      "ans": []
+    },
+    {
+      "range": [
+        174.7,
+        180
+      ],
+      "ans": []
+    },
+    {
+      "range": [
+        195,
+        196
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        196,
+        197
+      ],
+      "ans": [
+        4,
+        5,
+        6
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        197,
+        197.8
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        197.8,
+        198.6
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        198.6,
+        202
+      ],
+      "ans": []
+    },
+    {
+      "range": [
+        203.1,
+        203.6
+      ],
+      "ans": []
+    },
+    {
+      "range": [
+        203.6,
+        210.5
+      ],
+      "ans": []
+    },
+    {
+      "range": [
+        210.5,
+        217
+      ],
+      "ans": []
+    },
+    {
+      "range": [
+        217,
+        224
+      ],
+      "ans": []
+    },
+    {
+      "range": [
+        224,
+        231
+      ],
+      "ans": []
+    },
+    {
+      "range": [
+        231,
+        237
+      ],
+      "ans": []
+    },
+    {
+      "range": [
+        240,
+        241
+      ],
+      "ans": []
+    }
+  ],
+  "slots": [
+    {
+      "command": "group",
+      "members": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        10,
+        12,
+        14
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        42,
+        44,
+        46
+      ]
+    }
+  ],
+  "lyrics": [
+    "{Yaa-Yaa!!}",
+    "",
+    "{Yaa yaa yaa junbi wa dekita yo}",
+    "{Namae... namae nan dakke?}",
+    "{Wasureta furi wa} {yada} {(Yaa!)} {yada} {(Yaa!)}",
+    "{Aqours}☆{PUNCH!!}",
+    "",
+    "{Yaa yaa yaa soudan ga aru nara} {(aru nara)}",
+    "{Sugu ni... sugu ni yobina yo!} {(yonde yo!)}",
+    "{Jetto de mahha de socchi ni iku kara}",
+    "{Mou} {(Yaa!)} {choi} {(Yaa!)} {mattete}",
+    "",
+    "{Muteki datte shinjitaku natte}",
+    "{Ikioi de} {We are HEROES}",
+    "{Okashiina hiroin desho? tte}",
+    "{Tsukkonde} {tsukkonde tsukkonde ne} {(Wao!)}",
+    "",
+    "{Nayami o buttobasu youna imeeji motte tatakaimashou}",
+    "{Nantonaku nantonaku tsuyoku narutte ki ga shiteru}",
+    "{Mayoi mo buttobasu youna imeeji motte tatakaimashou}",
+    "{Nantonaku nantonaku tsuyoku naru}",
+    "{Sonna watashitachi, dayo dayo!}",
+    "",
+    "{Saa saa saa genki o dashite yo}",
+    "{Kimi wa... kimi wa dare dakke?}",
+    "{Hontou wa shitteru yo} {demo} {(Yaa!)} {demo} {(Yaa!)}",
+    "{Aqours}☆{FLASH!!} {Himitsu nanda}",
+    "",
+    "{Saa saa saa mondai wa nandaro} {(nandaro)}",
+    "{Sugu ni... sugu ni yobina yo!} {(yonde yo!)}",
+    "{Shokku de daun de nakisouna toki wa}",
+    "{Mou} {(Yaa!)} {choi} {(Yaa!)} {funbatte ne}",
+    "",
+    "{Tameiki ni nagasarenai de} {(tsukamatte yo watashi no te ni)}",
+    "{Kore kara dayo tsuite oide yo}",
+    "{Motto mae ni} {(So!)} {gutto mae ni} {(So!)} {oide oide yo}",
+    "{(Hayaku)} {oide yo}",
+    "",
+    "{Negai wa itte mitaku naru suteeji notte tatakaimashou}",
+    "{Kanaetai kanaetai yume ni narutte ki ga shiteru}",
+    "{Omoi wa itte mitaku naru suteeji notte tatakaimashou}",
+    "{Kanaetai kanaetai yume ni naru}",
+    "{Kitto minna de yacchau hazu dayo}",
+    "",
+    "{Yacchaeba} {yacchaitai} {yacchaeba} {yacchauka}",
+    "{Dakara oide yo} {(Wao!)}",
+    "",
+    "{Nayami o buttobasu youna imeeji motte tatakaimashou}",
+    "{Nantonaku nantonaku tsuyoku narutte ki ga shiteru}",
+    "{Mayoi mo buttobasu youna imeeji motte tatakaimashou}",
+    "{Nantonaku nantonaku tsuyoku naru narisouna}",
+    "{Aqours☆HEROES sonna watashitachi, dayo dayo!}",
+    "{Yaa-Yaa!! }"
+  ]
+}

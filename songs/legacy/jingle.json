@@ -1,0 +1,558 @@
+{
+  "name": "Jingle Bells ga Tomaranai",
+  "mp3": "sound/jingle_bells_ga_tomaranai.mp3",
+  "ogg": "sound/jingle_bells_ga_tomaranai.ogg",
+  "id": "jingle",
+  "group": "aqours",
+  "mapping": [
+    {
+      "range": [
+        21.5,
+        29
+      ],
+      "ans": [
+        2,
+        4,
+        8
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        29.5,
+        36.5
+      ],
+      "ans": [
+        2,
+        4,
+        8
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        37.5,
+        45
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        45.5,
+        52.5
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        53.5,
+        54.5
+      ],
+      "ans": [
+        1,
+        5,
+        7
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        54.5,
+        55.5
+      ]
+    },
+    {
+      "range": [
+        55.5,
+        57
+      ],
+      "ans": [
+        1,
+        5,
+        7
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        57.5,
+        60.5
+      ],
+      "ans": [
+        1,
+        5,
+        7
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        60.8,
+        61.3
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        61.5,
+        62.5
+      ],
+      "ans": [
+        2,
+        4,
+        8
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        62.5,
+        63.5
+      ]
+    },
+    {
+      "range": [
+        63.5,
+        66
+      ],
+      "ans": [
+        2,
+        4,
+        8
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        66,
+        71
+      ],
+      "ans": [
+        2,
+        4,
+        8
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        71.7,
+        73.8
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        73.8,
+        81.2
+      ]
+    },
+    {
+      "range": [
+        81.2,
+        85.5
+      ]
+    },
+    {
+      "range": [
+        85.5,
+        89
+      ]
+    },
+    {
+      "range": [
+        89,
+        93
+      ]
+    },
+    {
+      "range": [
+        93,
+        93.8
+      ]
+    },
+    {
+      "range": [
+        93.2,
+        101.5
+      ]
+    },
+    {
+      "range": [
+        101.5,
+        104
+      ]
+    },
+    {
+      "range": [
+        119,
+        127
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        127,
+        131
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        131,
+        135
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        135.5,
+        136.5
+      ],
+      "ans": [
+        2
+      ]
+    },
+    {
+      "range": [
+        136.5,
+        137.2
+      ],
+      "ans": [
+        3
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        137.4,
+        139
+      ],
+      "ans": [
+        2
+      ]
+    },
+    {
+      "range": [
+        139.5,
+        142.8
+      ],
+      "ans": [
+        2,
+        3
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        142.8,
+        143.5
+      ],
+      "ans": [
+        3
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        143.7,
+        144.4
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        144.4,
+        145.4
+      ],
+      "ans": [
+        4
+      ]
+    },
+    {
+      "range": [
+        145.4,
+        147.5
+      ],
+      "ans": [
+        4,
+        6
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        147.5,
+        149.7
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        149.7,
+        153.3
+      ],
+      "ans": [
+        5
+      ]
+    },
+    {
+      "range": [
+        153.3,
+        155.5
+      ],
+      "ans": [
+        1,
+        7,
+        8
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        155.5,
+        163
+      ]
+    },
+    {
+      "range": [
+        163,
+        167.5
+      ]
+    },
+    {
+      "range": [
+        167.5,
+        171
+      ]
+    },
+    {
+      "range": [
+        171,
+        175
+      ]
+    },
+    {
+      "range": [
+        175,
+        175.8
+      ]
+    },
+    {
+      "range": [
+        175.2,
+        183.5
+      ]
+    },
+    {
+      "range": [
+        183.5,
+        186
+      ]
+    },
+    {
+      "range": [
+        207,
+        215.5
+      ]
+    },
+    {
+      "range": [
+        215.5,
+        219.5
+      ]
+    },
+    {
+      "range": [
+        219.5,
+        220.5
+      ],
+      "ans": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "range": [
+        220.5,
+        221.5
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "range": [
+        221.5,
+        223
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        223,
+        231.5
+      ]
+    },
+    {
+      "range": [
+        231.5,
+        235.5
+      ]
+    },
+    {
+      "range": [
+        235.5,
+        239
+      ]
+    },
+    {
+      "range": [
+        239,
+        243
+      ]
+    },
+    {
+      "range": [
+        243,
+        243.8
+      ]
+    },
+    {
+      "range": [
+        243.2,
+        251.5
+      ]
+    },
+    {
+      "range": [
+        251.5,
+        254
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "command": "group",
+      "members": [
+        0,
+        1
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        2,
+        3
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        4,
+        6,
+        7
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        9,
+        11,
+        12
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        24,
+        26
+      ]
+    }
+  ],
+  "lyrics": [
+    "{Egao ga mitakute kotoshi mo mayou no}",
+    "{Purezento sagashi ni machi e dekakeyou}",
+    "",
+    "{Gin no ribon kazatta tobira o hiraita toki}",
+    "{Ita nosa kimi ga ne mokuteki wa onaji}",
+    "",
+    "{Bare chatta?} {(otagai ne)} {waraidasu}",
+    "{Hoshi mono oshiete yo} {(Yes!)}",
+    "{Ureshiina} {(ureshii yo)} {ki ga au tte koto}",
+    "{tsutawaru yo shiawasena kibun}",
+    "",
+    "{Yeah! Happy Christmas!!}",
+    "",
+    "{Daijina toki wa itsumo issho ni sugoshitai kara}",
+    "{Yakusoku dayo akete oite yotte}",
+    "{Yuuki dashite koe kakechae}",
+    "{I wish Merry merry Christmas} {(wao!)}",
+    "{Hora min'na o yonde paatii shitai janai?}",
+    "{Jinguru beru ni kanpai}",
+    "",
+    "{Tokubetsuna hi dashi ookina keeki tsukurou ka?}",
+    "{Shippai suru yokan wa} {kuchi ni shicha dame sa!}",
+    "",
+    "{Yuki nante} {(furanaito)} {wakattetemo}",
+    "{Romantikku kitai shichau} {(Yes!)}",
+    "{Asobou ne} {(asobou yo)} {sawagi sugitemo}",
+    "{sono hi nara} {yurusareru mibun}",
+    "",
+    "{Yeah! Dancin' Christmas!!}",
+    "",
+    "{Aitai hito wa dare dai? Issho ni sugoshitai nara}",
+    "{Sasoi ni ikou tanoshiku odorou tte}",
+    "{Fuzake nagara dakitsuichae}",
+    "{I wish Merry Merry Christmas} {(wao!)}",
+    "{Saa min'na no yotei kimechaitai yoru sa}",
+    "{Jinguru beru tomanai}",
+    "",
+    "{Daijina toki wa itsumo issho ni sugoshitai kara}",
+    "{Yakusoku dayo akete oite yotte}",
+    "{Yuuki} {dashite} {koe kakechae}",
+    "{Ima aitai hito wa dare dai? Issho ni sugoshitai nara}",
+    "{Sasoi ni ikou tanoshiku odorou tte}",
+    "{Fuzake nagara dakitsuichae}",
+    "{I wish Merry merry Christmas} {(wao!)}",
+    "{Saa min'na no yotei kimechaitai yoru sa}",
+    "{Jinguru beru tomanai}"
+  ]
+}

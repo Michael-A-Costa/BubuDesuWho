@@ -1,0 +1,194 @@
+{
+  "name": "Next SPARKLING!!",
+  "ogg": "sound/next_sparkling.ogg",
+  "id": "next-sparkling",
+  "group": "aqours",
+  "added": "2026-04",
+  "hidden": false,
+  "slots": [
+
+  ],
+  "lines": [
+    {"lyric": "Hitotsu hitotsu no omoidetachi ga daiji nanda",
+      "lyric_jp": "ひとつひとつの思い出たちが 大事なんだ",
+      "range": [32.57, 40.91], "ans": [2]},
+    {"lyric": "Zutto kirei na bokura no takaramono da yo",
+      "lyric_jp": "ずっとキレイな僕らの宝物だよ",
+      "range": [40.91, 47.98], "ans": [2]},
+    {"lyric": "Donna tooku e hanarete mo",
+      "lyric_jp": "どんな遠くへ離れても",
+      "range": [47.98, 51.35], "ans": [3]},
+    {
+      "lyric_jp": "きっと見える いつもの景色",
+      "parts": [
+        {"lyric": "Kitto mieru",
+          "range": [51.35, 53.39], "ans": [3]},
+        {"lyric": "Itsumo no keshiki",
+          "range": [53.39, 56.33], "ans": [1]}
+      ]
+    },
+    {
+      "lyric_jp": "こころのなかにしまってあるから",
+      "parts": [
+        {"lyric": "Kokoro no naka ni",
+          "range": [56.31, 58.92], "ans": [1]},
+        {"lyric": "Shimatte aru kara",
+          "range": [58.92, 62.73], "ans": [1, 2, 3]}
+      ]
+    },
+    "",
+    {"lyric": "Aitakunattara",
+      "lyric_jp": "会いたくなったら",
+      "range": [62.73, 65.41], "ans": [5]},
+    {
+      "lyric_jp": "目を閉じて みんなを呼んでみて",
+      "parts": [
+        {"lyric": "Me wo tojite",
+          "range": [65.41, 67.07], "ans": [5]},
+        {"lyric": "Minna wo yonde mite",
+          "range": [67.07, 69.57], "ans": [4]}
+      ]
+    },
+    {
+      "lyric_jp": "そしたら聞こえるよ この歌が",
+      "parts": [
+        {"lyric": "Soshitara kikoeru yo",
+          "range": [69.37, 72.49], "ans": [4]},
+        {"lyric": "Kono uta ga",
+          "range": [72.49, 74.8], "ans": [6]}
+      ]
+    },
+    {
+      "lyric_jp": "ほら次はどこ？一緒に行こう",
+      "parts": [
+        {"lyric": "Hora tsugi wa doko?",
+          "range": [74.8, 77.17], "ans": [6]},
+        {"lyric": "Issho ni yukou",
+          "range": [77.17, 81.19], "ans": [4, 5, 6]}
+      ]
+    },
+    "",
+    {"lyric": "Wasurenai wasurenai yume ga areba",
+      "lyric_jp": "忘れない 忘れない 夢があれば",
+      "range": [81.19, 89.39], "ans": [1, 2, 3, 4, 5, 6]},
+    {"lyric": "Kimi mo bokura mo narerunda naritai jibun ni",
+      "lyric_jp": "君も僕らもなれるんだ なりたい自分に",
+      "range": [89.39, 96.62], "ans": [1, 2, 3, 4, 5, 6]},
+    {"lyric": "Wasurenai wasurenai yume miru koto",
+      "lyric_jp": "忘れない 忘れない 夢見ること",
+      "range": [96.62, 104.43], "ans": [1, 2, 3, 4, 5, 6]},
+    {
+      "lyric_jp": "明日は今日より夢に近いはずだよ",
+      "parts": [
+        {"lyric": "Ashita wa kyou yori yume ni",
+          "range": [104.43, 108.63], "ans": [1]},
+        {"lyric": "Chikai hazu da yo",
+          "range": [108.63, 128.58], "ans": [1, 2, 3, 4, 5, 6]}
+      ]
+    },
+    "",
+    {"lyric": "Hitori hitori wa chigatte ite mo onaji datta yo",
+      "lyric_jp": "ひとりひとりは違っていても 同じだったよ",
+      "range": [128.58, 137.15], "ans": [9]},
+    {"lyric": "Ima kono toki wo taisetsu ni kizanda no wa",
+      "lyric_jp": "いまこの時を大切に刻んだのは",
+      "range": [137.15, 143.94], "ans": [9]},
+    {"lyric": "Zettai kienai suteki na monogatari",
+      "lyric_jp": "ぜったい消えないステキな物語",
+      "range": [143.94, 150.4], "ans": [7]},
+    {"lyric": "Minna to dakara dekita koto da ne",
+      "lyric_jp": "みんなとだからできたことだね",
+      "range": [150.4, 155.15], "ans": [8]},
+    {"lyric": "Sugoi ne, arigatou!",
+      "lyric_jp": "すごいね、ありがとう！",
+      "range": [155.15, 158.82], "ans": [7, 8, 9]},
+    "",
+    {"lyric": "Aitakunarunda",
+      "lyric_jp": "会いたくなるんだ",
+      "range": [158.82, 161.48], "ans": [2]},
+    {
+      "lyric_jp": "わかってる みんなを呼びたいよ",
+      "parts": [
+        {"lyric": "Wakatteru",
+          "range": [161.48, 162.72], "ans": [7, 8, 9]},
+        {"lyric": "Minna wo",
+          "range": [162.72, 163.76], "ans": [1]},
+        {"lyric": "Yobitai yo",
+          "range": [163.76, 165.52], "ans": [3]}
+      ]
+    },
+    {
+      "lyric_jp": "いつでも聞こえるよ この歌が",
+      "parts": [
+        {"lyric": "Itsudemo",
+          "range": [165.35, 166.8], "ans": [5]},
+        {"lyric": "Kikoeru yo",
+          "range": [166.8, 168.61], "ans": [4]},
+        {"lyric": "Kono uta ga",
+          "range": [168.61, 170.42], "ans": [6]}
+      ]
+    },
+    {
+      "lyric_jp": "まだ走れるね 一緒に行こう",
+      "parts": [
+        {"lyric": "Mada hashireru ne",
+          "range": [170.42, 173.9], "ans": [7, 8, 9]},
+        {"lyric": "Issho ni yukou",
+          "range": [173.9, 177.11], "ans": []}
+      ]
+    },
+    "",
+    {"lyric": "Tomaranai tomaranai atsui kodou ga",
+      "lyric_jp": "止まらない 止まらない 熱い鼓動が",
+      "range": [177.11, 185.22], "ans": []},
+    {"lyric": "Kimi to bokura wa kore kara mo tsunagatterunda yo",
+      "lyric_jp": "君と僕らはこれからも つながってるんだよ",
+      "range": [185.22, 192.59], "ans": []},
+    {"lyric": "Tomaranai tomaranai atsuku natte",
+      "lyric_jp": "止まらない 止まらない 熱くなって",
+      "range": [192.59, 200.57], "ans": []},
+    {"lyric": "Atarashii kagayaki e to te wo nobasou",
+      "lyric_jp": "あたらしい輝きへと手を伸ばそう",
+      "range": [200.57, 224.55], "ans": []},
+    "",
+    "[next-col]",
+    {"lyric": "Ima datte mijuku dakedo",
+      "lyric_jp": "いまだって未熟だけど",
+      "range": [224.55, 231.24], "ans": [1]},
+    {
+      "lyric_jp": "先へ進まなくちゃ それしかないんだよね 未来へ！！",
+      "parts": [
+        {"lyric": "Saki e susumanakucha sore shikanaida yo ne",
+          "range": [231.24, 238.17], "ans": [1]},
+        {"lyric": "Mirai e!!",
+          "range": [238.17, 244.35], "ans": []}
+      ]
+    },
+    "",
+    {"lyric": "Wasurenai wasurenai yume ga areba",
+      "lyric_jp": "忘れない 忘れない 夢があれば",
+      "range": [244.35, 252.5], "ans": []},
+    {"lyric": "Kimi mo bokura mo narerunda naritai jibun ni",
+      "lyric_jp": "君も僕らもなれるんだ なりたい自分に",
+      "range": [252.5, 259.68], "ans": []},
+    {"lyric": "Wasurenai wasurenai yume miru koto",
+      "lyric_jp": "忘れない 忘れない 夢見ること",
+      "range": [259.68, 267.66], "ans": []},
+    {"lyric": "Ashita wa kyou yori yume ni chikai hazu da yo",
+      "lyric_jp": "明日は今日より夢に近いはずだよ",
+      "range": [267.66, 275.08], "ans": []},
+    "",
+    {"lyric": "Tomaranai tomaranai atsui kodou ga",
+      "lyric_jp": "止まらない 止まらない 熱い鼓動が",
+      "range": [275.08, 283.25], "ans": []},
+    {"lyric": "Kimi to bokura wa kore kara mo tsunagatterunda yo",
+      "lyric_jp": "君と僕らはこれからも つながってるんだよ",
+      "range": [283.25, 290.38], "ans": []},
+    {"lyric": "Tomaranai tomaranai atsuku natte",
+      "lyric_jp": "止まらない 止まらない 熱くなって",
+      "range": [290.38, 298.32], "ans": []},
+    {"lyric": "Atarashii kagayaki e to te wo nobasou",
+      "lyric_jp": "あたらしい輝きへと手を伸ばそう",
+      "range": [298.32, 386], "ans": []}
+  ]
+}

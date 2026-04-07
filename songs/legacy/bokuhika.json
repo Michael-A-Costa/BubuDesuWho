@@ -1,0 +1,736 @@
+{
+  "name": "Bokutachi wa Hitotsu no Hikari",
+  "id": "bokuhika",
+  "ogg": "sound/bokutachi_wa_hitotsu_no_hikari.ogg",
+  "mp3": "sound/bokutachi_wa_hitotsu_no_hikari.mp3",
+  "group": "muse",
+  "mapping": [
+    {
+      "range": [
+        26.7,
+        32.3
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        32.3,
+        34.8
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        34.8,
+        37.9
+      ],
+      "ans": [
+        5
+      ]
+    },
+    {
+      "range": [
+        37.9,
+        40.5
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        40.5,
+        43.4
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        43.4,
+        46
+      ],
+      "ans": [
+        2,
+        4
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        46,
+        49
+      ],
+      "ans": [
+        3,
+        6
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        49,
+        54
+      ],
+      "ans": [
+        2,
+        3,
+        7
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        54,
+        59.8
+      ],
+      "ans": [
+        5,
+        8,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        59.8,
+        67.5
+      ],
+      "ans": [
+        1,
+        4,
+        6
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        66.8,
+        68
+      ],
+      "ans": [
+        2,
+        3,
+        7
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        68,
+        73
+      ],
+      "ans": [
+        5,
+        8,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        71.5,
+        76
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        76,
+        84.7
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        84.7,
+        87.7
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        87.7,
+        95.2
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        95.2,
+        98.2
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        98.2,
+        101.2
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        101.2,
+        110
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        112,
+        115
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        115,
+        118
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        140,
+        146.7
+      ],
+      "ans": [
+        1,
+        4,
+        6
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        146.7,
+        151
+      ],
+      "ans": [
+        1,
+        4,
+        6
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        151,
+        153.7
+      ],
+      "ans": [
+        2,
+        3,
+        7
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        153.7,
+        156.3
+      ],
+      "ans": [
+        5,
+        8,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        156.3,
+        162
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        164.7,
+        172.8
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        172.8,
+        175.8
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        175.8,
+        179.7
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        179.7,
+        183.6
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        183.6,
+        186.4
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        186.4,
+        189.6
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        189.6,
+        194.8
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        216.8,
+        225.6
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        225.6,
+        228.3
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        228.3,
+        236
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        236,
+        238.8
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        238.8,
+        241.7
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        241.7,
+        250.2
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        252.5,
+        255.7
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        255.7,
+        258
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        258,
+        261.5
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        263.7,
+        266.5
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        266.5,
+        269.5
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        271,
+        276.9
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        276.9,
+        286.5
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "command": "group",
+      "members": [
+        21,
+        22
+      ]
+    }
+  ],
+  "lyrics": [
+    "{Ah! Honoka na yokan kara hajimari}",
+    "{Ah! Nozomi ga} {hoshizora kakete}",
+    "{Hana o sakaseru} {nikkori egao wa}",
+    "{Zutto onaji sa} {yuujou no egao}",
+    "",
+    "{Wasurenai itsumademo wasurenai}",
+    "{Konna ni mo kokoro ga hitotsu ni naru}",
+    "{Sekai o mitsuketa yorokobi} {(tomo ni)}",
+    "{Utaou saigo made} {(bokutachi wa hitotsu)}",
+    "",
+    "{Kotori no tsubasa ga tsui ni ookiku natte}",
+    "{Tabidachi no hi dayo}",
+    "{Tooku e to hirogaru umi no iro atatakaku}",
+    "{Yume no naka de egaita} {e no you nanda setsunakute}",
+    "{Toki o maki modoshite miru kai?}",
+    "{No no no} {ima ga saikou!}",
+    "",
+    "{Minna to deaeta koto ureshikute}",
+    "{Hanaretakunai yo hontou dayo}",
+    "{Namida wa iranai} {kono mama odorou}",
+    "{Te o futte motto futte}",
+    "",
+    "{Hikari o oikakete kita bokutachi dakara}",
+    "{Sayonara wa iwanai}",
+    "{Mata aou yonde kureru kai?}",
+    "{Bokutachi no koto}",
+    "{Suteki datta mirai ni} {tsunagatta yume yume no mirai}",
+    "{Kimi to boku no LIVE & LIFE}",
+    "",
+    "{Kotori no tsubasa ga tsui ni ookiku natte}",
+    "{Tabidachi no hi dayo}",
+    "{Tooku e to hirogaru umi no iro atatakaku}",
+    "{Yume no naka de egaita} {e no you nanda setsunakute}",
+    "{Toki o maki modoshite miru kai?}",
+    "{No no no} {ima ga saikou!}",
+    "{Datte} {datte}, {ima ga saikou!}",
+    "",
+    "{Ah! Honoka na yokan kara hajimari}",
+    "{Ah! Hikari o oikakete kita nda yo... }"
+  ]
+}

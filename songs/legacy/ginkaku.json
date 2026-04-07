@@ -1,0 +1,484 @@
+{
+  "name": "GALAXY HidE and SeeK",
+  "id": "ginkaku",
+  "group": "aqours",
+  "mp3": "sound/galaxy_hide_and_seek.mp3",
+  "ogg": "sound/galaxy_hide_and_seek.ogg",
+  "mapping": [
+    {
+      "range": [
+        24.3,
+        30.5
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        31,
+        37.4
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        37.4,
+        40.8
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        40.8,
+        47.7
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        47.7,
+        52.2
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        53.7,
+        54.7
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        54.7,
+        59.5
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        59.5,
+        67
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        67,
+        71.8
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        71.8,
+        75.5
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        75.5,
+        81
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        81,
+        85.4
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        99,
+        105.5
+      ],
+      "ans": [
+        4
+      ]
+    },
+    {
+      "range": [
+        106,
+        112.2
+      ],
+      "ans": [
+        4
+      ]
+    },
+    {
+      "range": [
+        112.2,
+        115.7
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        115.7,
+        122.2
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        122.2,
+        128.3
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        128.5,
+        129.8
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        129.8,
+        134.3
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        134.3,
+        142
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        142,
+        146.8
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        146.8,
+        150.2
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        150.2,
+        155
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        156,
+        159
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        160,
+        163.1
+      ],
+      "ans": [
+        4
+      ]
+    },
+    {
+      "range": [
+        163.1,
+        167
+      ],
+      "ans": [
+        4
+      ]
+    },
+    {
+      "range": [
+        167,
+        170
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        170,
+        170.8
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        170.8,
+        173.3
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        190.5,
+        194.1
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        194.1,
+        200.6
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        200.6,
+        206
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        207,
+        208.2
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        208.2,
+        212.6
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        212.6,
+        220.6
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        220.6,
+        225.1
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        225.1,
+        228.8
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        228.8,
+        234.1
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    },
+    {
+      "range": [
+        234.1,
+        238.7
+      ],
+      "ans": [
+        4,
+        7,
+        8
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "command": "group",
+      "members": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        12,
+        13
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        24,
+        25
+      ]
+    }
+  ],
+  "lyrics": [
+    "{Moshikashite hontou no watashi wa}",
+    "{Chikyuu janai tokoro de umareta kamo}",
+    "{Samishikatta zutto}",
+    "{Kokoro tsuujiau hito wa doko deshou?}",
+    "{ah meiro de wa} {hitori}",
+    "",
+    "{Koko dayo tte dareka no koe ga kikoeru}",
+    "{Yasashii sono koe de michibiite kudasai}",
+    "{Sore dake de watashi wa kono hoshi no koto ga}",
+    "{Tottemo suki ni nareru mitai}",
+    "{Hayaku deaimashou}",
+    "{I'm calling calling you}",
+    "",
+    "{Sono hito mo watashi wo sagashite}",
+    "{Tabi shiteru hazu datte nazeka wakaru no}",
+    "{Mitsukenakya kitto}",
+    "{Kokoro tsuujiau hito yo mattemasu ka?}",
+    "{ah deguchi wa}",
+    "{Chikai no}",
+    "",
+    "{Terepashii de anata no ima wo tsutaete}",
+    "{Tsunagaru nara ima ga kiseki no hajimari}",
+    "{Korekara no watashi wa kono hoshi de motto}",
+    "{Suteki na omoide wo tsukuru no}",
+    "{Dakara deaimashou}",
+    "",
+    "{Hiroi sekai sore wa unmei}",
+    "{Kanarazu hikare au}",
+    "{Kakurenbo no tochuu mitai}",
+    "{\"Mada dayo\" to wa} {onegai} {iwanaide}",
+    "",
+    "{Ato ippo desu ka?}",
+    "{Kokoro tsuujiau hito ga mattemasu ne}",
+    "{ah dareka wa...}",
+    "{Anata!}",
+    "",
+    "{Koko dayo tte anata no koe ga kikoeru}",
+    "{Yasashii sono koe de michibiite kudasai}",
+    "{Sore dake de watashi wa kono hoshi no koto ga}",
+    "{Tottemo suki ni nareru mitai}",
+    "{Hayaku deaimashou}",
+    "{I'm calling calling you }"
+  ]
+}

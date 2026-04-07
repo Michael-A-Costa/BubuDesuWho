@@ -1,0 +1,602 @@
+{
+  "name": "MY Mai☆TONIGHT",
+  "group": "aqours",
+  "mp3": "sound/my_mai_tonight.mp3",
+  "ogg": "sound/my_mai_tonight.ogg",
+  "id": "maimai",
+  "mapping": [
+    {
+      "range": [
+        5.5,
+        12
+      ],
+      "ans": [
+        5,
+        7
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        12,
+        19.6
+      ],
+      "ans": [
+        5,
+        7
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        30.7,
+        33.3
+      ],
+      "ans": [
+        4,
+        5,
+        7
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        33.3,
+        36.7
+      ],
+      "ans": [
+        6,
+        8,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        36.7,
+        39
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        39,
+        41.4
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        41.4,
+        47.2
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        47.2,
+        49.9
+      ],
+      "ans": [
+        5
+      ]
+    },
+    {
+      "range": [
+        49.9,
+        52
+      ],
+      "ans": [
+        4,
+        5,
+        7
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        52,
+        53.4
+      ],
+      "ans": [
+        6,
+        8,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        53.4,
+        54.7
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        54.7,
+        59.8
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        59.8,
+        70.5
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        70.5,
+        75.9
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        75.9,
+        81.6
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        81.6,
+        82.9
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        82.9,
+        84.6
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        84.6,
+        86.8
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        86.8,
+        88.2
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        88.2,
+        90
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        90,
+        92.7
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        102.9,
+        108.9
+      ],
+      "ans": [
+        4
+      ]
+    },
+    {
+      "range": [
+        108.9,
+        113.8
+      ],
+      "ans": [
+        5
+      ]
+    },
+    {
+      "range": [
+        113.8,
+        119.9
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        119.9,
+        122.5
+      ],
+      "ans": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "range": [
+        122.5,
+        124.5
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "range": [
+        124.5,
+        125.7
+      ],
+      "ans": [
+        2
+      ]
+    },
+    {
+      "range": [
+        125.7,
+        127.2
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        127.2,
+        128.5
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        128.5,
+        129.7
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        129.7,
+        134.9
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        134.9,
+        145.5
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        145.5,
+        150.9
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        150.9,
+        156.7
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        156.7,
+        157.9
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        157.9,
+        159.8
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        159.8,
+        162
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        162,
+        163.2
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        163.2,
+        164.9
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        164.9,
+        169
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        193.2,
+        198.2
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        198.2,
+        200.9
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        200.9,
+        206
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        206.8,
+        208.5
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        208.5,
+        219.1
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        219.1,
+        224.8
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        224.8,
+        230.2
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        230.2,
+        231.8
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        231.8,
+        233.2
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        233.2,
+        235.8
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        235.8,
+        237
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        237,
+        238.7
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        238.7,
+        243
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        240.9,
+        245.3
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        242.4,
+        244
+      ],
+      "ans": [
+        0
+      ]
+    },
+    {
+      "range": [
+        246.5,
+        252.4
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        247.8,
+        249.3
+      ],
+      "ans": [
+        0
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "command": "group",
+      "members": [
+        0,
+        1
+      ]
+    }
+  ],
+  "lyrics": [
+    "{Odore odore atsuku naru tame}",
+    "{Hito wa umareta hazu sa}",
+    "",
+    "{Ima chiisaku moeteru} {mada chiisana homura ga}",
+    "{Hitotsu ni nareba} {kiseki ga umare}",
+    "{Kono sekai wa itsumo akiramenai kokoro ni}",
+    "{Kotae janaku} {michi wo sagasu} {tegakari wo} {kureru kara}",
+    "{Saigo made tsuyoki de ikou}",
+    "",
+    "{Odore odore atsuku naru tame hito wa umarete kita no?}",
+    "{Odore odore kitto souda yo}",
+    "{Dakara yumemite odorou}",
+    "",
+    "{MY mai☆TONIGHT} {(DANCING TONIGHT)} {saikou no}",
+    "{MY mai☆TONIGHT} {(DANCING TONIGHT)} {kyou ni shiyou!}",
+    "",
+    "{Itsuka hirogaru darou hora ookiku hirogare}",
+    "{Ganbaru chikara kiseki wo yonderu}",
+    "{Kono sekai no naka de kagayakitai kokoro ga}",
+    "{Atsumaru toki} {atarashii koto} {omoitsuki} {hashiridasu}",
+    "{Ashimoto ga} {mienai kedo} {hane mitai ni tenobashite}",
+    "",
+    "{Odore odore akogareta no wa zutto matataku hikari}",
+    "{Odore odore kitto itsuka wa}",
+    "{Kanau hazu da to odorou}",
+    "",
+    "{MY mai☆TONIGHT} {(DANCING TONIGHT)} {ashita e to}",
+    "{MY mai☆TONIGHT} {(DANCING TONIGHT)} {tsunageyou!}",
+    "",
+    "{Mune no koe ni michibikarete} {michi ga mata hiraketa yo}",
+    "{Saigo made tsuyoki de ikou} {(ha)}",
+    "",
+    "{Odore odore atsuku naru tame hito wa umarete kita no?}",
+    "{Odore odore kitto souda yo}",
+    "{Dakara yumemite odorou}",
+    "",
+    "{MY mai☆TONIGHT} {(DANCING TONIGHT)} {saikou no}",
+    "{MY mai☆TONIGHT} {(DANCING TONIGHT)} {kyou ni shiyou! }",
+    "",
+    "{MY mai☆TONIGHT} {(DANCING TONIGHT)}",
+    "{MY mai☆TONIGHT} {(DANCING TONIGHT)}"
+  ]
+}

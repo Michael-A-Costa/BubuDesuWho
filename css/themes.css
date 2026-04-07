@@ -1,0 +1,550 @@
+/* fonts */
+@font-face { font-family: Courgette;      src: url(../fonts/Courgette/Courgette-Regular.ttf); }
+@font-face { font-family: Raleway;        src: url(../fonts/Raleway/Raleway-Regular.ttf); }
+@font-face { font-family: Dancing Script; src: url(../fonts/Dancing_Script/DancingScript-Regular.ttf); }
+@font-face { font-family: IndieFlower;    src: url(../fonts/Indie_Flower/IndieFlower.ttf); }
+
+
+/* transitions */
+.navbar,
+.main,
+#song-title,
+#song-title .word,
+#check,
+.meter,
+#menu-button,
+#lyrics-container,
+#lyrics,
+#player-bar
+{ transition: all 0.5s ease; }
+
+
+/*===============================================
+Component rules — written once, driven by CSS vars.
+Each theme sets --t-* variables on html.theme-X.
+===============================================*/
+
+.navbar[class*="theme-"]              { background: var(--t-navbar-bg, revert); }
+.slot[class*="theme-"]                { background-color: var(--t-slot-bg, var(--slot-idle)); }
+.slot.slot-active[class*="theme-"]    { background-color: var(--t-slot-active-bg, var(--slot-active)); }
+.meter[class*="theme-"]               { background: var(--t-meter-bg, var(--meter-bg)); }
+#check[class*="theme-"]               { background: var(--t-check-bg, var(--accent)); border-color: var(--t-check-dark, var(--accent-dark)); }
+#check[class*="theme-"]:hover,
+#check[class*="theme-"]:focus         { background: var(--t-check-dark, var(--accent-dark)); }
+#song-title[class*="theme-"]          { color: var(--t-title-color, inherit); text-shadow: var(--t-title-shadow, none); }
+#lyrics-container[class*="theme-"]    { background: var(--t-lyrics-bg, var(--lyrics-bg)); }
+#lyrics[class*="theme-"]              { color: var(--t-lyrics-color, var(--lyrics-color)); }
+.lyric.lyric-active[class*="theme-"]  { text-shadow: 2px 0 4px var(--t-lyric-shadow), 0 2px 4px var(--t-lyric-shadow); }
+#menu-button[class*="theme-"]         { color: var(--t-menu-btn-color, var(--menu-btn-color)); }
+#player-bar[class*="theme-"]          { background: var(--t-player-bg, var(--player-bar-bg)); border-top-color: var(--t-player-border, var(--player-bar-border)); }
+#player-bar[class*="theme-"] #progress-bar { background: var(--t-check-bg, var(--progress-fill)); }
+#player-bar[class*="theme-"] #volume-bar   { background: var(--t-check-bg, var(--progress-fill)); }
+
+
+/*===============================================
+Theme variable blocks — Muse
+===============================================*/
+
+html.theme-borarara {
+  --t-navbar-bg:      linear-gradient(to bottom, #FC67A3, #FCBFD7);
+  --t-slot-bg:        #FFE8F4;
+  --t-slot-active-bg: #F7C3DF;
+  --t-meter-bg:       #F7CD42;
+  --t-check-bg:       #F7CD42;
+  --t-check-dark:     #D8AB2F;
+  --t-title-color:    #fff;
+  --t-lyrics-bg:      #FFE8F4;
+  --t-lyrics-color:   #6D0831;
+  --t-lyric-shadow:   #FFBFD8;
+  --t-player-bg:      #FCBFD7;
+  --t-player-border:  #F7A0C0;
+}
+
+html.theme-bokuhika {
+  --t-navbar-bg:      #F9CBDB;
+  --t-slot-bg:        #FFE8F4;
+  --t-slot-active-bg: #F7C3DF;
+  --t-meter-bg:       #db629a;
+  --t-check-bg:       #db629a;
+  --t-check-dark:     #b73e74;
+  --t-title-color:    #db629a;
+  --t-title-shadow:   2px 0px 8px #fff, 0px 2px 8px #fff, 0px 0px 4px #fff;
+  --t-lyrics-bg:      #FFE8F4;
+  --t-lyrics-color:   #6D0831;
+  --t-lyric-shadow:   #FFBFD8;
+  --t-player-bg:      #F9CBDB;
+  --t-player-border:  #EDACC3;
+}
+
+
+/*===============================================
+Theme variable blocks — Aqours
+===============================================*/
+
+html.theme-koiaqua {
+  --t-navbar-bg:      #C3E1F7;
+  --t-slot-bg:        #EDF6F9;
+  --t-slot-active-bg: #B7DCFF;
+  --t-meter-bg:       #2C5F99;
+  --t-check-bg:       #4176AF;
+  --t-check-dark:     #2C5F99;
+  --t-title-color:    #fff;
+  --t-title-shadow:   0px 0 10px #003F60;
+  --t-player-bg:      #C3E1F7;
+  --t-player-border:  #9DC8EE;
+}
+
+html.theme-genki {
+  --t-navbar-bg:      #F4C8D6;
+  --t-slot-bg:        #DDF8FF;
+  --t-slot-active-bg: #A6E0ED;
+  --t-meter-bg:       #F87900;
+  --t-check-bg:       #23AFDD;
+  --t-check-dark:     #098CB5;
+  --t-title-color:    #FFFFFF;
+  --t-menu-btn-color: #F13688;
+  --t-player-bg:      #F4C8D6;
+  --t-player-border:  #E0A8BC;
+}
+
+html.theme-yozora {
+  --t-navbar-bg:      #3E3F4F;
+  --t-slot-bg:        #EDEFF7;
+  --t-slot-active-bg: #B6C8DB;
+  --t-meter-bg:       #4C6493;
+  --t-check-bg:       #667EAA;
+  --t-check-dark:     #4C6493;
+  --t-title-color:    #E5E5E5;
+  --t-title-shadow:   0px 0px 10px #fff;
+  --t-menu-btn-color: #E5E5E5;
+  --t-lyrics-bg:      #EDEFF7;
+  --t-lyrics-color:   #1C2F6B;
+  --t-lyric-shadow:   #ACB4EF;
+  --t-player-bg:      #3E3F4F;
+  --t-player-border:  #5a5b70;
+}
+
+html.theme-strawberry {
+  --t-navbar-bg:      #F5EDFC;
+  --t-slot-bg:        #F4EAF7;
+  --t-slot-active-bg: #D8BAE2;
+  --t-meter-bg:       #96244E;
+  --t-check-bg:       #BA436E;
+  --t-check-dark:     #96244E;
+  --t-title-color:    #BA436E;
+  --t-player-bg:      #F5EDFC;
+  --t-player-border:  #D9CBE8;
+}
+
+html.theme-guilty {
+  --t-navbar-bg:      #EAE6ED;
+  --t-slot-bg:        #F4EAF7;
+  --t-slot-active-bg: #D8BAE2;
+  --t-meter-bg:       #77096C;
+  --t-check-bg:       #77096C;
+  --t-check-dark:     #5E0555;
+  --t-title-color:    #77096C;
+  --t-lyrics-bg:      #F4EAF7;
+  --t-lyrics-color:   #7F507A;
+  --t-lyric-shadow:   #FF9BF5;
+  --t-player-bg:      #EAE6ED;
+  --t-player-border:  #D0CCDA;
+}
+
+html.theme-tokimeki {
+  --t-navbar-bg:      #D3EDE1;
+  --t-slot-bg:        #E8DBD5;
+  --t-slot-active-bg: #D1B7B5;
+  --t-meter-bg:       #583F3A;
+  --t-title-color:    #1C3D04;
+  --t-player-bg:      #D3EDE1;
+  --t-player-border:  #B5D9C7;
+}
+
+html.theme-daisuki {
+  --t-navbar-bg:      #E2D7D7;
+  --t-meter-bg:       #E2B031;
+  --t-check-bg:       #ED80CC;
+  --t-check-dark:     #D660B0;
+  --t-title-shadow:   0px 0px 20px #FFF, 0px 0px 5px #FFF;
+  --t-menu-btn-color: #49AFC1;
+  --t-player-bg:      #E2D7D7;
+  --t-player-border:  #C9C0C0;
+}
+
+html.theme-yumeuta {
+  --t-navbar-bg:      #F9E1CC;
+  --t-slot-bg:        #E3E6F9;
+  --t-slot-active-bg: #E1C1F4;
+  --t-meter-bg:       #932319;
+  --t-check-bg:       #FFA749;
+  --t-check-dark:     #F7A145;
+  --t-title-color:    white;
+  --t-title-shadow:   0px 0px 7px #b75205, 0px 0px 7px #b75205;
+  --t-lyrics-bg:      #E3E6F9;
+  --t-lyrics-color:   #1c2e93;
+  --t-lyric-shadow:   #B3ADF7;
+  --t-player-bg:      #F9E1CC;
+  --t-player-border:  #E8C4A0;
+}
+
+html.theme-mijuku {
+  --t-navbar-bg:      #C1A4D6;
+  --t-slot-bg:        #E5E3F7;
+  --t-slot-active-bg: #C9C4F2;
+  --t-meter-bg:       #853FC6;
+  --t-check-bg:       #9956D8;
+  --t-check-dark:     #853FC6;
+  --t-title-color:    #EDEDED;
+  --t-title-shadow:   0px 0px 15px #260C3F;
+  --t-lyrics-bg:      #E5E3F7;
+  --t-lyrics-color:   #59208E;
+  --t-lyric-shadow:   #B3ADF7;
+  --t-player-bg:      #C1A4D6;
+  --t-player-border:  #A888BC;
+}
+
+html.theme-yumetera {
+  --t-navbar-bg:      #66376D;
+  --t-slot-bg:        #E3E5F7;
+  --t-slot-active-bg: #ACB3E0;
+  --t-meter-bg:       #4C1443;
+  --t-check-bg:       #CE70D3;
+  --t-check-dark:     #B75EBC;
+  --t-title-color:    #F5E6B3;
+  --t-title-shadow:   0px 0px 15px #FFF7E0;
+  --t-menu-btn-color: #F5E6B3;
+  --t-lyrics-bg:      #E3E5F7;
+  --t-lyrics-color:   #66376D;
+  --t-lyric-shadow:   #F4ADDF;
+  --t-player-bg:      #3a1f40;
+  --t-player-border:  #66376D;
+}
+
+html.theme-sorahare {
+  --t-navbar-bg:      linear-gradient(to bottom right, #D4EEFC, #8DC8E8);
+  --t-slot-bg:        #F4F9FF;
+  --t-slot-active-bg: #C6EAFD;
+  --t-meter-bg:       #64A1D1;
+  --t-title-color:    #074084;
+  --t-title-shadow:   -1px 0 5px white, 0 1px 5px white, 1px 0 5px white, 0 -1px 5px white;
+  --t-lyrics-bg:      #F4F9FF;
+  --t-player-bg:      #8DC8E8;
+  --t-player-border:  #6BAED4;
+}
+
+html.theme-omoi {
+  --t-navbar-bg:      #8DC8E8;
+  --t-slot-bg:        #FFE9D3;
+  --t-slot-active-bg: #FFCD9B;
+  --t-meter-bg:       #D38FD0;
+  --t-check-bg:       #D38FD0;
+  --t-check-dark:     #C479C0;
+  --t-title-color:    #E9A9E8;
+  --t-title-shadow:   -1px 0 5px white, 0 1px 5px white, 1px 0 5px white, 0 -1px 5px white;
+  --t-lyrics-color:   #bf7733;
+  --t-lyric-shadow:   #e9a9e8;
+  --t-player-bg:      #8DC8E8;
+  --t-player-border:  #6BAED4;
+}
+
+html.theme-mirai {
+  --t-navbar-bg:      #48455B;
+  --t-slot-bg:        #FCF4D4;
+  --t-slot-active-bg: #FCE48D;
+  --t-meter-bg:       #D38FD0;
+  --t-check-bg:       #D38FD0;
+  --t-check-dark:     #C479C0;
+  --t-title-color:    #E07BB2;
+  --t-title-shadow:   0 0 20px white, 0 0 8px white;
+  --t-menu-btn-color: #91425E;
+  --t-lyrics-bg:      #FCF4D4;
+  --t-lyrics-color:   #91425E;
+  --t-lyric-shadow:   #F7C5DF;
+  --t-player-bg:      #48455B;
+  --t-player-border:  #605d75;
+}
+
+html.theme-jingle {
+  --t-navbar-bg:      #142735;
+  --t-slot-bg:        #F5F7D2;
+  --t-slot-active-bg: #F4EA5F;
+  --t-meter-bg:       #083E66;
+  --t-check-bg:       #397FB2;
+  --t-check-dark:     #1F6291;
+  --t-title-color:    #F7E451;
+  --t-title-shadow:   0px 0px 8px white;
+  --t-menu-btn-color: white;
+  --t-lyrics-bg:      #F5F7D2;
+  --t-lyrics-color:   #0C3A5B;
+  --t-player-bg:      #142735;
+  --t-player-border:  #1F3A50;
+}
+
+html.theme-cinderella {
+  --t-navbar-bg:      #f2c9ec;
+  --t-slot-bg:        #f1defc;
+  --t-slot-active-bg: #e7bdfc;
+  --t-meter-bg:       #8665f2;
+  --t-check-bg:       #b579f2;
+  --t-check-dark:     #732dc4;
+  --t-title-color:    #8a70e0;
+  --t-title-shadow:   2px 1px 8px #d980f2;
+  --t-menu-btn-color: #F13688;
+  --t-lyrics-bg:      #f1defc;
+  --t-lyrics-color:   #6d64e5;
+  --t-player-bg:      #f2c9ec;
+  --t-player-border:  #DEB0D8;
+}
+
+html.theme-taiyou {
+  --t-navbar-bg:      #8e644f;
+  --t-slot-bg:        #f9e4bb;
+  --t-slot-active-bg: #fcd079;
+  --t-meter-bg:       #ea9102;
+  --t-check-bg:       #f4c03d;
+  --t-check-dark:     #ea9102;
+  --t-title-color:    white;
+  --t-menu-btn-color: white;
+  --t-player-bg:      #8e644f;
+  --t-player-border:  #7a5240;
+}
+
+
+/*===============================================
+Exception rules — special effects not expressible as a single var
+===============================================*/
+
+/* bokuhika: custom font on title */
+#song-title.theme-bokuhika { font-family: IndieFlower, serif; }
+
+/* koiaqua: main background */
+.main.theme-koiaqua { background: #89C4FF; }
+
+/* genki: per-word title colors, main bg image, slots area */
+#song-title.theme-genki .word:nth-of-type(3) { color: #F87900; }
+#song-title.theme-genki .word:nth-of-type(4) { color: #23AFDD; }
+#song-title.theme-genki .word:nth-of-type(5) { color: #F13688; }
+.main.theme-genki { background-image: url('images/theme-genki.png'); }
+#slots.theme-genki { background-color: white; }
+
+/* yozora: dark main background, menu button text-shadow */
+.main.theme-yozora { background: #7F808C; }
+#menu-button.theme-yozora { text-shadow: 0px 0px 5px #fff; }
+
+/* strawberry: dark main background */
+.main.theme-strawberry { background: #2F2E44; }
+
+/* guilty: dark main background */
+.main.theme-guilty { background: #312E3D; }
+
+/* tokimeki: light main background */
+.main.theme-tokimeki { background: #ECF4EB; }
+
+/* daisuki: per-word title colors */
+#song-title.theme-daisuki .word:nth-of-type(1) { color: #FD8AD8; }
+#song-title.theme-daisuki .word:nth-of-type(2) { color: #FFB801; }
+#song-title.theme-daisuki .word:nth-of-type(3) { color: #48DDFD; }
+
+/* yumeuta: main background, correct/wrong slot variants */
+.main.theme-yumeuta { background: #fff2e8; }
+.slot.slot-correct.theme-yumeuta              { background-color: #9FE89B; }
+.slot.slot-correct.slot-active.theme-yumeuta  { background-color: #74D66F; }
+.slot.slot-wrong.theme-yumeuta                { background-color: #F9CACA; }
+.slot.slot-wrong.slot-active.theme-yumeuta    { background-color: #EF7F7F; }
+
+/* mijuku: main background */
+.main.theme-mijuku { background: #F9F2F7; }
+
+/* yumetera: dark main background, meter text color, menu button text-shadow */
+.main.theme-yumetera { background: #1A1A3F; }
+.meter.theme-yumetera { color: #F5E6B3; text-shadow: 0px 0px 15px #FFF7E0; }
+#menu-button.theme-yumetera { text-shadow: 0px 0px 15px #FFF7E0; }
+
+/* sorahare: main gradient, custom font, slot box-shadow */
+.main.theme-sorahare {
+  background: linear-gradient(to bottom right, #D6F1FF, #BDE7FC);
+}
+#song-title.theme-sorahare { font-family: Courgette, serif; }
+.slot.theme-sorahare      { box-shadow: 0px 0px 7px white; }
+.slot.slot-active.theme-sorahare { box-shadow: none; }
+
+/* omoi: main background */
+.main.theme-omoi { background: #EAF6FC; }
+
+/* mirai: dark main background, custom font and letter-spacing on title */
+.main.theme-mirai { background: none; }
+#song-title.theme-mirai { font-family: Raleway, sans-serif; letter-spacing: 3px; }
+
+/* jingle: dark background, bg image, per-word title colors, custom lyric shadow */
+.main.theme-jingle {
+  background-color: #151628;
+  background-image: url('images/theme-jingle.png');
+}
+#slots.theme-jingle { background-color: #151628; }
+#song-title.theme-jingle .word:nth-of-type(3) { color: black; }
+#song-title.theme-jingle .word:nth-of-type(4) { color: white; }
+.lyric.lyric-active.theme-jingle { text-shadow: 0px 0px 5px #378DCC; }
+
+/* cinderella: custom font, per-word title colors, navbar bg image, two-color lyric shadow */
+#song-title.theme-cinderella { font-family: Dancing Script, serif; font-weight: bold; }
+#song-title.theme-cinderella .word:nth-of-type(1) { color: #ffee72; }
+#song-title.theme-cinderella .word:nth-of-type(2) { color: #ea69d7; }
+#song-title.theme-cinderella .word:nth-of-type(3) { color: #e480f2; }
+#song-title.theme-cinderella .word:nth-of-type(4) { color: #ef67b6; }
+.navbar.theme-cinderella { background-image: url(images/theme-cinderella-nav.png); }
+.lyric.lyric-active.theme-cinderella { text-shadow: 2px 0px 4px #d785ce, 0px 2px 4px #FFBFD8; }
+
+/* taiyou: bg images, per-word title word shadow */
+.main.theme-taiyou {
+  background-color: #fffce5;
+  background-image: url('images/theme-taiyou.png'), url('images/theme-taiyou2.png');
+}
+#slots.theme-taiyou {
+  background-color: #fffce5;
+  background-image: url('images/theme-taiyou2.png');
+}
+#song-title.theme-taiyou .word:nth-of-type(1) {
+  text-shadow: 0px 0px 8px #f9ed09, 0px 0px 8px #f9ed09, 0px 0px 2px #edbc0b;
+}
+
+
+/*===============================================
+Player bar theme colors
+background and border-top are driven by --t-player-bg / --t-player-border above.
+Only play-button accent vars and dark-theme UI vars need to be set here.
+===============================================*/
+
+#player-bar.theme-borarara   { --play-btn-bg: #F7CD42;  --play-btn-border: #D8AB2F; --play-btn-color: #333; }
+#player-bar.theme-bokuhika   { --play-btn-bg: #db629a;  --play-btn-border: #b73e74; }
+#player-bar.theme-koiaqua    { --play-btn-bg: #4176AF;  --play-btn-border: #2C5F99; }
+#player-bar.theme-genki      { --play-btn-bg: #23AFDD;  --play-btn-border: #098CB5; }
+#player-bar.theme-strawberry { --play-btn-bg: #BA436E;  --play-btn-border: #96244E; }
+#player-bar.theme-guilty     { --play-btn-bg: #77096C;  --play-btn-border: #5E0555; }
+#player-bar.theme-tokimeki   { --play-btn-bg: #583F3A;  --play-btn-border: #3e2a26; }
+#player-bar.theme-daisuki    { --play-btn-bg: #ED80CC;  --play-btn-border: #D660B0; }
+#player-bar.theme-yumeuta    { --play-btn-bg: #FFA749;  --play-btn-border: #e08030; --play-btn-color: #333; }
+#player-bar.theme-mijuku     { --play-btn-bg: #9956D8;  --play-btn-border: #853FC6; }
+#player-bar.theme-sorahare   { --play-btn-bg: #64A1D1;  --play-btn-border: #4A87B7; }
+#player-bar.theme-omoi       { --play-btn-bg: #D38FD0;  --play-btn-border: #C479C0; }
+#player-bar.theme-cinderella { --play-btn-bg: #b579f2;  --play-btn-border: #732dc4; }
+
+/* Dark-navbar themes: override player bar UI vars so buttons stay legible */
+#player-bar.theme-yozora {
+  --text-base:       #e0e0e0;
+  --text-muted:      rgba(255,255,255,0.55);
+  --btn-bg:          rgba(255,255,255,0.1);
+  --btn-bg-hover:    rgba(255,255,255,0.18);
+  --btn-border:      rgba(255,255,255,0.25);
+  --play-btn-bg:     #667EAA;
+  --play-btn-border: #4C6493;
+}
+#player-bar.theme-yumetera {
+  --text-base:       #e8d8f0;
+  --text-muted:      rgba(232,216,240,0.6);
+  --btn-bg:          rgba(255,255,255,0.1);
+  --btn-bg-hover:    rgba(255,255,255,0.18);
+  --btn-border:      rgba(255,255,255,0.25);
+  --play-btn-bg:     #CE70D3;
+  --play-btn-border: #B75EBC;
+}
+#player-bar.theme-mirai {
+  --text-base:       #e0d8f0;
+  --text-muted:      rgba(224,216,240,0.6);
+  --btn-bg:          rgba(255,255,255,0.1);
+  --btn-bg-hover:    rgba(255,255,255,0.18);
+  --btn-border:      rgba(255,255,255,0.25);
+  --play-btn-bg:     #D38FD0;
+  --play-btn-border: #C479C0;
+}
+#player-bar.theme-jingle {
+  --text-base:       #d0e8f8;
+  --text-muted:      rgba(208,232,248,0.6);
+  --btn-bg:          rgba(255,255,255,0.1);
+  --btn-bg-hover:    rgba(255,255,255,0.18);
+  --btn-border:      rgba(255,255,255,0.25);
+  --play-btn-bg:     #397FB2;
+  --play-btn-border: #1F6291;
+}
+#player-bar.theme-taiyou {
+  --text-base:       #fff5e8;
+  --text-muted:      rgba(255,245,232,0.65);
+  --btn-bg:          rgba(255,255,255,0.12);
+  --btn-bg-hover:    rgba(255,255,255,0.2);
+  --btn-border:      rgba(255,255,255,0.3);
+  --play-btn-bg:     #f4c03d;
+  --play-btn-border: #ea9102;
+  --play-btn-color:  #333;
+}
+
+
+/*===============================================
+Dark mode theme adaptations
+In dark mode: neutralize light slot/main/lyrics backgrounds.
+Navbar accent strips and check/meter accent colors are preserved.
+===============================================*/
+
+/* Reset main/body backgrounds to dark base */
+html.dark-mode .main[class*="theme-"] {
+  background-color: var(--bg-base) !important;
+  background-image: none !important;
+}
+
+/* Reset all slot backgrounds to dark base */
+html.dark-mode .slot[class*="theme-"] {
+  background-color: var(--bg-surface) !important;
+  box-shadow: var(--shadow-medium) !important;
+}
+html.dark-mode .slot.slot-active[class*="theme-"] {
+  background-color: var(--bg-elevated) !important;
+}
+html.dark-mode .slot.slot-correct[class*="theme-"] {
+  background-color: var(--slot-correct) !important;
+}
+html.dark-mode .slot.slot-correct.slot-active[class*="theme-"] {
+  background-color: var(--slot-correct-active) !important;
+}
+html.dark-mode .slot.slot-wrong[class*="theme-"] {
+  background-color: var(--slot-wrong) !important;
+}
+html.dark-mode .slot.slot-wrong.slot-active[class*="theme-"] {
+  background-color: var(--slot-wrong-active) !important;
+}
+
+/* Reset slots area background */
+html.dark-mode #slots[class*="theme-"] {
+  background-color: var(--bg-base) !important;
+  background-image: none !important;
+}
+
+/* Reset lyrics container/panel backgrounds */
+html.dark-mode #lyrics-container[class*="theme-"] {
+  background-color: var(--bg-base) !important;
+}
+html.dark-mode #lyrics[class*="theme-"] {
+  background-color: var(--bg-surface) !important;
+  color: var(--lyrics-color) !important;
+}
+
+/* Reset player bar to dark mode defaults — theme colors are light-mode only */
+html.dark-mode #player-bar[class*="theme-"] {
+  background: #181818 !important;
+  border-top-color: #4d4d4d !important;
+  --text-base:       #ffffff;
+  --text-muted:      #b3b3b3;
+  --btn-bg:          #2a2a2a;
+  --btn-bg-hover:    #3a3a3a;
+  --btn-border:      #4d4d4d;
+  --play-btn-bg:     #1ed760;
+  --play-btn-border: #1db954;
+  --play-btn-color:  #000;
+}
+
+/* Navbar theme backgrounds: keep them — they tint the song header accent strip */
+
+/* #check theme colors: keep them as accent identity colors (they're dark-friendly already) */
+
+/* menu-button theme colors: reset to default in dark mode */
+html.dark-mode #menu-button[class*="theme-"] {
+  color: var(--text-muted);
+}

@@ -1,0 +1,752 @@
+{
+  "name": "Bokura no LIVE Kimi to no LIFE",
+  "ogg": "sound/bokura_no_live_kimi_to_no_life.ogg",
+  "mp3": "sound/bokura_no_live_kimi_to_no_life.mp3",
+  "id": "borarara",
+  "group": "muse",
+  "mapping": [
+    {
+      "range": [
+        27.5,
+        36
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        36,
+        43
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        45.5,
+        49
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        49,
+        54
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        54,
+        59
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        59,
+        63.5
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        63.5,
+        68
+      ],
+      "ans": [
+        2,
+        3
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        68,
+        71.5
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        71.5,
+        74.5
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        75,
+        79.5
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        79.5,
+        84
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        84,
+        89
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        89,
+        93
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        93,
+        97.5
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        97.5,
+        102
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        102,
+        107
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        107,
+        112
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        116,
+        117.5
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        130,
+        138
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        139,
+        146
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        148.5,
+        152
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        152,
+        157
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        157,
+        162
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        162,
+        166
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        166,
+        170
+      ],
+      "ans": [
+        2,
+        3
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        171,
+        175
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        175,
+        177
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        177,
+        180
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        180.5,
+        184.5
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        184.5,
+        189
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        189,
+        194
+      ],
+      "ans": [
+        2
+      ]
+    },
+    {
+      "range": [
+        194,
+        199
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        199,
+        203
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        203,
+        207
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        207,
+        212
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        212,
+        218
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        221,
+        223
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        251,
+        255.5
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        255.5,
+        260
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        260,
+        269.5
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        269.5,
+        274
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        274,
+        278.5
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        278.5,
+        283
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        283,
+        288
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        291.5,
+        293.5
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  ],
+  "lyrics": [
+    "{Tashikana ima yori mo atarashii yume tsukamaetai}",
+    "{Daitan ni tobidaseba O.K. mai raifu}",
+    "{Nozomi wa ookiku ne}",
+    "{Senobi datteba takaku tooku}",
+    "{Mabushii ashita dakishime ni yukou}",
+    "{Zenbu kanaeyou}",
+    "",
+    "{Sou dayo shinjiru dake de}",
+    "{Gun gun mae ni susumu yo}, {kimi ga!}",
+    "",
+    "{Kotae nakute ii nda wakaru kara}",
+    "{Mune ni egaku basho wa onaji}",
+    "{Nando demo akiramezu ni} {sagasu koto ga bokura no chousen}",
+    "{Genki no ondo wa sagaranai}",
+    "{Atsui mama de habataiteku}",
+    "{Akogare o kataru kimi no}",
+    "{Yuzuranai hitomi ga daisuki...} {daisuki!}",
+    "",
+    "{Naite mo sora no iro kawaranaishi aoi mama de}",
+    "{Ima sugu ni aitai ne O.K. sanshain}",
+    "{Narande kanjitai}",
+    "{Rikutsu janaku soba ni itara}",
+    "{Kimochi ga gutto chikadzuku imi ga}",
+    "{Sugu ni tsutawaru yo}",
+    "",
+    "{Sou dane daremo ga hitotsu}",
+    "{Motteru yuuki no kakera wa,} {kimi to!}",
+    "{Issho datteba zutto ne}",
+    "",
+    "{Omoitsuki de ii kara oikakete}",
+    "{Kokoro odoru basho o sagasou}",
+    "{Tsumazuite okiagatte} {mitsume aeru ureshii bouken}",
+    "{Egao wa doko made todoku kana}",
+    "{Yakusoku toka iranai kedo}",
+    "{Itsumademo kimi to itai}",
+    "{Kakenukete issho ni kira kira...} {kira kira!}",
+    "",
+    "{Kotae nakute ii nda wakaru kara}",
+    "{Mune ni egaku basho wa onaji}",
+    "{Nando demo akiramezu ni sagasu koto ga bokura no chousen}",
+    "{Genki no ondo wa sagaranai}",
+    "{Atsui mama de habataiteku}",
+    "{Akogare o kataru kimi no}",
+    "{Yuzuranai hitomi ga daisuki...} {daisuki! }"
+  ]
+}

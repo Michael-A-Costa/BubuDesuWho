@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fb96be">
+
+<title>GanbaWhoby - Changelog</title>
+
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet" />
+<link type="text/css" href="css/styles.css?ver=20170311" rel="stylesheet" />
+
+</head>
+<body>
+
+<div id="sidebar" class="sidebar-collapsed">
+  <ul class="sidebar-nav">
+    <li><a class="select-info" href="index.html">About</a></li>
+    <li><a class="select-info active" href="changelog.html">Changelog</a></li>
+    <li><a class="select-info" href="stats.html">Stats</a></li>
+    <li>
+      <button id="muse-group-button" type="button" class="btn btn-primary group-button" data-value="muse"><img class="group-icon" src="css/images/muse.png"></img></button><button id="aqours-group-button" type="button" class="btn btn-primary group-button" data-value="aqours"><img class="group-icon" src="css/images/aqours.png"></img></button>
+    </li>
+    <li>
+      <button id="wug-group-button" type="button" class="btn btn-primary group-button" data-value="wug"><img class="group-icon" src="css/images/wug.png"></img>
+    </li>
+    <li class="has-feedback">
+      <input class="form-control" id="menu-search"></input>
+      <span class="glyphicon glyphicon-search form-control-feedback"></span>
+    </li>
+  </ul>
+</div>
+
+<div class="main">
+  <span id="menu-button" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+
+  <nav class="navbar navbar-default">
+  <div class="container">
+  <div class="row"><div class="col-xs-10 col-xs-offset-2 col-sm-11 col-sm-offset-1">
+      <h1 class="ruby-pink">Changelog</h1>
+  </div></div>
+  </div>
+  </nav>
+
+  <div class="container"><div class="row"><div class="col-xs-12 info-content">
+  <ul id="changelog">
+  </ul>
+  </div></div></div>
+
+</div>
+
+<template id="change-entry-template">
+  <li class="change-entry">
+    <span class="change-date"></span>: <span class='change-content'></span>
+  </li>
+</template>
+
+<script type="module" src="/src/main.ts"></script>
+<script>
+  if (!('ontouchstart' in window) && !(navigator.msMaxTouchPoints > 0)) {
+    document.documentElement.classList.add('hoverable');
+  }
+</script>
+</body>
+</html>

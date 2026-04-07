@@ -1,0 +1,480 @@
+{
+  "name": "Mijuku DREAMER",
+  "mp3": "sound/mijuku_dreamer.mp3",
+  "ogg": "sound/mijuku_dreamer.ogg",
+  "id": "mijuku",
+  "group": "aqours",
+  "mapping": [
+    {
+      "range": [
+        16,
+        22
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        22,
+        28.5
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        28.5,
+        31.5
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        31.5,
+        34
+      ],
+      "ans": [
+        2
+      ]
+    },
+    {
+      "range": [
+        34,
+        36
+      ],
+      "ans": [
+        1,
+        2,
+        8
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        36,
+        42
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        42,
+        48
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        48,
+        51
+      ],
+      "ans": [
+        5
+      ]
+    },
+    {
+      "range": [
+        51,
+        54
+      ],
+      "ans": [
+        4
+      ]
+    },
+    {
+      "range": [
+        55,
+        58
+      ],
+      "ans": [
+        4,
+        5,
+        7
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        69,
+        74.5
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        74.5,
+        81
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        81,
+        84
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        84,
+        88
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        88,
+        91
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        91,
+        99
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        99,
+        102
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        105,
+        111
+      ]
+    },
+    {
+      "range": [
+        111,
+        116
+      ]
+    },
+    {
+      "range": [
+        116,
+        122
+      ]
+    },
+    {
+      "range": [
+        122,
+        129
+      ]
+    },
+    {
+      "range": [
+        129,
+        135
+      ]
+    },
+    {
+      "range": [
+        135,
+        140
+      ]
+    },
+    {
+      "range": [
+        140,
+        146
+      ]
+    },
+    {
+      "range": [
+        146,
+        153.5
+      ]
+    },
+    {
+      "range": [
+        153.5,
+        159
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        160,
+        164
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        164,
+        173
+      ]
+    },
+    {
+      "range": [
+        208,
+        216
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        216,
+        218
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        219,
+        225
+      ]
+    },
+    {
+      "range": [
+        225,
+        230
+      ]
+    },
+    {
+      "range": [
+        230,
+        236
+      ]
+    },
+    {
+      "range": [
+        236,
+        243
+      ]
+    },
+    {
+      "range": [
+        243,
+        249
+      ]
+    },
+    {
+      "range": [
+        249,
+        253.5
+      ]
+    },
+    {
+      "range": [
+        253.5,
+        260
+      ]
+    },
+    {
+      "range": [
+        260,
+        268
+      ]
+    },
+    {
+      "range": [
+        270,
+        276
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        276,
+        281
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        281,
+        287
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        287,
+        292
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        292,
+        294
+      ]
+    },
+    {
+      "range": [
+        294,
+        299.5
+      ]
+    },
+    {
+      "range": [
+        299.5,
+        305
+      ]
+    },
+    {
+      "range": [
+        305,
+        311
+      ]
+    },
+    {
+      "range": [
+        311,
+        321
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "command": "group",
+      "members": [
+        0,
+        1
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        5,
+        6
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        10,
+        11
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        38,
+        39,
+        40,
+        41
+      ]
+    }
+  ],
+  "lyrics": [
+    "{Itsumo soba ni ite mo tsutaekirenai omoide}",
+    "{kokoro maigo ni naru namida}",
+    "{Wasurete shimaou} {utatte miyou}",
+    "{issho ni ne}",
+    "",
+    "{Kotoba dake ja tarinaisou kotoba sura tarinai}",
+    "{yue ni surechigatte hanarete}",
+    "{Shimatta koto ga} {kanashikatta no zutto}",
+    "{ki ni natteta}",
+    "",
+    "{Wakatte hoshii to negau kimochi ga tomaranakute}",
+    "{kitto kizutsuketa ne soredemo}",
+    "{Akiramekirenai} {jibun no wagamama ima wa}",
+    "{kakusanai kara}",
+    "",
+    "{Chikara o awasete yume no umi o oyoide ikou yo}",
+    "{kyou no umi o}",
+    "",
+    "{Donna mirai ka wa daremo mada shiranai}",
+    "{demo tanoshiku naru hazu dayo}",
+    "{Minna to nara norikoerareru}",
+    "{kore kara nanda ne otagai ganbarou yo}",
+    "{Donna mirai ka wa daremo mada shiranai}",
+    "{demo tanoshiku shitai honto ni}",
+    "{Minna to nara murishitaku naru}",
+    "{seichou shitai na mada mada mijuku DREAMER}",
+    "",
+    "{Yatto hitotsu ni nare sou na bokutachi dakara}",
+    "{Honne butsukeau koto kara hajimeyou}",
+    "{Sono toki mieru hikari ga aru hazu sa}",
+    "",
+    "{Kono mama issho ni yume no umi o oyoide ikou yo}",
+    "{kyou no umi o}",
+    "",
+    "{Arashi ga kitara hareru made asobou}",
+    "{utaeba kitto tanoshii hazu sa}",
+    "{Hitori janai norikoerareru}",
+    "{fushigi nakurai kowaku wa nakunatte}",
+    "{Arashi ga kitara hareru made asobou}",
+    "{sore mo tanoshimi da ne honto sa}",
+    "{Hitori janai muri shinaide yo}",
+    "{tasukeaeba ii waku waku mijuku DREAMER}",
+    "",
+    "{Donna mirai ka wa daremo mada shiranai}",
+    "{demo tanoshiku naru hazu dayo}",
+    "{Minna to nara norikoerareru}",
+    "{kore kara nanda ne otagai} {ganbarou yo}",
+    "{Donna mirai ka wa daremo mada shiranai}",
+    "{demo tanoshiku shitai honto ni}",
+    "{Minna to nara murishitaku naru}",
+    "{seichou shitai na mada mada mijuku DREAMER }"
+  ]
+}

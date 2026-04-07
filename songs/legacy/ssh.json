@@ -1,0 +1,760 @@
+{
+  "name": "Sweet&Sweet Holiday",
+  "id": "ssh",
+  "group": "muse",
+  "mp3": "sound/sweet_sweet_holiday.mp3",
+  "ogg": "sound/sweet_sweet_holiday.ogg",
+  "mapping": [
+    {
+      "range": [
+        2,
+        6.5
+      ],
+      "ans": [
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "range": [
+        6.5,
+        9.5
+      ],
+      "ans": [
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "range": [
+        9.5,
+        13.5
+      ],
+      "ans": [
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "range": [
+        13.5,
+        19
+      ],
+      "ans": [
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "range": [
+        20,
+        22.5
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        22.5,
+        23.5
+      ],
+      "ans": [
+        3,
+        8
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        23.5,
+        25.5
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        25.5,
+        27
+      ],
+      "ans": [
+        1,
+        8
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        27,
+        29.5
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        29.5,
+        30.5
+      ],
+      "ans": [
+        1,
+        3
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        30.5,
+        34
+      ],
+      "ans": [
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "range": [
+        34.8,
+        37
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        37,
+        41
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        41.8,
+        48
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        49,
+        54
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        55,
+        58.2
+      ],
+      "ans": [
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "range": [
+        58.2,
+        64
+      ],
+      "ans": [
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "range": [
+        65,
+        69
+      ],
+      "ans": [
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "range": [
+        69,
+        72.3
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        72.3,
+        76
+      ],
+      "ans": [
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "range": [
+        76,
+        79
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        79,
+        83
+      ],
+      "ans": [
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "range": [
+        83,
+        86
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        86,
+        90
+      ],
+      "ans": [
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "range": [
+        90,
+        95
+      ],
+      "ans": [
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "range": [
+        96.5,
+        99
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        99,
+        100
+      ],
+      "ans": [
+        1,
+        8
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        100,
+        102
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        102,
+        103.5
+      ],
+      "ans": [
+        3,
+        8
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        103.5,
+        106
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        106,
+        107
+      ],
+      "ans": [
+        1,
+        3
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        107,
+        110
+      ],
+      "ans": [
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "range": [
+        111,
+        113.5
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        113.5,
+        118
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        118,
+        125
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        125,
+        131
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        131,
+        134.8
+      ],
+      "ans": [
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "range": [
+        134.8,
+        140.8
+      ],
+      "ans": [
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "range": [
+        141.8,
+        145.5
+      ],
+      "ans": [
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "range": [
+        145.5,
+        148.8
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        148.8,
+        152.5
+      ],
+      "ans": [
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "range": [
+        152.5,
+        155.5
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        155.5,
+        159.5
+      ],
+      "ans": [
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "range": [
+        159.5,
+        162.7
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        162.7,
+        166.5
+      ],
+      "ans": [
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "range": [
+        166.5,
+        172
+      ],
+      "ans": [
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "range": [
+        173,
+        174
+      ],
+      "ans": [
+        1
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        176.5,
+        177.5
+      ],
+      "ans": [
+        8
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        180,
+        181
+      ],
+      "ans": [
+        3
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        182,
+        184
+      ],
+      "ans": [
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "range": [
+        201,
+        204.8
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        204.8,
+        208
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        208,
+        211.5
+      ],
+      "ans": [
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "range": [
+        211.5,
+        214.7
+      ],
+      "ans": [
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "range": [
+        214.7,
+        218.8
+      ],
+      "ans": [
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "range": [
+        218.8,
+        221.8
+      ],
+      "ans": [
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "range": [
+        221.8,
+        225.8
+      ],
+      "ans": [
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "range": [
+        225.8,
+        231
+      ],
+      "ans": [
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "range": [
+        232,
+        234.5
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        234.5,
+        235.5
+      ],
+      "ans": [
+        3,
+        8
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        235.5,
+        238
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        238,
+        239.3
+      ],
+      "ans": [
+        1,
+        8
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        239.3,
+        241.5
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        241.5,
+        242.5
+      ],
+      "ans": [
+        1,
+        3
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        242.5,
+        246
+      ],
+      "ans": [
+        1,
+        3,
+        8
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "command": "group",
+      "members": [
+        11,
+        12
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        32,
+        33
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        50,
+        51
+      ]
+    }
+  ],
+  "lyrics": [
+    "{I know happy holiday, happy holiday}",
+    "{Itsumo no basho ni te atsumare}",
+    "{I say happy holiday, happy holiday}",
+    "{Hanashite kyou wa nandemo Happy time}",
+    "",
+    "{Uwasa no Chokoreeto} {(o~ishii!)}",
+    "{Narande mita yo} {(torokeru ne)}",
+    "{Horonigasa to koi to} {(issho)}",
+    "{Dakara dakara amaku setsunaku}",
+    "",
+    "{Ima ga subete}",
+    "{Sore na no ni kako ga karuku ki ni natta}",
+    "{Henda souda watashi rashikunai yo henda yo}",
+    "",
+    "{Chotto kiite hoshikatta nayami no tane}",
+    "{Kotoba ni shitara waraete kita no}",
+    "{Kotori no oyatsu ni shichau ka na}",
+    "",
+    "{I know happy holiday, happy holiday}",
+    "{Tanoshiku nareru yo atsumare}",
+    "{I say happy holiday, happy holiday}",
+    "{Minna no koe de shiny day}",
+    "{I know happy holiday, happy holiday}",
+    "{Sunao ni kokoro ga hajikeru}",
+    "{I say happy holiday, happy holiday}",
+    "{Daisuki dakara iinda yo Happy time}",
+    "",
+    "{Nijiiro Makaron mo} {(choudai!)}",
+    "{Hitokuchi no mahou} {(kiechau yo)}",
+    "{Kowareyasusa ai no} {(bouken)}",
+    "{Demo ne demo ne motto hoshii no}",
+    "",
+    "{Ima wa ima de}",
+    "{Arifureta hibi no urei keshi satte}",
+    "{Nanda kanda watashitachi rashikute nanda ka}",
+    "",
+    "{Yappa makerarenai ne joujou egao de}",
+    "{Karada no soko ni nemuru genki ga}",
+    "{Harikiri Sutairu kuri dashita}",
+    "",
+    "{We are dancing everyday, dancing everyday}",
+    "{Tanoshiku ugoite sukkiri}",
+    "{You are dancing everyday, dancing everyday}",
+    "{Minna ni kuru yo sunny day}",
+    "{We are dancing everyday, dancing everyday}",
+    "{Sugao de oshaberi hajikero}",
+    "{You are dancing everyday, dancing everyday}",
+    "{Daisuki dakara iinda ne Dancing girls}",
+    "",
+    "{Fu!} {Alright!} {Come on!} {Yay!}",
+    "",
+    "{I know happy holiday, happy holiday}",
+    "{Tanoshiku nareru yo atsumare}",
+    "{I say happy holiday, happy holiday}",
+    "{Minna no koe de shiny day}",
+    "{I know happy holiday, happy holiday}",
+    "{Sunao ni kokoro ga hajikeru}",
+    "{I say happy holiday, happy holiday}",
+    "{Daisuki dakara iinda yo Happy time}",
+    "",
+    "{Choko choko Chokoreeto} {(o~ishii! )}",
+    "{Maka maka Makaron} {(oishii ne)}",
+    "{Torokeru yona koi o} {(shiyo?)}",
+    "{Dakara dakara amaku setsunaku}"
+  ]
+}

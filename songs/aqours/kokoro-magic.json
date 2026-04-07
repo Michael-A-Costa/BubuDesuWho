@@ -1,0 +1,372 @@
+{
+  "name": "KOKORO Magic \"A to Z\"",
+  "ogg": "sound/kokoro_magic.ogg",
+  "id": "kokoro-magic",
+  "group": "aqours",
+  "added": "2026-04",
+  "hidden": false,
+  "slots": [
+
+  ],
+  "lines": [
+    {
+      "lyric_jp": "なんでもないような毎日（でも？）",
+      "parts": [
+        {"lyric": "Nandemo nai you na mainichi",
+          "range": [23.47, 26.73], "ans": [2, 5, 8]},
+        {"lyric": "(demo?)",
+          "range": [26.73, 27.85], "ans": [1, 4, 9]}
+      ]
+    },
+    {
+      "lyric_jp": "きっかけひとつあったら（なに？）",
+      "parts": [
+        {"lyric": "Kikkake hitotsu attara",
+          "range": [27.85, 30.43], "ans": [2, 5, 8]},
+        {"lyric": "(nani?)",
+          "range": [30.43, 31], "ans": [1, 4, 9]}
+      ]
+    },
+    {
+      "lyric_jp": "変わる 変わる 大きく変わる（本当？）",
+      "parts": [
+        {"lyric": "Kawaru kawaru ookiku kawaru",
+          "range": [31, 36.78], "ans": [2, 5, 8]},
+        {"lyric": "(hontou?)",
+          "range": [36.78, 38.11], "ans": [1, 4, 9]}
+      ]
+    },
+    "",
+    {"lyric": "Hikareatte fureatte",
+      "lyric_jp": "惹かれあって 触れあって",
+      "range": [38.11, 45.54], "ans": [3, 6, 7]},
+    {"lyric": "Deau imi wo issho ni sagasou",
+      "lyric_jp": "出会う意味を 一緒に探そう",
+      "range": [45.54, 53.16], "ans": [3, 6, 7]},
+    "",
+    {
+      "lyric_jp": "はじまれ Magic（Magic!）",
+      "parts": [
+        {"lyric": "Hajimare Magic",
+          "range": [53.16, 54.59], "ans": []},
+        {"lyric": "(magic!)",
+          "range": [54.59, 54.78], "ans": [1, 4, 9]},
+        {"lyric": "Minna de Magic",
+          "range": [54.78, 56.46], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "(magic!)",
+          "range": [56.46, 56.86], "ans": [1, 4, 9]}
+      ]
+    },
+    {
+      "lyric_jp": "みんなで Magic（Magic!）",
+      "parts": [
+        {"lyric": "Kokoro no 0",
+          "range": [56.79, 58.61], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "(Hi!)",
+          "range": [58.61, 59.07], "ans": [1, 4, 9]},
+        {"lyric": "Ku",
+          "range": [59.07, 59.53], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "(Hi!)",
+          "range": [59.53, 59.98], "ans": [1, 4, 9]}
+      ]
+    },
+    {
+      "lyric_jp": "ココロの奥で情熱よ 目覚めよ",
+      "parts": [
+        {"lyric": "De",
+          "range": [59.98, 61], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "(Hi! Hi!)",
+          "range": [61, 61.4], "ans": [1, 4, 9]},
+        {"lyric": "Jounetsu yo",
+          "range": [61.4, 64.56], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "Mezame yo",
+          "range": [64.56, 68], "ans": []}
+      ]
+    },
+    {
+      "lyric_jp": "はじまれ Magic（Magic!）",
+      "parts": [
+        {"lyric": "Hajimare Magic",
+          "range": [68, 69.48], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "(magic!)",
+          "range": [69.48, 69.97], "ans": [1, 4, 9]},
+        {"lyric": "Minna mo Magic",
+          "range": [69.97, 71.2], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "(magic!)",
+          "range": [71.2, 71.69], "ans": [1, 4, 9]}
+      ]
+    },
+    {
+      "lyric_jp": "みんなも Magic（Magic!）",
+      "parts": [
+        {"lyric": "Yume mite A",
+          "range": [71.69, 73.53], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "(Hi!)",
+          "range": [73.53, 74.7], "ans": [1, 4, 9]},
+        {"lyric": "To",
+          "range": [74.7, 75.05], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "(Hi!)",
+          "range": [75.05, 75.61], "ans": [1, 4, 9]}
+      ]
+    },
+    {
+      "lyric_jp": "夢見て A to Z 楽しく遊ぼう A to Z",
+      "parts": [
+        {"lyric": "Z",
+          "range": [75.06, 75.96], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "(Hi! Fu~!)",
+          "range": [75.96, 77.24], "ans": [1, 4, 9]},
+        {"lyric": "Tanoshiku",
+          "range": [77.24, 80.18], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "Asobou A to Z",
+          "range": [80.18, 100.54], "ans": []}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "なんにもないワケないから（きっと！）",
+      "parts": [
+        {"lyric": "Nanni mo nai wakenai kara",
+          "range": [100.54, 103.52], "ans": [8]},
+        {"lyric": "(kitto!)",
+          "range": [103.52, 104.76], "ans": [1, 4, 9]}
+      ]
+    },
+    {
+      "lyric_jp": "いっぱい胸のなかに（ある！）",
+      "parts": [
+        {"lyric": "Ippai mune no naka ni",
+          "range": [104.51, 107.36], "ans": [2]},
+        {"lyric": "(aru!)",
+          "range": [107.36, 107.99], "ans": [1, 4, 9]}
+      ]
+    },
+    {"lyric": "Tokimeki no tane ga aru",
+      "lyric_jp": "トキメキの種がある",
+      "range": [107.99, 111.93], "ans": [5]},
+    "",
+    {
+      "lyric_jp": "踏みだす勇気がほしい（だね！）",
+      "parts": [
+        {"lyric": "Fumidasu yuuki ga hoshii",
+          "range": [111.93, 115.04], "ans": [1]},
+        {"lyric": "(da ne!)",
+          "range": [115.04, 115.61], "ans": [2, 5, 8]}
+      ]
+    },
+    {
+      "lyric_jp": "カラダはもう準備できた（そっか！）",
+      "parts": [
+        {"lyric": "Karada wa mou junbi dekita",
+          "range": [115.61, 118.6], "ans": [4]},
+        {"lyric": "(sokka!)",
+          "range": [118.6, 119.14], "ans": [2, 5, 8]}
+      ]
+    },
+    {
+      "lyric_jp": "飛ぼう 飛ぼう 大胆に飛ぼうよ（行っちゃえ！）",
+      "parts": [
+        {"lyric": "Tobou tobou daitan ni tobou yo",
+          "range": [119.14, 124.54], "ans": [9]},
+        {"lyric": "(icchae!)",
+          "range": [124.54, 126.54], "ans": [2, 5, 8]}
+      ]
+    },
+    "",
+    {"lyric": "Mitsumeaeba tsuujiau ne",
+      "lyric_jp": "見つめあえば 通じあうね",
+      "range": [126.19, 133.68], "ans": [3]},
+    {
+      "lyric_jp": "出会いたかった キミのココロに",
+      "parts": [
+        {"lyric": "Deaitakatta",
+          "range": [133.68, 136.82], "ans": [7]},
+        {"lyric": "Kimi no kokoro ni",
+          "range": [136.82, 141.09], "ans": [6]}
+      ]
+    },
+    "",
+    "[next-col]",
+    {
+      "lyric_jp": "輝いて Magic（Magic!）",
+      "parts": [
+        {"lyric": "Kagayaite Magic",
+          "range": [141.09, 142.51], "ans": []},
+        {"lyric": "(magic!)",
+          "range": [142.51, 142.63], "ans": [1, 4, 9]},
+        {"lyric": "Kienai yo Magic",
+          "range": [142.63, 144.5], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "(magic!)",
+          "range": [144.5, 144.97], "ans": [1, 4, 9]}
+      ]
+    },
+    {
+      "lyric_jp": "消えないよ Magic（Magic!）",
+      "parts": [
+        {"lyric": "Souteigai MI",
+          "range": [144.94, 146.64], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "(Hi!)",
+          "range": [146.64, 148.11], "ans": [1, 4, 9]},
+        {"lyric": "RA",
+          "range": [148.11, 148.41], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "(Hi!)",
+          "range": [148.41, 148.72], "ans": [1, 4, 9]}
+      ]
+    },
+    {
+      "lyric_jp": "想定外ミライ 手に入れよう今から",
+      "parts": [
+        {"lyric": "I",
+          "range": [148.2, 149.08], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "(Hi! Hi!)",
+          "range": [149.08, 149.8], "ans": [1, 4, 9]},
+        {"lyric": "Te ni ireyou",
+          "range": [149.8, 152.9], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "Ima kara",
+          "range": [152.9, 156.17], "ans": []}
+      ]
+    },
+    {
+      "lyric_jp": "輝いて Magic（Magic!）",
+      "parts": [
+        {"lyric": "Kagayaite Magic",
+          "range": [156.17, 157.68], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "(magic!)",
+          "range": [157.68, 157.85], "ans": [1, 4, 9]},
+        {"lyric": "Kienai yo Magic",
+          "range": [157.85, 159.58], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "(magic!)",
+          "range": [159.58, 160.09], "ans": [1, 4, 9]}
+      ]
+    },
+    {
+      "lyric_jp": "消えないよ Magic（Magic!）",
+      "parts": [
+        {"lyric": "Yokubare A",
+          "range": [160.09, 161.69], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "(Hi!)",
+          "range": [161.69, 162.91], "ans": [1, 4, 9]},
+        {"lyric": "To",
+          "range": [162.91, 163.2], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "(Hi!)",
+          "range": [163.2, 163.79], "ans": [1, 4, 9]}
+      ]
+    },
+    {
+      "lyric_jp": "欲ばれ A to Z 望めば叶うよ A to Z",
+      "parts": [
+        {"lyric": "Z",
+          "range": [163.22, 164.24], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "(Hi! Fue!)",
+          "range": [164.24, 165.68], "ans": [1, 4, 9]},
+        {"lyric": "Nozomeba",
+          "range": [165.68, 168.44], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "Kanau yo A to Z",
+          "range": [168.44, 188.45], "ans": []}
+      ]
+    },
+    {"lyric": "(ABURAKADABURA)",
+      "range": [186.45, 188.45], "ans": []},
+    {"lyric": "(ABURAKADABURA)",
+      "range": [186.45, 188.45], "ans": []},
+    "",
+    {"lyric": "Motto shiritai tte itte michaou yo",
+      "lyric_jp": "もっと知りたいって 言ってみちゃおうよ",
+      "range": [188.45, 196.5], "ans": [1, 4, 9]},
+    {
+      "lyric_jp": "だってそれしかわからないよ これからだから...！",
+      "parts": [
+        {"lyric": "Datte sore shika wakaranai yo",
+          "range": [196.5, 200.32], "ans": [2, 5, 8]},
+        {"lyric": "Kore kara dakara...!",
+          "range": [200.32, 202.26], "ans": [3, 6, 7]},
+        {"lyric": "From:",
+          "range": [202.26, 203.84], "ans": []},
+        {"lyric": "Https://sites.google.com/site/lovelivesunshineccl/",
+          "range": [203.84, 218.01], "ans": [2]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "はじまれ Magic（Magic!）",
+      "parts": [
+        {"lyric": "Hajimare Magic",
+          "range": [218.01, 219.55], "ans": []},
+        {"lyric": "(magic!)",
+          "range": [219.55, 220.06], "ans": [1, 4, 9]},
+        {"lyric": "Minna de Magic",
+          "range": [220.06, 221.34], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "(magic!)",
+          "range": [221.34, 221.85], "ans": [1, 4, 9]}
+      ]
+    },
+    {
+      "lyric_jp": "みんなで Magic（Magic!）",
+      "parts": [
+        {"lyric": "Kokoro no 0",
+          "range": [221.85, 223.55], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "(Hi!)",
+          "range": [223.55, 223.97], "ans": [1, 4, 9]},
+        {"lyric": "Ku",
+          "range": [223.97, 224.39], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "(Hi!)",
+          "range": [224.39, 224.82], "ans": [1, 4, 9]}
+      ]
+    },
+    {
+      "lyric_jp": "ココロの奥で情熱よ 目覚めよ",
+      "parts": [
+        {"lyric": "De",
+          "range": [224.82, 225.92], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "(Hi! Hi!)",
+          "range": [225.92, 226.46], "ans": [1, 4, 9]},
+        {"lyric": "Jounetsu yo",
+          "range": [226.46, 229.42], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "Mezame yo",
+          "range": [229.42, 233.02], "ans": []}
+      ]
+    },
+    {
+      "lyric_jp": "はじまれ Magic（Magic!）",
+      "parts": [
+        {"lyric": "Hajimare Magic",
+          "range": [233.02, 234.54], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "(magic!)",
+          "range": [234.54, 235.05], "ans": [1, 4, 9]},
+        {"lyric": "Minna mo Magic",
+          "range": [235.05, 236.32], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "(magic!)",
+          "range": [236.32, 236.82], "ans": [1, 4, 9]}
+      ]
+    },
+    {
+      "lyric_jp": "みんなも Magic（Magic!）",
+      "parts": [
+        {"lyric": "Yume mite A",
+          "range": [236.82, 238.52], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "(Hi!)",
+          "range": [238.52, 239.63], "ans": [1, 4, 9]},
+        {"lyric": "To",
+          "range": [239.63, 240.07], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "(Hi!)",
+          "range": [240.07, 240.6], "ans": [1, 4, 9]}
+      ]
+    },
+    {
+      "lyric_jp": "夢見て A to Z 楽しく遊ぼう A to Z",
+      "parts": [
+        {"lyric": "Z",
+          "range": [240.05, 240.97], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "(Hi! Fu~!)",
+          "range": [240.97, 242.1], "ans": [1, 4, 9]},
+        {"lyric": "Tanoshiku",
+          "range": [242.1, 245.22], "ans": [2, 3, 5, 6, 7, 8]},
+        {"lyric": "Asobou A to Z",
+          "range": [245.22, 254.14], "ans": []}
+      ]
+    },
+    {"lyric": "Kokoro Magic oh yeah!!",
+      "lyric_jp": "KOKORO Magic oh yeah!!",
+      "range": [254.14, 276], "ans": []}
+  ]
+}

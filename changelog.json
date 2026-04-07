@@ -1,0 +1,394 @@
+[
+  {
+    "date": "02/25/2018",
+    "change": "Added Fuyu ga Kureta Yokan, Trouble Busters, Silent Tonight, Saitei de Saikou no Paradiso, Sakkaku CROSSROADS, and PSYCHIC FIRE (thanks throwaway93257!)"
+  },
+  {
+    "date": "02/25/2018",
+    "change": "Added Diamond Princess no Yuuutsu and Love Novels"
+  },
+  {
+    "date": "02/25/2018",
+    "change": "Added Oh,Love&Peace, Natsu, Owaranai de, Angelic Angel, Hello, Hoshi o Kazoete, SUNNY DAY SONG, ?←HEARTBEAT, and Future Style"
+  },
+  {
+    "date": "01/25/2018",
+    "change": "Added Awaken the power"
+  },
+  {
+    "date": "01/19/2018",
+    "change": "Added WATER BLUE NEW WORLD"
+  },
+  {
+    "date": "01/17/2018",
+    "change": "Corrected WONDERFUL STORIES to official version"
+  },
+  {
+    "date": "01/01/2018",
+    "change": "Added MY Mai☆TONIGHT and MIRACLE WAVE (thanks Love Live Sunshine CCL)"
+  },
+  {
+    "date": "12/30/2017",
+    "change": "Added (prototype) WONDERFUL STORIES, thanks to xIceArcher for transcribing lyrics. Not recommended for people who have not watched Love Live! Sunshine!! second season episode 13"
+  },
+  {
+    "date": "11/23/2017",
+    "change": "Added Bokura wa Ima no Naka de and START:DASH!!"
+  },
+  {
+    "date": "11/22/2017",
+    "change": "Corrected 0:39-0:43, 0:48-0:52, 1:43-1:47, 1:52-1:56, and 3:30-3:31 of Shadow gate to love"
+  },
+  {
+    "date": "11/20/2017",
+    "change": "Added Yuuki wa doko ni? Kimi no Mune ni!"
+  },
+  {
+    "date": "11/15/2017",
+    "change": "Added \"MY LIST\" to you"
+  },
+  {
+    "date": "11/07/2017",
+    "change": "Added Kimi no Hitomi wo Meguru Bouken"
+  },
+  {
+    "date": "11/05/2017",
+    "change": "Corrected 1:16-1:17, 2:01-2:03, and 3:49-3:50 of P.S. no Mukougawa, corrected 2:28-2:30 and added some Insane slots for Guilty Eyes Fever"
+  },
+  {
+    "date": "10/31/2017",
+    "change": "Added Mirai no Bokura wa Shitteru yo, thanks to throwaway93257"
+  },
+  {
+    "date": "10/12/2017",
+    "change": "Corrected 0:40-0:44 and 2:33-2:37 of Koi ni Naritai AQUARIUM"
+  },
+  {
+    "date": "10/11/2017",
+    "change": "Corrected many parts of Thrilling One Way, 3:57-3:58 of Daydream Warrior, and 1:54-1:56/2:02-2:06 of SKY JOURNEY, thanks to chaos_inferno"
+  },
+  {
+    "date": "09/17/2017",
+    "change": "Fixed Yume Kataru yori Yume Utaou's eye cancer inducing theme"
+  },
+  {
+    "date": "09/04/2017",
+    "change": "Revamp lyrics mode controls, add concert call support (although no songs have calls configured yet). Lyrics toggle button is now on the upper-right"
+  },
+  {
+    "date": "09/03/2017",
+    "change": "Menu now shows which songs have lyrics"
+  },
+  {
+    "date": "08/23/2017",
+    "change": "Lyrics tab now allows downloading the lyrics/timings as an ASS file"
+  },
+  {
+    "date": "08/08/2017",
+    "change": "Added lyrics for Natsu no Owari no Amaoto ga"
+  },
+  {
+    "date": "08/06/2017",
+    "change": "Added Natsu e no Tobira Never end ver., Manatsu wa Dare no Mono?, Jimo Ai ♡ Mantan ☆ Summer Life, and Natsu no Owari no Amaoto ga"
+  },
+  {
+    "date": "07/25/2017",
+    "change": "Corrected 2:50-3:07 of Kowareyasuki"
+  },
+  {
+    "date": "07/07/2017",
+    "change": "Added Landing action Yeah!!"
+  },
+  {
+    "date": "06/25/2017",
+    "change": "Less edgy global reveal behavior: it now persists across songs (but not refresh)"
+  },
+  {
+    "date": "06/25/2017",
+    "change": "Changed autoscroll behavior to suck less: A) only scrolls if you're outside a certain range, B) has grace period for manual scrolling, C) lyrics also scroll"
+  },
+  {
+    "date": "06/22/2017",
+    "change": "Added lyrics for Shadow gate to love"
+  },
+  {
+    "date": "06/20/2017",
+    "change": "Added lyrics for Kowareyasuki"
+  },
+  {
+    "date": "06/20/2017",
+    "change": "Added Kowareyasuki and Shadow gate to love"
+  },
+  {
+    "date": "06/08/2017",
+    "change": "Added INNOCENT BIRD"
+  },
+  {
+    "date": "05/30/2017",
+    "change": "Added GALAXY HidE and SeeK w/ lyrics"
+  },
+  {
+    "date": "05/28/2017",
+    "change": "Added Kaigandoori de Matteru yo"
+  },
+  {
+    "date": "05/26/2017",
+    "change": "Added Kinmirai Happy End"
+  },
+  {
+    "date": "05/07/2017",
+    "change": "Added Eien Friends and Nightingale Love Song"
+  },
+  {
+    "date": "05/04/2017",
+    "change": "Added Puwa Puwa-O!, CheerDay CheerGirl!, and MUSEUM de Dou Shitai?"
+  },
+  {
+    "date": "05/03/2017",
+    "change": "Added WAO-WAO Powerful Day! and NO EXIT ORION"
+  },
+  {
+    "date": "05/02/2017",
+    "change": "Added Pure Girls Project and UNBALANCED LOVE"
+  },
+  {
+    "date": "04/28/2017",
+    "change": "Added Aki no Anata no Sora Tooku, Futari Happiness, Onaji Hoshi ga Mitai, and Otohime Heart de Love Kyuuden (somebody really likes lily white)"
+  },
+  {
+    "date": "04/28/2017",
+    "change": "Added Kimi no Kuse ni!"
+  },
+  {
+    "date": "04/27/2017",
+    "change": "Added Binetsu Kara Mystery, Omoide Ijou ni Naritakute, and Shunjou Romantic"
+  },
+  {
+    "date": "04/21/2017",
+    "change": "Added lyrics for LONELY TUNING"
+  },
+  {
+    "date": "04/20/2017",
+    "change": "Added lyrics for SKY JOURNEY"
+  },
+  {
+    "date": "04/19/2017",
+    "change": "Added lyrics for HAPPY PARTY TRAIN"
+  },
+  {
+    "date": "04/06/2017",
+    "change": "Added HAPPY PARTY TRAIN, SKY JOURNEY, and Shoujo Ijou no Koi ga Shitai (as usual, thanks to <em>throwaway93257!</em>)"
+  },
+  {
+    "date": "04/04/2017",
+    "change": "Added P.S. no Mukougawa"
+  },
+  {
+    "date": "04/02/2017",
+    "change": "Added Bokutachi wa Hitotsu no Hikari (μ'sic forever)"
+  },
+  {
+    "date": "03/30/2017",
+    "change": "Added LONELY TUNING and Guilty Eyes Fever"
+  },
+  {
+    "date": "03/29/2017",
+    "change": "Added Taiyou o Oikakero!"
+  },
+  {
+    "date": "03/22/2017",
+    "change": "Added lyrics for Daydream Warrior"
+  },
+  {
+    "date": "03/17/2017",
+    "change": "Themed G Senjou no Cinderella"
+  },
+  {
+    "date": "03/15/2017",
+    "change": "Added lyrics for G Senjou no Cinderella"
+  },
+  {
+    "date": "03/14/2017",
+    "change": "Added lyrics for Love Marginal and Sweet&Sweet Holiday"
+  },
+  {
+    "date": "03/12/2017",
+    "change": "Added lyrics for Omoi yo Hitotsu ni Nare"
+  },
+  {
+    "date": "03/12/2017",
+    "change": "Added lyrics for Yume Kataru yori Yume Utaou, and corrected 1:57-2:01"
+  },
+  {
+    "date": "03/12/2017",
+    "change": "Added lyrics for Cutie Panther"
+  },
+  {
+    "date": "03/11/2017",
+    "change": "Added lyrics for Koi ni Naritai AQUARIUM"
+  },
+  {
+    "date": "03/11/2017",
+    "change": "Added lyrics for Aqours☆HEROES"
+  },
+  {
+    "date": "03/03/2017",
+    "change": "Added lyrics for Mattete Ai no Uta"
+  },
+  {
+    "date": "03/01/2017",
+    "change": "Corrected 1:33-1:37 of Strawberry Trapper"
+  },
+  {
+    "date": "02/26/2017",
+    "change": "Added G Senjou no Cinderella"
+  },
+  {
+    "date": "02/26/2017",
+    "change": "Added lyrics for Step! ZERO to ONE"
+  },
+  {
+    "date": "02/26/2017",
+    "change": "Songs with lyrics now have a lyrics tooltip on each slot, showing what lines they are referring to"
+  },
+  {
+    "date": "02/26/2017",
+    "change": "Added Thrilling One Way (w/ lyrics)"
+  },
+  {
+    "date": "02/25/2017",
+    "change": "Corrected last few answers of Mogyutto \"love\" de Sekkin Chuu!"
+  },
+  {
+    "date": "02/20/2017",
+    "change": "Added Aishiteru Banzai! (w/o lyrics), Mogyutto \"love\" de Sekkin Chuu! (with lyrics), Wonderful Rush (w/o lyrics)"
+  },
+  {
+    "date": "02/09/2017",
+    "change": "Added A-NO-NE-GA-N-BA-RE!"
+  },
+  {
+    "date": "02/07/2017",
+    "change": "Added Baby Maybe Koi no Button (good luck)"
+  },
+  {
+    "date": "02/06/2017",
+    "change": "Added Sweet&Sweet Holiday"
+  },
+  {
+    "date": "01/26/2017",
+    "change": "Corrected a few answers to Jingle Bells ga Tomaranai. Thanks <em>PomegranateAutumn</em>!"
+  },
+  {
+    "date": "01/21/2017",
+    "change": "Added Cutie Panther, Shiranai Love*Oshiete Love, Mermaid festa vol. 1"
+  },
+  {
+    "date": "01/08/2017",
+    "change": "Added lyrics for Guilty Night, Guilty Kiss!"
+  },
+  {
+    "date": "01/08/2017",
+    "change": "Added Seinaru Hi no Inori and Love Marginal"
+  },
+  {
+    "date": "01/02/2017",
+    "change": "μ's mode now available! Song and lyrics added for Bokura no LIVE Kimi to no LIFE"
+  },
+  {
+    "date": "12/29/2016",
+    "change": "Added Pops heart de Odorun damon! and Daydream Warrior"
+  },
+  {
+    "date": "12/29/2016",
+    "change": "Readjust difficulty for Jingle Bells ga Tomaranai"
+  },
+  {
+    "date": "12/27/2016",
+    "change": "Changed voice mappings for Mattete Ai no Uta and Jingle Bells ga Tomaranai (based on the <em>Dec. 27th Aqours Winter mini-live</em> performance)"
+  },
+  {
+    "date": "12/23/2016",
+    "change": "Added lyrics for Yozora wa Nandemo Shitteru no?"
+  },
+  {
+    "date": "12/22/2016",
+    "change": "Added lyrics for Yume de Yozora wo Terashitai"
+  },
+  {
+    "date": "12/22/2016",
+    "change": "Add a song search bar on sidemenu"
+  },
+  {
+    "date": "12/22/2016",
+    "change": "Added Waku-Waku-Week! (w/ lyrics)"
+  },
+  {
+    "date": "12/22/2016",
+    "change": "Hovering over lyrics now show singers, if corresponding slots are answered correctly or revealed (parts with unknown singers or entire Aqours will be unlabelled)"
+  },
+  {
+    "date": "12/18/2016",
+    "change": "Themed Jingle Bells ga Tomaranai"
+  },
+  {
+    "date": "12/18/2016",
+    "change": "Added lyrics for Jingle Bells ga Tomaranai"
+  },
+  {
+    "date": "12/17/2016",
+    "change": "Added Jingle Bells ga Tomaranai"
+  },
+  {
+    "date": "12/12/2016",
+    "change": "Buttons now disabled for singers not present in the song"
+  },
+  {
+    "date": "12/12/2016",
+    "change": "Added lyrics for Mijuku DREAMER"
+  },
+  {
+    "date": "12/11/2016",
+    "change": "New Lyrics feature (for some songs)! Read about it in the About page. Added lyrics for Sora mo Kokoro mo Hareru kara and MIRAI TICKET"
+  },
+  {
+    "date": "12/03/2016",
+    "change": "Themed Genki Zenkai DAY! DAY! DAY!"
+  },
+  {
+    "date": "11/29/2016",
+    "change": "Themed MIRAI TICKET"
+  },
+  {
+    "date": "11/21/2016",
+    "change": "Themed Sora mo Kokoro mo Hareru kara, adjusted theme for Omoi yo Hitotsu ni Nare"
+  },
+  {
+    "date": "11/19/2016",
+    "change": "Added Sora mo Kokoro mo Hareru kara"
+  },
+  {
+    "date": "11/15/2016",
+    "change": "Added MIRAI TICKET"
+  },
+  {
+    "date": "11/14/2016",
+    "change": "Themed Omoi yo Hitotsu ni Nare, Strawberry Trapper, Daisuki Dattara Daijoubu!"
+  },
+  {
+    "date": "11/13/2016",
+    "change": "Added Aqours☆HEROES"
+  },
+  {
+    "date": "11/12/2016",
+    "change": "Added Omoi yo Hitotsu ni Nare"
+  },
+  {
+    "date": "11/12/2016",
+    "change": "Added Genki Zenkai DAY! DAY! DAY!"
+  },
+  {
+    "date": "11/12/2016",
+    "change": "Added Todokanai Hoshi da to Shitemo"
+  }
+]

@@ -1,0 +1,586 @@
+{
+  "name": "Yozora wa Nandemo Shitteru no?",
+  "mp3": "sound/yozora_wa_nandemo_shitteru_no.mp3",
+  "ogg": "sound/yozora_wa_nandemo_shitteru_no.ogg",
+  "id": "yozora",
+  "group": "aqours",
+  "mapping": [
+    {
+      "range": [
+        5,
+        10.5
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        10.5,
+        12
+      ],
+      "ans": [
+        2
+      ]
+    },
+    {
+      "range": [
+        12,
+        13.3
+      ],
+      "ans": [
+        5
+      ]
+    },
+    {
+      "range": [
+        13.3,
+        15
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        15,
+        20
+      ],
+      "ans": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "range": [
+        39,
+        44.5
+      ],
+      "ans": [
+        2
+      ]
+    },
+    {
+      "range": [
+        44.5,
+        50
+      ],
+      "ans": [
+        2
+      ]
+    },
+    {
+      "range": [
+        50,
+        56
+      ],
+      "ans": [
+        2
+      ]
+    },
+    {
+      "range": [
+        56,
+        61
+      ],
+      "ans": [
+        2
+      ]
+    },
+    {
+      "range": [
+        62,
+        65
+      ],
+      "ans": [
+        5
+      ]
+    },
+    {
+      "range": [
+        65,
+        67.5
+      ],
+      "ans": [
+        5
+      ]
+    },
+    {
+      "range": [
+        67.5,
+        71
+      ],
+      "ans": [
+        5
+      ]
+    },
+    {
+      "range": [
+        72.5,
+        75
+      ],
+      "ans": [
+        5
+      ]
+    },
+    {
+      "range": [
+        75.5,
+        81
+      ],
+      "ans": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "range": [
+        81,
+        84
+      ],
+      "ans": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "range": [
+        84,
+        87
+      ],
+      "ans": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "range": [
+        87,
+        92
+      ],
+      "ans": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "range": [
+        92,
+        95.5
+      ],
+      "ans": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "range": [
+        95.5,
+        100.5
+      ],
+      "ans": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "range": [
+        100.5,
+        108
+      ],
+      "ans": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "range": [
+        108,
+        120
+      ],
+      "ans": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "range": [
+        121,
+        126.5
+      ],
+      "ans": [
+        5
+      ]
+    },
+    {
+      "range": [
+        126.5,
+        132
+      ],
+      "ans": [
+        5
+      ]
+    },
+    {
+      "range": [
+        132,
+        135.5
+      ],
+      "ans": [
+        2
+      ]
+    },
+    {
+      "range": [
+        135.5,
+        138.5
+      ],
+      "ans": [
+        2
+      ]
+    },
+    {
+      "range": [
+        138.5,
+        142
+      ],
+      "ans": [
+        2
+      ]
+    },
+    {
+      "range": [
+        143.5,
+        146.5
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        146.5,
+        149.5
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        149.5,
+        153
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        154,
+        157
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        157,
+        163
+      ],
+      "ans": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "range": [
+        163,
+        165.5
+      ],
+      "ans": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "range": [
+        165.5,
+        168.5
+      ],
+      "ans": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "range": [
+        168.5,
+        174
+      ],
+      "ans": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "range": [
+        174,
+        177
+      ],
+      "ans": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "range": [
+        177,
+        184
+      ],
+      "ans": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "range": [
+        202.5,
+        205.5
+      ],
+      "ans": [
+        2
+      ]
+    },
+    {
+      "range": [
+        208,
+        214
+      ],
+      "ans": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "range": [
+        214,
+        216.5
+      ],
+      "ans": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "range": [
+        216.5,
+        219
+      ],
+      "ans": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "range": [
+        219,
+        225
+      ],
+      "ans": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "range": [
+        225,
+        228
+      ],
+      "ans": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "range": [
+        228,
+        233.5
+      ],
+      "ans": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "range": [
+        233.5,
+        240.5
+      ],
+      "ans": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "range": [
+        240.5,
+        253
+      ],
+      "ans": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "range": [
+        254,
+        259
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        259,
+        264
+      ],
+      "ans": [
+        1
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "command": "group",
+      "members": [
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        21,
+        22
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        45,
+        46
+      ]
+    }
+  ],
+  "lyrics": [
+    "{Nandaka nemurenai konya wa nemurenai}",
+    "{Omoi ga zutto} {sawaideru tte}",
+    "{Yozora wa nandemo} {shitteru mitai}",
+    "",
+    "{Yasashiku nare nakatta no}",
+    "{Namida no anoko ni}",
+    "{Watashi mo ne nakitaku tte sa}",
+    "{zuruina to omotta yo}",
+    "",
+    "{Choppiri ijiwaru datta na}",
+    "{Ii katawari to kitsu katta}",
+    "{Ima sara koukai shiteru kedo}",
+    "{Osoi ne gomen ne}",
+    "",
+    "{Nandaka nemurenai konya wa nemurenai}",
+    "{Omoi ga zutto sawaideru tte}",
+    "{negaeri utte bakari}",
+    "",
+    "{Daijina tomodachi e sunao ni nara nakucha}",
+    "{Uchiakete miyou hontou no koto}",
+    "{moya moya shiteta watashi no koto}",
+    "{Yozora wa aa} {nandemo shitteru mitai... shitteru no?}",
+    "",
+    "{Daisukina hazu nano ni ne}",
+    "{tokidoki surechigau}",
+    "{Yappari jibun no seidana}",
+    "{Yoyuu ga nakute dame datta}",
+    "{Ima kara sotto ne dakishimetai}",
+    "",
+    "{Nagusame no kotoba janaku}",
+    "{senaka o yukkuri tataite}",
+    "{Daijoubu dato dakishimetai}",
+    "{Osoi ne gomen ne}",
+    "",
+    "{Hitori de nakanaide issho ni naichao ka}",
+    "{Sore de yokatta sore ga yokatta}",
+    "{Tsuyogari sugiteta ne}",
+    "",
+    "{Daijina tomodachi to namida mo hanbunkko}",
+    "{Karuku naru you ni wake aetara}",
+    "{Sono uchi egao ni kawaru kamo}",
+    "",
+    "{Yozora ni gomen ne}",
+    "",
+    "{Nandaka nemurenai konya wa nemurenai}",
+    "{Omoi ga zutto sawaideru tte}",
+    "{Negaeri utte bakari}",
+    "{Daijina tomodachi e sunao ni nara nakucha}",
+    "{Uchiakete miyou hontou no koto}",
+    "{moya moya shiteta watashi no koto}",
+    "{Yozora wa aa}",
+    "{nandemo shitteru mitai... shitteru no?}",
+    "",
+    "{Yasashiku nare nakatta no}",
+    "{koukai shiteru no }"
+  ]
+}

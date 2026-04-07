@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fb96be">
+
+<title>GanbaWhoby</title>
+
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet" />
+<link type="text/css" href="css/styles.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div id="sidebar" class="sidebar-collapsed">
+  <ul class="sidebar-nav">
+    <li><a class="select-info active" href="index.html">About</a></li>
+    <li><a class="select-info" href="changelog.html">Changelog</a></li>
+    <li><a class="select-info" href="stats.html">Stats</a></li>
+    <li>
+      <button id="muse-group-button" type="button" class="btn btn-primary group-button" data-value="muse"><img class="group-icon" src="css/images/muse.png"></img></button><button id="aqours-group-button" type="button" class="btn btn-primary group-button" data-value="aqours"><img class="group-icon" src="css/images/aqours.png"></img></button>
+    </li>
+    <li>
+      <button id="wug-group-button" type="button" class="btn btn-primary group-button" data-value="wug"><img class="group-icon" src="css/images/wug.png"></img>
+    </li>
+    <li class="has-feedback">
+      <input class="form-control" id="menu-search"></input>
+      <span class="glyphicon glyphicon-search form-control-feedback"></span>
+    </li>
+  </ul>
+</div>
+
+<div class="main">
+  <span id="menu-button" class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+
+  <nav class="navbar navbar-default">
+  <div class="container">
+  <div class="row"><div class="col-xs-10 col-xs-offset-2 col-sm-11 col-sm-offset-1">
+      <h1 class="ruby-pink">Ganba<strong>Who</strong>by</h1>
+  </div></div>
+  </div>
+  </nav>
+
+  <div class="container"><div class="row"><div class="col-xs-12 col-md-10 info-content">
+      <p><strong>GanbaWhoby</strong> is a little game to test your ability to
+      recognize individual singers in <span class="muse-pink">μ's</span> and
+        <span class='aqours-blue'>Aqours</span> songs. If you have never heard
+        of <span class='muse-pink'>Love Live!</span> before, check out the
+        <a href="http://love-live.wikia.com/wiki/Love_Live!">Wikia page</a>.</p>
+
+      <hr>
+      <h2>How to play</h2>
+      <ol>
+        <li>Select a song from the menu on the left</li>
+        <li>As the song plays, the time slots in the bottom will be
+          highlighted. When a slot is highlighted, that (normally) means a
+          single member, subunit, or year group is singing that portion</li>
+        <li>Select who you think is singing</li>
+        <li>When you're done <strike>guessing</strike> choosing, click the <span
+            class='text-success'>Check</span> button</li>
+        <li>You may try as many times as you like until you get them all</li>
+      </ol>
+
+      <hr>
+      <h2>Controls</h2>
+      <p>Click the <code>Autoscroll</code> button to toggle automatic scrolling
+      on slot activation.</p>
+      <p>Click the <code>Themed</code> button to enable/disable special color
+      themes that some songs have.</p>
+      <p>Click the <code>Reveal</code> button to reveal all of the answers, if
+      you just want a singer reference without playing.</p>
+      <p>You can also choose the difficulty for some songs. Toggling a higher
+      difficulty will reveal additional time slots that are <strong
+      class='text-danger'>not</strong> guaranteed to be either a solo, a
+    subunit, or a year group (i.e. any combination is fair game). However, there
+    will never be any slots where everyone in the song is singing (e.g. for a
+    2nd year song, there will never be an answer where it's all three 2nd
+    years). Also, slots in Hard or Insane mode <strong class='text-danger'>may
+    not</strong> be completely accurate, because nobody knows for sure who sang
+  what until the songs are performed live.</p>
+      <p>There are a few keyboard controls:</p>
+      <ul>
+        <li><code>space</code>: toggle play/pause</li>
+        <li><code>left</code>: move backwards 2 seconds</li>
+        <li><code>right</code>: move forwards 2 seconds</li>
+        <li><code>c</code>: check answers</li>
+        <li><code>ctrl+alt+a</code>: toggle global reveal</li>
+      </ul>
+
+      <hr>
+      <h2>Lyrics</h2>
+      <p>For some songs, you can click the <code>Lyrics</code> button on the
+      top-right to enable lyrics mode, which shows the romaji of the current
+      line being sung. If the line is sung solo, and the corresponding time
+      slot is answered correctly or is revealed, the highlight will be
+      color-coded. In full lyrics mode, the regular game controls/status are
+      replaced by buttons like <code>Download</code>, which lets you download
+      the lyrics of the song in ASS format.</p>
+
+      <hr>
+      <h2>Thanks</h2>
+      <ul>
+      <li><strong>throwaway93257</strong> for help in voice identification.
+        This game would not be possible without his help. Check out his <a
+          href="https://www.reddit.com/r/LoveLive/search?q=music+primer&restrict_sr=on">music
+          primers</a> for indepth Aqours song analyses!</li>
+      <li><strong>chaos_inferno</strong> for contributing Aqours mappings and various μ's mappings</li>
+      <li><a href="http://loveliveccl.webs.com/"><strong>Love Live CCL</strong></a> for their work in μ's and Aqours identification</li>
+      <li><a href="http://love-live.wikia.com/wiki/Main_Page"><strong>Love Live! Wikia</strong></a> for the lyrics reference</li>
+      </ul>
+
+      <hr>
+      <h2>Compatibility</h2>
+      GanbaWhoby requires IE 9 (preferably 10) or a relatively modern version of
+      Firefox or Chrome.
+
+      <hr>
+      <h2>Contact</h2>
+      Direct all bug reports, questions, concerns, and complaints to <a href="https://www.reddit.com/user/gacha4life/"><strong>gacha4life</strong></a>
+  </div></div></div>
+
+</div>
+
+<script type="module" src="/src/main.ts"></script>
+<script>
+  if (!('ontouchstart' in window) && !(navigator.msMaxTouchPoints > 0)) {
+    document.documentElement.classList.add('hoverable');
+  }
+</script>
+</body>
+</html>

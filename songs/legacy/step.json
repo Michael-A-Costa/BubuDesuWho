@@ -1,0 +1,804 @@
+{
+  "name": "Step! ZERO to ONE",
+  "mp3": "sound/step_zero_to_one.mp3",
+  "ogg": "sound/step_zero_to_one.ogg",
+  "id": "step",
+  "group": "aqours",
+  "mapping": [
+    {
+      "range": [
+        7,
+        8.5
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "range": [
+        8.5,
+        10
+      ],
+      "ans": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "range": [
+        10,
+        12
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        12,
+        15.5
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "range": [
+        13.5,
+        15.5
+      ],
+      "ans": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "range": [
+        15.5,
+        17
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        17.5,
+        20
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        33,
+        37
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "range": [
+        37,
+        40
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "range": [
+        40,
+        47
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        47,
+        53.5
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "range": [
+        53.5,
+        61
+      ],
+      "ans": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "range": [
+        61,
+        68
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        68,
+        71.3
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "range": [
+        71.3,
+        72.7
+      ],
+      "ans": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "range": [
+        72.7,
+        76
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        77,
+        85
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        85,
+        88.7
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        88.7,
+        98
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        98,
+        107.5
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        105.5,
+        109
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        109,
+        112
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        125,
+        128.8
+      ],
+      "ans": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "range": [
+        128.8,
+        131
+      ],
+      "ans": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "range": [
+        132,
+        138
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        139,
+        146.5
+      ],
+      "ans": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "range": [
+        146.5,
+        149.5
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "range": [
+        149.5,
+        151
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        151,
+        155
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        155,
+        163.2
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        163.2,
+        166.6
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        166.6,
+        176
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        176,
+        185.8
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        183.8,
+        187
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        187,
+        190
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        204,
+        205
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "range": [
+        205.5,
+        206.5
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        207.5,
+        208.5
+      ],
+      "ans": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "range": [
+        209,
+        210
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        211,
+        212
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        212.5,
+        213.5
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        214,
+        215
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        220,
+        227.7
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        227.7,
+        231.2
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        231.2,
+        240.5
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        240.5,
+        250.5
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        248.7,
+        250.3
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "range": [
+        250.3,
+        252
+      ],
+      "ans": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "range": [
+        252,
+        254
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        254,
+        257
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "range": [
+        255.5,
+        257
+      ],
+      "ans": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "range": [
+        257,
+        259
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        259,
+        261.7
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "command": "group",
+      "members": [
+        7,
+        8
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        22,
+        23
+      ]
+    }
+  ],
+  "lyrics": [
+    "{Bouken ni deru nda} {saisho wa hitori}",
+    "{Yagate minna to} {meguri aeru kamo}",
+    "{Zero kara ippo wa} {yuuki ga hitsuyou} {kawaritai Step! All right!!}",
+    "",
+    "{Nayami no tane no happa sodatta}",
+    "{Tsunde shimae, sonna no!}",
+    "{Motto suteki na tane o makimashou yume naru youna}",
+    "",
+    "{Machi o arukeba kisetsu no oto ga sasoi o kakete kuru}",
+    "{Ashi ga katte ni atarashii suteppu kimi no moto e}",
+    "",
+    "{Shigeki o motome nagara fuan o kazoeru muju nda ne}",
+    "{ah! Moya moya no kokoro}",
+    "{Dou yattara sukkiri} {suru no ka natte oshiete}",
+    "",
+    "{Kawaresoude kawarenai toki datte kanjiteru kara}",
+    "{Kondo koso kondo koso}",
+    "{Zero kara ichi no tobira o akeyou kawaritai toki nanda}",
+    "{Tabun kono saki no mirai wa nazo no mama da ne}",
+    "{ZERO to ONE, ZERO to ONE, ZERO to ONE… STEP!}",
+    "{ZERO to ONE, Steppin' my heart!}",
+    "",
+    "{Mayoedo hana wa asa no hikari o}",
+    "{Machi nozomu yo, saku yo!}",
+    "{Dakara kireina hana ni narimashou ka yume miru youna}",
+    "",
+    "{Ashita e isogi nagara ima o tanoshiku sugoshitai}",
+    "{ah! Fuwa fuwa no kokoro}",
+    "{Dou yattara shikkari} {suru no ka natte oshiete}",
+    "",
+    "{Ugokisoude ugokanai toki datte hiraki naotte}",
+    "{Kondo koso kondo koso}",
+    "{Zero kara ichi no dansa o koeyou ugokitaku narisouda}",
+    "{Demo ne kono saki no mirai wa nazo no mama dayo}",
+    "{ZERO to ONE, ZERO to ONE, ZERO to ONE… STEP!}",
+    "{ZERO to ONE, Steppin' my heart!}",
+    "",
+    "{Ichi ni!} {(ichi ni!)}",
+    "{Ichi ni!} {(ichi ni!)}",
+    "{Ichi ni!} {(ichi ni!)}",
+    "{Ichi ni!}",
+    "",
+    "{Kawaresoude kawarenai toki datte kanjiteru kara}",
+    "{Kondo koso kondo koso}",
+    "{Zero kara ichi no tobira o akeyou kawaritai toki nanda}",
+    "{Tabun kono saki no mirai wa nazo no mama da ne}",
+    "",
+    "{Bouken ni deru nda} {saisho wa hitori}",
+    "{Yagate minna to} {meguri aeru kamo}",
+    "{Zero kara ippo wa} {yuuki ga hitsuyou} {ugokidase Step! All right!! }"
+  ]
+}

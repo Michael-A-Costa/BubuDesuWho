@@ -1,0 +1,588 @@
+{
+  "name": "HAPPY PARTY TRAIN",
+  "id": "hapitore",
+  "group": "aqours",
+  "mp3": "sound/happy_party_train.mp3",
+  "ogg": "sound/happy_party_train.ogg",
+  "mapping": [
+    {
+      "range": [
+        22.2,
+        33.3
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        33.3,
+        36.2
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        36.2,
+        39.3
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        39.3,
+        42.3
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        41,
+        42.3
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        42.3,
+        44.5
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        45.4,
+        55.8
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        55.8,
+        58.5
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        58.5,
+        61.8
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        61.8,
+        65.9
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        66.85,
+        71.2
+      ],
+      "ans": [
+        4
+      ]
+    },
+    {
+      "range": [
+        71.2,
+        76.2
+      ],
+      "ans": [
+        4
+      ]
+    },
+    {
+      "range": [
+        76.2,
+        79.7
+      ],
+      "ans": [
+        4
+      ]
+    },
+    {
+      "range": [
+        79.7,
+        85.2
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        85.2,
+        90.8
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        90.8,
+        96.3
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        96.3,
+        103
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        114,
+        125.2
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        125.2,
+        127.7
+      ],
+      "ans": [
+        2
+      ]
+    },
+    {
+      "range": [
+        127.7,
+        130.3
+      ],
+      "ans": [
+        2
+      ]
+    },
+    {
+      "range": [
+        131,
+        135
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "range": [
+        136.1,
+        141.7
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        141.7,
+        147.4
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        147.4,
+        151.6
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        151.6,
+        153.2
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        153.2,
+        157
+      ],
+      "ans": [
+        5
+      ]
+    },
+    {
+      "range": [
+        157,
+        160
+      ],
+      "ans": [
+        5,
+        7,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        160,
+        165.8
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        165.8,
+        171
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        171,
+        179
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        179,
+        184
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        209.5,
+        215.1
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        215.1,
+        218
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        218,
+        220.7
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        220.7,
+        226.5
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        226.5,
+        231.7
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        231.7,
+        237.4
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        237.4,
+        244.3
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        244.3,
+        248.1
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        248.1,
+        250
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "command": "group",
+      "members": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        18,
+        19
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        23,
+        24
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        31,
+        32
+      ]
+    }
+  ],
+  "lyrics": [
+    "{Hiraita hana no kaori kara ukettota yo tsugi no yume o}",
+    "{Saa doko e yukou kana}",
+    "{Haneru you ni yukou kana}",
+    "{Hajimari to} {(sayonara o)} {kurikaeshite}",
+    "",
+    "{Aitai no wa atarashii tokimeki umaretate negai no atsusa}",
+    "{Dakishimete yukitai ne}",
+    "{Karoyaka ni yukitai ne}",
+    "{Omoide wa poketto no naka}",
+    "",
+    "{Suteki na tabi ni deyou}",
+    "{Jinsei tte sa... takusan no basho e tsudzuiteru?}",
+    "{Wakuwaku darake sa!}",
+    "",
+    "{Omoi o nosete HAPPY HAPPY TRAIN to go!}",
+    "{Ashita ga yonderu bokutachi o}",
+    "{Kitai de kagayaku hitomi nara mieru yo}",
+    "{Tooi eki de kitto nanika ga matteru ne}",
+    "",
+    "{Shiritai no wa subarashii yoake to setsunasa o yadosu yuuyake}",
+    "{Dakara mou ikanakucha}",
+    "[next-col]{Hitori demo ikanakucha}",
+    "{Omoide o kuchizusande}",
+    "",
+    "{Ki ni shinai chiisana koto wa}",
+    "{Itsudemo egao de itai kara}",
+    "{Owaranai tabi o shiyou}",
+    "{Jinsei tte ba...} {tameiki mo tama ni dechau yo}",
+    "{Harahara shi houdai!}",
+    "",
+    "{Mayowazu nottara PARTY PARTY TRAIN to go!}",
+    "{Igai na hito ga soba ni ita?}",
+    "{Reeru wa doko made tsunagaru ka madamada wakaranai ne}",
+    "{Zutto hashittetai PARTY TRAIN}",
+    "",
+    "{Omoi o nosete HAPPY HAPPY TRAIN to go!}",
+    "{Ashita ga yonderu} {bokutachi o}",
+    "{Mayowazu nottara PARTY PARTY TRAIN to go!}",
+    "{Igai na hito ga soba ni ita?}",
+    "{Kitai ni kagayaku hitomi nara mieru yo}",
+    "{Tooi eki de kitto nanika ga matteru no}",
+    "{ah! Doko made mo ne...} {HAPPY TRAIN}"
+  ]
+}

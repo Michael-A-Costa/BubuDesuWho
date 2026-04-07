@@ -1,0 +1,686 @@
+{
+  "name": "Natsu no Owari no Amaoto ga",
+  "group": "aqours",
+  "mp3": "sound/natsu_no_owari_no_amaoto_ga.mp3",
+  "ogg": "sound/natsu_no_owari_no_amaoto_ga.ogg",
+  "id": "natsuoto",
+  "mapping": [
+    {
+      "range": [
+        1.7,
+        7
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        8.5,
+        13.5
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        16,
+        19.4
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        19.4,
+        25.3
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        25.3,
+        30.1
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        30.1,
+        33.7
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        33.7,
+        39.2
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        39.2,
+        43
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        43,
+        47
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        61,
+        65
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        65,
+        70.7
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        70.7,
+        74
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        75.5,
+        79.2
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        79.2,
+        82.8
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        82.8,
+        88.6
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        88.6,
+        91.7
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        92.3,
+        95
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        95.7,
+        102
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        102,
+        106.1
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        106.4,
+        109.5
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        110,
+        113.8
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        113.8,
+        117.3
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        117.3,
+        124.1
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        124.1,
+        127.8
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        127.8,
+        133.7
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        133.7,
+        137
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        137,
+        141
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        154,
+        157.5
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        157.5,
+        163
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        163,
+        166.3
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        166.8,
+        169.3
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        168.5,
+        171
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        170.5,
+        172.7
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        172.1,
+        175
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        174,
+        180.3
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        180.3,
+        184.1
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        184.5,
+        189.2
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        190,
+        193.7
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        193.7,
+        199.7
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        199.7,
+        204.3
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        204.3,
+        208
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        208,
+        213.7
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        213.7,
+        217
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        217,
+        221
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        222,
+        226.5
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        227.8,
+        231.5
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        234.3,
+        240.5
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        242.8,
+        252
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        254,
+        257.8
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        257.8,
+        260.6
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        261.3,
+        268.3
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        268.3,
+        271.8
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        271.8,
+        277.6
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        277.6,
+        281
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        281,
+        285
+      ],
+      "ans": [
+        1,
+        8
+      ]
+    },
+    {
+      "range": [
+        286,
+        291.5
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        292.7,
+        298
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        308,
+        311.5
+      ],
+      "ans": [
+        1
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "command": "group",
+      "members": [
+        0,
+        1
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        17,
+        18
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        34,
+        35
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        44,
+        45
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        46,
+        47
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        55,
+        56
+      ]
+    }
+  ],
+  "lyrics": [
+    "{(Nanika hajimaru tte koto wa owari ni tsunagaruda nante}",
+    "{Kangaete mo minakatta iya, kangaetaku nakatta nda...)}",
+    "",
+    "{Amaoto mado o tataku}",
+    "{Sora kara watashi no youna kanashimi futteru}",
+    "{Tomedonaku ima o nurashite}",
+    "{Omoide nante iranai no}",
+    "{Kokoro ga kurushiku naru dake dato}",
+    "{No more! September Rain}",
+    "{No more! September Rain}",
+    "",
+    "{Itsudatte anata wa midjikadatta}",
+    "{Wazawaza kimochi o tashikameru tte koto mo}",
+    "{Hitsuyou janakute}",
+    "",
+    "{Shizen ni nakayoku nareta kara}",
+    "{Anshin shiteta no kamo shirenai ne}",
+    "{Doushite? Nami ni toikakeru kedo}",
+    "",
+    "{Natsu no hajimari ga} {tsurete kita omoi}",
+    "{Natsu ga owaru toki kiechau mono datta nante}",
+    "{Shiranakute} {tokimeiteta atsui kisetsu}",
+    "",
+    "{Umibe no sora ga hikatte}",
+    "{Totsuzen kumo ga nagare}",
+    "{Ootsubu no ame watashi no naka no namida mitai}",
+    "{Kon'na ni tanoshii natsu ga}",
+    "{Zutto tsudzuiteku tte shinjiteta yo}",
+    "{But now...September Rain}",
+    "{But now...September Rain}",
+    "",
+    "{Itsuka wa kioku mo usurechatte}",
+    "{Nando mo kisetsu ga kawareba umoreteku}",
+    "{Soshite waraeru no kana}",
+    "",
+    "{Natsu no hajimari wa} {(yaketsuku hizashi de)}",
+    "{Amai kitai kara} {(deai no yokan e to)}",
+    "{Natsu ga owaru toki kiechau mono datta nante}",
+    "{Setsunai ne} {daremo inai hitori botchi}",
+    "",
+    "{Amaoto mado o tataku}",
+    "{Sora kara watashi no youna kanashimi futteru}",
+    "{Tomedonaku ima o nurashite}",
+    "{Omoide nante iranai no}",
+    "{Kokoro ga kurushiku naru dake dato}",
+    "{No more! September Rain}",
+    "{No more! September Rain}",
+    "",
+    "{(Wakatteru, nido to nai natsudattatte koto}",
+    "{Tsugi ni kuru natsu wa... chigau natsu nanda})",
+    "{(Hiyake no ato ga usureru koro ni wa... kitto ne! Daijoubu!}",
+    "{Demo ima wa mada... senaka mo kokoro mo hirihiri shiteru mitai dayo)}",
+    "",
+    "{Umibe no sora ga hikatte}",
+    "{Totsuzen kumo ga nagare}",
+    "{Ootsubu no ame watashi no naka no namida mitai}",
+    "{Kon'na ni tanoshii natsu ga}",
+    "{Zutto tsudzuiteku tte shinjiteta yo}",
+    "{But now...September Rain}",
+    "{But now...September Rain}",
+    "",
+    "{(Kono ame ga yamu koro, watashi no namida mo kawaku tte koto ni shite oku yo}",
+    "{Saa, ue o muite... ashita no koto o kangaeyou ka!)}",
+    "{(Tanoshikatta ne, natsu...)}"
+  ]
+}

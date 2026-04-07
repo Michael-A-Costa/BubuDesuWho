@@ -1,0 +1,644 @@
+{
+  "name": "Guilty Night, Guilty Kiss!",
+  "mp3": "sound/guilty_night_guilty_kiss.mp3",
+  "ogg": "sound/guilty_night_guilty_kiss.ogg",
+  "id": "guilty",
+  "group": "aqours",
+  "mapping": [
+    {
+      "range": [
+        22,
+        25.7
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        25.7,
+        29.3
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        29.3,
+        32.7
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        32.7,
+        36
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        36,
+        39.8
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        39.8,
+        43
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        43,
+        46.7
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        46.7,
+        49.5
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        49.5,
+        50.5
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        50.5,
+        53.7
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        53.7,
+        57.7
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        57.7,
+        64.5
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        64.5,
+        68
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        68,
+        71.8
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        71.8,
+        78.6
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        78.6,
+        79.3
+      ],
+      "ans": [
+        3
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        79,
+        91
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        93,
+        96.5
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        96.5,
+        100
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        100,
+        103.5
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        103.5,
+        107.5
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        107.5,
+        110.7
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        110.7,
+        114
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        114,
+        117.8
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        117.8,
+        120.2
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        120.2,
+        121.5
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        121.5,
+        125.1
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        125.1,
+        128.5
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        128.5,
+        135.4
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        135.4,
+        136.1
+      ],
+      "ans": [
+        6
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        137,
+        140
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        140,
+        143
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        144,
+        149.5
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        149.5,
+        154
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        154,
+        157
+      ],
+      "ans": [
+        6
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        157,
+        162
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        162,
+        164
+      ],
+      "ans": [
+        6
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        164,
+        171
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        171,
+        178.5
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        195,
+        196
+      ],
+      "ans": [
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        196,
+        200
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        200,
+        203.5
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        203.5,
+        210
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        210,
+        211.5
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        211.5,
+        215
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        214,
+        215
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        215,
+        218
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        217.5,
+        218.5
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        218,
+        222.5
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        222.5,
+        224.3
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    },
+    {
+      "range": [
+        224.3,
+        225
+      ],
+      "ans": [
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        224.7,
+        237
+      ],
+      "ans": [
+        3,
+        6,
+        9
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "command": "group",
+      "members": [
+        0,
+        1
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        2,
+        3
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        4,
+        5
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        17,
+        18
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        19,
+        20
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        21,
+        22
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        37,
+        38
+      ]
+    }
+  ],
+  "lyrics": [
+    "{Kiss! Tobashite tsuresaritai kara}",
+    "{Henji wa iranai no mondou muyou no}",
+    "{Kiss!! Ki no nai soburi wa uso desho?}",
+    "{Sono me ga atsuitte mou shitteru yo}",
+    "",
+    "{Daitan na no wa umaretsuki nano sa}",
+    "{Sou iu koto ni shite okeba}",
+    "{Honnou makase sore shikanai ne}",
+    "{Saa kotchi kite?}",
+    "",
+    "{You calling calling}",
+    "",
+    "{\"Guilty Kiss\" yume mitai na One night}",
+    "{\"Guilty Kiss\" odori akasou yo }",
+    "{\"Guilty Kiss\" subete wa sugisatteku no dakara koso kirei sa}",
+    "{\"Guilty Kiss\" yume mitai na One night}",
+    "{\"Guilty Kiss\" odori akasou yo}",
+    "{\"Guilty Kiss\" subete ga sugisatta ato watashitachi Fall in love... yes!!} {(yes!)}",
+    "",
+    "{Guilty Night, Guilty Kiss, Guilty Night, Guilty Kiss!}",
+    "",
+    "{Touch! Kokoro ni tsumi na itazura}",
+    "{Aizu no mabataki inginburei na}",
+    "{Touch!! Wana yori mahou to itte mite}",
+    "{Sono hou ga yamu o enai kanji suru yo}",
+    "",
+    "{Shinken nano ni fuzakete misetari}",
+    "{Sou iu koto ga tanoshii no}",
+    "{Anshin yori wa sono hou ga ii ne}",
+    "{Saa kotchi kite?}",
+    "",
+    "{You dancing dancing}",
+    "",
+    "{\"Guilty Night\" terasaretai Starlight}",
+    "{\"Guilty Night\" subete wasurete}",
+    "{\"Guilty Night\" deai no imi wa nan daro? wakaru made Shaking my song} {(song!)}",
+    "",
+    "{Sasowareta garu nante} {toomawari shinai kara}",
+    "{Tsuyo sugiru you ni mieru kamo Oh yeah!}",
+    "{Aitai toki ni ai ni ikitai Passion!}",
+    "{Kimi mo sono tsumori de ite yo}",
+    "{Wagamama dakedo aishite Destiny}",
+    "{Kaeru ki wa nai no}",
+    "{Aitai toki ni ai ni ikitai yo osaetari shinai}",
+    "{Hoshii mono wa ubaitai Guilty Kiss!}",
+    "",
+    "{You calling calling}",
+    "",
+    "{\"Guilty Kiss\" yume mitai na One night}",
+    "{\"Guilty Kiss\" odori akasou yo}",
+    "{\"Guilty Kiss\" subete wa sugisatteku no dakara koso kirei sa}",
+    "{\"Guilty Kiss\"} {yume mitai na One night}",
+    "{\"Guilty Kiss\"} {odori akasou yo}",
+    "{\"Guilty Kiss\"} {subete ga sugisatta ato watashitachi} {Fall in love... yes?} {(yes!)}",
+    "",
+    "{Guilty Kiss, Guilty Night, Guilty Kiss, Guilty Night!}"
+  ]
+}

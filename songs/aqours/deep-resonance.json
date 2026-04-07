@@ -1,0 +1,170 @@
+{
+  "name": "Deep Resonance",
+  "ogg": "sound/deep_resonance.ogg",
+  "id": "deep-resonance",
+  "group": "aqours",
+  "added": "2026-04",
+  "hidden": false,
+  "slots": [
+
+  ],
+  "lines": [
+    {
+      "lyric_jp": "誰にも届かない声が 闇を駆け抜け",
+      "parts": [
+        {"lyric": "Dare ni mo todokanai koe ga yami wo",
+          "range": [6.22, 14.2], "ans": [6]},
+        {"lyric": "Kakenuke",
+          "range": [14.2, 32.6], "ans": []}
+      ]
+    },
+    "",
+    {"lyric": "Kibou wa koko kara umare koko de kieru no ka",
+      "lyric_jp": "希望はここから生まれ ここで消えるのか",
+      "range": [32.6, 40.25], "ans": [6]},
+    {"lyric": "“chigau!” to",
+      "lyric_jp": "希望はここから生まれ ここで消えるのか",
+      "range": [40.25, 42.74], "ans": [6]},
+    {
+      "lyric_jp": "「違う！」と叫んだ 私の心で熱く燃える魂は",
+      "parts": [
+        {"lyric": "Sakenda",
+          "range": [42.74, 43.98], "ans": [1, 2, 3, 4, 5, 7, 8, 9]},
+        {"lyric": "Watashi no",
+          "range": [43.98, 46.34], "ans": [6]},
+        {"lyric": "Kokoro de",
+          "range": [46.34, 48.22], "ans": [1, 2, 3, 4, 5, 7, 8, 9]},
+        {"lyric": "Atsuku moeru tamashii wa",
+          "range": [48.22, 53.44], "ans": [6]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "Fight back 暴れたいんだ もっと",
+      "parts": [
+        {"lyric": "Fight back",
+          "range": [53.07, 53.58], "ans": [1, 2, 4, 5, 6, 7, 8, 9]},
+        {"lyric": "Abaretainda motto",
+          "range": [53.58, 55.59], "ans": [3]}
+      ]
+    },
+    {
+      "lyric_jp": "Hurry up 信じたいんだ もっと",
+      "parts": [
+        {"lyric": "Hurry up",
+          "range": [55.49, 56.03], "ans": [1, 2, 4, 5, 6, 7, 8, 9]},
+        {"lyric": "Shinjitainda motto",
+          "range": [56.03, 58.09], "ans": [3]}
+      ]
+    },
+    {
+      "lyric_jp": "もっと？ やっと気がついた真実は",
+      "parts": [
+        {"lyric": "Motto?",
+          "range": [57.61, 58.09], "ans": [1, 2, 4, 5, 6, 7, 8, 9]},
+        {"lyric": "Yatto ki ga tsuita shinjitsu wa",
+          "range": [58.09, 62.53], "ans": [3]}
+      ]
+    },
+    {"lyric": "Damattetara kanawanai",
+      "lyric_jp": "黙ってたら叶わない",
+      "range": [62.53, 65.12], "ans": [7]},
+    {
+      "lyric_jp": "願うだけじゃ叶わない 動き出すのは今さ",
+      "parts": [
+        {"lyric": "Negau dake ja kanawanai",
+          "range": [65.12, 69.16], "ans": [2]},
+        {"lyric": "Ugokidasu no wa ima sa",
+          "range": [69.16, 73.59], "ans": [8]}
+      ]
+    },
+    "",
+    {"lyric": "Itami ga nageki ga kimi no yume wo musaboru",
+      "lyric_jp": "痛みが 嘆きが 君の夢を貪る",
+      "range": [73.59, 83.68], "ans": []},
+    {"lyric": "Dare ni mo todokanai koe ga yami wo kakenuketeku",
+      "lyric_jp": "誰にも届かない声が 闇を駆け抜けてく",
+      "range": [83.68, 94.4], "ans": []},
+    {"lyric": "Mitomenai yo sonna kanashii sekai nante mite irarenai",
+      "lyric_jp": "認めないよ そんな悲しい世界なんて見ていられない",
+      "range": [94.4, 100.6], "ans": []},
+    {"lyric": "Kimi to no rezonansu... kanjiteru",
+      "lyric_jp": "君とのレゾナンス... 感じてる",
+      "range": [100.6, 119.26], "ans": []},
+    "",
+    {"lyric": "Zetsubou ajiwau tame ni ikirun janai no sa",
+      "lyric_jp": "絶望味わうために 生きるんじゃないのさ",
+      "range": [119.26, 126.94], "ans": [9]},
+    {"lyric": "“hashire!” to",
+      "lyric_jp": "絶望味わうために 生きるんじゃないのさ",
+      "range": [126.94, 129.71], "ans": [9]},
+    {
+      "lyric_jp": "「走れ！」と促す 私の心に過激な本能のホイッスルが",
+      "parts": [
+        {"lyric": "Unagasu",
+          "range": [129.71, 130.87], "ans": [1, 2, 3, 4, 5, 6, 7, 8]},
+        {"lyric": "Watashi no",
+          "range": [130.87, 133.11], "ans": [9]},
+        {"lyric": "Kokoro ni",
+          "range": [133.11, 135.07], "ans": [1, 2, 3, 4, 5, 6, 7, 8]},
+        {"lyric": "Kageki na honnou no hoissuru ga",
+          "range": [135.07, 140.26], "ans": [9]}
+      ]
+    },
+    "",
+    {"lyric": "Natterunda motto",
+      "lyric_jp": "鳴ってるんだ もっと",
+      "range": [140.26, 142.82], "ans": [5]},
+    {"lyric": "Natte ii yo motto",
+      "lyric_jp": "鳴っていいよ もっと",
+      "range": [142.82, 145.53], "ans": [1]},
+    {"lyric": "Takamatte tomaranaku nare",
+      "lyric_jp": "高まって止まらなくなれ",
+      "range": [145.53, 149.55], "ans": [4]},
+    {"lyric": "Muchakucha mo kanaunda",
+      "lyric_jp": "ムチャクチャも叶うんだ",
+      "range": [149.55, 152.02], "ans": [4, 7, 8]},
+    {
+      "lyric_jp": "勢いで叶うんだ 戦う気持ちさえあれば何とかなる",
+      "parts": [
+        {"lyric": "Ikioide kanaunda",
+          "range": [152.02, 155.07], "ans": [1, 2, 5]},
+        {"lyric": "Tatakau kimochi sae areba nantoka naru",
+          "range": [155.07, 161.77], "ans": [3, 6, 9]}
+      ]
+    },
+    "",
+    "[next-col]",
+    {"lyric": "Hikari ga inori ga kimi no yume wo terasu yo",
+      "lyric_jp": "光が祈りが 君の夢を照らすよ",
+      "range": [161.77, 171.66], "ans": []},
+    {"lyric": "Dareka no kodou ga kimi no mune ni kasanaru you ni",
+      "lyric_jp": "誰かの鼓動が 君の胸に重なるように",
+      "range": [171.66, 182.47], "ans": []},
+    {"lyric": "Kowaresou na konna sekai de deatta no wa guuzen janai",
+      "lyric_jp": "壊れそうなこんな世界で 出会ったのは偶然じゃない",
+      "range": [182.47, 188.36], "ans": []},
+    {"lyric": "Kimi to no rezonansu Deeper loving",
+      "lyric_jp": "君とのレゾナンス Deeper loving",
+      "range": [188.36, 230.52], "ans": []},
+    "",
+    {"lyric": "Itami ga nageki ga kimi no yume wo musaboru",
+      "lyric_jp": "痛みが 嘆きが 君の夢を貪る",
+      "range": [230.52, 242.11], "ans": [6]},
+    {"lyric": "Demo mata hikari ga kimi no yume wo terasu yo",
+      "lyric_jp": "でもまた光が 君の夢を照らすよ",
+      "range": [242.11, 252.05], "ans": []},
+    {"lyric": "Dareka no kodou ga kimi no mune ni kasanaru you ni",
+      "lyric_jp": "誰かの鼓動が 君の胸に重なるように",
+      "range": [252.05, 262.95], "ans": []},
+    {"lyric": "Kowaresou na konna sekai de deatta no wa guuzen janai",
+      "lyric_jp": "壊れそうなこんな世界で 出会ったのは偶然じゃない",
+      "range": [262.95, 269.12], "ans": []},
+    {"lyric": "Kimi to no rezonansu... kanjiteru",
+      "lyric_jp": "君とのレゾナンス... 感じてる",
+      "range": [269.12, 278.05], "ans": []},
+    {"lyric": "Yami e to koe yo kakenukero",
+      "lyric_jp": "闇へと 声よ駆け抜けろ",
+      "range": [278.05, 313], "ans": []}
+  ]
+}

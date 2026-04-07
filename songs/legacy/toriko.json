@@ -1,0 +1,72 @@
+{
+  "name": "Torikoriko PLEASE!!",
+  "mp3": "sound/torikoriko_please.mp3",
+  "ogg": "sound/torikoriko_please.ogg",
+  "id": "toriko",
+  "group": "aqours",
+  "mapping": [
+    {
+      "range": [
+        10,
+        22
+      ],
+      "ans": [
+        4
+      ]
+    },
+    {
+      "range": [
+        24,
+        36
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        37,
+        51
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        84,
+        96
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        97.5,
+        109
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        110,
+        125
+      ],
+      "ans": [
+        4
+      ]
+    },
+    {
+      "range": [
+        162,
+        176
+      ],
+      "ans": [
+        7
+      ]
+    }
+  ]
+}

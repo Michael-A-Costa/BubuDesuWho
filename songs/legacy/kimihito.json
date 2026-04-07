@@ -1,0 +1,623 @@
+{
+  "name": "Kimi no Hitomi wo Meguru Bouken",
+  "group": "aqours",
+  "mp3": "sound/kimi_no_hitomi_wo_meguru_bouken.mp3",
+  "ogg": "sound/kimi_no_hitomi_wo_meguru_bouken.ogg",
+  "id": "kimihito",
+  "mapping": [
+    {
+      "range": [
+        10.5,
+        18.7
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        18.7,
+        27.2
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        27.2,
+        38
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        42.5,
+        51.1
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        51.1,
+        54.2
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        54.2,
+        59
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        59.5,
+        68.3
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        68.3,
+        76.3
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        76.3,
+        80.7
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        80.7,
+        85
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        86.8,
+        95.4
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        95.4,
+        103.8
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        103.8,
+        112.1
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        112.1,
+        123
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        127.9,
+        129.9
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        129.9,
+        131.9
+      ],
+      "ans": [
+        2
+      ]
+    },
+    {
+      "range": [
+        131.9,
+        133.9
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        133.9,
+        136.1
+      ],
+      "ans": [
+        2
+      ]
+    },
+    {
+      "range": [
+        136.1,
+        138.1
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        138.1,
+        140.3
+      ],
+      "ans": [
+        2
+      ]
+    },
+    {
+      "range": [
+        140.3,
+        143.8
+      ],
+      "ans": [
+        2,
+        7
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        144.6,
+        153
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        153,
+        161.3
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        161.3,
+        170
+      ],
+      "ans": [
+        4
+      ]
+    },
+    {
+      "range": [
+        170,
+        178.2
+      ],
+      "ans": [
+        5
+      ]
+    },
+    {
+      "range": [
+        178.2,
+        180.6
+      ],
+      "ans": [
+        4,
+        5
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        180.6,
+        188.8
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        188.8,
+        197.5
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        197.5,
+        206
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        225,
+        229.6
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        228.7,
+        231.7
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        229.6,
+        233.8
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        233.8,
+        244
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        248.4,
+        253
+      ],
+      "ans": [
+        3,
+        6
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        251.3,
+        253.5
+      ],
+      "ans": [
+        2,
+        7
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        253.5,
+        256.4
+      ],
+      "ans": [
+        4,
+        8,
+        9
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        257.4,
+        258.2
+      ],
+      "ans": [
+        1,
+        5
+      ],
+      "diff": 3
+    },
+    {
+      "range": [
+        259,
+        267.5
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        267.5,
+        275.8
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        275.8,
+        285
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        285,
+        292
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        288.8,
+        304
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "command": "group",
+      "members": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        6,
+        7
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        8,
+        9
+      ]
+    }
+  ],
+  "lyrics": [
+    "{Nazo wa nazo wa itsumo me no mae de chigau basho wo hiraku}",
+    "{Nazo wo nazo wo hodoite kono sekai de asobou yo}",
+    "{Escape and Search on mind...}",
+    "",
+    "{Negai tozashicha susumenai hazukashi garazu kite yo}",
+    "{Hitori ja mienai tegakari}",
+    "{Issho naraba wakaru wakaru}",
+    "{Kurayami terasu you ni koe kimi ni todoke to yonde miru}",
+    "{Tsunagaru hazu to shinjitara kiseki no youna hikari de}",
+    "",
+    "{Bokutachi wa meguri au ne}",
+    "{Mune ga atsuku naru yo!}",
+    "",
+    "{Boku wa kimi wo miteru kimi no me ni boku wo utsushite yo}",
+    "{\"Sagashite\" to kokoro ga ookina kodou todoketa garu}",
+    "{Nazo ga nazo ga motto tokimeki e to kawaru you ni}",
+    "{Escape and Search on mind...}",
+    "",
+    "{Geemu ga hajimaru} {nozonda sono toki}",
+    "{Mekurumeku mirai} {nozonda sono toki}",
+    "{Bouken to yonde ii yo} {koi mitai ni ima}",
+    "{Tomaranai jetto kousutaa no suriru}",
+    "{Kurayami koso hontou no koto ga ukabiagaru to omou nda}",
+    "{Tsunagaru hazu to shinjiru yo kiseki no youna hikari ga}",
+    "",
+    "{Bokutachi wo maneki kotae no chikaku ni iru yotte}",
+    "{Kanji sasete kureru no wa honnou tekina mono sa}",
+    "{Sara ni...atsuku!}",
+    "",
+    "{Nazo wa nazo wa itsumo me no mae de chigau basho wo hiraku}",
+    "{\"Mitsuketa\" no kotoba wo matteru yo hayaku sagashite yo}",
+    "{Nazo wo nazo wo hodoite kono sekai de asobou yo}",
+    "",
+    "{Shiranai koto ga ippai de}",
+    "{(Ah)} {Soredemo saki e susumou yo}",
+    "{Tashikamenakucha nani mo kawaranai kara}",
+    "",
+    "{Nazo wo nazo wo hodokeba}",
+    "{Hitori ja}{nai yo ne}",
+    "{Hitori ja nai!}",
+    "",
+    "{Boku wa kimi wo miteru kimi no me ni boku wo utsushite yo}",
+    "{\"Sagashite\" to kokoro ga ookina kodou todoketa garu}",
+    "{Nazo ga nazo ga motto tokimeki e to kawaru you ni} {asobou yo}",
+    "{Escape and Search on mind}"
+  ]
+}

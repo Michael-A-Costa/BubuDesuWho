@@ -1,0 +1,610 @@
+{
+  "name": "G Senjou no Cinderella",
+  "id": "cinderella",
+  "group": "aqours",
+  "mp3": "sound/g_senjou_no_cinderella.mp3",
+  "ogg": "sound/g_senjou_no_cinderella.ogg",
+  "mapping": [
+    {
+      "range": [
+        25.5,
+        29
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        30.3,
+        32.8
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        32.8,
+        35
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        35,
+        38
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        39.5,
+        42
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        42,
+        44.5
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        44.5,
+        47.5
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        47.5,
+        54
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        54,
+        58
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        58,
+        59.7
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        59.7,
+        63.7
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        63.7,
+        65.6
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        65.6,
+        67.8
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        67.8,
+        74.6
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        74.6,
+        79
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        79,
+        86.7
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        89,
+        92
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        93.5,
+        96
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        96,
+        98.3
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        98.3,
+        101
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        103,
+        105
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        105,
+        107
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        108,
+        110
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        110,
+        112.5
+      ],
+      "ans": [
+        7,
+        8
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        112.5,
+        114.5
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        114.5,
+        117
+      ],
+      "ans": [
+        8,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        117,
+        119.3
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        119.3,
+        122
+      ],
+      "ans": [
+        7,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        122,
+        124
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        124,
+        129.5
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        129.5,
+        131
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        131,
+        133.5
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        133.5,
+        140
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        140,
+        144.5
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        144.5,
+        150
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        151,
+        154.5
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        154.5,
+        158.7
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        158.7,
+        163
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        163,
+        166.5
+      ],
+      "ans": [
+        8
+      ]
+    },
+    {
+      "range": [
+        166.5,
+        168
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        168,
+        173
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        173,
+        178
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        178,
+        183
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        201,
+        206.5
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        206.5,
+        208.3
+      ],
+      "ans": [
+        9
+      ]
+    },
+    {
+      "range": [
+        209,
+        210.8
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        210.8,
+        213
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        213,
+        219.8
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        219.8,
+        224.3
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        224.3,
+        231
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        231,
+        244
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "command": "group",
+      "members": [
+        0,
+        1
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        16,
+        17
+      ]
+    }
+  ],
+  "lyrics": [
+    "{Shitai koto itte mite yo ne Please!}",
+    "{Sawagitai kibun dakara sa}",
+    "{Tondemo nandemo kanaechau}",
+    "",
+    "{Ikinari sugiru desho No!}",
+    "{Wakannai kedo omoshirosou}",
+    "{Oshiete oshiete don'na koto?}",
+    "",
+    "{(Dakara nandemotte itteru desho!)}",
+    "{(Nandemotte... ookesutora de odoru dansu paatii toka? fufu masaka ne...)}",
+    "{(Aa sou ieba fune no ue de paatitte yatte mitakattanda!)}",
+    "",
+    "{Otto meian kamo!?}",
+    "{Doresu kichaou ka winna・warutsu de!}",
+    "",
+    "{Shall we dance?}",
+    "{Yume no you ni odorimashou}",
+    "{Hitoyo no wasurerarenai shinderera}",
+    "{Kutsu wo nuide okeba nakusanai yo karuku hayaku}",
+    "{Dare o yobou ka? Moriagaru ne!}",
+    "",
+    "{Muzukashiku nai yo kitto ne Surprise!}",
+    "{Yorokobu kao mitai kara}",
+    "{Issai gassai kanaechau}",
+    "",
+    "{Masaka honki datta nante Stop!}",
+    "{Sugoi yo dokidoki suru ne}",
+    "{Minna de minna de dansu paatii!}",
+    "",
+    "{Mita koto nai kurai} {ookina shanderia kagayaite}",
+    "{Baiorin ga yuuga ni} {hoshi no kirameki o sasou yo}",
+    "{Gurasu wo douzo to} {giniro no torei ga matteru no}",
+    "{Sukoshi kinchou shichau ne}",
+    "{Awatenaide nikkori waratte purinsesu mitai ni!}",
+    "",
+    "{Shall we dance?}",
+    "{Kurukuru to mawarimashou}",
+    "{Aria wa nemuku nacchau yo shinderera}",
+    "{Dakara seippai tanoshinjae tsukareru made}",
+    "{Zutto odorou? Moriagatte ne!}",
+    "",
+    "{(Sou ieba minna warutsutte odoreru no?)}",
+    "{(Mocchiron! Hora ippan joushikitte yatsu?)}",
+    "{(Hon de nara mita koto aru keredo... jissen ni wa itatte imasen wa)}",
+    "{(Moshikashite paatonaa ga hitsuyou nanja...)}",
+    "{(Wao!)}",
+    "",
+    "{Shall we dance? Shall we dance?}",
+    "{Mochiron odorou!}",
+    "{Let’s! dance!! Step with me!!!}",
+    "",
+    "{Senjou dashi sasotte yo ne winna・warutsu de!}",
+    "",
+    "{Shall we dance?}",
+    "{Shall we dance?}",
+    "{Yume no you ni odorimashou}",
+    "{Hitoyo no wasurerarenai shinderera}",
+    "{Kutsu wo nuide okeba nakusanai yo karuku hayaku}",
+    "{Dare o yobou ka? Moriagaru ne!}",
+    "{Zutto odorou? Zutto odorou! Moriagatte ne!! }"
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "name": "Kimi no Tame Boku no Tame",
+  "ogg": "sound/kimi_no_tame_boku_no_tame.ogg",
+  "id": "kimi-no-tame-boku-no-tame",
+  "group": "aqours",
+  "added": "2026-04",
+  "hidden": false,
+  "slots": [
+
+  ],
+  "lines": [
+    {
+      "lyric_jp": "君の涙も 笑顔もここにある",
+      "parts": [
+        {"lyric": "Kimi no tame",
+          "range": [25.61, 27.73], "ans": [1, 2, 3, 4, 5, 7, 8, 9]},
+        {"lyric": "Boku no tame",
+          "range": [27.73, 29.85], "ans": [6]},
+        {"lyric": "Minna ga iru kara",
+          "range": [29.85, 32.83], "ans": []}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "どんな苦しみだってもう怖くない 二人ならどこまでも行ける",
+      "parts": [
+        {"lyric": "Umareta toki kara tabun kimatteta",
+          "range": [32.83, 34.99], "ans": []},
+        {"lyric": "Ano hi deatte kono basho de utatte",
+          "range": [34.99, 37.15], "ans": []},
+        {"lyric": "Giniro no kaze ga hoho wo kasumetara",
+          "range": [37.15, 39.46], "ans": [6]}
+      ]
+    },
+    {
+      "lyric_jp": "僕が一人じゃない事 教えてくれたんだ",
+      "parts": [
+        {"lyric": "Takaku sora datte toberu",
+          "range": [39.46, 43.12], "ans": [6]},
+        {"lyric": "(tobechau yo)",
+          "range": [43.12, 44.95], "ans": [1, 2, 3, 4, 5, 7, 8, 9]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "君に会う為生まれてきた そんな言葉をつぶやいてみる度",
+      "parts": [
+        {"lyric": "Egaita yume wa?",
+          "range": [44.95, 47.75], "ans": [1, 5, 7]},
+        {"lyric": "(Kanau yo!)",
+          "range": [47.75, 49.35], "ans": [2, 3, 4, 6, 8, 9]},
+        {"lyric": "Sonna bokura wa",
+          "range": [49.35, 51.75], "ans": [1, 5, 7]},
+        {"lyric": "(tsuyooi!)",
+          "range": [51.75, 53.35], "ans": [2, 3, 4, 6, 8, 9]}
+      ]
+    },
+    {
+      "lyric_jp": "不安は消えて 強さが心に灯る",
+      "parts": [
+        {"lyric": "ONE FOR ALL",
+          "range": [53.35, 54.49], "ans": [1, 5, 7]},
+        {"lyric": "(one FOR All)",
+          "range": [54.49, 55.63], "ans": [2, 3, 4, 6, 8, 9]},
+        {"lyric": "ALL FOR ONE",
+          "range": [55.63, 56.77], "ans": [1, 5, 7]},
+        {"lyric": "(all FOR One)",
+          "range": [56.77, 57.9], "ans": [2, 3, 4, 6, 8, 9]}
+      ]
+    },
+    {
+      "lyric_jp": "ありがとう僕らしかわからない 合図で共に前に進むんだ",
+      "parts": [
+        {"lyric": "Yakusoku",
+          "range": [57.9, 59.79], "ans": [1]},
+        {"lyric": "Shita yo",
+          "range": [59.79, 61.21], "ans": [7]},
+        {"lyric": "Wasurenai",
+          "range": [61.21, 63.57], "ans": [5]},
+        {"lyric": "Zettai ni!!",
+          "range": [63.57, 65.46], "ans": [1, 5, 7]}
+      ]
+    },
+    "",
+    {"lyric": "Minna no tame ni nani ga dekiru ka na (Fa, fine!)",
+      "lyric_jp": "かけがえのない時を 刻み込む",
+      "range": [65.46, 68.76], "ans": []},
+    {"lyric": "Kimi no koto kimi no koto (taisetsu dakara)",
+      "lyric_jp": "かけがえのない時を 刻み込む",
+      "range": [68.76, 72.06], "ans": []},
+    {"lyric": "Tsunagatte yuku bokura no sutoorii sou sa",
+      "lyric_jp": "かけがえのない時を 刻み込む",
+      "range": [72.06, 75.55], "ans": []},
+    {"lyric": "ONE FOR ALL (yes, dear)",
+      "lyric_jp": "かけがえのない時を 刻み込む",
+      "range": [75.55, 76.9], "ans": []},
+    {"lyric": "ALL FOR ONE (yes, dear)",
+      "lyric_jp": "溢れ出す想い うまく声にならなくて",
+      "range": [76.9, 79.03], "ans": []},
+    {"lyric": "Datte itsudatte itsudatte",
+      "lyric_jp": "溢れ出す想い うまく声にならなくて",
+      "range": [79.03, 82.07], "ans": []},
+    {"lyric": "Issho dakara",
+      "lyric_jp": "溢れ出す想い うまく声にならなくて",
+      "range": [82.07, 83.59], "ans": []},
+    "",
+    {
+      "lyric_jp": "宛てない暗がりに 何かを探してた",
+      "parts": [
+        {"lyric": "Umareta imi nara gyutto nigitteru",
+          "range": [83.59, 86.38], "ans": [8]},
+        {"lyric": "Namae wa nai kedo taisetsu de shikatanai",
+          "range": [86.38, 89.96], "ans": [2]}
+      ]
+    },
+    {
+      "lyric_jp": "きっと一人のままじゃ気付けなかった 自分が今どこにいるか",
+      "parts": [
+        {"lyric": "Masshiro na kyanbasu nani wo egakou ka na",
+          "range": [89.96, 93.61], "ans": [3]},
+        {"lyric": "Tanoshii iro ni sometai na",
+          "range": [93.61, 96.34], "ans": [9]},
+        {"lyric": "(somechau yo)",
+          "range": [96.34, 97.48], "ans": [2, 8]}
+      ]
+    },
+    "",
+    {"lyric": "Manmaru chikyuu no kono katasumi de",
+      "lyric_jp": "守り切りたい 重ねてきた約束を",
+      "range": [111.22, 113.96], "ans": [4]},
+    {"lyric": "Hekonda yoru ni tonaeta",
+      "lyric_jp": "守り切りたい 重ねてきた約束を",
+      "range": [113.96, 115.92], "ans": [4]},
+    {
+      "lyric_jp": "ありがとう僕らしかわからない 合図で共に前に進むんだ",
+      "parts": [
+        {"lyric": "Aikotoba",
+          "range": [115.92, 117.94], "ans": [5]},
+        {"lyric": "Kitto",
+          "range": [117.94, 118.75], "ans": [4]},
+        {"lyric": "Wasurenai",
+          "range": [118.75, 120.77], "ans": [5]},
+        {"lyric": "Eien ni!!",
+          "range": [120.77, 122.37], "ans": [4, 5]}
+      ]
+    },
+    "",
+    "[next-col]",
+    {"lyric": "Minna no kao wo omoidashichau yo (fa, fine!)",
+      "lyric_jp": "そう つまずきがちな日々の中で ただ一つしかない繋がり求め",
+      "range": [128.86, 130.83], "ans": []},
+    {"lyric": "Boku no koto boku no koto (shinjite ite ne}",
+      "lyric_jp": "そう つまずきがちな日々の中で ただ一つしかない繋がり求め",
+      "range": [130.83, 132.68], "ans": []},
+    {"lyric": "Ureshii toki mo nakitai toki demo sotto",
+      "lyric_jp": "そう つまずきがちな日々の中で ただ一つしかない繋がり求め",
+      "range": [132.68, 134.64], "ans": []},
+    {"lyric": "ONE FOR ALL (yes, dear)",
+      "lyric_jp": "人は互いに支え合いながら 認め合っていく",
+      "range": [134.64, 136.3], "ans": []},
+    {"lyric": "ALL FOR ONE (yes, dear)",
+      "lyric_jp": "人は互いに支え合いながら 認め合っていく",
+      "range": [136.3, 137.96], "ans": []},
+    {"lyric": "Chanto yorisotte yorisotte ayunde ikou",
+      "lyric_jp": "人は互いに支え合いながら 認め合っていく",
+      "range": [137.96, 141.76], "ans": []},
+    "",
+    {
+      "lyric_jp": "君が悲しみに溺れたら 僕のこの手できっと助けるから",
+      "parts": [
+        {"lyric": "Itsumo tasukete kureta arigatou",
+          "range": [141.76, 144.03], "ans": [6]},
+        {"lyric": "Hontou wa yowai boku no kokoro",
+          "range": [144.03, 146], "ans": [1]},
+        {"lyric": "Tatakau",
+          "range": [146, 146.61], "ans": [7]},
+        {"lyric": "Koto—aisuru",
+          "range": [146.61, 147.51], "ans": [5, 7]}
+      ]
+    },
+    {
+      "lyric_jp": "これから先に出会う景色も 並んで見たい",
+      "parts": [
+        {"lyric": "Koto—ikiteru",
+          "range": [147.51, 150.66], "ans": [5, 8]},
+        {"lyric": "Tte koto ka na?",
+          "range": [150.66, 153.28], "ans": [8]},
+        {"lyric": "Tsuyoku",
+          "range": [153.28, 154.86], "ans": [2]}
+      ]
+    },
+    {
+      "lyric_jp": "君に会う為生まれてきた そんな言葉をつぶやいてみる度",
+      "parts": [
+        {"lyric": "Ima",
+          "range": [154.86, 155.67], "ans": [3]},
+        {"lyric": "Nareru",
+          "range": [155.67, 156.89], "ans": [9]},
+        {"lyric": "Mamoritai mirai ga aru nara",
+          "range": [156.89, 162.18], "ans": [4]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "不安は消えて 強さが心に灯る",
+      "parts": [
+        {"lyric": "Tabi wa tsuzuku yo",
+          "range": [162.18, 163.92], "ans": [2, 4, 8]},
+        {"lyric": "(ikou yo)",
+          "range": [163.92, 164.92], "ans": [1, 3, 5, 6, 7, 9]},
+        {"lyric": "Wakari michi demo",
+          "range": [164.92, 166.66], "ans": [2, 4, 8]}
+      ]
+    },
+    {
+      "lyric_jp": "ありがとう僕らしかわからない 合図で共に前に進むんだ",
+      "parts": [
+        {"lyric": "(daijoubu!)",
+          "range": [166.66, 168.74], "ans": [1, 3, 5, 6, 7, 9]},
+        {"lyric": "Waratte",
+          "range": [168.74, 169.99], "ans": [3, 6, 9]},
+        {"lyric": "Utatte",
+          "range": [169.99, 171.24], "ans": [1, 2, 4, 5, 7, 8]},
+        {"lyric": "Onnaji kimochi de",
+          "range": [171.24, 174.15], "ans": [3, 6, 9]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "かけがえのない時を 刻み込め",
+      "parts": [
+        {"lyric": "Hyakunen tatte mo kawarazu ni iru yo",
+          "range": [174.15, 176.89], "ans": [6]},
+        {"lyric": "Kimi no koto kimi no koto",
+          "range": [176.89, 178.85], "ans": [6]},
+        {"lyric": "“daisuki!!”",
+          "range": [178.85, 179.63], "ans": []}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "この場所から離れられない 同じ鼓動を感じて生きてるから",
+      "parts": [
+        {"lyric": "Minna no tame ni nani ga dekiru ka na (Fa, fine!)",
+          "range": [179.63, 182.25], "ans": []},
+        {"lyric": "Kimi no koto kimi no koto (taisetsu dakara)",
+          "range": [182.25, 184.87], "ans": []},
+        {"lyric": "Tsunagatte yuku bokura no sutoorii",
+          "range": [184.87, 187.18], "ans": []},
+        {"lyric": "Sou sa",
+          "range": [187.18, 187.64], "ans": [6]}
+      ]
+    },
+    {
+      "lyric_jp": "守り切りたい 重ねてきた約束を",
+      "parts": [
+        {"lyric": "ONE FOR ALL",
+          "range": [187.64, 188.42], "ans": [6]},
+        {"lyric": "ALL FOR ONE",
+          "range": [188.42, 189.2], "ans": [6]},
+        {"lyric": "Datte itsudatte itsudatte",
+          "range": [189.2, 191.14], "ans": []},
+        {"lyric": "Issho dakara",
+          "range": [191.14, 192.1], "ans": []}
+      ]
+    },
+    {"lyric": "(yes, dear)",
+      "range": [190.1, 192.1], "ans": []},
+    {"lyric": "(yes, dear)",
+      "range": [190.1, 192.1], "ans": []},
+    "",
+    {"lyric": "Kimi no tame boku no tame",
+      "lyric_jp": "ありがとう僕らしかわからない 合図で共に前に進むんだ",
+      "range": [192.1, 196.44], "ans": []},
+    {"lyric": "Minna ga iru kara",
+      "lyric_jp": "ありがとう僕らしかわからない 合図で共に前に進むんだ",
+      "range": [196.44, 199.48], "ans": []},
+    {"lyric": "(Lan Lan LaLaLan Lan LaLaLaLan Lan)",
+      "range": [197.48, 199.48], "ans": []},
+    {"lyric": "(Lan Lan LaLaLan Lan LaLaLaLa)",
+      "range": [197.48, 199.48], "ans": []},
+    {"lyric": "(Lan Lan LaLaLan Lan LaLaLaLan Lan)",
+      "range": [197.48, 199.48], "ans": []},
+    {"lyric": "(Lan Lan LaLaLan Lan LaLaLaLa)",
+      "range": [197.48, 199.48], "ans": []},
+    {"lyric": "(Lan Lan LaLaLan Lan LaLaLaLan Lan)",
+      "range": [197.48, 199.48], "ans": []},
+    {"lyric": "(Lan Lan LaLaLan Lan LaLaLaLa)",
+      "range": [197.48, 199.48], "ans": []}
+  ]
+}

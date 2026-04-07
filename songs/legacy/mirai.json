@@ -1,0 +1,379 @@
+{
+  "name": "MIRAI TICKET",
+  "mp3": "sound/mirai_ticket.mp3",
+  "ogg": "sound/mirai_ticket.ogg",
+  "id": "mirai",
+  "group": "aqours",
+  "mapping": [
+    {
+      "range": [
+        34,
+        40
+      ]
+    },
+    {
+      "range": [
+        40,
+        49
+      ]
+    },
+    {
+      "range": [
+        62,
+        64.5
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "range": [
+        64.5,
+        67
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "range": [
+        67,
+        73
+      ],
+      "ans": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "range": [
+        73,
+        76
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        76,
+        78.5
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        78.5,
+        82
+      ]
+    },
+    {
+      "range": [
+        82,
+        85
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        85,
+        88
+      ],
+      "ans": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "range": [
+        88,
+        90.5
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "range": [
+        90.5,
+        95.3
+      ]
+    },
+    {
+      "range": [
+        94.3,
+        95.3
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        95.3,
+        98
+      ]
+    },
+    {
+      "range": [
+        99,
+        104
+      ]
+    },
+    {
+      "range": [
+        104.5,
+        110
+      ]
+    },
+    {
+      "range": [
+        108.5,
+        110
+      ],
+      "ans": [
+        4,
+        5,
+        6
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        110,
+        116
+      ]
+    },
+    {
+      "range": [
+        116,
+        119.7
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        119.7,
+        120.5
+      ],
+      "ans": [
+        4,
+        5,
+        6
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        120.5,
+        121.3
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        121.3,
+        122.1
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        122.1,
+        128
+      ]
+    },
+    {
+      "range": [
+        146,
+        151
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        151,
+        158
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        160,
+        166
+      ]
+    },
+    {
+      "range": [
+        166,
+        171
+      ]
+    },
+    {
+      "range": [
+        169.6,
+        171
+      ],
+      "ans": [
+        4,
+        5,
+        6
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        171.5,
+        177
+      ]
+    },
+    {
+      "range": [
+        177,
+        181.2
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        181.2,
+        182
+      ],
+      "ans": [
+        4,
+        5,
+        6
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        182,
+        182.8
+      ],
+      "ans": [
+        7,
+        8,
+        9
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        182.8,
+        183.5
+      ],
+      "ans": [
+        1,
+        2,
+        3
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        183.5,
+        189
+      ]
+    },
+    {
+      "range": [
+        189,
+        198
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "command": "group",
+      "members": [
+        2,
+        3
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        5,
+        6
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        23,
+        24
+      ]
+    }
+  ],
+  "lyrics": [
+    "{Hikari ni narou mirai o terashitai}",
+    "{Kagayaki wa kokoro kara afuredasu yo}",
+    "",
+    "{Yume ga umare yume no tame ni}",
+    "{naita toki demo}",
+    "{Akiramenai koto de tsunagatta}",
+    "{Minna minna nayami nagara}",
+    "{koko e tadori tsuita ne}",
+    "{Kore kara dayo ima wa}",
+    "{Mou mayowanai}",
+    "",
+    "{Akogare dakishimete} {tsugi e susumu nda}",
+    "{Bokutachi dake no shin sekai ga} {(kitto aru)}",
+    "{We say \"Yousoro!!\"}",
+    "",
+    "{Fune ga yuku yo mirai e tabidatou}",
+    "{Aoi sora waratteru} {(nani ga shitai?)}",
+    "{Hikari ni narou mirai o terashitai}",
+    "{Kagayaki wa kokoro kara}",
+    "({afure} {dashite} {motto})",
+    "{Saki no keshiki nozomu nda}",
+    "{Hikari ni narou mirai o terashitai}",
+    "{Ima wa mou mayowanai}",
+    "",
+    "{Fune ga yuku yo mirai e tabidatou}",
+    "{Aoi sora waratteru} {(nani ga shitai?)}",
+    "{Hikari ni narou mirai o terashitai}",
+    "{Kagayaki wa kokoro kara}",
+    "({afure} {dashite} {motto})",
+    "{Saki no keshiki nozomu nda}",
+    "{Ah! Yatto te ni shita mirai chiketto kazashite!}"
+  ]
+}

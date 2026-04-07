@@ -1,0 +1,411 @@
+{
+  "name": "smile smile ship Start!",
+  "ogg": "sound/smile_smile_ship_start.ogg",
+  "id": "smile-smile-ship-start",
+  "group": "aqours",
+  "added": "2026-04",
+  "hidden": false,
+  "slots": [
+
+  ],
+  "lines": [
+    "",
+    {"lyric": "Kanata wo mezashitai tte?",
+      "lyric_jp": "彼方を目指したいって？",
+      "range": [29.76, 32.14], "ans": [1]},
+    {"lyric": "Noranakucha da",
+      "lyric_jp": "乗らなくちゃだ",
+      "range": [32.14, 33.21], "ans": [1]},
+    {
+      "lyric_jp": "Wonder trip (All right!)",
+      "parts": [
+        {"lyric": "Wonder trip",
+          "range": [33.21, 33.91], "ans": [1]},
+        {"lyric": "(Alright!)",
+          "range": [33.91, 34.44], "ans": [4, 5, 6]}
+      ]
+    },
+    {"lyric": "Kitai de mappu egakou",
+      "lyric_jp": "期待でマップ描こう",
+      "range": [34.2, 36.16], "ans": [1]},
+    {"lyric": "Sugoi sugoi sugoi tanoshii",
+      "lyric_jp": "凄い 凄い 凄い楽しいっ",
+      "range": [36.16, 38.82], "ans": [1]},
+    {"lyric": "(Hey!)",
+      "range": [36.82, 38.82], "ans": []},
+    "",
+    {"lyric": "Matsu no wa nigate nanda",
+      "lyric_jp": "待つのは苦手なんだ",
+      "range": [38.82, 41.05], "ans": [2]},
+    {"lyric": "Sugu ikou yo",
+      "lyric_jp": "すぐ行こうよ",
+      "range": [41.05, 42.36], "ans": [2]},
+    {
+      "lyric_jp": "Wonder trip (Hurry up!)",
+      "parts": [
+        {"lyric": "Wonder trip",
+          "range": [42.36, 43.09], "ans": [2]},
+        {"lyric": "(Hurry up!)",
+          "range": [43.09, 43.65], "ans": [4, 5, 6]}
+      ]
+    },
+    {"lyric": "Paatii hiraichaeba? Dansu!",
+      "lyric_jp": "パーティー開いちゃえば？ダンス！",
+      "range": [43.65, 45.56], "ans": [3]},
+    {
+      "lyric_jp": "ミライ ミライ ミライへステップ",
+      "parts": [
+        {"lyric": "Mirai mirai mirai e no suteppu",
+          "range": [45.56, 47.04], "ans": [3]},
+        {"lyric": "(mirai e no suteppu)",
+          "range": [47.04, 48.16], "ans": [4, 5, 6]}
+      ]
+    },
+    "",
+    {"lyric": "Mainichi umarekawaru aoi sora ni wa",
+      "lyric_jp": "毎日生まれ変わる青い空は",
+      "range": [48.16, 52.14], "ans": [7]},
+    {"lyric": "Nandemo nandomo yume wo katarou",
+      "lyric_jp": "なんでもなんども 夢を語ろう",
+      "range": [52.14, 54.57], "ans": [6]},
+    {"lyric": "Muri muri iwazu ni yatte waraou",
+      "lyric_jp": "ムリムリ言わずに やって笑おう",
+      "range": [54.57, 57.61], "ans": [6]},
+    {
+      "lyric_jp": "誰もがきっと（まっすぐに）向かいあうんだね",
+      "parts": [
+        {"lyric": "Daremo ga kitto",
+          "range": [57.61, 59.77], "ans": [8]},
+        {"lyric": "(massugu ni)",
+          "range": [59.77, 60.63], "ans": [4, 5, 6]},
+        {"lyric": "Mukaiaunda ne",
+          "range": [60.63, 61.84], "ans": [8]}
+      ]
+    },
+    {
+      "lyric_jp": "強い 願い 隠さずに Let's go!（ワン・ツー・スリー！）",
+      "parts": [
+        {"lyric": "Tsuyoi negai kakusazu ni Let’s go!",
+          "range": [61.84, 64.27], "ans": [4]},
+        {"lyric": "(WANeTSUUeSURII!)",
+          "range": [64.27, 65.03], "ans": [5]}
+      ]
+    },
+    {"lyric": "Sunao ga ichiban da!",
+      "lyric_jp": "素直がイチバンだ！",
+      "range": [64.82, 67.44], "ans": [9]},
+    "",
+    {"lyric": "(Hey! Hey!) nami yo utae",
+      "lyric_jp": "波よ歌え",
+      "range": [67.44, 69], "ans": []},
+    {
+      "lyric_jp": "エブリバディ！歌えば始まる",
+      "parts": [
+        {"lyric": "Eburibadi!",
+          "range": [69, 69.67], "ans": [4, 5, 6]},
+        {"lyric": "Utaeba hajimaru",
+          "range": [69.67, 71.22], "ans": []}
+      ]
+    },
+    {"lyric": "(Hey! Hey!) atarashii funade mo kimi ga irunda yo",
+      "lyric_jp": "新しい船でも君がいるんだよ",
+      "range": [71.22, 75.85], "ans": []},
+    {"lyric": "(Hey! Hey!) utaeba kaze no naka",
+      "lyric_jp": "歌えば風の中",
+      "range": [75.85, 78.14], "ans": []},
+    {
+      "lyric_jp": "ほら！ほら！呼ばれてるんだよ",
+      "parts": [
+        {"lyric": "Hora! Hora!",
+          "range": [78.14, 78.69], "ans": [4, 5, 6]},
+        {"lyric": "Yobareterunda yo",
+          "range": [78.69, 80.4], "ans": []}
+      ]
+    },
+    {"lyric": "(Hey! Hey!) shio no kaori suikonde mita",
+      "lyric_jp": "潮の香り 吸い込んでみた",
+      "range": [80.4, 85.12], "ans": []},
+    {
+      "lyric_jp": "希望と言う帆を揚げて smile smile ship Start!",
+      "parts": [
+        {"lyric": "Kibou to iu ho wo agete",
+          "range": [85.12, 88.12], "ans": [1]},
+        {"lyric": "Smile smile ship Start!",
+          "range": [88.12, 100.62], "ans": []}
+      ]
+    },
+    {"lyric": "(Hey! Hey!)",
+      "range": [98.62, 100.62], "ans": []},
+    {"lyric": "(Hey! Hey!)",
+      "range": [98.62, 100.62], "ans": []},
+    {"lyric": "(Hey! Hey!)",
+      "range": [98.62, 100.62], "ans": []},
+    "",
+    {"lyric": "Kairo wa me ni mienai tte?",
+      "lyric_jp": "海路は目に見えないって？",
+      "range": [100.62, 103.03], "ans": [9]},
+    {"lyric": "Sorya souda yo",
+      "lyric_jp": "そりゃそうだよ",
+      "range": [103.03, 103.98], "ans": [9]},
+    {
+      "lyric_jp": "Danger trip (Oh boy!)",
+      "parts": [
+        {"lyric": "Danger trip",
+          "range": [103.98, 104.63], "ans": [9]},
+        {"lyric": "(Oh boy!)",
+          "range": [104.63, 105.06], "ans": [4, 5, 6]}
+      ]
+    },
+    {"lyric": "Dakara omoshiroin janai",
+      "lyric_jp": "だから面白いんじゃない",
+      "range": [105.06, 107.47], "ans": [9]},
+    {"lyric": "Kiai kiai kiai ire yo",
+      "lyric_jp": "気合い 気合い 気合い入れよっ",
+      "range": [107.47, 109.88], "ans": [9]},
+    {"lyric": "(Hey!)",
+      "range": [107.88, 109.88], "ans": []},
+    "",
+    {"lyric": "Haretara sakki okkaketa",
+      "lyric_jp": "晴れたらさっき追いかけた",
+      "range": [109.88, 112.22], "ans": [8]},
+    {
+      "lyric_jp": "鳥が帽子持ってく（返して〜！）",
+      "parts": [
+        {"lyric": "Tori ga boushi motteku",
+          "range": [112.22, 113.76], "ans": [8]},
+        {"lyric": "(kaeshite~!)",
+          "range": [113.76, 114.54], "ans": [4, 5, 6]}
+      ]
+    },
+    {"lyric": "Nante jiyuu ni tobu no",
+      "lyric_jp": "なんて自由に飛ぶの",
+      "range": [114.1, 116.73], "ans": [7]},
+    {
+      "lyric_jp": "ズルイ ズルイ ズルイ... カッコイイ",
+      "parts": [
+        {"lyric": "Zurui zurui zurui... kakkoii",
+          "range": [116.73, 118.05], "ans": [7]},
+        {"lyric": "(zurui... kakkoid)",
+          "range": [118.05, 119.13], "ans": [4, 5, 6]}
+      ]
+    },
+    "",
+    {"lyric": "Ase ga ochiru to issho ni mayoi mo kiete",
+      "lyric_jp": "汗が落ちると一緒に迷いも消えて",
+      "range": [119.13, 123.19], "ans": [3]},
+    {"lyric": "Ikioi tsuita yo mou tomaranai",
+      "lyric_jp": "勢いついたよ も止まらない",
+      "range": [123.19, 125.37], "ans": [5]},
+    {"lyric": "Dasshu & janpu da So sky high",
+      "lyric_jp": "ダッシュ＆ジャンプだ So sky high",
+      "range": [125.37, 128.36], "ans": [5]},
+    {
+      "lyric_jp": "誰かの声が（準備できた！）聞こえたから",
+      "parts": [
+        {"lyric": "Dareka no koe ga",
+          "range": [128.36, 130.09], "ans": [1]},
+        {"lyric": "(junbi dekita!)",
+          "range": [130.09, 131.33], "ans": [4, 5, 6]},
+        {"lyric": "Kikoeta kara",
+          "range": [131.33, 132.82], "ans": [1]}
+      ]
+    },
+    {
+      "lyric_jp": "返事するよ みんなも行くよ（ワン・ツー・スリー！）",
+      "parts": [
+        {"lyric": "Henji suru yo minna mo iku yo",
+          "range": [132.82, 134.82], "ans": [4]},
+        {"lyric": "(WANeTSUUeSURII!)",
+          "range": [134.82, 135.96], "ans": [6]}
+      ]
+    },
+    {"lyric": "Susundeku yo genki ni!",
+      "lyric_jp": "進んでくよゲンキに！",
+      "range": [135.66, 138.19], "ans": [2]},
+    "",
+    {"lyric": "(Hey! Hey!) boku mo utau",
+      "lyric_jp": "僕も歌う",
+      "range": [138.19, 139.71], "ans": []},
+    {
+      "lyric_jp": "エブリバディ！歌ってるとさ",
+      "parts": [
+        {"lyric": "Eburibadi!",
+          "range": [139.71, 140.54], "ans": [4, 5, 6]},
+        {"lyric": "Utatteru to sa",
+          "range": [140.54, 142.27], "ans": []}
+      ]
+    },
+    {"lyric": "(Hey! Hey!) sekai wa kirei na bouken wo misebirakasunda",
+      "lyric_jp": "世界はキレイな冒険を見せびらかすんだ",
+      "range": [142.27, 146.81], "ans": []},
+    {"lyric": "(Hey! Hey!) utaeba omoidasu",
+      "lyric_jp": "歌えば思い出す",
+      "range": [146.81, 148.93], "ans": []},
+    {
+      "lyric_jp": "まだ！まだ！あきらめないと",
+      "parts": [
+        {"lyric": "Mada! Mada!",
+          "range": [148.93, 149.52], "ans": [4, 5, 6]},
+        {"lyric": "Akiramenai to",
+          "range": [149.52, 151.38], "ans": []}
+      ]
+    },
+    {"lyric": "(Hey! Hey!) oikakeru jibun de itai yo",
+      "lyric_jp": "おいかける自分でいたいよ",
+      "range": [151.38, 155.76], "ans": []},
+    {"lyric": "Yume matou ho wo agete",
+      "lyric_jp": "夢まとう帆を揚げて smile smile ship Start!",
+      "range": [155.76, 158.74], "ans": []},
+    {"lyric": "Smile smile ship Start!",
+      "lyric_jp": "夢まとう帆を揚げて smile smile ship Start!",
+      "range": [158.74, 164.73], "ans": []},
+    "",
+    "[next-col]",
+    {"lyric": "Kanata ni nani ga nani ga kanata ni?",
+      "lyric_jp": "彼方に何が 何が彼方に？",
+      "range": [164.73, 166.4], "ans": [1]},
+    {"lyric": "Itsuka no hoshi ga sasoikakeru arata ni",
+      "lyric_jp": "いつかの星が誘いかける 新たに",
+      "range": [166.4, 180.1], "ans": [1]},
+    {"lyric": "(Hey! Hey!)",
+      "range": [178.1, 180.1], "ans": []},
+    {"lyric": "(Hey! Hey!)",
+      "range": [178.1, 180.1], "ans": []},
+    {"lyric": "(Hey! Hey!)",
+      "range": [178.1, 180.1], "ans": []},
+    {"lyric": "(Hey! Hey!)",
+      "range": [178.1, 180.1], "ans": []},
+    "",
+    {
+      "lyric_jp": "歌いたいから（歌いたいから）",
+      "parts": [
+        {"lyric": "Utaitai kara",
+          "range": [180.1, 181.63], "ans": [2, 3]},
+        {"lyric": "(utaitai kara)",
+          "range": [181.63, 182.65], "ans": [1, 6, 7]}
+      ]
+    },
+    {
+      "lyric_jp": "歌ってるよ（歌ってるよ）",
+      "parts": [
+        {"lyric": "Utatteru yo",
+          "range": [181.99, 183.5], "ans": [4, 5]},
+        {"lyric": "(utatteru yo)",
+          "range": [183.5, 185.05], "ans": [1, 6, 7]}
+      ]
+    },
+    {"lyric": "Tsutawareba",
+      "lyric_jp": "伝われば",
+      "range": [184.34, 186.28], "ans": [8, 9]},
+    {
+      "lyric_jp": "ココロ重なってく",
+      "parts": [
+        {"lyric": "(tsutawareba kasanatteku)",
+          "range": [186.28, 188.5], "ans": [1, 6, 7]},
+        {"lyric": "Kokoro kasanatteku",
+          "range": [188.5, 189.46], "ans": [8, 9]}
+      ]
+    },
+    {"lyric": "Yurarete hitotsu ni naritai",
+      "lyric_jp": "揺られてひとつになりたい",
+      "range": [189.2, 193.35], "ans": [2, 3]},
+    {
+      "lyric_jp": "そしてもっと 楽しくなりたいね",
+      "parts": [
+        {"lyric": "Soshite motto",
+          "range": [193.35, 195.09], "ans": [4, 5]},
+        {"lyric": "Tanoshiku naritai ne",
+          "range": [195.09, 199.79], "ans": [8, 9]}
+      ]
+    },
+    {"lyric": "Egao de tanoshiku ne!",
+      "lyric_jp": "笑顔で楽しくね！",
+      "range": [199.79, 201.99], "ans": [1, 6, 7]},
+    "",
+    {"lyric": "(Hey! Hey!) nami yo utae",
+      "lyric_jp": "波よ歌え",
+      "range": [201.99, 203.83], "ans": []},
+    {
+      "lyric_jp": "エブリバディ！歌えば始まる",
+      "parts": [
+        {"lyric": "Eburibadi!",
+          "range": [203.83, 204.5], "ans": [4, 5, 6]},
+        {"lyric": "Utaeba hajimaru",
+          "range": [204.5, 206.28], "ans": []}
+      ]
+    },
+    {"lyric": "(Hey! Hey!) atarashii funade mo kimi ga irunda yo",
+      "lyric_jp": "新しい船出も君がいるんだよ",
+      "range": [206.28, 211.13], "ans": []},
+    {"lyric": "(Hey! Hey!) utaeba kaze no naka",
+      "lyric_jp": "歌えば風の中",
+      "range": [211.13, 212.82], "ans": []},
+    {
+      "lyric_jp": "ほら！ほら！呼ばれてるんだよ",
+      "parts": [
+        {"lyric": "Hora! Hora!",
+          "range": [212.82, 213.56], "ans": [4, 5, 6]},
+        {"lyric": "Yobareterunda yo",
+          "range": [213.56, 215.43], "ans": []}
+      ]
+    },
+    {"lyric": "(Hey! Hey!) shio no kaori suikonde ooki na koedashite",
+      "lyric_jp": "潮の香り 吸いこんで大きな声出して",
+      "range": [215.43, 218.35], "ans": []},
+    {"lyric": "(Hey! Hey!) boku mo utau",
+      "lyric_jp": "潮の香り 吸いこんで大きな声出して",
+      "range": [218.35, 220.38], "ans": []},
+    {
+      "lyric_jp": "エブリバディ！歌ってるとさ",
+      "parts": [
+        {"lyric": "Eburibadi!",
+          "range": [222.11, 222.84], "ans": [4, 5, 6]},
+        {"lyric": "Utatteru to sa",
+          "range": [222.84, 224.74], "ans": []}
+      ]
+    },
+    {"lyric": "(Hey! Hey!) sekai wa kirei na bouken wo misebirakasunda",
+      "lyric_jp": "世界はキレイな冒険を見せびらかすんだ",
+      "range": [224.74, 228.98], "ans": []},
+    {"lyric": "(Hey! Hey!) utaeba omoidasu",
+      "lyric_jp": "歌えば思い出す",
+      "range": [228.98, 231.23], "ans": []},
+    {
+      "lyric_jp": "まだ！まだ！あきらめないと",
+      "parts": [
+        {"lyric": "Mada! Mada!",
+          "range": [231.23, 232.05], "ans": [4, 5, 6]},
+        {"lyric": "Akiramenai to",
+          "range": [232.05, 233.58], "ans": []}
+      ]
+    },
+    {"lyric": "(Hey! Hey!) oikakeru jibun de itai yo",
+      "lyric_jp": "追いかける自分でいたいよ",
+      "range": [233.58, 238.06], "ans": []},
+    {
+      "lyric_jp": "希望と言う帆を揚げて smile smile ship Start!",
+      "parts": [
+        {"lyric": "Kibou to iu ho wo agete",
+          "range": [238.06, 241], "ans": [1]},
+        {"lyric": "Smile smile ship Start!",
+          "range": [241, 243.55], "ans": []}
+      ]
+    },
+    {"lyric": "(WANeTSUU*SURII!)",
+      "range": [241.55, 243.55], "ans": []},
+    {"lyric": "(1, 2, 3!)",
+      "range": [241.55, 243.55], "ans": []},
+    {"lyric": "(Hey! Hey!)",
+      "range": [241.55, 243.55], "ans": []},
+    {"lyric": "(Hey! Hey!)",
+      "range": [241.55, 243.55], "ans": []},
+    {"lyric": "(Hey! Hey!)",
+      "range": [241.55, 243.55], "ans": []},
+    {"lyric": "(Hey! Hey!)",
+      "range": [241.55, 243.55], "ans": []},
+    {"lyric": "(Hey! Hey!)",
+      "range": [241.55, 243.55], "ans": []},
+    {"lyric": "(Hey! Hey!)",
+      "range": [241.55, 243.55], "ans": []}
+  ]
+}

@@ -1,0 +1,558 @@
+{
+  "name": "WUG Zoo Zoo",
+  "group": "wug",
+  "id": "wugzoo",
+  "mp3": "sound/wug_zoo_zoo.mp3",
+  "ogg": "sound/wug_zoo_zoo.ogg",
+  "mapping": [
+    {
+      "range": [
+        0.6,
+        2.7
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "range": [
+        2.7,
+        4.5
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "range": [
+        13.9,
+        18.3
+      ],
+      "ans": [
+        1,
+        5
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        18.3,
+        22.6
+      ],
+      "ans": [
+        4,
+        7
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        22.8,
+        27.2
+      ],
+      "ans": [
+        2,
+        3,
+        6
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        27.2,
+        31.2
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        31.4,
+        35.9
+      ],
+      "ans": [
+        5
+      ]
+    },
+    {
+      "range": [
+        36,
+        41.9
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "range": [
+        42.4,
+        46.7
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "range": [
+        46.8,
+        51.3
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "range": [
+        51.6,
+        55.7
+      ],
+      "ans": [
+        2
+      ]
+    },
+    {
+      "range": [
+        56,
+        60.1
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "range": [
+        60.4,
+        64.4
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "range": [
+        74.8,
+        79.3
+      ],
+      "ans": [
+        3,
+        4
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        79.3,
+        83.7
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        83.7,
+        88.1
+      ],
+      "ans": [
+        1,
+        2
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        88.1,
+        92.2
+      ],
+      "ans": [
+        5,
+        6
+      ],
+      "diff": 2
+    },
+    {
+      "range": [
+        92.2,
+        96.9
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        96.9,
+        102.7
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "range": [
+        103.3,
+        107.7
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "range": [
+        107.7,
+        112.2
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "range": [
+        112.4,
+        116.7
+      ],
+      "ans": [
+        4
+      ]
+    },
+    {
+      "range": [
+        116.8,
+        120.6
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "range": [
+        121.3,
+        125
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "range": [
+        143.3,
+        145.7
+      ],
+      "ans": [
+        1
+      ]
+    },
+    {
+      "range": [
+        145.8,
+        147.5
+      ],
+      "ans": [
+        2
+      ]
+    },
+    {
+      "range": [
+        147.5,
+        152
+      ],
+      "ans": [
+        5
+      ]
+    },
+    {
+      "range": [
+        152.1,
+        154.7
+      ],
+      "ans": [
+        4
+      ]
+    },
+    {
+      "range": [
+        154.7,
+        156.6
+      ],
+      "ans": [
+        6
+      ]
+    },
+    {
+      "range": [
+        156.6,
+        160.8
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        160.8,
+        167.8
+      ],
+      "ans": [
+        3
+      ]
+    },
+    {
+      "range": [
+        171.8,
+        176.5
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        176.6,
+        178.3
+      ],
+      "ans": [
+        7
+      ]
+    },
+    {
+      "range": [
+        178.3,
+        182.9
+      ],
+      "ans": [
+        5
+      ]
+    },
+    {
+      "range": [
+        183.2,
+        184.6
+      ],
+      "ans": [
+        5
+      ]
+    },
+    {
+      "range": [
+        185.2,
+        189.4
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "range": [
+        189.4,
+        194.1
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "range": [
+        194.2,
+        198.6
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "range": [
+        198.7,
+        202.6
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "range": [
+        203.1,
+        206.9
+      ],
+      "ans": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "range": [
+        207.6,
+        211.4
+      ],
+      "ans": [
+        1
+      ]
+    }
+  ],
+  "slots": [
+    {
+      "command": "group",
+      "members": [
+        31,
+        32
+      ]
+    },
+    {
+      "command": "group",
+      "members": [
+        33,
+        34
+      ]
+    }
+  ],
+  "lyrics": [
+    "{Wansaka wansaka wansaka wansaka}",
+    "{Korya taihen da}",
+    "",
+    "{Machi no hazure no nazo no doubutsuen sa}",
+    "{One two maniakku tsuugo nomi nano sa}",
+    "{Taiyou san san hiru ne shichatteru kamo}",
+    "{Soko mo yoroshiku kutsuroi de itte}",
+    "",
+    "{Moshi moya moya to suru koto ga}",
+    "{Saru yama no youni ippai datte waracchatte yo ne!}",
+    "",
+    "{Dare mo kare mo dore mo koyui kyara darake sa}",
+    "{Ano ne hora ne goran jitsu wa hakuchou tachi mo}",
+    "{Oike no naka de hisshi koi de iru yo}",
+    "{Wansaka wansaka wansaka wansaka taihen da}",
+    "{Wansaka wansaka wansaka wansaka WUG ZOO ZOO}",
+    "",
+    "{Buta mo odaterya ten ni nobocchau nda}",
+    "{Washi mo homerare uchouten rando}",
+    "{Uma ga awanai hito ga tonari ni ite mo}",
+    "{Pinchi kugureba nakama ni nareru}",
+    "",
+    "{Arya wara wara to atsumattara}",
+    "{Sagina yatsu tsume de hikkaite yattsuke chaou ne!}",
+    "",
+    "{Are mo kore mo sore mo dore mo omoi de ni naru}",
+    "{Shashin torou nan ya kan ya keiken shiyou}",
+    "{Fuyu no shirokuma natsu mo shirokuma}",
+    "{Nandaka nandaka nandaka nandaka tanoshii na}",
+    "{Wansaka wansaka wansaka wansaka WUG ZOO ZOO}",
+    "",
+    "{Toki wa kikan gentei sa}",
+    "{Mou nidoto dekinai kamo} {kono shun na pouzu}",
+    "{Chansu sore wa isshun sa}",
+    "{Saa ima da tsukamaete yo ne} {chanto mite ne}",
+    "{Fuwa fuwa fuwa fuwa naka no hito nado inai}",
+    "",
+    "{Moshi chizu wo nakushite ite mo}",
+    "{Daijoubu} {tsuyoku negaeba tadori tsukeru yo}",
+    "{Fushigi}",
+    "",
+    "{Are mo kore mo sore mo dore mo omoi de ni naru}",
+    "{Shashin torou nan ya kan ya keiken shiyou}",
+    "{Itsumo nando mo omoi dashite ne}",
+    "{Nandaka nandaka nandaka nandaka tanoshii na}",
+    "{Wansaka wansaka wansaka wansaka WUG ZOO ZOO}",
+    "{Nanda kanda wonder thunder WUG ZOO ZOO}"
+  ]
+}

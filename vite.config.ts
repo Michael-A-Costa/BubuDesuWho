@@ -22,7 +22,7 @@ function copyAssetsPlugin(): Plugin {
 
 export default defineConfig(({ command }) => ({
   root: '.',
-  base: command === 'build' ? '/BubuDesuWho/' : '/',
+  base: '/',
   publicDir: false,
   plugins: [copyAssetsPlugin()],
   build: {

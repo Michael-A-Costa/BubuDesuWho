@@ -3,6 +3,7 @@
   "ogg": "sound/live_with_a_smile_aqours.ogg",
   "id": "live-with-a-smile",
   "group": "aqours",
+  "released": "2021-11-03",
   "added": "2026-04",
   "hidden": false,
   "slots": [

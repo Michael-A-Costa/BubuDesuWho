@@ -33,7 +33,11 @@
       <input class="form-control" id="menu-search"></input>
       <span class="glyphicon glyphicon-search form-control-feedback"></span>
     </li>
+    <li class="sort-toggle-wrap">
+      <button type="button" class="sort-btn active" data-sort="date">Date</button><button type="button" class="sort-btn" data-sort="alpha">A–Z</button><button type="button" class="sort-btn" data-sort="group">Group</button>
+    </li>
   </ul>
+  <img id="song-cover" src="" alt="" style="display:none">
 </div>
 
 <div class="main">
@@ -41,7 +45,6 @@
 
   <!-- Song header -->
   <nav class="navbar song-header">
-    <img id="song-cover" src="" alt="" style="display:none">
     <div id="song-controls">
       <div id="jquery_jplayer_1" class="jp-jplayer"></div>
 

@@ -1,5 +1,7 @@
 {
   "group": "saint-aqours-snow",
+  "released": "2017-12-20",
+  "subunit": "saint-aqours-snow",
   "menu": "aqours",
   "name": "Awaken the power",
   "mp3": "sound/awaken_the_power.mp3",

@@ -2,6 +2,7 @@
   "name": "HAPPY PARTY TRAIN",
   "id": "hapitore",
   "group": "aqours",
+  "released": "2017-04-05",
   "mp3": "sound/happy_party_train.mp3",
   "ogg": "sound/happy_party_train.ogg",
   "mapping": [

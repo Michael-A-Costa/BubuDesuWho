@@ -3,6 +3,8 @@
   "ogg": "sound/galaxy_hide_and_seek.ogg",
   "id": "ginkaku",
   "group": "aqours",
+  "released": "2017-05-31",
+  "subunit": "azalea",
   "hidden": false,
   "slots": [
     {"command": "group", "members": [0, 1, 2, 3, 4]},

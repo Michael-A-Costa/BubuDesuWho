@@ -3,6 +3,7 @@
   "ogg": "sound/hop_step_waai.ogg",
   "id": "hop-step-waai",
   "group": "aqours",
+  "released": "2018-06-30",
   "added": "2026-04",
   "hidden": false,
   "slots": [

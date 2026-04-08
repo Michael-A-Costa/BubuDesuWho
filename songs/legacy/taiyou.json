@@ -2,6 +2,8 @@
   "name": "Taiyou o Oikakero!",
   "id": "taiyou",
   "group": "aqours",
+  "released": "2017-03-24",
+  "subunit": "cyaron",
   "ogg": "sound/taiyou_o_oikakero.ogg",
   "mp3": "sound/taiyou_o_oikakero.mp3",
   "mapping": [

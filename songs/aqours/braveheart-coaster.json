@@ -3,6 +3,8 @@
   "ogg": "sound/braveheart_coaster.ogg",
   "id": "braveheart-coaster",
   "group": "aqours",
+  "released": "2019-12-04",
+  "subunit": "cyaron",
   "added": "2026-04",
   "hidden": false,
   "slots": [

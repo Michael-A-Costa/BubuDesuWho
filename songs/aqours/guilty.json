@@ -3,6 +3,8 @@
   "ogg": "sound/guilty_night_guilty_kiss.ogg",
   "id": "guilty",
   "group": "aqours",
+  "released": "2016-06-08",
+  "subunit": "guilty-kiss",
   "added": "2026-04",
   "hidden": false,
   "slots": [

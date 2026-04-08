@@ -1,4 +1,4 @@
-import { Song, Slot, LyricToken, GroupName } from './types';
+import { Song, Slot, LyricToken, GroupName, SortMode } from './types';
 import { toTimeStr, escapeRegExp, parseURLParams } from './utils';
 import { getGroupColor } from './labels';
 import {
@@ -67,7 +67,10 @@ export async function initPlayPage(): Promise<void> {
 
   window.addEventListener('resize', resizeGameArea);
 
-  // Dark/light mode toggle — light is the default
+  initThemeToggle();
+}
+
+function initThemeToggle(): void {
   const savedTheme = getStorage('theme');
   if (savedTheme === 'dark') {
     document.documentElement.classList.add('dark-mode');
@@ -452,7 +455,11 @@ function buildMenu(songs: Song[]): void {
   const savedGroup = getStorage('group') as GroupName | null;
   if (savedGroup) state.group = savedGroup;
 
+  const savedSort = getStorage('sort') as SortMode | null;
+  if (savedSort && ['date', 'alpha', 'group'].includes(savedSort)) state.sortMode = savedSort;
+
   switchGroup(state.group, songs);
+  updateSortButton();
 
   // open menu on large screens
   toggleMenu(window.innerWidth >= 1200);
@@ -466,10 +473,59 @@ function buildMenu(songs: Song[]): void {
     });
   });
 
+  document.querySelectorAll<HTMLButtonElement>('.sort-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const mode = btn.dataset.sort as SortMode;
+      if (mode === state.sortMode) return;
+      state.sortMode = mode;
+      setStorage('sort', state.sortMode);
+      updateSortButton();
+      switchGroup(state.group, songs);
+    });
+  });
+
   document.getElementById('menu-search')?.addEventListener('keyup', (e) => {
     const query = (e.target as HTMLInputElement).value;
     searchMenu(query);
   });
+}
+
+function updateSortButton(): void {
+  document.querySelectorAll<HTMLButtonElement>('.sort-btn').forEach((btn) => {
+    btn.classList.toggle('active', btn.dataset.sort === state.sortMode);
+  });
+}
+
+const SUBUNIT_ORDER: Record<string, number> = {
+  '': 0, 'cyaron': 1, 'azalea': 2, 'guilty-kiss': 3,
+  '1st-years': 4, '2nd-years': 5, '3rd-years': 6, 'saint-aqours-snow': 7,
+};
+const SUBUNIT_LABELS: Record<string, string> = {
+  '': 'Aqours', 'cyaron': 'CYaRon!', 'azalea': 'AZALEA', 'guilty-kiss': 'Guilty Kiss',
+  '1st-years': '1st Years', '2nd-years': '2nd Years', '3rd-years': '3rd Years',
+  'saint-aqours-snow': 'Saint Aqours Snow',
+};
+
+function sortSongs(filtered: Song[]): Song[] {
+  const sorted = filtered.slice();
+  switch (state.sortMode) {
+    case 'date':
+      sorted.sort((a, b) => (a.released ?? '9999').localeCompare(b.released ?? '9999')
+        || a.name.localeCompare(b.name));
+      break;
+    case 'alpha':
+      sorted.sort((a, b) => a.name.localeCompare(b.name));
+      break;
+    case 'group':
+      sorted.sort((a, b) => {
+        const ga = SUBUNIT_ORDER[a.subunit ?? ''] ?? 99;
+        const gb = SUBUNIT_ORDER[b.subunit ?? ''] ?? 99;
+        return ga - gb || (a.released ?? '9999').localeCompare(b.released ?? '9999')
+          || a.name.localeCompare(b.name);
+      });
+      break;
+  }
+  return sorted;
 }
 
 function switchGroup(group: GroupName, songs: Song[]): void {
@@ -482,15 +538,35 @@ function switchGroup(group: GroupName, songs: Song[]): void {
   });
 
   // rebuild song list
-  document.querySelectorAll('.select-option').forEach((el) => el.remove());
+  document.querySelectorAll('.select-option, .sort-section-header').forEach((el) => el.remove());
   const nav = document.querySelector('.sidebar-nav');
   if (!nav) return;
 
-  for (let i = 0; i < songs.length; i++) {
-    const song = songs[i];
+  // filter songs for this group
+  const filtered: Song[] = [];
+  for (const song of songs) {
     if (song.hidden) continue;
     if (song.menu != null ? song.menu !== group : song.group !== group) continue;
+    filtered.push(song);
+  }
 
+  const sorted = sortSongs(filtered);
+  let lastSection = '';
+
+  for (const song of sorted) {
+    // insert section headers in group mode
+    if (state.sortMode === 'group') {
+      const section = song.subunit ?? '';
+      if (section !== lastSection) {
+        const header = document.createElement('li');
+        header.className = 'sort-section-header';
+        header.textContent = SUBUNIT_LABELS[section] ?? section;
+        nav.appendChild(header);
+        lastSection = section;
+      }
+    }
+
+    const i = songs.indexOf(song);
     const li = document.createElement('li');
     li.className = 'select-option';
 
@@ -525,13 +601,27 @@ function searchMenu(query: string): void {
   document.querySelectorAll<HTMLElement>('.select-option').forEach((el) => {
     el.style.display = regex.test(el.textContent ?? '') ? '' : 'none';
   });
+  // hide section headers whose songs are all hidden
+  document.querySelectorAll<HTMLElement>('.sort-section-header').forEach((hdr) => {
+    let hasVisible = false;
+    let el = hdr.nextElementSibling as HTMLElement | null;
+    while (el && !el.classList.contains('sort-section-header')) {
+      if (el.classList.contains('select-option') && el.style.display !== 'none') hasVisible = true;
+      el = el.nextElementSibling as HTMLElement | null;
+    }
+    hdr.style.display = hasVisible ? '' : 'none';
+  });
 }
 
 function highlightSongInMenu(id: string): void {
   document.querySelectorAll('.sidebar-nav a').forEach((a) => a.classList.remove('active'));
   const songs = getSongs();
   const idx = songs.findIndex((s) => s.id === id);
-  if (idx >= 0) document.getElementById(`select${idx}`)?.classList.add('active');
+  if (idx >= 0) {
+    const el = document.getElementById(`select${idx}`);
+    el?.classList.add('active');
+    el?.scrollIntoView({ block: 'center', behavior: 'smooth' });
+  }
 }
 
 function toggleMenu(show?: boolean): void {
@@ -730,7 +820,7 @@ function bindKeyboard(): void {
     const tag = (e.target as HTMLElement)?.tagName;
     if (tag === 'INPUT' || tag === 'TEXTAREA' || (e.target as HTMLElement)?.isContentEditable) return;
 
-    if (e.key === 'a' && e.ctrlKey && e.altKey) {
+    if (e.key === 'a' && e.ctrlKey) {
       toggleGlobalReveal();
       return;
     }
@@ -933,6 +1023,29 @@ function activateEditMode(): void {
       const mapping = exportEditedConfig();
       exportBtn.disabled = true;
       exportBtn.textContent = 'Saving...';
+
+      const resetBtn = (text: string, cls: string) => {
+        exportBtn.textContent = text;
+        exportBtn.className = `btn ${cls}`;
+        setTimeout(() => {
+          exportBtn.textContent = 'Save Mapping';
+          exportBtn.className = 'btn btn-info';
+          exportBtn.disabled = false;
+        }, 2000);
+      };
+
+      const downloadFallback = () => {
+        const json = JSON.stringify(mapping, null, 2);
+        const blob = new Blob([json], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${state.song!.id}.json`;
+        a.click();
+        URL.revokeObjectURL(url);
+        resetBtn('Downloaded!', 'btn-success');
+      };
+
       fetch('/api/save-mapping', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -940,30 +1053,10 @@ function activateEditMode(): void {
       })
         .then((r) => r.json())
         .then((data) => {
-          if (data.ok) {
-            exportBtn.textContent = `Saved (${data.entries} entries)`;
-            exportBtn.classList.remove('btn-info');
-            exportBtn.classList.add('btn-success');
-          } else {
-            exportBtn.textContent = `Error: ${data.error}`;
-            exportBtn.classList.remove('btn-info');
-            exportBtn.classList.add('btn-danger');
-          }
-          setTimeout(() => {
-            exportBtn.textContent = 'Save Mapping';
-            exportBtn.className = 'btn btn-info';
-            exportBtn.disabled = false;
-          }, 2000);
+          if (data.ok) resetBtn(`Saved (${data.entries} entries)`, 'btn-success');
+          else downloadFallback();
         })
-        .catch((err) => {
-          exportBtn.textContent = `Failed: ${err.message}`;
-          exportBtn.classList.add('btn-danger');
-          setTimeout(() => {
-            exportBtn.textContent = 'Save Mapping';
-            exportBtn.className = 'btn btn-info';
-            exportBtn.disabled = false;
-          }, 2000);
-        });
+        .catch(() => downloadFallback());
     });
     miscControls.appendChild(exportBtn);
   }
@@ -998,12 +1091,14 @@ function deactivateEditMode(): void {
 export async function initAboutPage(): Promise<void> {
   const songs = await loadConfig();
   buildMenu(songs);
+  initThemeToggle();
 }
 
 // ─── Page: Changelog ────────────────────────────────────────────────
 export async function initChangelogPage(): Promise<void> {
   const songs = await loadConfig();
   buildMenu(songs);
+  initThemeToggle();
 
   const data = await loadChangelog();
   const container = document.getElementById('changelog');
@@ -1029,6 +1124,7 @@ export async function initChangelogPage(): Promise<void> {
 export async function initStatsPage(): Promise<void> {
   const songs = await loadConfig();
   buildMenu(songs);
+  initThemeToggle();
 
   const container = document.getElementById('stats-history');
   if (!container) return;

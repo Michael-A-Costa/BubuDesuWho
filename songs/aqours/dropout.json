@@ -3,6 +3,8 @@
   "ogg": "sound/dropout.ogg",
   "id": "dropout",
   "group": "saint-aqours-snow",
+  "released": "2017-12-20",
+  "subunit": "saint-aqours-snow",
   "added": "2026-04",
   "hidden": false,
   "slots": [

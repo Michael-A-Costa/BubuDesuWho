@@ -3,6 +3,7 @@
   "ogg": "sound/future_flight.ogg",
   "id": "future-flight",
   "group": "aqours",
+  "released": "2020-10-07",
   "added": "2026-04",
   "hidden": false,
   "slots": [

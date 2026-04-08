@@ -2,6 +2,8 @@
   "name": "Kaigandoori de Matteru yo",
   "id": "kaigan",
   "group": "aqours",
+  "released": "2017-05-10",
+  "subunit": "azalea",
   "mp3": "sound/kaigandoori_de_matteru_yo.mp3",
   "ogg": "sound/kaigandoori_de_matteru_yo.ogg",
   "mapping": [

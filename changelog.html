@@ -32,6 +32,9 @@
       <input class="form-control" id="menu-search"></input>
       <span class="glyphicon glyphicon-search form-control-feedback"></span>
     </li>
+    <li class="sort-toggle-wrap">
+      <button type="button" class="sort-btn active" data-sort="date">Date</button><button type="button" class="sort-btn" data-sort="alpha">A–Z</button><button type="button" class="sort-btn" data-sort="group">Group</button>
+    </li>
   </ul>
 </div>
 
@@ -40,8 +43,9 @@
 
   <nav class="navbar navbar-default">
   <div class="container">
-  <div class="row"><div class="col-xs-10 col-xs-offset-2 col-sm-11 col-sm-offset-1">
+  <div class="row"><div class="col-xs-10 col-xs-offset-2 col-sm-11 col-sm-offset-1 navbar-title-row">
       <h1 class="ruby-pink">Changelog</h1>
+      <button id="theme-toggle" type="button" class="btn btn-default" title="Switch to light mode">&#9790;</button>
   </div></div>
   </div>
   </nav>

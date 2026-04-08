@@ -4,6 +4,7 @@
   "ogg": "sound/aqours_heroes.ogg",
   "id": "heroes",
   "group": "aqours",
+  "released": "2015-10-07",
   "mapping": [
     {
       "range": [

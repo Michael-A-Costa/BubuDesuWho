@@ -2,6 +2,8 @@
   "name": "Kinmirai Happy End",
   "id": "kinhappi",
   "group": "aqours",
+  "released": "2017-05-10",
+  "subunit": "cyaron",
   "mp3": "sound/kinmirai_happy_end.mp3",
   "ogg": "sound/kinmirai_happy_end.ogg",
   "mapping": [

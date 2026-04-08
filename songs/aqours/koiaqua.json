@@ -3,6 +3,7 @@
   "ogg": "sound/koi_ni_naritai_aquarium.ogg",
   "id": "koiaqua",
   "group": "aqours",
+  "released": "2016-04-27",
   "hidden": false,
   "slots": [
     {"command": "group", "members": [1, 2]},

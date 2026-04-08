@@ -3,6 +3,7 @@
   "ogg": "sound/kokoro_magic.ogg",
   "id": "kokoro-magic",
   "group": "aqours",
+  "released": "2019-10-30",
   "added": "2026-04",
   "hidden": false,
   "slots": [

@@ -3,6 +3,7 @@
   "ogg": "sound/smile_smile_ship_start.ogg",
   "id": "smile-smile-ship-start",
   "group": "aqours",
+  "released": "2021-03-31",
   "added": "2026-04",
   "hidden": false,
   "slots": [

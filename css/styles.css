@@ -282,6 +282,58 @@ Group filter buttons (sidebar)
   max-width: 100%;
 }
 
+/* Sort toggle — segmented control */
+.sort-toggle-wrap {
+  display: flex;
+  padding: 6px 10px;
+  gap: 0;
+  border-bottom: 1px solid #ddd;
+  background: #f5f5f5;
+}
+.sort-btn {
+  flex: 1;
+  padding: 4px 0;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #888;
+  background: transparent;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.sort-btn:first-child {
+  border-radius: 4px 0 0 4px;
+}
+.sort-btn:last-child {
+  border-radius: 0 4px 4px 0;
+}
+.sort-btn:not(:first-child) {
+  border-left: none;
+}
+.sort-btn:hover {
+  background: #e4e4e4;
+  color: #444;
+}
+.sort-btn.active {
+  background: #62C462;
+  color: #fff;
+  border-color: #4aad4a;
+}
+
+/* Section headers in group sort mode */
+.sort-section-header {
+  padding: 6px 10px 4px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #999;
+  background: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+  list-style: none;
+}
+
 /* Dark mode group buttons */
 html.dark-mode .btn.group-button {
   background-color: var(--bg-surface);
@@ -314,6 +366,28 @@ html.dark-mode .hoverable #wug-group-button:hover:not(.active) {
 html.dark-mode #wug-group-button.active {
   background-color: #0f2a18;
   border-color: #13E8AE;
+}
+html.dark-mode .sort-toggle-wrap {
+  background: var(--bg-surface);
+  border-bottom-color: var(--border);
+}
+html.dark-mode .sort-btn {
+  color: var(--text-muted);
+  border-color: var(--border);
+}
+html.dark-mode .sort-btn:hover {
+  background: var(--bg-elevated);
+  color: var(--text-base);
+}
+html.dark-mode .sort-btn.active {
+  background: var(--accent, #62C462);
+  color: #fff;
+  border-color: var(--accent, #4aad4a);
+}
+html.dark-mode .sort-section-header {
+  background: var(--bg-surface);
+  color: var(--text-muted);
+  border-bottom-color: var(--border);
 }
 
 
@@ -385,6 +459,14 @@ html.dark-mode nav.navbar {
   padding: 4px 8px;
 }
 
+.navbar-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-title-row h1 { flex: 1; }
+.navbar-title-row #theme-toggle { flex-shrink: 0; }
+
 /* Row 2: controls (flexbox row) */
 .button-area {
   display: flex;
@@ -418,18 +500,16 @@ html.dark-mode nav.navbar {
 }
 
 #song-cover {
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  width: auto;
+  display: block;
+  width: 100%;
+  height: auto;
   object-fit: cover;
-  /* clip the cover to the header bounds without hiding the popover */
-  clip-path: inset(0);
+  padding: 10px;
+  flex-shrink: 0;
 }
 
 html.dark-mode #song-cover {
-  opacity: 0.18;
+  opacity: 0.85;
 }
 
 
@@ -622,12 +702,16 @@ Sidebar
   margin: 0;
   z-index: 2000;
   transition: all 0.4s ease 0s;
-  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 #sidebar.sidebar-collapsed {
   margin-left: -270px;
 }
 .sidebar-nav {
+  flex: 1;
+  overflow-y: auto;
   margin: 0;
   padding: 0;
   padding-bottom: 100px;

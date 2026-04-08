@@ -4,6 +4,8 @@
   "ogg": "sound/yozora_wa_nandemo_shitteru_no.ogg",
   "id": "yozora",
   "group": "aqours",
+  "released": "2016-05-11",
+  "subunit": "cyaron",
   "mapping": [
     {
       "range": [

@@ -2,6 +2,7 @@
   "name": "Daydream Warrior",
   "id": "daydream",
   "group": "aqours",
+  "released": "2016-12-22",
   "mp3": "sound/daydream_warrior.mp3",
   "ogg": "sound/daydream_warrior.ogg",
   "mapping": [

@@ -3,6 +3,7 @@
   "ogg": "sound/wake_up_challenger.ogg",
   "id": "wake-up-challenger",
   "group": "aqours",
+  "released": "2019-10-30",
   "added": "2026-04",
   "hidden": false,
   "slots": [

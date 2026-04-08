@@ -3,6 +3,8 @@
   "ogg": "sound/shadow_gate_to_love.ogg",
   "id": "shadow",
   "group": "aqours",
+  "released": "2017-06-21",
+  "subunit": "guilty-kiss",
   "hidden": false,
   "slots": [
     {"command": "group", "members": [0, 1]},

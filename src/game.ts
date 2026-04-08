@@ -33,6 +33,7 @@ export const state: GameState = {
   lastThemeUpdate: null,
   scrollSlotLock: null,
   scrollLyricLock: null,
+  sortMode: 'date',
   editMode: false,
   jpLyrics: false,
   callSFXch: 0,

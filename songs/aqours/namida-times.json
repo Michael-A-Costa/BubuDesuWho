@@ -3,6 +3,7 @@
   "ogg": "sound/namida_times.ogg",
   "id": "namida-times",
   "group": "aqours",
+  "released": "2021-10-07",
   "added": "2026-04",
   "hidden": false,
   "slots": [

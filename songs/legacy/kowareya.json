@@ -2,6 +2,8 @@
   "name": "Kowareyasuki",
   "id": "kowareya",
   "group": "aqours",
+  "released": "2017-06-21",
+  "subunit": "azalea",
   "mp3": "sound/kowareyasuki.mp3",
   "ogg": "sound/kowareyasuki.ogg",
   "mapping": [

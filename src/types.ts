@@ -32,6 +32,8 @@ export interface SongConfig {
   theme?: string;
   hidden?: boolean;
   added?: string;
+  released?: string;
+  subunit?: string;
   menu?: GroupName;
   cover?: string;
 }
@@ -52,6 +54,7 @@ export interface SlotDetail {
 }
 
 export type GroupName = 'muse' | 'aqours' | 'saint-aqours-snow' | 'wug';
+export type SortMode = 'date' | 'alpha' | 'group';
 
 /** Processed slot ready for gameplay */
 export interface Slot {
@@ -123,6 +126,7 @@ export interface GameState {
   scrollSlotLock: number | null;
   scrollLyricLock: number | null;
   callSFXch: number;
+  sortMode: SortMode;
   editMode: boolean;
   jpLyrics: boolean;
   controls: {

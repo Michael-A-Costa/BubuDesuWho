@@ -3,6 +3,7 @@
   "ogg": "sound/jimo_ai_dash.ogg",
   "id": "jimo-ai-dash",
   "group": "aqours",
+  "released": "2020-08-26",
   "added": "2026-04",
   "hidden": false,
   "slots": [

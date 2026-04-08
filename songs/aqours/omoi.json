@@ -3,6 +3,7 @@
   "ogg": "sound/omoi_yo_hitotsu_ni_nare.ogg",
   "id": "omoi",
   "group": "aqours",
+  "released": "2016-11-09",
   "hidden": false,
   "slots": [
     {"command": "group", "members": [0, 2]},

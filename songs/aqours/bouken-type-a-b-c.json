@@ -3,6 +3,7 @@
   "ogg": "sound/bouken_type_a_b_c.ogg",
   "id": "bouken-type-a-b-c",
   "group": "aqours",
+  "released": "2019-07-26",
   "added": "2026-04",
   "hidden": false,
   "slots": [

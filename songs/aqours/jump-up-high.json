@@ -3,6 +3,8 @@
   "ogg": "sound/jump_up_high.ogg",
   "id": "jump-up-high",
   "group": "aqours",
+  "released": "2019-06-30",
+  "subunit": "guilty-kiss",
   "added": "2026-04",
   "hidden": false,
   "slots": [

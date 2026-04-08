@@ -4,6 +4,8 @@
   "ogg": "sound/tokimeki_bunruigaku.ogg",
   "id": "tokimeki",
   "group": "aqours",
+  "released": "2016-05-25",
+  "subunit": "azalea",
   "mapping": [
     {
       "range": [

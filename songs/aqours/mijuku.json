@@ -3,6 +3,7 @@
   "ogg": "sound/mijuku_dreamer.ogg",
   "id": "mijuku",
   "group": "aqours",
+  "released": "2016-09-14",
   "hidden": false,
   "slots": [
     {"command": "group", "members": [0, 1]},

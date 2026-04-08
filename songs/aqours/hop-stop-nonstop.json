@@ -3,6 +3,7 @@
   "ogg": "sound/hop_stop_nonstop.ogg",
   "id": "hop-stop-nonstop",
   "group": "aqours",
+  "released": "2019-01-30",
   "added": "2026-04",
   "hidden": false,
   "slots": [

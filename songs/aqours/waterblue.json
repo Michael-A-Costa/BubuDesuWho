@@ -3,6 +3,7 @@
   "ogg": "sound/water_blue_new_world.ogg",
   "id": "waterblue",
   "group": "aqours",
+  "released": "2018-01-17",
   "hidden": false,
   "slots": [
     {"command": "group", "members": [25, 26]},

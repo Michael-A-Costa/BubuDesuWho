@@ -3,6 +3,7 @@
   "ogg": "sound/mirai_ticket.ogg",
   "id": "mirai",
   "group": "aqours",
+  "released": "2016-11-09",
   "hidden": false,
   "slots": [
     {"command": "group", "members": [2, 3]},

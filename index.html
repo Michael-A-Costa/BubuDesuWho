@@ -32,6 +32,9 @@
       <input class="form-control" id="menu-search"></input>
       <span class="glyphicon glyphicon-search form-control-feedback"></span>
     </li>
+    <li class="sort-toggle-wrap">
+      <button type="button" class="sort-btn active" data-sort="date">Date</button><button type="button" class="sort-btn" data-sort="alpha">A–Z</button><button type="button" class="sort-btn" data-sort="group">Group</button>
+    </li>
   </ul>
 </div>
 
@@ -40,13 +43,20 @@
 
   <nav class="navbar navbar-default">
   <div class="container">
-  <div class="row"><div class="col-xs-10 col-xs-offset-2 col-sm-11 col-sm-offset-1">
-      <h1 class="ruby-pink">Ganba<strong>Who</strong>by</h1>
+  <div class="row"><div class="col-xs-10 col-xs-offset-2 col-sm-11 col-sm-offset-1 navbar-title-row">
+      <h1 class="dia-red">BubuDesu<strong>Who</strong></h1>
+      <button id="theme-toggle" type="button" class="btn btn-default" title="Switch to light mode">&#9790;</button>
   </div></div>
   </div>
   </nav>
 
   <div class="container"><div class="row"><div class="col-xs-12 col-md-10 info-content">
+
+      <p>This site is a tribute to <a href="https://nanodesu.moe/ganbawhoby/"><strong>the original GanbaWhoby</strong></a> by gacha4life.
+      I loved that little game and always found myself coming back to it, even after all this time.
+      I wanted to create something just like it, with more songs.</p>
+
+      <hr>
       <p><strong>GanbaWhoby</strong> is a little game to test your ability to
       recognize individual singers in <span class="muse-pink">μ's</span> and
         <span class='aqours-blue'>Aqours</span> songs. If you have never heard
@@ -89,7 +99,7 @@
         <li><code>left</code>: move backwards 2 seconds</li>
         <li><code>right</code>: move forwards 2 seconds</li>
         <li><code>c</code>: check answers</li>
-        <li><code>ctrl+alt+a</code>: toggle global reveal</li>
+        <li><code>ctrl+a</code>: toggle global reveal</li>
       </ul>
 
       <hr>

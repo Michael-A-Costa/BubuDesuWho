@@ -4,6 +4,8 @@
   "ogg": "sound/kimeta_yo_hand_in_hand.ogg",
   "id": "kimeta",
   "group": "aqours",
+  "released": "2016-08-03",
+  "subunit": "2nd-years",
   "mapping": [
     {
       "range": [

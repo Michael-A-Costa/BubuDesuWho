@@ -3,6 +3,7 @@
   "ogg": "sound/game_on.ogg",
   "id": "game-on",
   "group": "aqours",
+  "released": "2023-07-26",
   "added": "2026-04",
   "hidden": false,
   "slots": [

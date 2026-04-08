@@ -4,6 +4,8 @@
   "ogg": "sound/torikoriko_please.ogg",
   "id": "toriko",
   "group": "aqours",
+  "released": "2016-05-25",
+  "subunit": "cyaron",
   "mapping": [
     {
       "range": [

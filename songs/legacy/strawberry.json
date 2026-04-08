@@ -4,6 +4,8 @@
   "ogg": "sound/strawberry_trapper.ogg",
   "id": "strawberry",
   "group": "aqours",
+  "released": "2016-06-08",
+  "subunit": "guilty-kiss",
   "mapping": [
     {
       "range": [

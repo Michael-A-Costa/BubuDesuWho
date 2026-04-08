@@ -3,6 +3,7 @@
   "ogg": "sound/daydream_warrior.ogg",
   "id": "daydream",
   "group": "aqours",
+  "released": "2016-12-22",
   "hidden": false,
   "slots": [
     {"command": "group", "members": [0, 1]},

@@ -3,6 +3,8 @@
   "ogg": "sound/believe_again.ogg",
   "id": "believe-again",
   "group": "saint-aqours-snow",
+  "released": "2019-02-06",
+  "subunit": "saint-aqours-snow",
   "added": "2026-04",
   "hidden": false,
   "slots": [

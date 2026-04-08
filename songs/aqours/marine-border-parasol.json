@@ -3,6 +3,8 @@
   "ogg": "sound/marine_border_parasol.ogg",
   "id": "marine-border-parasol",
   "group": "aqours",
+  "released": "2018-11-24",
+  "subunit": "2nd-years",
   "added": "2026-04",
   "hidden": false,
   "slots": [

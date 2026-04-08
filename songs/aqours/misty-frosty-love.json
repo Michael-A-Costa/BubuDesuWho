@@ -3,6 +3,8 @@
   "ogg": "sound/misty_frosty_love.ogg",
   "id": "misty-frosty-love",
   "group": "aqours",
+  "released": "2020-12-09",
+  "subunit": "2nd-years",
   "added": "2026-04",
   "hidden": false,
   "slots": [

@@ -3,6 +3,7 @@
   "ogg": "sound/happy_party_train.ogg",
   "id": "hapitore",
   "group": "aqours",
+  "released": "2017-04-05",
   "hidden": false,
   "slots": [
     {"command": "group", "members": [0, 1, 2, 3, 5]},

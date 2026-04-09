@@ -1,0 +1,324 @@
+{
+  "name": "Humming Friend (V2)",
+  "ogg": "sound/humming_friend.ogg",
+  "id": "humming-friend-v2",
+  "group": "aqours",
+  "added": "2026-04",
+  "hidden": true,
+  "slots": [
+
+  ],
+  "lines": [
+    {"lyric": "Kimetai no ni kimerarenakattara",
+      "lyric_jp": "決めたいのに 決められなかったら",
+      "range": [5.86, 10.44], "ans": []},
+    {"lyric": "Kimi ni soudan da yo",
+      "lyric_jp": "キミに相談だよ",
+      "range": [10.44, 28.14], "ans": []},
+    "",
+    {"lyric": "Docchi no fuku ga niau ka na",
+      "lyric_jp": "どっちの服が似合うかな",
+      "range": [28.14, 35.03], "ans": [9]},
+    {"lyric": "Hito ga mitara onaji ni miechau?",
+      "lyric_jp": "ひとが見たらおんなじに見えちゃう?",
+      "range": [35.03, 41.72], "ans": [8]},
+    {
+      "lyric_jp": "さらにね自分の基準があやふや",
+      "parts": [
+        {"lyric": "Sarani ne",
+          "range": [41.72, 42.87], "ans": [7]},
+        {"lyric": "Jibun no",
+          "range": [42.87, 43.73], "ans": [8, 9]},
+        {"lyric": "Kijun ga ayafuya",
+          "range": [43.73, 46.19], "ans": [7]}
+      ]
+    },
+    {
+      "lyric_jp": "そんな時 こっちだよって言ってくれたマイフレンド",
+      "parts": [
+        {"lyric": "Sonna toki",
+          "range": [45.98, 47.94], "ans": [7]},
+        {"lyric": "Kocchi da yotte itte kureta mai furendo",
+          "range": [47.94, 55.81], "ans": [7, 8, 9]}
+      ]
+    },
+    "",
+    {"lyric": "Kotae wa tabun ryouhou de",
+      "lyric_jp": "答えはたぶん両方で",
+      "range": [55.81, 59.96], "ans": [1]},
+    {
+      "lyric_jp": "ゆれるこころの迷いを笑ってくれる",
+      "parts": [
+        {"lyric": "Yureru kokoro no mayoi wo",
+          "range": [59.96, 63.38], "ans": [3]},
+        {"lyric": "Waratte kureru",
+          "range": [63.38, 65.5], "ans": [2]},
+        {"lyric": "Kimi no",
+          "range": [65.5, 66.76], "ans": [2]}
+      ]
+    },
+    {
+      "lyric_jp": "キミのことが キミのことが大好きさ",
+      "parts": [
+        {"lyric": "Koto ga",
+          "range": [66.76, 68.02], "ans": [1, 3]},
+        {"lyric": "Kimi ga",
+          "range": [68.02, 69.26], "ans": [2]},
+        {"lyric": "Koto ga",
+          "range": [69.26, 70.42], "ans": [1, 3]},
+        {"lyric": "Daisuki sa",
+          "range": [70.42, 73.85], "ans": [1, 2, 3]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "ハミングデイ なにしようか?",
+      "parts": [
+        {"lyric": "Hamingu Dei",
+          "range": [73.85, 75.09], "ans": []},
+        {"lyric": "(Oh Yeah!)",
+          "range": [75.09, 75.67], "ans": [4, 5, 6]},
+        {"lyric": "Nani shiyou ka?",
+          "range": [75.67, 77.27], "ans": []}
+      ]
+    },
+    {
+      "lyric_jp": "ハミングデイ なんでもいいよ",
+      "parts": [
+        {"lyric": "Hamingu Dei",
+          "range": [76.92, 78.18], "ans": []},
+        {"lyric": "(Oh Yeah!)",
+          "range": [78.18, 79.2], "ans": [4, 5, 6]},
+        {"lyric": "Nandemo ii yo",
+          "range": [79.2, 80.98], "ans": []}
+      ]
+    },
+    {
+      "lyric_jp": "たとえばもっと大きなこと? そんな気がしてる",
+      "parts": [
+        {"lyric": "(tatoeba motto)",
+          "range": [80.98, 84.48], "ans": [4, 5, 6]},
+        {"lyric": "Ooki na koto? sonna ki ga shitteru",
+          "range": [84.48, 87.76], "ans": []}
+      ]
+    },
+    {
+      "lyric_jp": "ハミングデイ 楽しい未来",
+      "parts": [
+        {"lyric": "Hamingu Dei",
+          "range": [87.67, 88.85], "ans": []},
+        {"lyric": "(Oh Yeah!)",
+          "range": [88.85, 90.01], "ans": [4, 5, 6]},
+        {"lyric": "Tanoshii mirai",
+          "range": [90.01, 91.43], "ans": []}
+      ]
+    },
+    {
+      "lyric_jp": "ハミングデイ 探しにいくけど",
+      "parts": [
+        {"lyric": "Hamingu Dei",
+          "range": [91.05, 92.33], "ans": []},
+        {"lyric": "(Oh Yeah!)",
+          "range": [92.33, 93.63], "ans": [4, 5, 6]},
+        {"lyric": "Sagashi ni iku kedo",
+          "range": [93.63, 96.56], "ans": []}
+      ]
+    },
+    {"lyric": "Nayanjau yo ne unazuite te wo tsunaida",
+      "lyric_jp": "悩んじゃうよね うなずいて手をつないだ",
+      "range": [96.56, 116.4], "ans": []},
+    {"lyric": "(Oh Yeah!)",
+      "range": [114.4, 116.4], "ans": []},
+    "",
+    {"lyric": "Kitto sa fujun na kimochi ni",
+      "lyric_jp": "きっとさ不純なキモチに",
+      "range": [116.4, 122.87], "ans": [6]},
+    {"lyric": "Nanto naku wa kidzuiterunda yo",
+      "lyric_jp": "なんとなくは気づいてるんだよ",
+      "range": [122.87, 130.03], "ans": [5]},
+    {
+      "lyric_jp": "けっきょく自分にウソはつけない",
+      "parts": [
+        {"lyric": "Kekkyoku",
+          "range": [130.03, 131.01], "ans": [4]},
+        {"lyric": "Jibun ni",
+          "range": [131.01, 132.03], "ans": [5, 6]},
+        {"lyric": "Uso wa tsukenai",
+          "range": [132.03, 134.25], "ans": [4]}
+      ]
+    },
+    {
+      "lyric_jp": "そんな時 しっかりしなって言ってくれたマイフレンド",
+      "parts": [
+        {"lyric": "Sonna toki",
+          "range": [134, 135.76], "ans": [4]},
+        {"lyric": "Shikkarishi natte itte kureta mai furendo",
+          "range": [135.76, 144.07], "ans": [4, 5, 6]}
+      ]
+    },
+    "",
+    {"lyric": "Kakushitete mo honto wa",
+      "lyric_jp": "隠しててもホントは",
+      "range": [144.07, 148.28], "ans": [1]},
+    {
+      "lyric_jp": "涙ぐみそうな想いを察してくれてる",
+      "parts": [
+        {"lyric": "Namidagumi sou na omoi wo",
+          "range": [148.28, 151.97], "ans": [2]},
+        {"lyric": "Sasshite kureteru",
+          "range": [151.97, 154.09], "ans": [3]},
+        {"lyric": "Kimi no",
+          "range": [154.09, 155.02], "ans": [3]}
+      ]
+    },
+    {
+      "lyric_jp": "キミのことが キミのことが大好きさ",
+      "parts": [
+        {"lyric": "Koto ga",
+          "range": [155.02, 156.25], "ans": [1, 2]},
+        {"lyric": "Kimi no",
+          "range": [156.25, 157.48], "ans": [3]},
+        {"lyric": "Koto ga",
+          "range": [157.48, 158.66], "ans": [1, 2]},
+        {"lyric": "Daisuki sa",
+          "range": [158.66, 161.6], "ans": [1, 2, 3]}
+      ]
+    },
+    {"lyric": "Kenka mo shichau kedo",
+      "lyric_jp": "ケンカもしちゃうけど",
+      "range": [161.6, 165.25], "ans": []},
+    "",
+    "[next-col]",
+    {
+      "lyric_jp": "ハロースカイ ケンカのあとは",
+      "parts": [
+        {"lyric": "Haroo sukai",
+          "range": [165.25, 166.61], "ans": []},
+        {"lyric": "(Oh Yeah!)",
+          "range": [166.61, 167.53], "ans": [1, 2, 3]},
+        {"lyric": "Kenka no ato wa",
+          "range": [167.53, 168.93], "ans": []}
+      ]
+    },
+    {
+      "lyric_jp": "ハロースカイ もっとなかよし",
+      "parts": [
+        {"lyric": "Haroo sukai",
+          "range": [168.71, 169.95], "ans": []},
+        {"lyric": "(Oh Yeah!)",
+          "range": [169.95, 171.03], "ans": [1, 2, 3]},
+        {"lyric": "Motto nakayoshi",
+          "range": [171.03, 172.31], "ans": []}
+      ]
+    },
+    {
+      "lyric_jp": "ごめんってなんか伝わるよ言葉じゃなくて",
+      "parts": [
+        {"lyric": "(gomen tte nanka)",
+          "range": [172.27, 174.35], "ans": [1, 2, 3]},
+        {"lyric": "Tsutawaru yo kotoba janakute",
+          "range": [174.35, 179.57], "ans": []}
+      ]
+    },
+    {
+      "lyric_jp": "ハロースカイ 楽しい世界",
+      "parts": [
+        {"lyric": "Haroo sukai",
+          "range": [179.21, 180.55], "ans": []},
+        {"lyric": "(Oh Yeah!)",
+          "range": [180.55, 181.01], "ans": [1, 2, 3]},
+        {"lyric": "Tanoshii sekai",
+          "range": [181.01, 183.05], "ans": []}
+      ]
+    },
+    {
+      "lyric_jp": "ハロースカイ いっぱい見つけて",
+      "parts": [
+        {"lyric": "Haroo sukai",
+          "range": [182.86, 184.52], "ans": []},
+        {"lyric": "(Oh Yeah!)",
+          "range": [184.52, 185.36], "ans": [1, 2, 3]},
+        {"lyric": "Ippai mitsukete",
+          "range": [185.36, 188.38], "ans": []}
+      ]
+    },
+    {"lyric": "Omoshiroku shitai ne Hamingu mai furendo",
+      "lyric_jp": "おもしろくしたいね ハミングマイフレンド",
+      "range": [188.38, 200.09], "ans": []},
+    "",
+    {"lyric": "Kimetai no ni kimerarenakattara",
+      "lyric_jp": "決めたいのに 決められなかったら",
+      "range": [200.09, 204.57], "ans": []},
+    {"lyric": "Kimi ni soudan da yo",
+      "lyric_jp": "キミに相談だよ",
+      "range": [204.57, 232.2], "ans": []},
+    {"lyric": "Hamingu Dei nani shiyou ka?",
+      "lyric_jp": "ハミングデイ なにしようか?",
+      "range": [232.2, 235.83], "ans": []},
+    {"lyric": "Hamingu Dei nandemo ii yo",
+      "lyric_jp": "ハミングデイ なんでもいいよ",
+      "range": [235.83, 239.31], "ans": []},
+    {"lyric": "Kotae ga ippai atte sa mayotte ite mo ne",
+      "lyric_jp": "答えがいっぱいあってさ 迷っていてもね",
+      "range": [239.31, 246.73], "ans": []},
+    {
+      "lyric_jp": "ハミングデイ なにしようか?",
+      "parts": [
+        {"lyric": "Hamingu Dei",
+          "range": [246.73, 248.01], "ans": []},
+        {"lyric": "(Oh Yeah!)",
+          "range": [248.01, 248.61], "ans": [7, 8]},
+        {"lyric": "Nani shiyou ka?",
+          "range": [248.61, 250.21], "ans": []}
+      ]
+    },
+    {
+      "lyric_jp": "ハミングデイ なんでもいいよ",
+      "parts": [
+        {"lyric": "Hamingu Dei",
+          "range": [249.88, 251.12], "ans": []},
+        {"lyric": "(Oh Yeah!)",
+          "range": [251.12, 252.16], "ans": [7, 8]},
+        {"lyric": "Nandemo ii yo",
+          "range": [252.16, 253.8], "ans": []}
+      ]
+    },
+    {
+      "lyric_jp": "たとえばもっと大きなこと? そんな気がしてる",
+      "parts": [
+        {"lyric": "(tatoeba motto)",
+          "range": [253.8, 257.42], "ans": [7, 8, 9]},
+        {"lyric": "Ooki na koto? sonna ki ga shitteru",
+          "range": [257.42, 260.7], "ans": []}
+      ]
+    },
+    {"lyric": "(HAMINGU DEI Oh Yeah!)",
+      "range": [258.45, 260.45], "ans": []},
+    {"lyric": "Tanoshii mirai",
+      "lyric_jp": "ハミングデイ 楽しい未来",
+      "range": [260.45, 263.95], "ans": []},
+    {
+      "lyric_jp": "ハミングデイ 探しにいくけど",
+      "parts": [
+        {"lyric": "Hamingu Dei",
+          "range": [263.95, 265.29], "ans": []},
+        {"lyric": "(Oh Yeah!)",
+          "range": [265.29, 266.57], "ans": [7, 8, 9]},
+        {"lyric": "Sagashi ni iku kedo",
+          "range": [266.57, 269.45], "ans": []}
+      ]
+    },
+    {"lyric": "Nayanjau yo ne unazuite te wo tsunaida",
+      "lyric_jp": "悩んじゃうよね うなずいて手をつないだ",
+      "range": [269.45, 288.25], "ans": []},
+    {"lyric": "(Oh Yeah!)",
+      "range": [286.25, 288.25], "ans": []},
+    "",
+    {"lyric": "Kimetai no ni kimerarenakattara",
+      "lyric_jp": "決めたいのに 決められなかったら",
+      "range": [288.25, 293.18], "ans": []},
+    {"lyric": "Kimi ni soudan... da ne!",
+      "lyric_jp": "キミに相談 だね!",
+      "range": [293.18, 309.79], "ans": []}
+  ]
+}

@@ -5,6 +5,8 @@ const path = location.pathname;
 
 if (path.endsWith('play.html')) {
   initPlayPage();
+} else if (path.endsWith('bubudle.html')) {
+  import('./bubudle').then(m => m.initBubudlePage());
 } else if (path.endsWith('changelog.html')) {
   initChangelogPage();
 } else if (path.endsWith('stats.html')) {

@@ -3,6 +3,7 @@
   "ogg": "sound/my_list_to_you.ogg",
   "id": "mylist",
   "group": "aqours",
+  "legacy": true,
   "released": "2017-11-15",
   "hidden": false,
   "slots": [

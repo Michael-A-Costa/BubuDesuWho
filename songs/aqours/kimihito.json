@@ -3,6 +3,7 @@
   "ogg": "sound/kimi_no_hitomi_wo_meguru_bouken.ogg",
   "id": "kimihito",
   "group": "aqours",
+  "legacy": true,
   "released": "2017-10-25",
   "hidden": false,
   "slots": [

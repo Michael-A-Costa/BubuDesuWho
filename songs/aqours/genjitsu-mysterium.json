@@ -170,6 +170,8 @@
     {"lyric": "Nazo to yume wa seiza wo egaku yo",
       "lyric_jp": "謎と夢は星座を描くよ",
       "range": [131.01, 147.26], "ans": []},
+    {"lyric": "(Fu)",
+      "range": [145.26, 147.26], "ans": []},
     "",
     {"lyric": "Wakaritai... jibun no omoi kimi no omoi",
       "lyric_jp": "わかりたい 自分の想い 君の想い",

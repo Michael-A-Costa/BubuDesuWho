@@ -1,0 +1,214 @@
+{
+  "name": "Aozora Jumping Heart (V2)",
+  "ogg": "sound/aozora_jumping_heart.ogg",
+  "id": "aozora-jumping-heart-v2",
+  "group": "aqours",
+  "added": "2026-04",
+  "hidden": true,
+  "slots": [
+
+  ],
+  "lines": [
+    {"lyric": "Hashiridasu kono kimochi",
+      "lyric_jp": "見た事ない夢の軌道 追いかけて",
+      "range": [1.13, 2.69], "ans": []},
+    {"lyric": "Massugu ni ikioi yoku kimi wo sagashiteta yo",
+      "lyric_jp": "見た事ない夢の軌道 追いかけて",
+      "range": [2.69, 4.21], "ans": []},
+    {"lyric": "Chotto matte nante muri tobidasou",
+      "lyric_jp": "見た事ない夢の軌道 追いかけて",
+      "range": [4.21, 5.45], "ans": []},
+    {"lyric": "Bokutachi no naka no yuuki ga sawaideru",
+      "lyric_jp": "見た事ない夢の軌道 追いかけて",
+      "range": [5.45, 16.45], "ans": []},
+    "",
+    {
+      "lyric_jp": "Shining road",
+      "parts": [
+        {"lyric": "(Motto)",
+          "range": [16.45, 16.9], "ans": [4, 5, 6]},
+        {"lyric": "Kakushiteru no",
+          "range": [16.9, 17.35], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "(let’s go!)",
+          "range": [17.35, 17.42], "ans": [4, 5, 6]},
+        {"lyric": "Zenbu aketai yo",
+          "range": [17.42, 18.05], "ans": [1, 2, 3, 7, 8, 9]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "走りだすこの気持ち",
+      "parts": [
+        {"lyric": "Hajimetai! My Story",
+          "range": [17.28, 18.56], "ans": []},
+        {"lyric": "(saa ima da)",
+          "range": [18.56, 19.34], "ans": [4, 5, 6]},
+        {"lyric": "Aoi sora ga matteru",
+          "range": [19.34, 20.7], "ans": []},
+        {"lyric": "(FU!)",
+          "range": [20.7, 21.1], "ans": [4, 5, 6]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "まっすぐに勢いよく君を探してたよ",
+      "parts": [
+        {"lyric": "Yume wo dakishimete Jumping Heart",
+          "range": [21.1, 22.67], "ans": []},
+        {"lyric": "Sore dake de ashita e to susumeru seishun masshigura!?",
+          "range": [22.67, 25.03], "ans": []},
+        {"lyric": "Hajimatta toki no",
+          "range": [25.03, 26.11], "ans": []},
+        {"lyric": "(Sunshine Story)",
+          "range": [26.11, 26.37], "ans": [4, 5, 6]}
+      ]
+    },
+    {
+      "lyric_jp": "ちょっと待ってなんてムリ 飛びだそう",
+      "parts": [
+        {"lyric": "Tokimeki zutto daiji ni ne",
+          "range": [25.83, 27.01], "ans": []},
+        {"lyric": "(FU!)",
+          "range": [27.01, 27.15], "ans": [4, 5, 6]},
+        {"lyric": "Yume wo tsukamae ni yuku yo",
+          "range": [27.15, 28.07], "ans": []},
+        {"lyric": "Donna koto ga okoru no ka wakaranai no mo tanoshimi sa",
+          "range": [28.07, 30.35], "ans": []}
+      ]
+    },
+    {
+      "lyric_jp": "僕たちのなかの勇気がさわいでる",
+      "parts": [
+        {"lyric": "Open Mind",
+          "range": [30.35, 30.95], "ans": [1]},
+        {"lyric": "Tsutaenakya tsutawaranai",
+          "range": [30.95, 32.07], "ans": [1]},
+        {"lyric": "Saisho kara kanpeki ni",
+          "range": [32.07, 33.33], "ans": [1, 2, 5]},
+        {"lyric": "Dekiru hazu wa nai kara",
+          "range": [33.33, 34.59], "ans": [2]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "いつものセカイが あたらしい扉を",
+      "parts": [
+        {"lyric": "Mabushii sekai de yobu koe ga kikoeta",
+          "range": [34.11, 38.08], "ans": [8]},
+        {"lyric": "Motto)",
+          "range": [38.08, 38.64], "ans": [3, 6, 9]},
+        {"lyric": "Kiite mitakute",
+          "range": [38.64, 40.54], "ans": [7]},
+        {"lyric": "(let’s go!)",
+          "range": [40.54, 40.72], "ans": [3, 6, 9]}
+      ]
+    },
+    {
+      "lyric_jp": "（もっと）隠してるの",
+      "parts": [
+        {"lyric": "Kaetai na! My Future",
+          "range": [39.96, 41.14], "ans": []},
+        {"lyric": "(saa doko e)",
+          "range": [41.14, 42], "ans": [4, 5, 6]},
+        {"lyric": "Taiyou ga noboru you ni",
+          "range": [42, 42.7], "ans": []},
+        {"lyric": "(FU!)",
+          "range": [42.7, 42.98], "ans": [4, 5, 6]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "（Let's go!）ぜんぶ開けたいよ ほら、いっしょにね！",
+      "parts": [
+        {"lyric": "Yume yo kagayaite Charging Heart",
+          "range": [42.83, 44.87], "ans": []},
+        {"lyric": "Chikara ippai kanaeyou negai wo seishun pikkari da!?",
+          "range": [44.87, 48.11], "ans": []},
+        {"lyric": "Kaetai to omou",
+          "range": [48.11, 48.95], "ans": []},
+        {"lyric": "(Sunshine mission)",
+          "range": [48.95, 49.7], "ans": [4, 5, 6]}
+      ]
+    },
+    {
+      "lyric_jp": "はじめたい! My Story（さあっいまだ）青い空が待ってる",
+      "parts": [
+        {"lyric": "Kimochi ga kitto daiji da yo",
+          "range": [49.65, 51.89], "ans": []},
+        {"lyric": "(FU!)",
+          "range": [51.89, 53.19], "ans": [4, 5, 6]},
+        {"lyric": "Yume wo tsukamae ni yuku yo",
+          "range": [53.19, 55.33], "ans": []},
+        {"lyric": "Minna to nara setsumei wa dekinai kedo daijoubu sa",
+          "range": [55.33, 59.27], "ans": []}
+      ]
+    },
+    "",
+    "[next-col]",
+    {
+      "lyric_jp": "夢を抱きしめて Jumping Heart",
+      "parts": [
+        {"lyric": "Jumping Heart",
+          "range": [59.09, 59.84], "ans": [1, 2, 4, 5, 7, 8]},
+        {"lyric": "Datte hajimetai koto ga",
+          "range": [59.84, 60.79], "ans": [3]},
+        {"lyric": "Charging Heart",
+          "range": [60.79, 61.23], "ans": [1, 2, 4, 5, 7, 8]},
+        {"lyric": "Ima mitsukatta bakkari",
+          "range": [61.23, 62.36], "ans": [6]}
+      ]
+    },
+    {
+      "lyric_jp": "それだけで明日へと進める 青春まっしぐら!?",
+      "parts": [
+        {"lyric": "Gooru wa doko?",
+          "range": [62.04, 63.32], "ans": [9]},
+        {"lyric": "Doko darou?",
+          "range": [63.32, 64.77], "ans": [3, 6]},
+        {"lyric": "Wakaranai!",
+          "range": [64.77, 65.61], "ans": [9]},
+        {"lyric": "Wakaranai demo ne tanoshisou da yo",
+          "range": [65.61, 68.99], "ans": [3, 6, 9]}
+      ]
+    },
+    {
+      "lyric_jp": "はじまった時の（Sunshine Story）ときめきずっとだいじにね",
+      "parts": [
+        {"lyric": "Hajimetai! My Story aoi sora ga matteru",
+          "range": [68.42, 71.87], "ans": []},
+        {"lyric": "(FU!)",
+          "range": [71.87, 72.59], "ans": [4, 5, 6]},
+        {"lyric": "Yume wo dakishimete Jumping Heart",
+          "range": [72.59, 74.12], "ans": []},
+        {"lyric": "Sore dake de ashita e to susumeru seishun masshigura!?",
+          "range": [74.12, 78.39], "ans": []}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "夢をつかまえに行くよ",
+      "parts": [
+        {"lyric": "Hajimatta toki no",
+          "range": [78.03, 78.98], "ans": []},
+        {"lyric": "(Sunshine Story)",
+          "range": [78.98, 79.58], "ans": [4, 5, 6]},
+        {"lyric": "Tokimeki zutto daiji ni ne",
+          "range": [79.58, 81.18], "ans": []},
+        {"lyric": "(FU!)",
+          "range": [81.18, 81.34], "ans": [4, 5, 6]}
+      ]
+    },
+    {"lyric": "Yume wo tsukamae ni yuku yo",
+      "lyric_jp": "どんなことがおこるのか わからないのも楽しみさ",
+      "range": [81.09, 82.43], "ans": []},
+    {"lyric": "Donna koto ga okoru no ka wakaranai miri",
+      "lyric_jp": "どんなことがおこるのか わからないのも楽しみさ",
+      "range": [82.43, 84.47], "ans": []},
+    {"lyric": "Yume wo tsukamae ni yuku yo",
+      "lyric_jp": "どんなことがおこるのか わからないのも楽しみさ",
+      "range": [84.47, 85.85], "ans": []},
+    {"lyric": "Minna to nara setsumei wa dekinai kedo daijoubu sa... masshigura!",
+      "lyric_jp": "どんなことがおこるのか わからないのも楽しみさ",
+      "range": [85.85, 92], "ans": []}
+  ]
+}

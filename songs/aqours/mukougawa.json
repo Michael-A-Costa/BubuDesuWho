@@ -3,6 +3,7 @@
   "ogg": "sound/ps_no_mukougawa.ogg",
   "id": "mukougawa",
   "group": "aqours",
+  "legacy": true,
   "released": "2017-03-24",
   "subunit": "azalea",
   "hidden": false,

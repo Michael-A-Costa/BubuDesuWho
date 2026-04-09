@@ -278,13 +278,9 @@
       "lyric_jp": "だってそれしかわからないよ これからだから...！",
       "parts": [
         {"lyric": "Datte sore shika wakaranai yo",
-          "range": [196.5, 200.32], "ans": [2, 5, 8]},
+          "range": [196.5, 203.84], "ans": [2, 5, 8]},
         {"lyric": "Kore kara dakara...!",
-          "range": [200.32, 202.26], "ans": [3, 6, 7]},
-        {"lyric": "From:",
-          "range": [202.26, 203.84], "ans": []},
-        {"lyric": "Https://sites.google.com/site/lovelivesunshineccl/",
-          "range": [203.84, 218.01], "ans": [2]}
+          "range": [203.84, 218.01], "ans": [3, 6, 7]}
       ]
     },
     "",

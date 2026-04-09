@@ -15,7 +15,13 @@
 #menu-button,
 #lyrics-container,
 #lyrics,
-#player-bar
+#player-bar,
+#sidebar,
+.sidebar-nav li a,
+.sidebar-nav li a.select-info,
+.sort-btn,
+.group-toggle-btn,
+.sort-toggle-wrap
 { transition: all 0.5s ease; }
 
 
@@ -34,11 +40,25 @@ Each theme sets --t-* variables on html.theme-X.
 #song-title[class*="theme-"]          { color: var(--t-title-color, inherit); text-shadow: var(--t-title-shadow, none); }
 #lyrics-container[class*="theme-"]    { background: var(--t-lyrics-bg, var(--lyrics-bg)); }
 #lyrics[class*="theme-"]              { color: var(--t-lyrics-color, var(--lyrics-color)); }
-.lyric.lyric-active[class*="theme-"]  { text-shadow: 2px 0 4px var(--t-lyric-shadow), 0 2px 4px var(--t-lyric-shadow); }
+.lyric.lyric-active[class*="theme-"]  { text-shadow: 2px 0 4px var(--t-lyric-shadow, #AAD3F7), 0 2px 4px var(--t-lyric-shadow, #AAD3F7); }
 #menu-button[class*="theme-"]         { color: var(--t-menu-btn-color, var(--menu-btn-color)); }
 #player-bar[class*="theme-"]          { background: var(--t-player-bg, var(--player-bar-bg)); border-top-color: var(--t-player-border, var(--player-bar-border)); }
 #player-bar[class*="theme-"] #progress-bar { background: var(--t-check-bg, var(--progress-fill)); }
 #player-bar[class*="theme-"] #volume-bar   { background: var(--t-check-bg, var(--progress-fill)); }
+
+/* Sidebar — derive colors from existing theme vars */
+html[class*="theme-"] #sidebar                         { background: var(--t-navbar-bg); }
+html[class*="theme-"] .sidebar-nav li a                { background-color: var(--t-slot-bg, var(--sidebar-link)); border-bottom-color: var(--t-slot-active-bg, var(--sidebar-border)); color: var(--t-lyrics-color, var(--sidebar-text)); }
+html[class*="theme-"] .sidebar-nav li a.active         { background-color: var(--t-slot-active-bg, var(--sidebar-active)); }
+html[class*="theme-"] .hoverable .sidebar-nav li a:hover        { background-color: var(--t-slot-active-bg, var(--sidebar-link)); }
+html[class*="theme-"] .hoverable .sidebar-nav li a.active:hover { background-color: var(--t-check-dark, var(--sidebar-active)); }
+html[class*="theme-"] .sidebar-nav li a.select-info              { background-color: var(--t-check-bg, #62C462); border-bottom-color: var(--t-check-dark, #288728); }
+html[class*="theme-"] .sidebar-nav li a.select-info.active       { background-color: var(--t-check-dark, #278227); }
+html[class*="theme-"] .hoverable .sidebar-nav li a.select-info:hover        { filter: brightness(1.15); }
+html[class*="theme-"] .hoverable .sidebar-nav li a.select-info.active:hover { filter: brightness(1.15); }
+html[class*="theme-"] .sort-btn.active                 { background: var(--t-check-bg, #62C462); border-color: var(--t-check-dark, #4aad4a); }
+html[class*="theme-"] .group-toggle-btn.active         { background: var(--t-check-bg, #62C462); border-color: var(--t-check-dark, #4aad4a); }
+html[class*="theme-"] .sort-toggle-wrap                { background: var(--t-slot-bg, #f5f5f5); border-bottom-color: var(--t-slot-active-bg, #ddd); }
 
 
 /*===============================================
@@ -547,4 +567,48 @@ html.dark-mode #player-bar[class*="theme-"] {
 /* menu-button theme colors: reset to default in dark mode */
 html.dark-mode #menu-button[class*="theme-"] {
   color: var(--text-muted);
+}
+
+/* Sidebar: reset backgrounds to dark base, keep accent colors on check-derived elements */
+html.dark-mode[class*="theme-"] #sidebar {
+  background: var(--bg-base) !important;
+}
+html.dark-mode[class*="theme-"] .sidebar-nav li a {
+  background-color: var(--bg-base) !important;
+  border-bottom-color: var(--border) !important;
+}
+html.dark-mode[class*="theme-"] .sidebar-nav li a.active {
+  background-color: var(--bg-surface) !important;
+}
+html.dark-mode[class*="theme-"] .hoverable .sidebar-nav li a:hover {
+  background-color: var(--bg-elevated) !important;
+}
+html.dark-mode[class*="theme-"] .sidebar-nav li a.select-info {
+  background-color: var(--bg-surface) !important;
+  border-bottom-color: var(--border) !important;
+  filter: none !important;
+}
+html.dark-mode[class*="theme-"] .sidebar-nav li a.select-info.active {
+  background-color: color-mix(in srgb, var(--t-check-bg, var(--accent)) 20%, #121212) !important;
+  color: var(--t-check-bg, var(--accent)) !important;
+}
+html.dark-mode[class*="theme-"] .hoverable .sidebar-nav li a.select-info:hover {
+  background-color: var(--bg-elevated) !important;
+  filter: none !important;
+}
+html.dark-mode[class*="theme-"] .hoverable .sidebar-nav li a.select-info.active:hover {
+  background-color: color-mix(in srgb, var(--t-check-bg, var(--accent)) 25%, #121212) !important;
+  filter: none !important;
+}
+html.dark-mode[class*="theme-"] .sort-btn.active {
+  background: var(--t-check-bg, var(--accent)) !important;
+  border-color: var(--t-check-dark, var(--accent)) !important;
+}
+html.dark-mode[class*="theme-"] .group-toggle-btn.active {
+  background: var(--t-check-bg, var(--accent)) !important;
+  border-color: var(--t-check-dark, var(--accent)) !important;
+}
+html.dark-mode[class*="theme-"] .sort-toggle-wrap {
+  background: var(--bg-surface) !important;
+  border-bottom-color: var(--border) !important;
 }

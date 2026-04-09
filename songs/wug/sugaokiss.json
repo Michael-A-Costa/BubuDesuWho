@@ -3,6 +3,7 @@
   "ogg": "sound/sugao_de_kiss_me.ogg",
   "id": "sugaokiss",
   "group": "wug",
+  "legacy": true,
   "hidden": false,
   "slots": [
     {"command": "group", "members": [0, 1, 2]},

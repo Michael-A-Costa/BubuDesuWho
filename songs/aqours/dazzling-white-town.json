@@ -1,0 +1,306 @@
+{
+  "name": "Dazzling White Town",
+  "ogg": "sound/dazzling_white_town.ogg",
+  "id": "dazzling-white-town",
+  "group": "saint-aqours-snow",
+  "menu": "aqours",
+  "added": "2026-04",
+  "hidden": true,
+  "slots": [
+
+  ],
+  "lines": [
+    {"lyric": "White town,",
+      "lyric_jp": "White Town",
+      "range": [1.03, 6.63], "ans": []},
+    {"lyric": "Come on!",
+      "lyric_jp": "Come on!",
+      "range": [6.63, 12.74], "ans": [10]},
+    {"lyric": "Don't stop dreaming!!",
+      "lyric_jp": "Don't stop dreaming!",
+      "range": [12.74, 14.74], "ans": []},
+    "",
+    {"lyric": "Hajimare! Kono basho kara subete ga",
+      "lyric_jp": "始まれ！この場所から全てが",
+      "range": [14.74, 21.79], "ans": []},
+    {"lyric": "Hajimare! Kono basho kara hajimare Wao!!",
+      "lyric_jp": "始まれ！この場所から始まれ",
+      "range": [21.79, 28.48], "ans": []},
+    {"lyric": "Wao!!",
+      "lyric_jp": "Wao!!",
+      "range": [28.48, 28.92], "ans": []},
+    "",
+    {"lyric": "Hontou wa kidzuiteru donna yume mo tomerarenai",
+      "lyric_jp": "本当は気づいてる どんな夢も止められない",
+      "range": [28.92, 32.11], "ans": [10]},
+    {"lyric": "Sou yume e to mukatteku koronde mo tachiagare yo",
+      "lyric_jp": "そう夢へと向かってく 転んでも立ち上がれよ",
+      "range": [32.11, 35.61], "ans": [10]},
+    {"lyric": "Kyou wa kyou no jibun wo ganbatta kara",
+      "lyric_jp": "今日は 今日の自分を頑張ったから",
+      "range": [35.61, 39.53], "ans": [10]},
+    {"lyric": "Mou kuyamanai warai tobasunda Welcome new mind",
+      "lyric_jp": "もう悔やまない 笑い飛ばすんだ",
+      "range": [39.53, 41.58], "ans": [10]},
+    {"lyric": "Welcome new mind",
+      "lyric_jp": "Welcome new mind",
+      "range": [41.58, 42.75], "ans": []},
+    "",
+    {"lyric": "Yuki mau oozora ga sukitooru asa ga White town",
+      "lyric_jp": "雪舞う大空が 透き通る朝が White town",
+      "range": [42.75, 46.89], "ans": [11]},
+    {"lyric": "Genki ni nareru yo Snow dance snow dream dance",
+      "lyric_jp": "元気になれるよ Snow dance snow dream dance",
+      "range": [46.89, 49.75], "ans": [10]},
+    {"lyric": "Masshiro na iki ga uta ni natta toki",
+      "lyric_jp": "真っ白な息が 歌になった時",
+      "range": [49.75, 53.66], "ans": [11]},
+    {"lyric": "Kimi e kitto todoku to kanjiteru",
+      "lyric_jp": "君へきっと届くと感じてる",
+      "range": [53.66, 58.81], "ans": [10]},
+    "",
+    {"lyric": "Tsumetai (Hey!) machi kara (Hey!) atsui atsui Beat magic",
+      "lyric_jp": "冷たい街から 熱い熱い Beat magic",
+      "range": [58.81, 66.08], "ans": [11]},
+    {
+      "lyric_jp": "生まれて 抱きしめる氷の心を",
+      "parts": [
+        {"lyric": "Umarete (Hey!)",
+          "range": [66.08, 67.34], "ans": [11]},
+        {"lyric": "Dakishimeru",
+          "range": [67.34, 68.84], "ans": [11]},
+        {"lyric": "Koori no kokoro wo Don’t stop dreaming",
+          "range": [68.84, 73.98], "ans": []}
+      ]
+    },
+    {"lyric": "Don't stop dreaming",
+      "lyric_jp": "Don't stop dreaming",
+      "range": [73.98, 75.49], "ans": []},
+    "",
+    {
+      "lyric_jp": "We love music いつもいつも",
+      "parts": [
+        {"lyric": "We love music",
+          "range": [75.49, 77.21], "ans": []},
+        {"lyric": "Itsumo itsumo",
+          "range": [77.21, 79.37], "ans": [11]}
+      ]
+    },
+    {
+      "lyric_jp": "We love music 踊りたがる",
+      "parts": [
+        {"lyric": "We love music",
+          "range": [79.11, 80.73], "ans": []},
+        {"lyric": "Odoritagaru",
+          "range": [80.73, 82.61], "ans": [10]}
+      ]
+    },
+    {"lyric": "(Fu!)",
+      "range": [80.6, 82.6], "ans": []},
+    {
+      "lyric_jp": "We love music 他にはない",
+      "parts": [
+        {"lyric": "We love music",
+          "range": [82.6, 84.14], "ans": []},
+        {"lyric": "Hoka ni wa nai",
+          "range": [84.14, 86.82], "ans": [11]}
+      ]
+    },
+    {"lyric": "We love music jounetsu wa Music!! (Fu!)",
+      "lyric_jp": "We love music 情熱は music!!",
+      "range": [86.82, 90.49], "ans": []},
+    "",
+    {"lyric": "Hajimare! Kono basho kara subete ga kagayaite",
+      "lyric_jp": "始まれ！この場所から全てが 輝いて",
+      "range": [90.49, 98.16], "ans": []},
+    {
+      "lyric_jp": "始まれ！この場所から始まれ Ah! 何度でも",
+      "parts": [
+        {"lyric": "Hajimare! Kono basho kara hajimare",
+          "range": [98.16, 102.99], "ans": []},
+        {"lyric": "Ah! Nando demo",
+          "range": [102.99, 105.52], "ans": [11]}
+      ]
+    },
+    "",
+    {"lyric": "White town, Come on! Waol!!",
+      "lyric_jp": "White town",
+      "range": [105.52, 111.37], "ans": [10]},
+    {"lyric": "Come on!",
+      "lyric_jp": "Come on!",
+      "range": [111.37, 118.75], "ans": []},
+    {"lyric": "Wao!!",
+      "lyric_jp": "Wao!!",
+      "range": [118.75, 119.24], "ans": []},
+    "",
+    {"lyric": "Haigo de sakenderu minna koukai nado shitakunai",
+      "lyric_jp": "背後で叫んでる みんな後悔などしたくない",
+      "range": [119.24, 122.26], "ans": [10]},
+    {"lyric": "Saa yume nara tsukandekou te ni iretai gyutto tsukandekou",
+      "lyric_jp": "さあ夢なら掴んでこう 手に入れたいぎゅっと掴んでこう",
+      "range": [122.26, 125.88], "ans": [10]},
+    {"lyric": "Kyou wa kyou no jibun wo chotto hometoke",
+      "lyric_jp": "今日は 今日の自分をちょっと褒めとけ",
+      "range": [125.88, 129.63], "ans": [10]},
+    {"lyric": "Mou nakanai asu wa asu no sunoo Welcome new smile",
+      "lyric_jp": "もう泣かない 明日は明日の雪 Welcome new smile",
+      "range": [129.63, 132.94], "ans": [10]},
+    "",
+    "[next-col]",
+    {"lyric": "Machi kooru hibi mo yagate owaru to White town",
+      "lyric_jp": "街凍る日々も やがて終わると White town",
+      "range": [132.94, 137.02], "ans": [11]},
+    {"lyric": "Keshiki mo kawatteku Snow dance snow dream dance",
+      "lyric_jp": "景色も変わってく Snow dance snow dream dance",
+      "range": [137.02, 140.07], "ans": [10]},
+    {"lyric": "Tokenaide nante sa Sentimental empathy",
+      "lyric_jp": "溶けないでなんてさ Sentimental empathy",
+      "range": [140.07, 143.81], "ans": [11]},
+    {"lyric": "Kimi mo sonna omoide tsugi naru yume e to tabi ni deru",
+      "lyric_jp": "君もそんな想いで 次なる夢へと旅に出る",
+      "range": [143.81, 150.83], "ans": [10]},
+    "",
+    {"lyric": "Tsumetai (Hey!) machi kara (Hey!) atsui atsui Beat magic",
+      "lyric_jp": "冷たい街から 熱い熱い Beat magic",
+      "range": [150.83, 158.42], "ans": [11]},
+    {"lyric": "Umarete (Hey!) doko e yuku no?",
+      "lyric_jp": "生まれて どこへ行くの？",
+      "range": [158.42, 162.75], "ans": [11]},
+    {"lyric": "Tooku e? Tooku e to kimi no machi e to! Go!!",
+      "lyric_jp": "遠くへ？遠くへと 君の街へと！Go!!",
+      "range": [162.75, 166.11], "ans": [10]},
+    {"lyric": "Don’t stop dreaming",
+      "lyric_jp": "Don't stop dreaming",
+      "range": [166.11, 167.64], "ans": []},
+    "",
+    {
+      "lyric_jp": "We love music いつかいつか",
+      "parts": [
+        {"lyric": "We love music",
+          "range": [167.64, 169.24], "ans": []},
+        {"lyric": "Itsuka itsuka",
+          "range": [169.24, 171.4], "ans": [11]}
+      ]
+    },
+    {
+      "lyric_jp": "We love music 君に会える",
+      "parts": [
+        {"lyric": "We love music",
+          "range": [171.28, 172.71], "ans": []},
+        {"lyric": "Kimi ni aeru",
+          "range": [172.71, 174.7], "ans": [10]}
+      ]
+    },
+    {"lyric": "(Fu!)",
+      "range": [172.7, 174.7], "ans": []},
+    {
+      "lyric_jp": "We love music 自由な未来へ",
+      "parts": [
+        {"lyric": "We love music",
+          "range": [174.7, 176.18], "ans": []},
+        {"lyric": "Jiyuu na mirai e",
+          "range": [176.18, 178.54], "ans": [11]}
+      ]
+    },
+    {"lyric": "We love music jounetsu wa music!!",
+      "lyric_jp": "We love music 情熱は music!!",
+      "range": [178.48, 186.58], "ans": []},
+    "",
+    {"lyric": "Mabushii sekai de jiyuu ni odorou",
+      "lyric_jp": "眩しい世界で自由に踊ろう",
+      "range": [186.58, 202.75], "ans": [10]},
+    {"lyric": "(We love music) (Hey!)",
+      "range": [200.75, 202.75], "ans": []},
+    {"lyric": "We love music",
+      "lyric_jp": "We love music",
+      "range": [202.75, 205.44], "ans": []},
+    "",
+    {
+      "lyric_jp": "We love music We love music いつかいつか",
+      "parts": [
+        {"lyric": "We love music",
+          "range": [202.75, 204.49], "ans": []},
+        {"lyric": "Itsuka itsuka",
+          "range": [204.49, 209.28], "ans": [11]}
+      ]
+    },
+    {
+      "lyric_jp": "We love music 君に会える",
+      "parts": [
+        {"lyric": "We love music",
+          "range": [209.19, 210.61], "ans": []},
+        {"lyric": "Kimi ni aeru",
+          "range": [210.61, 212.64], "ans": [10]}
+      ]
+    },
+    {"lyric": "(Fu!)",
+      "range": [210.64, 212.64], "ans": []},
+    {
+      "lyric_jp": "We love music 自由な未来へ",
+      "parts": [
+        {"lyric": "We love music",
+          "range": [212.64, 214.06], "ans": []},
+        {"lyric": "Jiyuu na mirai e",
+          "range": [214.06, 216.44], "ans": [11]}
+      ]
+    },
+    {"lyric": "We love music jounetsu wa Music (Fu!)",
+      "lyric_jp": "We love music 情熱は music!!",
+      "range": [216.41, 219.99], "ans": []},
+    {
+      "lyric_jp": "We love music 自由な未来へ",
+      "parts": [
+        {"lyric": "We love music",
+          "range": [219.99, 221.06], "ans": []},
+        {"lyric": "Jiyuu na mirai e",
+          "range": [221.06, 222.67], "ans": [11]},
+        {"lyric": "We love music",
+          "range": [222.67, 223.65], "ans": []}
+      ]
+    },
+    {
+      "lyric_jp": "We love music 出会えるよ 出会えるよ 情熱は music!!",
+      "parts": [
+        {"lyric": "Deaeru yo",
+          "range": [223.65, 225.07], "ans": [10]},
+        {"lyric": "Deaeru yo",
+          "range": [225.07, 226.33], "ans": [11]},
+        {"lyric": "Jounetsu wa",
+          "range": [226.33, 227.83], "ans": [10]},
+        {"lyric": "Music!! (Fu!)",
+          "range": [227.83, 229.42], "ans": []}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "始まれ！この場所から全てが 輝いて",
+      "parts": [
+        {"lyric": "Hajimare! Kono basho kara subete ga",
+          "range": [229.42, 234.58], "ans": []},
+        {"lyric": "Kagayaite",
+          "range": [234.58, 236.62], "ans": [11]}
+      ]
+    },
+    {
+      "lyric_jp": "始まれ！この場所から始まれ Ah! 何度でも",
+      "parts": [
+        {"lyric": "Hajimare! Kono basho kara hajimare",
+          "range": [236.62, 241.91], "ans": []},
+        {"lyric": "Ah! Nando demo",
+          "range": [241.91, 246.64], "ans": [11]}
+      ]
+    },
+    {"lyric": "Come on! Come on!",
+      "lyric_jp": "Come on! Come on!",
+      "range": [246.64, 248.88], "ans": [10]},
+    {"lyric": "Kagayaite",
+      "lyric_jp": "輝いて",
+      "range": [248.88, 253.84], "ans": [11]},
+    {"lyric": "We love music,",
+      "lyric_jp": "We love music",
+      "range": [253.84, 257.6], "ans": [10]},
+    {"lyric": "Come on!",
+      "lyric_jp": "Come on!",
+      "range": [257.6, 263], "ans": []}
+  ]
+}

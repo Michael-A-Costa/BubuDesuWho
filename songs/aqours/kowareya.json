@@ -3,6 +3,7 @@
   "ogg": "sound/kowareyasuki.ogg",
   "id": "kowareya",
   "group": "aqours",
+  "legacy": true,
   "released": "2017-06-21",
   "subunit": "azalea",
   "hidden": false,

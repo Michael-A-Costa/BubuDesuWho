@@ -3,6 +3,7 @@
   "ogg": "sound/cutie_panther.ogg",
   "id": "cp",
   "group": "muse",
+  "legacy": true,
   "hidden": false,
   "slots": [
     {"command": "ignore", "slots": [11, 14, 33, 36, 48, 51]},

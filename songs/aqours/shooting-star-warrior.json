@@ -1,0 +1,256 @@
+{
+  "name": "Shooting Star Warrior",
+  "ogg": "sound/shooting_star_warrior.ogg",
+  "id": "shooting-star-warrior",
+  "group": "aqours",
+  "added": "2026-04",
+  "hidden": true,
+  "slots": [
+
+  ],
+  "lines": [
+    {
+      "lyric_jp": "誰の声も届かない繭の中で",
+      "parts": [
+        {"lyric": "Minna shoujiki ni ne ikiyou yo",
+          "range": [12.31, 16.11], "ans": [9]},
+        {"lyric": "Uso wa",
+          "range": [16.11, 16.99], "ans": [3, 6]},
+        {"lyric": "Jikan no",
+          "range": [16.99, 17.87], "ans": [9]},
+        {"lyric": "Muda muda",
+          "range": [17.87, 19.03], "ans": []}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "ずっと心を閉ざして眠ったまま",
+      "parts": [
+        {"lyric": "Kyori ga tooku tatte yonde hoshii",
+          "range": [19.03, 20.34], "ans": [3, 6]},
+        {"lyric": "(Go away!)",
+          "range": [20.34, 21.76], "ans": [9]},
+        {"lyric": "Muri na koto nante nai yo nain datteba",
+          "range": [21.76, 23.2], "ans": [3, 6]},
+        {"lyric": "Donna ni donna ni donna ni tsurakute mo",
+          "range": [23.2, 25.96], "ans": [9]}
+      ]
+    },
+    {
+      "lyric_jp": "いいの？よくない！目を覚まして欲しいよ",
+      "parts": [
+        {"lyric": "Koko ni",
+          "range": [25.35, 26.31], "ans": [3, 6]},
+        {"lyric": "Watashi ga",
+          "range": [26.31, 28.91], "ans": [9]},
+        {"lyric": "Iru yo iru yo",
+          "range": [28.91, 31.97], "ans": []}
+      ]
+    },
+    "",
+    {"lyric": "Motto kageki ni yume mitai",
+      "lyric_jp": "どこで繭と眠ってるの 教えて",
+      "range": [30.99, 34.35], "ans": [9]},
+    {"lyric": "Nagareboshi mitai ni",
+      "lyric_jp": "どこで繭と眠ってるの 教えて",
+      "range": [34.35, 35.95], "ans": [9]},
+    {
+      "lyric_jp": "深海からの溜息聞こえた",
+      "parts": [
+        {"lyric": "Hashire",
+          "range": [35.62, 36.39], "ans": [3, 6]},
+        {"lyric": "Kurai",
+          "range": [36.39, 36.7], "ans": [3, 6]},
+        {"lyric": "Sora wo mabushiku hikisaite",
+          "range": [36.7, 42.6], "ans": [9]}
+      ]
+    },
+    "",
+    {"lyric": "Matteta? (Hey!)",
+      "lyric_jp": "求めあってみたい魂の S.O.S. voice",
+      "range": [47.74, 48.46], "ans": []},
+    {"lyric": "Dattara... (Hey!) gyutto dakishimetainda",
+      "lyric_jp": "求めあってみたい魂の S.O.S. voice",
+      "range": [48.46, 50.24], "ans": []},
+    {"lyric": "Misete! (Hey!) kimi no (Hey!) jounetsu no katachi wo",
+      "lyric_jp": "求めあってみたい魂の S.O.S. voice",
+      "range": [50.24, 53.27], "ans": []},
+    {
+      "lyric_jp": "Ah まるで運命のようだと熱くなる",
+      "parts": [
+        {"lyric": "Itsudatte modotte kuru yo",
+          "range": [60.12, 62.22], "ans": [9]},
+        {"lyric": "Tatoe sekai ga kowareta tte",
+          "range": [62.22, 63.22], "ans": [9]},
+        {"lyric": "Nandomo (Hey!) nandomo (Hey!) meguriau hazu sa",
+          "range": [63.22, 66.3], "ans": []},
+        {"lyric": "Kanarazu mitsukeru yo",
+          "range": [66.3, 68.33], "ans": [9]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "息を止めて 暗い水へと飛び込んで",
+      "parts": [
+        {"lyric": "Yatto egao ni natta ne tte",
+          "range": [68.33, 72.01], "ans": [6]},
+        {"lyric": "Hotto shita kara",
+          "range": [72.01, 73.3], "ans": [6]},
+        {"lyric": "Icchau icchau",
+          "range": [73.3, 74.59], "ans": [3, 9]},
+        {"lyric": "Kyou mo seiippai ikiyou yo",
+          "range": [74.59, 77.73], "ans": [6]}
+      ]
+    },
+    {
+      "lyric_jp": "探すんだ 君の気配",
+      "parts": [
+        {"lyric": "Kotoba wa",
+          "range": [76.76, 77.5], "ans": [3, 9]},
+        {"lyric": "Zenbu",
+          "range": [77.5, 79.8], "ans": [6]},
+        {"lyric": "Honne honne",
+          "range": [79.8, 83.64], "ans": []}
+      ]
+    },
+    "",
+    {"lyric": "Jibun to jibun to no tatakai da (Fighting!)",
+      "lyric_jp": "連れ出すよ君のこと 地上へと Oh",
+      "range": [89.85, 93.31], "ans": [3, 9]},
+    {"lyric": "Nigete shimau nante nai yo nain datteba",
+      "lyric_jp": "連れ出すよ君のこと 地上へと Oh",
+      "range": [93.31, 96.41], "ans": [3, 9]},
+    {
+      "lyric_jp": "だから目を覚ましてよ ここに私がいるよ",
+      "parts": [
+        {"lyric": "Donna ni donna ni donna ni kowakute mo",
+          "range": [95.44, 100.33], "ans": [6]},
+        {"lyric": "Issho ni",
+          "range": [100.33, 102.07], "ans": [3, 9]},
+        {"lyric": "Watashi ga",
+          "range": [102.07, 103.09], "ans": [6]},
+        {"lyric": "Iru yo iru yo",
+          "range": [103.09, 108.6], "ans": []}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "雨のように泳ぐ魚の群れから",
+      "parts": [
+        {"lyric": "Zutto kirameku yume mitai",
+          "range": [108.6, 109.4], "ans": [3]},
+        {"lyric": "Nagareboshi wa kitto",
+          "range": [109.4, 110.08], "ans": [3]},
+        {"lyric": "Minna no negai",
+          "range": [110.08, 110.48], "ans": [6, 9]},
+        {"lyric": "Uketome nagara kagayaite",
+          "range": [110.48, 114.72], "ans": [3]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "受けとってしまったよ 放っておけないよもう",
+      "parts": [
+        {"lyric": "Doko e? (Hey!)",
+          "range": [125.12, 125.88], "ans": []},
+        {"lyric": "Dokoka (Hey!) nozomu basho e to",
+          "range": [125.88, 127.61], "ans": []},
+        {"lyric": "Datte sa... (Hey!) kokoro (Hey!) shibararetakunai",
+          "range": [127.61, 130.29], "ans": []},
+        {"lyric": "Itsudatte jiyuu wo egaku",
+          "range": [130.29, 131.74], "ans": [6]}
+      ]
+    },
+    {
+      "lyric_jp": "抱きしめて離さない 離さない Oh",
+      "parts": [
+        {"lyric": "Omoi wa tobidashitagaru",
+          "range": [137.24, 139.16], "ans": [6]},
+        {"lyric": "Nandomo (Hey!) nandomo (Hey!) kimi to deaitai",
+          "range": [139.16, 141.95], "ans": []},
+        {"lyric": "Atarashii sekai de",
+          "range": [141.95, 143.52], "ans": []}
+      ]
+    },
+    {"lyric": "Mitai ni hashire hashire",
+      "lyric_jp": "繭を壊してしまえば 君は私のもの",
+      "range": [143.52, 144.58], "ans": [3, 6]},
+    {"lyric": "Negaigoto minna uketomete",
+      "lyric_jp": "繭を壊してしまえば 君は私のもの",
+      "range": [144.58, 146.98], "ans": [3, 6]},
+    {"lyric": "Sou nagareboshi mitai ni hashire hashire",
+      "lyric_jp": "繭を壊してしまえば 君は私のもの",
+      "range": [146.98, 149.98], "ans": [3, 6]},
+    {"lyric": "Kimi no negai datte kanaunda",
+      "lyric_jp": "繭を壊してしまえば 君は私のもの",
+      "range": [149.98, 168.65], "ans": [3, 6]},
+    "",
+    "[next-col]",
+    {"lyric": "Uso janai",
+      "lyric_jp": "どんな夢見てる？",
+      "range": [168.65, 171.03], "ans": [9]},
+    {"lyric": "Ari no mama no hikari de sora wo kakeru",
+      "lyric_jp": "どんな夢見てる？",
+      "range": [171.03, 172.05], "ans": [9]},
+    {
+      "lyric_jp": "じっとしてるだけ？",
+      "parts": [
+        {"lyric": "Jikan wa tomerarenai",
+          "range": [171.76, 172.74], "ans": [9]},
+        {"lyric": "Aa",
+          "range": [172.74, 172.96], "ans": [9]},
+        {"lyric": "Honki de butsukari",
+          "range": [172.96, 173.71], "ans": [6]}
+      ]
+    },
+    {
+      "lyric_jp": "はやく壊してしまいたいよ",
+      "parts": [
+        {"lyric": "Honki de katariatte kizutsuite",
+          "range": [173.71, 175.56], "ans": [3]},
+        {"lyric": "Soredemo mata",
+          "range": [175.56, 176.53], "ans": [9]},
+        {"lyric": "Shinjitai yo",
+          "range": [176.53, 176.99], "ans": [3, 6]},
+        {"lyric": "Aeta kara, ne!",
+          "range": [176.99, 180.19], "ans": [9]}
+      ]
+    },
+    "",
+    {"lyric": "Matteta? (Hey!)",
+      "lyric_jp": "そっと叩いたら ちょっと動いてた",
+      "range": [180.19, 180.87], "ans": []},
+    {"lyric": "Dattara... (Hey!) gyutto dakishimetainda",
+      "lyric_jp": "そっと叩いたら ちょっと動いてた",
+      "range": [180.87, 185.69], "ans": []},
+    {"lyric": "(Yeah yeah)",
+      "lyric_jp": "(Yeah yeah)",
+      "range": [192.36, 198.14], "ans": []},
+    {
+      "lyric_jp": "君の心に触れたいよ 深海で触れたいよ",
+      "parts": [
+        {"lyric": "Misete! (Hey!) kimi no (Hey!) jounetsu no katachi wo",
+          "range": [210.74, 213.72], "ans": []},
+        {"lyric": "Itsudatte modotte kuru yo",
+          "range": [213.72, 214.9], "ans": [3]},
+        {"lyric": "Tatoe sekai ga kowareta tte",
+          "range": [214.9, 216.2], "ans": [3]},
+        {"lyric": "Nandomo (Hey!) nandomo (Hey!) meguriau hazu sa",
+          "range": [216.2, 221.31], "ans": []}
+      ]
+    },
+    {
+      "lyric_jp": "だから目を覚ましてよ ここに私がいるよ",
+      "parts": [
+        {"lyric": "Kimi da to wakaru yo",
+          "range": [233.32, 239.19], "ans": [9]},
+        {"lyric": "Kimi no kokoro wo",
+          "range": [239.19, 244.32], "ans": [6]},
+        {"lyric": "Kanarazu",
+          "range": [244.32, 247.25], "ans": [3]},
+        {"lyric": "Mitsukeru yo",
+          "range": [247.25, 250.92], "ans": []}
+      ]
+    }
+  ]
+}

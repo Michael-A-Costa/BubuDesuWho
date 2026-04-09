@@ -3,6 +3,7 @@
   "ogg": "sound/gokujou_smile.ogg",
   "id": "gokusuma",
   "group": "wug",
+  "legacy": true,
   "hidden": false,
   "slots": [
     {"command": "group", "members": [11, 12]},

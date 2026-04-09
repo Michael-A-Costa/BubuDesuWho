@@ -3,6 +3,7 @@
   "ogg": "sound/beyond_the_bottom.ogg",
   "id": "btb",
   "group": "wug",
+  "legacy": true,
   "hidden": false,
   "slots": [
     {"command": "group", "members": [6, 7]},

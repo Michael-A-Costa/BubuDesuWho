@@ -3,6 +3,7 @@
   "ogg": "sound/tachiagare.ogg",
   "id": "tachiagare",
   "group": "wug",
+  "legacy": true,
   "hidden": false,
   "slots": [
     {"command": "group", "members": [4, 5]},

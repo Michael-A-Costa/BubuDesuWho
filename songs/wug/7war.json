@@ -3,6 +3,7 @@
   "ogg": "sound/7_girls_war.ogg",
   "id": "7war",
   "group": "wug",
+  "legacy": true,
   "hidden": false,
   "slots": [
     {"command": "group", "members": [11, 12]}

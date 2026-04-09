@@ -3,6 +3,7 @@
   "ogg": "sound/wug_zoo_zoo.ogg",
   "id": "wugzoo",
   "group": "wug",
+  "legacy": true,
   "hidden": false,
   "slots": [
     {"command": "group", "members": [31, 32]},

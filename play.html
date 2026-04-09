@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>GanbaWhoby</title>
+<title>BubuDesuWho</title>
 
 <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
 <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
@@ -23,6 +23,7 @@
     <li><a class="select-info" href="index.html">About</a></li>
     <li><a class="select-info" href="changelog.html">Changelog</a></li>
     <li><a class="select-info" href="stats.html">Stats</a></li>
+    <li><a class="select-info" href="bubudle.html">Bubudle</a></li>
     <li>
       <button id="muse-group-button" type="button" class="btn btn-primary group-button" data-value="muse"><img class="group-icon" src="css/images/muse.png"></img></button><button id="aqours-group-button" type="button" class="btn btn-primary group-button" data-value="aqours"><img class="group-icon" src="css/images/aqours.png"></img></button>
     </li>
@@ -30,11 +31,11 @@
       <button id="wug-group-button" type="button" class="btn btn-primary group-button" data-value="wug"><img class="group-icon" src="css/images/wug.png"></img>
     </li>
     <li class="has-feedback">
-      <input class="form-control" id="menu-search"></input>
+      <input class="form-control" id="menu-search" autofocus></input>
       <span class="glyphicon glyphicon-search form-control-feedback"></span>
     </li>
     <li class="sort-toggle-wrap">
-      <button type="button" class="sort-btn active" data-sort="date">Date</button><button type="button" class="sort-btn" data-sort="alpha">A–Z</button><button type="button" class="sort-btn" data-sort="group">Group</button>
+      <button type="button" class="sort-btn active" data-sort="date">Date</button><button type="button" class="sort-btn" data-sort="alpha">A–Z</button><button type="button" class="group-toggle-btn" id="group-toggle">Group</button>
     </li>
   </ul>
   <img id="song-cover" src="" alt="" style="display:none">
@@ -234,6 +235,42 @@
       <div class="hidden-xs col-sm-push-2 col-sm-2 btn-group-vertical">
         <button type="button" class="btn btn-primary" data-value="1,2,3,4,5,6,7,8,9">Aqours</button>
         <button type="button" class="btn btn-primary" data-value="10,11">Saint Snow</button>
+      </div>
+      <div class="col-xs-4 col-sm-pull-4 col-sm-2 btn-group-vertical">
+        <button type="button" class="btn btn-primary choice" data-value="7">Dia (Arisha)</button>
+        <button type="button" class="btn btn-primary choice" data-value="8">Kanan (Suwawa)</button>
+        <button type="button" class="btn btn-primary choice" data-value="9">Mari (Ainya)</button>
+      </div>
+    </div></div>
+  </div>
+</template>
+
+<template id="aqours-miku-slot-template">
+  <div class="row slot">
+    <div class="col-xs-12 col-md-2 slot-header">
+      <span class="label label-default timerange"></span>
+      <span class="jump-button glyphicon glyphicon-play" title="Jump" aria-hidden="true"></span>
+      <span class="check-slot-button glyphicon glyphicon-ok" aria-hidden="true" title="Check this line"></span>
+      <span class="reveal-button glyphicon glyphicon-search" title="Reveal answer" aria-hidden="true"></span>
+      <span class="reveal-off-button glyphicon glyphicon-search" title="Unreveal" aria-hidden="true"></span>
+      <span class="show-lyrics glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+    </div>
+    <div class="col-xs-12 col-md-10 slot-body"><div class="row">
+      <div class="col-xs-4 col-sm-offset-1 col-sm-2 btn-group-vertical">
+        <button type="button" class="btn btn-primary choice" data-value="1">Chika (Anchan)</button>
+        <button type="button" class="btn btn-primary choice" data-value="2">You (Shukashuu)</button>
+        <button type="button" class="btn btn-primary choice" data-value="3">Riko (Rikyako)</button>
+      </div>
+      <div class="hidden-xs col-sm-push-4 col-sm-2 btn-group-vertical">
+        <button type="button" class="btn btn-primary" data-value="12">Miku</button>
+      </div>
+      <div class="col-xs-4 col-sm-pull-2 col-sm-2 btn-group-vertical">
+        <button type="button" class="btn btn-primary choice" data-value="4">Hanamaru (King)</button>
+        <button type="button" class="btn btn-primary choice" data-value="5">Ruby (Furirin)</button>
+        <button type="button" class="btn btn-primary choice" data-value="6">Yoshiko (Aikyan)</button>
+      </div>
+      <div class="hidden-xs col-sm-push-2 col-sm-2 btn-group-vertical">
+        <button type="button" class="btn btn-primary" data-value="1,2,3,4,5,6,7,8,9">Aqours</button>
       </div>
       <div class="col-xs-4 col-sm-pull-4 col-sm-2 btn-group-vertical">
         <button type="button" class="btn btn-primary choice" data-value="7">Dia (Arisha)</button>

@@ -3,6 +3,7 @@
   "ogg": "sound/lonely_tuning.ogg",
   "id": "tuning",
   "group": "aqours",
+  "legacy": true,
   "released": "2017-03-24",
   "subunit": "guilty-kiss",
   "hidden": false,

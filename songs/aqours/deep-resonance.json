@@ -166,6 +166,13 @@
       "range": [269.12, 278.05], "ans": []},
     {"lyric": "Yami e to koe yo kakenukero",
       "lyric_jp": "闇へと 声よ駆け抜けろ",
-      "range": [278.05, 313], "ans": []}
+      "range": [271.48, 289.55], "ans": []},
+    "",
+    {"lyric": "(Wow)",
+      "lyric_jp": "(Wow)",
+      "range": [289.28, 291.79], "ans": [6]},
+    {"lyric": "(Wow Wow Wow Wow Yeah)",
+      "lyric_jp": "(Wow Wow Wow Wow Yeah)",
+      "range": [291.79, 298.18], "ans": [6]}
   ]
 }

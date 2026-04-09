@@ -1,0 +1,160 @@
+{
+  "name": "Kaigandoori de Matteru yo (V2)",
+  "ogg": "sound/kaigandoori_de_matteru_yo.ogg",
+  "id": "kaigandoori-de-matteru-yo-v2",
+  "group": "aqours",
+  "added": "2026-04",
+  "hidden": true,
+  "slots": [
+
+  ],
+  "lines": [
+    {"lyric": "Kaigandoori de matteta no ni kimi wa kyou kite kurenai",
+      "lyric_jp": "キミは今日来てくれない",
+      "range": [15.42, 22.74], "ans": []},
+    {"lyric": "Kaigandoori de matteta no ni kuruma ga hashirisaru dake sa",
+      "lyric_jp": "車が走り去るだけさ",
+      "range": [30.64, 37.01], "ans": []},
+    "",
+    {"lyric": "Dochira ga saisho ni hajimetanda ka wakannai",
+      "lyric_jp": "どちらが最初に始めたんだかわかんない",
+      "range": [37.01, 44.83], "ans": [2]},
+    {
+      "lyric_jp": "帰りの （いつもの）",
+      "parts": [
+        {"lyric": "Kaeri no",
+          "range": [44.83, 45.75], "ans": [2]},
+        {"lyric": "(itsumo no)",
+          "range": [45.75, 46.53], "ans": [1, 5]}
+      ]
+    },
+    {"lyric": "Kono michi kigen ga warukute",
+      "lyric_jp": "この道 キゲンが悪くて",
+      "range": [46.38, 51.73], "ans": [2]},
+    {"lyric": "Omoeba kudaranai koto de kimazuku natta",
+      "lyric_jp": "思えばくだらないことで気まずくなった",
+      "range": [51.73, 59.45], "ans": [1]},
+    {
+      "lyric_jp": "つい強い （きつめな）",
+      "parts": [
+        {"lyric": "Tsui tsuyoi",
+          "range": [59.45, 60.5], "ans": [1]},
+        {"lyric": "(kitsume na)",
+          "range": [60.5, 61.44], "ans": [2, 5]}
+      ]
+    },
+    {"lyric": "Kotoba de okorinbo taikai (uuun!)",
+      "lyric_jp": "言葉で おこりんぼ大会",
+      "range": [61.25, 67.09], "ans": [1]},
+    "",
+    {"lyric": "Demo demo",
+      "lyric_jp": "でもでも",
+      "range": [67.09, 68.22], "ans": [5]},
+    {"lyric": "Wakatte kureteru hazu da to kangaete ita yo",
+      "lyric_jp": "わかってくれてるはずだと考えていたよ",
+      "range": [68.22, 74.56], "ans": [5]},
+    "",
+    {"lyric": "Kaigandoori de matteta no ni kimi wa kyou kite kurenai",
+      "lyric_jp": "キミは今日来てくれない",
+      "range": [82.17, 100.15], "ans": []},
+    "",
+    {"lyric": "Ashita ga yuuutsu da kao wo awaseta toki",
+      "lyric_jp": "明日がユウウツだ 顔をあわせたとき",
+      "range": [100.15, 107.45], "ans": [5]},
+    {
+      "lyric_jp": "普通に （にっこり）",
+      "parts": [
+        {"lyric": "Futsuu ni",
+          "range": [107.45, 108.74], "ans": [5]},
+        {"lyric": "(nikkori)",
+          "range": [108.74, 109.46], "ans": [1, 2]}
+      ]
+    },
+    {"lyric": "Dekiru ka jishin ga nainda mon (haaa)",
+      "lyric_jp": "できるか自信がないんだもん",
+      "range": [109, 114.57], "ans": [5]},
+    {"lyric": "Yappari ima kara marude guuzen no you ni",
+      "lyric_jp": "やっぱり今からまるで偶然のように",
+      "range": [114.57, 122.03], "ans": [1]},
+    {
+      "lyric_jp": "近くを （ふらりと）",
+      "parts": [
+        {"lyric": "Chikaku wo",
+          "range": [122.03, 123.45], "ans": [1]},
+        {"lyric": "(furari to)",
+          "range": [123.45, 124.19], "ans": [2, 5]}
+      ]
+    },
+    {"lyric": "Aruite yousu wo miyou ka na",
+      "lyric_jp": "歩いて 様子を見ようかな",
+      "range": [123.71, 130.21], "ans": [1]},
+    "",
+    "[next-col]",
+    {"lyric": "Yada yada",
+      "lyric_jp": "やだやだ",
+      "range": [130.21, 130.85], "ans": [2]},
+    {"lyric": "Konna no sappari shinakute kimochi ga shunto shichau",
+      "lyric_jp": "こんなのさっぱりしなくて気持ちがしゅんとしちゃう",
+      "range": [130.85, 138.92], "ans": [2]},
+    {"lyric": "(SHUUN)",
+      "range": [136.92, 138.92], "ans": []},
+    {
+      "lyric_jp": "あーもーやだやだ （やだやだ～！）",
+      "parts": [
+        {"lyric": "Aa mou yada yada!",
+          "range": [138.92, 162.64], "ans": []},
+        {"lyric": "(yada yada!)",
+          "range": [162.64, 174.5], "ans": [2]}
+      ]
+    },
+    "",
+    {"lyric": "Aruitetara umi mo kaze mo orenii iro ni nari",
+      "lyric_jp": "歩いてたら 海も風もオレンジ色になり",
+      "range": [174.5, 182.05], "ans": [1]},
+    {"lyric": "Ijippari no watashi no mune terashite genki wo kureru",
+      "lyric_jp": "意地っ張りのワタシの胸 照らして元気をくれる",
+      "range": [182.05, 190.81], "ans": [2]},
+    "",
+    {"lyric": "Dakara ne",
+      "lyric_jp": "だからね",
+      "range": [190.81, 193.47], "ans": [5]},
+    {
+      "lyric_jp": "夕日へと叫びましょ （ずっとまってる～！）",
+      "parts": [
+        {"lyric": "Kaigandoori de matteru tte sa yuuhi e to sakebimasho",
+          "range": [200.91, 206.99], "ans": []},
+        {"lyric": "(zutto matteru!!)",
+          "range": [206.99, 208.56], "ans": [5]}
+      ]
+    },
+    {"lyric": "Kaigandoori de matteru tte sa tsutaware! Mada matteru kara",
+      "lyric_jp": "伝われ！まだまってるから",
+      "range": [215.63, 223.13], "ans": []},
+    {
+      "lyric_jp": "海岸通りは （ふたりの いつもの）",
+      "parts": [
+        {"lyric": "Kaigandoori wa",
+          "range": [223.13, 224.78], "ans": [2]},
+        {"lyric": "(futari no",
+          "range": [224.78, 225.72], "ans": [1]},
+        {"lyric": "(itsumo no)",
+          "range": [225.72, 226.67], "ans": [5]}
+      ]
+    },
+    {
+      "lyric_jp": "友情のシーサイド （だから）",
+      "parts": [
+        {"lyric": "Yuujou no shiisaido",
+          "range": [226.67, 229.39], "ans": [2]},
+        {"lyric": "(dakara)",
+          "range": [229.39, 230.2], "ans": [1, 5]}
+      ]
+    },
+    {"lyric": "Kimi ni kyou kite hoshinda",
+      "lyric_jp": "キミに今日来て欲しいんだ",
+      "range": [230.2, 238.25], "ans": []},
+    {"lyric": "Kuru? konai? Ahaha (Wow Yeah Yeah) konai? kite! Ahaha",
+      "lyric_jp": "来る？ 来ない？ 来ない？ 来て！",
+      "range": [238.25, 259.63], "ans": []}
+  ]
+}

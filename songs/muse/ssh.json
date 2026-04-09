@@ -3,6 +3,7 @@
   "ogg": "sound/sweet_sweet_holiday.ogg",
   "id": "ssh",
   "group": "muse",
+  "legacy": true,
   "hidden": false,
   "slots": [
     {"command": "group", "members": [11, 12]},

@@ -3,6 +3,7 @@
   "ogg": "sound/step_zero_to_one.ogg",
   "id": "step",
   "group": "aqours",
+  "legacy": true,
   "released": "2015-10-07",
   "hidden": false,
   "slots": [

@@ -3,6 +3,7 @@
   "ogg": "sound/waku-waku-week.ogg",
   "id": "waku",
   "group": "aqours",
+  "legacy": true,
   "released": "2016-11-25",
   "subunit": "1st-years",
   "hidden": false,

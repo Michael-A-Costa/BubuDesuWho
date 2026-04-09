@@ -3,6 +3,7 @@
   "ogg": "sound/yozora_wa_nandemo_shitteru_no.ogg",
   "id": "yozora-test",
   "group": "aqours",
+  "legacy": true,
   "hidden": true,
   "slots": [
 

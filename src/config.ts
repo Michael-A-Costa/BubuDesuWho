@@ -97,6 +97,7 @@ function preprocessSong(cfg: SongConfig): Song {
   const calls = cfg.calls ?? [];
   const slotsBase = preprocessSlots(mapping, cfg.slots, singers);
   const lyricsBase = preprocessLyrics(
+    cfg.name,
     { mapping, calls },
     cfg.lyrics,
     jpTexts,
@@ -182,6 +183,7 @@ function preprocessSlots(
 }
 
 function preprocessLyrics(
+  songName: string,
   mappings: { mapping: MappingEntry[]; calls: MappingEntry[] },
   lyricsDefinition: string | string[] | undefined,
   jpTexts?: (string | undefined)[],
@@ -231,7 +233,7 @@ function preprocessLyrics(
       i++;
     } else if (t.type === 'opening_bracket') {
       if (!(i + 2 < tokens.length && tokens[i + 1].type === 'text' && tokens[i + 2].type === 'closing_bracket')) {
-        console.error('Syntax error in lyrics definition');
+        console.error(`Syntax error in lyrics for "${songName}": unclosed or empty bracket "[" at token ${i}. Next tokens: ${tokens.slice(i, i + 3).map(t => t.str ?? t.type).join(', ')}`);
         return [];
       }
       const func = tokens[i + 1].str!.split(',');
@@ -252,15 +254,15 @@ function preprocessLyrics(
         if (tok.type === 'text') rawText += tok.str;
         else if (tok.type === 'opening_bracket') rawText += '[';
         else if (tok.type === 'closing_bracket') rawText += ']';
-        else { console.error('Syntax error in lyrics definition'); return []; }
+        else { console.error(`Syntax error in lyrics for "${songName}": unexpected ${tok.type} inside braces at token ${i}. Only text, [, and ] are allowed inside {}`); return []; }
         i++;
       }
-      if (i >= tokens.length) { console.error('Syntax error in lyrics definition: unclosed {'); return []; }
+      if (i >= tokens.length) { console.error(`Syntax error in lyrics for "${songName}": unclosed {`); return []; }
       i++; // consume closing_brace
 
       const srcMapping = mappings[src];
       if (!srcMapping) {
-        console.error(`Unknown lyrics src "${src}"`);
+        console.error(`Unknown lyrics src "${src}" in "${songName}"`);
         return [];
       }
 
@@ -288,7 +290,7 @@ function preprocessLyrics(
       push = undefined;
       together = false;
     } else {
-      console.error('Syntax error in lyrics definition');
+      console.error(`Syntax error in lyrics for "${songName}": unexpected token "${t.type}" at position ${i}. Expected text, newline, [, or {`);
       return [];
     }
   }

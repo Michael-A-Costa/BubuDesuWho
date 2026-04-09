@@ -3,6 +3,7 @@
   "ogg": "sound/sky_journey.ogg",
   "id": "sky",
   "group": "aqours",
+  "legacy": true,
   "released": "2017-04-05",
   "hidden": false,
   "slots": [

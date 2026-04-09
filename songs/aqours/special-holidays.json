@@ -1,0 +1,209 @@
+{
+  "name": "Special Holidays",
+  "ogg": "sound/special_holidays.ogg",
+  "id": "special-holidays",
+  "group": "aqours",
+  "added": "2026-04",
+  "hidden": true,
+  "slots": [
+
+  ],
+  "lines": [
+    {
+      "lyric_jp": "Oh, there's no place like home for the holidays",
+      "parts": [
+        {"lyric": "Aoi umi aoi sora karatto mabayui hizashi",
+          "range": [23.21, 24.94], "ans": [1]},
+        {"lyric": "Youkoso tte kanji? Wakuwaku shichau yo ne",
+          "range": [24.94, 26.33], "ans": [1]},
+        {"lyric": "Nani suru? Nani shitai? Afuredasu AIDIAtachi",
+          "range": [26.33, 28.06], "ans": [2]},
+        {"lyric": "Kangaeru yori soku koudou desu!",
+          "range": [28.06, 29.27], "ans": [2]}
+      ]
+    },
+    {"lyric": "For no matter how far away you roam",
+      "lyric_jp": "For no matter how far away you roam",
+      "range": [29.27, 35.43], "ans": []},
+    "",
+    {
+      "lyric_jp": "When you long for the sunshine of a friendly gaze",
+      "parts": [
+        {"lyric": "SUIKAwari saafin sofutobooru mo ARI!",
+          "range": [35.43, 37.59], "ans": [8]},
+        {"lyric": "Enryo nante No no sen paasento tanoshinde",
+          "range": [37.59, 39.47], "ans": [8]},
+        {"lyric": "Soukai ni hajikeyou!",
+          "range": [39.47, 41.68], "ans": []}
+      ]
+    },
+    "",
+    {"lyric": "Bokura dake de kangaeta Special Holidays",
+      "lyric_jp": "For the holidays you can't beat home, sweet home!",
+      "range": [41.68, 44.11], "ans": []},
+    {"lyric": "Yorokobi to shiawase no furu koosu de",
+      "lyric_jp": "For the holidays you can't beat home, sweet home!",
+      "range": [44.11, 46.54], "ans": []},
+    {"lyric": "Kokoro to kokoro wa gyutto chikadzuiteku",
+      "lyric_jp": "For the holidays you can't beat home, sweet home!",
+      "range": [46.54, 48.97], "ans": []},
+    {
+      "lyric_jp": "I met a man who lives in Tennessee, and he was headin' for",
+      "parts": [
+        {"lyric": "Isshou wasurenai",
+          "range": [48.97, 50.65], "ans": [8]},
+        {"lyric": "Ichinichi ni shitai!",
+          "range": [50.65, 52.33], "ans": [2]},
+        {"lyric": "Ima bokura hitotsu ni",
+          "range": [52.33, 54.22], "ans": [1]},
+        {"lyric": "Narunda",
+          "range": [54.22, 54.84], "ans": []}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "Pennsylvania and some homemade pumpkin pie",
+      "parts": [
+        {"lyric": "Yoru wa mou kutakuta minna mo onaji mitai",
+          "range": [54.84, 57.48], "ans": [8]},
+        {"lyric": "Dakedo nemucchau no mottainai yo ne",
+          "range": [57.48, 60.16], "ans": [2]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "From Pennsylvania folks are travelin' down to Dixie's sunny shore",
+      "parts": [
+        {"lyric": "Manten no sunahama ni nesobettara kirari",
+          "range": [60.16, 62.91], "ans": [1]},
+        {"lyric": "Nagareboshi da! see no de negatta mirai",
+          "range": [62.91, 65.76], "ans": [1]},
+        {"lyric": "Zettai ni kanaeyou!",
+          "range": [65.76, 67.08], "ans": []}
+      ]
+    },
+    {"lyric": "From Atlantic to Pacific",
+      "lyric_jp": "From Atlantic to Pacific",
+      "range": [66.11, 69.24], "ans": []},
+    {"lyric": "Gee, the traffic is terrific!",
+      "lyric_jp": "Gee, the traffic is terrific!",
+      "range": [69.24, 72.46], "ans": []},
+    "",
+    {"lyric": "Dare ni mo jama dekinai yo Special Holidays",
+      "lyric_jp": "Oh there's no place like home for the holidays",
+      "range": [72.46, 74.42], "ans": []},
+    {"lyric": "YA na koto zenbu fukitobasu shiokaze",
+      "lyric_jp": "Oh there's no place like home for the holidays",
+      "range": [74.42, 76.15], "ans": []},
+    {"lyric": "Ikura jikan ga atte mo tarinakute",
+      "lyric_jp": "Oh there's no place like home for the holidays",
+      "range": [76.15, 77.76], "ans": []},
+    {
+      "lyric_jp": "'Cause no matter how far away you roam",
+      "parts": [
+        {"lyric": "Sukoshi setsunai...",
+          "range": [77.76, 78.76], "ans": [8]},
+        {"lyric": "Kyoumei shichau kara",
+          "range": [78.76, 81.09], "ans": [2]},
+        {"lyric": "Fuzakeatte itai!",
+          "range": [81.09, 83.12], "ans": [1]}
+      ]
+    },
+    {"lyric": "If you want to be happy in a million ways",
+      "lyric_jp": "If you want to be happy in a million ways",
+      "range": [83.11, 89.37], "ans": []},
+    "",
+    "[next-col]",
+    {
+      "lyric_jp": "For the holidays you can't beat home, sweet home",
+      "parts": [
+        {"lyric": "Bokura wa sorezore no michi wo",
+          "range": [89.37, 90.85], "ans": []},
+        {"lyric": "Chigau sokudo chigau omoi de koko made kita",
+          "range": [90.85, 92.74], "ans": []},
+        {"lyric": "Dakedo guuzen ja setsumei tsukanai",
+          "range": [92.74, 94.27], "ans": []},
+        {"lyric": "Special!!",
+          "range": [94.27, 94.94], "ans": [1]}
+      ]
+    },
+    {
+      "lyric_jp": "I met a man who lives in Tennessee and he was headin' for",
+      "parts": [
+        {"lyric": "Special!!",
+          "range": [94.94, 96.38], "ans": [2]},
+        {"lyric": "Special!!",
+          "range": [96.38, 97.82], "ans": [8]},
+        {"lyric": "Unmei de shikanai yo",
+          "range": [97.82, 101.79], "ans": []}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "Pennsylvania and some homemade pumpkin pie",
+      "parts": [
+        {"lyric": "Nankai datte yaru kara ne!",
+          "range": [100.79, 102.46], "ans": [1]},
+        {"lyric": "Nankai datte atsumarou ne!",
+          "range": [102.46, 104.2], "ans": [2]},
+        {"lyric": "Takusan tsukurou",
+          "range": [104.2, 105.38], "ans": [8]},
+        {"lyric": "Saikou no omoide wo!",
+          "range": [105.38, 107.01], "ans": []}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "From Pennsylvania folks are travelin' down to Dixie's sunny shore",
+      "parts": [
+        {"lyric": "Bokura dake de kangaeta Special Holidays",
+          "range": [106.11, 107.83], "ans": []},
+        {"lyric": "Yorokobi to shiawase no furu koosu de",
+          "range": [107.83, 109.55], "ans": []},
+        {"lyric": "Kokoro to kokoro wa gyutto chikadzuiteku",
+          "range": [109.55, 111.27], "ans": []},
+        {"lyric": "Isshou wasurenai",
+          "range": [111.27, 112.12], "ans": [8]}
+      ]
+    },
+    {"lyric": "From Atlantic to Pacific",
+      "lyric_jp": "From Atlantic to Pacific",
+      "range": [112.12, 115.13], "ans": []},
+    {"lyric": "Gee, the traffic is terrific!",
+      "lyric_jp": "Gee, the traffic is terrific!",
+      "range": [115.13, 117.87], "ans": []},
+    {
+      "lyric_jp": "Oh, there's no place like home for the holidays",
+      "parts": [
+        {"lyric": "Ichinichi ni shitai!",
+          "range": [117.87, 118.51], "ans": [2]},
+        {"lyric": "Meippai hashaide itai!",
+          "range": [118.51, 119.34], "ans": [1]},
+        {"lyric": "Tsunagu te to te tsutau omoi hitotsu ni narunda",
+          "range": [119.34, 120.73], "ans": []},
+        {"lyric": "Yea, Special Holidays",
+          "range": [120.73, 123.51], "ans": [1]}
+      ]
+    },
+    {"lyric": "(Woh, Woh, Woh oh oh)",
+      "range": [121.51, 123.51], "ans": []},
+    {"lyric": "(Woh, Woh, Woh oh oh)",
+      "range": [121.51, 123.51], "ans": []},
+    {"lyric": "(Woh, Woh, Woh oh oh)",
+      "range": [121.51, 123.51], "ans": []},
+    {"lyric": "(Woh, Woh, Woh oh oh)",
+      "range": [121.51, 123.51], "ans": []},
+    {"lyric": "'Cause no matter how far away you roam",
+      "lyric_jp": "'Cause no matter how far away you roam",
+      "range": [123.51, 129.21], "ans": []},
+    {"lyric": "If you want to be happy in a million ways",
+      "lyric_jp": "If you want to be happy in a million ways",
+      "range": [129.21, 135.1], "ans": []},
+    {"lyric": "For the holidays you can't beat home, sweet home!",
+      "lyric_jp": "For the holidays you can't beat home, sweet home!",
+      "range": [135.1, 140.93], "ans": []},
+    {"lyric": "For the holidays you can't beat home, sweet home!",
+      "lyric_jp": "For the holidays you can't beat home, sweet home!",
+      "range": [140.93, 156], "ans": []}
+  ]
+}

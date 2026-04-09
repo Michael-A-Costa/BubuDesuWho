@@ -1,0 +1,398 @@
+{
+  "name": "Sunshine Pikkapika Ondo (V2)",
+  "ogg": "sound/sunshine_pikkapika_ondo.ogg",
+  "id": "sunshine-pikkapika-ondo-v2",
+  "group": "aqours",
+  "added": "2026-04",
+  "hidden": true,
+  "slots": [
+
+  ],
+  "lines": [
+    {"lyric": "Acchi kara kocchi kara yottoide sanshain abitara tondekoi",
+      "lyric_jp": "あっちから こっちから よっといで",
+      "range": [8.87, 12.63], "ans": []},
+    {"lyric": "Acchi kara kocchi kara yottoide sanshain abitara tondekoi",
+      "lyric_jp": "サンシャイン あびたら飛んでこい あっちから こっちから よっといで",
+      "range": [12.63, 20.09], "ans": []},
+    "",
+    {
+      "lyric_jp": "みかん風味のやさしさで （あ ソーレ！）",
+      "parts": [
+        {"lyric": "Mikan fuumi no yasashisa de",
+          "range": [26.13, 29.01], "ans": [1]},
+        {"lyric": "(a, soore!)",
+          "range": [29.01, 29.69], "ans": [1, 2, 3]}
+      ]
+    },
+    {
+      "lyric_jp": "きょうもいい日だ よっといで （さ こいな！）",
+      "parts": [
+        {"lyric": "Kyou mo ii hi da yottoide",
+          "range": [29.19, 32.71], "ans": [1]},
+        {"lyric": "(sa, koi na!)",
+          "range": [32.71, 33.52], "ans": [1, 2, 3]}
+      ]
+    },
+    {
+      "lyric_jp": "踊れ かんかん 踊れ かんかん",
+      "parts": [
+        {"lyric": "Odore",
+          "range": [33.3, 34.48], "ans": [1]},
+        {"lyric": "Kankan",
+          "range": [34.48, 35.06], "ans": [1, 2, 3]},
+        {"lyric": "Odore",
+          "range": [35.06, 36.32], "ans": [1]},
+        {"lyric": "Kankan",
+          "range": [36.32, 37.17], "ans": [1, 2, 3]}
+      ]
+    },
+    {
+      "lyric_jp": "サァサァ 元気にね （ハァ～ヨイショ ヨイショ！）",
+      "parts": [
+        {"lyric": "Saa saa genki ni ne",
+          "range": [37.17, 39.11], "ans": [1]},
+        {"lyric": "Haa~ yoisho",
+          "range": [39.11, 41.04], "ans": [1, 2, 3]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "海の青ってウソつかない （あ ソーレ！）",
+      "parts": [
+        {"lyric": "Umi no ao tte USOtsukanai",
+          "range": [41.04, 43.86], "ans": [2]},
+        {"lyric": "(a, soore!)",
+          "range": [43.86, 44.51], "ans": [1, 2, 3]}
+      ]
+    },
+    {
+      "lyric_jp": "きょうもいい日だ よっといで （さ こいな！）",
+      "parts": [
+        {"lyric": "Kyou mo ii hi da yottoide",
+          "range": [44.35, 47.36], "ans": [2]},
+        {"lyric": "(sa, koi na!)",
+          "range": [47.36, 48.26], "ans": [1, 2, 3]}
+      ]
+    },
+    {
+      "lyric_jp": "踊れ すいすい 踊れ すいすい",
+      "parts": [
+        {"lyric": "Odore",
+          "range": [48.14, 48.79], "ans": [2]},
+        {"lyric": "Suisui",
+          "range": [48.79, 49.83], "ans": [1, 2, 3]},
+        {"lyric": "Odore",
+          "range": [49.83, 50.61], "ans": [2]},
+        {"lyric": "Suisui",
+          "range": [50.61, 51.69], "ans": [1, 2, 3]}
+      ]
+    },
+    {"lyric": "Saa saa minna mo oide",
+      "lyric_jp": "サァサァ みんなもおいで",
+      "range": [51.64, 54.44], "ans": [2]},
+    "",
+    {"lyric": "Shiranakatta katta basho dakedo",
+      "lyric_jp": "しらなかった かった 場所だけど",
+      "range": [54.44, 58.32], "ans": [3]},
+    {"lyric": "Hora kirei na oozora ga oshiete kureru no wa",
+      "lyric_jp": "ほらきれいな大空が おしえてくれるのは",
+      "range": [58.32, 64.77], "ans": [3]},
+    {
+      "lyric_jp": "おいしい空気 いいな いいな ほいほいっ",
+      "parts": [
+        {"lyric": "Oishi kuuki ii na ii na",
+          "range": [64.77, 68.53], "ans": [3]},
+        {"lyric": "Hoihoi",
+          "range": [68.53, 69.6], "ans": [1, 2, 3]}
+      ]
+    },
+    "",
+    {"lyric": "Kirakira kirakira sanshain wa (HA~ yoisho)",
+      "lyric_jp": "きらきら きらきら サンシャインは （ハァ～ヨイショ！）",
+      "range": [69.6, 74.14], "ans": []},
+    {"lyric": "Issho ni iru yo zutto (haa~ yoisho yoisho)",
+      "lyric_jp": "いっしょにいるよずっと （ハァ～ヨイショ ヨイショ！）",
+      "range": [74.14, 77.14], "ans": []},
+    {"lyric": "Kirakira kirakira sanshain to (a, soore!)",
+      "lyric_jp": "きらきら きらきら サンシャインと （あ ソーレ！）",
+      "range": [77.14, 81.1], "ans": []},
+    {"lyric": "Minna odoreba pikkapika",
+      "lyric_jp": "みんな踊ればぴっかぴか",
+      "range": [81.1, 87.95], "ans": []},
+    {"lyric": "(a, SOORE!)",
+      "range": [85.95, 87.95], "ans": []},
+    {"lyric": "(sa, koi na!)",
+      "range": [85.95, 87.95], "ans": []},
+    "",
+    {
+      "lyric_jp": "お茶にあうのは甘いもの （あ ソーレ！）",
+      "parts": [
+        {"lyric": "Ocha ni au no amai mono",
+          "range": [99.67, 102.71], "ans": [5]},
+        {"lyric": "(a, soore!)",
+          "range": [102.71, 103.54], "ans": [4, 5, 6]}
+      ]
+    },
+    {
+      "lyric_jp": "こんないい日は よっといで （さ こいな！）",
+      "parts": [
+        {"lyric": "Konna ii hi wa yottoide",
+          "range": [103.51, 106.45], "ans": [5]},
+        {"lyric": "(sa, koi na!)",
+          "range": [106.45, 107.29], "ans": [4, 5, 6]}
+      ]
+    },
+    {
+      "lyric_jp": "踊れ わいわい 踊れ わいわい",
+      "parts": [
+        {"lyric": "Odore",
+          "range": [107.22, 107.87], "ans": [5]},
+        {"lyric": "Waiwai",
+          "range": [107.87, 108.83], "ans": [4, 5, 6]},
+        {"lyric": "Odore",
+          "range": [108.83, 109.71], "ans": [5]},
+        {"lyric": "Waiwai",
+          "range": [109.71, 110.94], "ans": [4, 5, 6]}
+      ]
+    },
+    {
+      "lyric_jp": "サァサァ なに食べよう？ （ハァ～ヨイショ ヨイショ！）",
+      "parts": [
+        {"lyric": "Saa saa nani tabeyou?",
+          "range": [110.94, 113.18], "ans": [5]},
+        {"lyric": "(haa~ yoisho yoisho)",
+          "range": [113.18, 114.65], "ans": [4, 5, 6]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "山にむかってごあいさつ （あ ソーレ！）",
+      "parts": [
+        {"lyric": "Yama ni mukatte goaisatsu",
+          "range": [114.55, 117.17], "ans": [4]},
+        {"lyric": "(a, soore!)",
+          "range": [117.17, 118.12], "ans": [4, 5, 6]}
+      ]
+    },
+    {
+      "lyric_jp": "こんないい日は よっといで （さ こいな！）",
+      "parts": [
+        {"lyric": "Konna ii hi wa yottoide",
+          "range": [118.12, 121.3], "ans": [4]},
+        {"lyric": "(sa, koi na!)",
+          "range": [121.3, 122.03], "ans": [4, 5, 6]}
+      ]
+    },
+    {
+      "lyric_jp": "踊れ ずんずん 踊れ ずんずん",
+      "parts": [
+        {"lyric": "Odore",
+          "range": [121.99, 122.98], "ans": [4]},
+        {"lyric": "Zunzun",
+          "range": [122.98, 123.66], "ans": [4, 5, 6]},
+        {"lyric": "Odore",
+          "range": [123.66, 124.82], "ans": [4]},
+        {"lyric": "Zunzun",
+          "range": [124.82, 125.6], "ans": [4, 5, 6]}
+      ]
+    },
+    {"lyric": "Saa saa minna de oide",
+      "lyric_jp": "サァサァ みんなでおいで",
+      "range": [125.53, 128.24], "ans": [4]},
+    "",
+    {"lyric": "Subarashii tte shii tte tataereba",
+      "lyric_jp": "すばらしいって しいって 讃えれば",
+      "range": [128.24, 132.04], "ans": [6]},
+    {"lyric": "Hora chikara ga waite kuru jitto shiterarenai",
+      "lyric_jp": "ほらちからが湧いてくる じっとしてられない",
+      "range": [132.04, 138.39], "ans": [6]},
+    {
+      "lyric_jp": "手に手をとって いいな いいな ほいほいっ",
+      "parts": [
+        {"lyric": "Te ni te wo totte ii na ii na",
+          "range": [138.39, 142.07], "ans": [6]},
+        {"lyric": "Hoihoi",
+          "range": [142.07, 143.3], "ans": [4, 5, 6]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "きらきら きらきら サンシャインは （ハァ～ヨイショ！）",
+      "parts": [
+        {"lyric": "Kirakira kirakira sanshain wa (HA~ yoisho)",
+          "range": [143.3, 145.7], "ans": []},
+        {"lyric": "From:",
+          "range": [145.7, 145.94], "ans": []},
+        {"lyric": "Https://sites.google.com/site/lovelivesunshineccl/",
+          "range": [145.94, 148.17], "ans": [2]}
+      ]
+    },
+    "",
+    {"lyric": "Issho ni iru yo zutto (haa~ yoisho yoisho)",
+      "lyric_jp": "いっしょにいるよずっと （ハァ～ヨイショ ヨイショ！）",
+      "range": [148.17, 151.4], "ans": []},
+    {"lyric": "Kirakira kirakira sanshain to (a, soore!)",
+      "lyric_jp": "きらきら きらきら サンシャインと （あ ソーレ！）",
+      "range": [151.4, 155.09], "ans": []},
+    {"lyric": "Minna odoreba pikkapika",
+      "lyric_jp": "みんな踊ればぴっかぴか",
+      "range": [155.09, 162.35], "ans": []},
+    "",
+    "[next-col]",
+    {"lyric": "Donna donna doko ga suki? umi*yama*hito*zenbu!",
+      "lyric_jp": "えっさほいっ さ高らかに",
+      "range": [169.48, 170.2], "ans": []},
+    {"lyric": "Essa hoissa (essa hoissa) takaraka ni essa hoissa (essa hoissa) utaidasu",
+      "lyric_jp": "えっさほいっ さ高らかに",
+      "range": [170.2, 171.36], "ans": []},
+    {"lyric": "Donna donna doko ga suki? umi*yama*hito*zenbu!",
+      "lyric_jp": "えっさほいっ さ高らかに",
+      "range": [171.36, 172.1], "ans": []},
+    {"lyric": "Essa hoissa takaraka ni essa hoissa utaidasu",
+      "lyric_jp": "えっさほいっ さ高らかに",
+      "range": [172.1, 173.14], "ans": []},
+    {"lyric": "(a, SOORE! ya, SOORE! a, SOORE! hoihoi)",
+      "range": [171.14, 173.14], "ans": []},
+    {"lyric": "(a, SOORE! ya, SOORE! a, SOORE!)",
+      "range": [171.14, 173.14], "ans": []},
+    {"lyric": "Hooihoi",
+      "lyric_jp": "ほーいほいっ！",
+      "range": [192.14, 195.88], "ans": []},
+    "",
+    {
+      "lyric_jp": "自由に吹いてる風まかせ （あ ソーレ！）",
+      "parts": [
+        {"lyric": "Jiyuu ni fuiteru kaze makase",
+          "range": [195.88, 198.74], "ans": [9]},
+        {"lyric": "(a, soore!)",
+          "range": [198.74, 199.62], "ans": [7, 8, 9]}
+      ]
+    },
+    {
+      "lyric_jp": "あすもいい日だ よっといで （さ こいな！）",
+      "parts": [
+        {"lyric": "Asu mo ii hi da yottoide",
+          "range": [199.08, 202.45], "ans": [9]},
+        {"lyric": "(sa, koi na!)",
+          "range": [202.45, 203.35], "ans": [7, 8, 9]}
+      ]
+    },
+    {
+      "lyric_jp": "踊れ はいはい 踊れ はいはい",
+      "parts": [
+        {"lyric": "Odore",
+          "range": [203.1, 203.9], "ans": [9]},
+        {"lyric": "Haihai",
+          "range": [203.9, 204.74], "ans": [7, 8, 9]},
+        {"lyric": "Odore",
+          "range": [204.74, 205.68], "ans": [9]},
+        {"lyric": "Haihai",
+          "range": [205.68, 207], "ans": [7, 8, 9]}
+      ]
+    },
+    {
+      "lyric_jp": "サァサァ どこいくの？ （ハァ～ヨイショ ヨイショ！）",
+      "parts": [
+        {"lyric": "Saa saa doko iku no?",
+          "range": [207, 209.1], "ans": [9]},
+        {"lyric": "(haa~ yoisho yoisho)",
+          "range": [209.1, 210.71], "ans": [7, 8, 9]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "さすが白き波の背よ （あ ソーレ！）",
+      "parts": [
+        {"lyric": "Sasuga shiroki nami no se yo",
+          "range": [210.6, 213.6], "ans": [8]},
+        {"lyric": "(a, soore!)",
+          "range": [213.6, 214.42], "ans": [7, 8, 9]}
+      ]
+    },
+    {
+      "lyric_jp": "あすもいい日だ よっといで （さ こいな！）",
+      "parts": [
+        {"lyric": "Asu mo ii hi da yottoide",
+          "range": [214.02, 217.27], "ans": [8]},
+        {"lyric": "(sa, koi na!)",
+          "range": [217.27, 218.12], "ans": [7, 8, 9]}
+      ]
+    },
+    {
+      "lyric_jp": "踊れ どんどん 踊れ どんどん",
+      "parts": [
+        {"lyric": "Odore",
+          "range": [218.07, 219.09], "ans": [8]},
+        {"lyric": "Dondon",
+          "range": [219.09, 219.73], "ans": [7, 8, 9]},
+        {"lyric": "Odore",
+          "range": [219.73, 220.89], "ans": [8]},
+        {"lyric": "Dondon",
+          "range": [220.89, 221.57], "ans": [7, 8, 9]}
+      ]
+    },
+    {"lyric": "Saa saa minna yo oide",
+      "lyric_jp": "サァサァ みんなよおいで",
+      "range": [221.43, 224.38], "ans": [8]},
+    "",
+    {"lyric": "Nanimo nai tte nai tte iwaretara",
+      "lyric_jp": "なにもないって ないって 言われたら",
+      "range": [224.38, 228.11], "ans": [7]},
+    {"lyric": "Hora me tojiteminasai to tooku kikoeru no wa",
+      "lyric_jp": "ほら目とじてみなさいと 遠くきこえるのは",
+      "range": [228.11, 234.44], "ans": [7]},
+    {
+      "lyric_jp": "よろこびの声 いいな いいな ほいほいっ",
+      "parts": [
+        {"lyric": "Yorokobi no koe ii na ii na",
+          "range": [234.44, 238.32], "ans": [7]},
+        {"lyric": "Hoihoi",
+          "range": [238.32, 239.48], "ans": [7, 8, 9]}
+      ]
+    },
+    "",
+    {"lyric": "Kirakira kirakira sanshain wa (HA~ yoisho)",
+      "lyric_jp": "きらきら きらきら サンシャインは （ハァ～ヨイショ！）",
+      "range": [239.38, 244.03], "ans": []},
+    {"lyric": "Issho ni iru yo zutto (haa~ yoisho yoisho)",
+      "lyric_jp": "いっしょにいるよずっと （ハァ～ヨイショ ヨイショ！）",
+      "range": [244.03, 247.4], "ans": []},
+    {"lyric": "Kirakira kirakira sanshain to (a, soore!)",
+      "lyric_jp": "きらきら きらきら サンシャインと （あ ソーレ！）",
+      "range": [247.4, 251.09], "ans": []},
+    {"lyric": "Minna odoreba pikkapika",
+      "lyric_jp": "みんな踊ればぴっかぴか",
+      "range": [251.09, 254.45], "ans": []},
+    {"lyric": "Kirakira kirakira sanshain wa (HA~ yoisho)",
+      "lyric_jp": "きらきら きらきら サンシャインは （ハァ～ヨイショ！）",
+      "range": [254.45, 258.77], "ans": []},
+    {"lyric": "Issho ni iru yo zutto (haa~ yoisho yoisho)",
+      "lyric_jp": "いっしょにいるよずっと （ハァ～ヨイショ ヨイショ！）",
+      "range": [258.77, 261.57], "ans": []},
+    {"lyric": "Kirakira kirakira sanshain to (a, soore!)",
+      "lyric_jp": "きらきら きらきら サンシャインと （あ ソーレ！）",
+      "range": [261.57, 265.82], "ans": []},
+    {"lyric": "Minna odoreba pikkapika utai odoreba pikkapika",
+      "lyric_jp": "みんな踊ればぴっかぴか",
+      "range": [265.82, 269.49], "ans": []},
+    {"lyric": "Dakara daisuki pikkapika",
+      "lyric_jp": "だからだいすきぴっかぴか！",
+      "range": [273.48, 278.92], "ans": []},
+    {"lyric": "(HAA~ HAI!)",
+      "range": [276.92, 278.92], "ans": []},
+    "",
+    {"lyric": "Acchi kara kocchi kara yottoide sanshain abitara tondekoi",
+      "lyric_jp": "あっちから こっちから よっといで",
+      "range": [280.37, 281.15], "ans": []},
+    {"lyric": "Acchi kara kocchi kara yottoide sanshain abitara tondekoi",
+      "lyric_jp": "あっちから こっちから よっといで",
+      "range": [281.15, 281.97], "ans": []},
+    {"lyric": "Acchi kara kocchi kara yottoide sanshain abitara tondekoi",
+      "lyric_jp": "あっちから こっちから よっといで",
+      "range": [281.97, 282.79], "ans": []},
+    {"lyric": "Acchi kara kocchi kara yottoide sanshain abitara tondekoi",
+      "lyric_jp": "あっちから こっちから よっといで",
+      "range": [282.79, 284.11], "ans": []}
+  ]
+}

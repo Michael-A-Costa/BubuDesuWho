@@ -3,6 +3,7 @@
   "ogg": "sound/my_mai_tonight.ogg",
   "id": "maimai",
   "group": "aqours",
+  "legacy": true,
   "released": "2017-11-29",
   "hidden": false,
   "slots": [

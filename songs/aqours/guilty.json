@@ -3,6 +3,7 @@
   "ogg": "sound/guilty_night_guilty_kiss.ogg",
   "id": "guilty",
   "group": "aqours",
+  "legacy": true,
   "released": "2016-06-08",
   "subunit": "guilty-kiss",
   "added": "2026-04",
@@ -152,7 +153,7 @@
           "range": [139.39, 143.92], "ans": [6]}
       ]
     },
-    {"lyric": "Tsuyosugiru you ni mieru Oh Yeah!",
+    {"lyric": "Tsuyosugiru you ni mieru kamo Oh Yeah!",
       "lyric_jp": "強すぎるように見えるかも Oh yeah!",
       "range": [143.92, 149.61], "ans": [9]},
     {"lyric": "Aitai toki ni ai ni ikitai Passion!",

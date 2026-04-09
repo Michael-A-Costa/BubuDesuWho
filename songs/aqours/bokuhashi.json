@@ -105,7 +105,7 @@
     {
       "lyric_jp": "どこへ行こう (どこへ行こう)",
       "parts": [
-        {"lyric": "Doko e ikou ({",
+        {"lyric": "Doko e ikou",
           "range": [160.73, 162.43], "ans": [7, 8, 9]},
         {"lyric": "(doko e ikou)",
           "range": [162.43, 165.59], "ans": [1, 2, 3, 4, 5, 6]}

@@ -70,7 +70,7 @@ export async function initPlayPage(): Promise<void> {
   initThemeToggle();
 }
 
-function initThemeToggle(): void {
+export function initThemeToggle(): void {
   const savedTheme = getStorage('theme');
   if (savedTheme === 'dark') {
     document.documentElement.classList.add('dark-mode');
@@ -167,11 +167,8 @@ function selectSong(song: Song): void {
   // update meter display (0 / N)
   updateMeter();
 
-  // apply lyrics mode — force off if song has no lyrics
-  if (state.lyrics.length === 0 && state.lyricsMode !== 0) {
-    setLyricsMode(0);
-  }
-  applyLyricsMode(state.lyricsMode);
+  // apply lyrics mode — visually force off if song has no lyrics, but keep preference
+  applyLyricsMode(state.lyrics.length === 0 ? 0 : state.lyricsMode);
 
   resizeGameArea();
 }
@@ -189,7 +186,7 @@ function generateSlots(slots: Slot[], group: GroupName): void {
   }
 }
 
-function createSlotElement(slot: Slot, group: GroupName): HTMLElement {
+export function createSlotElement(slot: Slot, group: GroupName): HTMLElement {
   // Clone the HTML template to preserve Bootstrap grid classes
   const template = document.getElementById(`${group}-slot-template`) as HTMLTemplateElement;
   const clone = template.content.firstElementChild!.cloneNode(true) as HTMLElement;
@@ -440,6 +437,11 @@ function generateLyrics(lyrics: LyricToken[]): void {
           const pauseBtn = document.querySelector<HTMLElement>('.jp-pause');
           if (playBtn) playBtn.style.display = 'none';
           if (pauseBtn) pauseBtn.style.display = 'inline-block';
+
+          const entry = state.reverseMap[lyric.mapping.id];
+          if (entry?.slot?.element) {
+            entry.slot.element.scrollIntoView({ block: 'center', behavior: 'smooth' });
+          }
         }
       });
 
@@ -450,16 +452,24 @@ function generateLyrics(lyrics: LyricToken[]): void {
 }
 
 // ─── Menu ───────────────────────────────────────────────────────────
-function buildMenu(songs: Song[]): void {
+export function buildMenu(songs: Song[]): void {
   // restore group from storage
   const savedGroup = getStorage('group') as GroupName | null;
   if (savedGroup) state.group = savedGroup;
 
   const savedSort = getStorage('sort') as SortMode | null;
-  if (savedSort && ['date', 'alpha', 'group'].includes(savedSort)) state.sortMode = savedSort;
+  if (savedSort && ['index', 'date', 'alpha'].includes(savedSort)) state.sortMode = savedSort;
+  // migrate legacy 'group' sort mode
+  if ((getStorage('sort') as string) === 'group') {
+    state.sortMode = 'date';
+    state.groupBySubunit = true;
+  }
+  const savedGroupBy = getStorage('groupBySubunit');
+  if (savedGroupBy != null) state.groupBySubunit = savedGroupBy === 'true';
 
   switchGroup(state.group, songs);
   updateSortButton();
+  updateGroupToggle();
 
   // open menu on large screens
   toggleMenu(window.innerWidth >= 1200);
@@ -476,12 +486,18 @@ function buildMenu(songs: Song[]): void {
   document.querySelectorAll<HTMLButtonElement>('.sort-btn').forEach((btn) => {
     btn.addEventListener('click', () => {
       const mode = btn.dataset.sort as SortMode;
-      if (mode === state.sortMode) return;
-      state.sortMode = mode;
+      state.sortMode = mode === state.sortMode ? 'index' : mode;
       setStorage('sort', state.sortMode);
       updateSortButton();
       switchGroup(state.group, songs);
     });
+  });
+
+  document.getElementById('group-toggle')?.addEventListener('click', () => {
+    state.groupBySubunit = !state.groupBySubunit;
+    setStorage('groupBySubunit', String(state.groupBySubunit));
+    updateGroupToggle();
+    switchGroup(state.group, songs);
   });
 
   document.getElementById('menu-search')?.addEventListener('keyup', (e) => {
@@ -496,34 +512,38 @@ function updateSortButton(): void {
   });
 }
 
+function updateGroupToggle(): void {
+  document.getElementById('group-toggle')?.classList.toggle('active', state.groupBySubunit);
+}
+
 const SUBUNIT_ORDER: Record<string, number> = {
   '': 0, 'cyaron': 1, 'azalea': 2, 'guilty-kiss': 3,
-  '1st-years': 4, '2nd-years': 5, '3rd-years': 6, 'saint-aqours-snow': 7,
+  '1st-years': 4, '2nd-years': 5, '3rd-years': 6, 'saint-aqours-snow': 7, 'aqours-miku': 8,
 };
 const SUBUNIT_LABELS: Record<string, string> = {
   '': 'Aqours', 'cyaron': 'CYaRon!', 'azalea': 'AZALEA', 'guilty-kiss': 'Guilty Kiss',
   '1st-years': '1st Years', '2nd-years': '2nd Years', '3rd-years': '3rd Years',
-  'saint-aqours-snow': 'Saint Aqours Snow',
+  'saint-aqours-snow': 'Saint Aqours Snow', 'aqours-miku': 'Aqours & Miku',
 };
 
 function sortSongs(filtered: Song[]): Song[] {
   const sorted = filtered.slice();
-  switch (state.sortMode) {
-    case 'date':
-      sorted.sort((a, b) => (a.released ?? '9999').localeCompare(b.released ?? '9999')
-        || a.name.localeCompare(b.name));
-      break;
-    case 'alpha':
-      sorted.sort((a, b) => a.name.localeCompare(b.name));
-      break;
-    case 'group':
-      sorted.sort((a, b) => {
-        const ga = SUBUNIT_ORDER[a.subunit ?? ''] ?? 99;
-        const gb = SUBUNIT_ORDER[b.subunit ?? ''] ?? 99;
-        return ga - gb || (a.released ?? '9999').localeCompare(b.released ?? '9999')
-          || a.name.localeCompare(b.name);
-      });
-      break;
+
+  if (state.sortMode === 'index' && !state.groupBySubunit) return sorted;
+
+  const byDate = (a: Song, b: Song) =>
+    (a.released ?? '9999').localeCompare(b.released ?? '9999') || a.name.localeCompare(b.name);
+  const byAlpha = (a: Song, b: Song) => a.name.localeCompare(b.name);
+  const base = state.sortMode === 'alpha' ? byAlpha : state.sortMode === 'date' ? byDate : () => 0;
+
+  if (state.groupBySubunit) {
+    sorted.sort((a, b) => {
+      const ga = SUBUNIT_ORDER[a.subunit ?? ''] ?? 99;
+      const gb = SUBUNIT_ORDER[b.subunit ?? ''] ?? 99;
+      return ga - gb || base(a, b);
+    });
+  } else {
+    sorted.sort(base);
   }
   return sorted;
 }
@@ -536,6 +556,16 @@ function switchGroup(group: GroupName, songs: Song[]): void {
   document.querySelectorAll<HTMLElement>('.group-button').forEach((btn) => {
     btn.classList.toggle('active', btn.dataset.value === group);
   });
+
+  // set group class on html + sidebar for group-specific default colors
+  const htmlEl = document.documentElement;
+  htmlEl.classList.remove('group-muse', 'group-aqours', 'group-wug');
+  htmlEl.classList.add(`group-${group}`);
+  const sidebar = document.getElementById('sidebar');
+  if (sidebar) {
+    sidebar.classList.remove('group-muse', 'group-aqours', 'group-wug');
+    sidebar.classList.add(`group-${group}`);
+  }
 
   // rebuild song list
   document.querySelectorAll('.select-option, .sort-section-header').forEach((el) => el.remove());
@@ -555,7 +585,7 @@ function switchGroup(group: GroupName, songs: Song[]): void {
 
   for (const song of sorted) {
     // insert section headers in group mode
-    if (state.sortMode === 'group') {
+    if (state.groupBySubunit) {
       const section = song.subunit ?? '';
       if (section !== lastSection) {
         const header = document.createElement('li');
@@ -624,7 +654,7 @@ function highlightSongInMenu(id: string): void {
   }
 }
 
-function toggleMenu(show?: boolean): void {
+export function toggleMenu(show?: boolean): void {
   const main = document.querySelector<HTMLElement>('.main');
   const menuBtn = document.getElementById('menu-button');
   const sidebar = document.getElementById('sidebar');
@@ -946,7 +976,7 @@ function applyCallMode(enable?: boolean): void {
   lyricsEl.classList.toggle('call-mode', val);
 }
 
-function switchTheme(theme: string | null): void {
+export function switchTheme(theme: string | null): void {
   const themeRegex = /\btheme-\S+/g;
   const selectors = [
     '.navbar', '.main', '#song-title', '.slot', '.meter',

@@ -3,6 +3,7 @@
   "ogg": "sound/g_senjou_no_cinderella.ogg",
   "id": "cinderella",
   "group": "aqours",
+  "legacy": true,
   "released": "2017-01-27",
   "subunit": "3rd-years",
   "hidden": false,

@@ -3,6 +3,7 @@
   "ogg": "sound/bokutachi_wa_hitotsu_no_hikari.ogg",
   "id": "bokuhika",
   "group": "muse",
+  "legacy": true,
   "hidden": false,
   "slots": [
     {"command": "group", "members": [21, 22]}

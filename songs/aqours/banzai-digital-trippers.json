@@ -2,7 +2,9 @@
   "name": "BANZAI! digital trippers",
   "ogg": "sound/banzai_digital_trippers.ogg",
   "id": "banzai-digital-trippers",
-  "group": "aqours",
+  "group": "aqours-miku",
+  "menu": "aqours",
+  "subunit": "aqours-miku",
   "released": "2022-08-24",
   "added": "2026-04",
   "hidden": false,
@@ -12,8 +14,8 @@
   "lines": [
     {"lyric": "Yume wo mite ikite yukou yo Wow wow",
       "lyric_jp": "ユメを見て生きてゆこうよ wow wow",
-      "range": [4.07, 6.55], "ans": [7]},
-    {"lyric": "Haran ga shichau you na",
+      "range": [4.07, 6.55], "ans": [7, 12]},
+    {"lyric": "Haran ga banzai shichau you na",
       "lyric_jp": "波乱がバンザイしちゃうような",
       "range": [6.55, 9.11], "ans": [1, 2, 5]},
     {"lyric": "Itsudatte kagayakitai yo Wow wow",
@@ -22,6 +24,10 @@
     {"lyric": "Mabushii jibun ni nacchae!",
       "lyric_jp": "まぶしい自分になっちゃえ!",
       "range": [12.14, 18.02], "ans": [4, 7, 8]},
+    "",
+    {"lyric": "Ne?",
+      "lyric_jp": "ねっ?",
+      "range": [18.02, 28.88], "ans": [7, 12]},
     "",
     {
       "lyric_jp": "したいこと数えてみよう (あるよね!)",
@@ -149,16 +155,22 @@
     {"lyric": "(BAN-BANZAIT)",
       "range": [102.21, 104.21], "ans": []},
     "",
-    {"lyric": "Suteki shika hoshikunai yo",
+    {
       "lyric_jp": "ステキしか欲しくないよ (わがまま?)",
-      "range": [104.21, 106.99], "ans": [7]},
+      "parts": [
+        {"lyric": "Suteki shika hoshikunai yo",
+          "range": [104.21, 106.25], "ans": [4]},
+        {"lyric": "(wagamama?)",
+          "range": [106.25, 106.99], "ans": [7, 12]}
+      ]
+    },
     {
       "lyric_jp": "欲しいなら探してみよう (よきよき!)",
       "parts": [
         {"lyric": "Hoshii nara sagashite miyou",
           "range": [106.99, 109.11], "ans": [7]},
         {"lyric": "(yokiyoki!)",
-          "range": [109.11, 109.84], "ans": [4]}
+          "range": [109.11, 109.84], "ans": [4, 12]}
       ]
     },
     {
@@ -167,7 +179,7 @@
         {"lyric": "Datte migaru na digital trippers",
           "range": [109.46, 112.74], "ans": [3]},
         {"lyric": "(Tooi tooi sekai e tonjau!?)",
-          "range": [112.74, 115.37], "ans": [4, 8]}
+          "range": [112.74, 115.37], "ans": [4, 8, 12]}
       ]
     },
     {
@@ -176,7 +188,7 @@
         {"lyric": "Shinjitai koto shinjite",
           "range": [114.89, 117.31], "ans": [2]},
         {"lyric": "(wakuwaku!)",
-          "range": [117.31, 117.89], "ans": [1]}
+          "range": [117.31, 117.89], "ans": [1, 12]}
       ]
     },
     {
@@ -185,7 +197,7 @@
         {"lyric": "Arabureri? Tokimeki toranporin",
           "range": [117.6, 120.06], "ans": [5]},
         {"lyric": "(pomupomu!)",
-          "range": [120.06, 120.59], "ans": [2]}
+          "range": [120.06, 120.59], "ans": [2, 12]}
       ]
     },
     {
@@ -194,7 +206,7 @@
         {"lyric": "Motomenakya arawarenai",
           "range": [120.15, 122.87], "ans": [1]},
         {"lyric": "Sou iu mono sa!",
-          "range": [122.87, 125.15], "ans": [1, 2, 5]}
+          "range": [122.87, 125.15], "ans": [1, 2, 5, 12]}
       ]
     },
     {
@@ -203,7 +215,7 @@
         {"lyric": "Kore kara wa",
           "range": [125.15, 127.2], "ans": [3]},
         {"lyric": "(tsuyoi! Tsuyoi!)",
-          "range": [127.2, 127.82], "ans": [6]},
+          "range": [127.2, 127.82], "ans": [6, 12]},
         {"lyric": "Tsuyoku nacchau yo zettai",
           "range": [127.82, 130.41], "ans": [5]}
       ]
@@ -214,7 +226,7 @@
         {"lyric": "Kimi mo hora",
           "range": [130.41, 132.55], "ans": [6]},
         {"lyric": "(pawaa appu!)",
-          "range": [132.55, 133.65], "ans": [3, 9]}
+          "range": [132.55, 133.65], "ans": [3, 9, 12]}
       ]
     },
     {"lyric": "Mondai nai nai, nai yo!",
@@ -225,7 +237,7 @@
       "parts": [
         {"lyric": "Shinka toozen daisuki",
           "range": [134.88, 137.1], "ans": [6, 8]},
-        {"lyric": "(dai dai dai",
+        {"lyric": "(dai dai dai daisukt)",
           "range": [137.1, 139.19], "ans": [2, 5]}
       ]
     },
@@ -279,55 +291,69 @@
     "[next-col]",
     {"lyric": "Shoki shoudou de kirakira hassei",
       "lyric_jp": "初期衝動でキラキラ発生",
-      "range": [171.31, 173.95], "ans": [1, 2, 5]},
-    {"lyric": "Muki jounetsu de",
+      "range": [171.31, 173.95], "ans": [1, 2, 5, 12]},
+    {
       "lyric_jp": "無期情熱でピカピカ発信",
-      "range": [173.95, 175.21], "ans": [1, 2, 5]},
-    {"lyric": "Pikapika hasshin",
-      "lyric_jp": "無期情熱でピカピカ発信",
-      "range": [175.21, 176.52], "ans": [1, 2, 5]},
-    {"lyric": "Ban!",
+      "parts": [
+        {"lyric": "Muki jounetsu de",
+          "range": [173.95, 175.21], "ans": [1, 2, 5]},
+        {"lyric": "Pikapika hasshin",
+          "range": [175.21, 176.52], "ans": [1, 2, 5, 12]}
+      ]
+    },
+    {
       "lyric_jp": "Ban! 空へとバンザイしたい未来 zai!",
-      "range": [176.52, 176.8], "ans": [1, 2, 5]},
-    {"lyric": "Sora e to banzat shitai",
-      "lyric_jp": "Ban! 空へとバンザイしたい未来 zai!",
-      "range": [176.8, 178.77], "ans": [1, 2, 5]},
-    {"lyric": "Mirai Zai!",
-      "lyric_jp": "Ban! 空へとバンザイしたい未来 zai!",
-      "range": [178.77, 179.81], "ans": [1, 2, 5]},
+      "parts": [
+        {"lyric": "Ban!",
+          "range": [176.52, 176.8], "ans": [1, 2, 5, 12]},
+        {"lyric": "Sora e to banzat shitai",
+          "range": [176.8, 178.77], "ans": [1, 2, 5]},
+        {"lyric": "Mirai Zai!",
+          "range": [178.77, 179.81], "ans": [1, 2, 5, 12]}
+      ]
+    },
     {"lyric": "Jinsei wa genzai shinkoukei",
       "lyric_jp": "人生はゲンザイ進行形",
-      "range": [179.6, 181.5], "ans": [1, 2, 5]},
-    {"lyric": "Mada yume tochuu?",
+      "range": [179.6, 181.5], "ans": [1, 2, 5, 12]},
+    {
       "lyric_jp": "まだユメ途中? ヒカリに夢中!",
-      "range": [181.5, 183.46], "ans": [3, 6, 9]},
-    {"lyric": "Hikari ni muchuu!",
-      "lyric_jp": "まだユメ途中? ヒカリに夢中!",
-      "range": [183.46, 185.06], "ans": [3, 6, 9]},
-    {"lyric": "Minna ikou",
+      "parts": [
+        {"lyric": "Mada yume tochuu?",
+          "range": [181.5, 183.46], "ans": [3, 6, 9]},
+        {"lyric": "Hikari ni muchuu!",
+          "range": [183.46, 185.06], "ans": [3, 6, 9, 12]}
+      ]
+    },
+    {
       "lyric_jp": "みんな行こう 飛んでみよう",
-      "range": [184.61, 186.04], "ans": [3, 6, 9]},
-    {"lyric": "Tonde miyou",
-      "lyric_jp": "みんな行こう 飛んでみよう",
-      "range": [186.04, 187.32], "ans": [3, 6, 9]},
+      "parts": [
+        {"lyric": "Minna ikou",
+          "range": [184.61, 186.04], "ans": [3, 6, 9]},
+        {"lyric": "Tonde miyou",
+          "range": [186.04, 187.32], "ans": [3, 6, 9, 12]}
+      ]
+    },
     {
       "lyric_jp": "やっちゃえばきっと成長",
       "parts": [
-        {"lyric": "(Ku/Ma/KD] yacchaeba kitto",
-          "range": [186.7, 188.16], "ans": []},
+        {"lyric": "Yacchaeba kitto",
+          "range": [186.7, 188.04], "ans": [4, 7, 8]},
         {"lyric": "Seichou",
-          "range": [188.16, 188.9], "ans": [4, 7, 8]}
+          "range": [188.04, 188.9], "ans": [4, 7, 8, 12]}
       ]
     },
-    {"lyric": "Te tsunaide motto",
+    {
       "lyric_jp": "手つないでもっと上昇",
-      "range": [188.36, 189.63], "ans": [4, 7, 8]},
-    {"lyric": "Joushou",
-      "lyric_jp": "手つないでもっと上昇",
-      "range": [189.63, 190.36], "ans": [4, 7, 8]},
+      "parts": [
+        {"lyric": "Te tsunaide motto",
+          "range": [188.36, 189.63], "ans": [4, 7, 8]},
+        {"lyric": "Joushou",
+          "range": [189.63, 190.36], "ans": [4, 7, 8, 12]}
+      ]
+    },
     {"lyric": "Aa, nani ga okorun darou!?",
       "lyric_jp": "ああ 何がおこるんだろう!?",
-      "range": [190.18, 213.72], "ans": [4, 7, 8]},
+      "range": [190.18, 213.72], "ans": [4, 7, 8, 12]},
     "",
     {
       "lyric_jp": "どこでも会える どこでも (いつでも)",
@@ -367,21 +393,21 @@
         {"lyric": "Souda!",
           "range": [233.87, 235.13], "ans": [7]},
         {"lyric": "Souda ne!!",
-          "range": [235.13, 239.8], "ans": [7]}
+          "range": [235.13, 239.8], "ans": [12]}
       ]
     },
     "",
     {"lyric": "Yume wo mite ikite yukou yo Wow wow",
       "lyric_jp": "ユメを見て生きてゆこうよ wow wow",
-      "range": [239.8, 241.98], "ans": [7]},
+      "range": [239.8, 241.98], "ans": [7, 12]},
     {"lyric": "Haran ga banzai shichau you na",
       "lyric_jp": "波乱がバンザイしちゃうような",
-      "range": [241.98, 244.85], "ans": [7]},
+      "range": [241.98, 244.85], "ans": [7, 12]},
     {
       "lyric_jp": "いつだって輝きたいよ wow wow",
       "parts": [
         {"lyric": "Itsudatte kagayakitai yo Wow wow",
-          "range": [244.85, 247.94], "ans": [7]},
+          "range": [244.85, 247.94], "ans": [7, 12]},
         {"lyric": "(KD/Ha]",
           "range": [247.94, 248.17], "ans": [3, 7]}
       ]

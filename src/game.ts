@@ -1,6 +1,6 @@
 import {
   Song, Slot, SlotBase, SlotState, LyricToken, GameState, MappingEntry, LinePart,
-  MEMBER_COLORS,
+  MEMBER_COLORS, MEMBER_MAPPING,
 } from './types';
 import { arrayEqual, toTimeStr } from './utils';
 import { mapToLabel, getNumSingersInGroup } from './labels';
@@ -33,7 +33,8 @@ export const state: GameState = {
   lastThemeUpdate: null,
   scrollSlotLock: null,
   scrollLyricLock: null,
-  sortMode: 'date',
+  sortMode: 'index',
+  groupBySubunit: false,
   editMode: false,
   jpLyrics: false,
   callSFXch: 0,
@@ -349,9 +350,9 @@ export function resetChoices(): void {
 }
 
 export function toggleChoice(button: HTMLElement, slot: Slot): void {
+  const memberIds = Object.keys(MEMBER_MAPPING[state.group]).map(Number).sort((a, b) => a - b);
   const active: Record<number, boolean> = {};
-  const groupSize = getNumSingersInGroup(state.song!.group);
-  for (let i = 1; i <= groupSize; i++) active[i] = false;
+  for (const id of memberIds) active[id] = false;
   for (const c of slot.choices) active[c] = true;
 
   const members = button.dataset.value!.split(',').map(Number);
@@ -360,7 +361,7 @@ export function toggleChoice(button: HTMLElement, slot: Slot): void {
 
   // sync all buttons in this slot
   const slotEl = slot.element!;
-  const groupColors = MEMBER_COLORS[state.song!.group] ?? {};
+  const groupColors = MEMBER_COLORS[state.group] ?? {};
   slotEl.querySelectorAll<HTMLElement>('.slot-body button[data-value]').forEach((btn) => {
     const btnMembers = btn.dataset.value!.split(',').map(Number);
     const allActive = btnMembers.every((m) => active[m]);
@@ -378,8 +379,8 @@ export function toggleChoice(button: HTMLElement, slot: Slot): void {
   });
 
   slot.choices = [];
-  for (let i = 1; i <= groupSize; i++) {
-    if (active[i]) slot.choices.push(i);
+  for (const id of memberIds) {
+    if (active[id]) slot.choices.push(id);
   }
 }
 
@@ -489,6 +490,17 @@ export function getDiffLabel(): string {
 // ─── Settings Toggles ───────────────────────────────────────────────
 export function toggleAutoscroll(val?: boolean): void {
   state.autoscroll = val ?? !state.autoscroll;
+  if (state.autoscroll) {
+    // Clear scroll locks so the jump happens immediately
+    state.scrollSlotLock = null;
+    state.scrollLyricLock = null;
+    state.controls.lastSlotScroll = 0;
+    state.controls.lastLyricScroll = 0;
+    const activeSlot = state.slots.find((s) => s.active && s.diff <= state.diff);
+    if (activeSlot) scrollSlot(activeSlot);
+    const activeLyric = state.lyrics.find((l) => l.active && l.element);
+    if (activeLyric) scrollLyric(activeLyric);
+  }
 }
 
 export function toggleThemed(val?: boolean): void {
@@ -841,6 +853,7 @@ export function exportEditedConfig(): (object | string)[] {
           return { lyric: updated.lyric ?? part.lyric, range: [updated.range[0], updated.range[1]], ans } as LinePart;
         });
         return {
+          ...(l.lyric_jp != null ? { lyric_jp: l.lyric_jp } : {}),
           parts: updatedParts,
           ...(l.tail ? { tail: l.tail } : {}),
           ...(l.diff && l.diff > 1 ? { diff: l.diff } : {}),
@@ -856,6 +869,7 @@ export function exportEditedConfig(): (object | string)[] {
 
       return {
         lyric: updated.lyric ?? l.lyric,
+        ...(l.lyric_jp != null ? { lyric_jp: l.lyric_jp } : {}),
         range: [updated.range[0], updated.range[1]],
         ans,
         ...(l.tail ? { tail: l.tail } : {}),

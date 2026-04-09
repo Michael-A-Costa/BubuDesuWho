@@ -3,6 +3,7 @@
   "ogg": "sound/believe_again.ogg",
   "id": "believe-again",
   "group": "saint-aqours-snow",
+  "menu": "aqours",
   "released": "2019-02-06",
   "subunit": "saint-aqours-snow",
   "added": "2026-04",
@@ -13,368 +14,374 @@
   "lines": [
     {"lyric": "Kitto hitori janai yume no naka e Go!!",
       "lyric_jp": "きっとひとりじゃない 夢の中へ GO",
-      "range": [7.28, 10.75], "ans": [10]},
+      "range": [7.28, 10.75], "ans": [11]},
     {
       "lyric_jp": "迷いながら READY? GO！",
       "parts": [
         {"lyric": "Mayoi nagara Ready?",
-          "range": [10.75, 23.07], "ans": [10]},
+          "range": [10.75, 23.07], "ans": [11]},
         {"lyric": "Go!",
-          "range": [23.07, 24.61], "ans": []}
+          "range": [23.07, 24.61], "ans": [10, 11]}
       ]
     },
     "",
     {"lyric": "Yatto ne ki ga tsuita mitai?",
       "lyric_jp": "やっとね気がついたみたい？",
-      "range": [24.61, 26.66], "ans": [11]},
+      "range": [24.61, 26.66], "ans": [10]},
     {"lyric": "Anata no naka no kienai hikari",
       "lyric_jp": "あなたの中の消えない光",
-      "range": [26.66, 30.69], "ans": [11]},
-    {"lyric": "（That's right!）",
+      "range": [26.66, 30.69], "ans": [10]},
+    {"lyric": "(That's right!)",
       "lyric_jp": "（That's right!）",
-      "range": [30.69, 31.15], "ans": []},
+      "range": [30.69, 31.15], "ans": [11]},
     {
       "lyric_jp": "どこへ行っても それは希望という名の羽だから FLY HIGH",
       "parts": [
-        {"lyric": "(right!)",
-          "range": [31.15, 31.43], "ans": [10]},
         {"lyric": "Doko e itte mo sore wa kibou to iu na no hane dakara",
-          "range": [31.43, 37.65], "ans": [11]},
+          "range": [31.15, 37.64], "ans": [10]},
         {"lyric": "Fly high",
-          "range": [37.65, 37.93], "ans": []}
+          "range": [37.64, 37.93], "ans": [10, 11]}
       ]
     },
     "",
     {"lyric": "Tsuyosa wo motometara",
       "lyric_jp": "強さを求めたら",
-      "range": [37.93, 40.5], "ans": [11]},
+      "range": [37.93, 40.5], "ans": [10]},
     {
       "lyric_jp": "弱さも受け入れてみようよ (MY FAULT！)",
       "parts": [
         {"lyric": "Yowasa ukeirete miyou yo",
-          "range": [40.5, 44.3], "ans": [11]},
+          "range": [40.5, 44.3], "ans": [10]},
         {"lyric": "(My fault!)",
-          "range": [44.3, 45.4], "ans": [10]}
+          "range": [44.3, 45.4], "ans": [11]}
       ]
     },
     {"lyric": "Yoyuu ga nai kokoro ja yume wa toozakaru no kamo",
       "lyric_jp": "余裕がない心じゃ 夢は遠ざかるのかも",
-      "range": [44.87, 49.86], "ans": [11]},
+      "range": [44.87, 49.86], "ans": [10]},
     {"lyric": "Saa, umarekawarou!",
       "lyric_jp": "さぁ、生まれ変わろう！",
-      "range": [49.86, 51.4], "ans": [10]},
+      "range": [49.86, 51.4], "ans": [11]},
     "",
     {"lyric": "Atarashiku nare furui kara wo yabutte susume",
       "lyric_jp": "新しくなれ 古い殻を破って進め",
-      "range": [51.4, 54.31], "ans": [10]},
+      "range": [51.4, 54.31], "ans": [11]},
     {"lyric": "Dekiru ne dekiru yo tsugi no basho e Dash!!",
       "lyric_jp": "出来るね 出来るよ 次の場所へ dash！",
-      "range": [54.31, 57.72], "ans": [10]},
+      "range": [54.31, 57.72], "ans": [11]},
     {
       "lyric_jp": "もっと (踊りたい！) もっと (踊りたい！)",
       "parts": [
         {"lyric": "Motto",
-          "range": [57.72, 58.96], "ans": [11]},
+          "range": [57.72, 58.96], "ans": [10]},
         {"lyric": "Odoritai",
-          "range": [58.96, 59.86], "ans": [10]},
+          "range": [58.96, 59.86], "ans": [11]},
         {"lyric": "Motto",
-          "range": [59.86, 60.56], "ans": [11]},
+          "range": [59.86, 60.56], "ans": [10]},
         {"lyric": "Odoritai",
-          "range": [60.56, 61.58], "ans": [10]}
+          "range": [60.56, 61.58], "ans": [11]}
       ]
     },
     {
       "lyric_jp": "Let's dance! (yeah!) dance! (yeah!)",
       "parts": [
         {"lyric": "Let's dance",
-          "range": [61.05, 61.95], "ans": [11]},
+          "range": [61.05, 61.95], "ans": [10]},
         {"lyric": "(yeah!)",
-          "range": [61.95, 62.79], "ans": [10]},
+          "range": [61.95, 62.79], "ans": [11]},
         {"lyric": "Dance",
-          "range": [62.79, 62.99], "ans": [11]},
+          "range": [62.79, 62.99], "ans": [10]},
         {"lyric": "(yeah!)",
-          "range": [62.99, 63.75], "ans": [10]}
+          "range": [62.99, 63.75], "ans": [11]}
       ]
     },
     {"lyric": "Tomaranai yo Dance!!",
       "lyric_jp": "止まらないよ dance!!",
-      "range": [63.5, 64.95], "ans": []},
+      "range": [63.5, 64.95], "ans": [10, 11]},
     "",
     {
       "lyric_jp": "Believe! (Believe!) again! (again!)",
       "parts": [
         {"lyric": "Believe",
-          "range": [64.95, 66.19], "ans": [11]},
+          "range": [64.95, 66.19], "ans": [10]},
         {"lyric": "(believe)",
-          "range": [66.19, 67.63], "ans": [10]},
+          "range": [66.19, 67.63], "ans": [11]},
         {"lyric": "Again",
-          "range": [67.63, 68.16], "ans": [11]},
+          "range": [67.63, 68.16], "ans": [10]},
         {"lyric": "(again)",
-          "range": [68.16, 68.61], "ans": [10]}
+          "range": [68.16, 68.61], "ans": [11]}
       ]
     },
     {"lyric": "Subete wo dakishimenagara",
       "lyric_jp": "全てを抱きしめながら",
-      "range": [68.46, 71.53], "ans": [11]},
+      "range": [68.46, 71.53], "ans": [10]},
     {
       "lyric_jp": "Believe! (Believe!) again! (again!)",
       "parts": [
         {"lyric": "Believe",
-          "range": [71.53, 72.55], "ans": [11]},
+          "range": [71.53, 72.55], "ans": [10]},
         {"lyric": "(believe)",
-          "range": [72.55, 73.57], "ans": [10]},
+          "range": [72.55, 73.57], "ans": [11]},
         {"lyric": "Again",
-          "range": [73.57, 74.33], "ans": [11]},
+          "range": [73.57, 74.33], "ans": [10]},
         {"lyric": "(again)",
-          "range": [74.33, 75.09], "ans": [10]}
+          "range": [74.33, 75.09], "ans": [11]}
       ]
     },
     {
       "lyric_jp": "また始まるんだ (SHOUT MY SONG！)",
       "parts": [
         {"lyric": "Mata hajimarunda",
-          "range": [75.09, 77.61], "ans": [11]},
+          "range": [75.09, 77.61], "ans": [10]},
         {"lyric": "(Shout my song!)",
-          "range": [77.61, 79.09], "ans": [10]}
+          "range": [77.61, 79.09], "ans": [11]}
       ]
     },
     {"lyric": "Honki datte iwanakutte kitto tsutawaru yo",
       "lyric_jp": "本気だって言わなくってきっと伝わるよ",
-      "range": [78.55, 82.34], "ans": [11]},
+      "range": [78.55, 82.34], "ans": [10]},
     {"lyric": "Nando demo atsuku nare jiyuu ni nare",
       "lyric_jp": "何度でも熱くなれ自由になれ",
-      "range": [82.34, 85.31], "ans": [10]},
+      "range": [82.34, 85.31], "ans": [11]},
     {
       "lyric_jp": "Believe! (Believe!) again! (again!)",
       "parts": [
         {"lyric": "Believe",
-          "range": [85.31, 86.36], "ans": [11]},
+          "range": [85.31, 86.36], "ans": [10]},
         {"lyric": "(believe)",
-          "range": [86.36, 87.41], "ans": [10]},
+          "range": [86.36, 87.41], "ans": [11]},
         {"lyric": "Again",
-          "range": [87.41, 88.2], "ans": [11]},
+          "range": [87.41, 88.2], "ans": [10]},
         {"lyric": "(again)",
-          "range": [88.2, 88.98], "ans": [10]}
+          "range": [88.2, 88.98], "ans": [11]}
       ]
     },
     {
       "lyric_jp": "また始まるんだ yeah! (yeah!) yeah!",
       "parts": [
         {"lyric": "Mata hajimarunda",
-          "range": [88.98, 91.13], "ans": [11]},
+          "range": [88.98, 91.13], "ans": [10]},
         {"lyric": "(yeah)",
-          "range": [91.13, 91.74], "ans": [10]},
+          "range": [91.13, 91.74], "ans": [11]},
         {"lyric": "Yeah!!",
-          "range": [91.74, 92.35], "ans": [11]},
+          "range": [91.74, 92.35], "ans": [10]},
         {"lyric": "(yeah)",
-          "range": [92.35, 92.97], "ans": [10]}
+          "range": [92.35, 92.97], "ans": [11]}
       ]
     },
     {
       "lyric_jp": "Ah 冒険は終わらないよ Let's go",
       "parts": [
         {"lyric": "Ah bouken wa owaranai yo",
-          "range": [92.97, 96.21], "ans": [11]},
+          "range": [92.97, 96.21], "ans": [10]},
         {"lyric": "Let’s go",
-          "range": [96.21, 102.97], "ans": []}
+          "range": [96.21, 102.97], "ans": [10, 11]}
       ]
     },
     "",
-    {"lyric": "Donna ni tanoshii basho mo",
+    {
       "lyric_jp": "どんなに楽しい場所も",
-      "range": [102.97, 105.47], "ans": [11]},
+      "parts": [
+        {"lyric": "(yeah)",
+          "range": [102.97, 104.87], "ans": [11]},
+        {"lyric": "(ah)",
+          "range": [104.87, 105.91], "ans": [10]}
+      ]
+    },
     "",
     {
       "lyric_jp": "永遠じゃないからね そろそろ出発 (Time over)",
       "parts": [
+        {"lyric": "Donna ni tanoshii basho mo",
+          "range": [105.47, 107.12], "ans": [10]},
         {"lyric": "Towa janai kara ne sorosoro shuppatsu",
-          "range": [105.47, 109.43], "ans": [11]},
+          "range": [107.12, 109.86], "ans": [10]},
         {"lyric": "(Time over)",
-          "range": [109.43, 110.57], "ans": [10]}
+          "range": [109.86, 110.57], "ans": [11]}
       ]
     },
     {
       "lyric_jp": "どこへ行っても 胸に温かい思い出が眠る My life",
       "parts": [
         {"lyric": "Doko e itte mo mune ni atatakai omoide ga nemuru",
-          "range": [109.72, 116.36], "ans": [11]},
+          "range": [109.72, 116.36], "ans": [10]},
         {"lyric": "My life",
-          "range": [116.36, 116.9], "ans": []}
+          "range": [116.36, 116.9], "ans": [10, 11]}
       ]
     },
+    "",
     {"lyric": "Omokute tobenakatta",
       "lyric_jp": "重くて飛べなかった",
-      "range": [116.79, 119.59], "ans": [11]},
-    "",
+      "range": [116.79, 119.59], "ans": [10]},
     {
       "lyric_jp": "こころ脱ぎ捨て軽やかに (Step out!)",
       "parts": [
         {"lyric": "Kokoro nugisute karoyaka ni",
-          "range": [119.59, 123.05], "ans": [11]},
+          "range": [119.59, 123.05], "ans": [10]},
         {"lyric": "(Step out!)",
-          "range": [123.05, 123.91], "ans": [10]}
+          "range": [123.05, 123.91], "ans": [11]}
       ]
     },
     {"lyric": "Henka wo ukeireyou yume mo shinka no toki da to",
       "lyric_jp": "変化を受け入れよう 夢も進化の時だと",
-      "range": [123.91, 128.58], "ans": [11]},
+      "range": [123.91, 128.58], "ans": [10]},
     {"lyric": "Mou, wakatte kita ne!",
       "lyric_jp": "もう、わかってきたね！",
-      "range": [128.58, 130.48], "ans": [10]},
+      "range": [128.58, 130.48], "ans": [11]},
+    "",
     {"lyric": "Mae wo mukunda soshite omoi no mama ni susume",
       "lyric_jp": "前を向くんだ そして想いのままに進め",
-      "range": [130.48, 133.85], "ans": [10]},
-    "",
+      "range": [130.48, 133.85], "ans": [11]},
     {"lyric": "Dekiru ne dekiru yo saki e saki e Dash!",
       "lyric_jp": "できるね できるよ 先へ先へ Dash!",
-      "range": [133.85, 136.54], "ans": [10]},
+      "range": [133.85, 136.54], "ans": [11]},
     {
       "lyric_jp": "今日も (踊って)",
       "parts": [
         {"lyric": "Kyou mo",
-          "range": [136.54, 137.84], "ans": [11]},
+          "range": [136.54, 137.84], "ans": [10]},
         {"lyric": "Odotte",
-          "range": [137.84, 138.59], "ans": [10]}
+          "range": [137.84, 138.59], "ans": [11]}
       ]
     },
     {
       "lyric_jp": "今日も (踊って)",
       "parts": [
         {"lyric": "Kyou mo",
-          "range": [138.25, 139.61], "ans": [11]},
+          "range": [138.25, 139.61], "ans": [10]},
         {"lyric": "Odotte",
-          "range": [139.61, 140.38], "ans": [10]}
+          "range": [139.61, 140.38], "ans": [11]}
       ]
     },
     {
       "lyric_jp": "Let's dance (yeah!) dance (yeah!)",
       "parts": [
         {"lyric": "Let's dance",
-          "range": [139.98, 140.94], "ans": [11]},
+          "range": [139.98, 140.94], "ans": [10]},
         {"lyric": "(yeah!)",
-          "range": [140.94, 141.68], "ans": [10]},
+          "range": [140.94, 141.68], "ans": [11]},
         {"lyric": "Dance",
-          "range": [141.68, 141.84], "ans": [11]},
+          "range": [141.68, 141.84], "ans": [10]},
         {"lyric": "(yeah!)",
-          "range": [141.84, 142.56], "ans": [10]}
+          "range": [141.84, 142.56], "ans": [11]}
       ]
     },
     {"lyric": "Tomaranai yo Dance!!",
       "lyric_jp": "止まらないよ Dance!!",
-      "range": [142.36, 143.74], "ans": []},
-    {
-      "lyric_jp": "Be wild! (Be wild!) again! (again!)",
-      "parts": [
-        {"lyric": "Be wild",
-          "range": [143.74, 144.47], "ans": [11]},
-        {"lyric": "(be wild)",
-          "range": [144.47, 145.2], "ans": [10]},
-        {"lyric": "Again",
-          "range": [145.2, 146.29], "ans": [11]},
-        {"lyric": "(again)",
-          "range": [146.29, 147.38], "ans": [10]}
-      ]
-    },
+      "range": [142.36, 143.74], "ans": [10, 11]},
     "",
     "[next-col]",
-    {"lyric": "Dare yori hageshiku ikite",
-      "lyric_jp": "誰より激しく生きて",
-      "range": [147.38, 150.76], "ans": [11]},
     {
       "lyric_jp": "Be wild! (Be wild!) again! (again!)",
       "parts": [
         {"lyric": "Be wild",
-          "range": [150.76, 151.49], "ans": [11]},
+          "range": [143.74, 144.47], "ans": [10]},
         {"lyric": "(be wild)",
-          "range": [151.49, 152.22], "ans": [10]},
+          "range": [144.47, 145.2], "ans": [11]},
         {"lyric": "Again",
-          "range": [152.22, 153.31], "ans": [11]},
+          "range": [145.2, 146.29], "ans": [10]},
         {"lyric": "(again)",
-          "range": [153.31, 154.41], "ans": [10]}
+          "range": [146.29, 147.38], "ans": [11]}
+      ]
+    },
+    {"lyric": "Dare yori hageshiku ikite",
+      "lyric_jp": "誰より激しく生きて",
+      "range": [147.38, 150.76], "ans": [10]},
+    {
+      "lyric_jp": "Be wild! (Be wild!) again! (again!)",
+      "parts": [
+        {"lyric": "Be wild",
+          "range": [150.76, 151.49], "ans": [10]},
+        {"lyric": "(be wild)",
+          "range": [151.49, 152.22], "ans": [11]},
+        {"lyric": "Again",
+          "range": [152.22, 153.31], "ans": [10]},
+        {"lyric": "(again)",
+          "range": [153.31, 154.41], "ans": [11]}
       ]
     },
     {
       "lyric_jp": "やり残さないで (Shout my song!)",
       "parts": [
         {"lyric": "Yarinokosanaide",
-          "range": [154.41, 157.01], "ans": [11]},
+          "range": [154.41, 157.01], "ans": [10]},
         {"lyric": "(Shout my song!)",
-          "range": [157.01, 158], "ans": [10]}
+          "range": [157.01, 158], "ans": [11]}
       ]
     },
     {"lyric": "Matte nante iwanai yo minna sorezore no",
       "lyric_jp": "待ってなんて言わないよ みんなそれぞれの",
-      "range": [157.67, 160.84], "ans": [11]},
+      "range": [157.67, 160.84], "ans": [10]},
     {"lyric": "Yume ga atte mirai e to mukau dake sa",
       "lyric_jp": "夢があって未来へと向かうだけさ",
-      "range": [160.84, 164.23], "ans": [10]},
+      "range": [160.84, 164.23], "ans": [11]},
     {
       "lyric_jp": "Be wild! (Be wild!) again! (again!)",
       "parts": [
         {"lyric": "Be wild",
-          "range": [164.23, 165.01], "ans": [11]},
+          "range": [164.23, 165.01], "ans": [10]},
         {"lyric": "(be wild)",
-          "range": [165.01, 165.79], "ans": [10]},
+          "range": [165.01, 165.79], "ans": [11]},
         {"lyric": "Again",
-          "range": [165.79, 166.95], "ans": [11]},
+          "range": [165.79, 166.95], "ans": [10]},
         {"lyric": "(again)",
-          "range": [166.95, 168.11], "ans": [10]}
+          "range": [166.95, 168.11], "ans": [11]}
       ]
     },
     {
       "lyric_jp": "やり残さないで (Yeah) Yeah!! (Yeah!!)",
       "parts": [
         {"lyric": "Yarinokosanaide",
-          "range": [168.11, 170.16], "ans": [11]},
+          "range": [168.11, 170.16], "ans": [10]},
         {"lyric": "(yeah)",
-          "range": [170.16, 170.67], "ans": [10]},
+          "range": [170.16, 170.67], "ans": [11]},
         {"lyric": "Yeah!!",
-          "range": [170.67, 171.18], "ans": [11]},
+          "range": [170.67, 171.18], "ans": [10]},
         {"lyric": "(yeah)",
-          "range": [171.18, 171.7], "ans": [10]}
+          "range": [171.18, 171.7], "ans": [11]}
       ]
     },
     {
       "lyric_jp": "So 遊びじゃないよ Try and Let's go",
       "parts": [
         {"lyric": "So asobi janai yo Try and",
-          "range": [171.7, 174.91], "ans": [11]},
+          "range": [171.7, 174.91], "ans": [10]},
         {"lyric": "Let’s go",
-          "range": [174.91, 179.08], "ans": []}
+          "range": [174.91, 179.08], "ans": [10, 11]}
       ]
     },
     {
       "lyric_jp": "Shout (shout) Shout my song!",
       "parts": [
         {"lyric": "Shout",
-          "range": [179.08, 181.51], "ans": [10]},
+          "range": [179.08, 181.51], "ans": [11]},
         {"lyric": "Shout,",
-          "range": [181.51, 183.94], "ans": [11]},
+          "range": [181.51, 183.94], "ans": [10]},
         {"lyric": "Shout",
-          "range": [183.94, 186.37], "ans": [10]},
+          "range": [183.94, 186.37], "ans": [11]},
         {"lyric": "My song!",
           "range": [186.37, 187.6], "ans": []}
       ]
     },
+    "",
     {
       "lyric_jp": "Now we can go, we can go Ah もっと信じて",
       "parts": [
         {"lyric": "Now we can go, we can go",
-          "range": [187.6, 190.3], "ans": [10]},
+          "range": [187.6, 190.3], "ans": [11]},
         {"lyric": "Ah motto",
-          "range": [190.3, 191.12], "ans": [10]},
+          "range": [190.3, 191.12], "ans": [11]},
         {"lyric": "Shinjite",
           "range": [191.12, 192.14], "ans": []}
       ]
     },
-    "",
     {
       "lyric_jp": "we can fly, we can fly So どんな夢も",
       "parts": [
         {"lyric": "We can fly, we can fly",
-          "range": [191.94, 193.26], "ans": [10]},
+          "range": [191.94, 193.26], "ans": [11]},
         {"lyric": "So donna",
-          "range": [193.26, 194.5], "ans": [10]},
+          "range": [193.26, 194.5], "ans": [11]},
         {"lyric": "Yume mo",
           "range": [194.5, 195.6], "ans": []}
       ]
@@ -383,159 +390,161 @@
       "lyric_jp": "we can go, we can go Ah もっと信じて",
       "parts": [
         {"lyric": "We can go, we can go",
-          "range": [195.5, 197.31], "ans": [10]},
+          "range": [195.5, 197.31], "ans": [11]},
         {"lyric": "Ah motto",
-          "range": [197.31, 198.22], "ans": [10]},
+          "range": [197.31, 198.22], "ans": [11]},
         {"lyric": "Shinjite",
           "range": [198.22, 199.03], "ans": []}
       ]
     },
     {"lyric": "We can fly, we can fly So kitto kanau Yeah!",
       "lyric_jp": "we can fly, we can fly So きっと叶う Yeah!!",
-      "range": [199.03, 205.74], "ans": [10]},
-    {
-      "lyric_jp": "Believe! (Believe!) again! (again!)",
-      "parts": [
-        {"lyric": "Believe",
-          "range": [205.74, 206.87], "ans": [11]},
-        {"lyric": "(believe)",
-          "range": [206.87, 208], "ans": [10]},
-        {"lyric": "Again",
-          "range": [208, 208.85], "ans": [11]},
-        {"lyric": "(again)",
-          "range": [208.85, 209.69], "ans": [10]}
-      ]
-    },
+      "range": [199.03, 205.74], "ans": [11]},
     "",
     {
       "lyric_jp": "Believe! (Believe!) again! (again!)",
       "parts": [
         {"lyric": "Believe",
-          "range": [209.69, 211.45], "ans": [11]},
+          "range": [205.74, 206.87], "ans": [10]},
         {"lyric": "(believe)",
-          "range": [211.45, 212.44], "ans": [10]},
+          "range": [206.87, 208], "ans": [11]},
         {"lyric": "Again",
-          "range": [212.44, 212.55], "ans": [11]},
+          "range": [208, 208.85], "ans": [10]},
         {"lyric": "(again)",
-          "range": [212.55, 213.4], "ans": [10]}
+          "range": [208.85, 209.69], "ans": [11]}
       ]
     },
     {
       "lyric_jp": "Believe! (Believe!) again! (again!)",
       "parts": [
         {"lyric": "Believe",
-          "range": [212.44, 213.4], "ans": [11]},
+          "range": [209.69, 211.45], "ans": [10]},
         {"lyric": "(believe)",
-          "range": [213.4, 214.84], "ans": [10]},
+          "range": [211.45, 212.44], "ans": [11]},
         {"lyric": "Again",
-          "range": [214.84, 215.54], "ans": [11]},
+          "range": [212.44, 212.55], "ans": [10]},
         {"lyric": "(again)",
-          "range": [215.54, 215.97], "ans": [10]}
+          "range": [212.55, 213.4], "ans": [11]}
+      ]
+    },
+    {
+      "lyric_jp": "Believe! (Believe!) again! (again!)",
+      "parts": [
+        {"lyric": "Believe",
+          "range": [212.44, 213.4], "ans": [10]},
+        {"lyric": "(believe)",
+          "range": [213.4, 214.84], "ans": [11]},
+        {"lyric": "Again",
+          "range": [214.84, 215.54], "ans": [10]},
+        {"lyric": "(again)",
+          "range": [215.54, 215.97], "ans": [11]}
       ]
     },
     {
       "lyric_jp": "Dance dance dance 止まらないよ Dance!!",
       "parts": [
         {"lyric": "Dance dance dance",
-          "range": [215.91, 217.71], "ans": [10]},
+          "range": [215.91, 217.71], "ans": [11]},
         {"lyric": "Tomaranai yo Dance!!",
-          "range": [217.71, 219.47], "ans": []}
-      ]
-    },
-    {
-      "lyric_jp": "Believe! (Believe!) again! (again!)",
-      "parts": [
-        {"lyric": "Believe",
-          "range": [218.99, 220.05], "ans": [11]},
-        {"lyric": "(believe)",
-          "range": [220.05, 221.11], "ans": [10]},
-        {"lyric": "Again",
-          "range": [221.11, 221.9], "ans": [11]},
-        {"lyric": "(again)",
-          "range": [221.9, 222.69], "ans": [10]}
+          "range": [217.71, 219.47], "ans": [10, 11]}
       ]
     },
     "",
-    {"lyric": "Subete wo dakishimenagara",
-      "lyric_jp": "すべてを抱きしめながら",
-      "range": [222.69, 225.92], "ans": [11]},
     {
       "lyric_jp": "Believe! (Believe!) again! (again!)",
       "parts": [
         {"lyric": "Believe",
-          "range": [225.92, 226.98], "ans": [11]},
+          "range": [218.99, 220.05], "ans": [10]},
         {"lyric": "(believe)",
-          "range": [226.98, 228.04], "ans": [10]},
+          "range": [220.05, 221.11], "ans": [11]},
         {"lyric": "Again",
-          "range": [228.04, 228.84], "ans": [11]},
+          "range": [221.11, 221.9], "ans": [10]},
         {"lyric": "(again)",
-          "range": [228.84, 229.64], "ans": [10]}
+          "range": [221.9, 222.69], "ans": [11]}
+      ]
+    },
+    {"lyric": "Subete wo dakishimenagara",
+      "lyric_jp": "すべてを抱きしめながら",
+      "range": [222.69, 225.92], "ans": [10]},
+    {
+      "lyric_jp": "Believe! (Believe!) again! (again!)",
+      "parts": [
+        {"lyric": "Believe",
+          "range": [225.92, 226.98], "ans": [10]},
+        {"lyric": "(believe)",
+          "range": [226.98, 228.04], "ans": [11]},
+        {"lyric": "Again",
+          "range": [228.04, 228.84], "ans": [10]},
+        {"lyric": "(again)",
+          "range": [228.84, 229.64], "ans": [11]}
       ]
     },
     {
       "lyric_jp": "また始まるんだ (Shout my song!)",
       "parts": [
         {"lyric": "Mata hajimarunda",
-          "range": [229.64, 231.86], "ans": [11]},
+          "range": [229.64, 231.86], "ans": [10]},
         {"lyric": "(Shout my song!)",
-          "range": [231.86, 233.5], "ans": [10]}
+          "range": [231.86, 233.5], "ans": [11]}
       ]
     },
     {"lyric": "(Oh~) honki datte iwanakutte kitto tsutawaru yo",
       "lyric_jp": "本気だって言わなくってきっと伝わるよ",
-      "range": [233.2, 236.26], "ans": [11]},
+      "range": [233.2, 236.26], "ans": [10]},
     {"lyric": "(Wow Yeah~)",
       "lyric_jp": "本気だって言わなくってきっと伝わるよ",
-      "range": [236.26, 236.82], "ans": [11]},
+      "range": [236.26, 236.82], "ans": [10]},
     {"lyric": "Nando demo atsuku nare jiyuu ni nare",
       "lyric_jp": "何度でも熱くなれ 自由になれ",
-      "range": [236.36, 239.64], "ans": [10]},
+      "range": [236.36, 239.64], "ans": [11]},
     {
       "lyric_jp": "Believe! (Believe!) again! (again!)",
       "parts": [
         {"lyric": "Believe",
-          "range": [239.64, 240.62], "ans": [11]},
+          "range": [239.64, 240.62], "ans": [10]},
         {"lyric": "(believe)",
-          "range": [240.62, 241.6], "ans": [10]},
+          "range": [240.62, 241.6], "ans": [11]},
         {"lyric": "Again",
-          "range": [241.6, 242.34], "ans": [11]},
+          "range": [241.6, 242.34], "ans": [10]},
         {"lyric": "(again)",
-          "range": [242.34, 243.08], "ans": [10]}
+          "range": [242.34, 243.08], "ans": [11]}
       ]
     },
     {
       "lyric_jp": "また始まるんだ (Yeah) Yeah!! (Yeah)",
       "parts": [
         {"lyric": "Mata hajimarunda",
-          "range": [243.08, 243.46], "ans": [11]},
+          "range": [243.08, 243.46], "ans": [10]},
         {"lyric": "(yeah)",
-          "range": [243.46, 243.98], "ans": [10]},
+          "range": [243.46, 243.98], "ans": [11]},
         {"lyric": "Yeah!!",
-          "range": [243.98, 244.32], "ans": [11]},
+          "range": [243.98, 244.32], "ans": [10]},
         {"lyric": "(yeah)",
-          "range": [244.32, 247.44], "ans": [10]}
+          "range": [244.32, 247.44], "ans": [11]}
       ]
     },
     {
       "lyric_jp": "So 遊びじゃないよ Let's go",
       "parts": [
         {"lyric": "So asobi janai yo",
-          "range": [247.44, 250.4], "ans": [11]},
+          "range": [247.44, 250.4], "ans": [10]},
         {"lyric": "Let’s go",
-          "range": [250.4, 251.14], "ans": []}
+          "range": [250.4, 251.14], "ans": [10, 11]}
       ]
     },
     {
       "lyric_jp": "Ah 冒険は終わらないよ Let's go!",
       "parts": [
         {"lyric": "Ah bouken wa owaranai yo",
-          "range": [251.14, 254.65], "ans": [11]},
+          "range": [251.14, 254.65], "ans": [10]},
         {"lyric": "Let’s go!",
-          "range": [254.65, 255.29], "ans": []}
+          "range": [254.65, 255.29], "ans": [10, 11]}
       ]
     },
     {"lyric": "(3, 2, 1,",
       "lyric_jp": "3... 2... 1, go!",
-      "range": [255.29, 281.67], "ans": [10]}
+      "range": [255.29, 281.67], "ans": [11]},
+    {"lyric": "(go!)",
+      "range": [279.67, 281.67], "ans": []}
   ]
 }

@@ -60,7 +60,8 @@
     "cover": "css/images/covers/braveheart-coaster.png"
   },
   {
-    "file": "aqours/dreamy-color.json"
+    "file": "aqours/dreamy-color.json",
+    "cover": "css/images/covers/dreamy-color.jpg"
   },
   {
     "file": "aqours/tousou-meisou-mobius-loop.json",
@@ -199,286 +200,380 @@
     "cover": "css/images/covers/bokuhashi.png"
   },
   {
-    "file": "muse/borarara.json"
+    "file": "muse/borarara.json",
+    "cover": "css/images/covers/borarara.png"
   },
   {
-    "file": "legacy/koitan.json"
+    "file": "legacy/koitan.json",
+    "cover": "css/images/covers/koitan.png"
   },
   {
-    "file": "muse/rabumaji.json"
+    "file": "muse/rabumaji.json",
+    "cover": "css/images/covers/rabumaji.png"
   },
   {
-    "file": "muse/ssh.json"
+    "file": "muse/ssh.json",
+    "cover": "css/images/covers/ssh.png"
   },
   {
-    "file": "legacy/diapuri.json"
+    "file": "legacy/diapuri.json",
+    "cover": "css/images/covers/diapuri.png"
   },
   {
-    "file": "legacy/rabunobe.json"
+    "file": "legacy/rabunobe.json",
+    "cover": "css/images/covers/rabunobe.png"
   },
   {
-    "file": "legacy/shirarara.json"
+    "file": "legacy/shirarara.json",
+    "cover": "css/images/covers/shirarara.png"
   },
   {
-    "file": "legacy/anone.json"
+    "file": "legacy/anone.json",
+    "cover": "css/images/covers/anone.png"
   },
   {
-    "file": "legacy/mafesu1.json"
+    "file": "legacy/mafesu1.json",
+    "cover": "css/images/covers/mafesu1.png"
   },
   {
-    "file": "muse/mogyu.json"
+    "file": "muse/mogyu.json",
+    "cover": "css/images/covers/mogyu.png"
   },
   {
-    "file": "legacy/aiban.json"
+    "file": "legacy/aiban.json",
+    "cover": "css/images/covers/aiban.png"
   },
   {
-    "file": "legacy/wonrush.json"
+    "file": "legacy/wonrush.json",
+    "cover": "css/images/covers/wonrush.png"
   },
   {
-    "file": "legacy/rabupi.json"
+    "file": "legacy/rabupi.json",
+    "cover": "css/images/covers/rabupi.png"
   },
   {
-    "file": "legacy/bokuima.json"
+    "file": "legacy/bokuima.json",
+    "cover": "css/images/covers/bokuima.png"
   },
   {
-    "file": "legacy/start.json"
+    "file": "legacy/start.json",
+    "cover": "css/images/covers/start.png"
   },
   {
-    "file": "legacy/binetsu.json"
+    "file": "legacy/binetsu.json",
+    "cover": "css/images/covers/binetsu.png"
   },
   {
-    "file": "legacy/kimikuse.json"
+    "file": "legacy/kimikuse.json",
+    "cover": "css/images/covers/kimikuse.png"
   },
   {
-    "file": "muse/cp.json"
+    "file": "muse/cp.json",
+    "cover": "css/images/covers/cp.png"
   },
   {
-    "file": "legacy/natsuowa.json"
+    "file": "legacy/natsuowa.json",
+    "cover": "css/images/covers/natsuowa.png"
   },
   {
-    "file": "legacy/pgp.json"
+    "file": "legacy/pgp.json",
+    "cover": "css/images/covers/pgp.png"
   },
   {
-    "file": "legacy/anbara.json"
+    "file": "legacy/anbara.json",
+    "cover": "css/images/covers/anbara.png"
   },
   {
-    "file": "legacy/puwa.json"
+    "file": "legacy/puwa.json",
+    "cover": "css/images/covers/puwa.png"
   },
   {
-    "file": "legacy/eien.json"
+    "file": "legacy/eien.json",
+    "cover": "css/images/covers/eien.png"
   },
   {
-    "file": "legacy/nairabu.json"
+    "file": "legacy/nairabu.json",
+    "cover": "css/images/covers/nairabu.png"
   },
   {
-    "file": "legacy/akisora.json"
+    "file": "legacy/akisora.json",
+    "cover": "css/images/covers/akisora.png"
   },
   {
-    "file": "legacy/happiness.json"
+    "file": "legacy/happiness.json",
+    "cover": "css/images/covers/happiness.png"
   },
   {
-    "file": "legacy/yokan.json"
+    "file": "legacy/yokan.json",
+    "cover": "css/images/covers/yokan.png"
   },
   {
-    "file": "legacy/torabasu.json"
+    "file": "legacy/torabasu.json",
+    "cover": "css/images/covers/torabasu.png"
   },
   {
-    "file": "legacy/onajihoshi.json"
+    "file": "legacy/onajihoshi.json",
+    "cover": "css/images/covers/onajihoshi.png"
   },
   {
-    "file": "legacy/silent.json"
+    "file": "legacy/silent.json",
+    "cover": "css/images/covers/silent.png"
   },
   {
-    "file": "legacy/cheerday.json"
+    "file": "legacy/cheerday.json",
+    "cover": "css/images/covers/cheerday.png"
   },
   {
-    "file": "legacy/saipara.json"
+    "file": "legacy/saipara.json",
+    "cover": "css/images/covers/saipara.png"
   },
   {
-    "file": "legacy/otohime.json"
+    "file": "legacy/otohime.json",
+    "cover": "css/images/covers/otohime.png"
   },
   {
-    "file": "legacy/museum.json"
+    "file": "legacy/museum.json",
+    "cover": "css/images/covers/museum.png"
   },
   {
-    "file": "legacy/angel.json"
+    "file": "legacy/angel.json",
+    "cover": "css/images/covers/angel.png"
   },
   {
-    "file": "legacy/hellohoshi.json"
+    "file": "legacy/hellohoshi.json",
+    "cover": "css/images/covers/hellohoshi.png"
   },
   {
-    "file": "legacy/sds.json"
+    "file": "legacy/sds.json",
+    "cover": "css/images/covers/sds.png"
   },
   {
-    "file": "legacy/heartbeat.json"
+    "file": "legacy/heartbeat.json",
+    "cover": "css/images/covers/heartbeat.png"
   },
   {
-    "file": "muse/bokuhika.json"
+    "file": "muse/bokuhika.json",
+    "cover": "css/images/covers/bokuhika.png"
   },
   {
-    "file": "legacy/fsuta.json"
+    "file": "legacy/fsuta.json",
+    "cover": "css/images/covers/fsuta.png"
   },
   {
-    "file": "legacy/waowao.json"
+    "file": "legacy/waowao.json",
+    "cover": "css/images/covers/waowao.png"
   },
   {
-    "file": "legacy/orion.json"
+    "file": "legacy/orion.json",
+    "cover": "css/images/covers/orion.png"
   },
   {
-    "file": "legacy/omoide.json"
+    "file": "legacy/omoide.json",
+    "cover": "css/images/covers/omoide.png"
   },
   {
-    "file": "legacy/shunjou.json"
+    "file": "legacy/shunjou.json",
+    "cover": "css/images/covers/shunjou.png"
   },
   {
-    "file": "legacy/sakkaku.json"
+    "file": "legacy/sakkaku.json",
+    "cover": "css/images/covers/sakkaku.png"
   },
   {
-    "file": "legacy/pf.json"
+    "file": "legacy/pf.json",
+    "cover": "css/images/covers/pf.png"
   },
   {
-    "file": "aqours/step.json"
+    "file": "aqours/step.json",
+    "cover": "css/images/covers/step.png"
   },
   {
-    "file": "aqours/heroes.json"
+    "file": "aqours/heroes.json",
+    "cover": "css/images/covers/heroes.png"
   },
   {
-    "file": "aqours/koiaqua.json"
+    "file": "aqours/koiaqua.json",
+    "cover": "css/images/covers/koiaqua.png"
   },
   {
-    "file": "aqours/mattete.json"
+    "file": "aqours/mattete.json",
+    "cover": "css/images/covers/mattete.png"
   },
   {
-    "file": "legacy/todohoshi.json"
+    "file": "legacy/todohoshi.json",
+    "cover": "css/images/covers/todohoshi.png"
   },
   {
-    "file": "legacy/genki.json"
+    "file": "legacy/genki.json",
+    "cover": "css/images/covers/genki.png"
   },
   {
-    "file": "aqours/yozora-test.json"
+    "file": "aqours/yozora-test.json",
+    "cover": "css/images/covers/yozora-test.png"
   },
   {
-    "file": "aqours/yozora.json"
+    "file": "aqours/yozora.json",
+    "cover": "css/images/covers/yozora.png"
   },
   {
-    "file": "legacy/strawberry.json"
+    "file": "legacy/strawberry.json",
+    "cover": "css/images/covers/strawberry.png"
   },
   {
-    "file": "aqours/guilty.json"
+    "file": "aqours/guilty.json",
+    "cover": "css/images/covers/guilty.png"
   },
   {
-    "file": "legacy/toriko.json"
+    "file": "legacy/toriko.json",
+    "cover": "css/images/covers/toriko.png"
   },
   {
-    "file": "legacy/tokimeki.json"
+    "file": "legacy/tokimeki.json",
+    "cover": "css/images/covers/tokimeki.png"
   },
   {
-    "file": "legacy/aozora.json"
+    "file": "legacy/aozora.json",
+    "cover": "css/images/covers/aozora.png"
   },
   {
-    "file": "legacy/humming.json"
+    "file": "legacy/humming.json",
+    "cover": "css/images/covers/humming.png"
   },
   {
-    "file": "legacy/kimeta.json"
+    "file": "legacy/kimeta.json",
+    "cover": "css/images/covers/kimeta.png"
   },
   {
-    "file": "legacy/daisuki.json"
+    "file": "legacy/daisuki.json",
+    "cover": "css/images/covers/daisuki.png"
   },
   {
-    "file": "aqours/yumeuta.json"
+    "file": "aqours/yumeuta.json",
+    "cover": "css/images/covers/yumeuta.png"
   },
   {
-    "file": "legacy/ondo.json"
+    "file": "legacy/ondo.json",
+    "cover": "css/images/covers/ondo.png"
   },
   {
-    "file": "aqours/yumetera.json"
+    "file": "aqours/yumetera.json",
+    "cover": "css/images/covers/yumetera.png"
   },
   {
-    "file": "aqours/mijuku.json"
+    "file": "aqours/mijuku.json",
+    "cover": "css/images/covers/mijuku.png"
   },
   {
-    "file": "legacy/pops.json"
+    "file": "legacy/pops.json",
+    "cover": "css/images/covers/pops.png"
   },
   {
-    "file": "aqours/sorahare.json"
+    "file": "aqours/sorahare.json",
+    "cover": "css/images/covers/sorahare.png"
   },
   {
-    "file": "aqours/omoi.json"
+    "file": "aqours/omoi.json",
+    "cover": "css/images/covers/omoi.png"
   },
   {
-    "file": "aqours/mirai.json"
+    "file": "aqours/mirai.json",
+    "cover": "css/images/covers/mirai.png"
   },
   {
-    "file": "aqours/jingle.json"
+    "file": "aqours/jingle.json",
+    "cover": "css/images/covers/jingle.png"
   },
   {
-    "file": "legacy/seinaru.json"
+    "file": "legacy/seinaru.json",
+    "cover": "css/images/covers/seinaru.png"
   },
   {
-    "file": "aqours/waku.json"
+    "file": "aqours/waku.json",
+    "cover": "css/images/covers/waku.png"
   },
   {
-    "file": "aqours/daydream.json"
+    "file": "aqours/daydream.json",
+    "cover": "css/images/covers/daydream.png"
   },
   {
-    "file": "aqours/cinderella.json"
+    "file": "aqours/cinderella.json",
+    "cover": "css/images/covers/cinderella.png"
   },
   {
-    "file": "aqours/thrilling.json"
+    "file": "aqours/thrilling.json",
+    "cover": "css/images/covers/thrilling.png"
   },
   {
-    "file": "legacy/taiyou.json"
+    "file": "legacy/taiyou.json",
+    "cover": "css/images/covers/taiyou.png"
   },
   {
-    "file": "aqours/mukougawa.json"
+    "file": "aqours/mukougawa.json",
+    "cover": "css/images/covers/mukougawa.png"
   },
   {
-    "file": "aqours/tuning.json"
+    "file": "aqours/tuning.json",
+    "cover": "css/images/covers/tuning.png"
   },
   {
-    "file": "legacy/fever.json"
+    "file": "legacy/fever.json",
+    "cover": "css/images/covers/fever.png"
   },
   {
-    "file": "aqours/hapitore.json"
+    "file": "aqours/hapitore.json",
+    "cover": "css/images/covers/hapitore.png"
   },
   {
-    "file": "aqours/sky.json"
+    "file": "aqours/sky.json",
+    "cover": "css/images/covers/sky.png"
   },
   {
-    "file": "legacy/shoujo.json"
+    "file": "legacy/shoujo.json",
+    "cover": "css/images/covers/shoujo.png"
   },
   {
-    "file": "legacy/kinhappi.json"
+    "file": "legacy/kinhappi.json",
+    "cover": "css/images/covers/kinhappi.png"
   },
   {
-    "file": "legacy/kaigan.json"
+    "file": "legacy/kaigan.json",
+    "cover": "css/images/covers/kaigan.png"
   },
   {
-    "file": "aqours/ginkaku.json"
+    "file": "aqours/ginkaku.json",
+    "cover": "css/images/covers/ginkaku.png"
   },
   {
-    "file": "legacy/innoba.json"
+    "file": "legacy/innoba.json",
+    "cover": "css/images/covers/innoba.png"
   },
   {
-    "file": "aqours/kowareya.json"
+    "file": "aqours/kowareya.json",
+    "cover": "css/images/covers/kowareya.png"
   },
   {
-    "file": "aqours/shadow.json"
+    "file": "aqours/shadow.json",
+    "cover": "css/images/covers/shadow.png"
   },
   {
-    "file": "legacy/landing.json"
+    "file": "legacy/landing.json",
+    "cover": "css/images/covers/landing.png"
   },
   {
-    "file": "legacy/natsubira.json"
+    "file": "legacy/natsubira.json",
+    "cover": "css/images/covers/natsubira.png"
   },
   {
-    "file": "legacy/manatsumono.json"
+    "file": "legacy/manatsumono.json",
+    "cover": "css/images/covers/manatsumono.png"
   },
   {
-    "file": "legacy/jimoai.json"
+    "file": "legacy/jimoai.json",
+    "cover": "css/images/covers/jimoai.png"
   },
   {
-    "file": "aqours/natsuoto.json"
+    "file": "aqours/natsuoto.json",
+    "cover": "css/images/covers/natsuoto.png"
   },
   {
     "file": "wug/tachiagare.json"
@@ -502,36 +597,47 @@
     "file": "wug/wugzoo.json"
   },
   {
-    "file": "aqours/miraboku.json"
+    "file": "aqours/miraboku.json",
+    "cover": "css/images/covers/miraboku.png"
   },
   {
-    "file": "aqours/kimihito.json"
+    "file": "aqours/kimihito.json",
+    "cover": "css/images/covers/kimihito.png"
   },
   {
-    "file": "aqours/yuukimi.json"
+    "file": "aqours/yuukimi.json",
+    "cover": "css/images/covers/yuukimi.png"
   },
   {
-    "file": "aqours/mylist.json"
+    "file": "aqours/mylist.json",
+    "cover": "css/images/covers/mylist.png"
   },
   {
-    "file": "aqours/maimai.json"
+    "file": "aqours/maimai.json",
+    "cover": "css/images/covers/maimai.png"
   },
   {
-    "file": "aqours/mirawave.json"
+    "file": "aqours/mirawave.json",
+    "cover": "css/images/covers/mirawave.png"
   },
   {
-    "file": "aqours/awakepower.json"
+    "file": "aqours/awakepower.json",
+    "cover": "css/images/covers/awakepower.png"
   },
   {
-    "file": "aqours/waterblue.json"
+    "file": "aqours/waterblue.json",
+    "cover": "css/images/covers/waterblue.png"
   },
   {
-    "file": "aqours/stories.json"
+    "file": "aqours/stories.json",
+    "cover": "css/images/covers/stories.png"
   },
   {
-    "file": "legacy/kimikoko.json"
+    "file": "legacy/kimikoko.json",
+    "cover": "css/images/covers/kimikoko.png"
   },
   {
-    "file": "aqours/nameless-love-song.json"
+    "file": "aqours/nameless-love-song.json",
+    "cover": "css/images/covers/nameless-love-song.png"
   }
 ]

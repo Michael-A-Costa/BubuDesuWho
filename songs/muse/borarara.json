@@ -3,6 +3,7 @@
   "ogg": "sound/bokura_no_live_kimi_to_no_life.ogg",
   "id": "borarara",
   "group": "muse",
+  "legacy": true,
   "hidden": false,
   "slots": [
 

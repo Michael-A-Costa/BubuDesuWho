@@ -47,7 +47,7 @@
     {
       "lyric_jp": "Oh! 奪い取れ Oh! お宝を",
       "parts": [
-        {"lyric": "Ohl! ubaitore",
+        {"lyric": "Oh! Ubaitore",
           "range": [71.22, 74.7], "ans": [2, 6, 9]},
         {"lyric": "Oh! Otakara wo",
           "range": [74.7, 77.81], "ans": [3, 4, 7]}

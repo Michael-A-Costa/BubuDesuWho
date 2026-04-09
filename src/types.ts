@@ -53,8 +53,8 @@ export interface SlotDetail {
   slots?: number[];
 }
 
-export type GroupName = 'muse' | 'aqours' | 'saint-aqours-snow' | 'wug';
-export type SortMode = 'date' | 'alpha' | 'group';
+export type GroupName = 'muse' | 'aqours' | 'saint-aqours-snow' | 'aqours-miku' | 'wug';
+export type SortMode = 'index' | 'date' | 'alpha';
 
 /** Processed slot ready for gameplay */
 export interface Slot {
@@ -127,6 +127,7 @@ export interface GameState {
   scrollLyricLock: number | null;
   callSFXch: number;
   sortMode: SortMode;
+  groupBySubunit: boolean;
   editMode: boolean;
   jpLyrics: boolean;
   controls: {
@@ -161,6 +162,11 @@ export const MEMBER_COLORS: Record<string, Record<number, string>> = {
     5: '#FB75E4', 6: '#898989', 7: '#F23B4C', 8: '#13E8AE', 9: '#AE58EB',
     10: '#3AA5DC', 11: '#FFFFFF',
   },
+  'aqours-miku': {
+    1: '#F0A20B', 2: '#49B9F9', 3: '#E9A9E8', 4: '#E6D617',
+    5: '#FB75E4', 6: '#898989', 7: '#F23B4C', 8: '#13E8AE', 9: '#AE58EB',
+    12: '#39C5BB',
+  },
   wug: {
     1: '#45AE4D', 2: '#DD418A', 3: '#F6C62A', 4: '#0D72BA',
     5: '#CC1C36', 6: '#935BAF', 7: '#00B2DC',
@@ -181,6 +187,11 @@ export const MEMBER_MAPPING: Record<GroupName, Record<number, string>> = {
     1: 'Chika', 2: 'You', 3: 'Riko', 4: 'Hanamaru',
     5: 'Ruby', 6: 'Yoshiko', 7: 'Dia', 8: 'Kanan', 9: 'Mari',
     10: 'Sarah', 11: 'Leah',
+  },
+  'aqours-miku': {
+    1: 'Chika', 2: 'You', 3: 'Riko', 4: 'Hanamaru',
+    5: 'Ruby', 6: 'Yoshiko', 7: 'Dia', 8: 'Kanan', 9: 'Mari',
+    12: 'Miku',
   },
   wug: {
     1: 'Mayu', 2: 'Airi', 3: 'Minami', 4: 'Yoshino',

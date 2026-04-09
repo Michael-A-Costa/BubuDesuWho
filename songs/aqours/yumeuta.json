@@ -3,6 +3,7 @@
   "ogg": "sound/yume_kataru_yori_yume_utaou.ogg",
   "id": "yumeuta",
   "group": "aqours",
+  "legacy": true,
   "released": "2016-08-24",
   "hidden": false,
   "slots": [

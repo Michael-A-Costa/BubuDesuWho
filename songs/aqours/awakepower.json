@@ -3,6 +3,7 @@
   "ogg": "sound/awaken_the_power.ogg",
   "id": "awakepower",
   "group": "saint-aqours-snow",
+  "legacy": true,
   "released": "2017-12-20",
   "subunit": "saint-aqours-snow",
   "hidden": false,

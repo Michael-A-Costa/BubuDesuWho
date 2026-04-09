@@ -3,6 +3,7 @@
   "ogg": "sound/yuuki_wa_doko_ni_kimi_no_mune_ni.ogg",
   "id": "yuukimi",
   "group": "aqours",
+  "legacy": true,
   "released": "2017-11-15",
   "hidden": false,
   "slots": [

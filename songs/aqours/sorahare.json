@@ -3,6 +3,7 @@
   "ogg": "sound/sora_mo_kokoro_mo_hareru_kara.ogg",
   "id": "sorahare",
   "group": "aqours",
+  "legacy": true,
   "released": "2016-10-26",
   "subunit": "2nd-years",
   "hidden": false,

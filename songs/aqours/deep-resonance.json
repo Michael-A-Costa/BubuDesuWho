@@ -9,34 +9,34 @@
   "slots": [
 
   ],
+  "generated": "2026-04-15T01:42:16Z",
   "lines": [
     {
       "lyric_jp": "誰にも届かない声が 闇を駆け抜け",
       "parts": [
         {"lyric": "Dare ni mo todokanai koe ga yami wo",
-          "range": [6.22, 14.2], "ans": [6]},
+          "range": [6.22, 14.55], "ans": [6]},
         {"lyric": "Kakenuke",
-          "range": [14.2, 32.6], "ans": []}
+          "range": [13.85, 17.74], "ans": []}
       ]
     },
     "",
     {"lyric": "Kibou wa koko kara umare koko de kieru no ka",
       "lyric_jp": "希望はここから生まれ ここで消えるのか",
-      "range": [32.6, 40.25], "ans": [6]},
-    {"lyric": "“chigau!” to",
-      "lyric_jp": "希望はここから生まれ ここで消えるのか",
-      "range": [40.25, 42.74], "ans": [6]},
+      "range": [32.6, 42.74], "ans": [6]},
     {
       "lyric_jp": "「違う！」と叫んだ 私の心で熱く燃える魂は",
       "parts": [
+        {"lyric": "“Chigau!” to",
+          "range": [42.74, 43.98], "ans": [6]},
         {"lyric": "Sakenda",
-          "range": [42.74, 43.98], "ans": [1, 2, 3, 4, 5, 7, 8, 9]},
+          "range": [44.64, 45.87], "ans": [1, 2, 3, 4, 5, 7, 8, 9], "diff": 2},
         {"lyric": "Watashi no",
-          "range": [43.98, 46.34], "ans": [6]},
+          "range": [45.17, 47.91], "ans": [6]},
         {"lyric": "Kokoro de",
-          "range": [46.34, 48.22], "ans": [1, 2, 3, 4, 5, 7, 8, 9]},
+          "range": [47.21, 49.61], "ans": [1, 2, 3, 4, 5, 7, 8, 9], "diff": 2},
         {"lyric": "Atsuku moeru tamashii wa",
-          "range": [48.22, 53.44], "ans": [6]}
+          "range": [48.91, 53.44], "ans": [6]}
       ]
     },
     "",
@@ -44,27 +44,27 @@
       "lyric_jp": "Fight back 暴れたいんだ もっと",
       "parts": [
         {"lyric": "Fight back",
-          "range": [53.07, 53.58], "ans": [1, 2, 4, 5, 6, 7, 8, 9]},
+          "range": [53.07, 54.44], "ans": [1, 2, 4, 5, 6, 7, 8, 9], "diff": 2},
         {"lyric": "Abaretainda motto",
-          "range": [53.58, 55.59], "ans": [3]}
+          "range": [53.74, 55.59], "ans": [3]}
       ]
     },
     {
       "lyric_jp": "Hurry up 信じたいんだ もっと",
       "parts": [
         {"lyric": "Hurry up",
-          "range": [55.49, 56.03], "ans": [1, 2, 4, 5, 6, 7, 8, 9]},
+          "range": [55.49, 56.7], "ans": [1, 2, 4, 5, 6, 7, 8, 9], "diff": 2},
         {"lyric": "Shinjitainda motto",
-          "range": [56.03, 58.09], "ans": [3]}
+          "range": [56, 58.09], "ans": [3]}
       ]
     },
     {
       "lyric_jp": "もっと？ やっと気がついた真実は",
       "parts": [
         {"lyric": "Motto?",
-          "range": [57.61, 58.09], "ans": [1, 2, 4, 5, 6, 7, 8, 9]},
+          "range": [57.61, 58.09], "ans": [1, 2, 4, 5, 6, 7, 8, 9], "diff": 2},
         {"lyric": "Yatto ki ga tsuita shinjitsu wa",
-          "range": [58.09, 62.53], "ans": [3]}
+          "range": [59.02, 62.53], "ans": [3]}
       ]
     },
     {"lyric": "Damattetara kanawanai",
@@ -74,9 +74,9 @@
       "lyric_jp": "願うだけじゃ叶わない 動き出すのは今さ",
       "parts": [
         {"lyric": "Negau dake ja kanawanai",
-          "range": [65.12, 69.16], "ans": [2]},
+          "range": [65.12, 68.75], "ans": [2]},
         {"lyric": "Ugokidasu no wa ima sa",
-          "range": [69.16, 73.59], "ans": [8]}
+          "range": [68.05, 73.59], "ans": [8]}
       ]
     },
     "",
@@ -91,25 +91,24 @@
       "range": [94.4, 100.6], "ans": []},
     {"lyric": "Kimi to no rezonansu... kanjiteru",
       "lyric_jp": "君とのレゾナンス... 感じてる",
-      "range": [100.6, 119.26], "ans": []},
+      "range": [100.6, 107.5], "ans": []},
     "",
     {"lyric": "Zetsubou ajiwau tame ni ikirun janai no sa",
       "lyric_jp": "絶望味わうために 生きるんじゃないのさ",
-      "range": [119.26, 126.94], "ans": [9]},
-    {"lyric": "“hashire!” to",
-      "lyric_jp": "絶望味わうために 生きるんじゃないのさ",
-      "range": [126.94, 129.71], "ans": [9]},
+      "range": [119.26, 129.71], "ans": [9]},
     {
       "lyric_jp": "「走れ！」と促す 私の心に過激な本能のホイッスルが",
       "parts": [
+        {"lyric": "“Hashire!” to",
+          "range": [129.71, 130.87], "ans": [9]},
         {"lyric": "Unagasu",
-          "range": [129.71, 130.87], "ans": [1, 2, 3, 4, 5, 6, 7, 8]},
+          "range": [131.57, 133.46], "ans": [1, 2, 3, 4, 5, 6, 7, 8], "diff": 2},
         {"lyric": "Watashi no",
-          "range": [130.87, 133.11], "ans": [9]},
+          "range": [132.76, 134.72], "ans": [9]},
         {"lyric": "Kokoro ni",
-          "range": [133.11, 135.07], "ans": [1, 2, 3, 4, 5, 6, 7, 8]},
+          "range": [134.02, 136.3], "ans": [1, 2, 3, 4, 5, 6, 7, 8], "diff": 2},
         {"lyric": "Kageki na honnou no hoissuru ga",
-          "range": [135.07, 140.26], "ans": [9]}
+          "range": [135.6, 140.26], "ans": [9]}
       ]
     },
     "",
@@ -129,9 +128,9 @@
       "lyric_jp": "勢いで叶うんだ 戦う気持ちさえあれば何とかなる",
       "parts": [
         {"lyric": "Ikioide kanaunda",
-          "range": [152.02, 155.07], "ans": [1, 2, 5]},
+          "range": [152.02, 156.44], "ans": [1, 2, 5]},
         {"lyric": "Tatakau kimochi sae areba nantoka naru",
-          "range": [155.07, 161.77], "ans": [3, 6, 9]}
+          "range": [155.74, 161.77], "ans": [3, 6, 9]}
       ]
     },
     "",
@@ -147,7 +146,7 @@
       "range": [182.47, 188.36], "ans": []},
     {"lyric": "Kimi to no rezonansu Deeper loving",
       "lyric_jp": "君とのレゾナンス Deeper loving",
-      "range": [188.36, 230.52], "ans": []},
+      "range": [188.36, 195.56], "ans": []},
     "",
     {"lyric": "Itami ga nageki ga kimi no yume wo musaboru",
       "lyric_jp": "痛みが 嘆きが 君の夢を貪る",
@@ -164,15 +163,17 @@
     {"lyric": "Kimi to no rezonansu... kanjiteru",
       "lyric_jp": "君とのレゾナンス... 感じてる",
       "range": [269.12, 278.05], "ans": []},
-    {"lyric": "Yami e to koe yo kakenukero",
+    {
       "lyric_jp": "闇へと 声よ駆け抜けろ",
-      "range": [271.48, 289.55], "ans": []},
-    "",
-    {"lyric": "(Wow)",
-      "lyric_jp": "(Wow)",
-      "range": [289.28, 291.79], "ans": [6]},
-    {"lyric": "(Wow Wow Wow Wow Yeah)",
-      "lyric_jp": "(Wow Wow Wow Wow Yeah)",
-      "range": [291.79, 298.18], "ans": [6]}
+      "parts": [
+        {"lyric": "Yami e to koe yo kakenukero",
+          "range": [278.05, 285.36], "ans": []},
+        {"lyric": "(Wow)",
+          "range": [284.66, 285.61], "ans": [6]},
+        {"lyric": "(Wow Wow Wow Wow Yeah)",
+          "range": [285.61, 286.21], "ans": [6]}
+      ]
+    },
+    ""
   ]
 }

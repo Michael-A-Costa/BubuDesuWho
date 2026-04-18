@@ -1,6 +1,7 @@
 {
   "name": "Seinaru Hi no Inori",
   "group": "aqours",
+  "legacy": true,
   "released": "2016-11-23",
   "id": "seinaru",
   "mp3": "sound/seinaru_hi_no_inori.mp3",

@@ -1,0 +1,295 @@
+{
+  "name": "WONDERFUL STORIES (V2)",
+  "ogg": "sound/wonderful_stories.ogg",
+  "id": "wonderful-stories-v2",
+  "group": "aqours",
+  "added": "2026-04",
+  "hidden": true,
+  "generated": "2026-04-17T01:12:46Z",
+  "slots": [
+
+  ],
+  "lines": [
+    {"lyric": "Yume wo kakete kita",
+      "lyric_jp": "",
+      "range": [0, 13.74], "ans": [1, 2, 3, 7, 8, 9]},
+    {
+      "lyric_jp": "You cheat and steal every day",
+      "parts": [
+        {"lyric": "Bokutachi no",
+          "range": [13.74, 15.25], "ans": [4, 5, 6]},
+        {"lyric": "Wonderful stories",
+          "range": [14.55, 16.64], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "Zenryoku de",
+          "range": [15.94, 17.57], "ans": [4, 5, 6]},
+        {"lyric": "Kagayaita",
+          "range": [16.87, 18.38], "ans": []}
+      ]
+    },
+    {"lyric": "Sutoorii, sa!",
+      "lyric_jp": "You're only human, it's okay",
+      "range": [18.38, 23], "ans": [1]},
+    {"lyric": "Don't bother with morality",
+      "lyric_jp": "Don't bother with morality",
+      "range": [23, 27.61], "ans": []},
+    "",
+    {
+      "lyric_jp": "It doesn't sound like fun to me",
+      "parts": [
+        {"lyric": "Mirai wo",
+          "range": [27.61, 28.28], "ans": [2, 3, 4, 5, 6, 7, 8, 9], "diff": 2},
+        {"lyric": "Itsumo itsumo oikakete ita",
+          "range": [27.66, 30.95], "ans": [1]},
+        {"lyric": "Todokisou de todokanai",
+          "range": [30.95, 33.22], "ans": [1]}
+      ]
+    },
+    {
+      "lyric_jp": "And if the truth gets in the way",
+      "parts": [
+        {"lyric": "Issho ni ite kurete arigatou",
+          "range": [32.22, 33.79], "ans": []},
+        {"lyric": "Dakara dakara kimi ni aeta yo",
+          "range": [33.09, 36.55], "ans": [1]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "Bend it, twist it, that's what I say",
+      "parts": [
+        {"lyric": "Tokubetsu na nanika sagasu bouken",
+          "range": [36.55, 38.19], "ans": [4, 5, 6]},
+        {"lyric": "Soshite koko ni kite",
+          "range": [37.75, 38.32], "ans": []},
+        {"lyric": "Yatto mitsuketa!",
+          "range": [37.89, 38.37], "ans": [1]},
+        {"lyric": "Hontou wa mattentanda yo",
+          "range": [40.85, 41.54], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "Bokutachi wa",
+          "range": [40.9, 41.91], "ans": [4, 5, 6]},
+        {"lyric": "Tarinai tte kibun kuyashikattanda",
+          "range": [41.24, 42.31], "ans": [7, 8, 9]},
+        {"lyric": "Motto hoshikunaru",
+          "range": [41.61, 42.39], "ans": [1, 2, 3]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "I wanna get in trouble with you",
+      "parts": [
+        {"lyric": "Nemuru kagayaki mezameru mae no chikara",
+          "range": [41.39, 42.35], "ans": []},
+        {"lyric": "Yume wo kakete kita",
+          "range": [41.92, 42.48], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "Bokutachi no",
+          "range": [42.05, 42.6], "ans": [4, 5, 6]},
+        {"lyric": "Monogatari",
+          "range": [42.18, 42.73], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "Ippai no",
+          "range": [42.3, 42.96], "ans": [4, 5, 6]},
+        {"lyric": "Omoide kara wa nagareru merodii",
+          "range": [42.43, 43.01], "ans": []},
+        {"lyric": "Atarashii yume ga kikoeru",
+          "range": [43.01, 43.53], "ans": []},
+        {"lyric": "Tooku e mata ikou yo dreaming days",
+          "range": [43.53, 44.36], "ans": []},
+        {"lyric": "Doko ni doko ni kotae arun darou",
+          "range": [43.66, 44.41], "ans": [2]},
+        {"lyric": "Dare ni kiite mo wakaranai",
+          "range": [44.41, 45.29], "ans": [3]},
+        {"lyric": "Minna motteta",
+          "range": [44.59, 45.83], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "Mune ni",
+          "range": [45.13, 46.01], "ans": [4, 5, 6]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "I wanna hit and run with you",
+      "parts": [
+        {"lyric": "Mirai sa",
+          "range": [45.98, 48.17], "ans": [1]},
+        {"lyric": "Hitori",
+          "range": [47.47, 49.55], "ans": [4]},
+        {"lyric": "Hitori",
+          "range": [48.85, 50.57], "ans": [5]}
+      ]
+    },
+    {"lyric": "I'm gonna be the air you breathe",
+      "lyric_jp": "I'm gonna be the air you breathe",
+      "range": [50.57, 54.85], "ans": []},
+    {"lyric": "Sorezore no michi",
+      "lyric_jp": "I'm gonna teach you to deceive",
+      "range": [54.85, 59], "ans": [4, 5], "diff": 2},
+    {"lyric": "It could be a wonderful world",
+      "lyric_jp": "It could be a wonderful world",
+      "range": [59, 64.24], "ans": []},
+    {"lyric": "If all of you could only see",
+      "lyric_jp": "If all of you could only see",
+      "range": [64.24, 68.54], "ans": []},
+    {"lyric": "Yagate erabu to shitteta no kai?",
+      "lyric_jp": "It would be a wonderful world",
+      "range": [68.54, 73.06], "ans": [6]},
+    {"lyric": "If everyone was just like me",
+      "lyric_jp": "If everyone was just like me",
+      "range": [73.06, 76.79], "ans": []},
+    "",
+    {"lyric": "Dame datte ii to hagemashiatte",
+      "lyric_jp": "Just like me",
+      "range": [76.79, 82.88], "ans": [8]},
+    {"lyric": "Muri datte itsuka iwanakunatta",
+      "lyric_jp": "",
+      "range": [87.4, 92.79], "ans": [9]},
+    {"lyric": "Datte yacchatta yo",
+      "lyric_jp": "This rotten place is just my style",
+      "range": [82.88, 87.4], "ans": [1, 2, 3, 4, 5, 6]},
+    {"lyric": "The smell of death just drives me wild",
+      "lyric_jp": "The smell of death just drives me wild",
+      "range": [87.4, 92.79], "ans": []},
+    {"lyric": "Ei tte yacchatta yo",
+      "lyric_jp": "Money's the root and that's for sure",
+      "range": [92.79, 96.73], "ans": [1, 2, 3, 4, 5, 6]},
+    {"lyric": "Kagayaite ikite mitai natte",
+      "lyric_jp": "That old disease with no known cure",
+      "range": [96.73, 101.24], "ans": [7]},
+    {
+      "lyric_jp": "So much sin, so much pain",
+      "parts": [
+        {"lyric": "Yatto mitsuketa!",
+          "range": [101.24, 102.27], "ans": []},
+        {"lyric": "Saikou no egao da yo",
+          "range": [101.57, 104.66], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "Kyou to iu hi wo",
+          "range": [104.66, 106.16], "ans": [4, 5, 6]}
+      ]
+    },
+    "",
+    "[next-col]",
+    {
+      "lyric_jp": "So many souls for me to gain",
+      "parts": [
+        {"lyric": "Sou negau",
+          "range": [105.94, 107.29], "ans": [4, 5, 6]},
+        {"lyric": "Kokoro de",
+          "range": [107.29, 110.88], "ans": [1, 2, 3, 4, 5, 6]}
+      ]
+    },
+    {"lyric": "Tanoshinde yo",
+      "lyric_jp": "I wanna kiss and tell with you",
+      "range": [110.69, 115.13], "ans": [1, 2, 3, 7, 8, 9]},
+    {
+      "lyric_jp": "I wanna go to hell with you",
+      "parts": [
+        {"lyric": "Aoi",
+          "range": [115.13, 115.76], "ans": [4, 5, 6]},
+        {"lyric": "Hane ga egaita kore kara no kidou tobou",
+          "range": [115.18, 120.39], "ans": []}
+      ]
+    },
+    {"lyric": "I'm gonna be the air you breathe",
+      "lyric_jp": "I'm gonna be the air you breathe",
+      "range": [119.4, 124.16], "ans": []},
+    {
+      "lyric_jp": "I'm gonna teach you to believe",
+      "parts": [
+        {"lyric": "Konna ni",
+          "range": [124.16, 124.69], "ans": [4, 5, 6]},
+        {"lyric": "Tsunagaru omoi wa",
+          "range": [124.21, 128.5], "ans": [1, 2, 3, 7, 8, 9]}
+      ]
+    },
+    {
+      "lyric_jp": "It could be a wonderful world",
+      "parts": [
+        {"lyric": "Atarashii yume wo yonderunda",
+          "range": [128.5, 130], "ans": []},
+        {"lyric": "Tooku de mata aou yo itsuka",
+          "range": [130, 131.96], "ans": []},
+        {"lyric": "Aoi tori",
+          "range": [131.26, 132.58], "ans": [1]},
+        {"lyric": "Sagashiteta",
+          "range": [131.88, 132.84], "ans": [2, 3, 4, 5, 6, 7, 8, 9], "diff": 2},
+        {"lyric": "Itsumademo",
+          "range": [132.84, 133.68], "ans": [4, 5, 6]},
+        {"lyric": "Kienai yo",
+          "range": [132.98, 134.06], "ans": [1, 2, 3, 7, 8, 9]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "If all of you could only see",
+      "parts": [
+        {"lyric": "Demo",
+          "range": [133.07, 134.74], "ans": [2, 3, 4, 5, 6, 7, 8, 9], "diff": 2},
+        {"lyric": "Kago ni wa ne",
+          "range": [134.04, 135.41], "ans": [1]},
+        {"lyric": "Suteki na kimochi wasurerarenai",
+          "range": [135.41, 138.67], "ans": []}
+      ]
+    },
+    {"lyric": "Mitsuketanda",
+      "lyric_jp": "It would be a wonderful world",
+      "range": [137.69, 142.24], "ans": [1]},
+    {
+      "lyric_jp": "If everyone was just like me",
+      "parts": [
+        {"lyric": "Ki ga tsuite",
+          "range": [142.24, 143.43], "ans": [1]},
+        {"lyric": "Irenaide",
+          "range": [142.73, 144.27], "ans": [2, 3, 4, 5, 6, 7, 8, 9], "diff": 2},
+        {"lyric": "Jiyuu ni tobasou",
+          "range": [143.57, 145.39], "ans": [1]},
+        {"lyric": "Yes!",
+          "range": [144.92, 145.44], "ans": [2, 3, 4, 5, 6, 7, 8, 9], "diff": 2},
+        {"lyric": "Kotae wa itsudemo",
+          "range": [145.44, 146.8], "ans": [1]}
+      ]
+    },
+    {"lyric": "Kono mune ni aru",
+      "lyric_jp": "It could be a wonderful world",
+      "range": [146.8, 151.51], "ans": [2, 3, 4, 5, 6, 7, 8, 9], "diff": 2},
+    {
+      "lyric_jp": "If everyone could only see",
+      "parts": [
+        {"lyric": "Mattentanda yo",
+          "range": [151.51, 152.78], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "Bokutachi wa",
+          "range": [152.08, 153.7], "ans": [4, 5, 6]},
+        {"lyric": "Minna motteta",
+          "range": [153, 154.62], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "Mune ni",
+          "range": [153.92, 155.17], "ans": [4, 5, 6]},
+        {"lyric": "Hikari ga aru yo",
+          "range": [154.47, 156.09], "ans": [2, 3, 4, 5, 6, 7, 8, 9], "diff": 2}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "It would be a wonderful world",
+      "parts": [
+        {"lyric": "Bokutachi no",
+          "range": [156.09, 156.76], "ans": [4, 5, 6]},
+        {"lyric": "Monogatari",
+          "range": [156.14, 157.05], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "Ippai no",
+          "range": [156.46, 157.45], "ans": [4, 5, 6]},
+        {"lyric": "Omoide kara wa nagareru merodii",
+          "range": [156.75, 158.18], "ans": []},
+        {"lyric": "Atarashii yume ga kikoeru",
+          "range": [158.18, 159.04], "ans": []},
+        {"lyric": "Itsuka mata hajimarunda yo tsugi no dreaming days",
+          "range": [159.04, 160.57], "ans": []},
+        {"lyric": "Souda ne",
+          "range": [159.98, 160.86], "ans": [1]},
+        {"lyric": "Hontou wa",
+          "range": [160.27, 160.91], "ans": [2, 3], "diff": 2}
+      ]
+    },
+    {"lyric": "Nemuru kagayaki mezameru mae no chikara",
+      "lyric_jp": "If all of you were just like me",
+      "range": [160.91, 164.42], "ans": []},
+    {"lyric": "Yume wo kakete kita",
+      "lyric_jp": "Just like me",
+      "range": [164.42, 167.46], "ans": [1, 2, 3, 7, 8, 9]}
+  ]
+}

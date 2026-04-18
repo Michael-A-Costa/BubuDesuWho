@@ -2,6 +2,7 @@
   "name": "Eien Friends",
   "id": "eien",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/eien_friends.mp3",
   "ogg": "sound/eien_friends.ogg",
   "mapping": [

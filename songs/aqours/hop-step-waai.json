@@ -9,13 +9,14 @@
   "slots": [
 
   ],
+  "generated": "2026-04-15T01:42:31Z",
   "lines": [
     {"lyric": "Kimeyou tsugi ni shitai koto",
       "lyric_jp": "決めよう 次にしたいこと",
       "range": [0.87, 7.25], "ans": []},
     {"lyric": "Kimi to asobitai warattetai",
       "lyric_jp": "君と遊びたい 笑ってたい",
-      "range": [7.25, 27.88], "ans": []},
+      "range": [7.25, 17.03], "ans": []},
     "",
     {"lyric": "Issho nara dekiru nandemo sou omotteru yo",
       "lyric_jp": "一緒ならできるなんでも そう思ってるよ",
@@ -100,14 +101,20 @@
       "lyric_jp": "嬉しいんだよ やっぱり言いたい気分",
       "parts": [
         {"lyric": "Ureshiinda yo",
-          "range": [177.93, 179.91], "ans": [4, 7, 8]},
+          "range": [177.93, 179.66], "ans": [4, 7, 8]},
         {"lyric": "Yappari iitai kibun",
-          "range": [179.91, 183.01], "ans": [3, 6, 9]}
+          "range": [178.96, 183.01], "ans": [3, 6, 9]}
       ]
     },
-    {"lyric": "Waai waat itsumo arigatou",
+    {
       "lyric_jp": "ワーイワーイ いつもありがとう",
-      "range": [183.01, 186.33], "ans": [1, 2, 5]},
+      "parts": [
+        {"lyric": "Waai waat",
+          "range": [183.01, 184.39], "ans": []},
+        {"lyric": "Itsumo arigatou",
+          "range": [183.69, 186.33], "ans": [1, 2, 5]}
+      ]
+    },
     {"lyric": "Nanka mata hajimarunda yo ne?",
       "lyric_jp": "なんかまた始まるんだよね?",
       "range": [186.33, 190.27], "ans": [4, 7, 8]},
@@ -115,11 +122,11 @@
       "lyric_jp": "始まるよ 始まりたがる みんな一緒だ!",
       "parts": [
         {"lyric": "Hajimaru yo",
-          "range": [190.27, 191.99], "ans": [3, 6, 9]},
+          "range": [190.27, 192.34], "ans": [3, 6, 9]},
         {"lyric": "Hajimaritagaru",
-          "range": [191.99, 193.89], "ans": [1, 2, 5]},
+          "range": [191.64, 193.68], "ans": [1, 2, 5]},
         {"lyric": "Minna issho da!",
-          "range": [193.89, 212.04], "ans": []}
+          "range": [192.98, 197.37], "ans": []}
       ]
     },
     "",
@@ -129,15 +136,18 @@
     {"lyric": "Hanarenai tte kimochi de",
       "lyric_jp": "離れないってキモチで",
       "range": [215.78, 219.1], "ans": []},
-    {"lyric": "Minna mo koe dasou",
+    {
       "lyric_jp": "みんなも声だそう",
-      "range": [219.1, 222.88], "ans": []},
-    {"lyric": "Hai",
-      "lyric_jp": "はいっ ",
-      "range": [222.88, 223.51], "ans": []},
-    {"lyric": "Hoppu*suteppu*waai!",
+      "parts": [
+        {"lyric": "Minna mo koe dasou",
+          "range": [219.1, 221.88], "ans": []},
+        {"lyric": "Hai",
+          "range": [221.88, 222.88], "ans": []}
+      ]
+    },
+    {"lyric": "HOPPUeSUTEPPUeWAAIT!",
       "lyric_jp": "はいっ ホップ・ステップ・ワーイ!",
-      "range": [223.51, 227.28], "ans": []},
+      "range": [222.88, 227.28], "ans": []},
     "",
     {"lyric": "Saa oide saa oide",
       "lyric_jp": "さあおいで さあおいで",

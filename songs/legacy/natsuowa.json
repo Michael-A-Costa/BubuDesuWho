@@ -1,6 +1,7 @@
 {
   "name": "Natsu, Owaranai de",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/natsu_owaranai_de.mp3",
   "ogg": "sound/natsu_owaranai_de.ogg",
   "id": "natsuowa",

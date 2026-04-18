@@ -164,7 +164,7 @@
         {"lyric": "Sunahama de kazoete mite mo",
           "range": [182.38, 182.6], "ans": [7]},
         {"lyric": "Sugita",
-          "range": [182.6, 183.34], "ans": [7, 8]},
+          "range": [182.6, 183.34], "ans": [7, 8], "diff": 2},
         {"lyric": "Hibi wa kaeranai",
           "range": [183.34, 183.45], "ans": [9]}
       ]

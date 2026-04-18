@@ -36,6 +36,7 @@ export interface SongConfig {
   subunit?: string;
   menu?: GroupName;
   cover?: string;
+  note?: 'unsynced';
 }
 
 export interface MappingEntry {
@@ -53,7 +54,7 @@ export interface SlotDetail {
   slots?: number[];
 }
 
-export type GroupName = 'muse' | 'aqours' | 'saint-aqours-snow' | 'aqours-miku' | 'wug';
+export type GroupName = 'muse' | 'aqours' | 'saint-aqours-snow' | 'aqours-miku' | 'wug' | 'nijigasaki';
 export type SortMode = 'index' | 'date' | 'alpha';
 
 /** Processed slot ready for gameplay */
@@ -147,6 +148,33 @@ export interface HistoryEntry {
   record: [number[], number[]][];
 }
 
+/** Fandom "Seiyuu Guide" brand palette. Enabled via html.palette-official. */
+export const MEMBER_COLORS_OFFICIAL: Record<string, Record<number, string>> = {
+  muse: {
+    1: '#F38500', 2: '#7AEEFF', 3: '#CEBFBF', 4: '#1769FF',
+    5: '#FFF832', 6: '#FF503E', 7: '#C455F6', 8: '#6AE673', 9: '#FF4F91',
+  },
+  aqours: {
+    1: '#FF9547', 2: '#66C0FF', 3: '#FF9EAC', 4: '#FFD010',
+    5: '#FF6FBE', 6: '#C1CAD4', 7: '#DB0839', 8: '#27C1B7', 9: '#C252C6',
+  },
+  'saint-aqours-snow': {
+    1: '#FF9547', 2: '#66C0FF', 3: '#FF9EAC', 4: '#FFD010',
+    5: '#FF6FBE', 6: '#C1CAD4', 7: '#DB0839', 8: '#27C1B7', 9: '#C252C6',
+    10: '#ADC7EC', 11: '#DDE6ED',
+  },
+  'aqours-miku': {
+    1: '#FF9547', 2: '#66C0FF', 3: '#FF9EAC', 4: '#FFD010',
+    5: '#FF6FBE', 6: '#C1CAD4', 7: '#DB0839', 8: '#27C1B7', 9: '#C252C6',
+    12: '#39C5BB',
+  },
+  nijigasaki: {
+    1: '#ED7D95', 2: '#E7D600', 3: '#01B7ED', 4: '#485EC6',
+    5: '#FF5800', 6: '#A664A0', 7: '#D81C2F', 8: '#84C36E', 9: '#9CA5B9',
+    10: '#37B484', 11: '#F8C8C4', 12: '#A9A898', 13: '#1D1D1D',
+  },
+};
+
 /** Member glow colors per group (from CSS text-shadow, used for sub-group gradients) */
 export const MEMBER_COLORS: Record<string, Record<number, string>> = {
   muse: {
@@ -170,6 +198,11 @@ export const MEMBER_COLORS: Record<string, Record<number, string>> = {
   wug: {
     1: '#45AE4D', 2: '#DD418A', 3: '#F6C62A', 4: '#0D72BA',
     5: '#CC1C36', 6: '#935BAF', 7: '#00B2DC',
+  },
+  nijigasaki: {
+    1: '#ED7D95', 2: '#E7D600', 3: '#01B7ED', 4: '#485EC6',
+    5: '#FF5800', 6: '#A664A0', 7: '#D81C2F', 8: '#84C36E', 9: '#9CA5B9',
+    10: '#37B484', 11: '#F8C8C4', 12: '#A9A898', 13: '#1D1D1D',
   },
 };
 
@@ -196,5 +229,10 @@ export const MEMBER_MAPPING: Record<GroupName, Record<number, string>> = {
   wug: {
     1: 'Mayu', 2: 'Airi', 3: 'Minami', 4: 'Yoshino',
     5: 'Nanami', 6: 'Kaya', 7: 'Miyu',
+  },
+  nijigasaki: {
+    1: 'Ayumu', 2: 'Kasumi', 3: 'Shizuku', 4: 'Karin',
+    5: 'Ai', 6: 'Kanata', 7: 'Setsuna', 8: 'Emma', 9: 'Rina',
+    10: 'Shioriko', 11: 'Lanzhu', 12: 'Mia', 13: 'Yu',
   },
 };

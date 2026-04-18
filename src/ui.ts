@@ -7,18 +7,20 @@ import {
   toggleJpLyrics, hasJpLyrics,
   toggleGlobalReveal, checkChoices, checkSlot, resetChoices, loadSong,
   restoreChoices, getDiffLabel, getNumSlotsDiff, makeASSObjectURL,
-  tick, initGameState, updateMeter,
+  tick, initGameState, updateMeter, refreshPaletteColors,
   setEditMode, setSlotSingers, setSlotDiff, setSlotLyric, insertMappingAfter, deleteSlot, exportEditedConfig,
 } from './game';
 import { getSongs, loadConfig, loadChangelog } from './config';
 import * as player from './player';
 import { setStorage, getStorage, loadHistory } from './storage';
 
+let preMuteVolume: number | null = null;
+
 // ─── Page: Play ─────────────────────────────────────────────────────
 export async function initPlayPage(): Promise<void> {
   player.initPlayer({
-    onTick(currentTime, duration) {
-      tick(currentTime);
+    onTick(currentTime, duration, didSeek) {
+      tick(currentTime, didSeek);
       updateProgressDisplay(currentTime, duration);
     },
   });
@@ -68,6 +70,29 @@ export async function initPlayPage(): Promise<void> {
   window.addEventListener('resize', resizeGameArea);
 
   initThemeToggle();
+  initPaletteToggle();
+}
+
+export function initPaletteToggle(): void {
+  const savedPalette = getStorage('palette');
+  if (savedPalette === 'official') {
+    document.documentElement.classList.add('palette-official');
+  }
+  updatePaletteToggleLabel();
+  document.getElementById('palette-toggle')?.addEventListener('click', () => {
+    const isOfficial = document.documentElement.classList.toggle('palette-official');
+    setStorage('palette', isOfficial ? 'official' : 'default');
+    updatePaletteToggleLabel();
+    refreshPaletteColors();
+  });
+}
+
+function updatePaletteToggleLabel(): void {
+  const btn = document.getElementById('palette-toggle');
+  if (!btn) return;
+  const isOfficial = document.documentElement.classList.contains('palette-official');
+  btn.title = isOfficial ? 'Switch to default color palette' : 'Switch to official color palette';
+  btn.classList.toggle('active', isOfficial);
 }
 
 export function initThemeToggle(): void {
@@ -91,6 +116,23 @@ function updateThemeToggleLabel(): void {
   btn.title = isDark ? 'Switch to light mode' : 'Switch to dark mode';
 }
 
+function attachInstantTip(el: HTMLElement, text: string): void {
+  let tip: HTMLElement | null = null;
+  el.addEventListener('mouseenter', () => {
+    tip = document.createElement('div');
+    tip.className = 'slot-tooltip';
+    tip.textContent = text;
+    document.body.appendChild(tip);
+    const rect = el.getBoundingClientRect();
+    tip.style.top = `${rect.bottom + window.scrollY + 4}px`;
+    tip.style.left = `${rect.left + window.scrollX + rect.width / 2 - tip.offsetWidth / 2}px`;
+  });
+  el.addEventListener('mouseleave', () => {
+    tip?.remove();
+    tip = null;
+  });
+}
+
 function selectSong(song: Song): void {
   loadSong(song);
 
@@ -104,9 +146,18 @@ function selectSong(song: Song): void {
   if (playBtn) playBtn.style.display = '';
   if (pauseBtn) pauseBtn.style.display = 'none';
 
-  document.title = `GanbaWhoby - ${song.name}`;
+  document.title = `BubuDesuWho - ${song.name}`;
   const titleEl = document.getElementById('song-title');
-  if (titleEl) titleEl.textContent = song.name;
+  if (titleEl) {
+    titleEl.textContent = song.name;
+    if (song.note === 'unsynced') {
+      const badge = document.createElement('span');
+      badge.className = 'unsynced-badge';
+      badge.textContent = '≈ timing approx';
+      attachInstantTip(badge, 'Lyric timing was derived from speech recognition — positions may drift');
+      titleEl.appendChild(badge);
+    }
+  }
 
   const coverEl = document.getElementById('song-cover') as HTMLImageElement | null;
   if (coverEl) {
@@ -193,6 +244,10 @@ export function createSlotElement(slot: Slot, group: GroupName): HTMLElement {
 
   clone.id = `slot${slot.id}`;
   clone.dataset.diff = String(slot.diff);
+
+  if (group === 'nijigasaki' && !state.singers.includes(13)) {
+    clone.querySelector('.nijigasaki-yu-row')?.remove();
+  }
 
   // time range
   const timeRange = clone.querySelector('.timerange')!;
@@ -375,13 +430,17 @@ export function createSlotElement(slot: Slot, group: GroupName): HTMLElement {
   revealOffBtn.style.display = 'none';
   revealOffBtn.addEventListener('click', () => toggleReveal(slot, false));
 
-  // buttons — disable singers not in the song, bind click handlers
+  // buttons — disable solo buttons for missing singers; filter multi-member
+  // (year/subunit) buttons to only present members.
   clone.querySelectorAll<HTMLElement>('.slot-body button[data-value]').forEach((btn) => {
     const members = btn.dataset.value!.split(',').map(Number);
-    const disabled = members.some((m) => !state.singers.includes(m));
-    if (disabled) {
+    const present = members.filter((m) => state.singers.includes(m));
+    if (present.length === 0) {
       btn.classList.add('disabled');
+    } else if (members.length === 1) {
+      btn.addEventListener('click', () => toggleChoice(btn, slot));
     } else {
+      btn.dataset.value = present.join(',');
       btn.addEventListener('click', () => toggleChoice(btn, slot));
     }
     btn.addEventListener('mouseup', () => btn.blur());
@@ -559,11 +618,11 @@ function switchGroup(group: GroupName, songs: Song[]): void {
 
   // set group class on html + sidebar for group-specific default colors
   const htmlEl = document.documentElement;
-  htmlEl.classList.remove('group-muse', 'group-aqours', 'group-wug');
+  htmlEl.classList.remove('group-muse', 'group-aqours', 'group-wug', 'group-nijigasaki');
   htmlEl.classList.add(`group-${group}`);
   const sidebar = document.getElementById('sidebar');
   if (sidebar) {
-    sidebar.classList.remove('group-muse', 'group-aqours', 'group-wug');
+    sidebar.classList.remove('group-muse', 'group-aqours', 'group-wug', 'group-nijigasaki');
     sidebar.classList.add(`group-${group}`);
   }
 
@@ -606,7 +665,14 @@ function switchGroup(group: GroupName, songs: Song[]): void {
 
     const nameSpan = document.createElement('span');
     nameSpan.className = 'song-name';
-    nameSpan.textContent = song.name;
+    if (song.note === 'unsynced') {
+      const mark = document.createElement('span');
+      mark.className = 'unsynced-mark';
+      mark.textContent = '≈';
+      attachInstantTip(mark, 'Lyric timing approximate');
+      nameSpan.appendChild(mark);
+    }
+    nameSpan.appendChild(document.createTextNode(song.name));
     a.appendChild(nameSpan);
 
     const attrsSpan = document.createElement('span');
@@ -740,7 +806,7 @@ function bindPlayControls(): void {
   document.getElementById('diff')?.addEventListener('click', () => {
     toggleDiff();
     updateDiffButton();
-    if (state.song) setStorage(state.song.id + '-diff', String(state.diff));
+    setStorage('diff', String(state.diff));
   });
 
   document.getElementById('lyrics-button')?.addEventListener('click', () => {
@@ -830,9 +896,25 @@ function bindPlayControls(): void {
     const el = e.currentTarget as HTMLElement;
     const rect = el.getBoundingClientRect();
     const vol = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+    preMuteVolume = null;
     player.setVolume(vol);
     setStorage('volume', String(vol));
     updateVolumeDisplay(vol);
+  });
+
+  // mute button — toggle mute/unmute
+  document.querySelector('.jp-mute')?.addEventListener('click', () => {
+    if (preMuteVolume !== null) {
+      player.setVolume(preMuteVolume);
+      setStorage('volume', String(preMuteVolume));
+      updateVolumeDisplay(preMuteVolume);
+      preMuteVolume = null;
+    } else {
+      preMuteVolume = player.getVolume();
+      player.setVolume(0);
+      setStorage('volume', '0');
+      updateVolumeDisplay(0);
+    }
   });
 
 
@@ -924,6 +1006,11 @@ function updateProgressDisplay(currentTime: number, duration: number): void {
 function updateVolumeDisplay(vol: number): void {
   const bar = document.getElementById('volume-bar');
   if (bar) bar.style.width = `${vol * 100}%`;
+  const icon = document.querySelector('.jp-mute .glyphicon');
+  if (icon) {
+    icon.classList.toggle('glyphicon-volume-down', vol > 0);
+    icon.classList.toggle('glyphicon-volume-off', vol === 0);
+  }
 }
 
 function applyLyricsMode(mode: number): void {
@@ -1001,8 +1088,10 @@ export function switchTheme(theme: string | null): void {
   // wrap each word in song title with <span class="word"> for per-word theming
   const titleEl = document.getElementById('song-title');
   if (titleEl) {
-    const text = titleEl.textContent ?? '';
+    const badge = titleEl.querySelector('.unsynced-badge');
+    const text = (badge ? (titleEl.firstChild?.textContent ?? '') : (titleEl.textContent ?? ''));
     titleEl.innerHTML = text.replace(/(\S+)/g, '<span class="word">$1</span>');
+    if (badge) titleEl.appendChild(badge);
   }
 }
 

@@ -15,7 +15,7 @@
         {"lyric": "Minna shoujiki ni ne ikiyou yo",
           "range": [12.31, 16.11], "ans": [9]},
         {"lyric": "Uso wa",
-          "range": [16.11, 16.99], "ans": [3, 6]},
+          "range": [16.11, 16.99], "ans": [3, 6], "diff": 2},
         {"lyric": "Jikan no",
           "range": [16.99, 17.87], "ans": [9]},
         {"lyric": "Muda muda",
@@ -27,11 +27,11 @@
       "lyric_jp": "ずっと心を閉ざして眠ったまま",
       "parts": [
         {"lyric": "Kyori ga tooku tatte yonde hoshii",
-          "range": [19.03, 20.34], "ans": [3, 6]},
+          "range": [19.03, 20.34], "ans": [3, 6], "diff": 2},
         {"lyric": "(Go away!)",
           "range": [20.34, 21.76], "ans": [9]},
         {"lyric": "Muri na koto nante nai yo nain datteba",
-          "range": [21.76, 23.2], "ans": [3, 6]},
+          "range": [21.76, 23.2], "ans": [3, 6], "diff": 2},
         {"lyric": "Donna ni donna ni donna ni tsurakute mo",
           "range": [23.2, 25.96], "ans": [9]}
       ]
@@ -40,7 +40,7 @@
       "lyric_jp": "いいの？よくない！目を覚まして欲しいよ",
       "parts": [
         {"lyric": "Koko ni",
-          "range": [25.35, 26.31], "ans": [3, 6]},
+          "range": [25.35, 26.31], "ans": [3, 6], "diff": 2},
         {"lyric": "Watashi ga",
           "range": [26.31, 28.91], "ans": [9]},
         {"lyric": "Iru yo iru yo",
@@ -58,9 +58,9 @@
       "lyric_jp": "深海からの溜息聞こえた",
       "parts": [
         {"lyric": "Hashire",
-          "range": [35.62, 36.39], "ans": [3, 6]},
+          "range": [35.62, 36.39], "ans": [3, 6], "diff": 2},
         {"lyric": "Kurai",
-          "range": [36.39, 36.7], "ans": [3, 6]},
+          "range": [36.39, 36.7], "ans": [3, 6], "diff": 2},
         {"lyric": "Sora wo mabushiku hikisaite",
           "range": [36.7, 42.6], "ans": [9]}
       ]
@@ -97,7 +97,7 @@
         {"lyric": "Hotto shita kara",
           "range": [72.01, 73.3], "ans": [6]},
         {"lyric": "Icchau icchau",
-          "range": [73.3, 74.59], "ans": [3, 9]},
+          "range": [73.3, 74.59], "ans": [3, 9], "diff": 2},
         {"lyric": "Kyou mo seiippai ikiyou yo",
           "range": [74.59, 77.73], "ans": [6]}
       ]
@@ -106,7 +106,7 @@
       "lyric_jp": "探すんだ 君の気配",
       "parts": [
         {"lyric": "Kotoba wa",
-          "range": [76.76, 77.5], "ans": [3, 9]},
+          "range": [76.76, 77.5], "ans": [3, 9], "diff": 2},
         {"lyric": "Zenbu",
           "range": [77.5, 79.8], "ans": [6]},
         {"lyric": "Honne honne",
@@ -116,17 +116,17 @@
     "",
     {"lyric": "Jibun to jibun to no tatakai da (Fighting!)",
       "lyric_jp": "連れ出すよ君のこと 地上へと Oh",
-      "range": [89.85, 93.31], "ans": [3, 9]},
+      "range": [89.85, 93.31], "ans": [3, 9], "diff": 2},
     {"lyric": "Nigete shimau nante nai yo nain datteba",
       "lyric_jp": "連れ出すよ君のこと 地上へと Oh",
-      "range": [93.31, 96.41], "ans": [3, 9]},
+      "range": [93.31, 96.41], "ans": [3, 9], "diff": 2},
     {
       "lyric_jp": "だから目を覚ましてよ ここに私がいるよ",
       "parts": [
         {"lyric": "Donna ni donna ni donna ni kowakute mo",
           "range": [95.44, 100.33], "ans": [6]},
         {"lyric": "Issho ni",
-          "range": [100.33, 102.07], "ans": [3, 9]},
+          "range": [100.33, 102.07], "ans": [3, 9], "diff": 2},
         {"lyric": "Watashi ga",
           "range": [102.07, 103.09], "ans": [6]},
         {"lyric": "Iru yo iru yo",
@@ -142,7 +142,7 @@
         {"lyric": "Nagareboshi wa kitto",
           "range": [109.4, 110.08], "ans": [3]},
         {"lyric": "Minna no negai",
-          "range": [110.08, 110.48], "ans": [6, 9]},
+          "range": [110.08, 110.48], "ans": [6, 9], "diff": 2},
         {"lyric": "Uketome nagara kagayaite",
           "range": [110.48, 114.72], "ans": [3]}
       ]
@@ -174,16 +174,16 @@
     },
     {"lyric": "Mitai ni hashire hashire",
       "lyric_jp": "繭を壊してしまえば 君は私のもの",
-      "range": [143.52, 144.58], "ans": [3, 6]},
+      "range": [143.52, 144.58], "ans": [3, 6], "diff": 2},
     {"lyric": "Negaigoto minna uketomete",
       "lyric_jp": "繭を壊してしまえば 君は私のもの",
-      "range": [144.58, 146.98], "ans": [3, 6]},
+      "range": [144.58, 146.98], "ans": [3, 6], "diff": 2},
     {"lyric": "Sou nagareboshi mitai ni hashire hashire",
       "lyric_jp": "繭を壊してしまえば 君は私のもの",
-      "range": [146.98, 149.98], "ans": [3, 6]},
+      "range": [146.98, 149.98], "ans": [3, 6], "diff": 2},
     {"lyric": "Kimi no negai datte kanaunda",
       "lyric_jp": "繭を壊してしまえば 君は私のもの",
-      "range": [149.98, 168.65], "ans": [3, 6]},
+      "range": [149.98, 168.65], "ans": [3, 6], "diff": 2},
     "",
     "[next-col]",
     {"lyric": "Uso janai",
@@ -211,7 +211,7 @@
         {"lyric": "Soredemo mata",
           "range": [175.56, 176.53], "ans": [9]},
         {"lyric": "Shinjitai yo",
-          "range": [176.53, 176.99], "ans": [3, 6]},
+          "range": [176.53, 176.99], "ans": [3, 6], "diff": 2},
         {"lyric": "Aeta kara, ne!",
           "range": [176.99, 180.19], "ans": [9]}
       ]

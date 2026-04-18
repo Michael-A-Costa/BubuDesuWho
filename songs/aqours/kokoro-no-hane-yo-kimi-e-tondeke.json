@@ -9,6 +9,7 @@
   "slots": [
 
   ],
+  "generated": "2026-04-15T01:43:30Z",
   "lines": [
     {"lyric": "Aa, kawatte yuku",
       "lyric_jp": "ああ、変わってゆく",
@@ -43,9 +44,9 @@
       "lyric_jp": "いつだって一緒 一緒に遊ぼうよ",
       "parts": [
         {"lyric": "Itsudatte issho issho ni",
-          "range": [58.6, 63.52], "ans": [4]},
+          "range": [58.6, 65.19], "ans": [4]},
         {"lyric": "Asobou yo",
-          "range": [63.52, 68.78], "ans": [4, 7, 8]}
+          "range": [64.49, 68.78], "ans": [4, 7, 8]}
       ]
     },
     "",
@@ -89,9 +90,9 @@
       "lyric_jp": "これからだって 一緒に遊ぶんだ",
       "parts": [
         {"lyric": "Kore kara datte issho ni",
-          "range": [135.03, 140.35], "ans": [5]},
+          "range": [135.03, 141.8], "ans": [5]},
         {"lyric": "Asobunda",
-          "range": [140.35, 145.28], "ans": [1, 2, 5]}
+          "range": [141.1, 145.28], "ans": [1, 2, 5]}
       ]
     },
     "",
@@ -122,14 +123,14 @@
       "lyric_jp": "君との明日なんだよいつも",
       "range": [191.43, 196.03], "ans": [3]},
     {"lyric": "Tanoshisa to setsunasa wa nande tonari ni arun darou",
-      "lyric_jp": "楽しさと切なさはなんで",
-      "range": [196.03, 200.18], "ans": [9]},
+      "lyric_jp": "楽しさと切なさはなんで 隣にあるんだろう",
+      "range": [196.03, 203.45], "ans": [9]},
     {"lyric": "Nande darou ne",
       "lyric_jp": "なんでだろうね",
       "range": [203.45, 209.85], "ans": [3, 6, 9]},
     {"lyric": "Kokoro no hane yo kimi e tondeke!",
       "lyric_jp": "心の羽よ君へ飛んでけ！",
-      "range": [209.85, 219.87], "ans": []},
+      "range": [209.85, 218], "ans": []},
     "",
     {"lyric": "Kokoro no hane wa bokura no kibou",
       "lyric_jp": "心の羽は僕らの希望",
@@ -148,6 +149,6 @@
       "range": [245.64, 253.76], "ans": []},
     {"lyric": "Sora to umi no kyoukai no yoake",
       "lyric_jp": "空と海の境界の夜明け",
-      "range": [253.76, 286.2], "ans": []}
+      "range": [253.76, 260.9], "ans": []}
   ]
 }

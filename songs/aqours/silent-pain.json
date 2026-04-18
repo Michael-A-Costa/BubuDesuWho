@@ -9,24 +9,29 @@
   "slots": [
 
   ],
+  "generated": "2026-04-16T03:50:34Z",
   "lines": [
     {"lyric": "There’s nothing... karappo no kokoro iro no nai shizuke sa",
-      "lyric_jp": "There's nothing 空っぽのココロ",
-      "range": [13.73, 17.88], "ans": [1]},
+      "lyric_jp": "There's nothing 空っぽのココロ 色のない 静けさ",
+      "range": [13.73, 20.66], "ans": [1]},
     {"lyric": "Kokyuu no Tiny sounds tozashita mune no Doors",
       "lyric_jp": "呼吸の tiny sounds 閉ざした 胸の doors",
       "range": [20.66, 26.95], "ans": [3]},
     {"lyric": "Jounetsu wa, jitsu wa (Why...?)",
       "lyric_jp": "情熱は 実は (why?)",
       "range": [26.95, 30.56], "ans": [1]},
-    {"lyric": "Nagashita namida yori Fragile",
+    {
       "lyric_jp": "流した涙より fragile (why?)",
-      "range": [30.56, 34.16], "ans": [1]},
-    {"lyric": "(Why...?)",
-      "range": [32.16, 34.16], "ans": []},
+      "parts": [
+        {"lyric": "Nagashita namida yori Fragile",
+          "range": [30.56, 33.95], "ans": [1]},
+        {"lyric": "(Why...?)",
+          "range": [33.25, 34.1], "ans": []}
+      ]
+    },
     {"lyric": "Minamo yurameku Moon light",
       "lyric_jp": "水面 揺らめく moonlight",
-      "range": [34.16, 39.9], "ans": [1, 3]},
+      "range": [34.16, 39.9], "ans": [1, 3], "diff": 2},
     "",
     {"lyric": "Yuunagi ga yami ni tokeru sono mae no",
       "lyric_jp": "夕凪が 闇に溶ける その前の",
@@ -62,26 +67,38 @@
     "",
     {"lyric": "Kitto, todoku yo ne",
       "lyric_jp": "きっと 届くよね",
-      "range": [98.13, 105.94], "ans": []},
+      "range": [98.13, 104.17], "ans": []},
     "",
-    {"lyric": "Nee, sotto ima kara",
+    {
       "lyric_jp": "ねぇ そっと 現在から（逃げ出して）",
-      "range": [105.94, 108.04], "ans": [4]},
-    {"lyric": "Atarashii hibi to",
-      "lyric_jp": "ねぇ そっと 現在から（逃げ出して）",
-      "range": [108.04, 109.34], "ans": [4]},
-    {"lyric": "(nigedashite)",
-      "range": [107.33, 109.33], "ans": []},
-    {"lyric": "(ikite yuku)",
-      "range": [107.33, 109.33], "ans": []},
+      "parts": [
+        {"lyric": "Nee, sotto ima kara",
+          "range": [105.94, 108.39], "ans": [4]},
+        {"lyric": "(nigedashite)",
+          "range": [107.97, 109.34], "ans": []}
+      ]
+    },
+    {
+      "lyric_jp": "新しい日々と（生きてゆく）",
+      "parts": [
+        {"lyric": "Atarashii hibi to",
+          "range": [109.33, 111.49], "ans": [4]},
+        {"lyric": "(ikite yuku)",
+          "range": [112.37, 112.73], "ans": []}
+      ]
+    },
     {"lyric": "Sonna koto bakari ukande wa kieru",
       "lyric_jp": "そんな事ばかり 浮かんでは消える",
       "range": [112.39, 115.67], "ans": [2]},
-    {"lyric": "Somebody...",
+    {
       "lyric_jp": "Somebody (help me)",
-      "range": [115.67, 117.69], "ans": [2, 4]},
-    {"lyric": "(help me...)",
-      "range": [115.69, 117.69], "ans": []},
+      "parts": [
+        {"lyric": "Somebody...",
+          "range": [115.67, 116.78], "ans": [2, 4], "diff": 2},
+        {"lyric": "(help me...)",
+          "range": [116.3, 117.74], "ans": []}
+      ]
+    },
     "",
     {"lyric": "Fumidashita ippo ga yukusaki wo sorete",
       "lyric_jp": "踏み出した 一歩が 行く先を逸れて",
@@ -107,22 +124,26 @@
       "lyric_jp": "そこにある ヒカリ",
       "range": [158.42, 162.47], "ans": []},
     "",
-    {"lyric": "Namioto no serenaade disukoodo shisou na girigiri de",
+    {
       "lyric_jp": "波音のセレナーデ ディスコードしそうな ギリギリで",
-      "range": [162.47, 169.42], "ans": [3, 6, 9]},
-    {"lyric": "(Sou)",
-      "range": [167.42, 169.42], "ans": []},
+      "parts": [
+        {"lyric": "Namioto no serenaade disukoodo shisou na girigiri de",
+          "range": [162.47, 169.42], "ans": [3, 6, 9]},
+        {"lyric": "(Sou)",
+          "range": [169.67, 170.52], "ans": []}
+      ]
+    },
     {
       "lyric_jp": "（そう）それでも（夢）を唄おう",
       "parts": [
         {"lyric": "Soredemo",
-          "range": [169.42, 171.3], "ans": [1, 2, 5]},
+          "range": [169.42, 171.05], "ans": [1, 2, 5]},
+        {"lyric": "(yume)",
+          "range": [170.35, 171.34], "ans": []},
         {"lyric": "Wo utaou",
-          "range": [171.3, 173.18], "ans": [4, 7, 8]}
+          "range": [171.34, 172.94], "ans": [4, 7, 8]}
       ]
     },
-    {"lyric": "(yume)",
-      "range": [170.94, 172.94], "ans": []},
     {"lyric": "Kono itami mo ukeirete saa, Next wave",
       "lyric_jp": "この痛みも 受け入れて さぁ next wave",
       "range": [172.94, 182.2], "ans": []},
@@ -134,18 +155,18 @@
       "lyric_jp": "大きくなって ノイズになった",
       "parts": [
         {"lyric": "Ookiku natte",
-          "range": [184.38, 185.59], "ans": [3, 6, 9]},
+          "range": [184.38, 185.94], "ans": [3, 6, 9]},
         {"lyric": "Noizu ni natta",
-          "range": [185.59, 187.34], "ans": [6]}
+          "range": [185.24, 187.34], "ans": [6]}
       ]
     },
     {
       "lyric_jp": "でも それは 前に進みたいって 思うから",
       "parts": [
         {"lyric": "Demo, sore wa",
-          "range": [187.34, 188.18], "ans": [3, 6, 9]},
+          "range": [187.34, 188.89], "ans": [3, 6, 9]},
         {"lyric": "Mae ni susumitai tte omou kara",
-          "range": [188.18, 191.17], "ans": [6]}
+          "range": [188.19, 191.17], "ans": [6]}
       ]
     },
     {"lyric": "Mezashita basho ga zutto, zutto kagayaite iru kara",
@@ -159,11 +180,11 @@
       "lyric_jp": "Silent pain 感じてる \"葛藤は希望\" (yeah, yeah!)",
       "parts": [
         {"lyric": "Silent pain",
-          "range": [196.63, 198.37], "ans": []},
+          "range": [196.63, 197.91], "ans": []},
         {"lyric": "(pain Yeah)",
-          "range": [198.37, 200.01], "ans": [6]},
+          "range": [197.09, 199.98], "ans": [6]},
         {"lyric": "Kanjiteru “kattou wa kibou”",
-          "range": [200.01, 203.8], "ans": []}
+          "range": [199.28, 203.8], "ans": []}
       ]
     },
     {"lyric": "Shinjite mo shinjite mo dame ni narisou de",
@@ -179,12 +200,15 @@
       "lyric_jp": "明日を描くなら 君に 届くかな？",
       "range": [220.62, 228.44], "ans": []},
     "",
-    {"lyric": "Silent pain",
+    {
       "lyric_jp": "(Ah-ah-ah-ah-ah) silent pain",
-      "range": [228.44, 229.86], "ans": [6]},
-    {"lyric": "Silent pain Yeah",
-      "lyric_jp": "(Ah-ah-ah-ah-ah) silent pain",
-      "range": [229.86, 231.82], "ans": [6]},
+      "parts": [
+        {"lyric": "Silent pain",
+          "range": [228.44, 230.06], "ans": [6]},
+        {"lyric": "Silent pain Yeah",
+          "range": [230.06, 231.82], "ans": [6]}
+      ]
+    },
     {"lyric": "(Ah-ah-ah-ah-ah, ah) silent pain",
       "lyric_jp": "(Ah-ah-ah-ah-ah, ah) silent pain",
       "range": [231.82, 235.51], "ans": []},
@@ -194,6 +218,6 @@
     "",
     {"lyric": "Kitto, todoku yo ne",
       "lyric_jp": "きっと 届くよね",
-      "range": [238.06, 249], "ans": []}
+      "range": [238.06, 244], "ans": []}
   ]
 }

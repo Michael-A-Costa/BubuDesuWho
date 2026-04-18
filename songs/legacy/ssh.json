@@ -2,6 +2,7 @@
   "name": "Sweet&Sweet Holiday",
   "id": "ssh",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/sweet_sweet_holiday.mp3",
   "ogg": "sound/sweet_sweet_holiday.ogg",
   "mapping": [

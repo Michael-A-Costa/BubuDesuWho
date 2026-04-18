@@ -2,6 +2,7 @@
   "id": "nairabu",
   "name": "Nightingale Love Song",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/nightingale_love_song.mp3",
   "ogg": "sound/nightingale_love_song.ogg",
   "mapping": [

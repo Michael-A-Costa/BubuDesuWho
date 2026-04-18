@@ -1,6 +1,7 @@
 {
   "name": "SUNNY DAY SONG",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/sunny_day_song.mp3",
   "ogg": "sound/sunny_day_song.ogg",
   "id": "sds",

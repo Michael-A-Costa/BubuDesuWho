@@ -4,6 +4,7 @@
   "mp3": "sound/mogyutto_love_de_sekkin_chuu.mp3",
   "ogg": "sound/mogyutto_love_de_sekkin_chuu.ogg",
   "group": "muse",
+  "legacy": true,
   "mapping": [
     {
       "range": [

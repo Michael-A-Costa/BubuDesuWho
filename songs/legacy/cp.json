@@ -2,6 +2,7 @@
   "name": "Cutie Panther",
   "id": "cp",
   "group": "muse",
+  "legacy": true,
   "ogg": "sound/cutie_panther.ogg",
   "mp3": "sound/cutie_panther.mp3",
   "mapping": [

@@ -1,6 +1,7 @@
 {
   "name": "Love Novels",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/love_novels.mp3",
   "ogg": "sound/love_novels.ogg",
   "id": "rabunobe",

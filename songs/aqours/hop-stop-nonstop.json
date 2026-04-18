@@ -9,6 +9,7 @@
   "slots": [
 
   ],
+  "generated": "2026-04-15T01:42:33Z",
   "lines": [
     {"lyric": "Nonstop nonstop the music",
       "lyric_jp": "Nonstop! Nonstop! The music",
@@ -17,25 +18,31 @@
       "lyric_jp": "Nonstop! Nonstop the hopping heart ah!",
       "range": [17.21, 22.78], "ans": []},
     "",
-    {"lyric": "Nante nante chiisana bokura nanda",
+    {
       "lyric_jp": "なんてなんて ちいさな僕らなんだ でもでも",
-      "range": [22.78, 26.94], "ans": [5]},
-    {"lyric": "Demo demo",
-      "lyric_jp": "なんてなんて ちいさな僕らなんだ でもでも",
-      "range": [26.94, 28.63], "ans": [5]},
-    {"lyric": "Nanka nanka ippai wakatte kita",
+      "parts": [
+        {"lyric": "Nante nante chiisana bokura nanda",
+          "range": [22.78, 27.04], "ans": [5]},
+        {"lyric": "Demo demo",
+          "range": [27.04, 28.63], "ans": [5]}
+      ]
+    },
+    {
       "lyric_jp": "なんかなんか いっぱい解ってきた もっともっと",
-      "range": [28.63, 32.89], "ans": [6]},
-    {"lyric": "Motto motto",
-      "lyric_jp": "なんかなんか いっぱい解ってきた もっともっと",
-      "range": [32.89, 34.74], "ans": [6]},
+      "parts": [
+        {"lyric": "Nanka nanka ippai wakatte kita",
+          "range": [28.63, 33.05], "ans": [6]},
+        {"lyric": "Motto motto",
+          "range": [33.05, 34.74], "ans": [6]}
+      ]
+    },
     {
       "lyric_jp": "夢が見たいよ yes!",
       "parts": [
         {"lyric": "Yume ga mitai yo",
-          "range": [34.74, 37.01], "ans": [4]},
+          "range": [34.74, 37.31], "ans": [4]},
         {"lyric": "(Yes!)",
-          "range": [37.01, 37.56], "ans": [4, 5, 6]}
+          "range": [36.61, 37.56], "ans": [4, 5, 6]}
       ]
     },
     "",
@@ -65,9 +72,9 @@
       "lyric_jp": "それには自由なツバサで Fly away!!",
       "parts": [
         {"lyric": "Sore ni wa jiyuu na tsubasa de",
-          "range": [58.27, 62.37], "ans": [1]},
+          "range": [58.27, 61.44], "ans": [1]},
         {"lyric": "Fly away!!",
-          "range": [62.37, 63.76], "ans": [1, 2, 3]}
+          "range": [60.74, 63.76], "ans": [1, 2, 3]}
       ]
     },
     "",
@@ -80,7 +87,7 @@
         {"lyric": "Odoreba",
           "range": [67.36, 67.91], "ans": [7, 8, 9]},
         {"lyric": "Hitotsu ni naru yo sekaijuu ga",
-          "range": [67.91, 73.24], "ans": [1, 2, 3, 4, 5, 6]}
+          "range": [68.48, 73.24], "ans": [1, 2, 3, 4, 5, 6]}
       ]
     },
     {"lyric": "Come on! Come on! Come on!",
@@ -96,29 +103,31 @@
       "lyric_jp": "(踊れば) ココロつながってくみんなと",
       "parts": [
         {"lyric": "Odoreba",
-          "range": [79.2, 80.49], "ans": [7, 8, 9]},
+          "range": [79.2, 80.94], "ans": [7, 8, 9]},
         {"lyric": "Kokoro",
-          "range": [80.49, 81.58], "ans": [1, 2, 3, 4, 5, 6]},
+          "range": [80.24, 81.93], "ans": [1, 2, 3, 4, 5, 6]},
         {"lyric": "Tsunagatteku minna to",
-          "range": [81.58, 84.38], "ans": []}
+          "range": [81.23, 84.38], "ans": []}
       ]
     },
     {"lyric": "Konna suteki na koto yamerarenai (Fu!) souda yo!",
-      "lyric_jp": "こんなステキなことやめられない",
-      "range": [84.26, 89.95], "ans": []},
-    "",
-    {"lyric": "Nanda nanda yappari suki wa muteki",
+      "lyric_jp": "こんなステキなことやめられない そうだよ！",
+      "range": [84.26, 93.71], "ans": []},
+    {
       "lyric_jp": "なんだなんだ やっぱりスキは無敵 でもでも",
-      "range": [93.71, 96.31], "ans": [4, 5, 6]},
-    {"lyric": "Demo demo",
-      "lyric_jp": "なんだなんだ やっぱりスキは無敵 でもでも",
-      "range": [96.31, 99.68], "ans": [4, 5, 6]},
+      "parts": [
+        {"lyric": "Nanda nanda yappari suki wa muteki",
+          "range": [93.71, 98.33], "ans": [4, 5, 6]},
+        {"lyric": "Demo demo",
+          "range": [98.33, 99.68], "ans": [4, 5, 6]}
+      ]
+    },
     {"lyric": "Nande nande setsumei muzukashii ne",
       "lyric_jp": "なんでなんで 説明むずかしいね だってだって",
-      "range": [99.68, 102.88], "ans": [1, 2, 3]},
+      "range": [99.68, 104.97], "ans": [1, 2, 3]},
     {"lyric": "Datte datte rikutsu janainda yo",
-      "lyric_jp": "なんでなんで 説明むずかしいね だってだって",
-      "range": [102.88, 105.36], "ans": [1, 2, 3]},
+      "lyric_jp": "リクツじゃないんだよ",
+      "range": [104.97, 108.13], "ans": [1, 2, 3]},
     "",
     {"lyric": "Sou!",
       "lyric_jp": "そう！",
@@ -143,7 +152,7 @@
         {"lyric": "Sore nara",
           "range": [126.49, 127.38], "ans": [7, 8, 9]},
         {"lyric": "“ima madedoori” wo nukedashite",
-          "range": [127.38, 132.49], "ans": [1, 2, 3, 4, 5, 6]}
+          "range": [128.15, 132.49], "ans": [1, 2, 3, 4, 5, 6]}
       ]
     },
     {"lyric": "Come on! Come on! Come on!",
@@ -159,16 +168,16 @@
       "lyric_jp": "(それなら) ココロ解放してみんなで",
       "parts": [
         {"lyric": "Sore nara",
-          "range": [138.58, 139.33], "ans": [7, 8, 9]},
+          "range": [138.58, 139.8], "ans": [7, 8, 9]},
         {"lyric": "Kokoro",
-          "range": [139.33, 140.82], "ans": [1, 2, 3, 4, 5, 6]},
+          "range": [139.1, 142.19], "ans": [1, 2, 3, 4, 5, 6]},
         {"lyric": "Kaihou shite minna de",
-          "range": [140.82, 143.48], "ans": []}
+          "range": [141.49, 143.48], "ans": []}
       ]
     },
     {"lyric": "Yaritai koto nara ganbarou yo (Fu!) souda ne? souda yo!",
-      "lyric_jp": "やりたいことならがんばろうよ",
-      "range": [143.46, 149.2], "ans": []},
+      "lyric_jp": "やりたいことならがんばろうよ そうだね？ そうだよ！",
+      "range": [143.46, 154.5], "ans": []},
     "",
     {"lyric": "Minna ga ne daisuki da!",
       "lyric_jp": "みんながね ダイスキだ！",
@@ -193,7 +202,7 @@
         {"lyric": "Odoreba",
           "range": [181.4, 182.47], "ans": [7, 8, 9]},
         {"lyric": "Hitotsu ni naru yo sekaijuu ga",
-          "range": [182.47, 187.17], "ans": [1, 2, 3, 4, 5, 6]}
+          "range": [182.98, 187.17], "ans": [1, 2, 3, 4, 5, 6]}
       ]
     },
     {"lyric": "Come on! Come on! Come on!",
@@ -211,9 +220,9 @@
         {"lyric": "Odoreba",
           "range": [193.27, 194.14], "ans": [7, 8, 9]},
         {"lyric": "Kokoro",
-          "range": [194.14, 195.67], "ans": [1, 2, 3, 4, 5, 6]},
+          "range": [194.73, 196.02], "ans": [1, 2, 3, 4, 5, 6]},
         {"lyric": "Tsunagatteku minna to",
-          "range": [195.67, 198.47], "ans": []}
+          "range": [195.32, 198.47], "ans": []}
       ]
     },
     {"lyric": "Konna suteki na koto yamerarenai (Fu!)",
@@ -228,6 +237,6 @@
       "range": [205.25, 208.07], "ans": []},
     {"lyric": "Nonstop nonstop the hopping heart",
       "lyric_jp": "Nonstop! Nonstop the hopping heart ah!",
-      "range": [208.07, 222], "ans": []}
+      "range": [208.07, 214.09], "ans": []}
   ]
 }

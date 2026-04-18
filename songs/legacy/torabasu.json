@@ -1,6 +1,7 @@
 {
   "name": "Trouble Busters",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/trouble_busters.mp3",
   "ogg": "sound/trouble_busters.ogg",
   "id": "torabasu",

@@ -1,6 +1,7 @@
 {
   "name": "Diamond Princess no Yuuutsu",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/diamond_princess_no_yuuutsu.mp3",
   "ogg": "sound/diamond_princess_no_yuuutsu.ogg",
   "id": "diapuri",

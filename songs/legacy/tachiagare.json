@@ -1,6 +1,7 @@
 {
   "name": "Tachiagare",
   "group": "wug",
+  "legacy": true,
   "id": "tachiagare",
   "mp3": "sound/tachiagare.mp3",
   "ogg": "sound/tachiagare.ogg",

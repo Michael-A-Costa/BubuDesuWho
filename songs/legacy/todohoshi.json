@@ -4,6 +4,7 @@
   "ogg": "sound/todokanai_hoshi_da_to_shitemo.ogg",
   "id": "todohoshi",
   "group": "aqours",
+  "legacy": true,
   "released": "2016-04-27",
   "mapping": [
     {

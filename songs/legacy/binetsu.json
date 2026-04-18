@@ -2,6 +2,7 @@
   "name": "Binetsu Kara Mystery",
   "id": "binetsu",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/binetsu_kara_mystery.mp3",
   "ogg": "sound/binetsu_kara_mystery.ogg",
   "mapping": [

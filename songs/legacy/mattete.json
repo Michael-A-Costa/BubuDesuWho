@@ -4,6 +4,7 @@
   "ogg": "sound/mattete_ai_no_uta.ogg",
   "id": "mattete",
   "group": "aqours",
+  "legacy": true,
   "released": "2016-04-27",
   "mapping": [
     {

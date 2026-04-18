@@ -9,14 +9,19 @@
   "slots": [
 
   ],
+  "generated": "2026-04-14T23:00:07Z",
   "lines": [
-    {"lyric": "Dreamy Aqours color...",
+    {
       "lyric_jp": "Dreamy Aqours color...",
-      "range": [12.17, 24.68], "ans": []},
-    {"lyric": "(Wow~ Wowr)",
-      "range": [22.68, 24.68], "ans": []},
-    {"lyric": "(Wow~ Wowr)",
-      "range": [22.68, 24.68], "ans": []},
+      "parts": [
+        {"lyric": "Dreamy Aqours color...",
+          "range": [12.17, 15.23], "ans": []},
+        {"lyric": "(Wow~ Wowr)",
+          "range": [15.23, 15.83], "ans": []},
+        {"lyric": "(Wow~ Wowr)",
+          "range": [15.83, 16.43], "ans": []}
+      ]
+    },
     "",
     {"lyric": "Kyou wa kyou no kibun de tondeku yo",
       "lyric_jp": "今日は今日の気分で飛んでくよ",
@@ -34,11 +39,15 @@
     {"lyric": "Aa kaze no muki wa kawatteku kedo",
       "lyric_jp": "ああ風の向きは変わってくけど",
       "range": [44.16, 49.13], "ans": [2]},
-    {"lyric": "Yume ou jounetsu wa kawaranai kara",
+    {
       "lyric_jp": "ユメ追う情熱は変わらないから",
-      "range": [49.13, 55.38], "ans": [2]},
-    {"lyric": "(Here we go!)",
-      "range": [53.38, 55.38], "ans": []},
+      "parts": [
+        {"lyric": "Yume ou jounetsu wa kawaranai kara",
+          "range": [49.13, 55.13], "ans": [2]},
+        {"lyric": "(Here we go!)",
+          "range": [54.43, 55.38], "ans": []}
+      ]
+    },
     {"lyric": "Iki ga kirete mo mada hashirou ikeru, ikeru yo!",
       "lyric_jp": "息が切れてもまだ走ろう 行ける 行けるよ！",
       "range": [55.38, 59.54], "ans": [3]},
@@ -87,11 +96,15 @@
     {"lyric": "Aa kaze no iro ga kawatteku yo ne",
       "lyric_jp": "ああ風の色が変わってくよね",
       "range": [127.63, 132.5], "ans": [6]},
-    {"lyric": "Tonari de mitetara setsunaku natte sa",
+    {
       "lyric_jp": "隣で見てたら切なくなってさ",
-      "range": [132.5, 138.36], "ans": [6]},
-    {"lyric": "(Your smile)",
-      "range": [136.36, 138.36], "ans": []},
+      "parts": [
+        {"lyric": "Tonari de mitetara setsunaku natte sa",
+          "range": [132.5, 138.11], "ans": [6]},
+        {"lyric": "(Your smile)",
+          "range": [137.41, 138.36], "ans": []}
+      ]
+    },
     {"lyric": "Me ga attara tonikaku waraou",
       "lyric_jp": "目が合ったらとにかく笑おう",
       "range": [138.36, 140.63], "ans": [4, 5, 6]},
@@ -133,9 +146,9 @@
       "lyric_jp": "だって君の声が聞こえてくるから",
       "parts": [
         {"lyric": "Kimi no koe ga",
-          "range": [200.84, 203.44], "ans": [9]},
+          "range": [200.84, 203.79], "ans": [9]},
         {"lyric": "Kikoete kuru kara",
-          "range": [203.44, 208.52], "ans": [7]}
+          "range": [203.09, 208.52], "ans": [7]}
       ]
     },
     {"lyric": "Mune ni kimi no koe ga todoku yo...",
@@ -164,33 +177,53 @@
     {"lyric": "Tanoshinjaeba nandemo ari da to",
       "lyric_jp": "楽しんじゃえばなんでもありだと",
       "range": [248.94, 253.4], "ans": []},
-    {"lyric": "Saa, tobidase!",
+    {
       "lyric_jp": "さぁ 飛びだせ！",
-      "range": [253.4, 264.76], "ans": [7, 8, 9]},
-    {"lyric": "(Wow~ Wowr)",
-      "range": [262.76, 264.76], "ans": []},
-    {"lyric": "(Wow~ Wowr)",
-      "range": [262.76, 264.76], "ans": []},
+      "parts": [
+        {"lyric": "Saa, tobidase!",
+          "range": [253.4, 263.91], "ans": [7, 8, 9]},
+        {"lyric": "(Wow~ Wowr)",
+          "range": [263.21, 264.16], "ans": []},
+        {"lyric": "(Wow~ Wowr)",
+          "range": [264.16, 264.76], "ans": []}
+      ]
+    },
     "",
-    {"lyric": "Ganbacchau kokoro tte donna iro darou?",
+    {
       "lyric_jp": "がんばっちゃうココロってどんな色だろう？",
-      "range": [264.76, 270.03], "ans": []},
-    {"lyric": "(Wow~ Wowr)",
-      "range": [268.03, 270.03], "ans": []},
-    {"lyric": "Yume miru bokura tte donna iro darou?",
+      "parts": [
+        {"lyric": "Ganbacchau kokoro tte donna iro darou?",
+          "range": [264.76, 269.43], "ans": []},
+        {"lyric": "(Wow~ Wowr)",
+          "range": [269.43, 270.03], "ans": []}
+      ]
+    },
+    {
       "lyric_jp": "ユメ見る僕らってどんな色だろう？",
-      "range": [270.03, 274.8], "ans": []},
-    {"lyric": "(Wow~ Wowr)",
-      "range": [272.8, 274.8], "ans": []},
-    {"lyric": "Ganbacchau kokoro tte donna iro darou?",
+      "parts": [
+        {"lyric": "Yume miru bokura tte donna iro darou?",
+          "range": [270.03, 274.2], "ans": []},
+        {"lyric": "(Wow~ Wowr)",
+          "range": [274.2, 274.8], "ans": []}
+      ]
+    },
+    {
       "lyric_jp": "がんばっちゃうココロってどんな色だろう？",
-      "range": [274.8, 279.95], "ans": []},
-    {"lyric": "(Wow~ Wowr)",
-      "range": [277.95, 279.95], "ans": []},
-    {"lyric": "Yume miru bokura tte donna iro darou?",
+      "parts": [
+        {"lyric": "Ganbacchau kokoro tte donna iro darou?",
+          "range": [274.8, 279.35], "ans": []},
+        {"lyric": "(Wow~ Wowr)",
+          "range": [279.35, 279.95], "ans": []}
+      ]
+    },
+    {
       "lyric_jp": "ユメ見る僕らってどんな色だろう？",
-      "range": [279.95, 296], "ans": []},
-    {"lyric": "(Wow~ Wowr)",
-      "range": [294, 296], "ans": []}
+      "parts": [
+        {"lyric": "Yume miru bokura tte donna iro darou?",
+          "range": [279.95, 286.31], "ans": []},
+        {"lyric": "(Wow~ Wowr)",
+          "range": [286.31, 286.91], "ans": []}
+      ]
+    }
   ]
 }

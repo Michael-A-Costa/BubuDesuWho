@@ -9,6 +9,7 @@
   "slots": [
 
   ],
+  "generated": "2026-04-14T23:00:41Z",
   "lines": [
     {"lyric": "Yeah... Aqours",
       "lyric_jp": "Yeah... Aqours",
@@ -19,11 +20,15 @@
     {"lyric": "Heart-to-heart",
       "lyric_jp": "Heart-to-heart",
       "range": [7.84, 10.03], "ans": [1]},
-    {"lyric": "Let’s go!",
+    {
       "lyric_jp": "Let's go!",
-      "range": [10.03, 11.29], "ans": [1, 2, 3]},
-    {"lyric": "(Yeah!)",
-      "range": [10.03, 11.29], "ans": []},
+      "parts": [
+        {"lyric": "Let’s go!",
+          "range": [10.03, 11.14], "ans": [1, 2, 3]},
+        {"lyric": "(Yeah!)",
+          "range": [10.44, 11.29], "ans": []}
+      ]
+    },
     "",
     {"lyric": "Happy dance happy dance",
       "lyric_jp": "Happy dance happy dance",
@@ -52,9 +57,9 @@
       "lyric_jp": "海もつながってるよ（君へと）",
       "parts": [
         {"lyric": "Umi mo tsunagatteru yo",
-          "range": [30.03, 32.54], "ans": [1]},
+          "range": [30.03, 33.31], "ans": [1]},
         {"lyric": "(kimi e to)",
-          "range": [32.54, 33.55], "ans": [4]}
+          "range": [32.71, 33.55], "ans": [4]}
       ]
     },
     {"lyric": "Itsudatte itsudatte",
@@ -68,9 +73,9 @@
       "lyric_jp": "さあ目を閉じれば現れる",
       "parts": [
         {"lyric": "Saa me wo tojireba arawareru",
-          "range": [42.49, 44.92], "ans": [8]},
+          "range": [42.49, 46.31], "ans": [8]},
         {"lyric": "(arawareru)",
-          "range": [44.92, 46.56], "ans": [7, 9]}
+          "range": [45.61, 46.56], "ans": [7, 9], "diff": 2}
       ]
     },
     {"lyric": "Bokura no suteeji ga",
@@ -98,11 +103,15 @@
     {"lyric": "Wakacchau itsumo wakacchau",
       "lyric_jp": "分かっちゃう いつも分かっちゃう",
       "range": [72.07, 76], "ans": []},
-    {"lyric": "Kimi no omoi ga wakacchaunda",
+    {
       "lyric_jp": "君の思いが分かっちゃうんだ",
-      "range": [76, 87.54], "ans": [1]},
-    {"lyric": "(Yeah!)",
-      "range": [85.54, 87.54], "ans": []},
+      "parts": [
+        {"lyric": "Kimi no omoi ga wakacchaunda",
+          "range": [76, 81.2], "ans": [1]},
+        {"lyric": "(Yeah!)",
+          "range": [80.5, 81.45], "ans": []}
+      ]
+    },
     "",
     {"lyric": "Sora e mukatte utau",
       "lyric_jp": "空へ向かって歌う",
@@ -111,9 +120,9 @@
       "lyric_jp": "海に語りかけてる（今もね）",
       "parts": [
         {"lyric": "Umi ni katarikaketeru",
-          "range": [92.1, 94.94], "ans": [3]},
+          "range": [92.1, 95.29], "ans": [3]},
         {"lyric": "(ima mo ne)",
-          "range": [94.94, 95.62], "ans": [4]}
+          "range": [94.85, 95.58], "ans": [4]}
       ]
     },
     {"lyric": "Itsudatte itsudatte",
@@ -123,9 +132,9 @@
       "lyric_jp": "耳をすませば聞こえるよ",
       "parts": [
         {"lyric": "Mimi wo sumaseba kikoeru yo",
-          "range": [99.32, 103.44], "ans": [3]},
+          "range": [99.32, 104.6], "ans": [3]},
         {"lyric": "(Hey!)",
-          "range": [103.44, 104.85], "ans": [4]}
+          "range": [103.9, 104.85], "ans": [4]}
       ]
     },
     "",
@@ -133,9 +142,9 @@
       "lyric_jp": "そう目を開いても終わらない",
       "parts": [
         {"lyric": "Sou me wo hiraite mo owaranai",
-          "range": [104.85, 107.15], "ans": [5]},
+          "range": [104.85, 108.42], "ans": [5]},
         {"lyric": "(owaranai)",
-          "range": [107.15, 108.67], "ans": [2]}
+          "range": [107.72, 108.67], "ans": [2]}
       ]
     },
     {"lyric": "Bokura no suteeji wa",
@@ -166,11 +175,11 @@
     "",
     "[next-col]",
     {"lyric": "Tsunagaritai",
-      "lyric_jp": "いつだって君へと 繋がる場所がある",
-      "range": [139.14, 139.83], "ans": [2]},
+      "lyric_jp": "ツナガリタイ",
+      "range": [138.15, 139.14], "ans": [2]},
     {"lyric": "Itsudatte kimi e to tsunagaru basho ga aru",
       "lyric_jp": "いつだって君へと 繋がる場所がある",
-      "range": [139.83, 142.21], "ans": [2]},
+      "range": [139.14, 142.21], "ans": [2]},
     {"lyric": "Kokoro kara kokoro e to tsunagaru oto wa kienai yo Yeah",
       "lyric_jp": "心から心へと 繋がる音は消えないよ",
       "range": [142.21, 146.76], "ans": [2]},
@@ -182,9 +191,9 @@
       "lyric_jp": "君には伝わると 大好きが伝わると（大好き！）",
       "parts": [
         {"lyric": "Kimi ni wa tsutawaru to daisuki ga tsutawaru to",
-          "range": [149.15, 153.09], "ans": [7]},
+          "range": [149.15, 151.04], "ans": [7]},
         {"lyric": "(daisuki!)",
-          "range": [153.09, 188.19], "ans": [5]}
+          "range": [150.34, 151.69], "ans": [5]}
       ]
     },
     "",
@@ -198,22 +207,22 @@
       "lyric_jp": "出会えたことが Lucky 君が笑えば Happy",
       "parts": [
         {"lyric": "Deaeta koto ga Lucky",
-          "range": [194.95, 196.71], "ans": [4, 5, 6]},
+          "range": [194.95, 196.53], "ans": [4, 5, 6]},
+        {"lyric": "(Yeah)",
+          "range": [195.9, 196.93], "ans": []},
         {"lyric": "Kimi ga waraeba Happy",
-          "range": [196.71, 198.48], "ans": [1, 2, 3]}
+          "range": [196.23, 198.23], "ans": [1, 2, 3]},
+        {"lyric": "(Yeah)",
+          "range": [197.53, 198.48], "ans": []}
       ]
     },
-    {"lyric": "(Yeah)",
-      "range": [196.48, 198.48], "ans": []},
-    {"lyric": "(Yeah)",
-      "range": [196.48, 198.48], "ans": []},
     {
       "lyric_jp": "Ah 単純だね 君が大好きだよ！",
       "parts": [
         {"lyric": "Ah tanjun da ne kimi ga",
-          "range": [198.48, 201.7], "ans": [7, 8, 9]},
+          "range": [198.48, 202.05], "ans": [7, 8, 9]},
         {"lyric": "Daisuki da yo!",
-          "range": [201.7, 204.12], "ans": []}
+          "range": [201.35, 204.12], "ans": []}
       ]
     },
     "",
@@ -233,38 +242,45 @@
       "lyric_jp": "君の願いも分かっちゃうんだ",
       "range": [218.17, 221.64], "ans": []},
     "",
-    {"lyric": "Dou natte mo",
+    {
       "lyric_jp": "どうなっても楽しいなら大丈夫さ",
-      "range": [221.64, 222.89], "ans": []},
-    {"lyric": "Tanoshii nara (Yeah!) daijoubu sa (Fu!)",
-      "lyric_jp": "どうなっても楽しいなら大丈夫さ",
-      "range": [222.89, 226.66], "ans": []},
+      "parts": [
+        {"lyric": "Dou natte mo",
+          "range": [221.64, 222.89], "ans": []},
+        {"lyric": "Tanoshii nara (Yeah!) daijoubu sa (Fu!)",
+          "range": [222.89, 226.66], "ans": []}
+      ]
+    },
     {
       "lyric_jp": "新しいやり方で Make you happy!",
       "parts": [
         {"lyric": "Atarashii yarikata de Make you happy!",
-          "range": [226.66, 229.45], "ans": []},
+          "range": [226.66, 230.5], "ans": []},
         {"lyric": "(Gonna make you happy)",
-          "range": [229.45, 230.75], "ans": [9]}
+          "range": [229.8, 230.75], "ans": [9]}
       ]
     },
-    {"lyric": "Onaji kimochi datte",
-      "lyric_jp": "おなじキモチだって",
-      "range": [230.75, 234.24], "ans": []},
     {
-      "lyric_jp": "分かっちゃう いつも分かっちゃう",
+      "lyric_jp": "おなじキモチだって",
       "parts": [
+        {"lyric": "Onaji kimochi datte",
+          "range": [230.75, 233.99], "ans": []},
         {"lyric": "(datte)",
-          "range": [234.24, 234.85], "ans": [9]},
-        {"lyric": "Wakacchau itsumo wakacchau",
-          "range": [234.85, 238.2], "ans": []}
+          "range": [233.29, 234.24], "ans": [9]}
       ]
     },
-    {"lyric": "Kimi no omoi ga wakacchaunda",
+    {"lyric": "Wakacchau itsumo wakacchau",
+      "lyric_jp": "分かっちゃう いつも分かっちゃう",
+      "range": [234.24, 238.2], "ans": []},
+    {
       "lyric_jp": "君の思いが分かっちゃうんだ",
-      "range": [238.2, 243.16], "ans": [1]},
-    {"lyric": "(Yeah!)",
-      "range": [241.16, 243.16], "ans": []},
+      "parts": [
+        {"lyric": "Kimi no omoi ga wakacchaunda",
+          "range": [238.2, 242.91], "ans": [1]},
+        {"lyric": "(Yeah!)",
+          "range": [242.21, 243.16], "ans": []}
+      ]
+    },
     "",
     {"lyric": "Happy dance happy dance",
       "lyric_jp": "Happy dance happy dance",

@@ -2,6 +2,7 @@
   "name": "Aishiteru Banzai!",
   "id": "aiban",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/aishiteru_banzai.mp3",
   "ogg": "sound/aishiteru_banzai.ogg",
   "mapping": [

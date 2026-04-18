@@ -9,6 +9,7 @@
   "slots": [
 
   ],
+  "generated": "2026-04-15T01:44:20Z",
   "lines": [
     {"lyric": "Hitotsu hitotsu no omoidetachi ga daiji nanda",
       "lyric_jp": "ひとつひとつの思い出たちが 大事なんだ",
@@ -23,18 +24,18 @@
       "lyric_jp": "きっと見える いつもの景色",
       "parts": [
         {"lyric": "Kitto mieru",
-          "range": [51.35, 53.39], "ans": [3]},
+          "range": [51.35, 54.04], "ans": [3]},
         {"lyric": "Itsumo no keshiki",
-          "range": [53.39, 56.33], "ans": [1]}
+          "range": [53.34, 56.33], "ans": [1]}
       ]
     },
     {
       "lyric_jp": "こころのなかにしまってあるから",
       "parts": [
         {"lyric": "Kokoro no naka ni",
-          "range": [56.31, 58.92], "ans": [1]},
+          "range": [56.31, 59.27], "ans": [1]},
         {"lyric": "Shimatte aru kara",
-          "range": [58.92, 62.73], "ans": [1, 2, 3]}
+          "range": [58.57, 62.73], "ans": [1, 2, 3]}
       ]
     },
     "",
@@ -45,27 +46,27 @@
       "lyric_jp": "目を閉じて みんなを呼んでみて",
       "parts": [
         {"lyric": "Me wo tojite",
-          "range": [65.41, 67.07], "ans": [5]},
+          "range": [65.41, 67.42], "ans": [5]},
         {"lyric": "Minna wo yonde mite",
-          "range": [67.07, 69.57], "ans": [4]}
+          "range": [66.72, 69.57], "ans": [4]}
       ]
     },
     {
       "lyric_jp": "そしたら聞こえるよ この歌が",
       "parts": [
         {"lyric": "Soshitara kikoeru yo",
-          "range": [69.37, 72.49], "ans": [4]},
+          "range": [69.37, 72.84], "ans": [4]},
         {"lyric": "Kono uta ga",
-          "range": [72.49, 74.8], "ans": [6]}
+          "range": [72.14, 74.8], "ans": [6]}
       ]
     },
     {
       "lyric_jp": "ほら次はどこ？一緒に行こう",
       "parts": [
         {"lyric": "Hora tsugi wa doko?",
-          "range": [74.8, 77.17], "ans": [6]},
+          "range": [74.8, 77.73], "ans": [6]},
         {"lyric": "Issho ni yukou",
-          "range": [77.17, 81.19], "ans": [4, 5, 6]}
+          "range": [77.03, 81.19], "ans": [4, 5, 6]}
       ]
     },
     "",
@@ -82,9 +83,9 @@
       "lyric_jp": "明日は今日より夢に近いはずだよ",
       "parts": [
         {"lyric": "Ashita wa kyou yori yume ni",
-          "range": [104.43, 108.63], "ans": [1]},
+          "range": [104.43, 108.98], "ans": [1]},
         {"lyric": "Chikai hazu da yo",
-          "range": [108.63, 128.58], "ans": [1, 2, 3, 4, 5, 6]}
+          "range": [108.28, 113.41], "ans": [1, 2, 3, 4, 5, 6]}
       ]
     },
     "",
@@ -111,31 +112,31 @@
       "lyric_jp": "わかってる みんなを呼びたいよ",
       "parts": [
         {"lyric": "Wakatteru",
-          "range": [161.48, 162.72], "ans": [7, 8, 9]},
+          "range": [161.48, 163.07], "ans": [7, 8, 9]},
         {"lyric": "Minna wo",
-          "range": [162.72, 163.76], "ans": [1]},
+          "range": [162.37, 164.11], "ans": [1]},
         {"lyric": "Yobitai yo",
-          "range": [163.76, 165.52], "ans": [3]}
+          "range": [163.41, 165.52], "ans": [3]}
       ]
     },
     {
       "lyric_jp": "いつでも聞こえるよ この歌が",
       "parts": [
         {"lyric": "Itsudemo",
-          "range": [165.35, 166.8], "ans": [5]},
+          "range": [165.35, 165.85], "ans": [5]},
         {"lyric": "Kikoeru yo",
-          "range": [166.8, 168.61], "ans": [4]},
+          "range": [165.91, 168.44], "ans": [4]},
         {"lyric": "Kono uta ga",
-          "range": [168.61, 170.42], "ans": [6]}
+          "range": [167.74, 170.42], "ans": [6]}
       ]
     },
     {
       "lyric_jp": "まだ走れるね 一緒に行こう",
       "parts": [
         {"lyric": "Mada hashireru ne",
-          "range": [170.42, 173.9], "ans": [7, 8, 9]},
+          "range": [170.42, 173.33], "ans": [7, 8, 9]},
         {"lyric": "Issho ni yukou",
-          "range": [173.9, 177.11], "ans": []}
+          "range": [172.63, 177.11], "ans": []}
       ]
     },
     "",
@@ -150,7 +151,7 @@
       "range": [192.59, 200.57], "ans": []},
     {"lyric": "Atarashii kagayaki e to te wo nobasou",
       "lyric_jp": "あたらしい輝きへと手を伸ばそう",
-      "range": [200.57, 224.55], "ans": []},
+      "range": [200.57, 209.21], "ans": []},
     "",
     "[next-col]",
     {"lyric": "Ima datte mijuku dakedo",
@@ -160,9 +161,9 @@
       "lyric_jp": "先へ進まなくちゃ それしかないんだよね 未来へ！！",
       "parts": [
         {"lyric": "Saki e susumanakucha sore shikanaida yo ne",
-          "range": [231.24, 238.17], "ans": [1]},
+          "range": [231.24, 238.52], "ans": [1]},
         {"lyric": "Mirai e!!",
-          "range": [238.17, 244.35], "ans": []}
+          "range": [237.82, 244.35], "ans": []}
       ]
     },
     "",
@@ -190,6 +191,6 @@
       "range": [290.38, 298.32], "ans": []},
     {"lyric": "Atarashii kagayaki e to te wo nobasou",
       "lyric_jp": "あたらしい輝きへと手を伸ばそう",
-      "range": [298.32, 386], "ans": []}
+      "range": [298.32, 307.04], "ans": []}
   ]
 }

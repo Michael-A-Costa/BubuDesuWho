@@ -4,49 +4,63 @@
   "id": "party-party-papapaparty",
   "group": "aqours",
   "added": "2026-04",
-  "hidden": true,
+  "hidden": false,
   "slots": [
 
   ],
+  "generated": "2026-04-17T01:12:48Z",
   "lines": [
-    {"lyric": "GuuRinPa",
-      "lyric_jp": "ぐ〜りんぱ",
-      "range": [1.72, 12.3], "ans": [1]},
-    {"lyric": "(DuDuRu DuDuRuDuRu)",
-      "range": [10.3, 12.3], "ans": []},
-    {"lyric": "(DuDuRu DuDuRuDuRu)",
-      "range": [10.3, 12.3], "ans": []},
-    {"lyric": "(DuDuRu DuDuRuDuRu)",
-      "range": [10.3, 12.3], "ans": []},
-    {"lyric": "(DuDuDuRuRu waa!)",
-      "range": [10.3, 12.3], "ans": []},
-    "",
     {
       "lyric_jp": "いつか絵本で見たような Party",
       "parts": [
+        {"lyric": "Guu",
+          "range": [12.3, 13.23], "ans": [6]},
+        {"lyric": "Rin",
+          "range": [12.75, 13.33], "ans": [7]},
+        {"lyric": "Pa",
+          "range": [12.93, 13.73], "ans": [1]},
+        {"lyric": "(DuDuRu DuDuRuDuRu)",
+          "range": [13.03, 13.86], "ans": []},
+        {"lyric": "(DuDuRu DuDuRuDuRu)",
+          "range": [13.86, 14.36], "ans": []},
+        {"lyric": "(DuDuRu DuDuRuDuRu)",
+          "range": [14.08, 14.92], "ans": []},
+        {"lyric": "(DuDuDuRuRu waa!)",
+          "range": [14.92, 15.75], "ans": []},
         {"lyric": "Itsuka ehon de mita you na",
-          "range": [12.3, 16.17], "ans": [1]},
+          "range": [15.05, 16.42], "ans": [7]},
         {"lyric": "Party",
-          "range": [16.17, 16.67], "ans": [1, 6]}
+          "range": [15.92, 16.67], "ans": [1, 6], "diff": 2}
       ]
     },
-    {"lyric": "Minna de yacchaou ka Christmas Party",
+    "",
+    {
       "lyric_jp": "みんなでやっちゃおうか Christmas Party",
-      "range": [16.67, 22.18], "ans": [1]},
-    {"lyric": "(DuDuRuDu)",
-      "range": [20.18, 22.18], "ans": []},
+      "parts": [
+        {"lyric": "Minna de yacchaou ka Christmas Party",
+          "range": [16.67, 21.93], "ans": [7]},
+        {"lyric": "(DuDuRuDu)",
+          "range": [21.23, 22.18], "ans": []}
+      ]
+    },
     {
       "lyric_jp": "準備もなんか楽しいね Party",
       "parts": [
         {"lyric": "Junbi mo nanka tanoshii ne",
-          "range": [22.18, 26.3], "ans": []},
+          "range": [22.18, 25.68], "ans": [6]},
         {"lyric": "Party",
-          "range": [26.3, 26.72], "ans": [1, 7]}
+          "range": [25.68, 26.72], "ans": [1, 7], "diff": 2}
       ]
     },
-    {"lyric": "Ippai ippai oshaberi shiyou (DUDuDuRuDu waa)",
+    {
       "lyric_jp": "いっぱい いっぱい おしゃべりしよう",
-      "range": [26.51, 31.07], "ans": []},
+      "parts": [
+        {"lyric": "Ippai ippai oshaberi shiyou",
+          "range": [26.51, 30.82], "ans": [6]},
+        {"lyric": "(DUDuDuRuDu waa)",
+          "range": [30.12, 31.07], "ans": []}
+      ]
+    },
     "",
     {"lyric": "Nee dare no koto ki ni natteru? to ka",
       "lyric_jp": "ねえ誰のこと気になってる？とか",
@@ -59,9 +73,9 @@
       "lyric_jp": "ホントは... なんだってかまわないんだよ",
       "parts": [
         {"lyric": "Honto wa...",
-          "range": [42.57, 44.21], "ans": [1]},
+          "range": [42.57, 44.66], "ans": [7]},
         {"lyric": "Nandatte kamawanainda yo",
-          "range": [44.21, 47], "ans": []}
+          "range": [43.96, 47], "ans": []}
       ]
     },
     {"lyric": "Atsumaritai!",
@@ -76,7 +90,7 @@
         {"lyric": "Ah! Nandemo ari",
           "range": [51.57, 53.21], "ans": []},
         {"lyric": "(ari da yo!)",
-          "range": [53.21, 54.24], "ans": [1]}
+          "range": [53.93, 54.43], "ans": [7]}
       ]
     },
     {"lyric": "Party! Party! PaPaPaParty!",
@@ -97,67 +111,79 @@
     {"lyric": "Icchaitai enryo nashi de",
       "lyric_jp": "言っちゃいたい 遠慮なしで",
       "range": [66.27, 68.53], "ans": []},
-    {"lyric": "Datte datte tomodachi da mon!",
+    {
       "lyric_jp": "だってだって友達だもん！",
-      "range": [68.53, 85.98], "ans": []},
-    {"lyric": "(DuDuRu DuDuRuDuRu)",
-      "range": [83.98, 85.98], "ans": []},
-    {"lyric": "(DuDuRu DuDuRuDuRu)",
-      "range": [83.98, 85.98], "ans": []},
-    {"lyric": "(DuDuRu DuDuRuDuRu)",
-      "range": [83.98, 85.98], "ans": []},
-    {"lyric": "(DuDuDuRuRu waa!)",
-      "range": [83.98, 85.98], "ans": []},
+      "parts": [
+        {"lyric": "Datte datte tomodachi da mon!",
+          "range": [68.53, 74.75], "ans": []},
+        {"lyric": "(DuDuRu DuDuRuDuRu)",
+          "range": [74.75, 75.35], "ans": []},
+        {"lyric": "(DuDuRu DuDuRuDuRu)",
+          "range": [75.35, 75.95], "ans": []},
+        {"lyric": "(DuDuRu DuDuRuDuRu)",
+          "range": [75.95, 76.55], "ans": []},
+        {"lyric": "(DuDuDuRuRu waa!)",
+          "range": [76.55, 77.15], "ans": []}
+      ]
+    },
     "",
     {
       "lyric_jp": "金モール窓を飾って Party",
       "parts": [
         {"lyric": "Kin mooru mado wo kazatte",
-          "range": [85.98, 89.67], "ans": [1]},
+          "range": [85.98, 89.73], "ans": [1]},
         {"lyric": "Party",
-          "range": [89.67, 90.16], "ans": [6, 7]}
+          "range": [89.03, 90.16], "ans": [6, 7], "diff": 2}
       ]
     },
-    {"lyric": "Hippatte asobu na Christmas Party",
+    {
       "lyric_jp": "引っ張って遊ぶなっ Christmas Party",
-      "range": [90.16, 95.82], "ans": [1]},
-    {"lyric": "(DuDuRuDu)",
-      "range": [93.82, 95.82], "ans": []},
+      "parts": [
+        {"lyric": "Hippatte asobu na Christmas Party",
+          "range": [90.16, 95.57], "ans": [1]},
+        {"lyric": "(DuDuRuDu)",
+          "range": [94.87, 95.82], "ans": []}
+      ]
+    },
     {
       "lyric_jp": "そっとプレゼント置いたら Party",
       "parts": [
         {"lyric": "Sotto purezento oitara",
-          "range": [95.82, 99.8], "ans": [1]},
+          "range": [95.82, 99.65], "ans": [1]},
         {"lyric": "Party",
-          "range": [99.8, 100.14], "ans": [6, 7]}
+          "range": [98.95, 100.14], "ans": [6, 7], "diff": 2}
       ]
     },
-    {"lyric": "Ippai ippai oshaberi shiyou",
+    {
       "lyric_jp": "いっぱい いっぱい おしゃべりしよう",
-      "range": [99.97, 104.52], "ans": [1]},
-    {"lyric": "(DUDuDuRuDu waa)",
-      "range": [102.52, 104.52], "ans": []},
+      "parts": [
+        {"lyric": "Ippai ippai oshaberi shiyou",
+          "range": [99.97, 104.27], "ans": [1]},
+        {"lyric": "(DUDuDuRuDu waa)",
+          "range": [103.57, 104.52], "ans": []}
+      ]
+    },
     "",
     {"lyric": "Mou tomaranai zutto waratteru",
       "lyric_jp": "もうとまらない ずっと笑ってる",
-      "range": [104.52, 109.72], "ans": []},
+      "range": [104.52, 109.72], "ans": [6]},
     {"lyric": "Waraisugi da yo nodo kawaita!",
       "lyric_jp": "笑いすぎだよ のど渇いた！",
-      "range": [109.72, 113.7], "ans": []},
+      "range": [109.72, 113.7], "ans": [6]},
     {"lyric": "Dakedo tomaranai mata me ga aeba",
       "lyric_jp": "だけどとまらない また目が合えば",
-      "range": [113.7, 119.39], "ans": [1]},
+      "range": [113.7, 119.39], "ans": [7]},
     {"lyric": "Onaji hanashi demo waraidashichau yo!",
       "lyric_jp": "同じ話でも笑いだしちゃうよ！",
-      "range": [119.39, 125.68], "ans": [1]},
+      "range": [119.39, 125.68], "ans": [7]},
     "",
     {
       "lyric_jp": "終わんないパーティーならいいな",
       "parts": [
         {"lyric": "Owannai",
-          "range": [125.68, 126.87], "ans": [1]},
+          "range": [125.68, 127.22], "ans": [1]},
         {"lyric": "Paatii nara ii na",
-          "range": [126.87, 129.31], "ans": []}
+          "range": [126.52, 129.31], "ans": []}
       ]
     },
     {"lyric": "Kokoro ga odoreba",
@@ -170,9 +196,9 @@
       "lyric_jp": "Ah! 回転ハロー（くるりと！）",
       "parts": [
         {"lyric": "Ah! Kaiten haroo",
-          "range": [134.93, 136.73], "ans": []},
+          "range": [134.93, 137.08], "ans": []},
         {"lyric": "(kururi to!)",
-          "range": [136.73, 137.46], "ans": [1]}
+          "range": [136.74, 137.46], "ans": [1]}
       ]
     },
     {"lyric": "Party! Party! PaPaPaParty!",
@@ -200,14 +226,14 @@
     "[next-col]",
     {"lyric": "Waraisugita ato de",
       "lyric_jp": "笑いすぎた後で",
-      "range": [159.46, 161.59], "ans": [1]},
+      "range": [159.46, 161.59], "ans": [7]},
     {
       "lyric_jp": "今日が思い出になると",
       "parts": [
         {"lyric": "Kyou ga",
-          "range": [161.59, 162.17], "ans": [1]},
+          "range": [161.59, 162.52], "ans": [7]},
         {"lyric": "Omoide ni naru to",
-          "range": [162.17, 164.65], "ans": []}
+          "range": [161.82, 164.65], "ans": [6]}
       ]
     },
     {"lyric": "Donna toki ni omoidasun darou?",
@@ -215,32 +241,44 @@
       "range": [164.57, 167.59], "ans": [1]},
     {"lyric": "Itsuka wakaru ka na",
       "lyric_jp": "いつかわかるかな",
-      "range": [167.59, 169.18], "ans": [1]},
+      "range": [167.59, 169.18], "ans": [7]},
     {
       "lyric_jp": "胸の中で小さなベルが鳴ってる",
       "parts": [
         {"lyric": "Mune no naka de",
-          "range": [169.18, 170.92], "ans": []},
+          "range": [169.18, 171.27], "ans": [6]},
         {"lyric": "Chiisana beru ga natteru",
-          "range": [170.92, 174.8], "ans": [1]}
+          "range": [170.57, 174.8], "ans": [1]}
       ]
     },
-    {"lyric": "Party, ah Christmas Party!!",
+    {"lyric": "Party, ah Christmas Party!",
       "lyric_jp": "Party, ah Christmas Party!!",
-      "range": [174.8, 201.69], "ans": []},
+      "range": [174.8, 180.9], "ans": []},
     "",
-    {"lyric": "Honto wa honto wa... nandatte kamawanainda yo",
+    {
       "lyric_jp": "ホントはホントは... なんだってかまわないんだよ",
-      "range": [201.69, 208.44], "ans": []},
+      "parts": [
+        {"lyric": "Honto wa",
+          "range": [201.69, 204.76], "ans": [6]},
+        {"lyric": "Honto wa... nandatte kamawanainda yo",
+          "range": [204.06, 208.44], "ans": []}
+      ]
+    },
     {"lyric": "Atsumaritai!",
       "lyric_jp": "集まりたい！",
       "range": [208.44, 210.36], "ans": []},
     {"lyric": "Yuki, sakura, hanabi, juugoya?",
       "lyric_jp": "雪、桜、花火、十五夜？",
       "range": [210.36, 213.24], "ans": []},
-    {"lyric": "Ah! Nandemo ari (ari da yo!)",
+    {
       "lyric_jp": "Ah! なんでもありっ（ありだよ！）",
-      "range": [213.24, 215.73], "ans": []},
+      "parts": [
+        {"lyric": "Ah! Nandemo ari",
+          "range": [213.24, 215.21], "ans": []},
+        {"lyric": "(ari da yo!)",
+          "range": [214.99, 215.9], "ans": [6]}
+      ]
+    },
     {"lyric": "Party! Party! PaPaPaParty!",
       "lyric_jp": "Party! Party! PaPaPaParty!",
       "range": [215.73, 217.98], "ans": []},
@@ -259,24 +297,29 @@
     {"lyric": "Icchaitai enryo nashi de",
       "lyric_jp": "言っちゃいたい 遠慮なしで",
       "range": [228, 230.14], "ans": []},
-    {"lyric": "Datte datte tomodachi da mon!",
+    {
       "lyric_jp": "だってだって友達だもん！",
-      "range": [230.14, 238.51], "ans": []},
-    {"lyric": "(DuDuRu DuDuRuDuRu)",
-      "range": [236.51, 238.51], "ans": []},
-    {"lyric": "(DuDuRu DuDuRuDuRu)",
-      "range": [236.51, 238.51], "ans": []},
-    {"lyric": "(DuDuRu DuDuRuDuRu)",
-      "range": [236.51, 238.51], "ans": []},
-    {"lyric": "(DuDuRu DuDuRuDu)",
-      "range": [236.51, 238.51], "ans": []},
-    {"lyric": "(DuDuRu DuDuRuDuRu)",
-      "range": [236.51, 238.51], "ans": []},
-    {"lyric": "(DuDuRu DuDuRuDuRu)",
-      "range": [236.51, 238.51], "ans": []},
-    {"lyric": "(DuDuRu DuDuRuDuRu)",
-      "range": [236.51, 238.51], "ans": []},
-    {"lyric": "(DuDuDuRuRu waa!)",
-      "range": [236.51, 238.51], "ans": []}
+      "parts": [
+        {"lyric": "Datte datte tomodachi da mon!",
+          "range": [230.14, 235.16], "ans": []},
+        {"lyric": "(DuDuRu DuDuRuDuRu)",
+          "range": [235.16, 235.58], "ans": []},
+        {"lyric": "(DuDuRu DuDuRuDuRu)",
+          "range": [235.58, 236], "ans": []},
+        {"lyric": "(DuDuRu DuDuRuDuRu)",
+          "range": [236, 236.42], "ans": []},
+        {"lyric": "(DuDuRu DuDuRuDu)",
+          "range": [236.42, 236.84], "ans": []},
+        {"lyric": "(DuDuRu DuDuRuDuRu)",
+          "range": [236.84, 237.25], "ans": []},
+        {"lyric": "(DuDuRu DuDuRuDuRu)",
+          "range": [237.25, 237.67], "ans": []},
+        {"lyric": "(DuDuRu DuDuRuDuRu)",
+          "range": [237.67, 238.09], "ans": []},
+        {"lyric": "(DuDuDuRuRu waa!)",
+          "range": [238.09, 238.51], "ans": []}
+      ]
+    },
+    ""
   ]
 }

@@ -9,6 +9,7 @@
   "slots": [
 
   ],
+  "generated": "2026-04-15T01:42:04Z",
   "lines": [
     {"lyric": "Yattaa yattaa! Muteki na joukigen",
       "lyric_jp": "やったーやったー！ムテキな上機嫌",
@@ -23,11 +24,11 @@
       "lyric_jp": "さあ来いよ じゃあ来いよ まだ元気いっぱいだよ",
       "parts": [
         {"lyric": "Saa koi yo",
-          "range": [34.93, 36.03], "ans": [2]},
+          "range": [34.93, 36.38], "ans": [2]},
         {"lyric": "Jaa koi yo",
-          "range": [36.03, 37.63], "ans": [9]},
+          "range": [35.68, 37.76], "ans": [9]},
         {"lyric": "Mada genki ippai da yo",
-          "range": [37.63, 40.12], "ans": [2, 9]}
+          "range": [37.06, 40.12], "ans": [2, 9], "diff": 2}
       ]
     },
     "",
@@ -35,27 +36,27 @@
       "lyric_jp": "そびえ立った山も 頂上があるのさ",
       "parts": [
         {"lyric": "Sobietatta yama mo",
-          "range": [40.12, 42.46], "ans": [8]},
+          "range": [40.12, 42.81], "ans": [8]},
         {"lyric": "Choujou ga aru no sa",
-          "range": [42.46, 45.26], "ans": [6]}
+          "range": [42.11, 45.26], "ans": [6]}
       ]
     },
     {
       "lyric_jp": "いつか テッペンにたどり着く みんな...",
       "parts": [
         {"lyric": "Itsuka",
-          "range": [45.26, 46.6], "ans": [6]},
+          "range": [45.26, 46.87], "ans": [6]},
         {"lyric": "Teppen ni tadoritsuku minna...",
-          "range": [46.6, 51.08], "ans": [6, 8]}
+          "range": [46.17, 51.08], "ans": [6, 8], "diff": 2}
       ]
     },
     {
       "lyric_jp": "（きっと）知ってる！",
       "parts": [
         {"lyric": "Kitto",
-          "range": [51.08, 51.38], "ans": [1, 2, 3, 4, 5, 7, 9]},
+          "range": [51.08, 51.58], "ans": [1, 2, 3, 4, 5, 7, 9], "diff": 3},
         {"lyric": "Shitteru!",
-          "range": [51.38, 55.01], "ans": [6, 8]}
+          "range": [52.46, 55.01], "ans": [6, 8], "diff": 2}
       ]
     },
     "",
@@ -69,11 +70,11 @@
       "lyric_jp": "進めType A!! これはなんの合図だろう",
       "range": [64.86, 70.49], "ans": []},
     {"lyric": "Kangaeru mae ni ugoiteta kara ima ga ima ga aru ne",
-      "lyric_jp": "考える前に動いてたから",
-      "range": [70.49, 74.88], "ans": []},
+      "lyric_jp": "考える前に動いてたから 今が今があるね",
+      "range": [70.49, 79.77], "ans": []},
     {"lyric": "Yoshi motto motto asobou yo!",
       "lyric_jp": "よしもっと もっと遊ぼうよ！",
-      "range": [79.77, 94.88], "ans": []},
+      "range": [79.77, 92.73], "ans": []},
     "",
     {"lyric": "Sankyuu sankyuu! Egao de hai pawaa",
       "lyric_jp": "さんきゅーさんきゅー！笑顔でハイパワー",
@@ -88,11 +89,11 @@
       "lyric_jp": "さあ来いよ じゃあ来いよ 受けて立つよぜんぶ",
       "parts": [
         {"lyric": "Saa koi yo",
-          "range": [109.21, 110.79], "ans": [3]},
+          "range": [109.21, 110.54], "ans": [3]},
         {"lyric": "Jaa koi yo",
-          "range": [110.79, 111.97], "ans": [5]},
+          "range": [109.84, 111.96], "ans": [5]},
         {"lyric": "Uketetatsu yo zenbu",
-          "range": [111.97, 114.39], "ans": [3, 5]}
+          "range": [111.26, 114.39], "ans": [3, 5], "diff": 2}
       ]
     },
     "",
@@ -100,27 +101,27 @@
       "lyric_jp": "川の向こう岸は どうなってるのかな",
       "parts": [
         {"lyric": "Kawa no mukougishi wa",
-          "range": [114.39, 116.69], "ans": [4]},
+          "range": [114.39, 117.04], "ans": [4]},
         {"lyric": "Dou natteru no ka na",
-          "range": [116.69, 119.06], "ans": [7]}
+          "range": [116.34, 119.06], "ans": [7]}
       ]
     },
     {
       "lyric_jp": "いつも 好奇心が人生のレーダーさ",
       "parts": [
         {"lyric": "Itsumo",
-          "range": [119.06, 119.68], "ans": [7]},
+          "range": [119.06, 120.03], "ans": [7]},
         {"lyric": "Koukishin ga jinsei no reedaa sa",
-          "range": [119.68, 125.32], "ans": [4, 7]}
+          "range": [119.33, 125.32], "ans": [4, 7], "diff": 2}
       ]
     },
     {
       "lyric_jp": "（ミステリー）大好き！",
       "parts": [
         {"lyric": "Misuterii",
-          "range": [125.32, 126.48], "ans": [1, 2, 3, 5, 6, 8, 9]},
+          "range": [125.32, 126.83], "ans": [1, 2, 3, 5, 6, 8, 9], "diff": 3},
         {"lyric": "Daisuki!",
-          "range": [126.48, 129.17], "ans": [4, 7]}
+          "range": [126.13, 129.17], "ans": [4, 7], "diff": 2}
       ]
     },
     "",
@@ -134,34 +135,40 @@
       "lyric_jp": "進めType B!! これはなんか合図だよ",
       "range": [138.82, 144.75], "ans": []},
     {"lyric": "PIN to kita kara ugoiteta yo ne ima wa ima wa kimi to",
-      "lyric_jp": "ピンときたから動いてたよね",
-      "range": [144.75, 149.19], "ans": []},
+      "lyric_jp": "ピンときたから動いてたよね 今は今は君と",
+      "range": [144.75, 153.88], "ans": []},
     {"lyric": "Yoshi motto motto asobou yo!",
       "lyric_jp": "よしもっと もっと遊ぼうよ！",
-      "range": [153.88, 163.41], "ans": []},
+      "range": [153.88, 160.92], "ans": []},
+    "",
+    "[next-col]",
     {"lyric": "(Type A!!)",
       "lyric_jp": "(Type A!!)",
       "range": [163.41, 168.36], "ans": []},
-    {"lyric": "(Type B!!)",
+    {"lyric": "(Type B!)",
       "lyric_jp": "(Type B!!)",
       "range": [168.36, 173.39], "ans": []},
     {"lyric": "(Type C!!)",
       "lyric_jp": "(Type C!!)",
-      "range": [173.39, 179.05], "ans": []},
+      "range": [173.39, 176.77], "ans": []},
     "",
-    "[next-col]",
-    {"lyric": "[A]qours days =",
+    {
       "lyric_jp": "[A]qours days = [B]ikkuri and [C]ute days",
-      "range": [179.05, 180.37], "ans": []},
-    {"lyric": "[B]ikkuri and [C]ute days",
-      "lyric_jp": "[A]qours days = [B]ikkuri and [C]ute days",
-      "range": [180.37, 182.41], "ans": []},
+      "parts": [
+        {"lyric": "Qours days =",
+          "range": [179.05, 179.93], "ans": []},
+        {"lyric": "Ikkuri and",
+          "range": [179.93, 181.35], "ans": []},
+        {"lyric": "Ute days",
+          "range": [181.35, 182.41], "ans": []}
+      ]
+    },
     {"lyric": "Bouken ni wa yume to kibou to toraburu!?",
       "lyric_jp": "冒険には 夢と希望とトラブル！？",
       "range": [182.41, 187.91], "ans": []},
     {"lyric": "Mukaikaze to ne odorunda",
       "lyric_jp": "向かい風とね 踊るんだ",
-      "range": [187.91, 200.94], "ans": []},
+      "range": [187.91, 199.1], "ans": []},
     "",
     {"lyric": "Bouken Type A!! Guuzen datte chansu dakara",
       "lyric_jp": "冒険Type A!! 偶然だってチャンスだから",
@@ -179,10 +186,10 @@
       "lyric_jp": "冒険Type C!! みんなずっと前からの",
       "range": [220.74, 226.47], "ans": []},
     {"lyric": "Tsunagarippoi tanoshisa dakara ima ga ima ga aru ne",
-      "lyric_jp": "つながりっぽい楽しさだから",
-      "range": [226.47, 230.81], "ans": []},
+      "lyric_jp": "つながりっぽい楽しさだから 今が今があるね",
+      "range": [226.47, 235.81], "ans": []},
     {"lyric": "Yoshi motto motto asobou yo asobou yo!",
-      "lyric_jp": "よしもっと もっと遊ぼうよ！",
-      "range": [235.81, 242.65], "ans": []}
+      "lyric_jp": "よしもっと もっと遊ぼうよ！ 遊ぼうよ！",
+      "range": [235.81, 272.39], "ans": []}
   ]
 }

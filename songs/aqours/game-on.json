@@ -9,6 +9,7 @@
   "slots": [
 
   ],
+  "generated": "2026-04-15T01:42:27Z",
   "lines": [
     {"lyric": "Ah Check it, check it ah",
       "lyric_jp": "Check it, check it ah",
@@ -17,12 +18,12 @@
       "lyric_jp": "GAME ON！",
       "range": [8.33, 10.83], "ans": []},
     "",
-    {"lyric": "Oh Oh pa*pa*pa*parareru game ON!",
+    {"lyric": "Oh Oh PAePA*PAsePARARERU game ON!",
       "lyric_jp": "Oh Oh パ・パ・パ・パラレル GAME ON！",
-      "range": [10.83, 15.01], "ans": []},
-    {"lyric": "Oh Oh pa*pa*pa*parareru game ON!",
+      "range": [10.83, 18.37], "ans": []},
+    {"lyric": "Oh Oh PAePA*PAsePARARERU game ON!",
       "lyric_jp": "Oh Oh パ・パ・パ・パラレル GAME ON！",
-      "range": [15.01, 18.37], "ans": []},
+      "range": [18.37, 25.6], "ans": []},
     "",
     {"lyric": "Mimimoto de sasayaku Devil or Angel?",
       "lyric_jp": "耳元で囁く Devil or Angel？",
@@ -50,9 +51,9 @@
       "lyric_jp": "New world, new world",
       "parts": [
         {"lyric": "New world,",
-          "range": [55.54, 56.37], "ans": [3]},
+          "range": [55.54, 56.88], "ans": [3]},
         {"lyric": "New world",
-          "range": [56.37, 57.28], "ans": [9]}
+          "range": [56.18, 57.28], "ans": [9]}
       ]
     },
     {"lyric": "Tanoshimou",
@@ -106,7 +107,7 @@
         {"lyric": "Don't stop,",
           "range": [112.27, 113.01], "ans": [1]},
         {"lyric": "Don’t stop",
-          "range": [113.01, 113.77], "ans": [2]}
+          "range": [112.27, 113.77], "ans": [2]}
       ]
     },
     {"lyric": "Kakedasou",
@@ -167,11 +168,11 @@
       "lyric_jp": "GAME ON NOW！",
       "range": [187.13, 191.85], "ans": []},
     "",
-    {"lyric": "Oh Oh pa*pa*pa*parareru game ON!",
+    {"lyric": "Oh Oh PAePA*PAsePARARERU game ON!",
       "lyric_jp": "Oh Oh パ・パ・パ・パラレル GAME ON！",
-      "range": [191.85, 196.53], "ans": []},
-    {"lyric": "Oh Oh pa*pa*pa*parareru game ON!",
+      "range": [191.85, 199.68], "ans": []},
+    {"lyric": "Oh Oh PAePA*PAsePARARERU game ON!",
       "lyric_jp": "Oh Oh パ・パ・パ・パラレル GAME ON！",
-      "range": [196.53, 199.68], "ans": []}
+      "range": [199.68, 208.75], "ans": []}
   ]
 }

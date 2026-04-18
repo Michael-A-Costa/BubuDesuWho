@@ -2,6 +2,7 @@
   "name": "Shoujo Ijou no Koi ga Shitai",
   "id": "shoujo",
   "group": "aqours",
+  "legacy": true,
   "released": "2017-04-05",
   "mp3": "sound/shoujo_ijou_no_koi_ga_shitai.mp3",
   "ogg": "sound/shoujo_ijou_no_koi_ga_shitai.ogg",

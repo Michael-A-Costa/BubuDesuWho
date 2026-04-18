@@ -1,6 +1,7 @@
 {
   "name": "Gokujou Smile",
   "group": "wug",
+  "legacy": true,
   "id": "gokusuma",
   "mp3": "sound/gokujou_smile.mp3",
   "ogg": "sound/gokujou_smile.ogg",

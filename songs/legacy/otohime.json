@@ -2,6 +2,7 @@
   "name": "Otohime Heart de Love Kyuuden",
   "id": "otohime",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/otohime_heart_de_love_kyuuden.mp3",
   "ogg": "sound/otohime_heart_de_love_kyuuden.ogg",
   "mapping": [

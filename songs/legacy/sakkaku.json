@@ -1,6 +1,7 @@
 {
   "name": "Sakkaku CROSSROADS",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/sakkaku_crossroads.mp3",
   "ogg": "sound/sakkaku_crossroads.ogg",
   "id": "sakkaku",

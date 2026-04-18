@@ -2,6 +2,7 @@
   "name": "WONDERFUL STORIES",
   "id": "stories",
   "group": "aqours",
+  "legacy": true,
   "released": "2018-01-17",
   "mp3": "sound/wonderful_stories.mp3",
   "ogg": "sound/wonderful_stories.ogg",

@@ -59,6 +59,7 @@ html[class*="theme-"] .hoverable .sidebar-nav li a.select-info.active:hover { fi
 html[class*="theme-"] .sort-btn.active                 { background: var(--t-check-bg, #62C462); border-color: var(--t-check-dark, #4aad4a); }
 html[class*="theme-"] .group-toggle-btn.active         { background: var(--t-check-bg, #62C462); border-color: var(--t-check-dark, #4aad4a); }
 html[class*="theme-"] .sort-toggle-wrap                { background: var(--t-slot-bg, #f5f5f5); border-bottom-color: var(--t-slot-active-bg, #ddd); }
+html[class*="theme-"] .sidebar-nav .has-feedback       { background: var(--t-slot-bg, #f5f5f5); }
 
 
 /*===============================================
@@ -611,4 +612,7 @@ html.dark-mode[class*="theme-"] .group-toggle-btn.active {
 html.dark-mode[class*="theme-"] .sort-toggle-wrap {
   background: var(--bg-surface) !important;
   border-bottom-color: var(--border) !important;
+}
+html.dark-mode[class*="theme-"] .sidebar-nav .has-feedback {
+  background: var(--bg-surface) !important;
 }

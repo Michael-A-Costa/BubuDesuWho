@@ -66,7 +66,7 @@
       "lyric_jp": "逃がさないから (My target!!)",
       "parts": [
         {"lyric": "Nigasanai kara",
-          "range": [54.84, 57.57], "ans": [6, 9]},
+          "range": [54.84, 57.57], "ans": [6, 9], "diff": 2},
         {"lyric": "My target!!",
           "range": [57.57, 58.56], "ans": [3]}
       ]
@@ -144,7 +144,7 @@
       "lyric_jp": "逃がさないから My target!!",
       "parts": [
         {"lyric": "Nigasanai kara",
-          "range": [132, 134.75], "ans": [3, 6]},
+          "range": [132, 134.75], "ans": [3, 6], "diff": 2},
         {"lyric": "My target!!",
           "range": [134.75, 136.37], "ans": [9]}
       ]
@@ -213,7 +213,7 @@
         {"lyric": "Katsu dake desho",
           "range": [192.66, 194], "ans": [6]},
         {"lyric": "Jinsei wa ruuretto",
-          "range": [194, 196.72], "ans": [3, 6]}
+          "range": [194, 196.72], "ans": [3, 6], "diff": 2}
       ]
     },
     {"lyric": "(Lock on!)",

@@ -11,7 +11,7 @@ function copyAssetsPlugin(): Plugin {
       for (const dir of ['css', 'fonts', 'songs']) {
         cpSync(resolve(root, dir), resolve(dist, dir), { recursive: true });
       }
-      for (const file of ['config.json', 'changelog.json']) {
+      for (const file of ['changelog.json']) {
         cpSync(resolve(root, file), resolve(dist, file));
       }
       cpSync(resolve(root, 'css', 'images'), resolve(dist, 'assets', 'images'), { recursive: true });

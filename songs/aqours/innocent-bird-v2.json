@@ -5,6 +5,7 @@
   "group": "aqours",
   "added": "2026-04",
   "hidden": true,
+  "generated": "2026-04-17T01:12:52Z",
   "slots": [
 
   ],
@@ -29,9 +30,9 @@
       "lyric_jp": "（愛したい） 恋はひとつだけでいいの",
       "parts": [
         {"lyric": "(Hitori dake aishitai)",
-          "range": [41.55, 43.23], "ans": [7]},
+          "range": [38.28, 38.96], "ans": [7]},
         {"lyric": "Koi wa hitotsu dake de ii no",
-          "range": [43.23, 44.75], "ans": [8]}
+          "range": [41.55, 44.54], "ans": [8]}
       ]
     },
     "",
@@ -68,44 +69,54 @@
       "lyric_jp": "Say yes!",
       "range": [97.14, 97.81], "ans": []},
     "",
-    {"lyric": "Jittai no nai omoi ga watashi wo kaeru",
-      "lyric_jp": "実体のない想いが私を変える",
-      "range": [97.81, 101.68], "ans": [4, 8]},
     {
-      "lyric_jp": "(So!) 熱くなるって",
+      "lyric_jp": "実体のない想いが私を変える",
       "parts": [
+        {"lyric": "Jittai no nai omoi ga watashi wo kaeru",
+          "range": [97.81, 102.03], "ans": [4, 8], "diff": 2},
         {"lyric": "(So!)",
-          "range": [101.68, 102.08], "ans": [7]},
-        {"lyric": "Atsuku naru tte",
-          "range": [102.08, 103.5], "ans": [4, 8]}
+          "range": [101.42, 102.24], "ans": [7]}
       ]
     },
+    {"lyric": "Atsuku naru tte",
+      "lyric_jp": "(So!) 熱くなるって",
+      "range": [101.68, 103.44], "ans": [4, 8], "diff": 2},
     {"lyric": "Kou iu koto?",
       "lyric_jp": "こういうこと？",
       "range": [103.44, 105.25], "ans": [7]},
     {"lyric": "Nankai mo nai deshou ikkai dake deshou",
       "lyric_jp": "何回もないでしょう 一回だけでしょう",
-      "range": [105.25, 109.01], "ans": [4, 8]},
-    {"lyric": "Datte unmei tte (Wao!)",
+      "range": [105.25, 109.01], "ans": [4, 8], "diff": 2},
+    {
       "lyric_jp": "だって運命って",
-      "range": [109.01, 111.45], "ans": [4, 8]},
+      "parts": [
+        {"lyric": "Datte unmei tte",
+          "range": [109.01, 111.8], "ans": [4, 8], "diff": 2},
+        {"lyric": "(Wao!)",
+          "range": [111.1, 111.95], "ans": [7]}
+      ]
+    },
     {"lyric": "Sou nan desu",
       "lyric_jp": "(Wao!) そうなんです",
-      "range": [111.45, 112.52], "ans": [4, 8]},
+      "range": [111.45, 112.52], "ans": [4, 8], "diff": 2},
     "",
     "[next-col]",
     {"lyric": "Sore made wa tojikomotte",
       "lyric_jp": "それまでは 閉じこもって",
       "range": [112.52, 119.09], "ans": [7]},
-    {"lyric": "Anata mo tamago no naka na no ne",
+    {
       "lyric_jp": "あなたも卵の中なのね",
-      "range": [119.09, 126.07], "ans": [7]},
-    {"lyric": "(in the EGG)",
-      "range": [124.07, 126.07], "ans": []},
+      "parts": [
+        {"lyric": "Anata mo tamago no naka na no ne",
+          "range": [119.09, 125.82], "ans": [7]},
+        {"lyric": "(in the EGG)",
+          "range": [125.12, 126.07], "ans": []}
+      ]
+    },
+    "",
     {"lyric": "In the air!",
       "lyric_jp": "In the air!",
       "range": [126.07, 127.42], "ans": []},
-    "",
     {"lyric": "Open heart zukizuki mune itai no",
       "lyric_jp": "Open heart ずきずき胸痛いの",
       "range": [127.42, 135.37], "ans": []},
@@ -117,7 +128,7 @@
       "range": [142.59, 149.9], "ans": []},
     {"lyric": "Dakedo kowagatteru no innocent",
       "lyric_jp": "だけどこわがってるの INNOCENT",
-      "range": [149.9, 172.07], "ans": []},
+      "range": [149.9, 159.02], "ans": []},
     "",
     {"lyric": "Love me do!",
       "lyric_jp": "Love me do!",
@@ -127,9 +138,9 @@
       "lyric_jp": "何回もない筈なんです Love me do!",
       "parts": [
         {"lyric": "Nankai mo nai hazu nan desu",
-          "range": [174.66, 179.62], "ans": []},
+          "range": [174.66, 180.39], "ans": []},
         {"lyric": "Love me do!",
-          "range": [179.62, 181.92], "ans": [8]}
+          "range": [179.69, 181.92], "ans": [8]}
       ]
     },
     {"lyric": "Open heart zukizuki mune itai no",
@@ -141,18 +152,15 @@
     {"lyric": "Open heart aisaretai aishitai",
       "lyric_jp": "Open heart 愛されたい愛したい",
       "range": [197.03, 204.61], "ans": []},
-    {"lyric": "Honto no koi wa hitotsu yo innocent",
-      "lyric_jp": "ホントの恋はひとつよ INNOCENT",
-      "range": [204.61, 213.26], "ans": []},
-    {"lyric": "Love",
-      "lyric_jp": "Love",
-      "range": [213.26, 215.64], "ans": []},
-    {"lyric": "Me!",
-      "lyric_jp": "Me!",
-      "range": [215.64, 217.05], "ans": []},
-    "",
-    {"lyric": "Love me! Say yes!",
-      "lyric_jp": "Love Me! Say yes!",
-      "range": [213.26, 225], "ans": []}
+    {
+      "lyric_jp": "ホントの恋はひとつよ INNOCENT Love Me! Say yes!",
+      "parts": [
+        {"lyric": "Honto no koi wa hitotsu yo innocent",
+          "range": [204.61, 211.44], "ans": []},
+        {"lyric": "Love me! Say yes!",
+          "range": [213.26, 220.05], "ans": []}
+      ]
+    },
+    ""
   ]
 }

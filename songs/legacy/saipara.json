@@ -1,6 +1,7 @@
 {
   "name": "Saitei de Saikou no Paradiso",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/saitei_de_saikou_no_paradiso.mp3",
   "ogg": "sound/saitei_de_saikou_no_paradiso.ogg",
   "id": "saipara",

@@ -1,6 +1,7 @@
 {
   "name": "Silent Tonight",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/silent_tonight.mp3",
   "ogg": "sound/silent_tonight.ogg",
   "id": "silent",

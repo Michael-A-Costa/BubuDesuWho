@@ -1,6 +1,7 @@
 {
   "name": "WUG Zoo Zoo",
   "group": "wug",
+  "legacy": true,
   "id": "wugzoo",
   "mp3": "sound/wug_zoo_zoo.mp3",
   "ogg": "sound/wug_zoo_zoo.ogg",

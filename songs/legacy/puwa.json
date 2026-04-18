@@ -2,6 +2,7 @@
   "name": "Puwa Puwa-O!",
   "id": "puwa",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/puwa_puwa_o.mp3",
   "ogg": "sound/puwa_puwa_o.ogg",
   "mapping": [

@@ -4,22 +4,23 @@
   "id": "well-get-the-next-dream",
   "group": "aqours",
   "added": "2026-04",
-  "hidden": true,
+  "hidden": false,
   "slots": [
 
   ],
+  "generated": "2026-04-15T01:45:00Z",
   "lines": [
     {
       "lyric_jp": "強くなりたい もっと強く 何のために？守るために！",
       "parts": [
         {"lyric": "Tsuyoku naritai",
-          "range": [2.06, 5.78], "ans": [8]},
+          "range": [2.06, 6.13], "ans": [8]},
         {"lyric": "Motto tsuyoku",
-          "range": [5.78, 9.38], "ans": [4]},
+          "range": [5.43, 9.68], "ans": [4]},
         {"lyric": "Nanno tame ni?",
-          "range": [9.38, 9.73], "ans": [7]},
+          "range": [9.03, 9.73], "ans": [7]},
         {"lyric": "Mamoru tame ni!",
-          "range": [9.73, 13.72], "ans": []}
+          "range": [11.3, 13.72], "ans": []}
       ]
     },
     "",
@@ -40,21 +41,21 @@
       "lyric_jp": "Shining world 輝く My world",
       "parts": [
         {"lyric": "Shining world",
-          "range": [35.07, 36.47], "ans": [8]},
+          "range": [35.07, 36.62], "ans": [8]},
         {"lyric": "Kagayaku My world",
-          "range": [36.47, 38.75], "ans": [4, 7]}
+          "range": [35.92, 38.75], "ans": [4, 7], "diff": 2}
       ]
     },
-    {"lyric": "“aa yarikirenai \"",
+    {"lyric": "“Aa yarikirenai \"",
       "lyric_jp": "「ああやりきれない！」",
       "range": [38.58, 40.75], "ans": [8]},
     {
       "lyric_jp": "そんな貴方の手をつかまえて助けたくて",
       "parts": [
         {"lyric": "Sonna anata no te wo tsukamaete",
-          "range": [40.75, 44.15], "ans": [8]},
+          "range": [40.75, 44.5], "ans": [8]},
         {"lyric": "Tasuketakute",
-          "range": [44.15, 46.17], "ans": [4, 7]}
+          "range": [43.8, 46.17], "ans": [4, 7], "diff": 2}
       ]
     },
     "",
@@ -62,85 +63,110 @@
       "lyric_jp": "強くなれるのです 本当になれるのです",
       "parts": [
         {"lyric": "Tsuyoku nareru no desu",
-          "range": [45.84, 47.86], "ans": [4]},
+          "range": [45.84, 48.55], "ans": [4]},
         {"lyric": "Hontou ni nareru no desu",
-          "range": [47.86, 50.06], "ans": [7, 8]}
+          "range": [47.85, 50.06], "ans": [7, 8], "diff": 2}
       ]
     },
     {
       "lyric_jp": "人は人を守る時もっと",
       "parts": [
         {"lyric": "Hito wa hito wo mamoru toki",
-          "range": [49.55, 53.07], "ans": [4]},
+          "range": [49.55, 53.36], "ans": [4]},
         {"lyric": "Motto",
-          "range": [53.07, 53.41], "ans": [7, 8]}
+          "range": [52.72, 53.41], "ans": [7, 8], "diff": 2}
       ]
     },
     {
       "lyric_jp": "強くなれるのです 本当になれるのです",
       "parts": [
         {"lyric": "Tsuyoku nareru no desu",
-          "range": [52.87, 55.09], "ans": [4]},
+          "range": [52.87, 56.1], "ans": [4]},
         {"lyric": "Hontou ni nareru no desu",
-          "range": [55.09, 57.55], "ans": [7, 8]}
+          "range": [55.4, 57.55], "ans": [7, 8], "diff": 2}
       ]
     },
-    {"lyric": "Ima wo kakenukete tatakatte",
+    {
       "lyric_jp": "いまを駆け抜けて戦って We don't give up",
-      "range": [57.1, 61.44], "ans": [4]},
+      "parts": [
+        {"lyric": "Ima wo kakenukete tatakatte",
+          "range": [57.1, 60.76], "ans": [4]},
+        {"lyric": "We don’t give up",
+          "range": [60.06, 62.11], "ans": [7]}
+      ]
+    },
     "",
-    {"lyric": "We don’t give up",
-      "lyric_jp": "どんなことが起きても なんとかしましょう",
-      "range": [61.44, 62.94], "ans": [7]},
     {"lyric": "Donna koto ga okite mo nantoka shimashou",
       "lyric_jp": "どんなことが起きても なんとかしましょう",
-      "range": [62.94, 68.07], "ans": [7]},
+      "range": [61.44, 68.07], "ans": [7]},
     {"lyric": "Sekai ni donna koto ga okite mo torimodosu hikari wo",
       "lyric_jp": "世界にどんなことが起きても 取り戻す光を",
       "range": [68.07, 76.58], "ans": [7]},
     "",
-    {"lyric": "Shinjite kudasai",
+    {
       "lyric_jp": "信じてください (Oh, yeah!)",
-      "range": [76.58, 78.56], "ans": [8]},
-    {"lyric": "(Oh, yeah!)",
-      "range": [76.58, 78.56], "ans": []},
-    {"lyric": "Shinjite kudasai",
+      "parts": [
+        {"lyric": "Shinjite kudasai",
+          "range": [76.58, 78.35], "ans": [8]},
+        {"lyric": "(Oh, yeah!)",
+          "range": [77.82, 79.28], "ans": []}
+      ]
+    },
+    {
       "lyric_jp": "信じてください (Oh, yeah!)",
-      "range": [78.56, 80.08], "ans": [4]},
-    {"lyric": "(Oh, yeah!)",
-      "range": [78.56, 80.08], "ans": []},
+      "parts": [
+        {"lyric": "Shinjite kudasai",
+          "range": [78.56, 80.29], "ans": [4]},
+        {"lyric": "(Oh, yeah!)",
+          "range": [79.73, 81.03], "ans": []}
+      ]
+    },
     {"lyric": "Yoku mo waruku mo USOtsukenai no desu",
       "lyric_jp": "良くも悪くも ウソつけないのです",
       "range": [80.08, 84.23], "ans": [7]},
-    {"lyric": "Shinjite kudasai",
+    {
       "lyric_jp": "信じてください (Oh, yeah!)",
-      "range": [84.23, 86.08], "ans": [8]},
-    {"lyric": "(Oh, yeah!)",
-      "range": [84.23, 86.08], "ans": []},
-    {"lyric": "Shinjite kudasai",
+      "parts": [
+        {"lyric": "Shinjite kudasai",
+          "range": [84.23, 85.86], "ans": [8]},
+        {"lyric": "(Oh, yeah!)",
+          "range": [85.33, 86.58], "ans": []}
+      ]
+    },
+    {
       "lyric_jp": "信じてください (Oh, yeah!)",
-      "range": [86.08, 87.56], "ans": [4]},
-    {"lyric": "(Oh, yeah!)",
-      "range": [86.08, 87.56], "ans": []},
+      "parts": [
+        {"lyric": "Shinjite kudasai",
+          "range": [86.08, 87.89], "ans": [4]},
+        {"lyric": "(Oh, yeah!)",
+          "range": [87.32, 88.56], "ans": []}
+      ]
+    },
     {"lyric": "Nando datte tachiagaru",
       "lyric_jp": "何度だって立ち上がる",
       "range": [87.56, 92.12], "ans": []},
     "",
-    {"lyric": "We'll get the next dream",
+    {
       "lyric_jp": "We'll get the next dream 新しい",
-      "range": [92.12, 94.32], "ans": []},
-    {"lyric": "Atarashii",
-      "lyric_jp": "We'll get the next dream 新しい",
-      "range": [94.32, 99.67], "ans": []},
-    {"lyric": "We'll get the next dream",
+      "parts": [
+        {"lyric": "We'll get the next dream",
+          "range": [92.12, 93.82], "ans": []},
+        {"lyric": "Atarashii",
+          "range": [93.82, 99.67], "ans": []}
+      ]
+    },
+    {
       "lyric_jp": "We'll get the next dream ちからで",
-      "range": [99.67, 102.73], "ans": []},
-    {"lyric": "Chikara de",
-      "lyric_jp": "We'll get the next dream ちからで",
-      "range": [102.73, 107.32], "ans": []},
+      "parts": [
+        {"lyric": "We'll get the next dream",
+          "range": [99.67, 101.81], "ans": []},
+        {"lyric": "Chikara de",
+          "range": [101.81, 107.32], "ans": []}
+      ]
+    },
     {"lyric": "Weill get the next dream!!!",
       "lyric_jp": "We'll get the next dream!!!",
-      "range": [107.32, 117.03], "ans": []},
+      "range": [107.32, 111.58], "ans": []},
     "",
     {"lyric": "Tadashii kotoba kakikesarete shimatta",
       "lyric_jp": "正しい言葉 かき消されてしまった",
@@ -149,21 +175,21 @@
       "lyric_jp": "Darkness world 儚い Pure world",
       "parts": [
         {"lyric": "Darkness world",
-          "range": [121.3, 122.35], "ans": [4]},
+          "range": [121.3, 122.14], "ans": [4]},
         {"lyric": "Hakanai Pure world",
-          "range": [122.35, 124.92], "ans": [7, 8]}
+          "range": [122.14, 124.92], "ans": [7, 8], "diff": 2}
       ]
     },
-    {"lyric": "“mou ugokenai yo \"",
+    {"lyric": "“Mou ugokenai yo \"",
       "lyric_jp": "「もう動けないよ！」",
       "range": [124.81, 127.15], "ans": [4]},
     {
       "lyric_jp": "大丈夫私と一緒なら 行きましょうか！",
       "parts": [
         {"lyric": "Daijoubu watashi to issho nara",
-          "range": [127.15, 130.41], "ans": [4]},
+          "range": [127.15, 130.76], "ans": [4]},
         {"lyric": "Ikimashou ka!",
-          "range": [130.41, 132.35], "ans": [7, 8]}
+          "range": [130.06, 132.35], "ans": [7, 8], "diff": 2}
       ]
     },
     "",
@@ -171,36 +197,36 @@
       "lyric_jp": "みんな悔しいのです 本当に悔しいのです",
       "parts": [
         {"lyric": "Minna kuyashii no desu",
-          "range": [132.06, 133.94], "ans": [8]},
+          "range": [132.06, 134.79], "ans": [8]},
         {"lyric": "Hontou ni kuyashii no desu",
-          "range": [133.94, 136.3], "ans": [4, 7]}
+          "range": [134.09, 136.3], "ans": [4, 7], "diff": 2}
       ]
     },
     {
       "lyric_jp": "人が人と触れあえないことが",
       "parts": [
         {"lyric": "Hito ga hito to fureaenai",
-          "range": [135.96, 139.02], "ans": [8]},
+          "range": [135.96, 139.37], "ans": [8]},
         {"lyric": "Koto ga",
-          "range": [139.02, 139.88], "ans": [4, 7]}
+          "range": [138.67, 139.88], "ans": [4, 7], "diff": 2}
       ]
     },
     {
       "lyric_jp": "みんな悔しいのです 本当に悔しいのです",
       "parts": [
         {"lyric": "Minna kuyashii no desu",
-          "range": [139.51, 141.45], "ans": [8]},
+          "range": [139.51, 142.32], "ans": [8]},
         {"lyric": "Hontou ni kuyashii no desu",
-          "range": [141.45, 143.83], "ans": [4, 7]}
+          "range": [141.62, 143.83], "ans": [4, 7], "diff": 2}
       ]
     },
     {
       "lyric_jp": "だから耐えながら戦って We don't give up",
       "parts": [
         {"lyric": "Dakara taenagara tatakatte",
-          "range": [143.4, 147.11], "ans": [8]},
+          "range": [143.4, 146.6], "ans": [8]},
         {"lyric": "We don’t give up",
-          "range": [147.11, 148.34], "ans": [7]}
+          "range": [146.6, 148.34], "ans": [7]}
       ]
     },
     {"lyric": "Donna koto ga okite mo nantoka shimashou",
@@ -211,69 +237,91 @@
       "range": [153.92, 162.75], "ans": [7]},
     "",
     "[next-col]",
-    {"lyric": "Mata asobimashou",
+    {
       "lyric_jp": "また遊びましょう (Oh, yeah!)",
-      "range": [162.75, 164.68], "ans": [8]},
-    {"lyric": "(Oh, yeah!)",
-      "range": [162.75, 164.68], "ans": []},
-    {"lyric": "Mata asobimashou",
+      "parts": [
+        {"lyric": "Mata asobimashou",
+          "range": [162.75, 164.76], "ans": [8]},
+        {"lyric": "(Oh, yeah!)",
+          "range": [164.19, 164.97], "ans": []}
+      ]
+    },
+    {
       "lyric_jp": "また遊びましょう (Oh, yeah!)",
-      "range": [164.68, 166.39], "ans": [4]},
-    {"lyric": "(Oh, yeah!)",
-      "range": [164.68, 166.39], "ans": []},
+      "parts": [
+        {"lyric": "Mata asobimashou",
+          "range": [164.68, 166.63], "ans": [4]},
+        {"lyric": "(Oh, yeah!)",
+          "range": [166.05, 166.91], "ans": []}
+      ]
+    },
     {"lyric": "Yoku mo waruku mo ruuru kawaru sekai",
       "lyric_jp": "良くも悪くもルール変わる世界",
       "range": [166.39, 170.14], "ans": [7]},
-    {"lyric": "Mata asobimashou",
+    {
       "lyric_jp": "また遊びましょう (Oh, yeah!)",
-      "range": [170.14, 172.39], "ans": [8]},
-    {"lyric": "(Oh, yeah!)",
-      "range": [170.39, 172.39], "ans": []},
-    {"lyric": "Mata asobimashou",
+      "parts": [
+        {"lyric": "Mata asobimashou",
+          "range": [170.14, 172.25], "ans": [8]},
+        {"lyric": "(Oh, yeah!)",
+          "range": [171.69, 172.59], "ans": []}
+      ]
+    },
+    {
       "lyric_jp": "また遊びましょう (Oh, yeah!)",
-      "range": [172.39, 173.59], "ans": [4]},
-    {"lyric": "(Oh, yeah!)",
-      "range": [172.39, 173.59], "ans": []},
+      "parts": [
+        {"lyric": "Mata asobimashou",
+          "range": [172.39, 173.94], "ans": [4]},
+        {"lyric": "(Oh, yeah!)",
+          "range": [173.58, 174.48], "ans": []}
+      ]
+    },
     {"lyric": "Itsuka dokoka de aitai",
       "lyric_jp": "いつかどこかで会いたい",
       "range": [173.59, 178.39], "ans": []},
     "",
-    {"lyric": "We'll get the next dream",
+    {
       "lyric_jp": "We'll get the next dream 新しい",
-      "range": [178.39, 180.57], "ans": []},
-    {"lyric": "Atarashii",
-      "lyric_jp": "We'll get the next dream 新しい",
-      "range": [180.57, 186.09], "ans": []},
-    {"lyric": "We'll get the next dream",
+      "parts": [
+        {"lyric": "We'll get the next dream",
+          "range": [178.39, 180.07], "ans": []},
+        {"lyric": "Atarashii",
+          "range": [180.07, 186.09], "ans": []}
+      ]
+    },
+    {
       "lyric_jp": "We'll get the next dream ちからで",
-      "range": [186.09, 189.73], "ans": []},
-    {"lyric": "Chikara de",
-      "lyric_jp": "We'll get the next dream ちからで",
-      "range": [189.73, 193.6], "ans": []},
+      "parts": [
+        {"lyric": "We'll get the next dream",
+          "range": [186.09, 188.07], "ans": []},
+        {"lyric": "Chikara de",
+          "range": [188.07, 193.6], "ans": []}
+      ]
+    },
     {"lyric": "Weill get the next dream!!!",
       "lyric_jp": "We'll get the next dream!!!",
-      "range": [193.6, 210.24], "ans": []},
+      "range": [193.6, 197.88], "ans": []},
     "",
     {
       "lyric_jp": "こころから願えば叶うと信じられない？",
       "parts": [
         {"lyric": "Kokoro kara negaeba kanau to",
-          "range": [210.24, 215.02], "ans": [8]},
+          "range": [210.24, 215.37], "ans": [8]},
         {"lyric": "Shinjirarenai?",
-          "range": [215.02, 217.39], "ans": [4]}
+          "range": [214.67, 217.39], "ans": [4]}
       ]
     },
     {
       "lyric_jp": "足りないのは次の夢想いを解き放って！",
       "parts": [
         {"lyric": "Tarinai no wa",
-          "range": [217.29, 219.45], "ans": [8]},
+          "range": [217.29, 219.8], "ans": [8]},
         {"lyric": "Tsugi no yume",
-          "range": [219.45, 221.43], "ans": [7]},
+          "range": [219.1, 221.78], "ans": [7]},
         {"lyric": "Omoi wo",
-          "range": [221.43, 223.99], "ans": [8]},
+          "range": [221.08, 224.34], "ans": [8]},
         {"lyric": "Tokihanatte!",
-          "range": [223.99, 233.34], "ans": [4, 7]}
+          "range": [223.64, 227.85], "ans": [4, 7], "diff": 2}
       ]
     },
     "",
@@ -281,24 +329,28 @@
       "lyric_jp": "We'll get the next dream 新しい",
       "parts": [
         {"lyric": "We'll get the next dream",
-          "range": [233.34, 234.92], "ans": []},
+          "range": [233.34, 234.81], "ans": []},
         {"lyric": "Atarashii",
-          "range": [234.92, 240.44], "ans": [4, 7]}
+          "range": [234.11, 240.44], "ans": [4, 7], "diff": 2}
       ]
     },
     {
       "lyric_jp": "We'll get the next dream ちからで",
       "parts": [
         {"lyric": "We'll get the next dream",
-          "range": [240.44, 244.56], "ans": []},
+          "range": [240.44, 244.91], "ans": []},
         {"lyric": "Chikara de",
-          "range": [244.56, 247.82], "ans": [8]}
+          "range": [244.21, 247.82], "ans": [8]}
       ]
     },
-    {"lyric": "(we'll get the next dream)",
-      "range": [245.82, 247.82], "ans": []},
-    {"lyric": "Weill get the next dream!!!",
+    {
       "lyric_jp": "We'll get the next dream!!!",
-      "range": [247.82, 275], "ans": []}
+      "parts": [
+        {"lyric": "(We'll get the next dream)",
+          "range": [247.82, 249.12], "ans": []},
+        {"lyric": "Weill get the next dream!!!",
+          "range": [249.12, 252.22], "ans": []}
+      ]
+    }
   ]
 }

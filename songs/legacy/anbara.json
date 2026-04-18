@@ -2,6 +2,7 @@
   "name": "UNBALANCED LOVE",
   "id": "anbara",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/unbalanced_love.mp3",
   "ogg": "sound/unbalanced_love.ogg",
   "mapping": [

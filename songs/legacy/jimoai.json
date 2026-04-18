@@ -1,5 +1,6 @@
 {
   "group": "aqours",
+  "legacy": true,
   "released": "2017-08-02",
   "id": "jimoai",
   "mp3": "sound/jimo_ai_mantan_summer_life.mp3",

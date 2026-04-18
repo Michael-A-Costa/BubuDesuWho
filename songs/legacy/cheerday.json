@@ -2,6 +2,7 @@
   "name": "CheerDay CheerGirl!",
   "id": "cheerday",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/cheerday_cheergirl.mp3",
   "ogg": "sound/cheerday_cheergirl.ogg",
   "mapping": [

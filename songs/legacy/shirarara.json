@@ -2,6 +2,7 @@
   "name": "Shiranai Love*Oshiete Love",
   "id": "shirarara",
   "group": "muse",
+  "legacy": true,
   "ogg": "sound/shiranai_love_oshiete_love.ogg",
   "mp3": "sound/shiranai_love_oshiete_love.mp3",
   "mapping": [

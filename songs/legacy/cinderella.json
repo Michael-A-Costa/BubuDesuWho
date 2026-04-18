@@ -2,6 +2,7 @@
   "name": "G Senjou no Cinderella",
   "id": "cinderella",
   "group": "aqours",
+  "legacy": true,
   "released": "2017-01-27",
   "subunit": "3rd-years",
   "mp3": "sound/g_senjou_no_cinderella.mp3",

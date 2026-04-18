@@ -2,6 +2,7 @@
   "name": "Omoide Ijou ni Naritakute",
   "id": "omoide",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/omoide_ijou_ni_naritakute.mp3",
   "ogg": "sound/omoide_ijou_ni_naritakute.ogg",
   "mapping": [

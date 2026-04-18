@@ -1,0 +1,201 @@
+{
+  "name": "Omoi yo Hitotsu ni Nare (V2)",
+  "ogg": "sound/omoi_yo_hitotsu_ni_nare.ogg",
+  "id": "omoi-yo-hitotsu-ni-nare-v2",
+  "group": "aqours",
+  "added": "2026-04",
+  "hidden": true,
+  "generated": "2026-04-17T01:12:29Z",
+  "slots": [
+
+  ],
+  "lines": [
+    {
+      "lyric_jp": "ヒカリになろう ミライを照らしたい",
+      "parts": [
+        {"lyric": "Omoi yo hitotsu ni nare",
+          "range": [34.85, 39.9], "ans": [1]},
+        {"lyric": "(omoi ga hitotsu ni naru toki)",
+          "range": [39.2, 40.15], "ans": [2, 4, 5, 6, 7, 8, 9], "diff": 3}
+      ]
+    },
+    {
+      "lyric_jp": "輝きは心から 溢れ出すよ",
+      "parts": [
+        {"lyric": "Kono toki wo matte ita",
+          "range": [40.15, 44.71], "ans": [1]},
+        {"lyric": "Futo kidzuku to kasanariau yo",
+          "range": [45.35, 49.26], "ans": [1, 2], "diff": 2}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "夢が生まれ 夢の為に",
+      "parts": [
+        {"lyric": "Ichizu ni mirai wo yobu kokoro",
+          "range": [62.28, 63.3], "ans": [6, 7], "diff": 2},
+        {"lyric": "Furueteru te wo nigitte ikunda yo",
+          "range": [62.6, 64.02], "ans": [4, 5], "diff": 2},
+        {"lyric": "Surechigatta ato de douji ni furimuita",
+          "range": [63.32, 64.54], "ans": [8, 9], "diff": 2}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "泣いたときでも",
+      "parts": [
+        {"lyric": "Hora ne",
+          "range": [64.54, 65], "ans": [1]},
+        {"lyric": "Hontou wa",
+          "range": [64.59, 65.4], "ans": [2]},
+        {"lyric": "Issho datta yo kimochi wa ne",
+          "range": [64.7, 66.13], "ans": []},
+        {"lyric": "Nanika wo tsukamu koto de",
+          "range": [65.43, 66.87], "ans": [1, 2], "diff": 2},
+        {"lyric": "(yume ni mo iroiro aru kara)",
+          "range": [66.17, 67.12], "ans": [4, 5, 6, 7, 8, 9]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "諦めない事で つながった",
+      "parts": [
+        {"lyric": "Nanika wo akiramenai",
+          "range": [67.12, 71.15], "ans": [1, 2], "diff": 2},
+        {"lyric": "(sou desho?)",
+          "range": [70.49, 71.55], "ans": [4, 5, 6, 7, 8, 9]},
+        {"lyric": "Omoi yo hitotsu ni nare",
+          "range": [70.85, 74.02], "ans": []}
+      ]
+    },
+    {
+      "lyric_jp": "ここへ辿り着いたね",
+      "parts": [
+        {"lyric": "Doko ni ite mo onaji ashita wo shinjiteru",
+          "range": [75.94, 76.42], "ans": []},
+        {"lyric": "Wow wow itsudatte hitotsu ni nare",
+          "range": [76.42, 77.49], "ans": []},
+        {"lyric": "Chikadzuitari hanaretari datta ne",
+          "range": [76.79, 78.59], "ans": [7]}
+      ]
+    },
+    "",
+    {"lyric": "Wow wow itsudatte kokoro no mama",
+      "lyric_jp": "これからだよ今は",
+      "range": [78.59, 82.72], "ans": []},
+    {"lyric": "Umaku ikanakute zutto",
+      "lyric_jp": "僕たちだけの新世界が",
+      "range": [90.72, 94.29], "ans": [9]},
+    {"lyric": "Tsutaerarenai koto ga atta yo",
+      "lyric_jp": "（きっとある） We say \"ヨーソロー!!\"",
+      "range": [94.29, 99.09], "ans": [8]},
+    "",
+    {
+      "lyric_jp": "青い空 笑ってる （何がしたい？）",
+      "parts": [
+        {"lyric": "Majime na kao shite",
+          "range": [104.77, 107.6], "ans": [6]},
+        {"lyric": "Douji ni waraidasu",
+          "range": [106.9, 110.03], "ans": [5]}
+      ]
+    },
+    {
+      "lyric_jp": "ヒカリになろう ミライを照らしたい",
+      "parts": [
+        {"lyric": "Yappari kimi to",
+          "range": [110.03, 113.27], "ans": [4]},
+        {"lyric": "Tsunagatteru ureshii yo",
+          "range": [113.27, 115.77], "ans": []}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "輝きは 心から あふれ出して",
+      "parts": [
+        {"lyric": "Daiji na yume ou toki daiji na hito ga wakaru",
+          "range": [115.77, 117.28], "ans": []},
+        {"lyric": "Omoi wa hitotsu da yo to",
+          "range": [117.28, 118.03], "ans": []},
+        {"lyric": "Chigau basho e mukau toshite mo shinjiteru",
+          "range": [118.03, 119.66], "ans": []},
+        {"lyric": "Kakegae no nai hibi wo",
+          "range": [118.96, 120.41], "ans": [9]},
+        {"lyric": "Sugoshitetanda",
+          "range": [119.71, 120.86], "ans": [8]},
+        {"lyric": "Imasara wakatta",
+          "range": [120.16, 121.05], "ans": [2]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "ヒカリになろう ミライを照らしたい",
+      "parts": [
+        {"lyric": "Hitori janai",
+          "range": [145.63, 147.09], "ans": [6]},
+        {"lyric": "Kakegae no nai hibi wo",
+          "range": [147.09, 149.84], "ans": [7]},
+        {"lyric": "(koko de)",
+          "range": [149.14, 150.33], "ans": [2, 6, 8, 9], "diff": 3},
+        {"lyric": "Tsumikasanete",
+          "range": [150.33, 151.64], "ans": [5]},
+        {"lyric": "(hitotsu hitotsu)",
+          "range": [150.92, 151.52], "ans": [2, 6, 8, 9], "diff": 3}
+      ]
+    },
+    {
+      "lyric_jp": "青い空 笑ってる （何がしたい？）",
+      "parts": [
+        {"lyric": "Imasara wakatta",
+          "range": [166.29, 168.63], "ans": [4]},
+        {"lyric": "(issho da yo ne)",
+          "range": [167.93, 170.05], "ans": [2, 6, 8, 9], "diff": 3},
+        {"lyric": "Hitori janai",
+          "range": [169.35, 171.4], "ans": [1]}
+      ]
+    },
+    "",
+    "[next-col]",
+    {
+      "lyric_jp": "輝きは 心から あふれ出して",
+      "parts": [
+        {"lyric": "Nanika wo tsukamu koto de",
+          "range": [177.13, 182.21], "ans": [1, 4, 5, 7], "diff": 3},
+        {"lyric": "(yume ni mo iroiro aru kara)",
+          "range": [181.51, 182.46], "ans": [2, 6, 8, 9], "diff": 3}
+      ]
+    },
+    {
+      "lyric_jp": "もっと 先の景色 望むんだ",
+      "parts": [
+        {"lyric": "Nanika wo akiramenai",
+          "range": [182.46, 186.09], "ans": [1, 4, 5, 7], "diff": 3},
+        {"lyric": "(sou desho?)",
+          "range": [185.39, 188.41], "ans": [2, 6, 8, 9], "diff": 3},
+        {"lyric": "Omoi yo hitotsu ni nare",
+          "range": [188.02, 190.04], "ans": []},
+        {"lyric": "(wakarunda)",
+          "range": [188.46, 189.06], "ans": [2, 6, 8, 9], "diff": 3}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "Ah やっと手にしたMIRAI TICKET かざして",
+      "parts": [
+        {"lyric": "Omoi wa hitotsu da yo to",
+          "range": [189.06, 190.27], "ans": [1, 4, 5, 7], "diff": 3},
+        {"lyric": "Doko ni ite mo onaji ashita wo shinjiteru",
+          "range": [189.57, 191.3], "ans": []},
+        {"lyric": "Daiji na yume ou toki daiji na hito ga wakaru",
+          "range": [191.3, 193], "ans": []},
+        {"lyric": "(Omoi wa hitotsu)",
+          "range": [192.3, 194], "ans": [2, 6, 8, 9], "diff": 3},
+        {"lyric": "Chigau basho e mukau toshite mo",
+          "range": [194, 195.43], "ans": [1, 4, 5, 7], "diff": 3},
+        {"lyric": "(shinjiteru kara)",
+          "range": [194.73, 195.85], "ans": [2, 6, 8, 9], "diff": 3},
+        {"lyric": "Shinjiteru",
+          "range": [195.15, 215.09], "ans": [1, 4, 5, 7], "diff": 3}
+      ]
+    }
+  ]
+}

@@ -4,6 +4,7 @@
   "ogg": "sound/jingle_bells_ga_tomaranai.ogg",
   "id": "jingle",
   "group": "aqours",
+  "legacy": true,
   "released": "2016-11-23",
   "mapping": [
     {

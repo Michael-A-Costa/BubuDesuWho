@@ -9,6 +9,7 @@
   "slots": [
 
   ],
+  "generated": "2026-04-16T03:50:18Z",
   "lines": [
     {"lyric": "Doko nandarou?",
       "lyric_jp": "どこなんだろう？",
@@ -26,9 +27,9 @@
       "lyric_jp": "飛んでけー！（飛んでけ！）",
       "parts": [
         {"lyric": "Tondekee!",
-          "range": [35.05, 35.68], "ans": [5]},
+          "range": [35.05, 36.03], "ans": [5]},
         {"lyric": "(tondeke!)",
-          "range": [35.68, 36.19], "ans": [1, 2, 3, 4, 6, 7, 8, 9]}
+          "range": [35.64, 36.49], "ans": [1, 2, 3, 4, 6, 7, 8, 9], "diff": 2}
       ]
     },
     {"lyric": "Sekai no hate made mo",
@@ -53,7 +54,7 @@
         {"lyric": "Tondekee!",
           "range": [54.52, 55.91], "ans": [3]},
         {"lyric": "(Byuunto!)",
-          "range": [55.91, 56.72], "ans": [1, 2, 4, 5, 6, 7, 8, 9]}
+          "range": [56.11, 56.96], "ans": [1, 2, 4, 5, 6, 7, 8, 9], "diff": 2}
       ]
     },
     {"lyric": "Kimi ni tondeke!",
@@ -67,18 +68,18 @@
       "lyric_jp": "ずっと一緒にいるんだよ",
       "parts": [
         {"lyric": "Zutto",
-          "range": [64.68, 65.3], "ans": [9]},
+          "range": [64.68, 65.65], "ans": [9]},
         {"lyric": "Issho ni irunda yo",
-          "range": [65.3, 67.34], "ans": [1, 2, 3, 4, 5, 6, 7, 8]}
+          "range": [64.95, 67.34], "ans": [1, 2, 3, 4, 5, 6, 7, 8], "diff": 2}
       ]
     },
     {
       "lyric_jp": "ずっと楽しいことしたいから",
       "parts": [
         {"lyric": "Zutto",
-          "range": [67.14, 67.74], "ans": [9]},
+          "range": [67.14, 68.09], "ans": [9]},
         {"lyric": "Tanoshii koto shitai kara",
-          "range": [67.74, 70.26], "ans": [1, 2, 3, 4, 5, 6, 7, 8]}
+          "range": [67.39, 70.26], "ans": [1, 2, 3, 4, 5, 6, 7, 8], "diff": 2}
       ]
     },
     {"lyric": "Hitori Janai Hitori Janai",
@@ -86,7 +87,7 @@
       "range": [70.08, 74.34], "ans": [9]},
     {"lyric": "Kokoro kusugucchae minna minna de waracchae",
       "lyric_jp": "ココロくすぐっちゃえ みんなみんなで笑っちゃえ",
-      "range": [74.34, 79.94], "ans": [3, 4, 5]},
+      "range": [74.34, 79.94], "ans": [3, 4, 5], "diff": 2},
     {"lyric": "Ooru naito paatii!",
       "lyric_jp": "オールナイトパーティー！",
       "range": [79.94, 82.5], "ans": []},
@@ -132,9 +133,9 @@
       "lyric_jp": "飛んでけー！（飛んでけ！）",
       "parts": [
         {"lyric": "Tondekee!",
-          "range": [145.09, 146.43], "ans": [6]},
+          "range": [145.09, 146.1], "ans": [6]},
         {"lyric": "(tondeke!)",
-          "range": [146.43, 147.48], "ans": [5]}
+          "range": [145.8, 147.48], "ans": [5]}
       ]
     },
     {"lyric": "Happii wakeaitai na",
@@ -157,9 +158,9 @@
       "lyric_jp": "飛んでけー！（びゅーんと！）",
       "parts": [
         {"lyric": "Tondekee!",
-          "range": [164.77, 165.91], "ans": [1]},
+          "range": [164.77, 166.26], "ans": [1]},
         {"lyric": "(Byuunto!)",
-          "range": [165.91, 166.41], "ans": [6]}
+          "range": [165.92, 166.77], "ans": [6]}
       ]
     },
     {"lyric": "Kimi ni tondeke!",
@@ -174,18 +175,18 @@
       "lyric_jp": "そっと僕らを呼んでみな",
       "parts": [
         {"lyric": "Sotto",
-          "range": [174.76, 175.15], "ans": [8]},
+          "range": [174.76, 175.5], "ans": [8]},
         {"lyric": "Bokura wo yonde mina",
-          "range": [175.15, 177.36], "ans": [1, 2, 3, 4, 5, 6, 7, 9]}
+          "range": [174.81, 177.36], "ans": [1, 2, 3, 4, 5, 6, 7, 9], "diff": 2}
       ]
     },
     {
       "lyric_jp": "そっと声で抱きしめちゃうから",
       "parts": [
         {"lyric": "Sotto",
-          "range": [177.13, 177.95], "ans": [8]},
+          "range": [177.13, 178.51], "ans": [8]},
         {"lyric": "Koe de dakishimechau kara",
-          "range": [177.95, 180.27], "ans": [1, 2, 3, 4, 5, 6, 7, 9]}
+          "range": [177.81, 180.27], "ans": [1, 2, 3, 4, 5, 6, 7, 9], "diff": 2}
       ]
     },
     {"lyric": "Hitori Janai Hitori Janai",
@@ -193,7 +194,7 @@
       "range": [179.86, 184.18], "ans": [8]},
     {"lyric": "Negai onnaji da yo minna minna to aitai yo",
       "lyric_jp": "ネガイおんなじだよ みんなみんなと会いたいよ",
-      "range": [184.18, 189.96], "ans": [1, 2, 7]},
+      "range": [184.18, 189.96], "ans": [1, 2, 7], "diff": 2},
     {"lyric": "Ooru naito paatii!",
       "lyric_jp": "オールナイトパーティー！",
       "range": [189.96, 192.23], "ans": []},
@@ -224,11 +225,11 @@
       "lyric_jp": "ココロくすぐっちゃえ みんなみんなで笑っちゃえ",
       "parts": [
         {"lyric": "Kokoro kusugucchae",
-          "range": [239.47, 241.61], "ans": [1, 6, 7]},
+          "range": [239.47, 241.96], "ans": [1, 6, 7], "diff": 2},
         {"lyric": "Minna minna de",
-          "range": [241.61, 243.39], "ans": [2, 5, 8]},
+          "range": [241.26, 243.74], "ans": [2, 5, 8], "diff": 2},
         {"lyric": "Waracchae",
-          "range": [243.39, 245.42], "ans": [3, 4, 9]}
+          "range": [243.04, 245.42], "ans": [3, 4, 9], "diff": 2}
       ]
     },
     {"lyric": "Ooru naito! Ooru naito paatii!!",

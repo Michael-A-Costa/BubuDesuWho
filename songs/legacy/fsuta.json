@@ -1,6 +1,7 @@
 {
   "name": "Future Style",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/future_style.mp3",
   "ogg": "sound/future_style.ogg",
   "id": "fsuta",

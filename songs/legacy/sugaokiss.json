@@ -1,6 +1,7 @@
 {
   "name": "Sugao de KISS ME",
   "group": "wug",
+  "legacy": true,
   "id": "sugaokiss",
   "mp3": "sound/sugao_de_kiss_me.mp3",
   "ogg": "sound/sugao_de_kiss_me.ogg",

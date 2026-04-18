@@ -4,23 +4,24 @@
   "id": "phoenix-dance",
   "group": "aqours",
   "added": "2026-04",
-  "hidden": true,
+  "hidden": false,
   "slots": [
 
   ],
+  "generated": "2026-04-15T01:44:34Z",
   "lines": [
     {
       "lyric_jp": "狂おしく Dance now!",
       "parts": [
         {"lyric": "Oh Oh",
-          "range": [6.91, 7.35], "ans": []},
+          "range": [6.91, 7.7], "ans": []},
         {"lyric": "Kuruoshiku Dance now!",
-          "range": [7.35, 16.62], "ans": [4]}
+          "range": [7, 16.62], "ans": [4]}
       ]
     },
     {"lyric": "Tada atsui atsui Dance!!",
       "lyric_jp": "ただ熱い熱い Dance!!",
-      "range": [16.62, 18.26], "ans": [7, 8]},
+      "range": [16.62, 18.26], "ans": [7, 8], "diff": 2},
     "",
     {"lyric": "Wana-wana dance",
       "lyric_jp": "WANA-WANA dance",
@@ -49,13 +50,17 @@
     {"lyric": "Yamete mo kitto yamerarenai no desu, ne?",
       "lyric_jp": "止めてもきっと止められないのです、ね？",
       "range": [33.58, 36.96], "ans": [4]},
-    {"lyric": "Wana-wana dance Yeah Eh!",
+    {
       "lyric_jp": "WANA-WANA dance yeah!",
-      "range": [36.96, 46.4], "ans": []},
-    {"lyric": "(Oh Oh Eh Oh Oh Eh Oh Oh Eh Oh)",
-      "range": [44.4, 46.4], "ans": []},
-    {"lyric": "(Oh Oh Eh Oh Oh Eh Oh Oh Eh)",
-      "range": [44.4, 46.4], "ans": []},
+      "parts": [
+        {"lyric": "Wana-wana dance Yeah Eh!",
+          "range": [36.96, 39.4], "ans": []},
+        {"lyric": "(Oh Oh Eh Oh Oh Eh Oh Oh Eh Oh)",
+          "range": [39.4, 40], "ans": []},
+        {"lyric": "(Oh Oh Eh Oh Oh Eh Oh Oh Eh)",
+          "range": [40, 40.6], "ans": []}
+      ]
+    },
     "",
     {"lyric": "Moenagara kokoro tonde shimae",
       "lyric_jp": "燃えながら こころ飛んでしまえ",
@@ -77,9 +82,9 @@
       "lyric_jp": "見つめあって 唇から次の言葉こぼれる前に",
       "parts": [
         {"lyric": "Mitsumeatte",
-          "range": [63.99, 65.29], "ans": [8]},
+          "range": [63.99, 67.08], "ans": [8]},
         {"lyric": "Kuchibiru kara tsugi no kotoba koboreru mae ni",
-          "range": [65.29, 70.67], "ans": [4]}
+          "range": [66.38, 70.67], "ans": [4]}
       ]
     },
     "",
@@ -87,9 +92,9 @@
       "lyric_jp": "お互いをそっと呼んで 次は？ (Kiss!)",
       "parts": [
         {"lyric": "Otagai wo sotto yonde tsugi wa?",
-          "range": [70.67, 74.78], "ans": [7]},
+          "range": [70.67, 75.07], "ans": [7]},
         {"lyric": "Kiss!",
-          "range": [74.78, 75.12], "ans": [4]}
+          "range": [74.43, 75.12], "ans": [4]}
       ]
     },
     {"lyric": "Tameiki ni natte shimaisou desu",
@@ -106,36 +111,36 @@
       "lyric_jp": "知らない... 知ってる... 知ってるけど知らない！",
       "parts": [
         {"lyric": "Shiranai... shitteru...",
-          "range": [85.55, 87.73], "ans": [4, 7]},
+          "range": [85.55, 88.16], "ans": [4, 7], "diff": 2},
         {"lyric": "Shitteru kedo shiranai!",
-          "range": [87.73, 89.79], "ans": [8]}
+          "range": [87.46, 89.79], "ans": [8]}
       ]
     },
     {"lyric": "Let’s dance!!",
       "lyric_jp": "Let's dance!!",
       "range": [89.76, 90.4], "ans": [8]},
     "",
+    {
+      "lyric_jp": "Wow wow phoenix dance",
+      "parts": [
+        {"lyric": "Wow wow phoenix dance",
+          "range": [90.4, 92.44], "ans": [4, 7], "diff": 2},
+        {"lyric": "(Oh)",
+          "range": [91.74, 92.69], "ans": [8]}
+      ]
+    },
+    {
+      "lyric_jp": "Wow wow phoenix dance",
+      "parts": [
+        {"lyric": "Wow wow phoenix dance",
+          "range": [92.69, 94.77], "ans": [4, 7], "diff": 2},
+        {"lyric": "(Oh)",
+          "range": [94.07, 95.02], "ans": [8]}
+      ]
+    },
     {"lyric": "Wow wow phoenix dance",
       "lyric_jp": "Wow wow phoenix dance",
-      "range": [90.4, 92.69], "ans": [4, 7]},
-    {
-      "lyric_jp": "Wow wow phoenix dance",
-      "parts": [
-        {"lyric": "(oh)",
-          "range": [92.69, 93], "ans": [8]},
-        {"lyric": "Wow wow phoenix dance",
-          "range": [93, 95.05], "ans": [4, 7]}
-      ]
-    },
-    {
-      "lyric_jp": "Wow wow phoenix dance",
-      "parts": [
-        {"lyric": "(oh)",
-          "range": [95.02, 95.29], "ans": [8]},
-        {"lyric": "Wow wow phoenix dance",
-          "range": [95.29, 97.28], "ans": [4, 7]}
-      ]
-    },
+      "range": [95.02, 96.99], "ans": [4, 7], "diff": 2},
     {"lyric": "Oh phoenix phoenix dance",
       "lyric_jp": "Oh phoenix phoenix dance",
       "range": [96.99, 99.23], "ans": [8]},
@@ -167,20 +172,24 @@
     {"lyric": "Nigete mo kitto nigerarenai no desu, ne?",
       "lyric_jp": "逃げてもきっと逃げられないのです、ね？",
       "range": [114.41, 117.97], "ans": [4]},
-    {"lyric": "Luna-luna dance Yeah Eh!",
+    {
       "lyric_jp": "LUNA-LUNA dance yeah!",
-      "range": [117.97, 127.04], "ans": []},
-    {"lyric": "(Oh Oh Eh Oh Oh Eh Oh Oh Eh Oh)",
-      "range": [125.04, 127.04], "ans": []},
-    {"lyric": "(Oh Oh Eh Oh Oh Eh Oh Oh Eh)",
-      "range": [125.04, 127.04], "ans": []},
+      "parts": [
+        {"lyric": "Luna-luna dance Yeah Eh!",
+          "range": [117.97, 120.07], "ans": []},
+        {"lyric": "(Oh Oh Eh Oh Oh Eh Oh Oh Eh Oh)",
+          "range": [120.07, 120.67], "ans": []},
+        {"lyric": "(Oh Oh Eh Oh Oh Eh Oh Oh Eh)",
+          "range": [120.67, 121.27], "ans": []}
+      ]
+    },
     "",
     {"lyric": "Nanimo kamo koete tonde shimae",
       "lyric_jp": "なにもかも 超えて飛んでしまえ",
       "range": [127.04, 130.32], "ans": []},
     {"lyric": "Towa no you ni phoenix dance yeah!",
       "lyric_jp": "永久のように phoenix dance yeah!",
-      "range": [130.32, 142.16], "ans": []},
+      "range": [130.32, 135.02], "ans": []},
     "",
     "[next-col]",
     {"lyric": "Koi to nita kaori no hana wo sashita kami ga nami ni natte",
@@ -193,27 +202,27 @@
       "lyric_jp": "汗が砂に落ちて吸いこまれて",
       "parts": [
         {"lyric": "Ase ga suna ni ochite",
-          "range": [151.74, 154.76], "ans": [4]},
+          "range": [151.74, 155.11], "ans": [4]},
         {"lyric": "Suikomarete",
-          "range": [154.76, 157.02], "ans": [8]}
+          "range": [154.41, 157.02], "ans": [8]}
       ]
     },
     {
       "lyric_jp": "Why not? 惹かれあってるなら",
       "parts": [
         {"lyric": "Why not?",
-          "range": [157.02, 157.22], "ans": [7, 8]},
+          "range": [157.02, 157.67], "ans": [7, 8], "diff": 2},
         {"lyric": "Hikareatteru nara",
-          "range": [157.22, 159.32], "ans": [4]}
+          "range": [157.07, 159.32], "ans": [4]}
       ]
     },
     {
       "lyric_jp": "Why not? 触れて...",
       "parts": [
         {"lyric": "Why not?",
-          "range": [159.32, 159.68], "ans": [7, 8]},
+          "range": [159.32, 160.03], "ans": [7, 8], "diff": 2},
         {"lyric": "Furete...",
-          "range": [159.68, 160.92], "ans": [4]}
+          "range": [159.37, 160.92], "ans": [4]}
       ]
     },
     "",
@@ -221,9 +230,9 @@
       "lyric_jp": "お互いの温度確かめる (Kiss!)",
       "parts": [
         {"lyric": "Otagai no ondo tashikameru",
-          "range": [160.83, 165.1], "ans": [7]},
+          "range": [160.83, 165.98], "ans": [7]},
         {"lyric": "Kiss!",
-          "range": [165.1, 165.46], "ans": [4]}
+          "range": [165.28, 166.46], "ans": [4]}
       ]
     },
     {"lyric": "Kono mama tokete shimaisou desu",
@@ -240,36 +249,36 @@
       "lyric_jp": "分かんない... 分かって... 分かんなくても分かって！",
       "parts": [
         {"lyric": "Wakannai... wakatte...",
-          "range": [175.81, 177.97], "ans": [4, 7]},
+          "range": [175.81, 178.46], "ans": [4, 7], "diff": 2},
         {"lyric": "Wakannakute mo wakatte!",
-          "range": [177.97, 180.15], "ans": [8]}
+          "range": [177.76, 180.15], "ans": [8]}
       ]
     },
     {"lyric": "Let’s dance!!",
       "lyric_jp": "Let's dance!!",
       "range": [180.15, 180.78], "ans": [8]},
     "",
+    {
+      "lyric_jp": "Wow wow phoenix dance",
+      "parts": [
+        {"lyric": "Wow wow phoenix dance",
+          "range": [180.78, 182.69], "ans": [4, 7], "diff": 2},
+        {"lyric": "(Oh)",
+          "range": [181.99, 182.94], "ans": [8]}
+      ]
+    },
+    {
+      "lyric_jp": "Wow wow phoenix dance",
+      "parts": [
+        {"lyric": "Wow wow phoenix dance",
+          "range": [182.94, 185.14], "ans": [4, 7], "diff": 2},
+        {"lyric": "(Oh)",
+          "range": [184.44, 185.39], "ans": [8]}
+      ]
+    },
     {"lyric": "Wow wow phoenix dance",
       "lyric_jp": "Wow wow phoenix dance",
-      "range": [180.78, 182.94], "ans": [4, 7]},
-    {
-      "lyric_jp": "Wow wow phoenix dance",
-      "parts": [
-        {"lyric": "(oh)",
-          "range": [182.94, 183.27], "ans": [8]},
-        {"lyric": "Wow wow phoenix dance",
-          "range": [183.27, 185.39], "ans": [4, 7]}
-      ]
-    },
-    {
-      "lyric_jp": "Wow wow phoenix dance",
-      "parts": [
-        {"lyric": "(oh)",
-          "range": [185.39, 185.64], "ans": [8]},
-        {"lyric": "Wow wow phoenix dance",
-          "range": [185.64, 187.61], "ans": [4, 7]}
-      ]
-    },
+      "range": [185.39, 187.29], "ans": [4, 7], "diff": 2},
     {"lyric": "Oh phoenix phoenix dance",
       "lyric_jp": "Oh phoenix phoenix dance",
       "range": [187.29, 189.34], "ans": [8]},
@@ -281,9 +290,9 @@
       "lyric_jp": "高まれば dance 踊れ甘く熱く dance",
       "parts": [
         {"lyric": "(dance Yeah Yeah)",
-          "range": [190.38, 191.34], "ans": [4]},
+          "range": [190.38, 191.93], "ans": [4]},
         {"lyric": "Takamareba Dance odore amaku atsuku Dance",
-          "range": [191.34, 194.16], "ans": []}
+          "range": [191.23, 194.16], "ans": []}
       ]
     },
     {"lyric": "Manatsu desu ka?",
@@ -295,57 +304,66 @@
     {"lyric": "I wanna dance with you",
       "lyric_jp": "I wanna dance with you",
       "range": [197.72, 198.91], "ans": [8]},
-    {"lyric": "Wana-wana dance",
-      "lyric_jp": "WANA-WANA dance",
-      "range": [198.91, 199.78], "ans": []},
     {
-      "lyric_jp": "囚われたら 鍵は瞳に宿る",
+      "lyric_jp": "WANA-WANA dance",
       "parts": [
-        {"lyric": "(wana-wana dance yeah)",
-          "range": [199.78, 200.93], "ans": [4]},
-        {"lyric": "Torawaretara kagi wa hitomi ni yadoru",
-          "range": [200.93, 203.79], "ans": []}
+        {"lyric": "Wana-wana dance",
+          "range": [198.91, 199.73], "ans": []},
+        {"lyric": "(Wana-wana dance yeah)",
+          "range": [199.08, 199.78], "ans": [4]}
       ]
     },
+    {"lyric": "Torawaretara kagi wa hitomi ni yadoru",
+      "lyric_jp": "囚われたら 鍵は瞳に宿る",
+      "range": [199.78, 203.79], "ans": []},
     {"lyric": "Yamemashou ka?",
       "lyric_jp": "止めましょうか？",
       "range": [203.79, 204.67], "ans": [4]},
     {"lyric": "Yamete mo kitto yamerarenai no desu, ne?",
       "lyric_jp": "止めてもきっと止められないのです、ね？",
       "range": [204.67, 208.5], "ans": [4]},
-    {"lyric": "Wana-wana dance Yeah Eh!",
+    {
       "lyric_jp": "WANA-WANA dance yeah!",
-      "range": [208.5, 213.45], "ans": []},
-    {"lyric": "(Oh Oh Eh Oh Oh Eh Oh Oh Eh Oh)",
-      "range": [211.45, 213.45], "ans": []},
+      "parts": [
+        {"lyric": "Wana-wana dance Yeah Eh!",
+          "range": [208.5, 208.88], "ans": []},
+        {"lyric": "(Oh Oh Eh Oh Oh Eh Oh Oh Eh Oh)",
+          "range": [208.88, 209.65], "ans": []},
+        {"lyric": "Wana-wana dance yeah",
+          "range": [208.95, 211.4], "ans": [4]},
+        {"lyric": "(Oh Oh Eh Oh Oh Eh Oh Oh Eh)",
+          "range": [210.7, 211.65], "ans": []}
+      ]
+    },
     "",
-    {"lyric": "Wana-wana dance yeah",
+    {"lyric": "Wana-wana dance yeah!",
       "lyric_jp": "WANA-WANA dance yeah!",
-      "range": [213.45, 217.48], "ans": [4]},
-    {"lyric": "(Oh Oh Eh Oh Oh Eh Oh Oh Eh)",
-      "range": [215.48, 217.48], "ans": []},
+      "range": [213.45, 217.48], "ans": []},
     "",
     {"lyric": "Moenagara kokoro tonde shimae",
       "lyric_jp": "燃えながら こころ飛んでしまえ",
       "range": [217.48, 220.6], "ans": []},
-    {"lyric": "Towa no you ni phoenix dance yeah!",
+    {
       "lyric_jp": "永久のように phoenix dance yeah!",
-      "range": [220.6, 224.26], "ans": []},
+      "parts": [
+        {"lyric": "Towa no you ni phoenix dance yeah!",
+          "range": [220.6, 222.22], "ans": []},
+        {"lyric": "Wow Wow Wow Wow Wow Wow Wow",
+          "range": [222.22, 224.26], "ans": []}
+      ]
+    },
     "",
     {
       "lyric_jp": "Wow wow... どんな夢も",
       "parts": [
-        {"lyric": "Wow Wow Wow Wow Wow Wow Wow",
-          "range": [224.26, 229.54], "ans": []},
         {"lyric": "Donna yume mo",
-          "range": [229.54, 233.52], "ans": [4]}
+          "range": [224.26, 232.49], "ans": [4]},
+        {"lyric": "Wow Wow Wow Wow Wow Wow Wow",
+          "range": [231.79, 233.52], "ans": []}
       ]
     },
-    {"lyric": "Wow Wow Wow Wow Wow Wow Wow",
-      "lyric_jp": "Wow wow... 貴方となら",
-      "range": [233.52, 239.26], "ans": []},
     {"lyric": "Anata to nara",
       "lyric_jp": "Wow wow... 貴方となら",
-      "range": [239.26, 259], "ans": []}
+      "range": [233.52, 244.56], "ans": []}
   ]
 }

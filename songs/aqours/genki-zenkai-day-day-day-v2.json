@@ -40,14 +40,14 @@
       "lyric_jp": "坂道駆け足 ああ誰かの背中が",
       "parts": [
         {"lyric": "Sakamichi kakeashi",
-          "range": [49.67, 52.21], "ans": [1, 5]},
+          "range": [49.67, 52.21], "ans": [1, 5], "diff": 2},
         {"lyric": "Aa dareka no senaka ga",
           "range": [52.21, 55.07], "ans": [2]}
       ]
     },
     {"lyric": "Tooku ni mieru yo ohayou!",
       "lyric_jp": "遠くに見えるよ おはよう！",
-      "range": [55.07, 60.08], "ans": [1, 5]},
+      "range": [55.07, 60.08], "ans": [1, 5], "diff": 2},
     {
       "lyric_jp": "手を上げたらダッシュだ 気づいてるね？",
       "parts": [
@@ -75,7 +75,7 @@
       "parts": [
         {"lyric": "Houkago atsumatte yo",
           "range": [81.18, 83.9], "ans": []},
-        {"lyric": "(Kotowaru no nashi!)}",
+        {"lyric": "(Kotowaru no nashi!)",
           "range": [83.9, 85.2], "ans": [5]}
       ]
     },
@@ -115,7 +115,7 @@
       "lyric_jp": "伸び～した後ろで ああ誰かが呼んでる",
       "parts": [
         {"lyric": "Nobi~shita ushiro de",
-          "range": [127.8, 130.36], "ans": [2, 5]},
+          "range": [127.8, 130.36], "ans": [2, 5], "diff": 2},
         {"lyric": "Aa dareka ga yonderu",
           "range": [130.36, 133.31], "ans": [1]}
       ]
@@ -124,7 +124,7 @@
       "lyric_jp": "寝ぐせをごまかす こんちわ！(こんちわ！)",
       "parts": [
         {"lyric": "Neguse wo gomakasu konchiwa!",
-          "range": [133.31, 137.03], "ans": [2, 5]},
+          "range": [133.31, 137.03], "ans": [2, 5], "diff": 2},
         {"lyric": "(konchiwa!)",
           "range": [137.03, 138.05], "ans": [1]}
       ]
@@ -169,7 +169,7 @@
       "parts": [
         {"lyric": "Houkago atsumatte yo",
           "range": [193.54, 196.38], "ans": []},
-        {"lyric": "(Kotowaru no nashi!)}",
+        {"lyric": "(Kotowaru no nashi!)",
           "range": [196.38, 198.3], "ans": [5]}
       ]
     },

@@ -1,6 +1,7 @@
 {
   "name": "7 Girls War",
   "group": "wug",
+  "legacy": true,
   "id": "7war",
   "mp3": "sound/7_girls_war.mp3",
   "ogg": "sound/7_girls_war.ogg",

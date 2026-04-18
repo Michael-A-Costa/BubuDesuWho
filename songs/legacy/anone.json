@@ -2,6 +2,7 @@
   "name": "A-NO-NE-GA-N-BA-RE!",
   "id": "anone",
   "group": "muse",
+  "legacy": true,
   "ogg": "sound/anoneganbare.ogg",
   "mp3": "sound/anoneganbare.mp3",
   "mapping": [

@@ -4,30 +4,31 @@
   "id": "new-romantic-sailors",
   "group": "aqours",
   "added": "2026-04",
-  "hidden": true,
+  "hidden": false,
   "slots": [
 
   ],
+  "generated": "2026-04-15T01:44:17Z",
   "lines": [
     {"lyric": "New Romantic Sailors, Sailors!",
       "lyric_jp": "New Romantic Sailors, Sailors!",
       "range": [19.42, 22.46], "ans": []},
     {"lyric": "New Romantic Sailors, Sailors!",
       "lyric_jp": "New Romantic Sailors, Sailors!",
-      "range": [22.46, 26.46], "ans": []},
+      "range": [22.46, 27.2], "ans": []},
     "",
-    {"lyric": "Saikin kawari hajimeteru tte",
-      "lyric_jp": "最近変わりはじめてるって",
-      "range": [27.2, 31.38], "ans": [3]},
     {
-      "lyric_jp": "やっと気づいてきたよね君も",
+      "lyric_jp": "最近変わりはじめてるって",
       "parts": [
+        {"lyric": "Saikin kawari hajimeteru tte",
+          "range": [27.2, 33.02], "ans": [3]},
         {"lyric": "( Wow New Romantic Sailors)",
-          "range": [33.27, 35.45], "ans": [6, 9]},
-        {"lyric": "Yatto kidzuite kita yo ne kimi mo",
-          "range": [35.05, 38.73], "ans": [3]}
+          "range": [32.32, 33.27], "ans": [6, 9], "diff": 2}
       ]
     },
+    {"lyric": "Yatto kidzuite kita yo ne kimi mo",
+      "lyric_jp": "やっと気づいてきたよね君も",
+      "range": [33.27, 38.48], "ans": [3]},
     {"lyric": "Sekai wa ikutsumo arunda",
       "lyric_jp": "セカイはいくつもあるんだ",
       "range": [38.48, 41.63], "ans": [6]},
@@ -45,22 +46,22 @@
       "lyric_jp": "乗り込むよ 謎めいた宇宙船(スターシップ)",
       "parts": [
         {"lyric": "Norikomu yo",
-          "range": [51.75, 53.35], "ans": [3]},
+          "range": [51.75, 53.84], "ans": [3]},
         {"lyric": "Nazomeita sutaashippu",
-          "range": [52.95, 56.31], "ans": [6]}
+          "range": [53.14, 56.31], "ans": [6]}
       ]
     },
     {
       "lyric_jp": "Sailors, Let's go! Sailors, Let's go!",
       "parts": [
         {"lyric": "Sailors,",
-          "range": [56.14, 57.31], "ans": [9]},
+          "range": [56.14, 57.63], "ans": [9]},
         {"lyric": "Let’s go!",
-          "range": [56.91, 57.96], "ans": [3, 6]},
+          "range": [56.93, 58.33], "ans": [3, 6], "diff": 2},
         {"lyric": "Sailors,",
-          "range": [57.56, 58.93], "ans": [9]},
+          "range": [57.63, 59.19], "ans": [9]},
         {"lyric": "Let’s go!",
-          "range": [58.53, 59.37], "ans": [3, 6]}
+          "range": [58.49, 59.5], "ans": [3, 6], "diff": 2}
       ]
     },
     {"lyric": "Kirameki no kanata e",
@@ -74,9 +75,9 @@
       "lyric_jp": "だんだん速く 時を超えそうな Hyper drive",
       "parts": [
         {"lyric": "Dandan hayaku",
-          "range": [63.67, 65.43], "ans": []},
+          "range": [63.67, 66.18], "ans": []},
         {"lyric": "Toki wo koesou na Hyper drive",
-          "range": [65.03, 68.35], "ans": [9]}
+          "range": [65.48, 68.35], "ans": [9]}
       ]
     },
     {"lyric": "Hajimarunda natte takamatte",
@@ -89,9 +90,9 @@
       "lyric_jp": "冒険がしたい本能的な 決め方こそ大正解",
       "parts": [
         {"lyric": "Bouken ga shitai honnouteki na",
-          "range": [74.27, 77.95], "ans": []},
+          "range": [74.27, 78.6], "ans": []},
         {"lyric": "Kimekata koso daiseikai",
-          "range": [77.55, 80.73], "ans": [9]}
+          "range": [77.9, 80.73], "ans": [9]}
       ]
     },
     {"lyric": "Dakara kimi to kimi to ikitai",
@@ -108,24 +109,24 @@
       "lyric_jp": "New Romantic Sailors, Sailors!",
       "range": [92.18, 96.5], "ans": []},
     "",
-    {"lyric": "Hanten shiteru moji no mukou de",
-      "lyric_jp": "反転してる文字の向こうで",
-      "range": [96.5, 101.36], "ans": [6]},
     {
-      "lyric_jp": "きっと楽しめる場所が呼んでる",
+      "lyric_jp": "反転してる文字の向こうで",
       "parts": [
+        {"lyric": "Hanten shiteru moji no mukou de",
+          "range": [96.5, 102.87], "ans": [6]},
         {"lyric": "( Wow New Romantic Sailors)",
-          "range": [103.12, 105.22], "ans": [3, 9]},
-        {"lyric": "Kitto tanoshimeru basho ga yonderu",
-          "range": [104.82, 108.47], "ans": [6]}
+          "range": [102.17, 103.12], "ans": [3, 9], "diff": 2}
       ]
     },
+    {"lyric": "Kitto tanoshimeru basho ga yonderu",
+      "lyric_jp": "きっと楽しめる場所が呼んでる",
+      "range": [103.12, 108.47], "ans": [6]},
     {"lyric": "Sekai wa ikutsumo arunda",
       "lyric_jp": "セカイはいくつもあるんだ",
       "range": [108.47, 111.62], "ans": [9]},
     {"lyric": "Shiranai sekai ga arunda",
       "lyric_jp": "知らないセカイがあるんだ",
-      "range": [111.62, 114.53], "ans": [9]},
+      "range": [111.62, 115.26], "ans": [9]},
     "",
     {"lyric": "Shock shock mado ni utsuru",
       "lyric_jp": "Shock shock 窓に映る",
@@ -137,22 +138,22 @@
       "lyric_jp": "消える星 すり抜ける宇宙船",
       "parts": [
         {"lyric": "Kieru hoshi",
-          "range": [121.77, 123.75], "ans": [6]},
+          "range": [121.77, 123.42], "ans": [6]},
         {"lyric": "Surinukeru sutaashippu",
-          "range": [123.35, 126.61], "ans": [9]}
+          "range": [122.72, 126.61], "ans": [9]}
       ]
     },
     {
       "lyric_jp": "Sailors, Let's go! Sailors, Let's go!",
       "parts": [
         {"lyric": "Sailors,",
-          "range": [126.13, 127.24], "ans": [3]},
+          "range": [126.13, 127.42], "ans": [3]},
         {"lyric": "Let’s go!",
-          "range": [126.84, 127.85], "ans": [6, 9]},
+          "range": [126.72, 127.96], "ans": [6, 9], "diff": 2},
         {"lyric": "Sailors,",
-          "range": [127.45, 128.76], "ans": [3]},
+          "range": [127.26, 128.85], "ans": [3]},
         {"lyric": "Let’s go!",
-          "range": [128.36, 129.16], "ans": [6, 9]}
+          "range": [128.15, 129.9], "ans": [6, 9], "diff": 2}
       ]
     },
     {"lyric": "Mune odoru ginga e",
@@ -166,9 +167,9 @@
       "lyric_jp": "ぐんぐん遠ざかる 見慣れた街の Laser beam",
       "parts": [
         {"lyric": "Gungun toozakaru",
-          "range": [133.62, 135.54], "ans": []},
+          "range": [133.62, 135.89], "ans": []},
         {"lyric": "Minareta machi no Laser beam",
-          "range": [135.14, 138.19], "ans": [3]}
+          "range": [135.19, 138.19], "ans": [3]}
       ]
     },
     {"lyric": "Modoranai yo tte sasayaite",
@@ -181,9 +182,9 @@
       "lyric_jp": "冒険がしたい 前例ないから 燃え上がるよ好奇心",
       "parts": [
         {"lyric": "Bouken ga shitai zenrei nai kara",
-          "range": [144.62, 147.98], "ans": []},
+          "range": [144.62, 148.13], "ans": []},
         {"lyric": "Moeagaru yo koukishin",
-          "range": [147.58, 150.48], "ans": [3]}
+          "range": [147.43, 150.48], "ans": [3]}
       ]
     },
     {"lyric": "Dakara kimi to kimi to ikitai",
@@ -199,50 +200,50 @@
       "range": [159.34, 162.54], "ans": []},
     {"lyric": "New Romantic Sailors, Sailors!",
       "lyric_jp": "New Romantic Sailors, Sailors!",
-      "range": [162.54, 165.55], "ans": []},
+      "range": [162.54, 166.63], "ans": []},
     "",
     {
       "lyric_jp": "ヨハネ ギラン",
       "parts": [
         {"lyric": "“Yohane”",
-          "range": [166.63, 168.65], "ans": [9]},
+          "range": [166.63, 168.24], "ans": [9]},
         {"lyric": "“giran”",
-          "range": [168.25, 169.67], "ans": [6]}
+          "range": [167.54, 169.67], "ans": [6]}
       ]
     },
     {
       "lyric_jp": "マリー Oh, yes",
       "parts": [
         {"lyric": "“Marii”",
-          "range": [169.21, 171.61], "ans": [6]},
+          "range": [169.21, 170.98], "ans": [6]},
         {"lyric": "“Oh yes”",
-          "range": [171.21, 172.17], "ans": [9]}
+          "range": [170.28, 172.79], "ans": [9]}
       ]
     },
     {
       "lyric_jp": "リリー召喚！ Yes",
       "parts": [
         {"lyric": "“Ririi shoukan!”",
-          "range": [172.79, 175.18], "ans": [6, 9]},
+          "range": [172.79, 174.56], "ans": [6, 9], "diff": 2},
         {"lyric": "“Yes”",
-          "range": [174.78, 175.34], "ans": [3]}
+          "range": [176.83, 177.33], "ans": [3]}
       ]
     },
     {"lyric": "“kurae! Riko-chan Laser Beam!”",
       "lyric_jp": "喰らえ！梨子ちゃんレーザービーム！",
-      "range": [176.37, 182.59], "ans": [3]},
+      "range": [176.37, 184.29], "ans": [3]},
     "",
     {
       "lyric_jp": "Sailors, Let's go! Sailors, Let's go!",
       "parts": [
         {"lyric": "Sailors,",
-          "range": [190.06, 191.2], "ans": [6]},
+          "range": [190.06, 190.91], "ans": [6]},
         {"lyric": "Let’s go!",
-          "range": [190.62, 191.49], "ans": [3, 9]},
+          "range": [190.21, 191.68], "ans": [3, 9], "diff": 2},
         {"lyric": "Sailors,",
-          "range": [191.46, 192.24], "ans": [6]},
+          "range": [190.98, 192.36], "ans": [6]},
         {"lyric": "Let’s go!",
-          "range": [192.1, 192.84], "ans": [3, 9]}
+          "range": [191.66, 192.84], "ans": [3, 9], "diff": 2}
       ]
     },
     {"lyric": "Kirameki no kanata e",
@@ -256,9 +257,9 @@
       "lyric_jp": "だんだん速く 時を超えそうな Hyper drive",
       "parts": [
         {"lyric": "Dandan hayaku",
-          "range": [196.14, 198.26], "ans": []},
+          "range": [196.14, 199.31], "ans": []},
         {"lyric": "Toki wo koesou na Hyper drive",
-          "range": [197.86, 201.5], "ans": [6]}
+          "range": [198.61, 201.5], "ans": [6]}
       ]
     },
     {"lyric": "Hajimarunda natte takamatte",
@@ -271,9 +272,9 @@
       "lyric_jp": "冒険がしたい 本能的な 決め方こそ大正解",
       "parts": [
         {"lyric": "Bouken ga shitai honnouteki na",
-          "range": [207.67, 211.09], "ans": []},
+          "range": [207.67, 211.78], "ans": []},
         {"lyric": "Kimekata koso daiseikai",
-          "range": [210.69, 213.87], "ans": [6]}
+          "range": [211.08, 213.87], "ans": [6]}
       ]
     },
     {"lyric": "Dakara kimi to kimi to ikitai",
@@ -283,18 +284,22 @@
       "lyric_jp": "赤い惑星 青い月の海で泳ごう",
       "range": [216.7, 222.44], "ans": []},
     "",
-    {"lyric": "Motto bouken ga shitai!",
+    {
       "lyric_jp": "もっと冒険がしたい！",
-      "range": [222.44, 224.58], "ans": []},
+      "parts": [
+        {"lyric": "Motto bouken ga shitai!",
+          "range": [222.44, 224.33], "ans": []},
+        {"lyric": "(Yohane Eye!)",
+          "range": [223.63, 224.58], "ans": [6]}
+      ]
+    },
     {
       "lyric_jp": "ぐんぐん遠ざかる 見慣れた街の Laser beam",
       "parts": [
-        {"lyric": "(Yohane Eye!)",
-          "range": [224.58, 225.86], "ans": [6]},
         {"lyric": "Gungun toozakaru",
-          "range": [225.46, 227.44], "ans": []},
+          "range": [224.58, 227.25], "ans": []},
         {"lyric": "Minareta machi no Laser beam",
-          "range": [227.04, 229.48], "ans": [3]}
+          "range": [226.55, 229.48], "ans": [3]}
       ]
     },
     {"lyric": "Modoranai yo tte sasayaite",
@@ -302,18 +307,18 @@
       "range": [229.21, 232.81], "ans": []},
     {"lyric": "Kata daichaou ka na",
       "lyric_jp": "肩抱いちゃおうかな",
-      "range": [232.81, 235.16], "ans": [9]},
+      "range": [232.81, 235.82], "ans": [9]},
     {
       "lyric_jp": "冒険がしたい 前例ないから 燃え上がるよ好奇心",
       "parts": [
         {"lyric": "Bouken ga shitai",
-          "range": [235.82, 237.5], "ans": []},
+          "range": [235.82, 237.65], "ans": []},
         {"lyric": "(shitto Fire!)",
-          "range": [237.1, 238.59], "ans": [9]},
+          "range": [236.95, 238.74], "ans": [9]},
         {"lyric": "Zenrei nai kara",
-          "range": [238.19, 240.03], "ans": []},
+          "range": [238.04, 240.18], "ans": []},
         {"lyric": "Moeagaru yo koukishin",
-          "range": [239.63, 241.89], "ans": [6]}
+          "range": [239.48, 241.89], "ans": [6]}
       ]
     },
     {"lyric": "Dakara kimi to kimi to ikitai",
@@ -328,6 +333,6 @@
       "range": [250.3, 253.33], "ans": []},
     {"lyric": "New Romantic Sailors, Sailors!",
       "lyric_jp": "New Romantic Sailors, Sailors!",
-      "range": [253.33, 257.34], "ans": []}
+      "range": [253.33, 259.04], "ans": []}
   ]
 }

@@ -9,6 +9,7 @@
   "slots": [
 
   ],
+  "generated": "2026-04-15T01:43:25Z",
   "lines": [
     {"lyric": "Itsu no ma ni ka kita ne",
       "lyric_jp": "いつの間にか来たね",
@@ -51,18 +52,18 @@
       "lyric_jp": "やまない雨はないと走ってきたよ",
       "parts": [
         {"lyric": "Yamanai ame wa nai to",
-          "range": [84.17, 87.13], "ans": []},
+          "range": [84.17, 87.48], "ans": []},
         {"lyric": "Hashitte kita yo",
-          "range": [87.13, 89.61], "ans": [4, 5, 6, 7, 8, 9]}
+          "range": [86.78, 89.61], "ans": [4, 5, 6, 7, 8, 9]}
       ]
     },
     {
       "lyric_jp": "（だからねサンシャイン）見上げれば熱い",
       "parts": [
         {"lyric": "(dakara ne sanshain Yeah)",
-          "range": [89.61, 91.59], "ans": [1, 2, 3]},
+          "range": [90.61, 91.59], "ans": [1, 2, 3]},
         {"lyric": "Miagereba atsui taiyou",
-          "range": [91.59, 92.75], "ans": [4, 5, 6, 7, 8, 9]}
+          "range": [89.61, 92.75], "ans": [4, 5, 6, 7, 8, 9]}
       ]
     },
     "",
@@ -76,9 +77,9 @@
       "lyric_jp": "ああ 伝わってくれた夢の鼓動",
       "parts": [
         {"lyric": "Aa tsutawatte kureta",
-          "range": [113.89, 116.55], "ans": [3]},
+          "range": [113.89, 118.08], "ans": [3]},
         {"lyric": "Yume no kodou",
-          "range": [116.55, 120.35], "ans": [1, 2, 3]}
+          "range": [117.38, 120.35], "ans": [1, 2, 3]}
       ]
     },
     "",
@@ -92,9 +93,9 @@
       "lyric_jp": "ああ 大胆すぎたかな でも頑張れた",
       "parts": [
         {"lyric": "Aa daitan sugita ka na",
-          "range": [126.91, 129.73], "ans": [4]},
+          "range": [126.91, 130.08], "ans": [4]},
         {"lyric": "Demo ganbareta",
-          "range": [129.73, 134.38], "ans": [4, 5, 6]}
+          "range": [129.38, 134.38], "ans": [4, 5, 6]}
       ]
     },
     "",
@@ -102,11 +103,11 @@
       "lyric_jp": "キセキが起こったね（キセキが）本当に",
       "parts": [
         {"lyric": "Kiseki ga okotta ne",
-          "range": [134.38, 140.04], "ans": [9]},
-        {"lyric": "(kiseki ga)",
-          "range": [140.04, 141.76], "ans": [7]},
+          "range": [134.38, 140.49], "ans": [9]},
+        {"lyric": "(Kiseki ga)",
+          "range": [139.79, 141.76], "ans": [7]},
         {"lyric": "Hontou ni",
-          "range": [141.76, 144.77], "ans": [7, 9]}
+          "range": [142.28, 144.77], "ans": [7, 9], "diff": 2}
       ]
     },
     {
@@ -115,9 +116,9 @@
         {"lyric": "Nayandeta bokura e to oshiete",
           "range": [144.77, 153.05], "ans": [8]},
         {"lyric": "(oshiete)",
-          "range": [153.05, 154.61], "ans": [7]},
+          "range": [153.61, 154.61], "ans": [7]},
         {"lyric": "Agetai",
-          "range": [154.61, 159.09], "ans": [7, 8, 9]}
+          "range": [155.23, 159.09], "ans": [7, 8, 9]}
       ]
     },
     "",
@@ -136,18 +137,18 @@
       "lyric_jp": "明けない夜はないと走ってきたね",
       "parts": [
         {"lyric": "Akenai yoru wa nai to",
-          "range": [178.22, 181.12], "ans": []},
+          "range": [178.22, 181.47], "ans": []},
         {"lyric": "Hashitte kita ne",
-          "range": [181.12, 183.48], "ans": [1, 2, 3, 7, 8, 9]}
+          "range": [180.77, 183.48], "ans": [1, 2, 3, 7, 8, 9]}
       ]
     },
     {
       "lyric_jp": "（そうだよサンシャイン）いつだって熱い",
       "parts": [
         {"lyric": "(Souda yo sanshain Yeah)",
-          "range": [182.99, 185.83], "ans": [4, 5, 6]},
+          "range": [184.35, 185.83], "ans": [4, 5, 6]},
         {"lyric": "Itsudatte atsui taiyou",
-          "range": [185.83, 187.46], "ans": [1, 2, 3, 7, 8, 9]}
+          "range": [182.99, 186.96], "ans": [1, 2, 3, 7, 8, 9]}
       ]
     },
     "",
@@ -174,18 +175,18 @@
       "lyric_jp": "やまない雨はないと走ってきたよ",
       "parts": [
         {"lyric": "Yamanai ame wa nai to",
-          "range": [236.6, 239.52], "ans": []},
+          "range": [236.6, 239.87], "ans": []},
         {"lyric": "Hashitte kita yo",
-          "range": [239.52, 241.74], "ans": [1, 2, 3, 4, 5, 6]}
+          "range": [239.17, 241.74], "ans": [1, 2, 3, 4, 5, 6]}
       ]
     },
     {
       "lyric_jp": "（だからねサンシャイン）見上げれば熱い",
       "parts": [
         {"lyric": "(dakara ne sanshain Yeah)",
-          "range": [241.54, 243.24], "ans": [7, 8, 9]},
+          "range": [241.88, 244.16], "ans": [7, 8, 9]},
         {"lyric": "Miagereba atsui taiyou",
-          "range": [243.24, 245.34], "ans": [1, 2, 3, 4, 5, 6]}
+          "range": [241.54, 245.32], "ans": [1, 2, 3, 4, 5, 6]}
       ]
     },
     "",

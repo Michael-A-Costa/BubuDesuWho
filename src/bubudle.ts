@@ -1,4 +1,4 @@
-import { Song, Slot, SlotState, LineObject, MappingEntry, MEMBER_MAPPING } from './types';
+import { Song, Slot, SlotState, LineObject, MappingEntry, GroupName, MEMBER_MAPPING } from './types';
 import { loadConfig } from './config';
 import { state, initGameState, loadSong, checkSlot, toggleChoice, toggleReveal } from './game';
 import { buildMenu, toggleMenu, initThemeToggle, switchTheme } from './ui';
@@ -16,24 +16,84 @@ interface LyricCandidate {
   allSingers: number[];
 }
 
-/** Nickname labels for member buttons (seiyuu names in parentheses) */
-const MEMBER_NICKNAMES: Record<number, string> = {
-  1: 'Anchan', 2: 'Shukashuu', 3: 'Rikyako', 4: 'King',
-  5: 'Furirin', 6: 'Aikyan', 7: 'Arisha', 8: 'Suwawa', 9: 'Ainya',
-  10: 'Asamin', 11: 'Hinahina', 12: '',
+/** Nickname labels for member buttons (seiyuu names) per group */
+const MEMBER_NICKNAMES: Record<string, Record<number, string>> = {
+  muse: {
+    1: 'Emitsun', 2: 'Nanjolno', 3: 'Ucchi', 4: 'Mimorin',
+    5: 'Rippi', 6: 'Pile', 7: 'Kussun', 8: 'Shikaco', 9: 'Soramaru',
+  },
+  aqours: {
+    1: 'Anchan', 2: 'Shukashuu', 3: 'Rikyako', 4: 'King',
+    5: 'Furirin', 6: 'Aikyan', 7: 'Arisha', 8: 'Suwawa', 9: 'Ainya',
+    10: 'Asamin', 11: 'Hinahina', 12: '',
+  },
+  nijigasaki: {
+    1: 'Yurippe', 2: 'Mayuchi', 3: 'Kaorin', 4: 'Miyutan',
+    5: 'Murapon', 6: 'Akarin', 7: 'Tomoriru', 8: 'Chunrun', 9: 'Chiemii',
+    10: 'Moepii', 11: 'Homin', 12: 'Niinya', 13: 'Konomin',
+  },
 };
 
-/** Shortcut group buttons — label + member IDs. Only shown when all members are in the singer set. */
-const SHORTCUT_GROUPS: { label: string; members: number[]; extraOnly?: boolean }[] = [
-  { label: 'CYaRon', members: [1, 2, 5] },
-  { label: 'Guilty Kiss', members: [3, 6, 9] },
-  { label: 'AZALEA', members: [4, 7, 8] },
-  { label: '1st years', members: [4, 5, 6] },
-  { label: '2nd years', members: [1, 2, 3] },
-  { label: '3rd years', members: [7, 8, 9] },
-  { label: 'Aqours', members: [1, 2, 3, 4, 5, 6, 7, 8, 9], extraOnly: true },
-  { label: 'Saint Snow', members: [10, 11] },
-];
+type ShortcutGroup = { label: string; members: number[]; extraOnly?: boolean; subunit?: boolean };
+const SHORTCUT_GROUPS: Record<string, ShortcutGroup[]> = {
+  muse: [
+    { label: 'Printemps', members: [1, 3, 8], subunit: true },
+    { label: 'lily white', members: [4, 5, 7], subunit: true },
+    { label: 'BiBi', members: [2, 6, 9], subunit: true },
+    { label: '1st years', members: [5, 6, 8] },
+    { label: '2nd years', members: [1, 3, 4] },
+    { label: '3rd years', members: [2, 7, 9] },
+  ],
+  aqours: [
+    { label: 'CYaRon', members: [1, 2, 5], subunit: true },
+    { label: 'Guilty Kiss', members: [3, 6, 9], subunit: true },
+    { label: 'AZALEA', members: [4, 7, 8], subunit: true },
+    { label: '1st years', members: [4, 5, 6] },
+    { label: '2nd years', members: [1, 2, 3] },
+    { label: '3rd years', members: [7, 8, 9] },
+    { label: 'Aqours', members: [1, 2, 3, 4, 5, 6, 7, 8, 9], extraOnly: true },
+    { label: 'Saint Snow', members: [10, 11] },
+  ],
+  nijigasaki: [
+    { label: 'DiverDiva', members: [4, 5], subunit: true },
+    { label: 'A·ZU·NA', members: [1, 3, 7], subunit: true },
+    { label: 'QU4RTZ', members: [2, 6, 8, 9], subunit: true },
+    { label: 'R3BIRTH', members: [10, 11, 12], subunit: true },
+    { label: '1st years', members: [2, 3, 9, 10] },
+    { label: '2nd years', members: [1, 5, 7, 11] },
+    { label: '3rd years', members: [4, 6, 8, 12] },
+  ],
+};
+
+/** Column layout for member buttons — must match play.html slot templates */
+const MEMBER_COLUMNS: Record<string, number[][]> = {
+  muse: [
+    [1, 3, 4],   // 2nd years: Honoka, Kotori, Umi
+    [6, 5, 8],   // 1st years: Maki, Rin, Hanayo
+    [9, 7, 2],   // 3rd years: Nico, Nozomi, Eli
+  ],
+  aqours: [
+    [1, 2, 3],   // 2nd years: Chika, You, Riko
+    [4, 5, 6],   // 1st years: Hanamaru, Ruby, Yoshiko
+    [7, 8, 9],   // 3rd years: Dia, Kanan, Mari
+  ],
+  nijigasaki: [
+    [1, 4, 7, 10, 13],  // Ayumu, Karin, Setsuna, Shioriko, Yu
+    [2, 5, 8, 11],      // Kasumi, Ai, Emma, Lanzhu
+    [3, 6, 9, 12],      // Shizuku, Kanata, Rina, Mia
+  ],
+};
+
+const HINT_SUBUNITS: Record<string, Record<string, string>> = {
+  muse: { '1,3,8': 'Printemps', '4,5,7': 'lily white', '2,6,9': 'BiBi' },
+  aqours: { '1,2,5': 'CYaRon', '3,6,9': 'Guilty Kiss', '4,7,8': 'AZALEA' },
+  nijigasaki: { '4,5': 'DiverDiva', '1,3,7': 'A·ZU·NA', '2,6,8,9': 'QU4RTZ', '10,11,12': 'R3BIRTH' },
+};
+const HINT_YEARS: Record<string, string[]> = {
+  muse: ['1,3,4', '5,6,8', '2,7,9'],
+  aqours: ['1,2,3', '4,5,6', '7,8,9'],
+  nijigasaki: ['2,3,9,10', '1,5,7,11', '4,6,8,12'],
+};
 
 function createBubudleSlot(slot: Slot, singers: number[]): HTMLElement {
   const el = document.createElement('div');
@@ -62,25 +122,26 @@ function createBubudleSlot(slot: Slot, singers: number[]): HTMLElement {
   body.appendChild(row);
   el.appendChild(body);
 
-  const aqoursMembers = singers.filter(s => s <= 9);
-  const extraMembers = singers.filter(s => s > 9);
-  const memberMapping = MEMBER_MAPPING[state.group] ?? MEMBER_MAPPING.aqours;
+  const baseIdSet = new Set(Object.keys(MEMBER_MAPPING[bubudleGroup]).map(Number));
+  const extraMembers = singers.filter(s => !baseIdSet.has(s));
+  const memberMapping = MEMBER_MAPPING[state.group] ?? MEMBER_MAPPING[bubudleGroup];
 
-  // Split aqours 9 into 3 columns of 3
-  const cols: number[][] = [
-    aqoursMembers.slice(0, 3),  // 1,2,3
-    aqoursMembers.slice(3, 6),  // 4,5,6
-    aqoursMembers.slice(6, 9),  // 7,8,9
-  ];
+  const predefined = MEMBER_COLUMNS[bubudleGroup];
+  const cols: number[][] = predefined
+    ? predefined.map(col => col.filter(id => singers.includes(id)))
+    : (() => {
+        const base = singers.filter(s => baseIdSet.has(s));
+        const n = Math.ceil(base.length / 3);
+        return [base.slice(0, n), base.slice(n, n * 2), base.slice(n * 2)];
+      })();
 
   // Applicable shortcuts — only include if all members present in singer set
   const singerSet = new Set(singers);
   const hasExtras = extraMembers.length > 0;
-  const shortcuts = SHORTCUT_GROUPS.filter(g =>
+  const shortcuts = (SHORTCUT_GROUPS[bubudleGroup] ?? []).filter(g =>
     g.members.every(m => singerSet.has(m)) && (!g.extraOnly || hasExtras));
-  // Split shortcuts into two columns (subunits left, year-groups + extras right)
-  const shortcutsLeft = shortcuts.filter(g => ['CYaRon', 'Guilty Kiss', 'AZALEA'].includes(g.label));
-  const shortcutsRight = shortcuts.filter(g => !['CYaRon', 'Guilty Kiss', 'AZALEA'].includes(g.label));
+  const shortcutsLeft = shortcuts.filter(g => g.subunit);
+  const shortcutsRight = shortcuts.filter(g => !g.subunit);
 
   // If there are extra members but no subunit shortcuts, put extras in the left shortcut col
   // and year/group shortcuts in the right
@@ -106,7 +167,7 @@ function createBubudleSlot(slot: Slot, singers: number[]): HTMLElement {
   const memberCols = cols.map(ids => {
     const buttons = ids.map(id => {
       const name = memberMapping[id] ?? `#${id}`;
-      const nick = MEMBER_NICKNAMES[id];
+      const nick = (MEMBER_NICKNAMES[bubudleGroup] ?? {})[id];
       const label = nick ? `${name} (${nick})` : name;
       return makeBtn(String(id), label);
     });
@@ -116,7 +177,7 @@ function createBubudleSlot(slot: Slot, singers: number[]): HTMLElement {
   // Extra member buttons
   const extraBtns = extraMembers.map(id => {
     const name = memberMapping[id] ?? `#${id}`;
-    const nick = MEMBER_NICKNAMES[id];
+    const nick = (MEMBER_NICKNAMES[bubudleGroup] ?? {})[id];
     const label = nick ? `${name} (${nick})` : name;
     return makeBtn(String(id), label);
   });
@@ -168,8 +229,10 @@ function createBubudleSlot(slot: Slot, singers: number[]): HTMLElement {
   return el;
 }
 
+let bubudleGroup: GroupName = 'aqours';
 let candidates: LyricCandidate[] = [];
 let current: LyricCandidate | null = null;
+let recentHistory: Set<string> = new Set();
 let checked = false;
 let streak = 0;
 let currentSlot: Slot | null = null;
@@ -179,19 +242,27 @@ let previousGuesses: string[] = [];
 let clipRange: [number, number] = [0, 0];
 let songSingers: number[] = [];
 
-type BubudleDifficulty = 'normal' | 'hard' | 'insane';
+type BubudleDifficulty = 'all' | 'normal' | 'hard' | 'insane';
 let bubudleDiff: BubudleDifficulty = 'normal';
 
-// Max lyric range duration per difficulty (seconds) — filters which lyrics are eligible
+// Lyric range duration thresholds per difficulty (seconds)
+// All: any length, Normal: clips > 2s, Hard: clips <= 2s, Insane: clips <= 1s
 const RANGE_CAPS: Record<BubudleDifficulty, number> = {
-  normal: Infinity,
-  hard: 3,
-  insane: 1.5,
+  all: Infinity,
+  normal: 2,
+  hard: 2,
+  insane: 1,
 };
+
+type SongDifficulty = 'all' | '1' | '2' | '3';
+let songDiff: SongDifficulty = 'all';
+
+let subunitInclude: string[] = [];
+let subunitExclude: string[] = [];
 
 export async function initBubudlePage(): Promise<void> {
   player.initPlayer({
-    onTick(currentTime) {
+    onTick(currentTime, _duration, _didSeek) {
       if (clipEnd !== null && currentTime >= clipEnd) {
         clipEnd = null;
         player.pause();
@@ -202,65 +273,45 @@ export async function initBubudlePage(): Promise<void> {
 
   initGameState();
   initBubudleDifficulty();
+  initSongDifficulty();
+  loadSubunitFilter();
   const songs = await loadConfig();
   if (songs.length === 0) return;
 
   // Build sidebar menu (links go to play.html#song)
   buildMenu(songs);
+  bubudleGroup = state.group;
+  applyGroupClass(bubudleGroup);
   toggleMenu(window.innerWidth >= 1200);
   document.getElementById('menu-button')?.addEventListener('click', () => toggleMenu());
   initThemeToggle();
   initVolume();
   initSeekSlider();
 
-  // Build candidate pool from all non-hidden songs with lines
-  for (const song of songs) {
-    if (!song.lines || song.hidden) continue;
-    if (song.group !== 'aqours' && song.group !== 'saint-aqours-snow' && song.group !== 'aqours-miku') continue;
+  buildCandidatePool(songs);
+  rebuildSingerPicker();
+  rebuildSubunitFilter();
 
-    const allSingers = new Set<number>();
-    for (const line of song.lines) {
-      if (typeof line === 'string') continue;
-      const obj = line as LineObject;
-      if (obj.parts) {
-        for (const p of obj.parts) {
-          if (p.ans) for (const a of p.ans) if (a > 0) allSingers.add(a);
-        }
-      } else if (obj.ans) {
-        for (const a of obj.ans) if (a > 0) allSingers.add(a);
-      }
-    }
-    const singerArr = Array.from(allSingers).sort((a, b) => a - b);
-
-    for (const line of song.lines) {
-      if (typeof line === 'string') continue;
-      const obj = line as LineObject;
-
-      const lineDiff = obj.diff ?? 1;
-
-      if (obj.parts) {
-        for (const part of obj.parts) {
-          if (part.ans && part.ans.length > 0 && part.lyric.trim() && part.range) {
-            const sorted = [...part.ans].filter(a => a > 0).sort((a, b) => a - b);
-            if (sorted.length === 0) continue;
-            if (arrEq(sorted, singerArr)) continue;
-            candidates.push({ lyric: part.lyric, lyricJp: obj.lyric_jp, ans: sorted, range: part.range, song, diff: lineDiff, sourceLine: obj, allSingers: singerArr });
-          }
-        }
-      } else if (obj.ans && obj.ans.length > 0 && obj.lyric?.trim() && obj.range) {
-        const sorted = [...obj.ans].filter(a => a > 0).sort((a, b) => a - b);
-        if (sorted.length === 0) continue;
-        if (arrEq(sorted, singerArr)) continue;
-        candidates.push({ lyric: obj.lyric, lyricJp: obj.lyric_jp, ans: sorted, range: obj.range, song, diff: lineDiff, sourceLine: obj, allSingers: singerArr });
-      }
-    }
-  }
+  // Switch bubudle group when sidebar group button is clicked
+  document.querySelectorAll<HTMLElement>('.group-button').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      bubudleGroup = btn.dataset.value as GroupName;
+      applyGroupClass(bubudleGroup);
+      loadSubunitFilter();
+      buildCandidatePool(songs);
+      rebuildSingerPicker();
+      rebuildSubunitFilter();
+      recentHistory.clear();
+      pickRandom(false, true);
+    });
+  });
 
   streak = parseInt(getStorage('bubudle-streak') ?? '0', 10) || 0;
   updateStreak();
 
   // Bind controls
   document.getElementById('bubudle-check-bottom')!.addEventListener('click', checkAnswer);
+  document.getElementById('bubudle-skip-bottom')!.addEventListener('click', skipAnswer);
   document.getElementById('bubudle-next-bottom')!.addEventListener('click', () => pickRandom());
   document.getElementById('bubudle-play')!.addEventListener('click', () => playClip());
   document.getElementById('bubudle-bad-timestamp')!.addEventListener('click', reportBadTimestamp);
@@ -276,9 +327,6 @@ export async function initBubudlePage(): Promise<void> {
     const opts = document.getElementById('bubudle-singer-options')!;
     opts.style.display = opts.style.display === 'none' ? '' : 'none';
     document.getElementById('bubudle-diff-options')!.style.display = 'none';
-  });
-  document.querySelectorAll<HTMLElement>('.bubudle-singer-pick').forEach((btn) => {
-    btn.addEventListener('click', () => btn.classList.toggle('active'));
   });
   document.getElementById('bubudle-singer-submit')!.addEventListener('click', flagSinger);
   document.getElementById('bubudle-singer-idk')!.addEventListener('click', flagSingerUnknown);
@@ -301,14 +349,186 @@ export async function initBubudlePage(): Promise<void> {
   if (logEntries.length > 0) renderLog();
 }
 
+function applyGroupClass(group: GroupName): void {
+  const html = document.documentElement;
+  html.classList.remove('group-muse', 'group-aqours', 'group-wug', 'group-nijigasaki');
+  html.classList.add(`group-${group}`);
+}
+
 function arrEq(a: number[], b: number[]): boolean {
   if (a.length !== b.length) return false;
   for (let i = 0; i < a.length; i++) if (a[i] !== b[i]) return false;
   return true;
 }
 
+function buildCandidatePool(songs: Song[]): void {
+  candidates = [];
+  for (const song of songs) {
+    if (!song.lines || song.hidden) continue;
+    if ((song.menu ?? song.group) !== bubudleGroup) continue;
+
+    const allSingers = new Set<number>();
+    for (const line of song.lines) {
+      if (typeof line === 'string') continue;
+      const obj = line as LineObject;
+      if (obj.parts) {
+        for (const p of obj.parts) {
+          if (p.ans) for (const a of p.ans) if (a > 0) allSingers.add(a);
+        }
+      } else if (obj.ans) {
+        for (const a of obj.ans) if (a > 0) allSingers.add(a);
+      }
+    }
+    const singerArr = Array.from(allSingers).sort((a, b) => a - b);
+
+    for (const line of song.lines) {
+      if (typeof line === 'string') continue;
+      const obj = line as LineObject;
+      const lineDiff = obj.diff ?? 1;
+
+      if (obj.parts) {
+        for (const part of obj.parts) {
+          if (part.ans && part.ans.length > 0 && part.lyric.trim() && part.range) {
+            const sorted = [...part.ans].filter(a => a > 0).sort((a, b) => a - b);
+            if (sorted.length === 0) continue;
+            if (arrEq(sorted, singerArr)) continue;
+            candidates.push({ lyric: part.lyric, lyricJp: obj.lyric_jp, ans: sorted, range: part.range, song, diff: lineDiff, sourceLine: obj, allSingers: singerArr });
+          }
+        }
+      } else if (obj.ans && obj.ans.length > 0 && obj.lyric?.trim() && obj.range) {
+        const sorted = [...obj.ans].filter(a => a > 0).sort((a, b) => a - b);
+        if (sorted.length === 0) continue;
+        if (arrEq(sorted, singerArr)) continue;
+        candidates.push({ lyric: obj.lyric, lyricJp: obj.lyric_jp, ans: sorted, range: obj.range, song, diff: lineDiff, sourceLine: obj, allSingers: singerArr });
+      }
+    }
+  }
+  updatePoolCount();
+}
+
+const PICKER_EXTRA_MEMBERS: Partial<Record<GroupName, Record<number, string>>> = {
+  aqours: { 10: 'Sarah', 11: 'Leah' },
+};
+
+function rebuildSingerPicker(): void {
+  const container = document.getElementById('bubudle-singer-options');
+  if (!container) return;
+  const submitBtn = document.getElementById('bubudle-singer-submit');
+  container.querySelectorAll('.bubudle-singer-pick').forEach(b => b.remove());
+  const mapping: Record<number, string> = {
+    ...(MEMBER_MAPPING[bubudleGroup] ?? {}),
+    ...(PICKER_EXTRA_MEMBERS[bubudleGroup] ?? {}),
+  };
+  for (const id of Object.keys(mapping).map(Number).sort((a, b) => a - b)) {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'btn btn-primary btn-xs bubudle-singer-pick';
+    btn.dataset.singer = String(id);
+    btn.textContent = mapping[id];
+    btn.addEventListener('click', () => btn.classList.toggle('active'));
+    container.insertBefore(btn, submitBtn);
+  }
+}
+
+function currentStorageKey(): string {
+  const inc = subunitInclude.length > 0 ? [...subunitInclude].sort().join('|') : '';
+  const exc = subunitExclude.length > 0 ? [...subunitExclude].sort().join('|') : '';
+  return `bubudle-current-${bubudleGroup}-${bubudleDiff}-${songDiff}-${inc}-${exc}`;
+}
+
+function subunitStorageKey(): string {
+  return `bubudle-subunits-${bubudleGroup}`;
+}
+
+function loadSubunitFilter(): void {
+  subunitInclude = [];
+  subunitExclude = [];
+  const raw = getStorage(subunitStorageKey());
+  if (!raw) return;
+  const valid = new Set((SHORTCUT_GROUPS[bubudleGroup] ?? []).filter(g => g.subunit).map(g => g.members.join(',')));
+  try {
+    const parsed = JSON.parse(raw);
+    if (Array.isArray(parsed.i)) subunitInclude = parsed.i.filter((k: string) => valid.has(k));
+    if (Array.isArray(parsed.e)) subunitExclude = parsed.e.filter((k: string) => valid.has(k));
+  } catch { /* legacy/invalid — ignore */ }
+}
+
+function saveSubunitFilter(): void {
+  if (subunitInclude.length === 0 && subunitExclude.length === 0) {
+    setStorage(subunitStorageKey(), '');
+  } else {
+    setStorage(subunitStorageKey(), JSON.stringify({ i: subunitInclude, e: subunitExclude }));
+  }
+}
+
+type SubunitState = 'off' | 'include' | 'exclude';
+
+function subunitStateFor(key: string): SubunitState {
+  if (subunitInclude.includes(key)) return 'include';
+  if (subunitExclude.includes(key)) return 'exclude';
+  return 'off';
+}
+
+function cycleSubunit(key: string): void {
+  const s = subunitStateFor(key);
+  subunitInclude = subunitInclude.filter(k => k !== key);
+  subunitExclude = subunitExclude.filter(k => k !== key);
+  if (s === 'off') subunitInclude.push(key);
+  else if (s === 'include') subunitExclude.push(key);
+  // 'exclude' → off (already removed)
+}
+
+function rebuildSubunitFilter(): void {
+  const container = document.getElementById('bubudle-subunit-filter');
+  if (!container) return;
+  container.querySelectorAll('button').forEach(b => b.remove());
+
+  const subunits = (SHORTCUT_GROUPS[bubudleGroup] ?? []).filter(g => g.subunit);
+  if (subunits.length === 0) {
+    container.style.display = 'none';
+    return;
+  }
+  container.style.display = '';
+
+  const allBtn = document.createElement('button');
+  allBtn.type = 'button';
+  allBtn.className = 'btn btn-xs bubudle-diff-btn bubudle-subunit-btn';
+  allBtn.textContent = 'All';
+  allBtn.title = 'Clear subunit filter';
+  allBtn.classList.toggle('active', subunitInclude.length === 0 && subunitExclude.length === 0);
+  allBtn.addEventListener('click', () => {
+    subunitInclude = [];
+    subunitExclude = [];
+    saveSubunitFilter();
+    recentHistory.clear();
+    rebuildSubunitFilter();
+    pickRandom(false, true);
+  });
+  container.appendChild(allBtn);
+
+  for (const g of subunits) {
+    const key = g.members.join(',');
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'btn btn-xs bubudle-diff-btn bubudle-subunit-btn';
+    btn.textContent = g.label;
+    btn.title = 'Click: include, again: exclude, again: off';
+    const state = subunitStateFor(key);
+    btn.classList.toggle('active', state === 'include');
+    btn.classList.toggle('excluded', state === 'exclude');
+    btn.addEventListener('click', () => {
+      cycleSubunit(key);
+      saveSubunitFilter();
+      recentHistory.clear();
+      rebuildSubunitFilter();
+      pickRandom(false, true);
+    });
+    container.appendChild(btn);
+  }
+}
+
 function saveCurrent(c: LyricCandidate, answered = false): void {
-  setStorage(`bubudle-current-${bubudleDiff}`, JSON.stringify({
+  setStorage(currentStorageKey(), JSON.stringify({
     songId: c.song.id,
     lyric: c.lyric,
     range: c.range,
@@ -317,7 +537,7 @@ function saveCurrent(c: LyricCandidate, answered = false): void {
 }
 
 function restoreCurrent(): { candidate: LyricCandidate; answered: boolean } | null {
-  const raw = getStorage(`bubudle-current-${bubudleDiff}`);
+  const raw = getStorage(currentStorageKey());
   if (!raw) return null;
   try {
     const { songId, lyric, range, answered } = JSON.parse(raw);
@@ -330,25 +550,65 @@ function restoreCurrent(): { candidate: LyricCandidate; answered: boolean } | nu
   } catch { return null; }
 }
 
+function candidateKey(c: LyricCandidate): string {
+  return `${c.song.id}|${c.range[0]}|${c.range[1]}`;
+}
+
 function eligibleCandidates(): LyricCandidate[] {
   const cap = RANGE_CAPS[bubudleDiff];
-  if (cap === Infinity) return candidates;
-  return candidates.filter(c => (c.range[1] - c.range[0]) <= cap);
+  const diffFilter = songDiff === 'all' ? 0 : parseInt(songDiff, 10);
+  const includeSet = subunitInclude.length > 0 ? new Set(subunitInclude) : null;
+  const excludeSet = subunitExclude.length > 0 ? new Set(subunitExclude) : null;
+  return candidates.filter(c => {
+    const dur = c.range[1] - c.range[0];
+    const clipOk = bubudleDiff === 'all' ? true : bubudleDiff === 'normal' ? dur > cap : dur <= cap;
+    if (!clipOk) return false;
+    if (diffFilter !== 0 && c.diff !== diffFilter) return false;
+    const key = c.allSingers.join(',');
+    if (includeSet && !includeSet.has(key)) return false;
+    if (excludeSet && excludeSet.has(key)) return false;
+    return true;
+  });
+}
+
+function pickFromPool(pool: LyricCandidate[]): LyricCandidate {
+  let available = pool.filter(c => !recentHistory.has(candidateKey(c)));
+  if (available.length === 0) {
+    recentHistory.clear();
+    available = pool;
+  }
+  const pick = available[Math.floor(Math.random() * available.length)];
+  recentHistory.add(candidateKey(pick));
+  return pick;
+}
+
+function updatePoolCount(): void {
+  const el = document.getElementById('bubudle-pool-count');
+  if (el) el.textContent = `${eligibleCandidates().length}`;
 }
 
 function pickRandom(initial = false, tryRestore = false): void {
   let restoredAnswered = false;
   const pool = eligibleCandidates();
+  updatePoolCount();
+  if (pool.length === 0) {
+    const container = document.getElementById('slots')!;
+    container.innerHTML = '<div class="text-center" style="padding:2em;opacity:0.6">No lyrics available for this group yet</div>';
+    document.getElementById('bubudle-lyric')!.textContent = '';
+    document.getElementById('bubudle-lyric-jp')!.textContent = '';
+    resetHints();
+    return;
+  }
   if (initial || tryRestore) {
     const restored = restoreCurrent();
     if (restored) {
       current = restored.candidate;
       restoredAnswered = restored.answered;
     } else {
-      current = pool[Math.floor(Math.random() * pool.length)];
+      current = pickFromPool(pool);
     }
   } else {
-    current = pool[Math.floor(Math.random() * pool.length)];
+    current = pickFromPool(pool);
   }
   saveCurrent(current, restoredAnswered);
   checked = false;
@@ -363,13 +623,10 @@ function pickRandom(initial = false, tryRestore = false): void {
   loadSong(song);
 
   songSingers = current.allSingers;
-  const aqoursBase = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-  const extras = current.allSingers.filter(s => s > 9);
-  state.singers = [...aqoursBase, ...extras];
-  // state.group must cover all members for toggleChoice color/ID lookups
-  state.group = extras.includes(12) ? 'aqours-miku'
-    : extras.some(s => s === 10 || s === 11) ? 'saint-aqours-snow'
-    : 'aqours';
+  const baseIds = Object.keys(MEMBER_MAPPING[bubudleGroup]).map(Number).sort((a, b) => a - b);
+  const extras = current.allSingers.filter(s => !baseIds.includes(s));
+  state.singers = [...baseIds, ...extras];
+  state.group = current.song.group;
   state.editMode = false;
   state.lyrics = [];
   state.reverseMap = {};
@@ -420,12 +677,34 @@ function pickRandom(initial = false, tryRestore = false): void {
   // Reset all hint lines
   resetHints();
 
-  // Update difficulty badge
+  // Auto-narrow singers when either difficulty is normal
+  if (!restoredAnswered && (bubudleDiff === 'normal' || songDiff === '1')) {
+    if (songSingers.length < state.singers.length) {
+      state.singers = songSingers;
+      narrowToSingers(currentSlot, songSingers);
+      revealHint('bubudle-hint-narrow', 'Singers', 'Narrowed to subunit');
+    } else {
+      // Full group — remove 3 random incorrect members
+      const incorrect = state.singers.filter(s => !current!.ans.includes(s));
+      const shuffled = incorrect.sort(() => Math.random() - 0.5);
+      const toRemove = shuffled.slice(0, Math.min(2, shuffled.length));
+      disableMembers(currentSlot, toRemove);
+      revealHint('bubudle-hint-narrow', 'Singers', `Removed ${toRemove.length} wrong`);
+    }
+  }
+
+  // Update difficulty badges
   const diffBadge = document.getElementById('bubudle-diff')!;
   const diffLabels = ['', 'Normal', 'Hard', 'Insane'];
   const diffClasses = ['', 'diff-normal', 'diff-hard', 'diff-insane'];
-  diffBadge.textContent = diffLabels[diff] || `Diff ${diff}`;
+  diffBadge.textContent = `Diff: ${diffLabels[diff] || diff}`;
   diffBadge.className = 'bubudle-diff ' + (diffClasses[diff] || '');
+
+  const clipBadge = document.getElementById('bubudle-clip-diff')!;
+  const clipLabels: Record<BubudleDifficulty, string> = { all: 'All', normal: 'Normal', hard: 'Hard', insane: 'Insane' };
+  const clipClasses: Record<BubudleDifficulty, string> = { all: 'diff-all', normal: 'diff-normal', hard: 'diff-hard', insane: 'diff-insane' };
+  clipBadge.textContent = `Clip: ${clipLabels[bubudleDiff]}`;
+  clipBadge.className = 'bubudle-diff ' + clipClasses[bubudleDiff];
 
   // Reset theme and title
   switchTheme(null);
@@ -438,10 +717,12 @@ function pickRandom(initial = false, tryRestore = false): void {
     switchTheme(current.song.id);
     toggleReveal(currentSlot!, true);
     document.getElementById('bubudle-check-bottom')!.style.display = 'none';
+    document.getElementById('bubudle-skip-bottom')!.style.display = 'none';
     document.getElementById('bubudle-next-bottom')!.style.display = '';
   } else {
-    // Show check, hide next
+    // Show check + skip, hide next
     document.getElementById('bubudle-check-bottom')!.style.display = '';
+    document.getElementById('bubudle-skip-bottom')!.style.display = '';
     document.getElementById('bubudle-next-bottom')!.style.display = 'none';
   }
 
@@ -492,6 +773,7 @@ function checkAnswer(): void {
     saveCurrent(current, true);
 
     document.getElementById('bubudle-check-bottom')!.style.display = 'none';
+    document.getElementById('bubudle-skip-bottom')!.style.display = 'none';
     document.getElementById('bubudle-next-bottom')!.style.display = '';
     if (!player.isPlaying()) playClip(true);
     return;
@@ -517,14 +799,25 @@ function checkAnswer(): void {
     }
     resetSlotForRetry(currentSlot);
   } else if (wrongCount === 3) {
-    // Hint 3: narrow down to the song's actual singers (subgroup)
+    // Hint 3: narrow down to the song's actual singers (subgroup), then label
     if (songSingers.length < state.singers.length) {
       state.singers = songSingers;
       narrowToSingers(currentSlot, songSingers);
-      revealHint('bubudle-hint-narrow', 'Singers', 'Narrowed to subgroup');
-    } else {
-      revealHint('bubudle-hint-narrow', 'Singers', 'Full group');
     }
+
+    const ans = current.ans;
+    const count = ans.length;
+    const sorted = [...ans].sort((a, b) => a - b);
+    const key = sorted.join(',');
+
+    const SUBUNITS: Record<string, string> = HINT_SUBUNITS[bubudleGroup] ?? {};
+    const YEARS: string[] = HINT_YEARS[bubudleGroup] ?? [];
+
+    let narrowLabel = String(count);
+    if (SUBUNITS[key]) narrowLabel += ' (Subunit)';
+    else if (YEARS.includes(key)) narrowLabel += ' (Year)';
+
+    revealHint('bubudle-hint-narrow', 'Singers', narrowLabel);
     resetSlotForRetry(currentSlot);
   } else {
     // 4th wrong: give up, reveal answer
@@ -538,8 +831,29 @@ function checkAnswer(): void {
     saveCurrent(current, true);
 
     document.getElementById('bubudle-check-bottom')!.style.display = 'none';
+    document.getElementById('bubudle-skip-bottom')!.style.display = 'none';
     document.getElementById('bubudle-next-bottom')!.style.display = '';
   }
+
+  if (!player.isPlaying()) playClip(true);
+}
+
+function skipAnswer(): void {
+  if (!current || !currentSlot || checked) return;
+
+  checked = true;
+  streak = 0;
+  setStorage('bubudle-streak', String(streak));
+  updateStreak();
+  toggleReveal(currentSlot, true);
+
+  revealSongName(current.song);
+  switchTheme(current.song.id);
+  saveCurrent(current, true);
+
+  document.getElementById('bubudle-check-bottom')!.style.display = 'none';
+  document.getElementById('bubudle-skip-bottom')!.style.display = 'none';
+  document.getElementById('bubudle-next-bottom')!.style.display = '';
 
   if (!player.isPlaying()) playClip(true);
 }
@@ -562,20 +876,35 @@ function narrowToSingers(slot: Slot, singers: number[]): void {
     const members = btn.dataset.value!.split(',').map(Number);
     const outside = members.some((m) => !singers.includes(m));
     if (outside && !btn.classList.contains('disabled')) {
-      btn.classList.add('disabled');
-      btn.classList.remove('active');
-      btn.style.removeProperty('--member-accent');
-      btn.style.removeProperty('--member-accent-border');
-      // Remove click handler by replacing with clone
-      const clone = btn.cloneNode(true) as HTMLElement;
-      btn.replaceWith(clone);
+      disableButton(btn);
     }
   });
 }
 
-let logEntries: { tag: string; text: string; data: unknown }[] = loadLogEntries();
+function disableMembers(slot: Slot, members: number[]): void {
+  if (!slot.element) return;
+  slot.element.querySelectorAll<HTMLElement>('.slot-body button[data-value]').forEach((btn) => {
+    const btnMembers = btn.dataset.value!.split(',').map(Number);
+    if (btnMembers.length === 1 && members.includes(btnMembers[0]) && !btn.classList.contains('disabled')) {
+      disableButton(btn);
+    }
+  });
+}
 
-function loadLogEntries(): { tag: string; text: string; data: unknown }[] {
+function disableButton(btn: HTMLElement): void {
+  btn.classList.add('disabled');
+  btn.classList.remove('active');
+  btn.style.removeProperty('--member-accent');
+  btn.style.removeProperty('--member-accent-border');
+  const clone = btn.cloneNode(true) as HTMLElement;
+  btn.replaceWith(clone);
+}
+
+type LogEntry = { tag: string; text: string; display?: string; data: unknown };
+
+let logEntries: LogEntry[] = loadLogEntries();
+
+function loadLogEntries(): LogEntry[] {
   const raw = getStorage('bubudle-flags');
   if (!raw) return [];
   try { return JSON.parse(raw); } catch { return []; }
@@ -585,9 +914,9 @@ function saveLogEntries(): void {
   setStorage('bubudle-flags', JSON.stringify(logEntries));
 }
 
-function appendToLog(tag: string, text: string, data: unknown): void {
+function appendToLog(tag: string, text: string, data: unknown, display?: string): void {
   console.warn(`[${tag}]`, JSON.stringify(data, null, 2));
-  logEntries.push({ tag, text, data });
+  logEntries.push({ tag, text, display, data });
   saveLogEntries();
   renderLog();
 }
@@ -619,7 +948,7 @@ function renderLog(): void {
     wrap.appendChild(logEl);
     document.getElementById('slots-container')!.appendChild(wrap);
   }
-  logEl.textContent = logEntries.map((e) => `[${e.tag}] ${e.text}`).join('\n');
+  logEl.textContent = logEntries.map((e) => `[${e.tag}] ${e.display ?? e.text}`).join('\n');
 }
 
 function exportLog(): void {
@@ -654,7 +983,7 @@ function reportBadTimestamp(): void {
     song: current.song.name,
     songId: current.song.id,
     line,
-  });
+  }, current.song.name);
   pickRandom();
 }
 
@@ -668,7 +997,7 @@ function flagDifficulty(shouldBe: number): void {
     currentDiff: current.diff,
     shouldBe,
     updatedLine: updated,
-  });
+  }, current.song.name);
   document.getElementById('bubudle-diff-options')!.style.display = 'none';
   pickRandom();
 }
@@ -688,7 +1017,7 @@ function flagSinger(): void {
     currentAns: current.ans,
     shouldBe: picked,
     updatedLine: updated,
-  });
+  }, current.song.name);
 
   // Reset singer picks
   document.querySelectorAll<HTMLElement>('.bubudle-singer-pick.active').forEach((b) => b.classList.remove('active'));
@@ -705,7 +1034,7 @@ function flagSingerUnknown(): void {
     currentAns: current.ans,
     shouldBe: 'unknown',
     line,
-  });
+  }, current.song.name);
   document.querySelectorAll<HTMLElement>('.bubudle-singer-pick.active').forEach((b) => b.classList.remove('active'));
   document.getElementById('bubudle-singer-options')!.style.display = 'none';
   pickRandom();
@@ -772,6 +1101,7 @@ function initBubudleDifficulty(): void {
     btn.addEventListener('click', () => {
       bubudleDiff = btn.dataset.bdiff as BubudleDifficulty;
       setStorage('bubudle-diff', bubudleDiff);
+      recentHistory.clear();
       document.querySelectorAll<HTMLElement>('.bubudle-diff-btn').forEach((b) =>
         b.classList.toggle('active', b.dataset.bdiff === bubudleDiff)
       );
@@ -787,13 +1117,67 @@ function initBubudleDifficulty(): void {
     helpEl.addEventListener('mouseenter', () => {
       tip = document.createElement('div');
       tip.className = 'slot-tooltip';
-      tip.innerHTML = '<b>Normal</b> — any lyric<br><b>Hard</b> — short lyrics (≤3s)<br><b>Insane</b> — very short lyrics (≤1.5s)';
+      tip.innerHTML = '<b>All</b> — any clip length<br><b>Normal</b> — longer lyrics (>2s)<br><b>Hard</b> — short lyrics (≤2s)<br><b>Insane</b> — very short lyrics (≤1s)';
       document.body.appendChild(tip);
       const rect = helpEl.getBoundingClientRect();
       tip.style.top = `${rect.bottom + window.scrollY + 4}px`;
       tip.style.left = `${rect.left + window.scrollX + rect.width / 2 - tip.offsetWidth / 2}px`;
     });
     helpEl.addEventListener('mouseleave', () => {
+      tip?.remove();
+      tip = null;
+    });
+  }
+}
+
+function initSongDifficulty(): void {
+  const saved = getStorage('bubudle-sdiff') as SongDifficulty | null;
+  if (saved && ['all', '1', '2', '3'].includes(saved)) songDiff = saved;
+
+  document.querySelectorAll<HTMLElement>('.bubudle-sdiff-btn').forEach((btn) => {
+    btn.classList.toggle('active', btn.dataset.sdiff === songDiff);
+    btn.addEventListener('click', () => {
+      songDiff = btn.dataset.sdiff as SongDifficulty;
+      setStorage('bubudle-sdiff', songDiff);
+      recentHistory.clear();
+      document.querySelectorAll<HTMLElement>('.bubudle-sdiff-btn').forEach((b) =>
+        b.classList.toggle('active', b.dataset.sdiff === songDiff)
+      );
+      pickRandom(false, true);
+    });
+  });
+
+  const helpEl = document.getElementById('bubudle-sdiff-help');
+  if (helpEl) {
+    let tip: HTMLElement | null = null;
+    helpEl.addEventListener('mouseenter', () => {
+      tip = document.createElement('div');
+      tip.className = 'slot-tooltip';
+      tip.innerHTML = '<b>All</b> — any difficulty<br><b>Normal</b> — easy lines<br><b>Hard</b> — tricky lines<br><b>Insane</b> — hardest lines';
+      document.body.appendChild(tip);
+      const rect = helpEl.getBoundingClientRect();
+      tip.style.top = `${rect.bottom + window.scrollY + 4}px`;
+      tip.style.left = `${rect.left + window.scrollX + rect.width / 2 - tip.offsetWidth / 2}px`;
+    });
+    helpEl.addEventListener('mouseleave', () => {
+      tip?.remove();
+      tip = null;
+    });
+  }
+
+  const poolHelpEl = document.getElementById('bubudle-pool-help');
+  if (poolHelpEl) {
+    let tip: HTMLElement | null = null;
+    poolHelpEl.addEventListener('mouseenter', () => {
+      tip = document.createElement('div');
+      tip.className = 'slot-tooltip';
+      tip.textContent = 'Number of lyrics matching your current clip and difficulty settings';
+      document.body.appendChild(tip);
+      const rect = poolHelpEl.getBoundingClientRect();
+      tip.style.top = `${rect.bottom + window.scrollY + 4}px`;
+      tip.style.left = `${rect.left + window.scrollX + rect.width / 2 - tip.offsetWidth / 2}px`;
+    });
+    poolHelpEl.addEventListener('mouseleave', () => {
       tip?.remove();
       tip = null;
     });

@@ -98,11 +98,11 @@
       "lyric_jp": "しあわせがキミと共にありますように",
       "parts": [
         {"lyric": "Kimi to",
-          "range": [93.78, 95.16], "ans": [2, 8, 9]},
+          "range": [93.78, 95.16], "ans": [2, 8, 9], "diff": 2},
         {"lyric": "(kimi to)",
           "range": [95.16, 96.56], "ans": [4, 5, 6]},
         {"lyric": "Tomoni",
-          "range": [96.56, 97.9], "ans": [1, 3, 7]},
+          "range": [96.56, 97.9], "ans": [1, 3, 7], "diff": 2},
         {"lyric": "Arimasu you ni",
           "range": [97.9, 109.6], "ans": []}
       ]
@@ -190,11 +190,11 @@
       "lyric_jp": "よろこびはキミの胸にあるはずだと",
       "parts": [
         {"lyric": "Kimi no",
-          "range": [171.19, 172.74], "ans": [2, 8, 9]},
+          "range": [171.19, 172.74], "ans": [2, 8, 9], "diff": 2},
         {"lyric": "(kimi no)",
           "range": [172.74, 174.04], "ans": [4, 5, 6]},
         {"lyric": "Mune ni",
-          "range": [174.04, 176.88], "ans": [1, 3, 7]},
+          "range": [174.04, 176.88], "ans": [1, 3, 7], "diff": 2},
         {"lyric": "Aru hazu da to",
           "range": [176.88, 200.74], "ans": []}
       ]

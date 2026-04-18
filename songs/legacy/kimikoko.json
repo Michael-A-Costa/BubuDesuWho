@@ -6,6 +6,7 @@
   "released": "2015-10-07",
   "hidden": true,
   "added": "2026-04",
+  "legacy": true,
   "mapping": [
     {
       "range": [

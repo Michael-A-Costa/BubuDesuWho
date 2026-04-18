@@ -164,7 +164,7 @@
         {"lyric": "Gooru wa doko?",
           "range": [62.04, 63.32], "ans": [9]},
         {"lyric": "Doko darou?",
-          "range": [63.32, 64.77], "ans": [3, 6]},
+          "range": [63.32, 64.77], "ans": [3, 6], "diff": 2},
         {"lyric": "Wakaranai!",
           "range": [64.77, 65.61], "ans": [9]},
         {"lyric": "Wakaranai demo ne tanoshisou da yo",

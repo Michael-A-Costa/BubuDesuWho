@@ -4,6 +4,7 @@
   "ogg": "sound/humming_friend.ogg",
   "id": "humming",
   "group": "aqours",
+  "legacy": true,
   "released": "2016-07-20",
   "mapping": [
     {

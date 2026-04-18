@@ -7,33 +7,27 @@ let songs: Song[] = [];
 
 export async function loadConfig(): Promise<Song[]> {
   const base = import.meta.env.BASE_URL;
-  const resp = await fetch(base + 'config.json?t=' + Date.now());
-  const raw: SongConfig[] = await resp.json();
+  const raw: SongConfig[] = [];
 
-  // Load individual song configs from songs/ directory
-  try {
-    const indexResp = await fetch(base + 'songs/index.json?t=' + Date.now());
-    const indexEntries: (string | { file: string; cover?: string })[] = await indexResp.json();
-    const results = await Promise.allSettled(
-      indexEntries.map(async (entry) => {
-        const file = typeof entry === 'string' ? entry : entry.file;
-        const cover = typeof entry === 'object' ? entry.cover : undefined;
-        const r = await fetch(base + 'songs/' + file + '?t=' + Date.now());
-        if (!r.ok) throw new Error(`${r.status} ${file}`);
-        const cfg = await r.json() as SongConfig;
-        if (cover && !cfg.cover) cfg.cover = cover;
-        return cfg;
-      }),
-    );
-    for (const result of results) {
-      if (result.status === 'fulfilled') raw.push(result.value);
-      else console.warn('Failed to load song:', result.reason);
-    }
-  } catch {
-    // songs/index.json not found — no individual configs to load
+  const indexResp = await fetch(base + 'songs/index.json?t=' + Date.now());
+  const indexEntries: (string | { file: string; cover?: string })[] = await indexResp.json();
+  const results = await Promise.allSettled(
+    indexEntries.map(async (entry) => {
+      const file = typeof entry === 'string' ? entry : entry.file;
+      const cover = typeof entry === 'object' ? entry.cover : undefined;
+      const r = await fetch(base + 'songs/' + file + '?t=' + Date.now());
+      if (!r.ok) throw new Error(`${r.status} ${file}`);
+      const cfg = await r.json() as SongConfig;
+      if (cover && !cfg.cover) cfg.cover = cover;
+      return cfg;
+    }),
+  );
+  for (const result of results) {
+    if (result.status === 'fulfilled') raw.push(result.value);
+    else console.warn('Failed to load song:', result.reason);
   }
 
-  // Deduplicate by id — songs/index.json entries (appended last) win over config.json
+  // Deduplicate by id — preserves songs/index.json order
   const seen = new Map<string, SongConfig>();
   for (const cfg of raw) {
     if (cfg.id) seen.set(cfg.id, cfg);

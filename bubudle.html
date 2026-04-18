@@ -28,7 +28,7 @@
       <button id="muse-group-button" type="button" class="btn btn-primary group-button" data-value="muse"><img class="group-icon" src="css/images/muse.png"></img></button><button id="aqours-group-button" type="button" class="btn btn-primary group-button" data-value="aqours"><img class="group-icon" src="css/images/aqours.png"></img></button>
     </li>
     <li>
-      <button id="wug-group-button" type="button" class="btn btn-primary group-button" data-value="wug"><img class="group-icon" src="css/images/wug.png"></img>
+      <button id="wug-group-button" type="button" class="btn btn-primary group-button" data-value="wug"><img class="group-icon" src="css/images/wug.png"></img></button><button id="nijigasaki-group-button" type="button" class="btn btn-primary group-button" data-value="nijigasaki"><img class="group-icon" src="css/images/nijigasaki.png"></img></button>
     </li>
     <li class="has-feedback">
       <input class="form-control" id="menu-search" autofocus></input>
@@ -50,15 +50,32 @@
         <h2 id="song-title">Bubudle</h2>
         <div class="song-title-utils">
           <div id="bubudle-difficulty" class="bubudle-difficulty-toggle">
+            <span class="bubudle-toggle-label">Clip:</span>
+            <button type="button" class="btn btn-xs bubudle-diff-btn" data-bdiff="all">All</button>
             <button type="button" class="btn btn-xs bubudle-diff-btn active" data-bdiff="normal">Normal</button>
             <button type="button" class="btn btn-xs bubudle-diff-btn" data-bdiff="hard">Hard</button>
             <button type="button" class="btn btn-xs bubudle-diff-btn" data-bdiff="insane">Insane</button>
             <span id="bubudle-diff-help" class="glyphicon glyphicon-question-sign bubudle-diff-help"></span>
           </div>
+          <div id="bubudle-song-difficulty" class="bubudle-difficulty-toggle">
+            <span class="bubudle-toggle-label">Diff:</span>
+            <button type="button" class="btn btn-xs bubudle-sdiff-btn active" data-sdiff="all">All</button>
+            <button type="button" class="btn btn-xs bubudle-sdiff-btn" data-sdiff="1">Normal</button>
+            <button type="button" class="btn btn-xs bubudle-sdiff-btn" data-sdiff="2">Hard</button>
+            <button type="button" class="btn btn-xs bubudle-sdiff-btn" data-sdiff="3">Insane</button>
+            <span id="bubudle-sdiff-help" class="glyphicon glyphicon-question-sign bubudle-diff-help"></span>
+          </div>
+          <div class="bubudle-difficulty-toggle">
+            <span class="bubudle-toggle-label">Pool:</span>
+            <span id="bubudle-pool-count" class="btn btn-xs bubudle-diff-btn active" style="cursor: default;"></span>
+            <span id="bubudle-pool-help" class="glyphicon glyphicon-question-sign bubudle-diff-help"></span>
+          </div>
           <button id="theme-toggle" type="button" class="btn btn-default" title="Switch to light mode">&#9790;</button>
         </div>
       </div>
-
+      <div id="bubudle-subunit-filter" class="bubudle-difficulty-toggle bubudle-subunit-row" style="display:none">
+        <span class="bubudle-toggle-label">Subunit:</span>
+      </div>
     </div>
   </nav>
 
@@ -68,7 +85,7 @@
         <div class="bubudle-card-left">
           <div id="bubudle-lyric" class="bubudle-lyric-text"></div>
           <div id="bubudle-lyric-jp" class="bubudle-lyric-jp"></div>
-          <div id="bubudle-diff" class="bubudle-diff"></div>
+          <div class="bubudle-diff-badges"><div id="bubudle-clip-diff" class="bubudle-diff"></div><div id="bubudle-diff" class="bubudle-diff"></div></div>
           <button id="bubudle-play" type="button" class="btn btn-default bubudle-play-btn" title="Play clip"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
           <div class="bubudle-playback">
             <div class="bubudle-seek-wrap">
@@ -83,9 +100,9 @@
           </div>
         </div>
         <div class="bubudle-card-right">
+          <div id="bubudle-hint-narrow" class="bubudle-hint-line"></div>
           <div id="bubudle-hint-clip" class="bubudle-hint-line"></div>
           <div id="bubudle-hint-song" class="bubudle-hint-line"></div>
-          <div id="bubudle-hint-narrow" class="bubudle-hint-line"></div>
           <div id="bubudle-hint-theme" class="bubudle-hint-line"></div>
           <div id="bubudle-guesses" class="bubudle-guesses"></div>
         </div>
@@ -95,6 +112,9 @@
       <div class="bubudle-controls">
         <button id="bubudle-check-bottom" type="button" class="btn btn-success">Check</button>
         <button id="bubudle-next-bottom" type="button" class="btn btn-primary" style="display:none">Next</button>
+      </div>
+      <div class="bubudle-controls bubudle-skip-row">
+        <button id="bubudle-skip-bottom" type="button" class="btn btn-default btn-sm" title="Give up and reveal the answer">Skip</button>
       </div>
       <div class="bubudle-flags">
         <button id="bubudle-bad-timestamp" type="button" class="btn btn-default bubudle-flag-btn" title="Report wrong timestamp and skip">&#9888; Bad Timestamp</button>
@@ -107,15 +127,6 @@
         <button type="button" class="btn btn-danger btn-xs bubudle-diff-pick" data-diff="3">Insane</button>
       </div>
       <div id="bubudle-singer-options" class="bubudle-flag-options" style="display:none">
-        <button type="button" class="btn btn-primary btn-xs bubudle-singer-pick" data-singer="1">Chika</button>
-        <button type="button" class="btn btn-primary btn-xs bubudle-singer-pick" data-singer="2">You</button>
-        <button type="button" class="btn btn-primary btn-xs bubudle-singer-pick" data-singer="3">Riko</button>
-        <button type="button" class="btn btn-primary btn-xs bubudle-singer-pick" data-singer="4">Hanamaru</button>
-        <button type="button" class="btn btn-primary btn-xs bubudle-singer-pick" data-singer="5">Ruby</button>
-        <button type="button" class="btn btn-primary btn-xs bubudle-singer-pick" data-singer="6">Yoshiko</button>
-        <button type="button" class="btn btn-primary btn-xs bubudle-singer-pick" data-singer="7">Dia</button>
-        <button type="button" class="btn btn-primary btn-xs bubudle-singer-pick" data-singer="8">Kanan</button>
-        <button type="button" class="btn btn-primary btn-xs bubudle-singer-pick" data-singer="9">Mari</button>
         <button type="button" class="btn btn-info btn-xs" id="bubudle-singer-submit">Done</button>
         <button type="button" class="btn btn-default btn-xs" id="bubudle-singer-idk">Just Wrong</button>
       </div>

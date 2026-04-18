@@ -1,0 +1,211 @@
+{
+  "name": "Bokura no LIVE Kimi to no LIFE",
+  "ogg": "sound/bokura_no_live_kimi_to_no_life.ogg",
+  "id": "borarara",
+  "group": "muse",
+  "legacy": true,
+  "hidden": false,
+  "slots": [
+
+  ],
+  "generated": "2026-04-16T03:54:14Z",
+  "added": "2026-04",
+  "lines": [
+    {
+      "lyric_jp": "確かな今よりも新しい夢つかまえたい",
+      "parts": [
+        {"lyric": "Tashikana ima yori mo",
+          "range": [27.64, 31], "ans": []},
+        {"lyric": "Atarashii yume tsukamaetai",
+          "range": [31, 36.84], "ans": []}
+      ]
+    },
+    {
+      "lyric_jp": "大胆に飛び出せばO.K.マイライフ",
+      "parts": [
+        {"lyric": "Daitan ni tobidaseba",
+          "range": [36.84, 39.82], "ans": []},
+        {"lyric": "O.K. mai raifu",
+          "range": [39.82, 45.8], "ans": []}
+      ]
+    },
+    {"lyric": "Nozomi wa ookiku ne",
+      "lyric_jp": "望みは大きくね",
+      "range": [45.8, 49.07], "ans": []},
+    {"lyric": "Senobi datteba takaku tooku",
+      "lyric_jp": "背のびだってば 高く遠く",
+      "range": [49.07, 54.69], "ans": []},
+    {"lyric": "Mabushii ashita dakishime ni yukou",
+      "lyric_jp": "まぶしいあした抱きしめに行こう",
+      "range": [54.69, 59.32], "ans": []},
+    {"lyric": "Zenbu kanaeyou",
+      "lyric_jp": "全部叶えよう",
+      "range": [59.32, 63.67], "ans": []},
+    "",
+    {"lyric": "Souda yo shinjiru dake de",
+      "lyric_jp": "そうだよ 信じるだけで",
+      "range": [63.67, 68.29], "ans": [2, 3]},
+    {
+      "lyric_jp": "ぐんぐん前に進むよ 君が！",
+      "parts": [
+        {"lyric": "Gungun mae ni susumu yo,",
+          "range": [68.29, 71.54], "ans": [1]},
+        {"lyric": "Kimi ga!",
+          "range": [70.84, 75.45], "ans": []}
+      ]
+    },
+    "",
+    {"lyric": "Kotaenaku de iinda wakaru kara",
+      "lyric_jp": "答えなくでいいんだわかるから",
+      "range": [75.45, 79.94], "ans": []},
+    {"lyric": "Mune ni egaku basho wa onaji",
+      "lyric_jp": "胸にえがく場所は同じ",
+      "range": [79.94, 84.15], "ans": []},
+    {
+      "lyric_jp": "何度でも諦めずに 探すことが僕らの挑戦",
+      "parts": [
+        {"lyric": "Nando demo akiramezu ni",
+          "range": [84.15, 89.73], "ans": [1]},
+        {"lyric": "Sagasu koto ga bokura no chousen",
+          "range": [89.73, 93.79], "ans": [1]}
+      ]
+    },
+    {"lyric": "Genki no ondo wa sagaranai",
+      "lyric_jp": "元気の温度は下がらない",
+      "range": [93.68, 98.18], "ans": []},
+    {"lyric": "Atsui mama de habataiteku",
+      "lyric_jp": "熱いままで羽ばたいてく",
+      "range": [98.18, 102.55], "ans": []},
+    {"lyric": "Akogare wo kataru kimi no",
+      "lyric_jp": "あこがれを語る君の",
+      "range": [102.55, 107.38], "ans": []},
+    {"lyric": "Yuzuranai hitomi ga daisuki...",
+      "lyric_jp": "ゆずらない瞳がだいすき",
+      "range": [107.38, 116.26], "ans": []},
+    {"lyric": "Daisuki!",
+      "lyric_jp": "ダイスキ！",
+      "range": [116.26, 119.06], "ans": [1]},
+    "",
+    {
+      "lyric_jp": "泣いても空の色変わらないし青いままで",
+      "parts": [
+        {"lyric": "Naite mo sora no iro",
+          "range": [130.59, 133.79], "ans": []},
+        {"lyric": "Kawaranaishi aoi mama de",
+          "range": [133.79, 139.43], "ans": []}
+      ]
+    },
+    {
+      "lyric_jp": "いますぐに会いたいねO.K.サンシャイン",
+      "parts": [
+        {"lyric": "Imasugu ni aitai ne",
+          "range": [139.43, 143.78], "ans": []},
+        {"lyric": "0.K. sanshain",
+          "range": [143.78, 148.74], "ans": []}
+      ]
+    },
+    {"lyric": "Narande kanjitai",
+      "lyric_jp": "並んで感じたい",
+      "range": [148.74, 152.09], "ans": []},
+    {"lyric": "Rikutsu janaku soba ni itara",
+      "lyric_jp": "理屈じゃなく 側にいたら",
+      "range": [152.09, 157.57], "ans": []},
+    {"lyric": "Kimochi ga gutto chikadzuku imi ga",
+      "lyric_jp": "きもちがぐっと近づく意味が",
+      "range": [157.57, 162.13], "ans": []},
+    {"lyric": "Sugu ni tsutawaru yo",
+      "lyric_jp": "すぐに伝わるよ",
+      "range": [162.13, 166.28], "ans": []},
+    "",
+    "[next-col]",
+    {"lyric": "Souda ne daremo ga hitotsu",
+      "lyric_jp": "そうだね 誰もがひとつ",
+      "range": [166.28, 171.12], "ans": [2, 3]},
+    {
+      "lyric_jp": "持ってる勇気の欠片は 君と！",
+      "parts": [
+        {"lyric": "Motteru yuuki no kakera wa,",
+          "range": [171.12, 174.02], "ans": [1]},
+        {"lyric": "Kimi to!",
+          "range": [175.52, 177.56], "ans": []}
+      ]
+    },
+    {"lyric": "Issho datteba zutto ne",
+      "lyric_jp": "一緒だってば ずっとね",
+      "range": [177.56, 180.6], "ans": []},
+    "",
+    {"lyric": "Omoitsuki de ii kara oikakete",
+      "lyric_jp": "思い付きでいいから追いかけて",
+      "range": [180.6, 185.07], "ans": []},
+    {"lyric": "Kokoro odoru basho wo sagasou",
+      "lyric_jp": "こころ踊る場所を探そう",
+      "range": [185.07, 189.23], "ans": []},
+    {
+      "lyric_jp": "躓いて起きあがって 見つめあえる嬉しい冒険",
+      "parts": [
+        {"lyric": "Tsumazuite okiagatte",
+          "range": [189.23, 195], "ans": [2]},
+        {"lyric": "Mitsumeaeru ureshii bouken",
+          "range": [194.3, 199.17], "ans": [3]}
+      ]
+    },
+    {"lyric": "Egao wa dokomade todoku ka na",
+      "lyric_jp": "笑顔はどこまで届くかな",
+      "range": [199.17, 203.37], "ans": []},
+    {"lyric": "Yakusoku to ka iranai kedo",
+      "lyric_jp": "約束とかいらないけど",
+      "range": [203.37, 207.51], "ans": []},
+    {"lyric": "Itsumademo kimi to itai",
+      "lyric_jp": "いつまでも君といたい",
+      "range": [207.51, 211.6], "ans": []},
+    {"lyric": "Kakenukete issho ni kirakira...",
+      "lyric_jp": "駆け抜けて一緒にきらきら",
+      "range": [211.6, 221.44], "ans": []},
+    {"lyric": "Ktrakira!",
+      "lyric_jp": "キラキラ！",
+      "range": [221.44, 226.63], "ans": []},
+    "",
+    {
+      "lyric_jp": "大好き 大好き",
+      "parts": [
+        {"lyric": "(kirakira! kirakira!)",
+          "range": [231.32, 231.48], "ans": []},
+        {"lyric": "(HAI! HAI! HAI!)",
+          "range": [231.47, 231.73], "ans": []},
+        {"lyric": "Kotaenaku de iinda wakaru kara",
+          "range": [231.58, 231.95], "ans": []},
+        {"lyric": "Mune ni egaku basho wa onaji",
+          "range": [231.83, 232.13], "ans": []},
+        {"lyric": "Nando demo akiramezu ni",
+          "range": [232.05, 232.37], "ans": []},
+        {"lyric": "Sagasu koto ga bokura no chousen",
+          "range": [232.23, 232.57], "ans": []},
+        {"lyric": "Genki no ondo wa sagaranai",
+          "range": [232.47, 232.79], "ans": []},
+        {"lyric": "Atsui mama de habataiteku",
+          "range": [232.67, 232.99], "ans": []},
+        {"lyric": "Akogare wo kataru kimi no",
+          "range": [232.89, 233.23], "ans": []},
+        {"lyric": "Yuzuranai hitomi ga daisuki...",
+          "range": [233.09, 233.33], "ans": []},
+        {"lyric": "Daisuki!",
+          "range": [233.33, 233.83], "ans": []},
+        {"lyric": "(daisuki! daisuki!)",
+          "range": [233.39, 233.99], "ans": []}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "はい！はい！はい！",
+      "parts": [
+        {"lyric": "(HAT! HAT! HAT! HAT! yeah~!)",
+          "range": [233.99, 234.87], "ans": []},
+        {"lyric": "(WOO let’s GO!!)",
+          "range": [234.87, 235.45], "ans": []}
+      ]
+    },
+    {"lyric": "Uh, let's go!",
+      "lyric_jp": "Uh, let's go!",
+      "range": [249.67, 251.3], "ans": []}
+  ]
+}

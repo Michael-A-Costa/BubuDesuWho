@@ -2,6 +2,7 @@
   "name": "Baby Maybe Koi no Button",
   "id": "koitan",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/baby_maybe_koi_no_button.mp3",
   "ogg": "sound/baby_maybe_koi_no_button.ogg",
   "mapping": [

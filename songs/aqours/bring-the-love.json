@@ -5,7 +5,6 @@
   "group": "aqours",
   "hidden": true,
   "added": "2026-04",
-  "hidden": false,
   "slots": [
 
   ],
@@ -163,7 +162,7 @@
       "lyric_jp": "Don't you ever let your good lovin' stop\"",
       "parts": [
         {"lyric": "Arata na asu e dekakeyou We'll find a way",
-          "range": [112.42, 113.33], "ans": [7, 9]},
+          "range": [112.42, 113.33], "ans": [7, 9], "diff": 2},
         {"lyric": "Hibike Loving! Loving! Loving! kono merodii (Hey!)",
           "range": [113.33, 114.24], "ans": []},
         {"lyric": "Jumping! Jumping! Jumping! kaze ni nori (Hey!)",

@@ -1,6 +1,7 @@
 {
   "name": "Mermaid festa vol.1",
   "group": "muse",
+  "legacy": true,
   "ogg": "sound/mermaid_festa_vol_1.ogg",
   "mp3": "sound/mermaid_festa_vol_1.mp3",
   "id": "mafesu1",

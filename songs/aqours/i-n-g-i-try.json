@@ -9,11 +9,12 @@
   "slots": [
 
   ],
+  "generated": "2026-04-15T01:42:34Z",
   "lines": [
     {"lyric": "Marude yume no you na tte itteru keredo",
       "lyric_jp": "まるで夢のようなって 言ってるけれど",
       "range": [15.27, 23.6], "ans": [7, 8, 9]},
-    {"lyric": "“you na” wa iranai",
+    {"lyric": "“You na” wa iranai",
       "lyric_jp": "「ような」はいらない",
       "range": [23.6, 27.73], "ans": [7, 8, 9]},
     {"lyric": "Kitto sa yume sono mono",
@@ -23,9 +24,9 @@
       "lyric_jp": "本気だった心がつかまえた 最高の夢",
       "parts": [
         {"lyric": "Honki datta",
-          "range": [32.41, 33.93], "ans": [8]},
+          "range": [32.41, 35.76], "ans": [8]},
         {"lyric": "Kokoro ga tsukamaeta saikou no yume",
-          "range": [33.93, 42.65], "ans": [7]}
+          "range": [35.06, 42.65], "ans": [7]}
       ]
     },
     "",
@@ -36,11 +37,11 @@
       "lyric_jp": "喜び、悲しみ、あたらしい明日！",
       "parts": [
         {"lyric": "Yorokobi,",
-          "range": [47.82, 49.59], "ans": [8]},
+          "range": [47.82, 50.26], "ans": [8]},
         {"lyric": "Kanashimi,",
-          "range": [49.59, 51.37], "ans": [7]},
+          "range": [49.57, 50.66], "ans": [7]},
         {"lyric": "Atarashii ashita!",
-          "range": [51.37, 54.92], "ans": [7, 8, 9]}
+          "range": [49.96, 54.92], "ans": [7, 8, 9]}
       ]
     },
     "",
@@ -61,7 +62,7 @@
       "range": [81.36, 88.79], "ans": []},
     {"lyric": "Donna michi ga mieru no...?",
       "lyric_jp": "どんな道が見えるの...？",
-      "range": [88.79, 100.49], "ans": []},
+      "range": [88.79, 96.41], "ans": []},
     "",
     {"lyric": "Furete kowaresou datte sonna yowakunai",
       "lyric_jp": "触れてこわれそうだって そんな弱くない",
@@ -76,9 +77,9 @@
       "lyric_jp": "夢語ってつながった気持ちは 強いんだよね",
       "parts": [
         {"lyric": "Yume katatte",
-          "range": [117.77, 120.07], "ans": [5]},
+          "range": [117.77, 120.42], "ans": [5]},
         {"lyric": "Tsunagatta kimochi wa tsuyoinda yo ne",
-          "range": [120.07, 127.88], "ans": [6]}
+          "range": [119.72, 127.88], "ans": [6]}
       ]
     },
     "",
@@ -91,9 +92,9 @@
         {"lyric": "Kibou to,",
           "range": [133.01, 133.63], "ans": [5]},
         {"lyric": "Itami to,",
-          "range": [133.63, 135.31], "ans": [6]},
+          "range": [134.15, 135.31], "ans": [6]},
         {"lyric": "Zenbu itoshikute",
-          "range": [135.31, 140.56], "ans": [4, 5, 6]}
+          "range": [135.83, 140.56], "ans": [4, 5, 6]}
       ]
     },
     "",
@@ -115,7 +116,7 @@
       "range": [166.73, 173.89], "ans": []},
     {"lyric": "Shinro kettei massugu mae da!",
       "lyric_jp": "進路決定 まっすぐ前だ！",
-      "range": [173.89, 197.26], "ans": []},
+      "range": [173.89, 194.82], "ans": []},
     "",
     {"lyric": "Deai no saki ni wa",
       "lyric_jp": "出会いの先には",
@@ -126,9 +127,9 @@
         {"lyric": "Yorokobi,",
           "range": [202.49, 203.1], "ans": [3]},
         {"lyric": "Kanashimi,",
-          "range": [203.1, 204.81], "ans": [2]},
+          "range": [203.65, 204.81], "ans": [2]},
         {"lyric": "Atarashii ashita!",
-          "range": [204.81, 209.63], "ans": [1, 2, 3]}
+          "range": [205.41, 209.63], "ans": [1, 2, 3]}
       ]
     },
     "",
@@ -149,6 +150,6 @@
       "range": [235.95, 243.5], "ans": []},
     {"lyric": "Donna michi? i-n-g, I TRY!!",
       "lyric_jp": "どんな道？i-n-g, I TRY!!",
-      "range": [243.5, 272], "ans": []}
+      "range": [243.5, 257.39], "ans": []}
   ]
 }

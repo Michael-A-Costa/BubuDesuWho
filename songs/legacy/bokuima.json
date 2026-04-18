@@ -2,6 +2,7 @@
   "name": "Bokura wa Ima no Naka de",
   "id": "bokuima",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/bokura_wa_ima_no_naka_de.mp3",
   "ogg": "sound/bokura_wa_ima_no_naka_de.ogg",
   "mapping": [

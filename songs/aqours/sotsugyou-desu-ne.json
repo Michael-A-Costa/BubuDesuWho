@@ -4,10 +4,11 @@
   "id": "sotsugyou-desu-ne",
   "group": "aqours",
   "added": "2026-04",
-  "hidden": true,
+  "hidden": false,
   "slots": [
 
   ],
+  "generated": "2026-04-15T01:44:53Z",
   "lines": [
     {"lyric": "Koko kara migi, hidari e",
       "lyric_jp": "ここから 右、左へ",
@@ -29,12 +30,15 @@
       "lyric_jp": "季節が過ぎ去る この速さ",
       "range": [65.82, 71.99], "ans": [4]},
     "",
-    {"lyric": "Sotsugyou desu ne",
+    {
       "lyric_jp": "卒業ですね 今までの私達から",
-      "range": [71.99, 75.11], "ans": []},
-    {"lyric": "Ima made no watashitachi kara",
-      "lyric_jp": "卒業ですね 今までの私達から",
-      "range": [75.11, 79.24], "ans": []},
+      "parts": [
+        {"lyric": "Sotsugyou desu ne",
+          "range": [71.99, 75.11], "ans": []},
+        {"lyric": "Ima made no watashitachi kara",
+          "range": [75.11, 79.24], "ans": []}
+      ]
+    },
     {"lyric": "Te wo hanashite shimatta no wa naze deshou",
       "lyric_jp": "手を離してしまったのは何故でしょう",
       "range": [79.24, 85.45], "ans": []},
@@ -50,7 +54,7 @@
         {"lyric": "Tabun ne kitto daremo ga tooru michi",
           "range": [93.78, 98.4], "ans": []},
         {"lyric": "Desu ne",
-          "range": [98.4, 113.84], "ans": [8]}
+          "range": [98.4, 101.45], "ans": [8]}
       ]
     },
     "",
@@ -94,9 +98,9 @@
       "lyric_jp": "今は遠ざかるだけ そして明日は別の道ですね",
       "parts": [
         {"lyric": "Ima wa toozakaru dake soshite ashita wa betsu no michi",
-          "range": [174.11, 180.36], "ans": []},
+          "range": [174.11, 180.71], "ans": []},
         {"lyric": "Desu ne",
-          "range": [180.36, 201.67], "ans": [7]}
+          "range": [180.01, 183.06], "ans": [7]}
       ]
     },
     "",
@@ -128,23 +132,23 @@
     {"lyric": "Otona ni natta to kanjiteru no",
       "lyric_jp": "大人になったと感じてるの たぶんね",
       "range": [233.72, 239.13], "ans": []},
-    {
+    {"lyric": "Tabun ne kitto daremo ga tooru michi",
       "lyric_jp": "きっと誰もが通る道ですね",
+      "range": [239.13, 249.76], "ans": []},
+    {"lyric": "Desu ne",
+      "lyric_jp": "ですね",
+      "range": [249.76, 256.46], "ans": [4]},
+    {"lyric": "Desu ne",
+      "lyric_jp": "ですね",
+      "range": [256.46, 263.19], "ans": [7]},
+    {
+      "lyric_jp": "ですね",
       "parts": [
-        {"lyric": "Tabun ne kitto daremo ga tooru michi",
-          "range": [239.13, 242.96], "ans": []},
         {"lyric": "Desu ne",
-          "range": [242.96, 249.76], "ans": [4]}
+          "range": [263.19, 263.87], "ans": [8]},
+        {"lyric": "Desu ne",
+          "range": [263.24, 266.17], "ans": []}
       ]
-    },
-    {"lyric": "Desu ne",
-      "lyric_jp": "ですね",
-      "range": [249.76, 256.46], "ans": [7]},
-    {"lyric": "Desu ne",
-      "lyric_jp": "ですね",
-      "range": [256.46, 263.19], "ans": [8]},
-    {"lyric": "Desu ne",
-      "lyric_jp": "ですね",
-      "range": [263.19, 288.69], "ans": []}
+    }
   ]
 }

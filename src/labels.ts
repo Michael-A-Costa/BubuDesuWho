@@ -36,6 +36,14 @@ export function mapToLabel(group: GroupName, ans: number[]): string {
     if (ans.length === 10) return 'Aqours & Miku';
   } else if (group === 'wug') {
     if (ans.length === 7) return 'Wake Up, Girls!';
+  } else if (group === 'nijigasaki') {
+    if (arrayEqual(ans, [4, 5])) return 'DiverDiva';
+    if (arrayEqual(ans, [1, 3, 7])) return 'A·ZU·NA';
+    if (arrayEqual(ans, [2, 6, 8, 9])) return 'QU4RTZ';
+    if (arrayEqual(ans, [10, 11, 12])) return 'R3BIRTH';
+    if (arrayEqual(ans, [2, 3, 9, 10])) return '1st years';
+    if (arrayEqual(ans, [1, 5, 7, 11])) return '2nd years';
+    if (arrayEqual(ans, [4, 6, 8, 12])) return '3rd years';
   }
   return ans.map((a) => MEMBER_MAPPING[group][a]).join(', ');
 }

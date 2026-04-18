@@ -4,18 +4,19 @@
   "id": "phantom-rocket-adventure",
   "group": "aqours",
   "added": "2026-04",
-  "hidden": true,
+  "hidden": false,
   "slots": [
 
   ],
+  "generated": "2026-04-14T23:01:24Z",
   "lines": [
     {
       "lyric_jp": "窓辺にロケット 錯覚だったかな？(yes!)",
       "parts": [
         {"lyric": "Madobe ni roketto sakkaku datta ka na",
-          "range": [25.08, 28.29], "ans": [9]},
+          "range": [25.08, 28.11], "ans": [9]},
         {"lyric": "(Yes!)",
-          "range": [28.29, 28.52], "ans": [3, 6]}
+          "range": [29.17, 29.67], "ans": [3, 6], "diff": 2}
       ]
     },
     {"lyric": "Tobitai kokoro ga kitto misetanda",
@@ -25,9 +26,9 @@
       "lyric_jp": "いとしいあの人 連れ去っちゃいたいけど (no!)",
       "parts": [
         {"lyric": "Itoshii ano hito tsuresacchaitai kedo",
-          "range": [32.72, 35.5], "ans": [9]},
+          "range": [32.72, 35.85], "ans": [9]},
         {"lyric": "(no!)",
-          "range": [35.5, 36.19], "ans": [3, 6]}
+          "range": [35.35, 36.19], "ans": [3, 6], "diff": 2}
       ]
     },
     {"lyric": "Dame dame sore ja! Shiritai honshin wa",
@@ -55,15 +56,15 @@
       "range": [65.75, 69.59], "ans": []},
     {"lyric": "Hoshi yo tameiki Ah! todokete yo",
       "lyric_jp": "星よ溜息 Ah! 届けてよ",
-      "range": [69.59, 92.29], "ans": []},
+      "range": [69.59, 77.95], "ans": []},
     "",
     {
       "lyric_jp": "幻想でもロケット 乗ってみたくなる (yes!)",
       "parts": [
         {"lyric": "Gensou demo roketto notte mitakunaru",
-          "range": [92.29, 95.94], "ans": [3]},
+          "range": [92.29, 95.89], "ans": [3]},
         {"lyric": "(Yes!)",
-          "range": [95.94, 96.19], "ans": [6, 9]}
+          "range": [95.33, 96.19], "ans": [6, 9], "diff": 2}
       ]
     },
     {"lyric": "Futari wa kasei no suna de boutaoshi geemu Start!!",
@@ -73,9 +74,9 @@
       "lyric_jp": "曖昧なあの人 問い詰めちゃいたいのに (no!)",
       "parts": [
         {"lyric": "Aimai na ano hito toi tsumecha itai no ni",
-          "range": [100.23, 103.44], "ans": [6]},
+          "range": [100.23, 103.52], "ans": [6]},
         {"lyric": "(no!)",
-          "range": [103.44, 103.68], "ans": [3, 9]}
+          "range": [102.95, 103.66], "ans": [3, 9], "diff": 2}
       ]
     },
     {"lyric": "Mada mada dekinai! sono toki wa itsu da?",
@@ -110,18 +111,18 @@
       "lyric_jp": "地球外でキス 誰も誰もワカラナイ",
       "parts": [
         {"lyric": "Chikyuugai de kisu",
-          "range": [143.53, 145.13], "ans": [9]},
+          "range": [143.53, 145.48], "ans": [9]},
         {"lyric": "Daremo daremo wakaranai",
-          "range": [145.13, 147.05], "ans": [3, 6]}
+          "range": [144.78, 147.05], "ans": [3, 6], "diff": 2}
       ]
     },
     {
       "lyric_jp": "キスを何回も 誰も誰もワカラナイ",
       "parts": [
         {"lyric": "Kisu wo nankai mo",
-          "range": [146.56, 148.49], "ans": [9]},
+          "range": [146.56, 148.84], "ans": [9]},
         {"lyric": "Daremo daremo wakaranai",
-          "range": [148.49, 157.92], "ans": [3, 6]}
+          "range": [148.14, 154.05], "ans": [3, 6], "diff": 2}
       ]
     },
     "",
@@ -138,9 +139,9 @@
       "lyric_jp": "ずっと苦しい胸 持てあまして走る",
       "parts": [
         {"lyric": "Zutto kurushii mune moteamashite",
-          "range": [167.3, 172.22], "ans": []},
+          "range": [167.3, 172.57], "ans": []},
         {"lyric": "Hashiru",
-          "range": [172.22, 176.51], "ans": [9]}
+          "range": [171.87, 176.51], "ans": [9]}
       ]
     },
     "",
@@ -152,6 +153,6 @@
       "range": [183.87, 188.04], "ans": []},
     {"lyric": "Hoshi yo tameiki Ah! todokete yo",
       "lyric_jp": "星よ溜息 Ah! 届けてよ",
-      "range": [188.04, 217], "ans": []}
+      "range": [188.04, 196.08], "ans": []}
   ]
 }

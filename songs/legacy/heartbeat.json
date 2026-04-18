@@ -1,6 +1,7 @@
 {
   "name": "?←HEARTBEAT",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/heartbeat.mp3",
   "ogg": "sound/heartbeat.ogg",
   "id": "heartbeat",

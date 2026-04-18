@@ -4,6 +4,7 @@
   "ogg": "sound/mirai_ticket.ogg",
   "id": "mirai",
   "group": "aqours",
+  "legacy": true,
   "released": "2016-11-09",
   "mapping": [
     {

@@ -4,6 +4,7 @@
   "ogg": "sound/genki_zenkai_day_day_day.ogg",
   "id": "genki",
   "group": "aqours",
+  "legacy": true,
   "released": "2016-05-11",
   "subunit": "cyaron",
   "mapping": [

@@ -1,9 +1,10 @@
 {
-  "name": "START:DASH!!",
+  "name": "START:DASH!! (9 Member Ver.)",
   "id": "start",
   "group": "muse",
-  "mp3": "sound/start_dash.mp3",
-  "ogg": "sound/start_dash.ogg",
+  "legacy": true,
+  "mp3": "sound/start_dash_9.mp3",
+  "ogg": "sound/start_dash_9.ogg",
   "mapping": [
     {
       "range": [

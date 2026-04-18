@@ -28,7 +28,7 @@
         {"lyric": "Chikaku ni sunde iru no?",
           "range": [40.86, 44.88], "ans": [5]},
         {"lyric": "(donna hito darou?)",
-          "range": [44.88, 47.12], "ans": [1, 2]}
+          "range": [44.88, 47.12], "ans": [1, 2], "diff": 2}
       ]
     },
     {"lyric": "Watashi mo dokidoki da yo",
@@ -92,7 +92,7 @@
         {"lyric": "Tsugi no te wa dousuru no?",
           "range": [133.82, 137.73], "ans": [1]},
         {"lyric": "(motto chikadzuite!)",
-          "range": [137.73, 140.23], "ans": [2, 5]}
+          "range": [137.73, 140.23], "ans": [2, 5], "diff": 2}
       ]
     },
     {"lyric": "Watashi ga harahara da yo",
@@ -147,7 +147,7 @@
         {"lyric": "Suki wa doko kara kuru no?",
           "range": [217.94, 221.88], "ans": [2]},
         {"lyric": "(itsu no ma ni ka?)",
-          "range": [221.88, 224.25], "ans": [1, 5]}
+          "range": [221.88, 224.25], "ans": [1, 5], "diff": 2}
       ]
     },
     {"lyric": "Harahara dokidoki da yo",

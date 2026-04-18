@@ -1,6 +1,7 @@
 {
   "name": "PSYCHIC FIRE",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/psychic_fire.mp3",
   "ogg": "sound/psychic_fire.ogg",
   "id": "pf",

@@ -4,6 +4,7 @@
   "ogg": "sound/oh_love_peace.ogg",
   "id": "rabupi",
   "group": "muse",
+  "legacy": true,
   "mapping": [
     {
       "range": [

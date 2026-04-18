@@ -28,7 +28,7 @@
         {"lyric": "Sarani ne",
           "range": [41.72, 42.87], "ans": [7]},
         {"lyric": "Jibun no",
-          "range": [42.87, 43.73], "ans": [8, 9]},
+          "range": [42.87, 43.73], "ans": [8, 9], "diff": 2},
         {"lyric": "Kijun ga ayafuya",
           "range": [43.73, 46.19], "ans": [7]}
       ]
@@ -61,11 +61,11 @@
       "lyric_jp": "キミのことが キミのことが大好きさ",
       "parts": [
         {"lyric": "Koto ga",
-          "range": [66.76, 68.02], "ans": [1, 3]},
+          "range": [66.76, 68.02], "ans": [1, 3], "diff": 2},
         {"lyric": "Kimi ga",
           "range": [68.02, 69.26], "ans": [2]},
         {"lyric": "Koto ga",
-          "range": [69.26, 70.42], "ans": [1, 3]},
+          "range": [69.26, 70.42], "ans": [1, 3], "diff": 2},
         {"lyric": "Daisuki sa",
           "range": [70.42, 73.85], "ans": [1, 2, 3]}
       ]
@@ -142,7 +142,7 @@
         {"lyric": "Kekkyoku",
           "range": [130.03, 131.01], "ans": [4]},
         {"lyric": "Jibun ni",
-          "range": [131.01, 132.03], "ans": [5, 6]},
+          "range": [131.01, 132.03], "ans": [5, 6], "diff": 2},
         {"lyric": "Uso wa tsukenai",
           "range": [132.03, 134.25], "ans": [4]}
       ]
@@ -175,11 +175,11 @@
       "lyric_jp": "キミのことが キミのことが大好きさ",
       "parts": [
         {"lyric": "Koto ga",
-          "range": [155.02, 156.25], "ans": [1, 2]},
+          "range": [155.02, 156.25], "ans": [1, 2], "diff": 2},
         {"lyric": "Kimi no",
           "range": [156.25, 157.48], "ans": [3]},
         {"lyric": "Koto ga",
-          "range": [157.48, 158.66], "ans": [1, 2]},
+          "range": [157.48, 158.66], "ans": [1, 2], "diff": 2},
         {"lyric": "Daisuki sa",
           "range": [158.66, 161.6], "ans": [1, 2, 3]}
       ]
@@ -267,7 +267,7 @@
         {"lyric": "Hamingu Dei",
           "range": [246.73, 248.01], "ans": []},
         {"lyric": "(Oh Yeah!)",
-          "range": [248.01, 248.61], "ans": [7, 8]},
+          "range": [248.01, 248.61], "ans": [7, 8], "diff": 2},
         {"lyric": "Nani shiyou ka?",
           "range": [248.61, 250.21], "ans": []}
       ]
@@ -278,7 +278,7 @@
         {"lyric": "Hamingu Dei",
           "range": [249.88, 251.12], "ans": []},
         {"lyric": "(Oh Yeah!)",
-          "range": [251.12, 252.16], "ans": [7, 8]},
+          "range": [251.12, 252.16], "ans": [7, 8], "diff": 2},
         {"lyric": "Nandemo ii yo",
           "range": [252.16, 253.8], "ans": []}
       ]

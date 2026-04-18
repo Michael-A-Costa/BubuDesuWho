@@ -1,6 +1,7 @@
 {
   "name": "Beyond the Bottom",
   "group": "wug",
+  "legacy": true,
   "id": "btb",
   "mp3": "sound/beyond_the_bottom.mp3",
   "ogg": "sound/beyond_the_bottom.ogg",

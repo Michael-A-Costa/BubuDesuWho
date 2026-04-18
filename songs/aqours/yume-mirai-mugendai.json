@@ -9,14 +9,15 @@
   "slots": [
 
   ],
+  "generated": "2026-04-15T01:45:03Z",
   "lines": [
     {
       "lyric_jp": "ユメとミライで無限大",
       "parts": [
         {"lyric": "“yume to mirai de",
-          "range": [7.71, 17.81], "ans": [1]},
+          "range": [7.71, 24.53], "ans": [1]},
         {"lyric": "Mugendai”",
-          "range": [17.81, 23.58], "ans": []}
+          "range": [24.06, 24.58], "ans": []}
       ]
     },
     "",
@@ -30,9 +31,9 @@
       "lyric_jp": "どれもみんな大事だから",
       "parts": [
         {"lyric": "Dore mo minna",
-          "range": [36.19, 37.83], "ans": [2]},
+          "range": [36.19, 38.18], "ans": [2]},
         {"lyric": "Daiji dakara",
-          "range": [37.83, 41.43], "ans": [2, 8]}
+          "range": [37.48, 41.43], "ans": [2, 8], "diff": 2}
       ]
     },
     "",
@@ -44,7 +45,7 @@
       "range": [49.5, 54.51], "ans": [6]},
     {"lyric": "Mieta tooi sora",
       "lyric_jp": "見えた遠い空",
-      "range": [54.51, 57.66], "ans": [6, 8]},
+      "range": [54.51, 57.66], "ans": [6, 8], "diff": 2},
     "",
     {"lyric": "Tachiagaru yuuki no ato wa",
       "lyric_jp": "立ちあがる勇気のあとは",
@@ -53,9 +54,9 @@
       "lyric_jp": "前へと進む勇気だよ",
       "parts": [
         {"lyric": "Mae e to",
-          "range": [62.05, 63.31], "ans": [4]},
+          "range": [62.05, 63.66], "ans": [4]},
         {"lyric": "Susumu yuuki da yo",
-          "range": [63.31, 66.56], "ans": [9]}
+          "range": [62.96, 66.56], "ans": [9]}
       ]
     },
     {"lyric": "Mazu waratte sa GUU shite EI EI yaa",
@@ -63,7 +64,7 @@
       "range": [66.56, 71.62], "ans": [4]},
     {"lyric": "Daijoubu da yo",
       "lyric_jp": "大丈夫だよ",
-      "range": [71.62, 76.35], "ans": [4, 9]},
+      "range": [71.62, 76.35], "ans": [4, 9], "diff": 2},
     "",
     {"lyric": "Yume wa mugendai",
       "lyric_jp": "ユメは無限大",
@@ -88,7 +89,7 @@
       "range": [102.91, 108.82], "ans": []},
     {"lyric": "Issho ni ne dakishimeyou zutto!",
       "lyric_jp": "一緒にね抱きしめよう ずっと！",
-      "range": [108.82, 128.14], "ans": []},
+      "range": [108.82, 117.2], "ans": []},
     "",
     {"lyric": "Nami wa utau itsuka wasureta merodii",
       "lyric_jp": "波は歌う いつか忘れたメロディー",
@@ -98,7 +99,7 @@
       "range": [136.19, 141.28], "ans": [3]},
     {"lyric": "Fui ni yomigaeru",
       "lyric_jp": "不意によみがえる",
-      "range": [141.28, 144.17], "ans": [3, 5]},
+      "range": [141.28, 144.17], "ans": [3, 5], "diff": 2},
     "",
     {"lyric": "Daisuki wa saikyou da yo to",
       "lyric_jp": "ダイスキは最強だよと",
@@ -107,19 +108,19 @@
       "lyric_jp": "元気な声で呼んでみた（ダイスキ）",
       "parts": [
         {"lyric": "Genki na",
-          "range": [148.65, 150.25], "ans": [7]},
+          "range": [148.65, 150.6], "ans": [7]},
         {"lyric": "Koe de yonde mita",
-          "range": [150.25, 153.33], "ans": [5]}
+          "range": [149.9, 152.86], "ans": [5]},
+        {"lyric": "(daisuki!)",
+          "range": [152.5, 153.33], "ans": []}
       ]
     },
-    {"lyric": "(DAISUKI!)",
-      "range": [150.9, 152.9], "ans": []},
     {"lyric": "Saa waracchae dasshu kara waiwai oo",
       "lyric_jp": "さぁ笑っちゃえ ダッシュからワイワイッおーっ",
       "range": [152.9, 158.33], "ans": [7]},
     {"lyric": "Daijoubu da ne",
       "lyric_jp": "大丈夫だね",
-      "range": [158.33, 163.14], "ans": [5, 7]},
+      "range": [158.33, 163.14], "ans": [5, 7], "diff": 2},
     "",
     "[next-col]",
     {"lyric": "Mirai mugendai",
@@ -151,27 +152,27 @@
       "lyric_jp": "大きな希望 ああ描いて進もう",
       "parts": [
         {"lyric": "Ooki na kibou",
-          "range": [201.89, 204.53], "ans": [5]},
+          "range": [201.89, 206.1], "ans": [5]},
         {"lyric": "Aa egaite susumou",
-          "range": [204.53, 209.31], "ans": [4]}
+          "range": [205.4, 209.31], "ans": [4]}
       ]
     },
     {
       "lyric_jp": "行かなくちゃ 行かなくちゃ",
       "parts": [
         {"lyric": "Ikanakucha",
-          "range": [209.29, 211.39], "ans": [8]},
+          "range": [209.29, 212.04], "ans": [8]},
         {"lyric": "Ikanakucha",
-          "range": [211.39, 213.75], "ans": [9]}
+          "range": [211.34, 213.75], "ans": [9]}
       ]
     },
     {
       "lyric_jp": "どこへ？望む場所へ！",
       "parts": [
         {"lyric": "Doko e?",
-          "range": [213.23, 215.78], "ans": [7]},
+          "range": [213.23, 218.78], "ans": [7]},
         {"lyric": "Nozomu basho e!",
-          "range": [215.78, 247.4], "ans": [6]}
+          "range": [218.08, 223.34], "ans": [6]}
       ]
     },
     "",
@@ -183,7 +184,7 @@
       "range": [250.66, 255.89], "ans": [1]},
     {"lyric": "Yaritai koto ga kyou mo takusan",
       "lyric_jp": "やりたいことが今日もたくさん",
-      "range": [255.89, 261.38], "ans": [2, 3]},
+      "range": [255.89, 261.38], "ans": [2, 3], "diff": 2},
     {"lyric": "Zenbu yarou yo",
       "lyric_jp": "ぜんぶやろうよ",
       "range": [261.38, 265.39], "ans": [1]},
@@ -198,6 +199,6 @@
       "range": [273.94, 279.41], "ans": []},
     {"lyric": "Issho ni ne dakishimeyou zutto!",
       "lyric_jp": "一緒にね抱きしめよう ずっと！",
-      "range": [279.41, 320.61], "ans": []}
+      "range": [279.41, 288.36], "ans": []}
   ]
 }

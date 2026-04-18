@@ -1,5 +1,5 @@
 {
-  "name": "Bokura no Hashittekita Michi wa...",
+  "name": "Bokura no Hashitte Kita Michi wa...",
   "ogg": "sound/bokura_no_hashittekita_michi_wa.ogg",
   "id": "bokuhashi",
   "group": "aqours",
@@ -9,13 +9,17 @@
   "slots": [
 
   ],
+  "generated": "2026-04-15T01:42:03Z",
   "lines": [
-    {"lyric": "Sou desu!",
+    {
       "lyric_jp": "そうです！ 輝きたくて 始まりたくて",
-      "range": [28.08, 30.19], "ans": [1]},
-    {"lyric": "Kagayakitakute hajimaritakutte",
-      "lyric_jp": "そうです！ 輝きたくて 始まりたくて",
-      "range": [30.19, 36.6], "ans": [1]},
+      "parts": [
+        {"lyric": "Sou desu!",
+          "range": [28.08, 30.19], "ans": [1]},
+        {"lyric": "Kagayakitakute hajimaritakutte",
+          "range": [30.74, 36.6], "ans": [1]}
+      ]
+    },
     {"lyric": "Nakama ni deai nagara hashitte kita michi",
       "lyric_jp": "仲間に出会いながら 走ってきた道",
       "range": [36.6, 42.88], "ans": [1]},
@@ -23,32 +27,35 @@
       "lyric_jp": "0から 1って なんて大変なんだろう",
       "parts": [
         {"lyric": "Zero kara",
-          "range": [42.88, 44.64], "ans": [3]},
+          "range": [42.88, 45.99], "ans": [3]},
         {"lyric": "Ichi tte",
-          "range": [44.64, 46.09], "ans": [2]},
+          "range": [45.29, 46.44], "ans": [2]},
         {"lyric": "Nante taihen nandarou",
-          "range": [46.09, 51.3], "ans": [2, 3]}
+          "range": [45.74, 51.3], "ans": [2, 3], "diff": 2}
       ]
     },
     {
       "lyric_jp": "だけどそれが (だけどそれが)",
       "parts": [
         {"lyric": "Dakedo sore ga",
-          "range": [51.3, 53.84], "ans": [1]},
-        {"lyric": "(dakedo sore ga)",
-          "range": [53.84, 57.08], "ans": [2, 3]}
+          "range": [51.3, 54.19], "ans": [1]},
+        {"lyric": "(Dakedo sore ga)",
+          "range": [53.77, 56.2], "ans": [2, 3], "diff": 2}
       ]
     },
     {"lyric": "Tsunagari ni natta yo",
       "lyric_jp": "繋がりになったよ",
-      "range": [57.08, 64.02], "ans": [1, 2, 3]},
+      "range": [57.08, 62.38], "ans": [1, 2, 3]},
     "",
-    {"lyric": "Sou desu!",
+    {
       "lyric_jp": "そうです！ 何もわからず 涙と汗とで",
-      "range": [64.02, 65.33], "ans": [4, 5, 6]},
-    {"lyric": "Nanimo wakarazu namida to ase to de",
-      "lyric_jp": "そうです！ 何もわからず 涙と汗とで",
-      "range": [65.33, 70.78], "ans": [4, 5, 6]},
+      "parts": [
+        {"lyric": "Sou desu!",
+          "range": [64.02, 65.55], "ans": [4, 5, 6]},
+        {"lyric": "Nanimo wakarazu namida to ase to de",
+          "range": [65.55, 70.78], "ans": [4, 5, 6]}
+      ]
+    },
     {"lyric": "Nakama to hagemashiatte hashitte kita michi",
       "lyric_jp": "仲間と励ましあって 走ってきた道",
       "range": [70.77, 75.96], "ans": [4, 5, 6]},
@@ -59,9 +66,9 @@
       "lyric_jp": "だからみんな (だからみんな)",
       "parts": [
         {"lyric": "Dakara minna",
-          "range": [83.01, 85.11], "ans": [4, 5, 6]},
-        {"lyric": "(dakara minna)",
-          "range": [85.11, 88.13], "ans": [1, 2, 3]}
+          "range": [83.01, 85.46], "ans": [4, 5, 6]},
+        {"lyric": "(Dakara minna)",
+          "range": [85.04, 87.22], "ans": [1, 2, 3]}
       ]
     },
     {"lyric": "Ganbatte koreta ne",
@@ -80,12 +87,15 @@
     {"lyric": "Datte hikari ga mieta yo",
       "lyric_jp": "だって 光が見えたよ",
       "range": [108.34, 111.29], "ans": [1, 2, 3, 4, 5, 6]},
-    {"lyric": "Motto muchuu ni naretara kawaru tte sa shinjiteta",
+    {
       "lyric_jp": "もっと 夢中になれたら 変わるってさ 信じてた このみんなで",
-      "range": [111.29, 134.12], "ans": [1, 2, 3, 4, 5, 6]},
-    {"lyric": "Kono minna de",
-      "lyric_jp": "もっと 夢中になれたら 変わるってさ 信じてた このみんなで",
-      "range": [134.12, 141.14], "ans": [1, 2, 3, 4, 5, 6]},
+      "parts": [
+        {"lyric": "Motto muchuu ni naretara kawaru tte sa shinjiteta",
+          "range": [111.29, 127.46], "ans": [1, 2, 3, 4, 5, 6]},
+        {"lyric": "Kono minna de",
+          "range": [130.52, 141.14], "ans": [1, 2, 3, 4, 5, 6]}
+      ]
+    },
     "",
     {
       "lyric_jp": "そうです！ １つ２つと 願いが叶って",
@@ -93,7 +103,7 @@
         {"lyric": "Sou desu!",
           "range": [141.14, 142.96], "ans": [7, 8, 9]},
         {"lyric": "Hitotsu, futatsu to negai ga kanatte",
-          "range": [142.96, 148.26], "ans": [8]}
+          "range": [143.56, 148.26], "ans": [8]}
       ]
     },
     {"lyric": "Nakama ga ite yokatta na tte hashitte kita michi",
@@ -106,9 +116,9 @@
       "lyric_jp": "どこへ行こう (どこへ行こう)",
       "parts": [
         {"lyric": "Doko e ikou",
-          "range": [160.73, 162.43], "ans": [7, 8, 9]},
-        {"lyric": "(doko e ikou)",
-          "range": [162.43, 165.59], "ans": [1, 2, 3, 4, 5, 6]}
+          "range": [160.73, 162.78], "ans": [7, 8, 9]},
+        {"lyric": "(Doko e ikou)",
+          "range": [162.45, 164.74], "ans": [1, 2, 3, 4, 5, 6]}
       ]
     },
     {"lyric": "Sorezore no gooru e",
@@ -127,48 +137,51 @@
       "range": [179.85, 185.87], "ans": []},
     {"lyric": "Datte kanjitai atsuku",
       "lyric_jp": "だって 感じたい熱く もっと 違った形で",
-      "range": [185.87, 187.9], "ans": []},
+      "range": [185.87, 191.82], "ans": []},
     {"lyric": "Motto chigatta katachi de atarashiku yume mite",
-      "lyric_jp": "だって 感じたい熱く もっと 違った形で",
-      "range": [187.9, 191.82], "ans": []},
+      "lyric_jp": "新しく 夢見て",
+      "range": [191.82, 198.81], "ans": []},
     "",
     {
       "lyric_jp": "ああどうしよう 明日へ",
       "parts": [
         {"lyric": "Aa doushiyou",
-          "range": [198.81, 200.67], "ans": [4, 5, 6]},
+          "range": [198.81, 201.56], "ans": [4, 5, 6]},
         {"lyric": "(ashita e)",
-          "range": [200.67, 202.05], "ans": [7, 8, 9]}
+          "range": [200.86, 201.81], "ans": [7, 8, 9]}
       ]
     },
     {
       "lyric_jp": "ああどうしよう 向かえば",
       "parts": [
         {"lyric": "Aa doushiyou",
-          "range": [201.81, 203.55], "ans": [1, 2, 3]},
+          "range": [201.81, 204.89], "ans": [1, 2, 3]},
         {"lyric": "(mukaeba)",
-          "range": [203.55, 205.14], "ans": [7, 8, 9]}
+          "range": [204.19, 205.14], "ans": [7, 8, 9]}
       ]
     },
     {
       "lyric_jp": "分かる (分かる)",
       "parts": [
         {"lyric": "Wakaru?",
-          "range": [205.14, 205.52], "ans": [4, 5, 6]},
+          "range": [205.14, 205.9], "ans": [4, 5, 6]},
         {"lyric": "Wakaru?",
-          "range": [205.52, 206.01], "ans": [1, 2, 3]}
+          "range": [205.2, 205.96], "ans": [1, 2, 3]}
       ]
     },
     {"lyric": "Mirai no bokura wa...?",
       "lyric_jp": "未来の僕らは",
-      "range": [205.96, 232.98], "ans": [7, 8, 9]},
+      "range": [205.96, 210.66], "ans": [7, 8, 9]},
     "",
-    {"lyric": "Sou desu...",
+    {
       "lyric_jp": "そうです... 自分らしくと 呪文を唱えて",
-      "range": [232.98, 234.66], "ans": [1]},
-    {"lyric": "Jibun rashiku to jumon wo tonaete",
-      "lyric_jp": "そうです... 自分らしくと 呪文を唱えて",
-      "range": [234.66, 241.8], "ans": [1]},
+      "parts": [
+        {"lyric": "Sou desu...",
+          "range": [232.98, 234.86], "ans": [1]},
+        {"lyric": "Jibun rashiku to jumon wo tonaete",
+          "range": [234.86, 241.8], "ans": [1]}
+      ]
+    },
     {"lyric": "Nakama wo miokuru koto wo ukeirenagara mo",
       "lyric_jp": "仲間を見送ることを 受け入れながらも",
       "range": [241.8, 251.25], "ans": [1]},
@@ -179,9 +192,9 @@
       "lyric_jp": "やってみよう (やってみよう)",
       "parts": [
         {"lyric": "Yatte miyou",
-          "range": [258.63, 260.41], "ans": [7, 8, 9]},
-        {"lyric": "(yatte miyou)",
-          "range": [260.41, 263.47], "ans": [1, 2, 3, 4, 5, 6]}
+          "range": [258.63, 260.76], "ans": [7, 8, 9]},
+        {"lyric": "(Yatte miyou)",
+          "range": [260.33, 262.78], "ans": [1, 2, 3, 4, 5, 6]}
       ]
     },
     {"lyric": "Mada mada ne ganbaru",
@@ -198,15 +211,15 @@
       "range": [277.93, 283.88], "ans": []},
     {"lyric": "Datte kanjitai atsuku",
       "lyric_jp": "だって 感じたい熱く もっと 違った形で",
-      "range": [283.88, 285.8], "ans": []},
+      "range": [283.88, 289.85], "ans": []},
     {"lyric": "Motto chigatta katachi de atarashiku yume mite",
-      "lyric_jp": "だって 感じたい熱く もっと 違った形で",
-      "range": [285.8, 289.85], "ans": []},
+      "lyric_jp": "新しく 夢見て",
+      "range": [289.85, 296.02], "ans": []},
     {"lyric": "Saa maku ga agattara zutto utatte itai ne",
       "lyric_jp": "さあ 幕が上がったら ずっと 歌っていたいね",
       "range": [296.02, 301.84], "ans": []},
     {"lyric": "Owaranai yume miyou...",
       "lyric_jp": "終わらない 夢見よう",
-      "range": [301.84, 329], "ans": [1]}
+      "range": [301.84, 309.34], "ans": [1]}
   ]
 }

@@ -2,6 +2,7 @@
   "name": "Wonderful Rush",
   "id": "wonrush",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/wonderful_rush.mp3",
   "ogg": "sound/wonderful_rush.ogg",
   "mapping": [

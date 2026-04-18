@@ -2,6 +2,7 @@
   "name": "Pure Girls Project",
   "id": "pgp",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/pure_girls_project.mp3",
   "ogg": "sound/pure_girls_project.ogg",
   "mapping": [

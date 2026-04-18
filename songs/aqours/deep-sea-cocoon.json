@@ -4,10 +4,11 @@
   "id": "deep-sea-cocoon",
   "group": "aqours",
   "added": "2026-04",
-  "hidden": true,
+  "hidden": false,
   "slots": [
 
   ],
+  "generated": "2026-04-15T01:42:17Z",
   "lines": [
     {"lyric": "Dare no koe mo todokanai mayu no naka de",
       "lyric_jp": "誰の声も届かない繭の中で",
@@ -15,45 +16,47 @@
     {"lyric": "Zutto kokoro wo tozashite nemutta mama",
       "lyric_jp": "ずっと心を閉ざして眠ったまま",
       "range": [18.98, 25.25], "ans": [3]},
-    {"lyric": "Ii no? Yokunai!",
+    {
       "lyric_jp": "いいの？よくない！目を覚まして欲しいよ",
-      "range": [25.25, 27.55], "ans": [3]},
-    {"lyric": "Me wo samashite hoshii yo",
-      "lyric_jp": "いいの？よくない！目を覚まして欲しいよ",
-      "range": [27.55, 30.99], "ans": [3]},
+      "parts": [
+        {"lyric": "Ii no? Yokunai!",
+          "range": [25.25, 27.67], "ans": [3]},
+        {"lyric": "Me wo samashite hoshii yo",
+          "range": [27.67, 30.99], "ans": [3]}
+      ]
+    },
     {"lyric": "Doko de mayu to nemutteru no oshiete",
       "lyric_jp": "どこで繭と眠ってるの 教えて",
       "range": [30.99, 35.62], "ans": [3]},
     "",
     {"lyric": "Shinkai kara no tameiki kikoeta",
       "lyric_jp": "深海からの溜息聞こえた",
-      "range": [35.62, 42.6], "ans": [6, 9]},
+      "range": [35.62, 42.6], "ans": [6, 9], "diff": 2},
     {"lyric": "Setsunai tameiki todoita",
       "lyric_jp": "切ない溜息届いた",
       "range": [42.6, 47.58], "ans": [3]},
     {"lyric": "Motomeatte mitai tamashii no s.o.s. voice",
       "lyric_jp": "求めあってみたい魂の S.O.S. voice",
-      "range": [47.58, 53.69], "ans": [6, 9]},
+      "range": [47.58, 53.69], "ans": [6, 9], "diff": 2},
     {"lyric": "(Mitsukete...!)",
       "lyric_jp": "（見つけて...！）",
       "range": [53.69, 54.77], "ans": [3]},
     {"lyric": "Watashi wa kizuite shimatta",
       "lyric_jp": "私は気づいてしまった",
-      "range": [54.77, 60.19], "ans": [6, 9]},
+      "range": [54.77, 60.19], "ans": [6, 9], "diff": 2},
     "",
     {"lyric": "Ha marude unmei no you da to atsuku naru",
       "lyric_jp": "Ah まるで運命のようだと熱くなる",
       "range": [60.19, 67.83], "ans": [6]},
     {
-      "lyric_jp": "息を止めて 暗い水へと飛び込んで",
+      "lyric_jp": "息を止めて 暗い水へと飛び込んで 探すんだ 君の気配",
       "parts": [
         {"lyric": "Iki wo tomete",
-          "range": [67.83, 69.37], "ans": [6]},
+          "range": [67.83, 74], "ans": [6]},
         {"lyric": "Ha kurai mizu e to tobikonde sagasunda kimi no kehai",
-          "range": [69.37, 76.8], "ans": [9]}
+          "range": [73.3, 83.3], "ans": [9]}
       ]
     },
-    "",
     {"lyric": "Ai de kowashite mirunda",
       "lyric_jp": "愛で壊してみるんだ",
       "range": [83.3, 86.41], "ans": []},
@@ -91,7 +94,7 @@
       "range": [137.24, 143.52], "ans": []},
     {"lyric": "Mayu wo kowashite shimaeba kimi wa watashi no mono",
       "lyric_jp": "繭を壊してしまえば 君は私のもの",
-      "range": [143.52, 168.47], "ans": []},
+      "range": [143.52, 155.04], "ans": []},
     "",
     "[next-col]",
     {"lyric": "Donna yume miteru?",
@@ -107,12 +110,8 @@
       "lyric_jp": "そっと叩いたら ちょっと動いてた",
       "range": [180.19, 185.69], "ans": []},
     {"lyric": "Gomen ne ima kara okosu yo Yeah Yeah",
-      "lyric_jp": "ごめんね 今から起こすよ",
-      "range": [185.69, 192.36], "ans": []},
-    {"lyric": "(Yeah yeah)",
-      "lyric_jp": "(Yeah yeah)",
-      "range": [192.36, 198.14], "ans": []},
-    "",
+      "lyric_jp": "ごめんね 今から起こすよ (Yeah yeah)",
+      "range": [185.69, 198.14], "ans": []},
     {"lyric": "Ha marude unmei no you da to atsuku nari",
       "lyric_jp": "Ah まるで運命のようだと熱くなり",
       "range": [198.14, 205.9], "ans": [6]},
@@ -123,9 +122,9 @@
       "lyric_jp": "君の心に触れたいよ 深海で触れたいよ",
       "parts": [
         {"lyric": "Ha kimi no kokoro ni furetai yo",
-          "range": [210.74, 216.16], "ans": [9]},
+          "range": [210.74, 215.99], "ans": [9]},
         {"lyric": "Shinkai de furetai yo",
-          "range": [216.16, 221.31], "ans": [3]}
+          "range": [215.29, 221.31], "ans": [3]}
       ]
     },
     "",
@@ -142,9 +141,9 @@
       "lyric_jp": "だから目を覚ましてよ ここに私がいるよ",
       "parts": [
         {"lyric": "Dakara me wo samashite yo",
-          "range": [233.32, 238.36], "ans": [6]},
+          "range": [233.32, 240.43], "ans": [6]},
         {"lyric": "Koko ni watashi ga iru yo",
-          "range": [238.36, 250.92], "ans": [3]}
+          "range": [239.73, 246], "ans": [3]}
       ]
     },
     "",
@@ -152,9 +151,9 @@
       "lyric_jp": "無礼な愛で君をさらうよ",
       "parts": [
         {"lyric": "Burei na ai de",
-          "range": [250.92, 256.06], "ans": [9]},
+          "range": [250.92, 256.41], "ans": [9]},
         {"lyric": "Kimi wo sarau yo",
-          "range": [256.06, 278], "ans": []}
+          "range": [255.71, 260.36], "ans": []}
       ]
     }
   ]

@@ -1,6 +1,7 @@
 {
   "name": "Fuyu ga Kureta Yokan",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/fuyu_ga_kureta_yokan.mp3",
   "ogg": "sound/fuyu_ga_kureta_yokan.ogg",
   "id": "yokan",

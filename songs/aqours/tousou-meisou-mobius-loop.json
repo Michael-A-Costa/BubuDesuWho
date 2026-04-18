@@ -10,6 +10,7 @@
   "slots": [
 
   ],
+  "generated": "2026-04-17T15:14:12Z",
   "lines": [
     {"lyric": "Acchi ikou ka? (Oh no!)",
       "lyric_jp": "あっち行こうか？（Oh no!）",
@@ -21,9 +22,9 @@
       "lyric_jp": "どっち行こうか？ わかんない ないないなーい！",
       "parts": [
         {"lyric": "Docchi ikou ka?",
-          "range": [5.8, 7.62], "ans": [9]},
+          "range": [5.8, 8.11], "ans": [9]},
         {"lyric": "Wakannai nai nai naai!",
-          "range": [7.62, 10.46], "ans": []}
+          "range": [7.41, 10.46], "ans": []}
       ]
     },
     "",
@@ -57,18 +58,18 @@
       "lyric_jp": "登れ 降りて 登れっ（迷路みたいな）",
       "parts": [
         {"lyric": "Nobore orite nobore",
-          "range": [47.87, 51.03], "ans": [9]},
+          "range": [47.87, 51.8], "ans": [9]},
         {"lyric": "(meiro mitai na)",
-          "range": [51.03, 53.11], "ans": [7, 8]}
+          "range": [51.16, 53.11], "ans": [7, 8], "diff": 2}
       ]
     },
     {
       "lyric_jp": "渡れ 曲がれ 渡れっ（道路キケンだ）",
       "parts": [
         {"lyric": "Watare magare watare",
-          "range": [52.75, 55.85], "ans": [9]},
+          "range": [52.75, 56.76], "ans": [9]},
         {"lyric": "(douro kiken da)",
-          "range": [55.85, 58.32], "ans": [7, 8]}
+          "range": [56.14, 57.89], "ans": [7, 8], "diff": 2}
       ]
     },
     {"lyric": "Hashiri sugite kurushii no ni",
@@ -78,13 +79,13 @@
       "lyric_jp": "なぜか (みんな) 笑い(出して)",
       "parts": [
         {"lyric": "Naze ka",
-          "range": [62.9, 63.77], "ans": [9]},
+          "range": [62.9, 64.02], "ans": [9]},
         {"lyric": "Minna",
-          "range": [63.77, 63.89], "ans": [7, 8]},
+          "range": [63.42, 64.42], "ans": [7, 8], "diff": 2},
         {"lyric": "Warai",
-          "range": [63.89, 64.6], "ans": [9]},
+          "range": [63.72, 64.95], "ans": [9]},
         {"lyric": "Dashite",
-          "range": [64.6, 65.11], "ans": [7, 8]}
+          "range": [64.25, 65.11], "ans": [7, 8], "diff": 2}
       ]
     },
     {"lyric": "Tomaranai no",
@@ -94,10 +95,14 @@
     {
       "lyric_jp": "だから追いかけられてる筈が",
       "parts": [
-        {"lyric": "Dakara",
-          "range": [70.64, 71.39], "ans": [7, 8, 9]},
+        {"lyric": "Da",
+          "range": [70.64, 71.61], "ans": [7]},
+        {"lyric": "ka",
+          "range": [71.61, 72.16], "ans": [8]},
+        {"lyric": "ra",
+          "range": [72.16, 72.74], "ans": [9]},
         {"lyric": "Oikakerareteru hazu ga",
-          "range": [71.39, 74.85], "ans": []}
+          "range": [72.74, 74.85], "ans": []}
       ]
     },
     {"lyric": "Oikaketeru no kamo hontou wa",
@@ -113,11 +118,11 @@
       "lyric_jp": "面白くなってきたよ Runaway forever!?",
       "parts": [
         {"lyric": "Omoshiroku",
-          "range": [87.26, 88.88], "ans": [7, 8]},
+          "range": [87.26, 89.23], "ans": [7, 8], "diff": 2},
         {"lyric": "Natte kita yo",
-          "range": [88.88, 90.59], "ans": [9]},
+          "range": [88.53, 90.94], "ans": [9]},
         {"lyric": "Runaway forever!?",
-          "range": [90.59, 96.69], "ans": []}
+          "range": [90.24, 94.64], "ans": []}
       ]
     },
     "",
@@ -153,16 +158,16 @@
         {"lyric": "Nobore orite nobore",
           "range": [134.15, 138.11], "ans": [9]},
         {"lyric": "(otto subetta)",
-          "range": [138.11, 139.51], "ans": [7, 8]}
+          "range": [138.91, 139.51], "ans": [7, 8], "diff": 2}
       ]
     },
     {
       "lyric_jp": "渡れ 曲がれ 渡れっ（えいっと飛ぼうか）",
       "parts": [
         {"lyric": "Watare magare watare",
-          "range": [139.17, 142.23], "ans": [9]},
+          "range": [139.17, 143.18], "ans": [9]},
         {"lyric": "(ei tto tobou ka)",
-          "range": [142.23, 144.75], "ans": [7, 8]}
+          "range": [142.58, 144.41], "ans": [7, 8], "diff": 2}
       ]
     },
     {"lyric": "Iki ga kirete genkai nandayo tte",
@@ -172,24 +177,24 @@
       "lyric_jp": "でもね(足が)先に(行くよ)",
       "parts": [
         {"lyric": "Demo ne",
-          "range": [149.17, 150.17], "ans": [9]},
+          "range": [149.17, 150.44], "ans": [9]},
         {"lyric": "Ashi ga",
-          "range": [150.17, 150.3], "ans": [7, 8]},
+          "range": [149.82, 150.84], "ans": [7, 8], "diff": 2},
         {"lyric": "Saki ni",
-          "range": [150.3, 151.01], "ans": [9]},
+          "range": [150.14, 151.37], "ans": [9]},
         {"lyric": "Iku yo",
-          "range": [151.01, 151.76], "ans": [7, 8]}
+          "range": [150.67, 151.76], "ans": [7, 8], "diff": 2}
       ]
     },
     {
       "lyric_jp": "はやく(はやく)止まらないでよ",
       "parts": [
         {"lyric": "Hayaku",
-          "range": [151.76, 152.6], "ans": [9]},
+          "range": [151.76, 153.01], "ans": [9]},
         {"lyric": "Hayaku",
-          "range": [152.6, 153.06], "ans": [7, 8]},
+          "range": [152.37, 153.41], "ans": [7, 8], "diff": 2},
         {"lyric": "Tomaranaide yo",
-          "range": [153.06, 156.92], "ans": [9]}
+          "range": [152.71, 156.92], "ans": [9]}
       ]
     },
     "",
@@ -209,32 +214,32 @@
       "lyric_jp": "あっついかな あっついよね",
       "parts": [
         {"lyric": "Attsui ka na",
-          "range": [173.23, 174.48], "ans": [7, 9]},
+          "range": [173.23, 175.02], "ans": [7, 9], "diff": 2},
         {"lyric": "Attsui yo ne",
-          "range": [174.48, 175.89], "ans": [8]}
+          "range": [174.32, 175.89], "ans": [8]}
       ]
     },
     {"lyric": "Demo tsutaenakucha",
       "lyric_jp": "でも伝えなくちゃ",
-      "range": [175.8, 204.46], "ans": []},
+      "range": [175.8, 180.66], "ans": []},
     "",
     "[next-col]",
     {
       "lyric_jp": "メビウスの輪で メビウスの輪で",
       "parts": [
         {"lyric": "Mebiusu no wa de",
-          "range": [204.46, 206.96], "ans": [7]},
+          "range": [204.46, 208.95], "ans": [7]},
         {"lyric": "Mebiusu no wa de",
-          "range": [206.96, 211.03], "ans": [8]}
+          "range": [208.25, 211.03], "ans": [8]}
       ]
     },
     {
       "lyric_jp": "ずっと逃げて追いかけられて",
       "parts": [
         {"lyric": "Zutto nigete",
-          "range": [211.03, 213.29], "ans": [9]},
+          "range": [211.03, 213.64], "ans": [9]},
         {"lyric": "Oikakerarete",
-          "range": [213.29, 221.38], "ans": []}
+          "range": [212.94, 217.77], "ans": []}
       ]
     },
     "",
@@ -242,9 +247,9 @@
       "lyric_jp": "やっぱり追いかけられてるだけじゃ",
       "parts": [
         {"lyric": "Yappari",
-          "range": [221.38, 222.49], "ans": [7, 8, 9]},
+          "range": [221.38, 222.84], "ans": [7, 8, 9]},
         {"lyric": "Oikakerareteru dake ja",
-          "range": [222.49, 227.17], "ans": []}
+          "range": [222.14, 227.17], "ans": []}
       ]
     },
     {"lyric": "Kaiketsu dekinai koto ga",
@@ -260,9 +265,9 @@
       "lyric_jp": "あっついかな あっついよね",
       "parts": [
         {"lyric": "Attsui ka na",
-          "range": [239.13, 240.45], "ans": [8, 9]},
+          "range": [239.13, 241], "ans": [8, 9], "diff": 2},
         {"lyric": "Attsui yo ne",
-          "range": [240.45, 241.83], "ans": [7]}
+          "range": [240.3, 241.83], "ans": [7]}
       ]
     },
     {"lyric": "Honne tteba atsui ne",
@@ -281,27 +286,32 @@
     {"lyric": "Tsukamaritakunai keredo tsukamaete mitai ne tte",
       "lyric_jp": "捕まりたくないけれど 捕まえてみたいねって",
       "range": [253.55, 258.88], "ans": []},
-    {"lyric": "Omoshiroku natte kita yo",
+    {
       "lyric_jp": "面白くなってきたよ Runaway forever!?",
-      "range": [258.88, 262.98], "ans": [7, 8]},
-    {"lyric": "Runaway forever!?",
-      "lyric_jp": "面白くなってきたよ Runaway forever!?",
-      "range": [262.98, 264.6], "ans": [7, 8]},
+      "parts": [
+        {"lyric": "Omoshiroku",
+          "range": [258.88, 260.85], "ans": [7, 8], "diff": 2},
+        {"lyric": "Natte kita yo",
+          "range": [260.15, 262.98], "ans": [9]},
+        {"lyric": "Runaway forever!?",
+          "range": [263.64, 264.6], "ans": [7, 8], "diff": 2}
+      ]
+    },
     {
       "lyric_jp": "逃走迷走メビウスループ Runaway runaway forever!?",
       "parts": [
         {"lyric": "Tousou meisou mebiusu ruupu",
-          "range": [264.6, 268.9], "ans": [9]},
+          "range": [264.6, 268.93], "ans": [9]},
         {"lyric": "Runaway",
-          "range": [268.9, 269.77], "ans": [8]},
+          "range": [268.23, 269.91], "ans": [8]},
         {"lyric": "Runaway",
-          "range": [269.77, 270.56], "ans": [7]},
+          "range": [269.21, 270.91], "ans": [7]},
         {"lyric": "Forever!?",
-          "range": [270.56, 282.86], "ans": []}
+          "range": [270.21, 272.86], "ans": []},
+        {"lyric": "(Woo Yeah!)",
+          "range": [272.86, 273.46], "ans": []}
       ]
     },
-    {"lyric": "(Woo Yeah!)",
-      "range": [280.86, 282.86], "ans": []},
     "",
     {"lyric": "Zutto jiyuu ni ikitetai tte",
       "lyric_jp": "ずっと自由に生きてたいって",
@@ -314,6 +324,6 @@
       "range": [292.59, 297.18], "ans": []},
     {"lyric": "Jama shinaide yo Bye-bye",
       "lyric_jp": "邪魔しないでよ Bye-bye",
-      "range": [297.18, 325], "ans": []}
+      "range": [297.18, 304.4], "ans": []}
   ]
 }

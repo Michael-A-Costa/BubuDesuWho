@@ -25,7 +25,7 @@
         {"lyric": "Kaeri no",
           "range": [44.83, 45.75], "ans": [2]},
         {"lyric": "(itsumo no)",
-          "range": [45.75, 46.53], "ans": [1, 5]}
+          "range": [45.75, 46.53], "ans": [1, 5], "diff": 2}
       ]
     },
     {"lyric": "Kono michi kigen ga warukute",
@@ -40,7 +40,7 @@
         {"lyric": "Tsui tsuyoi",
           "range": [59.45, 60.5], "ans": [1]},
         {"lyric": "(kitsume na)",
-          "range": [60.5, 61.44], "ans": [2, 5]}
+          "range": [60.5, 61.44], "ans": [2, 5], "diff": 2}
       ]
     },
     {"lyric": "Kotoba de okorinbo taikai (uuun!)",
@@ -67,7 +67,7 @@
         {"lyric": "Futsuu ni",
           "range": [107.45, 108.74], "ans": [5]},
         {"lyric": "(nikkori)",
-          "range": [108.74, 109.46], "ans": [1, 2]}
+          "range": [108.74, 109.46], "ans": [1, 2], "diff": 2}
       ]
     },
     {"lyric": "Dekiru ka jishin ga nainda mon (haaa)",
@@ -82,7 +82,7 @@
         {"lyric": "Chikaku wo",
           "range": [122.03, 123.45], "ans": [1]},
         {"lyric": "(furari to)",
-          "range": [123.45, 124.19], "ans": [2, 5]}
+          "range": [123.45, 124.19], "ans": [2, 5], "diff": 2}
       ]
     },
     {"lyric": "Aruite yousu wo miyou ka na",
@@ -147,7 +147,7 @@
         {"lyric": "Yuujou no shiisaido",
           "range": [226.67, 229.39], "ans": [2]},
         {"lyric": "(dakara)",
-          "range": [229.39, 230.2], "ans": [1, 5]}
+          "range": [229.39, 230.2], "ans": [1, 5], "diff": 2}
       ]
     },
     {"lyric": "Kimi ni kyou kite hoshinda",

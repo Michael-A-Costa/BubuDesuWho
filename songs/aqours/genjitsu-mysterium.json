@@ -9,6 +9,7 @@
   "slots": [
 
   ],
+  "generated": "2026-04-15T01:42:30Z",
   "lines": [
     {"lyric": "Donna mirai negatterun darou?",
       "lyric_jp": "どんなミライ願ってるんだろう？",
@@ -30,22 +31,25 @@
       "lyric_jp": "Sunshine in the mirror",
       "range": [9.83, 11.82], "ans": []},
     {"lyric": "Hajimaru rapusodia gensou kara misuteriumu",
-      "lyric_jp": "始まるラプソディア",
-      "range": [11.82, 13.66], "ans": []},
+      "lyric_jp": "始まるラプソディア 幻想からミステリウム",
+      "range": [11.82, 15.67], "ans": []},
     "",
-    {"lyric": "Mitsuketa to",
+    {
       "lyric_jp": "見つけたと手伸ばした瞬間に遠ざかるまぼろし",
-      "range": [18.35, 19.79], "ans": [6]},
-    {"lyric": "Te nobashita shunkan ni toozakaru maboroshi",
-      "lyric_jp": "見つけたと手伸ばした瞬間に遠ざかるまぼろし",
-      "range": [19.79, 24.81], "ans": [6]},
+      "parts": [
+        {"lyric": "Mitsuketa to",
+          "range": [18.35, 19.79], "ans": [6]},
+        {"lyric": "Te nobashita shunkan ni toozakaru maboroshi",
+          "range": [19.79, 24.81], "ans": [6]}
+      ]
+    },
     {
       "lyric_jp": "迷いの中で いま心目覚めたのか",
       "parts": [
         {"lyric": "Mayoi no naka de",
-          "range": [24.73, 27.49], "ans": [8]},
+          "range": [24.73, 27.84], "ans": [8]},
         {"lyric": "Ima kokoro mezameta no ka",
-          "range": [27.49, 30.93], "ans": [3]}
+          "range": [27.14, 30.93], "ans": [3]}
       ]
     },
     {"lyric": "Kurai yuri kago nemuru omoi",
@@ -55,9 +59,9 @@
       "lyric_jp": "生まれ変わり そのハネで舞い上がれ",
       "parts": [
         {"lyric": "Umarekawari",
-          "range": [35.91, 37.3], "ans": [2]},
+          "range": [35.91, 37.65], "ans": [2]},
         {"lyric": "Sono hane de maiagare",
-          "range": [37.3, 40.46], "ans": [6]}
+          "range": [36.95, 40.46], "ans": [6]}
       ]
     },
     "",
@@ -71,9 +75,9 @@
       "lyric_jp": "そう隠された扉照らしてくれると",
       "parts": [
         {"lyric": "Sou kakusareta",
-          "range": [46.81, 47.91], "ans": [5]},
+          "range": [46.81, 48.26], "ans": [5]},
         {"lyric": "Tobira terashite kureru to",
-          "range": [47.91, 49.63], "ans": [4]}
+          "range": [47.56, 49.63], "ans": [4]}
       ]
     },
     {"lyric": "Shinjite miru no sa",
@@ -89,7 +93,7 @@
     {"lyric": "Aa watashi wa nani ga shitai?",
       "lyric_jp": "ああ私は何がしたい？",
       "range": [60.95, 64.41], "ans": []},
-    {"lyric": "Nazo to yume wo motto motto",
+    {"lyric": "Nazo to yume wo motte motto",
       "lyric_jp": "謎と夢をもっともっと",
       "range": [64.41, 67.32], "ans": []},
     {"lyric": "Oikakete mitai kamo shirenai ne",
@@ -115,22 +119,22 @@
       "lyric_jp": "何が変わるんだろう（見上げれば）",
       "parts": [
         {"lyric": "Nani ga kawarun darou",
-          "range": [86.52, 87.61], "ans": []},
+          "range": [86.52, 87.29], "ans": []},
         {"lyric": "Miagereba",
-          "range": [87.61, 88.27], "ans": [6]}
+          "range": [86.88, 87.83], "ans": [6]},
+        {"lyric": "(ugokidasu mirai)",
+          "range": [87.34, 87.88], "ans": []}
       ]
     },
-    {"lyric": "(ugokidasu mirai)",
-      "range": [86.52, 87.88], "ans": []},
     {"lyric": "Sunshine in the mirror",
       "lyric_jp": "Sunshine in the mirror（動き出すミライ）",
-      "range": [87.88, 88.22], "ans": []},
+      "range": [87.88, 89.49], "ans": []},
     {"lyric": "Hajimaru rapusodia nani wo kaetain darou",
-      "lyric_jp": "Sunshine in the mirror（動き出すミライ）",
-      "range": [88.22, 89.18], "ans": []},
+      "lyric_jp": "始まるラプソディア",
+      "range": [89.49, 90.94], "ans": []},
     {"lyric": "Gensou kara misuteriumu",
-      "lyric_jp": "Sunshine in the mirror（動き出すミライ）",
-      "range": [89.18, 89.66], "ans": []},
+      "lyric_jp": "幻想からミステリウム",
+      "range": [92.5, 94.44], "ans": []},
     "",
     {"lyric": "Yoru ni aitara tokeru",
       "lyric_jp": "夜に飽いたら解ける",
@@ -167,18 +171,22 @@
     {"lyric": "Kotae naki yoake ni mo",
       "lyric_jp": "答え無き夜明けにも",
       "range": [126.64, 131.01], "ans": []},
-    {"lyric": "Nazo to yume wa seiza wo egaku yo",
+    {
       "lyric_jp": "謎と夢は星座を描くよ",
-      "range": [131.01, 147.26], "ans": []},
-    {"lyric": "(Fu)",
-      "range": [145.26, 147.26], "ans": []},
+      "parts": [
+        {"lyric": "Nazo to yume wa seiza wo egaku yo",
+          "range": [131.01, 137.33], "ans": []},
+        {"lyric": "(Fu)",
+          "range": [137.33, 137.93], "ans": []}
+      ]
+    },
     "",
     {"lyric": "Wakaritai... jibun no omoi kimi no omoi",
       "lyric_jp": "わかりたい 自分の想い 君の想い",
       "range": [147.26, 151.6], "ans": [6]},
     {"lyric": "Tada furete mitai",
       "lyric_jp": "ただ触れてみたい",
-      "range": [151.6, 154.19], "ans": [3, 9]},
+      "range": [151.6, 154.19], "ans": [3, 9], "diff": 2},
     {"lyric": "Kitto kasanareba tsuyoku naresou de",
       "lyric_jp": "きっと重なれば強くなれそうで",
       "range": [154.19, 161.8], "ans": [6]},
@@ -186,7 +194,7 @@
     {"lyric": "Wakaranai... jibun na no ni jibun no koto",
       "lyric_jp": "わからない 自分なのに 自分のこと",
       "range": [161.8, 166.12], "ans": []},
-    {"lyric": "(kagami no mae de) jitto mitsumeau",
+    {"lyric": "(Kagami no mae de) jitto mitsumeau",
       "lyric_jp": "鏡の前でじっと見つめ合う",
       "range": [166.12, 170.6], "ans": []},
     {"lyric": "Aa watashi wa nani ga shitai?",
@@ -201,7 +209,7 @@
     {"lyric": "Kono sekai no deai de",
       "lyric_jp": "このセカイの出会いで",
       "range": [182.15, 186.76], "ans": []},
-    {"lyric": "(nazo to yume wo) tokiakashite miru yo",
+    {"lyric": "(Nazo to yume wo) tokiakashite miru yo",
       "lyric_jp": "謎と夢を解き明かしてみるよ",
       "range": [186.76, 194.21], "ans": []},
     "",
@@ -221,10 +229,10 @@
       "lyric_jp": "Sunshine in the mirror",
       "range": [200.68, 202.29], "ans": []},
     {"lyric": "Hajimaru rapusodia nani wo kaetain darou",
-      "lyric_jp": "始まるラプソディア",
-      "range": [202.29, 203.3], "ans": []},
+      "lyric_jp": "始まるラプソディア 何を変えたいんだろう",
+      "range": [202.29, 205.72], "ans": []},
     {"lyric": "Gensou kara misuteriumu",
-      "lyric_jp": "始まるラプソディア",
-      "range": [203.3, 203.89], "ans": []}
+      "lyric_jp": "幻想からミステリウム",
+      "range": [205.72, 210], "ans": []}
   ]
 }

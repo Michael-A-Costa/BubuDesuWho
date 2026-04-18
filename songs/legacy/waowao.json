@@ -2,6 +2,7 @@
   "name": "WAO-WAO Powerful Day!",
   "id": "waowao",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/wao_wao_powerful_day.mp3",
   "ogg": "sound/wao_wao_powerful_day.ogg",
   "mapping": [

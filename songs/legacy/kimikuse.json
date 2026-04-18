@@ -2,6 +2,7 @@
   "name": "Kimi no Kuse ni!",
   "id": "kimikuse",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/kimi_no_kuse_ni.mp3",
   "ogg": "sound/kimi_no_kuse_ni.ogg",
   "mapping": [

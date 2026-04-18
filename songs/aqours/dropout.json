@@ -11,6 +11,7 @@
   "slots": [
 
   ],
+  "generated": "2026-04-14T23:00:09Z",
   "lines": [
     {"lyric": "Koko made kite mo kotae ga",
       "lyric_jp": "Koko made kite mo kotae ga",
@@ -59,7 +60,7 @@
       "range": [75.04, 81.53], "ans": []},
     {"lyric": "Dare wo yobitai no?",
       "lyric_jp": "Dare wo yobitai no?",
-      "range": [81.53, 95.68], "ans": []},
+      "range": [81.53, 88.41], "ans": []},
     "",
     {"lyric": "Itsudemo imi wo motomete",
       "lyric_jp": "Itsudemo imi wo motomete",
@@ -109,7 +110,7 @@
       "range": [142.33, 148.72], "ans": []},
     {"lyric": "Dakara kao agete...",
       "lyric_jp": "Dakara kao agete...",
-      "range": [148.72, 171.07], "ans": []},
+      "range": [148.72, 155.54], "ans": []},
     "",
     {"lyric": "“Seira kamon”",
       "lyric_jp": "\"Seira KAMON\"",

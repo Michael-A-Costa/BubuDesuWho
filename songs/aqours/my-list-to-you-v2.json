@@ -1,0 +1,293 @@
+{
+  "name": "MY LIST to you! (V2)",
+  "ogg": "sound/my_list_to_you.ogg",
+  "id": "my-list-to-you-v2",
+  "group": "aqours",
+  "added": "2026-04",
+  "hidden": true,
+  "generated": "2026-04-17T01:12:31Z",
+  "slots": [
+
+  ],
+  "lines": [
+    {
+      "lyric_jp": "分かってと拗ねちゃう私だから",
+      "parts": [
+        {"lyric": "( Pop Du Wop Pah)",
+          "range": [13.27, 13.87], "ans": [4, 5, 6]},
+        {"lyric": "( Pop Du Wop Pah)",
+          "range": [13.87, 14.47], "ans": [4, 5, 6]},
+        {"lyric": "( Pop Du Wop Pah)",
+          "range": [14.47, 15.07], "ans": [4, 5, 6]},
+        {"lyric": "( Pah Du Wah)",
+          "range": [15.07, 16.02], "ans": [4, 5, 6]},
+        {"lyric": "Wakatte, to sunechau watashi dakara",
+          "range": [15.32, 21.29], "ans": [2]}
+      ]
+    },
+    "",
+    {"lyric": "Chotto matomete mita!",
+      "lyric_jp": "ちょっと まとめてみた！",
+      "range": [21.29, 27.92], "ans": [2]},
+    {"lyric": "Itsuka deau koibito ni tsutaetai koto",
+      "lyric_jp": "いつか出会う恋人に伝えたいこと",
+      "range": [27.92, 33.73], "ans": [9]},
+    {
+      "lyric_jp": "\"MY LIST\"... 偉そうかな？",
+      "parts": [
+        {"lyric": "“MY list”",
+          "range": [33.73, 35.01], "ans": [9]},
+        {"lyric": "Erasou ka na?",
+          "range": [34.31, 40.24], "ans": [2, 9], "diff": 2}
+      ]
+    },
+    "",
+    {"lyric": "Mainichi kitto renraku shite ne",
+      "lyric_jp": "毎日きっと 連絡してね",
+      "range": [40.24, 46.41], "ans": [4]},
+    {"lyric": "Daisuki datte zutto kurikaeshi kikasete yo",
+      "lyric_jp": "大好きだってずっと 繰り返し聞かせてよ",
+      "range": [46.41, 52.42], "ans": [6]},
+    {"lyric": "Ietsuemo!",
+      "lyric_jp": "い・つ・も！",
+      "range": [52.42, 55.53], "ans": [5]},
+    "",
+    {
+      "lyric_jp": "名前で 呼んでよね",
+      "parts": [
+        {"lyric": "Namae de",
+          "range": [55.53, 57.17], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "(BaBan Ban)",
+          "range": [57.17, 58.21], "ans": [4, 5, 6]},
+        {"lyric": "Yonde yo ne",
+          "range": [58.21, 61.51], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "(Du Du Wah)",
+          "range": [60.81, 61.76], "ans": [4, 5, 6]}
+      ]
+    },
+    {
+      "lyric_jp": "「さん」とかつけないで呼んでね",
+      "parts": [
+        {"lyric": "“san” to ka tsukenaide yonde ne",
+          "range": [61.76, 67.5], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "(Pop Du Wah)",
+          "range": [66.8, 67.75], "ans": [4, 5, 6]}
+      ]
+    },
+    {
+      "lyric_jp": "手繋いで 歩いて",
+      "parts": [
+        {"lyric": "Te tsunaide",
+          "range": [67.75, 69.95], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "(BaBan Ban)",
+          "range": [69.95, 72.3], "ans": [4, 5, 6]},
+        {"lyric": "Aruite",
+          "range": [71.6, 73.84], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "(Du Du Wah)",
+          "range": [73.14, 74.09], "ans": [4, 5, 6]}
+      ]
+    },
+    {
+      "lyric_jp": "人目気にしちゃやだよ",
+      "parts": [
+        {"lyric": "Hitome ki ni shicha yada yo",
+          "range": [74.09, 80.07], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "(Wah)",
+          "range": [79.37, 80.32], "ans": [4, 5, 6]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "言えなくて黙っちゃう時はこれを",
+      "parts": [
+        {"lyric": "Ienakute damacchau toki wa",
+          "range": [80.32, 85.09], "ans": [1]},
+        {"lyric": "(Pop Du Wah Pop Du Wah)",
+          "range": [84.39, 85.34], "ans": [4, 5, 6]},
+        {"lyric": "(Wah)",
+          "range": [85.34, 85.94], "ans": [4, 5, 6]}
+      ]
+    },
+    {
+      "lyric_jp": "見せて 甘えてみる？",
+      "parts": [
+        {"lyric": "Kore wo misete amaete miru?",
+          "range": [85.94, 92.42], "ans": [1]},
+        {"lyric": "(Pop Du Du Wop Pop)",
+          "range": [91.72, 92.67], "ans": [4, 5, 6]}
+      ]
+    },
+    {
+      "lyric_jp": "いつか出会う恋人よ 呆れないでね",
+      "parts": [
+        {"lyric": "Itsuka deau koibito yo akirenaide ne",
+          "range": [92.67, 97.38], "ans": [7]},
+        {"lyric": "( Pop Du Wop Pop Du Wop Pop Du Wop Pop Du Wop Pah)",
+          "range": [96.68, 97.63], "ans": [4, 5, 6]},
+        {"lyric": "(Bo BoBon Bo BoBon Wah)",
+          "range": [97.63, 98.23], "ans": [4, 5, 6]}
+      ]
+    },
+    {
+      "lyric_jp": "\"MY LOVE\"... 出会いはどこ？",
+      "parts": [
+        {"lyric": "“MY love”",
+          "range": [98.23, 99.03], "ans": [7]},
+        {"lyric": "Deai wa doko?",
+          "range": [99.76, 104.96], "ans": [1, 7], "diff": 2}
+      ]
+    },
+    "",
+    {"lyric": "Isogashii tte renpatsu shinaide",
+      "lyric_jp": "忙しいって 連発しないで",
+      "range": [104.96, 111], "ans": [8]},
+    {"lyric": "Daisuki na kimochi atomawashi sarechattara",
+      "lyric_jp": "大好きなキモチ 後回しされちゃったら",
+      "range": [111, 117.11], "ans": [3]},
+    {
+      "lyric_jp": "涙出ちゃうの！",
+      "parts": [
+        {"lyric": "Namida dechau yo!",
+          "range": [117.11, 121.55], "ans": [3]},
+        {"lyric": "( Bon BoBon Bon Bon)",
+          "range": [120.85, 121.8], "ans": [4, 5, 6]}
+      ]
+    },
+    "",
+    "[next-col]",
+    {
+      "lyric_jp": "お土産 買ってきて",
+      "parts": [
+        {"lyric": "Omiyage",
+          "range": [121.8, 123.26], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "(BaBan Ban)",
+          "range": [123.26, 125.61], "ans": [4, 5, 6]},
+        {"lyric": "Katte kite",
+          "range": [124.91, 127.74], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "(Du Du Wah)",
+          "range": [127.04, 127.99], "ans": [4, 5, 6]}
+      ]
+    },
+    {
+      "lyric_jp": "私を置いて出かけたら",
+      "parts": [
+        {"lyric": "Watashi wo oite dekaketara",
+          "range": [127.99, 133.8], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "(Pop Du Wah)",
+          "range": [133.1, 134.05], "ans": [4, 5, 6]}
+      ]
+    },
+    {
+      "lyric_jp": "誕生日 覚えて",
+      "parts": [
+        {"lyric": "Tanjoubi",
+          "range": [134.05, 135.67], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "(BaBan Ban)",
+          "range": [135.67, 138.26], "ans": [4, 5, 6]},
+        {"lyric": "Oboete",
+          "range": [137.56, 139.88], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "(Du Du Wah)",
+          "range": [139.18, 140.13], "ans": [4, 5, 6]}
+      ]
+    },
+    {"lyric": "Seiza mo shiranakute mo",
+      "lyric_jp": "星座を知らなくても",
+      "range": [140.13, 145.45], "ans": [1, 2, 3, 7, 8, 9]},
+    "",
+    {
+      "lyric_jp": "大好きって 聞かせて",
+      "parts": [
+        {"lyric": "Daisuki tte",
+          "range": [158.6, 160.14], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "(BaBan Ban)",
+          "range": [160.14, 162.53], "ans": [4, 5, 6]},
+        {"lyric": "Kikasete",
+          "range": [161.83, 164.7], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "(BaBan Ban)",
+          "range": [164, 164.95], "ans": [4, 5, 6]}
+      ]
+    },
+    {
+      "lyric_jp": "いつでも",
+      "parts": [
+        {"lyric": "Itsudemo",
+          "range": [164.95, 167.94], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "(BaBan Ban)",
+          "range": [167.24, 168.19], "ans": [4, 5, 6]}
+      ]
+    },
+    {"lyric": "Itte hoshii janai?",
+      "lyric_jp": "言ってほしいじゃない？",
+      "range": [168.19, 171.07], "ans": [2]},
+    "",
+    {
+      "lyric_jp": "まだまだ あるけど",
+      "parts": [
+        {"lyric": "Mada mada",
+          "range": [171.07, 172.88], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "(BaBan Ban)",
+          "range": [172.18, 175.32], "ans": [4, 5, 6]},
+        {"lyric": "Aru kedo",
+          "range": [174.62, 176.96], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "(Du Du Wah)",
+          "range": [176.26, 177.21], "ans": [4, 5, 6]}
+      ]
+    },
+    {"lyric": "Ato wa deatte kara no otanoshimi nante ne",
+      "lyric_jp": "あとは出会ってからの お楽しみ",
+      "range": [177.21, 181.93], "ans": [1, 2, 3, 7, 8, 9]},
+    {
+      "lyric_jp": "誰なの？ どこなの？",
+      "parts": [
+        {"lyric": "Dare na no?",
+          "range": [183.62, 185.08], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "(BaBan Ban)",
+          "range": [185.98, 187.21], "ans": [4, 5, 6]},
+        {"lyric": "Doko na no?",
+          "range": [186.51, 189.24], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "(Du Du Wah)",
+          "range": [188.54, 189.49], "ans": [4, 5, 6]}
+      ]
+    },
+    {
+      "lyric_jp": "さぁ早くここに来てよ",
+      "parts": [
+        {"lyric": "Saa hayaku koko ni kite yo",
+          "range": [189.49, 195.75], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "(Pop Du Wah Pah koko ni kite yo!)",
+          "range": [198.94, 201.77], "ans": [4, 5, 6]}
+      ]
+    },
+    {"lyric": "Saa hayaku kao wo misete",
+      "lyric_jp": "さぁ早く顔を見せて (ここに来てよ)",
+      "range": [195.75, 201.78], "ans": [1, 2, 3, 7, 8, 9]},
+    {
+      "lyric_jp": "さぁ早くここに来てよ！",
+      "parts": [
+        {"lyric": "Saa hayaku koko ni kite yo!",
+          "range": [201.78, 205.03], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "(Pop Du Wop Pah)",
+          "range": [205.03, 205.42], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "(BaBan Ban)",
+          "range": [205.08, 205.63], "ans": [4, 5, 6]},
+        {"lyric": "(Pop Du Wop Pah)",
+          "range": [205.13, 205.85], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "(Du Du Wah)",
+          "range": [205.33, 206.07], "ans": [4, 5, 6]},
+        {"lyric": "( Pop Du Wop Pah Du Du Wah)",
+          "range": [205.55, 206.12], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "(Pop Du Wop Pah)",
+          "range": [206.12, 206.5], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "(BaBan Ban)",
+          "range": [206.17, 206.72], "ans": [4, 5, 6]},
+        {"lyric": "(Pop Du Wop Pah)",
+          "range": [206.22, 206.93], "ans": [1, 2, 3, 7, 8, 9]},
+        {"lyric": "(Du Du Wah)",
+          "range": [206.42, 207.15], "ans": [4, 5, 6]},
+        {"lyric": "( Pop Du Wop Pah Du Du Wah)",
+          "range": [206.63, 207.2], "ans": [1, 2, 3, 7, 8, 9]}
+      ]
+    },
+    ""
+  ]
+}

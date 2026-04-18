@@ -1,6 +1,7 @@
 {
   "name": "Shoujo Koukyoukyoku",
   "group": "wug",
+  "legacy": true,
   "id": "shoujokyoku",
   "mp3": "sound/shoujo_koukyoukyoku.mp3",
   "ogg": "sound/shoujo_koukyoukyoku.ogg",

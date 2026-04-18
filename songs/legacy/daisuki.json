@@ -4,6 +4,7 @@
   "ogg": "sound/daisuki_dattara_daijoubu.ogg",
   "id": "daisuki",
   "group": "aqours",
+  "legacy": true,
   "released": "2016-08-03",
   "subunit": "2nd-years",
   "mapping": [

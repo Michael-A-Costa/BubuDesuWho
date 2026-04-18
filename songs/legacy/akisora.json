@@ -2,6 +2,7 @@
   "name": "Aki no Anata no Sora Tooku",
   "id": "akisora",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/aki_no_anata_no_sora_tooku.mp3",
   "ogg": "sound/aki_no_anata_no_sora_tooku.ogg",
   "mapping": [

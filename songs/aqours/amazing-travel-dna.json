@@ -4,10 +4,11 @@
   "id": "amazing-travel-dna",
   "group": "aqours",
   "added": "2026-04",
-  "hidden": true,
+  "hidden": false,
   "slots": [
 
   ],
+  "generated": "2026-04-15T01:41:44Z",
   "lines": [
     {"lyric": "Amazing Travel",
       "lyric_jp": "Amazing Travel",
@@ -23,7 +24,7 @@
       "range": [9.2, 14.6], "ans": []},
     {"lyric": "Tabi wa, koko kara!",
       "lyric_jp": "旅は、ここから！",
-      "range": [14.6, 26.49], "ans": []},
+      "range": [14.6, 19.55], "ans": []},
     "",
     {"lyric": "Sorosoro jikan",
       "lyric_jp": "そろそろ時間",
@@ -57,9 +58,9 @@
       "lyric_jp": "わかる 私もです",
       "parts": [
         {"lyric": "Wakaru",
-          "range": [50.47, 51.41], "ans": [8]},
+          "range": [50.47, 52.44], "ans": [8]},
         {"lyric": "Watashi mo desu",
-          "range": [51.41, 53.91], "ans": []}
+          "range": [51.74, 53.91], "ans": []}
       ]
     },
     "",
@@ -79,9 +80,9 @@
       "lyric_jp": "ほら手を取って 新しい経験へと",
       "parts": [
         {"lyric": "Hora te wo totte",
-          "range": [63.49, 65.23], "ans": [4]},
+          "range": [63.49, 65.58], "ans": [4]},
         {"lyric": "Atarashii keiken e to",
-          "range": [65.23, 67.99], "ans": []}
+          "range": [64.88, 67.99], "ans": []}
       ]
     },
     {"lyric": "Amazing Travel",
@@ -98,14 +99,17 @@
       "range": [76.31, 81.67], "ans": []},
     {"lyric": "Tabi wa, koko kara!",
       "lyric_jp": "旅は、ここから！",
-      "range": [81.67, 93.67], "ans": []},
+      "range": [81.67, 86.5], "ans": []},
     "",
-    {"lyric": "Fuwafuwa ukabu",
+    {
       "lyric_jp": "ふわふわ浮かぶ 雲の切れ間に",
-      "range": [93.67, 95.54], "ans": [8]},
-    {"lyric": "Kumo no kirema ni",
-      "lyric_jp": "ふわふわ浮かぶ 雲の切れ間に",
-      "range": [95.54, 97.28], "ans": [8]},
+      "parts": [
+        {"lyric": "Fuwafuwa ukabu",
+          "range": [93.67, 95.54], "ans": [8]},
+        {"lyric": "Kumo no kirema ni",
+          "range": [95.54, 97.28], "ans": [8]}
+      ]
+    },
     {"lyric": "Niji ga kakatte hashi ni mietara",
       "lyric_jp": "虹がかかって橋に見えたら",
       "range": [97.06, 100.52], "ans": [8]},
@@ -132,9 +136,9 @@
       "lyric_jp": "おなじ 私もです",
       "parts": [
         {"lyric": "Onaji",
-          "range": [117.45, 118.45], "ans": [4]},
+          "range": [117.45, 119.34], "ans": [4]},
         {"lyric": "Watashi mo desu",
-          "range": [118.45, 121.48], "ans": []}
+          "range": [118.64, 121.48], "ans": []}
       ]
     },
     {"lyric": "Mezameta bouken DNA dare demo mottemasu yo",
@@ -155,9 +159,9 @@
       "lyric_jp": "自由の意味を 噛みしめながら",
       "parts": [
         {"lyric": "Jiyuu no imi wo",
-          "range": [135.95, 137.95], "ans": []},
+          "range": [135.95, 138.3], "ans": []},
         {"lyric": "Kamishime nagara",
-          "range": [137.95, 139.69], "ans": [8]}
+          "range": [137.6, 139.69], "ans": [8]}
       ]
     },
     {"lyric": "Kyou no risuto wa noo puran",
@@ -178,26 +182,19 @@
     {"lyric": "Tabi wa, tsudzukimasu!",
       "lyric_jp": "旅は、続きます！",
       "range": [155.81, 159.89], "ans": []},
-    {"lyric": "(A-Z-A)",
-      "range": [157.89, 159.89], "ans": []},
-    {"lyric": "(L-E-A)",
-      "range": [157.89, 159.89], "ans": []},
-    {"lyric": "(A-Z-A)",
-      "range": [157.89, 159.89], "ans": []},
-    {"lyric": "(L-E-A!)",
-      "range": [157.89, 159.89], "ans": []},
-    {"lyric": "A-z-a",
+    "",
+    {"lyric": "(a-z-a)",
       "lyric_jp": "A-Z-A",
       "range": [159.89, 163.22], "ans": []},
-    {"lyric": "L-e-a",
+    {"lyric": "(l-e-a)",
       "lyric_jp": "L-E-A",
       "range": [163.22, 167.09], "ans": []},
-    {"lyric": "A-z-a",
+    {"lyric": "(a-z-a)",
       "lyric_jp": "A-Z-A",
       "range": [167.09, 170.3], "ans": []},
-    {"lyric": "L-e-a",
+    {"lyric": "(l-e-a!)",
       "lyric_jp": "L-E-A",
-      "range": [170.3, 185.07], "ans": []},
+      "range": [170.3, 173.26], "ans": []},
     "",
     {"lyric": "Zettai ga nai sekai",
       "lyric_jp": "絶対がないセカイ",
@@ -215,9 +212,9 @@
       "lyric_jp": "わかる 私もです",
       "parts": [
         {"lyric": "Wakaru",
-          "range": [195.22, 196.14], "ans": [7]},
+          "range": [195.22, 197.15], "ans": [7]},
         {"lyric": "Watashi mo desu",
-          "range": [196.14, 198.6], "ans": []}
+          "range": [196.45, 198.6], "ans": []}
       ]
     },
     "",
@@ -237,9 +234,9 @@
       "lyric_jp": "ほら手を取って 新しい経験へと",
       "parts": [
         {"lyric": "Hora te wo totte",
-          "range": [208.26, 209.94], "ans": [7]},
+          "range": [208.26, 210.29], "ans": [7]},
         {"lyric": "Atarashii keiken e to",
-          "range": [209.94, 212.72], "ans": []}
+          "range": [209.59, 212.72], "ans": []}
       ]
     },
     {"lyric": "Amazing Travel",
@@ -256,6 +253,6 @@
       "range": [220.95, 226.33], "ans": []},
     {"lyric": "Tabi wa, koko kara!",
       "lyric_jp": "旅は、ここから！",
-      "range": [226.33, 256], "ans": []}
+      "range": [226.33, 231.39], "ans": []}
   ]
 }

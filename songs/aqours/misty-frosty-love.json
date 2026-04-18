@@ -10,34 +10,37 @@
   "slots": [
 
   ],
+  "generated": "2026-04-15T01:44:07Z",
   "lines": [
+    {"lyric": "Ki ga tsuitara futari wo mite iru",
+      "lyric_jp": "気がついたら二人を見ている",
+      "range": [20.41, 25.27], "ans": [2]},
+    {"lyric": "Nani wo hanashiterun darou kikoenai yo",
+      "lyric_jp": "何を話してるんだろう 聞こえないよ",
+      "range": [25.27, 29.52], "ans": [2]},
     {
       "lyric_jp": "なんかつらい",
       "parts": [
         {"lyric": "Nanka",
-          "range": [29.52, 29.66], "ans": [2]},
-        {"lyric": "(nanka)",
-          "range": [29.66, 31.26], "ans": [3]},
+          "range": [29.52, 30.43], "ans": [2]},
+        {"lyric": "(Nanka)",
+          "range": [29.73, 30.99], "ans": [3]},
         {"lyric": "Tsurai",
-          "range": [31.26, 32.16], "ans": [2]}
-      ]
-    },
-    {
-      "lyric_jp": "だっていつもよりも嬉しそうだよ",
-      "parts": [
+          "range": [30.29, 31.82], "ans": [2]},
         {"lyric": "(tsurai)",
-          "range": [31.57, 32.8], "ans": [3]},
-        {"lyric": "Datte itsumo yori mo ureshisou da yo",
-          "range": [32.8, 38.63], "ans": [2]}
+          "range": [31.12, 32.07], "ans": [3]}
       ]
     },
+    {"lyric": "Datte itsumo yori mo ureshisou da yo",
+      "lyric_jp": "だっていつもよりも嬉しそうだよ",
+      "range": [32.07, 38.44], "ans": [2]},
     {"lyric": "Me wo sorashitaku natta",
       "lyric_jp": "目をそらしたくなった",
-      "range": [38.29, 44.09], "ans": [2]},
+      "range": [38.44, 44.19], "ans": [2]},
     "",
     {"lyric": "Kirei na kimochi dake de",
       "lyric_jp": "キレイな気持ちだけで",
-      "range": [44.09, 50.42], "ans": [2]},
+      "range": [44.19, 50.42], "ans": [2]},
     {"lyric": "Ikite itai keredo",
       "lyric_jp": "生きていたいけれど",
       "range": [50.42, 54.54], "ans": [2]},
@@ -45,56 +48,60 @@
       "lyric_jp": "誰かと比べてもやもやしちゃうよ",
       "parts": [
         {"lyric": "Dareka to",
-          "range": [54.54, 56.46], "ans": [2]},
+          "range": [54.54, 56.48], "ans": [2]},
         {"lyric": "Kurabete",
-          "range": [56.46, 57.64], "ans": [3]},
+          "range": [55.78, 58.08], "ans": [3]},
         {"lyric": "Moyamoya",
-          "range": [57.64, 58.82], "ans": [2]},
+          "range": [57.38, 59.67], "ans": [2]},
         {"lyric": "Shichau yo",
-          "range": [58.82, 60.8], "ans": [3]}
+          "range": [58.97, 60.92], "ans": [3]}
       ]
     },
     {"lyric": "Konna jibun iya nandayo",
       "lyric_jp": "こんな自分 イヤなんだよ",
-      "range": [60.8, 66.12], "ans": [2]},
+      "range": [60.92, 66.12], "ans": [2]},
     "",
     {"lyric": "Sora wo shiroku mau yuki e",
       "lyric_jp": "空を白く舞う雪へ",
-      "range": [66.12, 70.27], "ans": [2]},
+      "range": [66.12, 70.77], "ans": [2]},
     {"lyric": "Negaitaku naru shiroku somechatte to",
       "lyric_jp": "願いたくなる 白く染めちゃってと",
-      "range": [70.27, 76.36], "ans": [2]},
+      "range": [70.77, 76.36], "ans": [2]},
     {
       "lyric_jp": "私の恋（叶わない）凍らせて（恋なら）",
       "parts": [
         {"lyric": "Watashi no koi",
-          "range": [76.36, 79.12], "ans": [2]},
+          "range": [76.36, 78.7], "ans": [2]},
         {"lyric": "(kanawanai)",
-          "range": [79.12, 80.54], "ans": [3]},
+          "range": [78, 80.36], "ans": [3]},
         {"lyric": "Koorasete",
-          "range": [80.54, 80.8], "ans": [2]},
-        {"lyric": "(kanawanai koi nara)",
-          "range": [80.8, 82], "ans": [3]}
+          "range": [79.66, 81.66], "ans": [2]}
       ]
     },
-    {"lyric": "No kiri de nemure",
+    {"lyric": "Eien no kiri de nemure",
       "lyric_jp": "永遠の霧で眠れ",
-      "range": [81.16, 84.92], "ans": [2]},
-    {"lyric": "Suki tte kanjou ga aa kanashii",
+      "range": [81.66, 85.42], "ans": [2]},
+    {
       "lyric_jp": "好きって感情が ああ悲しい",
-      "range": [84.92, 89.38], "ans": [2]},
+      "parts": [
+        {"lyric": "(kanawanai koi nara)",
+          "range": [85.42, 87.59], "ans": [3]},
+        {"lyric": "Suki tte kanjou ga aa kanashii",
+          "range": [86.89, 89.88], "ans": [2]}
+      ]
+    },
     {"lyric": "Tokimeita handou ka na setsunai yo",
       "lyric_jp": "ときめいた反動かな 切ないよ",
-      "range": [89.38, 95.03], "ans": [2]},
+      "range": [89.88, 95.53], "ans": [2]},
     {
       "lyric_jp": "忘れてしまいたい でも忘れることは",
       "parts": [
         {"lyric": "Wasurete",
-          "range": [95.03, 96.93], "ans": [2]},
+          "range": [95.53, 97.56], "ans": [2]},
         {"lyric": "Shimaitai",
-          "range": [96.93, 98.99], "ans": [3]},
+          "range": [96.86, 99.66], "ans": [3]},
         {"lyric": "Demo wasureru koto wa",
-          "range": [98.99, 103.09], "ans": [2]}
+          "range": [98.96, 103.09], "ans": [2]}
       ]
     },
     {"lyric": "Dekinai to shitteru yo",
@@ -105,18 +112,18 @@
       "lyric_jp": "誰かとあなたと私と Misty Love",
       "parts": [
         {"lyric": "Dareka to anata to watashi to",
-          "range": [107.53, 111.59], "ans": [3]},
+          "range": [107.53, 111.47], "ans": [3]},
         {"lyric": "Ah Misty Love",
-          "range": [111.59, 112.82], "ans": [2]}
+          "range": [110.77, 112.32], "ans": [2]}
       ]
     },
     {
       "lyric_jp": "誰かとあなたと私と Frosty Love",
       "parts": [
         {"lyric": "Dareka to anata to watashi to",
-          "range": [111.82, 120.58], "ans": [3]},
+          "range": [112.32, 121.19], "ans": [3]},
         {"lyric": "Frosty Love",
-          "range": [120.58, 123.06], "ans": [2]}
+          "range": [120.49, 122.97], "ans": [2]}
       ]
     },
     "",
@@ -125,81 +132,76 @@
       "range": [122.97, 127.69], "ans": [3]},
     {"lyric": "Tokubetsu na hito ni naritai nareru no?",
       "lyric_jp": "特別な人になりたい なれるの？",
-      "range": [127.69, 132.37], "ans": [3]},
-    {"lyric": "Zutto",
-      "lyric_jp": "特別な人になりたい なれるの？",
-      "range": [132.37, 132.98], "ans": [3]},
+      "range": [127.69, 132.9], "ans": [3]},
     {
       "lyric_jp": "ずっとつらい",
       "parts": [
-        {"lyric": "(zutto)",
-          "range": [132.9, 134.18], "ans": [2]},
+        {"lyric": "Zutto",
+          "range": [132.9, 133.71], "ans": [3]},
+        {"lyric": "(Zutto)",
+          "range": [133.01, 134.17], "ans": [2]},
         {"lyric": "Tsurai",
-          "range": [134.18, 135.2], "ans": [3]}
-      ]
-    },
-    {
-      "lyric_jp": "なんで一番近くなれないのかな",
-      "parts": [
+          "range": [133.47, 134.86], "ans": [3]},
         {"lyric": "(tsurai)",
-          "range": [134.61, 136.07], "ans": [2]},
-        {"lyric": "Nande ichiban chikaku narenai no ka na",
-          "range": [136.07, 141.65], "ans": [3]}
+          "range": [134.16, 135.11], "ans": [2]}
       ]
     },
+    {"lyric": "Nande ichiban chikaku narenai no ka na",
+      "lyric_jp": "なんで一番近くなれないのかな",
+      "range": [135.11, 141.23], "ans": [3]},
     {
       "lyric_jp": "（やめよう）嫉まないで",
       "parts": [
         {"lyric": "(Yameyou)",
-          "range": [141.23, 143.31], "ans": [2]},
+          "range": [141.23, 142.54], "ans": [2]},
         {"lyric": "Netamanaide",
-          "range": [143.31, 144.12], "ans": [3]}
+          "range": [141.84, 143.62], "ans": [3]}
       ]
     },
     {
       "lyric_jp": "（やめよう）羨まないで",
       "parts": [
         {"lyric": "(Yameyou)",
-          "range": [143.12, 144.92], "ans": [2]},
+          "range": [143.62, 144.87], "ans": [2]},
         {"lyric": "Urayamanaide",
-          "range": [144.92, 146.6], "ans": [3]}
+          "range": [144.17, 146.1], "ans": [3]}
       ]
     },
     {
       "lyric_jp": "そう純粋に そっと想いたいよ",
       "parts": [
         {"lyric": "Sou junsui ni",
-          "range": [146.1, 148.44], "ans": [2]},
+          "range": [146.1, 148.32], "ans": [2]},
         {"lyric": "Sotto",
-          "range": [148.44, 148.82], "ans": [3]},
+          "range": [147.62, 148.94], "ans": [3]},
         {"lyric": "(sotto)",
-          "range": [148.82, 149.8], "ans": [2]},
+          "range": [148.24, 149.56], "ans": [2]},
         {"lyric": "Omoitai yo",
-          "range": [149.8, 151.24], "ans": [3]}
+          "range": [148.86, 151.09], "ans": [3]}
       ]
     },
     {"lyric": "Sonna jibun de itainda",
       "lyric_jp": "そんな自分でいたいんだ",
-      "range": [150.59, 156.71], "ans": [3]},
+      "range": [151.09, 156.76], "ans": [3]},
     "",
     "[next-col]",
     {"lyric": "Kirei na yume ga mitai",
       "lyric_jp": "キレイな夢が見たい",
-      "range": [156.71, 162.85], "ans": [3]},
+      "range": [156.76, 163.06], "ans": [3]},
     {"lyric": "Kumori no nai kokoro de",
       "lyric_jp": "曇りのない心で",
-      "range": [162.85, 167.25], "ans": [3]},
+      "range": [163.06, 167.25], "ans": [3]},
     {
       "lyric_jp": "誰かを気にして いらいらしたくない",
       "parts": [
         {"lyric": "Dareka wo",
-          "range": [167.25, 168.73], "ans": [3]},
+          "range": [167.25, 169.07], "ans": [3]},
         {"lyric": "Ki ni shite",
-          "range": [168.73, 170.19], "ans": [2]},
+          "range": [168.37, 170.54], "ans": [2]},
         {"lyric": "Iraira",
-          "range": [170.19, 171.85], "ans": [3]},
+          "range": [169.84, 172.01], "ans": [3]},
         {"lyric": "Shitakunai",
-          "range": [171.85, 173.51], "ans": [2]}
+          "range": [171.31, 173.51], "ans": [2]}
       ]
     },
     {"lyric": "Jibun yo, shikkari shinasai!",
@@ -216,60 +218,64 @@
       "lyric_jp": "忘れるふりでも",
       "parts": [
         {"lyric": "Wasureru",
-          "range": [189.13, 190.83], "ans": [3]},
+          "range": [189.13, 190.84], "ans": [3]},
         {"lyric": "Furi demo",
-          "range": [190.83, 192.09], "ans": [2]}
+          "range": [190.14, 191.85], "ans": [2]}
       ]
     },
     {"lyric": "Yuki ga kitto shiroku kakushite kureru kara",
       "lyric_jp": "雪がきっと白く隠してくれるから",
-      "range": [191.76, 219.75], "ans": [3]},
+      "range": [191.85, 219.75], "ans": [3]},
     "",
     {"lyric": "Sora wo shiroku mau yuki e",
       "lyric_jp": "空を白く舞う雪へ",
-      "range": [219.75, 223.91], "ans": [2]},
+      "range": [219.75, 224.41], "ans": [2]},
     {"lyric": "Negaitaku naru shiroku somechatte to",
       "lyric_jp": "願いたくなる 白く染めちゃってと",
-      "range": [223.91, 230.15], "ans": [3]},
+      "range": [224.41, 230.15], "ans": [3]},
     {
       "lyric_jp": "私の恋（叶わない）凍らせて（恋なら）",
       "parts": [
         {"lyric": "Watashi no koi",
-          "range": [230.15, 232.23], "ans": [2]},
+          "range": [230.15, 232.04], "ans": [2]},
         {"lyric": "(kanawanai)",
-          "range": [232.23, 232.79], "ans": [3]},
+          "range": [232.04, 233.96], "ans": [3]},
         {"lyric": "Koorasete",
-          "range": [232.79, 234.41], "ans": [2]},
-        {"lyric": "(kanawanai koi nara)",
-          "range": [234.41, 235.68], "ans": [3]}
+          "range": [233.26, 235.18], "ans": [2]}
       ]
     },
     {
       "lyric_jp": "永遠の霧で眠れ",
       "parts": [
-        {"lyric": "Ejien no",
-          "range": [234.68, 235.92], "ans": [2]},
+        {"lyric": "Eien no",
+          "range": [235.18, 237.03], "ans": [2]},
         {"lyric": "Kiri de",
-          "range": [235.92, 237.86], "ans": [3]},
+          "range": [236.33, 238.16], "ans": [3]},
         {"lyric": "Nemure",
-          "range": [237.86, 239.34], "ans": []}
+          "range": [237.46, 238.93], "ans": []}
       ]
     },
-    {"lyric": "Suki tte kanjou ga aa kanashii",
+    {
       "lyric_jp": "好きって感情が ああ悲しい",
-      "range": [238.43, 243.16], "ans": []},
+      "parts": [
+        {"lyric": "(kanawanai koi nara)",
+          "range": [238.93, 241.22], "ans": [3]},
+        {"lyric": "Suki tte kanjou ga aa kanashii",
+          "range": [240.52, 243.66], "ans": []}
+      ]
+    },
     {"lyric": "Tokimeita handou ka na setsunai yo",
       "lyric_jp": "ときめいた反動かな 切ないよ",
-      "range": [243.16, 248.85], "ans": []},
+      "range": [243.66, 249.35], "ans": []},
     {
       "lyric_jp": "忘れてしまいたい でも忘れることは",
       "parts": [
         {"lyric": "Wasurete",
-          "range": [248.85, 250.53], "ans": [2]},
+          "range": [249.35, 251.33], "ans": [2]},
         {"lyric": "Shimaitai",
-          "range": [250.53, 252.47], "ans": [3]},
+          "range": [250.63, 253.37], "ans": [3]},
         {"lyric": "Demo wasureru koto wa",
-          "range": [252.47, 256.69], "ans": [2]}
+          "range": [252.67, 256.69], "ans": [2]}
       ]
     },
     {"lyric": "Dekinai to shitteru yo",
@@ -280,35 +286,35 @@
       "lyric_jp": "誰かとあなたと私と Misty Love",
       "parts": [
         {"lyric": "Dareka to anata to watashi to",
-          "range": [261.33, 264.5], "ans": [2]},
+          "range": [261.33, 265.23], "ans": [2]},
         {"lyric": "Ah Misty Love",
-          "range": [264.5, 265.56], "ans": [3]}
+          "range": [264.53, 266.06], "ans": [3]}
       ]
     },
     {
       "lyric_jp": "誰かとあなたと私と Frosty Love",
       "parts": [
         {"lyric": "Dareka to anata to watashi to",
-          "range": [265.56, 269.32], "ans": [2]},
+          "range": [266.06, 270.18], "ans": [2]},
         {"lyric": "Frosty Love",
-          "range": [269.32, 270.52], "ans": [3]}
+          "range": [269.48, 270.77], "ans": [3]}
       ]
     },
     "",
     {"lyric": "Dareka to anata to watashi to",
       "lyric_jp": "誰かとあなたと私と",
-      "range": [270.52, 275.55], "ans": []},
+      "range": [270.77, 275.55], "ans": []},
     {"lyric": "Watashi wa tsutaetai no?",
       "lyric_jp": "私は伝えたいの？",
-      "range": [275.55, 277.8], "ans": []},
+      "range": [275.55, 277.96], "ans": []},
     {"lyric": "Soretomo...",
       "lyric_jp": "それとも...",
-      "range": [277.8, 280.3], "ans": []},
+      "range": [277.96, 280.3], "ans": []},
     {"lyric": "Watashi wa tsutaetai no?",
       "lyric_jp": "私は伝えたいの？",
-      "range": [280.3, 282.47], "ans": []},
+      "range": [280.3, 282.97], "ans": []},
     {"lyric": "Tsutaetai yo!",
       "lyric_jp": "...伝えたいよ！",
-      "range": [282.47, 296], "ans": []}
+      "range": [282.97, 296], "ans": []}
   ]
 }

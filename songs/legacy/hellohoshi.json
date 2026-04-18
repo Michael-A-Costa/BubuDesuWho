@@ -1,6 +1,7 @@
 {
   "name": "Hello, Hoshi o Kazoete",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/hello_hoshi_o_kazoete.mp3",
   "ogg": "sound/hello_hoshi_o_kazoete.ogg",
   "id": "hellohoshi",

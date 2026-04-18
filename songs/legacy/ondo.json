@@ -4,6 +4,7 @@
   "ogg": "sound/sunshine_pikkapika_ondo.ogg",
   "id": "ondo",
   "group": "aqours",
+  "legacy": true,
   "released": "2016-08-24",
   "mapping": [
     {

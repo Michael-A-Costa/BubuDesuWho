@@ -4,10 +4,11 @@
   "id": "whistle-of-revolution",
   "group": "aqours",
   "added": "2026-04",
-  "hidden": true,
+  "hidden": false,
   "slots": [
 
   ],
+  "generated": "2026-04-14T23:01:46Z",
   "lines": [
     {"lyric": "Hajime! Hajime! to, hoissuru nacchattanda na",
       "lyric_jp": "ハジメ！ハジメ！と ホイッスル鳴っちゃったんだな",
@@ -77,14 +78,19 @@
     {"lyric": "Datte datte tanoshimanakya",
       "lyric_jp": "だってだって楽しまなきゃ",
       "range": [128.61, 133.53], "ans": []},
-    {"lyric": "Sekai wa itsumo kawari tsuzukeru",
+    {
       "lyric_jp": "セカイはいつも変わり続ける",
-      "range": [133.53, 156.58], "ans": []},
+      "parts": [
+        {"lyric": "Sekai wa itsumo kawari tsuzukeru",
+          "range": [133.53, 140.08], "ans": []},
+        {"lyric": "(Hey Hey Hey Hey Oh Oh Oh)",
+          "range": [139.38, 140.33], "ans": [5]}
+      ]
+    },
     "",
     {"lyric": "Mou kettei da Evolution",
       "lyric_jp": "もう決定だ Evolution",
       "range": [156.58, 160.41], "ans": [5]},
-    "",
     {"lyric": "Kocchi oide Revolution!",
       "lyric_jp": "こっちおいで Revolution!",
       "range": [160.41, 163.32], "ans": [1]},
@@ -94,10 +100,10 @@
     {"lyric": "Tomerarenai yo",
       "lyric_jp": "とめられないよ",
       "range": [165.33, 172.98], "ans": []},
+    "",
     {"lyric": "Donna yume ga suki kai? Kanaeru tame ni deatta hazu sa",
       "lyric_jp": "どんなユメがスキかい？ 叶えるために出会ったはずさ",
       "range": [172.98, 183.69], "ans": []},
-    "",
     {"lyric": "Gutto gutto hirogatteku yo",
       "lyric_jp": "ぐっとぐっと広がってくよ",
       "range": [183.69, 188.79], "ans": []},
@@ -105,7 +111,7 @@
       "lyric_jp": "大き過ぎると笑われたってめげないよ",
       "range": [188.79, 199.79], "ans": []},
     {"lyric": "Sekai wa itsumo kawari tsuzukeru saigo ni wahhahhaa da!",
-      "lyric_jp": "セカイはいつも変わり続ける",
-      "range": [199.79, 206.51], "ans": []}
+      "lyric_jp": "セカイはいつも変わり続ける 最後にわっはっはーだ！",
+      "range": [199.79, 210.7], "ans": []}
   ]
 }

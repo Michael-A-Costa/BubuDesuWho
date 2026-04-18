@@ -1,6 +1,6 @@
 import {
   Song, Slot, SlotBase, SlotState, LyricToken, GameState, MappingEntry, LinePart,
-  MEMBER_COLORS, MEMBER_MAPPING,
+  MEMBER_COLORS, MEMBER_COLORS_OFFICIAL, MEMBER_MAPPING,
 } from './types';
 import { arrayEqual, toTimeStr } from './utils';
 import { mapToLabel, getNumSingersInGroup } from './labels';
@@ -10,6 +10,41 @@ import {
 import * as player from './player';
 
 const AUTOSAVE_INTERVAL = 2000;
+
+function getGroupColors(group: string): Record<number, string> {
+  const useOfficial = document.documentElement.classList.contains('palette-official');
+  if (useOfficial && MEMBER_COLORS_OFFICIAL[group]) {
+    return MEMBER_COLORS_OFFICIAL[group];
+  }
+  return MEMBER_COLORS[group] ?? {};
+}
+
+/** Recompute inline colors on active slot buttons and revealed subgroup lyrics. */
+export function refreshPaletteColors(): void {
+  const groupColors = getGroupColors(state.group);
+
+  document.querySelectorAll<HTMLElement>('.slot-body button[data-value].active').forEach((btn) => {
+    const btnMembers = btn.dataset.value!.split(',').map(Number);
+    const colors = btnMembers.map((m) => groupColors[m]).filter(Boolean);
+    if (!colors.length) return;
+    btn.style.setProperty('--member-accent', colors.length === 1
+      ? colors[0]
+      : `linear-gradient(135deg, ${colors.join(', ')})`);
+    btn.style.setProperty('--member-accent-border', colors[0] ?? '');
+  });
+
+  for (const lyric of state.lyrics) {
+    if (!lyric.element || !lyric.element.classList.contains('lyric-gradient')) continue;
+    const ans = lyric.mapping?.ans;
+    if (!ans || ans.length < 2) continue;
+    const colors = ans.map((a) => groupColors[a]).filter(Boolean);
+    if (colors.length < 2) continue;
+    lyric.element.style.setProperty('--gradient', `linear-gradient(90deg, ${colors.join(', ')})`);
+    lyric.element.style.setProperty('--glow1', colors[0]);
+    lyric.element.style.setProperty('--glow2', colors[Math.floor(colors.length / 2)]);
+    lyric.element.style.setProperty('--glow3', colors[colors.length - 1]);
+  }
+}
 
 // ─── State ──────────────────────────────────────────────────────────
 export const state: GameState = {
@@ -77,7 +112,7 @@ export function loadSong(song: Song): void {
   }
 
   // load saved diff, clamped to valid range for this song
-  const savedDiff = getStorage(song.id + '-diff');
+  const savedDiff = getStorage('diff');
   if (savedDiff) state.diff = Math.min(parseInt(savedDiff, 10), getMaxDiff());
 
   // load audio — VITE_SOUND_BASE overrides for external hosting (e.g. GitHub Releases)
@@ -142,20 +177,28 @@ function makeReverseMapping(
 }
 
 // ─── Tick (called every animation frame) ────────────────────────────
-// Clamp audio time to be monotonically non-decreasing so Howler's jitter
-// can't briefly re-activate a slot that was just deactivated.
-// A backward jump ≥ 1s is treated as a genuine seek and allowed through.
+// Strictly monotonic time: never allow backward jumps unless a genuine
+// user-initiated seek is signalled via `didSeek`. This prevents HTML5
+// audio's occasional currentTime=0 glitches from briefly deactivating
+// all slots (the root cause of the slot-flash bug).
 let _monotonicTime = -1;
 
-export function tick(rawTime: number): void {
-  const isSeek = _monotonicTime >= 0 && (_monotonicTime - rawTime) >= 1.0;
-  const time = (_monotonicTime >= 0 && rawTime < _monotonicTime && !isSeek)
-    ? _monotonicTime
-    : rawTime;
-  _monotonicTime = time;
+export function tick(rawTime: number, didSeek = false): void {
+  // Guard against NaN/non-finite values from Howler
+  if (!isFinite(rawTime) || rawTime < 0) return;
 
-  highlightSlots(time);
-  highlightLyrics(time);
+  if (didSeek) {
+    // Genuine seek — accept the new position unconditionally
+    _monotonicTime = rawTime;
+  } else if (_monotonicTime >= 0 && rawTime < _monotonicTime) {
+    // Backward jump without seek — Howler jitter or audio glitch, clamp
+    rawTime = _monotonicTime;
+  } else {
+    _monotonicTime = rawTime;
+  }
+
+  highlightSlots(rawTime);
+  highlightLyrics(rawTime);
 }
 
 function highlightSlots(time: number): void {
@@ -355,14 +398,24 @@ export function toggleChoice(button: HTMLElement, slot: Slot): void {
   for (const id of memberIds) active[id] = false;
   for (const c of slot.choices) active[c] = true;
 
+  // Collect disabled member IDs so we never activate them
+  const slotEl = slot.element!;
+  const disabledMembers = new Set<number>();
+  slotEl.querySelectorAll<HTMLElement>('.slot-body button.disabled[data-value]').forEach((btn) => {
+    const ids = btn.dataset.value!.split(',').map(Number);
+    if (ids.length === 1) disabledMembers.add(ids[0]);
+  });
+
   const members = button.dataset.value!.split(',').map(Number);
   const isActive = !button.classList.contains('active');
-  for (const m of members) active[m] = isActive;
+  for (const m of members) {
+    if (!disabledMembers.has(m)) active[m] = isActive;
+  }
 
   // sync all buttons in this slot
-  const slotEl = slot.element!;
-  const groupColors = MEMBER_COLORS[state.group] ?? {};
+  const groupColors = getGroupColors(state.group);
   slotEl.querySelectorAll<HTMLElement>('.slot-body button[data-value]').forEach((btn) => {
+    if (btn.classList.contains('disabled')) return;
     const btnMembers = btn.dataset.value!.split(',').map(Number);
     const allActive = btnMembers.every((m) => active[m]);
     btn.classList.toggle('active', allActive);
@@ -575,7 +628,8 @@ function revealLyrics(): void {
     if (revealed) {
       if (classes) lyric.element.classList.add(...classes.split(' '));
       if (isSubGroup) {
-        const colors = ans.map((a) => MEMBER_COLORS[state.group]?.[a]).filter(Boolean);
+        const groupColors = getGroupColors(state.group);
+        const colors = ans.map((a) => groupColors[a]).filter(Boolean);
         if (colors.length >= 2) {
           lyric.element.classList.add('lyric-gradient');
           lyric.element.style.setProperty('--gradient',

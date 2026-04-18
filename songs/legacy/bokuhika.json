@@ -4,6 +4,7 @@
   "ogg": "sound/bokutachi_wa_hitotsu_no_hikari.ogg",
   "mp3": "sound/bokutachi_wa_hitotsu_no_hikari.mp3",
   "group": "muse",
+  "legacy": true,
   "mapping": [
     {
       "range": [

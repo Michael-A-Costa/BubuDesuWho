@@ -9,6 +9,7 @@
   "slots": [
 
   ],
+  "generated": "2026-04-16T03:48:29Z",
   "lines": [
     {"lyric": "Attention, please...",
       "lyric_jp": "Attention please!",
@@ -28,32 +29,32 @@
       "lyric_jp": "いつだってここからだった (ここから)",
       "parts": [
         {"lyric": "Itsudatte koko kara datta",
-          "range": [29.79, 32.37], "ans": [1]},
+          "range": [29.79, 33.12], "ans": [1]},
         {"lyric": "(koko kara)",
-          "range": [32.37, 33.32], "ans": [2, 3, 4, 6, 7, 9]}
+          "range": [32.52, 33.26], "ans": [2, 3, 4, 6, 7, 9], "diff": 3}
       ]
     },
     {
       "lyric_jp": "僕らの旅のはじまり (遠くへ)",
       "parts": [
         {"lyric": "Bokura no tabi no hajimari",
-          "range": [33.32, 36.46], "ans": [8]},
+          "range": [33.32, 36.81], "ans": [8]},
         {"lyric": "(tooku e)",
-          "range": [36.46, 37.74], "ans": [2, 3, 4, 6, 7, 9]}
+          "range": [36.48, 37.74], "ans": [2, 3, 4, 6, 7, 9], "diff": 3}
       ]
     },
     {
       "lyric_jp": "またなにか見つけたいよ (見つけたい)",
       "parts": [
         {"lyric": "Mata nanika mitsuketai yo",
-          "range": [37.28, 39.77], "ans": [5]},
+          "range": [37.28, 40.6], "ans": [5]},
         {"lyric": "(mitsuketai)",
-          "range": [39.77, 40.86], "ans": [2, 3, 4, 6, 7, 9]}
+          "range": [40.1, 40.86], "ans": [2, 3, 4, 6, 7, 9], "diff": 3}
       ]
     },
     {"lyric": "Yume wo kuchizusande miyou",
       "lyric_jp": "夢を口ずさんでみよう",
-      "range": [40.25, 44.69], "ans": [1, 5, 8]},
+      "range": [40.25, 44.69], "ans": [1, 5, 8], "diff": 2},
     "",
     {"lyric": "Sono uta de kitto tsunagaru yo",
       "lyric_jp": "その歌できっと繋がるよ",
@@ -66,15 +67,15 @@
       "range": [52.3, 55.99], "ans": [4]},
     {"lyric": "Te wo nobashite",
       "lyric_jp": "みんな手を伸ばして",
-      "range": [55.99, 60.04], "ans": [3, 4, 7]},
+      "range": [55.99, 60.04], "ans": [3, 4, 7], "diff": 2},
     "",
     {
       "lyric_jp": "おおきなセカイ ひろいセカイが待ってるんだ (どこだどこだ？)",
       "parts": [
         {"lyric": "Ooki na sekai hiroi sekai ga matterunda",
-          "range": [60.04, 65.82], "ans": []},
+          "range": [60.04, 66.17], "ans": []},
         {"lyric": "(doko da doko da?)",
-          "range": [65.82, 67.92], "ans": [2, 6, 9]}
+          "range": [65.82, 67.92], "ans": [2, 6, 9], "diff": 2}
       ]
     },
     {"lyric": "Sagasunda! saa dou yatte sagasou",
@@ -87,23 +88,23 @@
       "lyric_jp": "クジラに乗ってしまうんだ (なぜかなぜか！)",
       "parts": [
         {"lyric": "Kujira ni notte shimaunda",
-          "range": [78.05, 80.89], "ans": []},
+          "range": [78.05, 81.4], "ans": []},
         {"lyric": "(naze da naze da!)",
-          "range": [80.89, 82.38], "ans": [2, 6, 9]}
+          "range": [81.61, 82.38], "ans": [2, 6, 9], "diff": 2}
       ]
     },
     {"lyric": "Daitan na bouken arienai koto ga okoru",
       "lyric_jp": "大胆な冒険 ありえないことが起こる",
       "range": [81.4, 88.09], "ans": []},
-    {"lyric": "Sore ga bokura sa! (Hey!)",
-      "lyric_jp": "それが僕らさ！ (Hey!)",
-      "range": [88.09, 97.26], "ans": []},
-    {"lyric": "(Hey!)",
-      "range": [95.26, 97.26], "ans": []},
-    {"lyric": "Hey!",
-      "lyric_jp": "Hey!",
-      "range": [97.26, 104.35], "ans": []},
-    "",
+    {
+      "lyric_jp": "それが僕らさ！ (Hey!) Hey!",
+      "parts": [
+        {"lyric": "Sore ga bokura sa! (Hey!)",
+          "range": [88.09, 90.87], "ans": []},
+        {"lyric": "(Hey!)",
+          "range": [94.64, 95.02], "ans": []}
+      ]
+    },
     {"lyric": "Toki wa nami yori mo hayai yosete wa kaesanai",
       "lyric_jp": "時代は波よりも速い 寄せては返さない",
       "range": [104.35, 113.69], "ans": []},
@@ -120,9 +121,9 @@
       "lyric_jp": "飛沫をあげながら そう前に",
       "parts": [
         {"lyric": "Shibuki wo age nagara",
-          "range": [128.67, 132.25], "ans": [6]},
+          "range": [128.67, 132.6], "ans": [6]},
         {"lyric": "Sou mae ni",
-          "range": [132.25, 134.6], "ans": [2, 6, 9]}
+          "range": [131.9, 134.6], "ans": [2, 6, 9], "diff": 2}
       ]
     },
     "",
@@ -130,32 +131,32 @@
       "lyric_jp": "いまだってここからだよね (ここから)",
       "parts": [
         {"lyric": "Ima datte koko kara da yo ne",
-          "range": [134.6, 137.23], "ans": [1]},
+          "range": [134.6, 138.08], "ans": [1]},
         {"lyric": "(koko kara)",
-          "range": [137.23, 138.42], "ans": [2, 3, 4, 6, 7, 9]}
+          "range": [137.49, 138.28], "ans": [2, 3, 4, 6, 7, 9], "diff": 3}
       ]
     },
     {
       "lyric_jp": "僕らは旅をはじめて (遠くへ)",
       "parts": [
         {"lyric": "Bokura wa tabi wo hajimete",
-          "range": [138.42, 141.48], "ans": [8]},
+          "range": [138.42, 141.83], "ans": [8]},
         {"lyric": "(tooku e)",
-          "range": [141.48, 142.69], "ans": [2, 3, 4, 6, 7, 9]}
+          "range": [141.51, 142.69], "ans": [2, 3, 4, 6, 7, 9], "diff": 3}
       ]
     },
     {
       "lyric_jp": "またなにか見つけるんだ (見つけよう)",
       "parts": [
         {"lyric": "Mata nanika mitsukerunda",
-          "range": [142.18, 144.86], "ans": [5]},
+          "range": [142.18, 145.28], "ans": [5]},
         {"lyric": "(mitsukeyou)",
-          "range": [144.86, 146], "ans": [2, 3, 4, 6, 7, 9]}
+          "range": [145.39, 146], "ans": [2, 3, 4, 6, 7, 9], "diff": 3}
       ]
     },
     {"lyric": "Yume wo koe ni dashite miyou",
       "lyric_jp": "夢を声に出してみよう",
-      "range": [145.47, 149.63], "ans": [1, 5, 8]},
+      "range": [145.47, 149.63], "ans": [1, 5, 8], "diff": 2},
     "",
     {"lyric": "Sono uta wa kitto tsutawaru yo",
       "lyric_jp": "その歌はきっと伝わるよ",
@@ -169,7 +170,7 @@
         {"lyric": "Jinsei no kiseki wo shinjiru nara motto",
           "range": [157.49, 160.87], "ans": [4]},
         {"lyric": "Tanoshimeru ne",
-          "range": [160.87, 165.41], "ans": [3, 4, 7]}
+          "range": [161.75, 165.41], "ans": [3, 4, 7], "diff": 2}
       ]
     },
     "",
@@ -178,9 +179,9 @@
       "lyric_jp": "だいじなミライ すごいミライを持ってるんだ (いつもいつも！)",
       "parts": [
         {"lyric": "Daiji na mirai sugoi mirai wo matterunda",
-          "range": [165.05, 170.87], "ans": []},
+          "range": [165.05, 171.22], "ans": []},
         {"lyric": "(itsumo itsumo!)",
-          "range": [170.87, 173.03], "ans": [3, 4, 7]}
+          "range": [170.82, 173.03], "ans": [3, 4, 7], "diff": 2}
       ]
     },
     {"lyric": "Waraunda egao ni nareba",
@@ -193,54 +194,54 @@
       "lyric_jp": "クジラに乗ってしまうんだ (そうだそうだ！)",
       "parts": [
         {"lyric": "Kujira ni notte shimaunda",
-          "range": [183.15, 185.83], "ans": []},
+          "range": [183.15, 187.04], "ans": []},
         {"lyric": "(souda souda!)",
-          "range": [185.83, 187.01], "ans": [3, 4, 7]}
+          "range": [186.51, 187.36], "ans": [3, 4, 7], "diff": 2}
       ]
     },
     {"lyric": "Shougeki no bouken arienai koto mo ooru okkee",
       "lyric_jp": "衝撃の冒険 ありえないこともオールオッケー",
       "range": [186.69, 193.37], "ans": []},
-    {"lyric": "Sore ga bokura sa! (Hey!)",
-      "lyric_jp": "それが僕らさ！(Hey!)",
-      "range": [193.37, 202.21], "ans": []},
-    {"lyric": "(Hey!)",
-      "range": [200.21, 202.21], "ans": []},
-    {"lyric": "Hey!",
-      "lyric_jp": "Hey!",
-      "range": [202.21, 210.76], "ans": []},
-    "",
+    {
+      "lyric_jp": "それが僕らさ！(Hey!) Hey!",
+      "parts": [
+        {"lyric": "Sore ga bokura sa! (Hey!)",
+          "range": [193.37, 210.16], "ans": []},
+        {"lyric": "(Hey!)",
+          "range": [210.16, 210.76], "ans": []}
+      ]
+    },
     {
       "lyric_jp": "目閉じて 目を開けて まぶしさ味わってみるよ",
       "parts": [
         {"lyric": "Me tojite",
-          "range": [210.76, 212.28], "ans": [5]},
+          "range": [210.76, 212.63], "ans": [5]},
         {"lyric": "Me wo akete",
-          "range": [212.28, 214.18], "ans": [9]},
+          "range": [211.93, 214.55], "ans": [9]},
         {"lyric": "Mabushisa ajiwatte miru yo",
-          "range": [214.18, 218.03], "ans": [4]}
+          "range": [213.85, 218.03], "ans": [4]}
       ]
     },
     {
       "lyric_jp": "新しい願いごと キラキラ泳ぎだす",
       "parts": [
         {"lyric": "Atarashii",
-          "range": [218.03, 220], "ans": [6]},
+          "range": [218.03, 220.35], "ans": [6]},
         {"lyric": "Negaigoto",
-          "range": [220, 221.48], "ans": [2]},
+          "range": [219.65, 221.83], "ans": [2]},
         {"lyric": "Kirakira oyogidasu",
-          "range": [221.48, 224.68], "ans": [7]}
+          "range": [221.13, 224.68], "ans": [7]}
       ]
     },
     {
       "lyric_jp": "追いかけたら 追いかけたら 夢中になってしまうけど",
       "parts": [
         {"lyric": "Oikaketara",
-          "range": [224.54, 226.57], "ans": [8]},
+          "range": [224.54, 227.22], "ans": [8]},
         {"lyric": "Oikaketara",
-          "range": [226.57, 228.59], "ans": [3]},
+          "range": [226.52, 229.32], "ans": [3]},
         {"lyric": "Muchuu ni natte shimau kedo",
-          "range": [228.59, 232.33], "ans": [1]}
+          "range": [228.62, 232.33], "ans": [1]}
       ]
     },
     {"lyric": "Yappari muchuu ni nareru tte kimochi ga ii ne",
@@ -255,9 +256,9 @@
       "lyric_jp": "おおきなセカイ ひろいセカイが待ってるんだ (どこだどこだ？)",
       "parts": [
         {"lyric": "Ooki na sekai hiroi sekai ga matterunda",
-          "range": [243.68, 249.63], "ans": []},
+          "range": [243.68, 249.98], "ans": []},
         {"lyric": "(doko da doko da?)",
-          "range": [249.63, 251.65], "ans": [2, 6, 9]}
+          "range": [249.59, 251.65], "ans": [2, 6, 9], "diff": 2}
       ]
     },
     {"lyric": "Sagasunda saa dou yatte sagasou",
@@ -270,9 +271,9 @@
       "lyric_jp": "クジラに乗ってしまうんだ (なぜだなぜだ！)",
       "parts": [
         {"lyric": "Kujira ni notte shimaunda",
-          "range": [261.88, 264.64], "ans": []},
+          "range": [261.88, 265.1], "ans": []},
         {"lyric": "(naze da naze da!)",
-          "range": [264.64, 266.1], "ans": [2, 6, 9]}
+          "range": [265.79, 266.29], "ans": [2, 6, 9], "diff": 2}
       ]
     },
     {"lyric": "Daitan na bouken arienai koto ga okoru",
@@ -282,29 +283,33 @@
       "lyric_jp": "それが僕らさ ありえないはないよ それが僕らさ (Hey!)",
       "parts": [
         {"lyric": "Sore ga bokura sa",
-          "range": [272.25, 281.83], "ans": [1, 5, 8]},
+          "range": [272.25, 274.39], "ans": [1, 5, 8], "diff": 2},
+        {"lyric": "(Wow Oh Oh Wow Oh Oh)",
+          "range": [277.77, 281.78], "ans": []},
         {"lyric": "Arienai wa nai yo",
-          "range": [281.83, 289.63], "ans": [3, 4, 7]},
+          "range": [281.28, 281.83], "ans": [3, 4, 7], "diff": 2},
+        {"lyric": "(Wow Oh Oh Wow Oh Oh)",
+          "range": [285.63, 288.68], "ans": []},
         {"lyric": "Sore ga bokura sa!",
-          "range": [289.63, 295.55], "ans": [2, 6, 9]}
+          "range": [287.98, 289.29], "ans": [2, 6, 9], "diff": 2},
+        {"lyric": "(Hey!)",
+          "range": [288.59, 289.63], "ans": []},
+        {"lyric": "Oh Yeah (Hey!)",
+          "range": [290.35, 290.82], "ans": []},
+        {"lyric": "Woo~ (Hey!)",
+          "range": [290.82, 295.55], "ans": []}
       ]
     },
-    {"lyric": "(Wow Oh Oh Wow Oh Oh)",
-      "range": [293.55, 295.55], "ans": []},
-    {"lyric": "(Wow Oh Oh Wow Oh Oh)",
-      "range": [293.55, 295.55], "ans": []},
-    {"lyric": "(Hey!)",
-      "range": [293.55, 295.55], "ans": []},
     {"lyric": "Oh Yeah (Hey!)",
       "lyric_jp": "Oh yeah! (Hey!)",
       "range": [295.55, 299.09], "ans": []},
     {"lyric": "Woo-woo-woo",
       "lyric_jp": "Woo-woo-woo",
       "range": [299.09, 303.55], "ans": []},
-    {"lyric": "Woo~ (Hey!)",
+    {"lyric": "Hey!",
       "lyric_jp": "Hey!",
       "range": [303.55, 306.88], "ans": []},
-    {"lyric": "Oh Yeah (Hey!)",
+    {"lyric": "Oh yeah!",
       "lyric_jp": "Oh yeah!",
       "range": [306.88, 310.64], "ans": []},
     {"lyric": "Hey!",
@@ -312,6 +317,6 @@
       "range": [310.64, 313.42], "ans": []},
     {"lyric": "Sore ga bokura sa!",
       "lyric_jp": "それが僕らさ！",
-      "range": [313.42, 328], "ans": []}
+      "range": [313.42, 318.52], "ans": []}
   ]
 }

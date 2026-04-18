@@ -10,6 +10,7 @@
   "slots": [
 
   ],
+  "generated": "2026-04-15T01:42:38Z",
   "lines": [
     {"lyric": "Jump up!",
       "lyric_jp": "Jump up！",
@@ -21,45 +22,48 @@
       "lyric_jp": "希望だけ持って飛ぼうよ",
       "range": [8.56, 15.83], "ans": []},
     "",
-    {"lyric": "Kirei na kotoba janakute jibun kara deru",
+    {
       "lyric_jp": "キレイな言葉じゃなくて 自分から出る 本当のキモチの欠片もっと見せて",
-      "range": [15.83, 20.94], "ans": [4, 7, 8]},
-    {"lyric": "Hontou no kimochi no kakera motto misete",
-      "lyric_jp": "キレイな言葉じゃなくて 自分から出る 本当のキモチの欠片もっと見せて",
-      "range": [20.94, 29.92], "ans": [4, 7, 8]},
+      "parts": [
+        {"lyric": "Kirei na kotoba janakute jibun kara deru",
+          "range": [15.83, 20.94], "ans": [4, 7, 8]},
+        {"lyric": "Hontou no kimochi no kakera motto misete",
+          "range": [22.14, 29.92], "ans": [4, 7, 8]}
+      ]
+    },
     "",
     {
       "lyric_jp": "Take a chance まだ間にあう",
       "parts": [
         {"lyric": "Take a chance",
-          "range": [29.92, 31.72], "ans": []},
+          "range": [29.92, 32.07], "ans": []},
         {"lyric": "Mada ma ni au",
-          "range": [31.72, 33.88], "ans": [1, 2, 5]}
+          "range": [31.37, 33.88], "ans": [1, 2, 5]}
       ]
     },
     {
       "lyric_jp": "Take a chance 素直になれ",
       "parts": [
         {"lyric": "Take a chance",
-          "range": [33.88, 35.7], "ans": []},
+          "range": [33.88, 36.2], "ans": []},
         {"lyric": "Sunao ni nare",
-          "range": [35.7, 37.54], "ans": [1, 2, 5]}
+          "range": [35.5, 37.54], "ans": [1, 2, 5]}
       ]
     },
     {
       "lyric_jp": "Take a chance そしてミライを追いかけて行こうよ",
       "parts": [
         {"lyric": "Take a chance",
-          "range": [37.54, 39.07], "ans": []},
+          "range": [37.54, 39.63], "ans": []},
         {"lyric": "Soshite mirai wo oikakete ikou yo",
-          "range": [39.07, 45.34], "ans": [1, 2, 5]}
+          "range": [38.93, 45.34], "ans": [1, 2, 5]}
       ]
     },
     "",
     {"lyric": "Ano hi umareta omoi ugokidashita",
       "lyric_jp": "あの日生まれた想い 動きだした",
       "range": [45.34, 53.02], "ans": [3, 6, 9]},
-    {"lyric": "“ima da ima da!” Sou koe ga kikoe toki ga michita yo",
+    {"lyric": "“Ima da ima da!” Sou koe ga kikoe toki ga michita yo",
       "lyric_jp": "「今だ 今だ！」そう声が聞こえ 時が満ちたよ",
       "range": [53.02, 58.72], "ans": [3, 6, 9]},
     "",
@@ -79,27 +83,48 @@
       "lyric_jp": "小っちゃい大きい気にしない Jumpin' up higher！",
       "range": [82.22, 98.29], "ans": []},
     "",
-    {"lyric": "Honki wa hazukashikunai jibun wo homeru",
+    {
       "lyric_jp": "ホンキは恥ずかしくない 自分を褒める ひとつでもできたら褒めるなんてどうかな？",
-      "range": [98.29, 108.46], "ans": [3, 6, 9]},
-    {"lyric": "Hitotsu demo dekitara homeru nante dou ka na?",
-      "lyric_jp": "ホンキは恥ずかしくない 自分を褒める ひとつでもできたら褒めるなんてどうかな？",
-      "range": [108.46, 123.14], "ans": [3, 6, 9]},
+      "parts": [
+        {"lyric": "Honki wa hazukashikunai jibun wo homeru",
+          "range": [98.29, 108.46], "ans": [3, 6, 9]},
+        {"lyric": "Hitotsu demo dekitara homeru nante dou ka na?",
+          "range": [113.3, 123.14], "ans": [3, 6, 9]}
+      ]
+    },
     "",
-    {"lyric": "Keep goin’ shiawase wa",
+    {
       "lyric_jp": "Keep goin' シアワセは",
-      "range": [113.28, 116.95], "ans": [1, 2, 5]},
-    {"lyric": "Keep goin’ ironna shurui",
+      "parts": [
+        {"lyric": "Keep goin’",
+          "range": [113.28, 115.26], "ans": []},
+        {"lyric": "Shiawase wa",
+          "range": [114.56, 116.95], "ans": [1, 2, 5]}
+      ]
+    },
+    {
       "lyric_jp": "Keep goin' いろんな種類",
-      "range": [116.95, 120.72], "ans": [1, 2, 5]},
-    {"lyric": "Keep goin’ suki na katachi wo tsukuriagetekunda",
+      "parts": [
+        {"lyric": "Keep goin’",
+          "range": [116.95, 118.81], "ans": []},
+        {"lyric": "Ironna shurui",
+          "range": [118.11, 120.72], "ans": [1, 2, 5]}
+      ]
+    },
+    {
       "lyric_jp": "Keep goin' 好きなカタチを作りあげてくんだ",
-      "range": [120.72, 128.04], "ans": [1, 2, 5]},
+      "parts": [
+        {"lyric": "Keep goin’",
+          "range": [120.72, 122.61], "ans": []},
+        {"lyric": "Suki na katachi wo tsukuriagetekunda",
+          "range": [121.91, 128.04], "ans": [1, 2, 5]}
+      ]
+    },
     "",
     {"lyric": "Itsuka nareru yo yume ni chikai tokoro de",
       "lyric_jp": "いつかなれるよ 夢に近いところで",
       "range": [128.04, 135.52], "ans": [4, 7, 8]},
-    {"lyric": "“mou ippo mou ippo!” Issho ni odoru shinkakei no... kimi!",
+    {"lyric": "“Mou ippo mou ippo!” Issho ni odoru shinkakei no... kimi!",
       "lyric_jp": "「もう一歩 もう一歩！」いっしょに踊る進化形の... キミ！",
       "range": [135.52, 141.22], "ans": [4, 7, 8]},
     "",
@@ -140,27 +165,23 @@
       "lyric_jp": "小っちゃい大きい気にしない Jumpin' up higher！",
       "parts": [
         {"lyric": "Chicchai ookii ki ni shinai",
-          "range": [235.14, 238.72], "ans": []},
+          "range": [235.14, 241.81], "ans": []},
         {"lyric": "Jumpin’ up higher!",
-          "range": [238.72, 242.78], "ans": [4, 7, 8]}
+          "range": [241.11, 242.78], "ans": [4, 7, 8]}
       ]
     },
-    {
+    {"lyric": "Happii ichiban muri wo tsudzuken no wa batsu da!",
       "lyric_jp": "ハッピーいちばん ムリを続けんのは×だ！",
-      "parts": [
-        {"lyric": "Happii ichiban muri wo tsudzuken no wa batsu da!",
-          "range": [242.78, 248.45], "ans": [1, 2, 5]},
-        {"lyric": "(jumpin’ up higher!)",
-          "range": [248.45, 250.12], "ans": [4, 7, 8]}
-      ]
-    },
+      "range": [242.78, 250.12], "ans": [1, 2, 5]},
     {
       "lyric_jp": "こころから笑いあってJumpin' up higher！",
       "parts": [
+        {"lyric": "(Jumpin’ up higher!)",
+          "range": [250.12, 252.93], "ans": [4, 7, 8]},
         {"lyric": "Kokoro kara waraiatte",
-          "range": [250.12, 255.48], "ans": [3, 6, 9]},
+          "range": [252.23, 255.48], "ans": [3, 6, 9]},
         {"lyric": "Jumpin’ up higher!",
-          "range": [255.48, 280], "ans": []}
+          "range": [256.5, 259.98], "ans": []}
       ]
     }
   ]

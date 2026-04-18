@@ -4,10 +4,11 @@
   "id": "changeless",
   "group": "aqours",
   "added": "2026-04",
-  "hidden": true,
+  "hidden": false,
   "slots": [
 
   ],
+  "generated": "2026-04-15T01:42:09Z",
   "lines": [
     {"lyric": "Dare no wasuremono darou?",
       "lyric_jp": "誰の忘れ物だろう？",
@@ -37,13 +38,13 @@
     "",
     {"lyric": "Isoide ue wo mukanakucha",
       "lyric_jp": "急いで上を向かなくちゃ",
-      "range": [55.39, 61.73], "ans": [1, 5]},
+      "range": [55.39, 61.73], "ans": [1, 5], "diff": 2},
     {"lyric": "Kitto mata koboreru",
       "lyric_jp": "きっとまたこぼれる",
-      "range": [61.73, 68.22], "ans": [1, 5]},
+      "range": [61.73, 68.22], "ans": [1, 5], "diff": 2},
     {"lyric": "Aoi kisetsu ano hi e to kaeritaku naru",
       "lyric_jp": "青い季節 あの日へと帰りたくなる",
-      "range": [68.22, 79.58], "ans": [1, 5]},
+      "range": [68.22, 79.58], "ans": [1, 5], "diff": 2},
     "",
     {"lyric": "Koko de matte iru to tsutaetai keredo",
       "lyric_jp": "ここで待っていると 伝えたいけれど",
@@ -56,7 +57,7 @@
       "range": [100.9, 111.61], "ans": []},
     {"lyric": "Hitori de aruku umibe wa shiosai dake kikoeru",
       "lyric_jp": "ひとりで歩く海辺は 潮騒だけ聞こえる",
-      "range": [111.61, 125.82], "ans": []},
+      "range": [111.61, 123.33], "ans": []},
     "",
     {"lyric": "Chiisana kagayaki wa",
       "lyric_jp": "小さな輝きは",
@@ -96,7 +97,7 @@
       "range": [177.72, 190.44], "ans": [2]},
     {"lyric": "Daijoubu dakara",
       "lyric_jp": "だいじょうぶだから",
-      "range": [190.44, 219.04], "ans": [2]},
+      "range": [190.44, 193.73], "ans": [2]},
     "",
     {"lyric": "Koko de matte iru to tsutaetai keredo",
       "lyric_jp": "ここで待っていると 伝えたいけれど",
@@ -109,7 +110,7 @@
       "range": [240.35, 251.08], "ans": []},
     {"lyric": "Hitori de aruku umibe wa shiosai dake kikoeru",
       "lyric_jp": "ひとりで歩く海辺は 潮騒だけ聞こえる",
-      "range": [251.08, 265.33], "ans": []},
+      "range": [251.08, 262.18], "ans": []},
     "",
     {"lyric": "Itsuka",
       "lyric_jp": "いつか",
@@ -121,22 +122,22 @@
       "lyric_jp": "いつか会えるからと呟いた",
       "parts": [
         {"lyric": "Itsuka",
-          "range": [270.55, 271.89], "ans": [2]},
+          "range": [270.55, 273.07], "ans": [2]},
         {"lyric": "Aeru kara to tsubuyaita",
-          "range": [271.89, 278.69], "ans": [5]}
+          "range": [273.07, 278.69], "ans": [5]}
       ]
     },
     {
       "lyric_jp": "さあ君は 新しい道へ",
       "parts": [
         {"lyric": "Saa kimi wa",
-          "range": [278.69, 280.07], "ans": [5]},
+          "range": [278.69, 281.45], "ans": [5]},
         {"lyric": "Atarashii michi e",
-          "range": [280.07, 286.52], "ans": [1]}
+          "range": [281.45, 286.52], "ans": [1]}
       ]
     },
     {"lyric": "Itsuka mata aou yo",
       "lyric_jp": "いつかまた会おうよ",
-      "range": [286.52, 310], "ans": []}
+      "range": [286.52, 292.18], "ans": []}
   ]
 }

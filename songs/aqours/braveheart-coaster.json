@@ -10,6 +10,7 @@
   "slots": [
 
   ],
+  "generated": "2026-04-15T01:42:06Z",
   "lines": [
     {"lyric": "Takamatteku Wow!",
       "lyric_jp": "高まってく Wow!",
@@ -51,9 +52,9 @@
       "lyric_jp": "未知なる場所を愛する想いが 目覚めそうだよ",
       "parts": [
         {"lyric": "Michi naru basho wo aisuru omoi ga",
-          "range": [61.38, 65.46], "ans": []},
+          "range": [61.38, 67.05], "ans": []},
         {"lyric": "Mezamesou da yo",
-          "range": [65.46, 68.06], "ans": [1]}
+          "range": [66.35, 68.06], "ans": [1]}
       ]
     },
     {"lyric": "Futashikana ashita",
@@ -67,7 +68,7 @@
       "range": [74.14, 79.51], "ans": []},
     {"lyric": "Jibun no iro de tanoshimou!",
       "lyric_jp": "自分の色で楽しもう！",
-      "range": [79.51, 97.36], "ans": []},
+      "range": [79.51, 95.48], "ans": []},
     "",
     {"lyric": "Kesanaide yo Wow!",
       "lyric_jp": "消さないでよ Wow!",
@@ -110,9 +111,9 @@
       "lyric_jp": "予想以上のセカイ広がる それが冒険だ",
       "parts": [
         {"lyric": "Yosou ijou no sekai hirogaru",
-          "range": [141.96, 146.63], "ans": []},
+          "range": [141.96, 146], "ans": []},
         {"lyric": "Sore ga bouken da",
-          "range": [146.63, 148.61], "ans": [2]}
+          "range": [146, 148.61], "ans": [2]}
       ]
     },
     {"lyric": "Odoroki no ashita",
@@ -126,7 +127,7 @@
       "range": [154.44, 160.04], "ans": []},
     {"lyric": "Jibun no yume ga wakatte kuru!",
       "lyric_jp": "自分の夢が分かってくる！",
-      "range": [160.04, 186.64], "ans": []},
+      "range": [160.04, 184.36], "ans": []},
     "",
     {"lyric": "Braveheart Jet Coaster",
       "lyric_jp": "Braveheart Jet Coaster",
@@ -142,18 +143,18 @@
       "range": [201.81, 205.06], "ans": [1]},
     {"lyric": "Kimi no naka ni mo Braveheart",
       "lyric_jp": "君の中にも Braveheart",
-      "range": [205.06, 208.26], "ans": [1, 2]},
+      "range": [205.06, 208.26], "ans": [1, 2], "diff": 2},
     {
       "lyric_jp": "未知なる場所を愛する想いが 目覚めそうだよ",
       "parts": [
         {"lyric": "Michi naru basho wo aisuru omoi ga",
-          "range": [208.26, 212.32], "ans": []},
+          "range": [208.26, 213.91], "ans": []},
         {"lyric": "Mezamesou da yo",
-          "range": [212.32, 214.95], "ans": [5]}
+          "range": [213.21, 214.82], "ans": [5]},
+        {"lyric": "(Ah~ Yeah!)",
+          "range": [214.35, 214.95], "ans": []}
       ]
     },
-    {"lyric": "(Ah~ Yeah!)",
-      "range": [212.95, 214.95], "ans": []},
     {"lyric": "Futashikana ashita",
       "lyric_jp": "不確かな明日",
       "range": [214.95, 217.71], "ans": []},

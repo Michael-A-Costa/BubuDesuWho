@@ -1,5 +1,6 @@
 {
   "group": "aqours",
+  "legacy": true,
   "released": "2018-01-17",
   "name": "WATER BLUE NEW WORLD",
   "mp3": "sound/water_blue_new_world.mp3",

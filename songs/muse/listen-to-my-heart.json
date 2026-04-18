@@ -1,0 +1,359 @@
+{
+  "name": "Listen to my heart!!",
+  "ogg": "sound/listen_to_my_heart.ogg",
+  "id": "listen-to-my-heart",
+  "group": "muse",
+  "added": "2026-04",
+  "hidden": false,
+  "slots": [
+
+  ],
+  "generated": "2026-04-16T04:36:25Z",
+  "lines": [
+    {"lyric": "Asobou! Hajimemashite no Happy tune",
+      "lyric_jp": "遊ぼう！ 初めましての Happy tune",
+      "range": [0.06, 3.68], "ans": []},
+    {"lyric": "Asobou! Kimi to boku to ga deau",
+      "lyric_jp": "遊ぼう！ 君と僕とが出会う",
+      "range": [3.68, 6.84], "ans": []},
+    {
+      "lyric_jp": "それは （予感） それはキセキ",
+      "parts": [
+        {"lyric": "Sore wa",
+          "range": [6.84, 8.04], "ans": [9]},
+        {"lyric": "(yokan)",
+          "range": [7.34, 8.6], "ans": [5]},
+        {"lyric": "Sore wa kiseki",
+          "range": [7.9, 9.94], "ans": [8]}
+      ]
+    },
+    {
+      "lyric_jp": "夢の （鼓動） 夢が （見たい）",
+      "parts": [
+        {"lyric": "Yume no",
+          "range": [9.94, 10.96], "ans": [9]},
+        {"lyric": "(kodou)",
+          "range": [10.26, 11.63], "ans": [8]},
+        {"lyric": "Yume ga",
+          "range": [10.93, 12.29], "ans": [5]},
+        {"lyric": "(mitai)",
+          "range": [11.59, 12.54], "ans": [9]}
+      ]
+    },
+    {
+      "lyric_jp": "君と （僕の） キセキ",
+      "parts": [
+        {"lyric": "Kimi to",
+          "range": [12.54, 13.25], "ans": [8]},
+        {"lyric": "Kiseki",
+          "range": [13.25, 14.31], "ans": [8]},
+        {"lyric": "(boku no)",
+          "range": [13.77, 14.84], "ans": [5]}
+      ]
+    },
+    {"lyric": "Hajimaru yo oide Listen to my heart!!",
+      "lyric_jp": "始まるよおいで Listen to my heart!!",
+      "range": [16.22, 20.34], "ans": []},
+    "",
+    {"lyric": "Kyou wa kyou no nikkoniko de",
+      "lyric_jp": "今日は今日のにっこにこで",
+      "range": [20.34, 22.19], "ans": [9]},
+    {"lyric": "Daikoufun no kokoro rinrin",
+      "lyric_jp": "大興奮のココロりんりん",
+      "range": [22.19, 23.52], "ans": [5]},
+    {"lyric": "Hanabanashii konna misshon",
+      "lyric_jp": "はなばなしいこんなミッション",
+      "range": [23.52, 25.24], "ans": [8]},
+    {"lyric": "Otodokemasu!",
+      "lyric_jp": "お届けます！",
+      "range": [25.24, 55.68], "ans": []},
+    "",
+    {"lyric": "Minna wa nani wo kikitai?",
+      "lyric_jp": "みんなはなにを聴きたい？",
+      "range": [55.68, 58.69], "ans": [9]},
+    {"lyric": "Ota yori kudasai",
+      "lyric_jp": "おたよりください",
+      "range": [58.69, 61.84], "ans": [5]},
+    {"lyric": "Minna to nani wo shichaou?",
+      "lyric_jp": "みんなとなにをしちゃおう？",
+      "range": [61.84, 65.1], "ans": [8]},
+    {"lyric": "Iroiro boshuuchuu",
+      "lyric_jp": "いろいろ募集中っ",
+      "range": [65.1, 67.66], "ans": [9]},
+    "",
+    {
+      "lyric_jp": "楽しいことで寂しいきもち 上書きしようね",
+      "parts": [
+        {"lyric": "Tanoshii koto de sabishii",
+          "range": [67.66, 70.1], "ans": [5]},
+        {"lyric": "Kimochi uwagaki shiyou ne",
+          "range": [71.54, 73.86], "ans": [8]}
+      ]
+    },
+    {"lyric": "Warai tobasu basho ni shitai",
+      "lyric_jp": "笑い飛ばす場所にしたい",
+      "range": [73.86, 77.34], "ans": [9]},
+    {
+      "lyric_jp": "おしゃべりはクスリかもよ？",
+      "parts": [
+        {"lyric": "Oshaberi wa kusuri",
+          "range": [77.34, 80.45], "ans": [5]},
+        {"lyric": "Kamo yo?",
+          "range": [79.75, 81.32], "ans": []}
+      ]
+    },
+    "",
+    {"lyric": "Kyou wa kyou no aoi osora",
+      "lyric_jp": "今日は今日の青いお空",
+      "range": [81.32, 82.81], "ans": [9]},
+    {"lyric": "Daikoufun de katarerippii",
+      "lyric_jp": "大興奮で語れりっぴー",
+      "range": [82.81, 84.41], "ans": [5]},
+    {"lyric": "Shikamettsura nante baibai",
+      "lyric_jp": "しかめっつらなんてバイバイ",
+      "range": [84.41, 85.96], "ans": [8]},
+    {"lyric": "Tomarimasen!",
+      "lyric_jp": "止まりません！",
+      "range": [85.96, 86.94], "ans": []},
+    "",
+    {"lyric": "Tsuyoki omoi wa kuchi ni sureba kanau",
+      "lyric_jp": "強き想いは 口にすればかなう",
+      "range": [86.94, 92.54], "ans": []},
+    {
+      "lyric_jp": "願い （話そう） ずっと （話そう）",
+      "parts": [
+        {"lyric": "Negai",
+          "range": [92.54, 93.62], "ans": [9]},
+        {"lyric": "(hanasou)",
+          "range": [93.62, 95.65], "ans": [5]},
+        {"lyric": "Zutto",
+          "range": [94.95, 96.17], "ans": [9]},
+        {"lyric": "(hanasou)",
+          "range": [95.47, 96.42], "ans": [8]}
+      ]
+    },
+    {"lyric": "Tsukameru yo ne kitto itsuka wa",
+      "lyric_jp": "つかめるよね きっといつかは",
+      "range": [96.42, 102.68], "ans": []},
+    "",
+    {"lyric": "Utaou! Odoritaku naru Happy tune",
+      "lyric_jp": "歌おう！ 踊りたくなる Happy tune",
+      "range": [102.68, 106.08], "ans": []},
+    {"lyric": "Utaou! Kimi to boku to no deai",
+      "lyric_jp": "歌おう！ 君と僕との出会い",
+      "range": [106.08, 109.32], "ans": []},
+    {
+      "lyric_jp": "それは （予感） それはキセキ",
+      "parts": [
+        {"lyric": "Sore wa",
+          "range": [109.32, 110.25], "ans": [9]},
+        {"lyric": "(yokan)",
+          "range": [109.55, 111], "ans": [5]},
+        {"lyric": "Sore wa kiseki",
+          "range": [110.3, 112.4], "ans": [8]}
+      ]
+    },
+    {"lyric": "Fushigi dakedo nakayoshi",
+      "lyric_jp": "不思議だけどなかよし",
+      "range": [112.4, 114.9], "ans": []},
+    {"lyric": "Asobou! Hajimemashite no Happy tune",
+      "lyric_jp": "遊ぼう！ 初めましての Happy tune",
+      "range": [114.9, 118.83], "ans": []},
+    {"lyric": "Asobou! Kimi to boku to ga deau",
+      "lyric_jp": "遊ぼう！ 君と僕とが出会う",
+      "range": [118.83, 122.02], "ans": []},
+    {
+      "lyric_jp": "それは （予感） それはキセキ",
+      "parts": [
+        {"lyric": "Sore wa",
+          "range": [122.02, 123.24], "ans": [5]},
+        {"lyric": "(yokan)",
+          "range": [122.54, 123.82], "ans": [8]},
+        {"lyric": "Sore wa kiseki",
+          "range": [123.12, 125.22], "ans": [9]}
+      ]
+    },
+    {
+      "lyric_jp": "夢の （鼓動） 夢が （見たい）",
+      "parts": [
+        {"lyric": "Yume no",
+          "range": [125.22, 126.35], "ans": [5]},
+        {"lyric": "(kodou)",
+          "range": [125.65, 126.94], "ans": [9]},
+        {"lyric": "Yume ga",
+          "range": [126.24, 128.07], "ans": [8]},
+        {"lyric": "(mitai)",
+          "range": [127.37, 128.34], "ans": [5]}
+      ]
+    },
+    {
+      "lyric_jp": "君と （僕の） キセキ",
+      "parts": [
+        {"lyric": "Kimi to",
+          "range": [128.34, 128.76], "ans": [9]},
+        {"lyric": "Kiseki",
+          "range": [128.76, 129.53], "ans": [9]},
+        {"lyric": "(boku no)",
+          "range": [128.83, 130.08], "ans": [8]}
+      ]
+    },
+    {"lyric": "Hajimaru yo oide Listen to my heart!!",
+      "lyric_jp": "始まるよおいで Listen to my heart!!",
+      "range": [131.64, 135.69], "ans": []},
+    "",
+    "[next-col]",
+    {"lyric": "Kyou wa kyou no nikkoniko de",
+      "lyric_jp": "今日は今日のにっこにこで",
+      "range": [135.69, 137.04], "ans": [9]},
+    {"lyric": "Daikoufun no kokoro rinrin",
+      "lyric_jp": "大興奮のココロりんりん",
+      "range": [137.04, 138.88], "ans": [5]},
+    {"lyric": "Hanabanashii konna misshon",
+      "lyric_jp": "はなばなしいこんなミッション",
+      "range": [138.88, 140.49], "ans": [8]},
+    {"lyric": "Otodokemasu!",
+      "lyric_jp": "お届けます！",
+      "range": [140.49, 143.48], "ans": []},
+    "",
+    {"lyric": "Minna wa dokoka ikitai?",
+      "lyric_jp": "みんなはどこか行きたい？",
+      "range": [170.52, 173.4], "ans": [8]},
+    {"lyric": "Raibu wa dou ka na",
+      "lyric_jp": "ライブはどうかな",
+      "range": [173.4, 176.76], "ans": [9]},
+    {"lyric": "Minna ga kitara ureshii!",
+      "lyric_jp": "みんなが来たらうれしい！",
+      "range": [176.76, 179.88], "ans": [5]},
+    {"lyric": "Bokutachi no raibu",
+      "lyric_jp": "僕達のライブ",
+      "range": [179.88, 182.9], "ans": [8]},
+    "",
+    {"lyric": "Ureshii koto de tsumaran nichijou",
+      "lyric_jp": "嬉しいことでつまらん日常",
+      "range": [182.9, 186.06], "ans": [9]},
+    {"lyric": "Risetto shitai ne",
+      "lyric_jp": "リセットしたいね",
+      "range": [186.06, 189.08], "ans": [5]},
+    {"lyric": "Oto ga takusan hikari no naka",
+      "lyric_jp": "音がたくさん光の中",
+      "range": [189.08, 192.62], "ans": [8]},
+    {
+      "lyric_jp": "しあわせがあふれ出すよ",
+      "parts": [
+        {"lyric": "Shiawase ga afuredasu",
+          "range": [192.62, 194.22], "ans": [9]},
+        {"lyric": "Yo",
+          "range": [193.77, 194.62], "ans": []},
+        {"lyric": "Ashita wa ashita no aoi osora",
+          "range": [193.92, 196.37], "ans": [9]}
+      ]
+    },
+    {"lyric": "Kaihoukan wo katarerippii",
+      "lyric_jp": "開放感を語れりっぴー",
+      "range": [197.91, 199.85], "ans": [5]},
+    {"lyric": "Yurikamome notte GOO GOO!",
+      "lyric_jp": "ゆりかもめ乗ってゴーゴー！",
+      "range": [199.85, 201.28], "ans": [8]},
+    {"lyric": "Tomaremasen!",
+      "lyric_jp": "止まれません！",
+      "range": [201.28, 202.12], "ans": []},
+    "",
+    {"lyric": "Atsuki risou ga mune wo kogasu toki wa",
+      "lyric_jp": "熱き理想が 胸をこがす時は",
+      "range": [202.12, 208.34], "ans": [8]},
+    {
+      "lyric_jp": "願い （話そう） ずっと （話そう）",
+      "parts": [
+        {"lyric": "Negai",
+          "range": [208.34, 208.78], "ans": [5]},
+        {"lyric": "(hanasou)",
+          "range": [208.39, 208.93], "ans": [8]},
+        {"lyric": "Zutto",
+          "range": [208.48, 208.98], "ans": [5]},
+        {"lyric": "(hanasou)",
+          "range": [210.68, 211.7], "ans": [9]}
+      ]
+    },
+    {"lyric": "Tsukameru yo ne kitto itsuka wa",
+      "lyric_jp": "つかめるよね きっといつかは",
+      "range": [211.75, 217.78], "ans": []},
+    "",
+    {"lyric": "Utaou! Odoritaku naru Happy tune",
+      "lyric_jp": "歌おう！ 踊りたくなる Happy tune",
+      "range": [217.78, 221.24], "ans": []},
+    {"lyric": "Utaou! Kimi to boku to no deai",
+      "lyric_jp": "歌おう！ 君と僕との出会い",
+      "range": [221.24, 224.48], "ans": []},
+    {
+      "lyric_jp": "それは （予感） それはキセキ",
+      "parts": [
+        {"lyric": "Sore wa",
+          "range": [224.48, 225.45], "ans": [8]},
+        {"lyric": "(yokan)",
+          "range": [224.75, 226.27], "ans": [9]},
+        {"lyric": "Sore wa kiseki",
+          "range": [225.57, 227.57], "ans": [5]}
+      ]
+    },
+    {"lyric": "Fushigi dakedo nakayoshi",
+      "lyric_jp": "不思議だけどなかよし",
+      "range": [227.57, 230.6], "ans": []},
+    {"lyric": "Asobou! Hajimemashite no Happy tune",
+      "lyric_jp": "遊ぼう！ 初めましての Happy tune",
+      "range": [230.6, 233.91], "ans": []},
+    {"lyric": "Asobou! Kimi to boku to ga deau",
+      "lyric_jp": "遊ぼう！ 君と僕とが出会う",
+      "range": [233.91, 237.24], "ans": []},
+    {
+      "lyric_jp": "それは （予感） それはキセキ",
+      "parts": [
+        {"lyric": "Sore wa",
+          "range": [237.24, 238.45], "ans": [9]},
+        {"lyric": "(yokan)",
+          "range": [237.75, 239.02], "ans": [5]},
+        {"lyric": "Sore wa kiseki",
+          "range": [238.32, 240.4], "ans": [8]}
+      ]
+    },
+    {
+      "lyric_jp": "夢の （鼓動） 夢が （見たい）",
+      "parts": [
+        {"lyric": "Yume no",
+          "range": [240.4, 241.26], "ans": [9]},
+        {"lyric": "(kodou)",
+          "range": [241.26, 242.67], "ans": [8]},
+        {"lyric": "Yume ga",
+          "range": [242.05, 243.07], "ans": [5]},
+        {"lyric": "(mitai)",
+          "range": [242.37, 243.4], "ans": [9]}
+      ]
+    },
+    {
+      "lyric_jp": "君と （僕の） キセキ",
+      "parts": [
+        {"lyric": "Kimi to",
+          "range": [243.4, 243.93], "ans": [8]},
+        {"lyric": "Kiseki",
+          "range": [243.93, 244.81], "ans": [8]},
+        {"lyric": "(boku no)",
+          "range": [244.11, 245.28], "ans": [5]}
+      ]
+    },
+    {"lyric": "Hajimaru yo oide Listen to my heart!!",
+      "lyric_jp": "始まるよおいで Listen to my heart!!",
+      "range": [246.64, 250.82], "ans": []},
+    "",
+    {"lyric": "Ashita wa ashita de nikkoniko da",
+      "lyric_jp": "明日は明日でにっこにこだ",
+      "range": [250.82, 252.53], "ans": [9]},
+    {"lyric": "Kaihoukan de kokoro rinrin",
+      "lyric_jp": "開放感でココロりんりん",
+      "range": [252.53, 254.05], "ans": [5]},
+    {"lyric": "Yuriyuri no genki misshon",
+      "lyric_jp": "ゆりゆりの元気ミッション",
+      "range": [254.05, 255.5], "ans": [8]},
+    {"lyric": "Otodokemasu!",
+      "lyric_jp": "お届けます！",
+      "range": [255.5, 258.7], "ans": []}
+  ]
+}

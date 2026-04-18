@@ -2,6 +2,7 @@
   "name": "Shunjou Romantic",
   "id": "shunjou",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/shunjou_romantic.mp3",
   "ogg": "sound/shunjou_romantic.ogg",
   "mapping": [

@@ -4,6 +4,7 @@
   "mp3": "sound/bokura_no_live_kimi_to_no_life.mp3",
   "id": "borarara",
   "group": "muse",
+  "legacy": true,
   "mapping": [
     {
       "range": [

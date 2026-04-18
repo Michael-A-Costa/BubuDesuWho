@@ -1,6 +1,7 @@
 {
   "name": "Angelic Angel",
   "group": "muse",
+  "legacy": true,
   "mp3": "sound/angelic_angel.mp3",
   "ogg": "sound/angelic_angel.ogg",
   "id": "angel",

@@ -2,6 +2,7 @@
   "name": "P.S. no Mukougawa",
   "id": "mukougawa",
   "group": "aqours",
+  "legacy": true,
   "released": "2017-03-24",
   "subunit": "azalea",
   "mp3": "sound/ps_no_mukougawa.mp3",

@@ -1,0 +1,446 @@
+{
+  "name": " Mogyutto \"love\" de Sekkin Chuu!",
+  "ogg": "sound/mogyutto_love_de_sekkinchuu.ogg",
+  "id": "mogyu",
+  "group": "muse",
+  "legacy": true,
+  "hidden": false,
+  "slots": [
+    {"command": "group", "members": [16, 17]},
+    {"command": "group", "members": [21, 22]},
+    {"command": "group", "members": [93, 94, 95, 96]}
+  ],
+  "generated": "2026-04-16T03:55:29Z",
+  "added": "2026-04",
+  "lines": [
+    {
+      "lyric_jp": "だって （ぎゅっと） \"love\"で接近！ （もっと！）",
+      "parts": [
+        {"lyric": "Datte...",
+          "range": [3.67, 5.32], "ans": [3]},
+        {"lyric": "(gyutto...)",
+          "range": [4.62, 5.57], "ans": []},
+        {"lyric": "“love” de sekkin!",
+          "range": [6.39, 7.82], "ans": [4]},
+        {"lyric": "(motto!)",
+          "range": [8.69, 10.08], "ans": []}
+      ]
+    },
+    {
+      "lyric_jp": "もっと （だって） ドキリ焦っちゃう！ （もっぎゅー！）",
+      "parts": [
+        {"lyric": "Motto...",
+          "range": [10.98, 12.27], "ans": [5]},
+        {"lyric": "(Datte...)",
+          "range": [11.57, 12.48], "ans": []},
+        {"lyric": "Dokiri asecchau!",
+          "range": [13.04, 17.7], "ans": [9]},
+        {"lyric": "(mo! gyuu!)",
+          "range": [17, 17.95], "ans": []}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "だって （ぎゅっと） \"pure\"な冒険！ （もっと！）",
+      "parts": [
+        {"lyric": "Datte...",
+          "range": [17.95, 19.27], "ans": [6]},
+        {"lyric": "(gyutto...)",
+          "range": [18.57, 19.59], "ans": []},
+        {"lyric": "“pure” na bouken",
+          "range": [20.25, 21.87], "ans": [2]},
+        {"lyric": "(motto!)",
+          "range": [22.73, 23.96], "ans": []}
+      ]
+    },
+    {
+      "lyric_jp": "もっと （やっぱ） ぴゅあらぶもっと （もっぎゅー！）",
+      "parts": [
+        {"lyric": "Motto...",
+          "range": [24.81, 26.02], "ans": [7]},
+        {"lyric": "(yappa...)",
+          "range": [25.32, 26.94], "ans": []},
+        {"lyric": "Pyua rabu motto...",
+          "range": [26.24, 46.53], "ans": [1]},
+        {"lyric": "(mo! gyuu!)",
+          "range": [45.83, 46.78], "ans": []}
+      ]
+    },
+    "",
+    {"lyric": "Fudan yori sowasowa itsumo yori kawaiku",
+      "lyric_jp": "普段よりそわそわ いつもより可愛く",
+      "range": [46.78, 53.55], "ans": [5, 8, 9]},
+    {"lyric": "Doushitara “love”’x*\"love”",
+      "lyric_jp": "どうしたら\"love\"☆\"love\"",
+      "range": [53.55, 56.44], "ans": [5, 8, 9]},
+    {
+      "lyric_jp": "だって （今日は） 二度と来ない",
+      "parts": [
+        {"lyric": "Datte...",
+          "range": [56.44, 58.08], "ans": [8]},
+        {"lyric": "(kyou wa)",
+          "range": [57.38, 58.32], "ans": [5, 9]},
+        {"lyric": "Nidoto konai",
+          "range": [58.92, 60.52], "ans": [5, 8, 9]}
+      ]
+    },
+    "",
+    {"lyric": "Koi no mahou dokoka de shinjitecha ikenai?",
+      "lyric_jp": "恋の魔法どこかで 信じてちゃいけない？",
+      "range": [60.52, 67.45], "ans": [2, 6, 7]},
+    {"lyric": "Daisuki no kiseki wo",
+      "lyric_jp": "ダイスキの奇跡を",
+      "range": [67.45, 70.08], "ans": [2, 6, 7]},
+    {
+      "lyric_jp": "どうか （今日は） 起こしてよ",
+      "parts": [
+        {"lyric": "Dou ka...",
+          "range": [70.08, 71.61], "ans": [7]},
+        {"lyric": "(kyou wa)",
+          "range": [70.91, 72.79], "ans": [2, 6]},
+        {"lyric": "Okoshite yo",
+          "range": [72.09, 74.41], "ans": [2, 6, 7]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "（そして） 純情は正義！",
+      "parts": [
+        {"lyric": "(Soshite)",
+          "range": [74.77, 75.27], "ans": []},
+        {"lyric": "Junjou wa seigi",
+          "range": [74.41, 77.06], "ans": [2]}
+      ]
+    },
+    {
+      "lyric_jp": "（純粋よ） キミよ振り向いて",
+      "parts": [
+        {"lyric": "(junsui yo)",
+          "range": [77.46, 78.48], "ans": []},
+        {"lyric": "Kimi yo furimuite",
+          "range": [77.06, 80.85], "ans": [6]}
+      ]
+    },
+    {
+      "lyric_jp": "（そして） だんだん心に",
+      "parts": [
+        {"lyric": "(Soshite)",
+          "range": [81.51, 81.99], "ans": []},
+        {"lyric": "Dandan kokoro ni",
+          "range": [80.85, 84.3], "ans": [5]}
+      ]
+    },
+    {
+      "lyric_jp": "あまい （夢は） いかが？ （夢を） めしあがれ",
+      "parts": [
+        {"lyric": "Amai",
+          "range": [84.3, 85.4], "ans": [9]},
+        {"lyric": "(yume wa)",
+          "range": [84.7, 86.27], "ans": []},
+        {"lyric": "Ikaga?",
+          "range": [85.57, 87.15], "ans": [8]},
+        {"lyric": "(yume wo)",
+          "range": [86.45, 87.56], "ans": []},
+        {"lyric": "Meshiagare",
+          "range": [88.34, 92.18], "ans": [3]}
+      ]
+    },
+    "",
+    {"lyric": "Ureshii? Itoshii?",
+      "lyric_jp": "嬉しい？ 愛しい？",
+      "range": [92.18, 94.56], "ans": []},
+    {"lyric": "Sekaiichi happii na koi",
+      "lyric_jp": "世界一ハッピーな恋",
+      "range": [94.56, 99.98], "ans": []},
+    {"lyric": "Misete misete dou ka misete",
+      "lyric_jp": "見せて見せてっどうか見せてっ",
+      "range": [99.98, 103.85], "ans": []},
+    {"lyric": "Unto, ganbacchau!",
+      "lyric_jp": "うんと がんばっちゃう！",
+      "range": [103.85, 106.68], "ans": []},
+    {"lyric": "Ureshii? Itoshii? Ijirashii?",
+      "lyric_jp": "嬉しい？ 愛しい？ いじらしい？",
+      "range": [106.68, 109.91], "ans": []},
+    {
+      "lyric_jp": "すきよ （すごく） っすきよ",
+      "parts": [
+        {"lyric": "Suki yo...",
+          "range": [109.91, 110.81], "ans": [5, 8, 9]},
+        {"lyric": "Sugoku...)",
+          "range": [111.33, 112.12], "ans": [1, 3, 4]},
+        {"lyric": "Suki yo...",
+          "range": [111.42, 112.88], "ans": [2, 6, 7]}
+      ]
+    },
+    {
+      "lyric_jp": "（つかまえて） ぎゅっと （もっと） 私を見て",
+      "parts": [
+        {"lyric": "(Tsukamaete)",
+          "range": [113.46, 114.76], "ans": [5, 8, 9]},
+        {"lyric": "Gyutto",
+          "range": [112.88, 116.11], "ans": [1, 3, 4]},
+        {"lyric": "(motto)",
+          "range": [115.45, 116.16], "ans": [2, 6, 7]},
+        {"lyric": "Watashi wo mite",
+          "range": [116.74, 121.28], "ans": []}
+      ]
+    },
+    {"lyric": "“love” de sekkin! Datte daisuki",
+      "lyric_jp": "\"Love\"で接近！ だって大好き",
+      "range": [121.28, 126.36], "ans": []},
+    "",
+    {"lyric": "Nanika chigau dokidoki",
+      "lyric_jp": "なにか違うどきどき",
+      "range": [140.1, 143.37], "ans": [4]},
+    {"lyric": "Dare wo sasou shiritai",
+      "lyric_jp": "だれを誘う知りたい",
+      "range": [143.37, 147.21], "ans": [1]},
+    {"lyric": "Akuma demo “pure’*“pure”",
+      "lyric_jp": "あくまでも\"pure\"☆\"pure\"",
+      "range": [147.21, 149.53], "ans": [3]},
+    {
+      "lyric_jp": "やっぱ （ヘンね） 顔赤い",
+      "parts": [
+        {"lyric": "Yappa...",
+          "range": [149.53, 151.34], "ans": [4]},
+        {"lyric": "(HEN ne)",
+          "range": [150.64, 151.49], "ans": [1, 3]},
+        {"lyric": "Kao akai",
+          "range": [151.99, 153.81], "ans": [1, 3, 4]}
+      ]
+    },
+    "",
+    {"lyric": "Koi wa mahou ima kara hajimemashou futari de!",
+      "lyric_jp": "恋は魔法いまから 始めましょふたりで！",
+      "range": [153.81, 160.72], "ans": [2, 6, 7]},
+    {"lyric": "Hajirai mo yuuki de",
+      "lyric_jp": "ハジライも勇気で",
+      "range": [160.72, 163.47], "ans": [5, 8, 9]},
+    {
+      "lyric_jp": "ぐっばい （ヘンね） 大胆ね",
+      "parts": [
+        {"lyric": "Gubbai...",
+          "range": [163.47, 165.21], "ans": [2, 6, 7]},
+        {"lyric": "(HEN ne)",
+          "range": [164.51, 166.12], "ans": [5, 8, 9]},
+        {"lyric": "Daitan ne",
+          "range": [165.42, 166.99], "ans": [2, 6, 7]},
+        {"lyric": "(Kiite)",
+          "range": [166.94, 167.54], "ans": []}
+      ]
+    },
+    "",
+    {"lyric": "Jounetsu de shoubu!",
+      "lyric_jp": "（きいて） 情熱で勝負！",
+      "range": [167.54, 170.96], "ans": [5]},
+    {
+      "lyric_jp": "（饒舌に） キミに語ろうか",
+      "parts": [
+        {"lyric": "(jouzetsu ni)",
+          "range": [171.32, 171.74], "ans": []},
+        {"lyric": "Kimi ni katarou ka",
+          "range": [170.96, 174.24], "ans": [9]},
+        {"lyric": "(Kiite)",
+          "range": [173.54, 174.49], "ans": []}
+      ]
+    },
+    {"lyric": "Jinjin takamaru",
+      "lyric_jp": "（きいて） じんじん高まる",
+      "range": [174.49, 177.61], "ans": [2]},
+    {
+      "lyric_jp": "あつい （想い） とどけ！ （想い） うけとめて",
+      "parts": [
+        {"lyric": "Atsui",
+          "range": [177.61, 178.05], "ans": [6]},
+        {"lyric": "(omoi)",
+          "range": [178.3, 179.47], "ans": []},
+        {"lyric": "Todoke!",
+          "range": [178.77, 180.43], "ans": [7]},
+        {"lyric": "(omoi)",
+          "range": [179.73, 180.83], "ans": []},
+        {"lyric": "Uketomete",
+          "range": [181.45, 186.14], "ans": [4]}
+      ]
+    },
+    "",
+    "[next-col]",
+    {"lyric": "Agetai! Kimetai!",
+      "lyric_jp": "あげたい！ 決めたい！",
+      "range": [186.14, 188.01], "ans": []},
+    {"lyric": "Sekaijuu rakki ni naare",
+      "lyric_jp": "世界中ラッキーになあれ",
+      "range": [188.01, 193.5], "ans": []},
+    {"lyric": "Mieta mieta mirai mieta",
+      "lyric_jp": "見えた見えたっみらい見えたっ",
+      "range": [193.5, 197.19], "ans": []},
+    {"lyric": "Hontou, kou nacchau?",
+      "lyric_jp": "ほんと こうなっちゃう？",
+      "range": [197.19, 199.59], "ans": []},
+    {"lyric": "Agetai! Kimetai! Ukaretai!",
+      "lyric_jp": "あげたい！ 決めたい！ 浮かれたい！",
+      "range": [199.59, 202.99], "ans": []},
+    {
+      "lyric_jp": "いてね （ここに） いてね",
+      "parts": [
+        {"lyric": "Ite ne...",
+          "range": [202.99, 203.99], "ans": [2, 6, 7]},
+        {"lyric": "(koko ni...)",
+          "range": [204.73, 205.23], "ans": [5, 8, 9]},
+        {"lyric": "Ite ne...",
+          "range": [205.59, 206.09], "ans": [1, 3, 4]}
+      ]
+    },
+    {
+      "lyric_jp": "（うろたえちゃ） やなの （だから） 私と来て",
+      "parts": [
+        {"lyric": "(Urotaecha)",
+          "range": [206.79, 208.01], "ans": [2, 6, 7]},
+        {"lyric": "Ya na no",
+          "range": [205.94, 208.39], "ans": [5, 8, 9]},
+        {"lyric": "(dakara)",
+          "range": [207.69, 210.49], "ans": [1, 3, 4]},
+        {"lyric": "Watashi to kite",
+          "range": [209.79, 214.33], "ans": []}
+      ]
+    },
+    {"lyric": "“pure” na bouken! Yappa koi desho",
+      "lyric_jp": "\"Pure\"な冒険！ やっぱ恋でしょ",
+      "range": [214.33, 218.23], "ans": []},
+    "",
+    {
+      "lyric_jp": "ヘンね （やっぱ） \"pure\"な冒険！ （ぴゅっと！）",
+      "parts": [
+        {"lyric": "HEN ne...",
+          "range": [218.23, 219.42], "ans": [7]},
+        {"lyric": "(yappa...)",
+          "range": [218.72, 219.67], "ans": []},
+        {"lyric": "“pure” na bouken!",
+          "range": [220.55, 222.01], "ans": [4]},
+        {"lyric": "(byutto!)",
+          "range": [222.79, 224.27], "ans": []}
+      ]
+    },
+    {
+      "lyric_jp": "ヘンね （やっぱ） クラリ困っちゃう （ぱっぴゅー！）",
+      "parts": [
+        {"lyric": "HEN ne...",
+          "range": [225.16, 226.32], "ans": [8]},
+        {"lyric": "(yappa...)",
+          "range": [225.62, 226.6], "ans": []},
+        {"lyric": "Kurari komacchau",
+          "range": [227.26, 228.94], "ans": [3]},
+        {"lyric": "(pa! pyuu!)",
+          "range": [229.6, 230.88], "ans": []}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "あげたい！ 決めたい！ (I love you)",
+      "parts": [
+        {"lyric": "(kyou wa... mo! gyuu!)",
+          "range": [260.3, 260.77], "ans": []},
+        {"lyric": "(gyutto... mo! gyuu!)",
+          "range": [260.61, 261.08], "ans": []},
+        {"lyric": "(kyou wa... mo! gyuu!)",
+          "range": [260.87, 261.37], "ans": []},
+        {"lyric": "(gyutto... mo! gyuu!)",
+          "range": [261.18, 261.79], "ans": []},
+        {"lyric": "Agetai! Kimetai!",
+          "range": [261.23, 261.85], "ans": [1]},
+        {"lyric": "Watashitachi kyou no tame ni",
+          "range": [261.85, 262.42], "ans": [1]}
+      ]
+    },
+    "",
+    {"lyric": "“pure” na “love” de “pure” de “love” na honki",
+      "lyric_jp": "\"Pure\"な\"love\"で (Happy love)",
+      "range": [267.87, 269.35], "ans": [1]},
+    {"lyric": "I miss you!!",
+      "lyric_jp": "本気 I miss you!! (Be with you sweet love baby)",
+      "range": [270.77, 274.25], "ans": [1]},
+    "",
+    {"lyric": "Ureshii? Itoshii?",
+      "lyric_jp": "嬉しい？ 愛しい？",
+      "range": [274.25, 276.37], "ans": []},
+    {"lyric": "Sekaiichi happii na koi",
+      "lyric_jp": "世界一ハッピーな恋",
+      "range": [276.37, 281.17], "ans": []},
+    {"lyric": "Misete misete dou ka misete",
+      "lyric_jp": "見せて見せてっどうか見せてっ",
+      "range": [281.17, 285.25], "ans": []},
+    {"lyric": "Unto, ganbacchau!",
+      "lyric_jp": "うんと がんばっちゃう！",
+      "range": [285.25, 287.9], "ans": []},
+    {"lyric": "Ureshii? Itoshii? Ijirashii?",
+      "lyric_jp": "嬉しい？ 愛しい？ いじらしい？",
+      "range": [287.9, 291.16], "ans": []},
+    {
+      "lyric_jp": "すきよ （すごく） っすきよ",
+      "parts": [
+        {"lyric": "Suki yo...",
+          "range": [291.16, 291.98], "ans": [5, 8, 9]},
+        {"lyric": "Sugoku...)",
+          "range": [292.86, 293.51], "ans": [1, 3, 4]},
+        {"lyric": "Suki yo...",
+          "range": [292.91, 294.04], "ans": [2, 6, 7]}
+      ]
+    },
+    {
+      "lyric_jp": "（つかまえて） ぎゅっと （もっと） 私を見て",
+      "parts": [
+        {"lyric": "(Tsukamaete)",
+          "range": [294.74, 296.06], "ans": [5, 8, 9]},
+        {"lyric": "Gyutto",
+          "range": [294.04, 297.46], "ans": [1, 3, 4]},
+        {"lyric": "(motto)",
+          "range": [296.76, 298.24], "ans": [2, 6, 7]},
+        {"lyric": "Watashi wo mite",
+          "range": [297.54, 302.07], "ans": [1]}
+      ]
+    },
+    {"lyric": "“love” de sekkin! Datte daisuki",
+      "lyric_jp": "\"Love\"で接近！ だって大好き",
+      "range": [302.07, 306.28], "ans": []},
+    "",
+    {
+      "lyric_jp": "もっと （ぎゅっと） もっとぎゅっと （もっぎゅー!）",
+      "parts": [
+        {"lyric": "Motto...",
+          "range": [306.28, 307.53], "ans": [4]},
+        {"lyric": "(gyutto...)",
+          "range": [306.83, 307.84], "ans": []},
+        {"lyric": "Motto gyutto",
+          "range": [308.38, 312.52], "ans": [3]},
+        {"lyric": "(mo! gyuu!)",
+          "range": [311.82, 312.77], "ans": []}
+      ]
+    },
+    {
+      "lyric_jp": "今日は （今日は） ドキリ焦っちゃう！ （もっぎゅー!）",
+      "parts": [
+        {"lyric": "Kyou wa...",
+          "range": [312.77, 314.4], "ans": [7]},
+        {"lyric": "(kyou wa...)",
+          "range": [313.7, 315.22], "ans": []},
+        {"lyric": "Dokiri asecchau!",
+          "range": [314.52, 318.58], "ans": [8]},
+        {"lyric": "(mo! gyuu!)",
+          "range": [317.88, 318.83], "ans": []},
+        {"lyric": "(motto...)",
+          "range": [318.83, 319.43], "ans": []},
+        {"lyric": "(gyutto...)",
+          "range": [319.43, 320.03], "ans": []}
+      ]
+    },
+    "",
+    {"lyric": "(I love you, I miss you)",
+      "lyric_jp": "(I love you, I miss you)",
+      "range": [320.03, 323.79], "ans": []},
+    {"lyric": "(Hold me tight, uh baby)",
+      "lyric_jp": "(Hold me tight, uh baby)",
+      "range": [323.79, 326.8], "ans": []},
+    {"lyric": "(Happy love, miracle love)",
+      "lyric_jp": "(Happy love, miracle love)",
+      "range": [326.8, 330.61], "ans": []}
+  ]
+}

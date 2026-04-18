@@ -1,0 +1,369 @@
+{
+  "name": "Sing & Smile!!",
+  "ogg": "sound/sing_smile.ogg",
+  "id": "sing-smile",
+  "group": "nijigasaki",
+  "added": "2026-04",
+  "note": "unsynced",
+  "generated": "2026-04-18T01:40:52Z",
+  "hidden": false,
+  "slots": [
+
+  ],
+  "lines": [
+    {
+      "lyric_jp": "",
+      "parts": [
+        {"lyric": "Tu tu tu Tu ru ru ru",
+          "range": [0, 14.68], "ans": []},
+        {"lyric": "Tu ruu ha...",
+          "range": [14.68, 23.08], "ans": []}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "帰り道 いつも通り歩いてた",
+      "parts": [
+        {"lyric": "Kaerimichi",
+          "range": [23.08, 24.72], "ans": [6, 9], "diff": 2},
+        {"lyric": "Itsumodoori aruiteta",
+          "range": [24.72, 28.84], "ans": [6, 9], "diff": 2}
+      ]
+    },
+    {
+      "lyric_jp": "見慣れた街だって 君となら",
+      "parts": [
+        {"lyric": "Minareta machi datte kimi to nara",
+          "range": [28.84, 31.87], "ans": [6]},
+        {"lyric": "(oh wo oh)",
+          "range": [31.17, 32.38], "ans": [2, 8, 9], "diff": 2},
+        {"lyric": "(oh wo oh)",
+          "range": [32.38, 32.76], "ans": [2, 8, 9], "diff": 2}
+      ]
+    },
+    {"lyric": "Maru de chigau keshiki ni naru",
+      "lyric_jp": "まるで違う景色になる",
+      "range": [32.76, 36.52], "ans": [6]},
+    "",
+    {"lyric": "Minna Ga mina onaji janakute mo iinda",
+      "lyric_jp": "みんなが皆 同じじゃなくてもいいんだ",
+      "range": [36.52, 43.04], "ans": [6, 9], "diff": 2},
+    {"lyric": "Sorezore no iro ga mazariau",
+      "lyric_jp": "それぞれの色が 混ざりあう",
+      "range": [43.04, 47.18], "ans": [9]},
+    {
+      "lyric_jp": "素晴らしい明日を作ろうよ",
+      "parts": [
+        {"lyric": "(oh wo oh)",
+          "range": [47.18, 48.04], "ans": [2, 6, 8], "diff": 2},
+        {"lyric": "(oh wo oh)",
+          "range": [48.04, 48.69], "ans": [2, 6, 8], "diff": 2},
+        {"lyric": "Subarashii ashita o tsukurou yo",
+          "range": [48.19, 51.3], "ans": [9]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "もっと（どこまでもfly away）",
+      "parts": [
+        {"lyric": "Motto",
+          "range": [51.3, 52.55], "ans": [2]},
+        {"lyric": "(dokomade mo fly away)",
+          "range": [51.85, 53.88], "ans": [6, 8, 9], "diff": 2}
+      ]
+    },
+    {"lyric": "Motto ari no mama sakebou Wow...",
+      "lyric_jp": "もっと ありのまま叫ぼう",
+      "range": [53.88, 57.82], "ans": [2]},
+    {"lyric": "Daijoubu donna toki demo",
+      "lyric_jp": "大丈夫 どんな時でも",
+      "range": [57.82, 61.88], "ans": [8]},
+    {"lyric": "Hitori janai minna ga iru",
+      "lyric_jp": "一人じゃない みんながいる",
+      "range": [61.88, 65.16], "ans": [8]},
+    {"lyric": "Hibikasete haamonii",
+      "lyric_jp": "響かせて ハーモニー",
+      "range": [65.16, 69.74], "ans": [8]},
+    {
+      "lyric_jp": "夢の世界へ（いつだって）",
+      "parts": [
+        {"lyric": "Yume No sekai e",
+          "range": [69.74, 72.63], "ans": [6, 9], "diff": 2},
+        {"lyric": "(itsudatte)",
+          "range": [72.33, 73.26], "ans": [2, 8], "diff": 2}
+      ]
+    },
+    {
+      "lyric_jp": "つれてくよ（つれてって）",
+      "parts": [
+        {"lyric": "Tsureteku Yo",
+          "range": [73.26, 74.56], "ans": [6, 9], "diff": 2},
+        {"lyric": "(tsurete",
+          "range": [74.07, 74.93], "ans": [2, 8], "diff": 2},
+        {"lyric": "Tte)",
+          "range": [74.43, 74.98], "ans": [2]}
+      ]
+    },
+    {"lyric": "Kokoro Kara waratte mite nee hora",
+      "lyric_jp": "心から 笑ってみてねえほら",
+      "range": [74.98, 78.18], "ans": [6, 9], "diff": 2},
+    {"lyric": "Kimi ga warau dake de chance!",
+      "lyric_jp": "君が笑うだけでchance!",
+      "range": [78.18, 81.12], "ans": [2]},
+    {"lyric": "Kagayaki hajimeta story",
+      "lyric_jp": "輝き始めた story",
+      "range": [81.12, 84.3], "ans": [2]},
+    "",
+    {
+      "lyric_jp": "手をつなぐ（いつだって）",
+      "parts": [
+        {"lyric": "Te O tsunagu",
+          "range": [84.3, 86.34], "ans": [6, 9], "diff": 2},
+        {"lyric": "(itsudatte)",
+          "range": [86.61, 87.62], "ans": [2, 8], "diff": 2}
+      ]
+    },
+    {
+      "lyric_jp": "瞬間も（つれてって）",
+      "parts": [
+        {"lyric": "Shunkan Mo",
+          "range": [87.62, 88.45], "ans": [6, 9], "diff": 2},
+        {"lyric": "(tsurete",
+          "range": [87.99, 88.69], "ans": [2, 8], "diff": 2},
+        {"lyric": "Tte)",
+          "range": [88.23, 88.74], "ans": [2]}
+      ]
+    },
+    {"lyric": "Hanasanai De egaita mirai 0",
+      "lyric_jp": "離さないで 描いた未来を",
+      "range": [88.74, 92.48], "ans": [6, 9], "diff": 2},
+    {"lyric": "Tsumugidasu kono uta de",
+      "lyric_jp": "紡ぎ出すこの歌で",
+      "range": [92.48, 95.12], "ans": [8]},
+    {
+      "lyric_jp": "伝えていこう happy smile",
+      "parts": [
+        {"lyric": "Tu tu tu Tu rururu ru",
+          "range": [95.12, 103.34], "ans": []},
+        {"lyric": "Tsutaete ikou happy smile",
+          "range": [102.64, 112.83], "ans": [8]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "いつだって うまくいくわけじゃないんだ",
+      "parts": [
+        {"lyric": "Ltsudatte",
+          "range": [112.83, 115.61], "ans": [2, 8], "diff": 2},
+        {"lyric": "Tu ru ruu La la...",
+          "range": [115.61, 118.59], "ans": []},
+        {"lyric": "La la la...",
+          "range": [118.33, 119.01], "ans": []},
+        {"lyric": "Umaku iku wake janainda",
+          "range": [118.38, 123.09], "ans": [2]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "失敗したって 落ち込まないで",
+      "parts": [
+        {"lyric": "Shippai shita tte ochikomanaide",
+          "range": [123.09, 126.51], "ans": [2]},
+        {"lyric": "(oh wo oh)",
+          "range": [126.06, 127.11], "ans": [6, 8, 9], "diff": 2}
+      ]
+    },
+    {
+      "lyric_jp": "明日はもっと輝くはずだよ",
+      "parts": [
+        {"lyric": "(oh wo oh)",
+          "range": [127.11, 128.46], "ans": [6, 8, 9], "diff": 2},
+        {"lyric": "Ashita wa motto kagayaku hazu da yo",
+          "range": [128.02, 131.39], "ans": [2]}
+      ]
+    },
+    {
+      "lyric_jp": "ずっと（いつまでもfly away）",
+      "parts": [
+        {"lyric": "Zutto",
+          "range": [131.39, 132.5], "ans": [9]},
+        {"lyric": "(itsumade mo fly away)",
+          "range": [131.8, 133.91], "ans": [2, 6, 8], "diff": 2}
+      ]
+    },
+    {"lyric": "Zutto wakuwaku shiyou yo",
+      "lyric_jp": "ずっと ワクワクしようよ",
+      "range": [133.91, 137.37], "ans": [9]},
+    {"lyric": "Kasanari atta kiseki ga",
+      "lyric_jp": "重なりあった奇跡が",
+      "range": [137.37, 142.59], "ans": [6]},
+    {"lyric": "Sora o watatte hoshi ni natte",
+      "lyric_jp": "空を渡って 星になって",
+      "range": [142.59, 145.27], "ans": [6]},
+    {"lyric": "Todokerun da haamonii",
+      "lyric_jp": "届けるんだ ハーモニー",
+      "range": [145.27, 149.83], "ans": [6]},
+    "",
+    "[next-col]",
+    {
+      "lyric_jp": "未来ファンタジー（いつだって）",
+      "parts": [
+        {"lyric": "Mirai Fantajii",
+          "range": [149.83, 152.62], "ans": [2, 8], "diff": 2},
+        {"lyric": "(itsudatte)",
+          "range": [152.26, 153.11], "ans": [6, 9], "diff": 2}
+      ]
+    },
+    {
+      "lyric_jp": "走り出そう（目指していこう）",
+      "parts": [
+        {"lyric": "Hashiridasou",
+          "range": [153.11, 154.15], "ans": [2, 8], "diff": 2},
+        {"lyric": "(mezashite ikou)",
+          "range": [153.45, 154.61], "ans": [6, 9], "diff": 2}
+      ]
+    },
+    {"lyric": "Shinjite Mite mune no dokidoki o",
+      "lyric_jp": "信じてみて 胸のドキドキを",
+      "range": [154.61, 158.27], "ans": [2, 8], "diff": 2},
+    {"lyric": "Daiji na koto wa oh my friend",
+      "lyric_jp": "大事なことは oh my friend",
+      "range": [158.27, 161.05], "ans": [9]},
+    {"lyric": "Sugu soba ni aru kara it's you!",
+      "lyric_jp": "すぐそばにあるから it's you!",
+      "range": [161.05, 165.27], "ans": [9]},
+    "",
+    {
+      "lyric_jp": "かけがえない（いつだって）",
+      "parts": [
+        {"lyric": "Kakegaenai",
+          "range": [165.27, 166.84], "ans": [2, 8], "diff": 2},
+        {"lyric": "(itsudatte)",
+          "range": [166.48, 168.11], "ans": [6, 9], "diff": 2}
+      ]
+    },
+    {
+      "lyric_jp": "瞬間を（目指していこう）",
+      "parts": [
+        {"lyric": "Shunkan O",
+          "range": [168.11, 168.77], "ans": [2, 8], "diff": 2},
+        {"lyric": "(mezashite ikou)",
+          "range": [168.37, 169.15], "ans": [6, 9], "diff": 2}
+      ]
+    },
+    {
+      "lyric_jp": "抱きしめて 描いた希望を",
+      "parts": [
+        {"lyric": "Dakishimete",
+          "range": [169.15, 169.89], "ans": [2, 8], "diff": 2},
+        {"lyric": "Egaita kibou o",
+          "range": [169.89, 172.51], "ans": [2, 8], "diff": 2}
+      ]
+    },
+    {"lyric": "Massugu ni kono koe de",
+      "lyric_jp": "まっすぐに この声で",
+      "range": [172.51, 175.29], "ans": [6]},
+    {"lyric": "Tsutaete ikou happy life",
+      "lyric_jp": "伝えていこう happy life",
+      "range": [175.29, 182.47], "ans": [6]},
+    "",
+    {"lyric": "Minna de utaeba",
+      "lyric_jp": "みんなで歌えば wo wo wo",
+      "range": [182.47, 185.87], "ans": [9]},
+    "",
+    {
+      "lyric_jp": "みんなで楽しも wo wo wo",
+      "parts": [
+        {"lyric": "Wo wo wo",
+          "range": [185.87, 187.4], "ans": []},
+        {"lyric": "Tu rururu Tu tu tu",
+          "range": [186.7, 188.18], "ans": [8]},
+        {"lyric": "Wo wo wo",
+          "range": [187.5, 189.04], "ans": []},
+        {"lyric": "Minna de tanoshi mo",
+          "range": [188.34, 190.15], "ans": [2]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "明日もハレルヤ 歌おう！",
+      "parts": [
+        {"lyric": "La la lala La lala",
+          "range": [190.15, 195.18], "ans": [8]},
+        {"lyric": "Ashita mo hareruya utaou!",
+          "range": [194.48, 198.65], "ans": [6]}
+      ]
+    },
+    "",
+    {
+      "lyric_jp": "夢の世界へ（いつだって）",
+      "parts": [
+        {"lyric": "Yume no sekai e",
+          "range": [198.65, 202.4], "ans": [2]},
+        {"lyric": "(itsudatte)",
+          "range": [202, 203.19], "ans": [6, 8, 9], "diff": 2}
+      ]
+    },
+    {
+      "lyric_jp": "つれてくよ（つれてって）",
+      "parts": [
+        {"lyric": "Tsureteku yo",
+          "range": [203.19, 204.29], "ans": [2]},
+        {"lyric": "(tsurete tte)",
+          "range": [203.59, 204.75], "ans": [6, 8, 9], "diff": 2}
+      ]
+    },
+    {"lyric": "Kokoro kara waratte mite nee hora",
+      "lyric_jp": "心から 笑ってみてねえほら",
+      "range": [204.75, 208.03], "ans": [2]},
+    {"lyric": "Kimi ga warau dake de chance!",
+      "lyric_jp": "君が笑うだけでchance!",
+      "range": [208.03, 211.35], "ans": [8]},
+    {"lyric": "Kagayaki hajimeta story",
+      "lyric_jp": "輝き始めた story",
+      "range": [211.35, 214.32], "ans": [8]},
+    "",
+    {
+      "lyric_jp": "手をつなぐ（いつだって）",
+      "parts": [
+        {"lyric": "Te O tsunagu",
+          "range": [214.32, 216.19], "ans": [6, 9], "diff": 2},
+        {"lyric": "(itsudatte)",
+          "range": [216.34, 217.15], "ans": [2, 8], "diff": 2}
+      ]
+    },
+    {
+      "lyric_jp": "瞬間も（つれてって）",
+      "parts": [
+        {"lyric": "Shunkan Mo",
+          "range": [217.15, 218.02], "ans": [6, 9], "diff": 2},
+        {"lyric": "(tsurete",
+          "range": [217.55, 218.32], "ans": [2, 8], "diff": 2},
+        {"lyric": "Tte)",
+          "range": [217.84, 218.37], "ans": [2]}
+      ]
+    },
+    {"lyric": "Hanasanai De egaita mirai 0",
+      "lyric_jp": "離さないで 描いた未来を",
+      "range": [218.37, 222.27], "ans": [6, 9], "diff": 2},
+    {"lyric": "Tsumugidasu kono uta de",
+      "lyric_jp": "紡ぎ出すこの歌で",
+      "range": [222.27, 225.01], "ans": []},
+    {
+      "lyric_jp": "伝えていこう happy smile",
+      "parts": [
+        {"lyric": "Wo oh wo Wo oh wo Wo oh wo Wo oh wo Wo oh wo",
+          "range": [225.01, 229.13], "ans": []},
+        {"lyric": "Tsutaete ikou happy smile Wo oh wo Wo oh wo Wo oh wo Wo oh wo",
+          "range": [253.99, 255.27], "ans": []}
+      ]
+    },
+    "",
+    {"lyric": "Tsumugidasu kono uta de",
+      "lyric_jp": "紡ぎ出すこの歌で",
+      "range": [254.97, 256.89], "ans": []},
+    {"lyric": "Tsutaete ikou happy smile",
+      "lyric_jp": "伝えていこう happy smile",
+      "range": [256.89, 263.69], "ans": []}
+  ]
+}

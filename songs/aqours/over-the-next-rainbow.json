@@ -11,13 +11,14 @@
   "slots": [
 
   ],
+  "generated": "2026-04-15T01:44:29Z",
   "lines": [
     {"lyric": "Aitakatta tooi basho ni ite mo",
       "lyric_jp": "会いたかった 遠い場所にいても",
       "range": [0.66, 6.79], "ans": []},
     {"lyric": "Itsuka mata ne aeru yo ne",
       "lyric_jp": "いつかまたね会えるよね",
-      "range": [6.79, 38.28], "ans": []},
+      "range": [6.79, 13.57], "ans": []},
     "",
     {"lyric": "Yume ni mo iroiro aru kara kanaekata mo sorezore da to",
       "lyric_jp": "夢にも色々あるから 叶えかたもそれぞれだと",
@@ -36,27 +37,27 @@
       "lyric_jp": "追いかけて すれ違う（ずっと）",
       "parts": [
         {"lyric": "Oikakete surechigau",
-          "range": [60.72, 62.72], "ans": [3, 6, 9]},
+          "range": [60.72, 62.87], "ans": [3, 6, 9]},
         {"lyric": "(zutto)",
-          "range": [62.72, 63.12], "ans": [10, 11]}
+          "range": [62.17, 63.12], "ans": [10, 11]}
       ]
     },
     {
       "lyric_jp": "すれ違い 追いかけて（ずっと）",
       "parts": [
         {"lyric": "Surechigai oikakete",
-          "range": [63.12, 65.67], "ans": [3, 6, 9]},
+          "range": [63.12, 65.93], "ans": [3, 6, 9]},
         {"lyric": "(zutto)",
-          "range": [65.67, 66.18], "ans": [10, 11]}
+          "range": [65.23, 66.18], "ans": [10, 11]}
       ]
     },
     {
       "lyric_jp": "お互いの道が交わった 喜びをダイジにしてゆくよ",
       "parts": [
         {"lyric": "Otagai no michi ga kawatta",
-          "range": [66.18, 69.1], "ans": [1, 2, 5]},
-        {"lyric": "Yorokobi wo dalji ni shite yuku yo",
-          "range": [69.1, 72.84], "ans": [4, 7, 8]}
+          "range": [66.18, 70.51], "ans": [1, 2, 5]},
+        {"lyric": "Yorokobi wo datji ni shite yuku yo",
+          "range": [69.81, 72.84], "ans": [4, 7, 8]}
       ]
     },
     {
@@ -65,7 +66,7 @@
         {"lyric": "Korekkiri janai yo ne?",
           "range": [72.37, 76.09], "ans": [3, 6, 9]},
         {"lyric": "(motto motto kataritai)",
-          "range": [76.09, 79.54], "ans": [10, 11]}
+          "range": [76.93, 78.49], "ans": [10, 11]}
       ]
     },
     "",
@@ -82,62 +83,58 @@
       "lyric_jp": "忘れないよいつまでも 忘れないでいつまでも",
       "parts": [
         {"lyric": "Wasurenai yo itsumademo",
-          "range": [97.44, 101.9], "ans": []},
+          "range": [97.44, 105.11], "ans": []},
         {"lyric": "Wasurenaide itsumademo",
-          "range": [101.9, 117.2], "ans": [7, 8, 9, 10]}
+          "range": [104.41, 109.66], "ans": [7, 8, 9, 10], "diff": 3}
       ]
     },
     "",
     {"lyric": "(Oh! So we go!)",
       "lyric_jp": "(Oh! So we go!)",
-      "range": [117.2, 120.26], "ans": [5]},
+      "range": [117.2, 120.26], "ans": [11]},
     {"lyric": "Yume miteru dake de wa hajimaranai doryoku shite mada mada tarinakute",
       "lyric_jp": "夢見てるだけでは始まらない 努力してまだまだ足りなくて",
-      "range": [120.26, 121.78], "ans": [5]},
+      "range": [120.26, 125.77], "ans": [11]},
     {"lyric": "Miageru sora niji no hate mirai no jibun ga iru ganbareru",
-      "lyric_jp": "夢見てるだけでは始まらない 努力してまだまだ足りなくて",
-      "range": [121.78, 123.04], "ans": [5]},
+      "lyric_jp": "見上げる空 虹の果て 未来の自分がいる頑張れる",
+      "range": [125.77, 131.33], "ans": [11]},
     {"lyric": "Kimeta koto sa kimeta koto wa tsuranuite miseru yo saigo made",
-      "lyric_jp": "夢見てるだけでは始まらない 努力してまだまだ足りなくて",
-      "range": [123.04, 124.4], "ans": [5]},
+      "lyric_jp": "決めたことさ 決めたことは 貫いてみせるよ最後まで",
+      "range": [131.33, 137.04], "ans": [11]},
     {"lyric": "Nattoku dekiru made yaranakucha jibun ga jibun wo yurusenai kara",
-      "lyric_jp": "夢見てるだけでは始まらない 努力してまだまだ足りなくて",
-      "range": [124.4, 125.77], "ans": [5]},
+      "lyric_jp": "納得できるまでやらなくちゃ 自分が自分を許せないから",
+      "range": [137.04, 142.71], "ans": [11]},
     "",
-    {
+    {"lyric": "Hanaretara chikadzuite",
       "lyric_jp": "離れたら 近づいて（そして）",
-      "parts": [
-        {"lyric": "Hanaretara chikadzuite",
-          "range": [142.71, 145.53], "ans": [1, 2, 3, 4, 5, 6, 7, 8, 9]},
-        {"lyric": "(soshite)",
-          "range": [145.53, 146.17], "ans": [10, 11]}
-      ]
-    },
+      "range": [142.71, 145.15], "ans": [1, 2, 3, 4, 5, 6, 7, 8, 9], "diff": 3},
     {
       "lyric_jp": "近づいて 離れてく（そして）",
       "parts": [
-        {"lyric": "Chikadzuite hanareteku",
-          "range": [145.15, 147.54], "ans": [1, 2, 3, 4, 5, 6, 7, 8, 9]},
         {"lyric": "(soshite)",
-          "range": [147.54, 148.26], "ans": [10, 11]}
+          "range": [145.15, 145.53], "ans": [10, 11]},
+        {"lyric": "Chikadzuite hanareteku",
+          "range": [145.51, 148.01], "ans": [1, 2, 3, 4, 5, 6, 7, 8, 9], "diff": 3},
+        {"lyric": "(soshite)",
+          "range": [147.31, 148.26], "ans": [10, 11]}
       ]
     },
     {
       "lyric_jp": "だんだん気持ちが通じると チカラになりたいと考えて",
       "parts": [
         {"lyric": "Dandan kimochi ga tsuujiru to",
-          "range": [148.26, 151.15], "ans": [1, 2, 5]},
+          "range": [148.26, 152.44], "ans": [1, 2, 5]},
         {"lyric": "Chikara ni naritai to kangaete",
-          "range": [151.15, 154.53], "ans": [4, 7, 8]}
+          "range": [151.74, 154.53], "ans": [4, 7, 8]}
       ]
     },
     {
       "lyric_jp": "このとき待ってたんだよ（会えて会えて嬉しいよ）",
       "parts": [
         {"lyric": "Kono toki mattetanda yo",
-          "range": [154.05, 157.09], "ans": [3, 6, 9]},
+          "range": [154.05, 158.74], "ans": [3, 6, 9]},
         {"lyric": "(aete aete ureshii yo)",
-          "range": [157.09, 161.61], "ans": [10, 11]}
+          "range": [158.14, 160.47], "ans": [10, 11]}
       ]
     },
     "",
@@ -156,11 +153,11 @@
       "range": [179.02, 185.13], "ans": []},
     {"lyric": "Itsuka kitto aeru yo ne",
       "lyric_jp": "いつかきっと会えるよね",
-      "range": [185.13, 202.02], "ans": []},
+      "range": [185.13, 191.43], "ans": []},
     "",
     {"lyric": "Nante atto iu ma ni sugite yuku no darou",
       "lyric_jp": "なんてあっという間に過ぎてゆくのだろう",
-      "range": [202.02, 207.47], "ans": [2]},
+      "range": [202.02, 207.47], "ans": [10]},
     {"lyric": "Tachidomaru koto mo dekinai kisetsu wa",
       "lyric_jp": "立ち止まることもできない季節は",
       "range": [207.47, 213.09], "ans": [7]},
@@ -168,43 +165,43 @@
       "lyric_jp": "今日も（去って）今日が（去って）",
       "parts": [
         {"lyric": "Kyou mo",
-          "range": [213.09, 214.89], "ans": [8]},
+          "range": [213.09, 214.11], "ans": [8]},
         {"lyric": "(satte)",
-          "range": [214.89, 216.13], "ans": [1, 2, 3, 4, 5, 6, 11]},
+          "range": [213.41, 214.56], "ans": [1, 2, 3, 4, 5, 6, 11], "diff": 3},
         {"lyric": "Kyou ga",
-          "range": [216.13, 216.37], "ans": [9]},
+          "range": [213.86, 214.89], "ans": [9]},
         {"lyric": "(satte)",
-          "range": [216.37, 216.7], "ans": [1, 2, 3, 4, 5, 6, 11]}
+          "range": [215.69, 216.37], "ans": [1, 2, 3, 4, 5, 6, 11], "diff": 3}
       ]
     },
     {"lyric": "Mae wo muku shikanai",
       "lyric_jp": "前を向くしかない",
-      "range": [216.2, 219.61], "ans": [8, 9]},
+      "range": [216.2, 219.61], "ans": [8, 9], "diff": 2},
     {
       "lyric_jp": "決して戻れないね...",
       "parts": [
         {"lyric": "Kesshite modorenai ne...",
-          "range": [219.61, 224.17], "ans": [7, 8, 9, 10]},
-        {"lyric": "(Ha~ Ha~ Har)",
-          "range": [224.17, 235.72], "ans": [2]}
+          "range": [219.61, 226.92], "ans": [7, 8, 9, 10], "diff": 3},
+        {"lyric": "(Ha~ Ha~ Ha~)",
+          "range": [226.22, 227.17], "ans": [10]}
       ]
     },
     "",
     {"lyric": "(Go next!)",
       "lyric_jp": "(Go next!)",
-      "range": [235.72, 236.72], "ans": [5]},
-    {"lyric": "Over the rainbow",
-      "lyric_jp": "Over the rainbow",
-      "range": [236.72, 238.8], "ans": []},
+      "range": [235.72, 236.72], "ans": [11]},
     {
-      "lyric_jp": "ヒカリを浴びながら歌おうよ つながるよココロが",
+      "lyric_jp": "Over the rainbow",
       "parts": [
+        {"lyric": "Over the rainbow",
+          "range": [236.72, 238.55], "ans": []},
         {"lyric": "(Ah~ Ah Ah~)",
-          "range": [238.8, 240.22], "ans": [2]},
-        {"lyric": "Hikari wo abinagara utaou yo tsunagaru yo kokoro ga",
-          "range": [240.22, 248.19], "ans": []}
+          "range": [237.85, 238.8], "ans": [10]}
       ]
     },
+    {"lyric": "Hikari wo abinagara utaou yo tsunagaru yo kokoro ga",
+      "lyric_jp": "ヒカリを浴びながら歌おうよ つながるよココロが",
+      "range": [238.8, 247.19], "ans": []},
     {"lyric": "Kiete yuku niji ni yakusoku shiyou",
       "lyric_jp": "消えてゆく虹に約束しよう",
       "range": [247.19, 254.26], "ans": []},
@@ -212,9 +209,9 @@
       "lyric_jp": "忘れないよいつまでも",
       "parts": [
         {"lyric": "Wasurenai yo itsumademo",
-          "range": [254.26, 256.46], "ans": []},
+          "range": [254.26, 259.01], "ans": []},
         {"lyric": "(DaRaDaDa DaRaRa Yeah~)",
-          "range": [256.46, 259.26], "ans": [2]}
+          "range": [258.31, 259.26], "ans": [10]}
       ]
     },
     {"lyric": "Fly to the rainbow",
@@ -224,11 +221,13 @@
       "lyric_jp": "ネガイで飛ぶように踊ろうよ つながるねココロが",
       "parts": [
         {"lyric": "Negai de tobu you ni",
-          "range": [261.44, 264.72], "ans": []},
-        {"lyric": "(tobu you ni) odorou yo tsunagaru ne",
-          "range": [264.72, 269.16], "ans": [2]},
-        {"lyric": "(oh~)",
-          "range": [269.16, 269.9], "ans": [2]},
+          "range": [261.44, 265.07], "ans": []},
+        {"lyric": "(tobu you ni)",
+          "range": [264.37, 267.39], "ans": [10]},
+        {"lyric": "Odorou yo tsunagaru ne",
+          "range": [266.69, 269.51], "ans": []},
+        {"lyric": "(Oh~)",
+          "range": [268.81, 269.9], "ans": [10]},
         {"lyric": "Kokoro ga",
           "range": [269.9, 270.76], "ans": []}
       ]
@@ -241,6 +240,6 @@
       "range": [276.87, 282.42], "ans": []},
     {"lyric": "Itsuka kitto aeru yo ne",
       "lyric_jp": "いつかきっと会えるよね",
-      "range": [282.42, 299], "ans": []}
+      "range": [282.42, 288.82], "ans": []}
   ]
 }

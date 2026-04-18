@@ -4,10 +4,11 @@
   "id": "love-pulsar",
   "group": "aqours",
   "added": "2026-04",
-  "hidden": true,
+  "hidden": false,
   "slots": [
 
   ],
+  "generated": "2026-04-15T01:44:00Z",
   "lines": [
     {"lyric": "Joushiki to wa? nandatte??",
       "lyric_jp": "常識とは？なんだって？",
@@ -36,9 +37,9 @@
       "lyric_jp": "心にイナヅマ走る ビリンビリンビリンって",
       "parts": [
         {"lyric": "Kokoro ni inazuma hashiru",
-          "range": [55.39, 59.49], "ans": [3]},
+          "range": [55.39, 59.84], "ans": [3]},
         {"lyric": "Birin birin birin tte",
-          "range": [59.49, 64.02], "ans": []}
+          "range": [59.14, 64.02], "ans": []}
       ]
     },
     "",
@@ -55,25 +56,29 @@
       "lyric_jp": "そこから先は... まだわからない",
       "parts": [
         {"lyric": "Soko kara saki wa...",
-          "range": [73.94, 76.62], "ans": []},
+          "range": [73.94, 77.21], "ans": []},
         {"lyric": "Mada wakaranai",
-          "range": [76.62, 77.42], "ans": [6]},
+          "range": [76.51, 79.81], "ans": [6]},
         {"lyric": "(I don’t care!)",
-          "range": [77.42, 80.06], "ans": [3, 9]}
+          "range": [79.11, 80.06], "ans": [3, 9], "diff": 2}
       ]
     },
-    {"lyric": "Wakaranai mama de",
+    {
       "lyric_jp": "わからないままで",
-      "range": [80.06, 83.15], "ans": [6]},
+      "parts": [
+        {"lyric": "Wakaranai mama de",
+          "range": [80.06, 82.9], "ans": [6]},
+        {"lyric": "(Just leave it!)",
+          "range": [82.2, 83.15], "ans": [3, 9], "diff": 2}
+      ]
+    },
     {
       "lyric_jp": "近づけば甘い罠？Love Pulsar",
       "parts": [
-        {"lyric": "(Just leave it!)",
-          "range": [83.15, 84.58], "ans": [3, 9]},
         {"lyric": "Chikadzukeba amai wana?",
-          "range": [84.58, 86.42], "ans": [6]},
+          "range": [83.15, 87.84], "ans": [6]},
         {"lyric": "Love Pulsar",
-          "range": [86.42, 101.59], "ans": []}
+          "range": [87.58, 90.7], "ans": []}
       ]
     },
     "",
@@ -104,9 +109,9 @@
       "lyric_jp": "身体にイカヅチ落ちた ドキンドキンドキンって",
       "parts": [
         {"lyric": "Karada ni ikadzuchi ochita",
-          "range": [135.43, 139.21], "ans": [6]},
+          "range": [135.43, 139.56], "ans": [6]},
         {"lyric": "Dokin dokin dokin tte",
-          "range": [139.21, 149], "ans": []}
+          "range": [138.86, 143.73], "ans": []}
       ]
     },
     "",
@@ -126,23 +131,27 @@
         {"lyric": "Misetai mitai...",
           "range": [158.55, 161.29], "ans": []},
         {"lyric": "Hora tomaranai",
-          "range": [161.29, 162.51], "ans": [9]},
+          "range": [161.81, 164.63], "ans": [9]},
         {"lyric": "(I don’t care!)",
-          "range": [162.51, 164.88], "ans": [3, 6]}
+          "range": [163.93, 164.88], "ans": [3, 6], "diff": 2}
       ]
     },
-    {"lyric": "Tomaranai mama de",
+    {
       "lyric_jp": "とまらないままで",
-      "range": [164.88, 168.14], "ans": [9]},
+      "parts": [
+        {"lyric": "Tomaranai mama de",
+          "range": [164.88, 167.89], "ans": [9]},
+        {"lyric": "(Just leave it!)",
+          "range": [167.19, 168.14], "ans": [3, 6], "diff": 2}
+      ]
+    },
     {
       "lyric_jp": "あなたと宇宙を飛ぶよ Love Pulsar",
       "parts": [
-        {"lyric": "(Just leave it!)",
-          "range": [168.14, 169.42], "ans": [3, 6]},
         {"lyric": "Anata to sora wo tobu yo",
-          "range": [169.42, 172.38], "ans": [9]},
+          "range": [168.14, 171.18], "ans": [9]},
         {"lyric": "Love Pulsar",
-          "range": [172.38, 198.53], "ans": []}
+          "range": [171.18, 175.52], "ans": []}
       ]
     },
     "",
@@ -174,23 +183,27 @@
         {"lyric": "Misetai mitai...",
           "range": [224.29, 226.89], "ans": []},
         {"lyric": "Hora tomaranai",
-          "range": [226.89, 228.13], "ans": [3]},
+          "range": [227.39, 230.06], "ans": [3]},
         {"lyric": "(I don’t care!)",
-          "range": [228.13, 230.31], "ans": [6, 9]}
+          "range": [229.36, 230.31], "ans": [6, 9], "diff": 2}
       ]
     },
-    {"lyric": "Tomaranai mama de",
+    {
       "lyric_jp": "とまらないままで",
-      "range": [230.31, 233.8], "ans": [3]},
+      "parts": [
+        {"lyric": "Tomaranai mama de",
+          "range": [230.31, 233.55], "ans": [3]},
+        {"lyric": "(Just leave it!)",
+          "range": [232.85, 233.8], "ans": [6, 9], "diff": 2}
+      ]
+    },
     {
       "lyric_jp": "あなたと宇宙を飛ぶよ Love Pulsar",
       "parts": [
-        {"lyric": "(Just leave it!)",
-          "range": [233.8, 235.1], "ans": [6, 9]},
         {"lyric": "Anata to sora wo tobu yo",
-          "range": [235.1, 237.96], "ans": [3]},
+          "range": [233.8, 236.76], "ans": [3]},
         {"lyric": "Love Pulsar",
-          "range": [237.96, 269], "ans": []}
+          "range": [236.76, 241.14], "ans": []}
       ]
     }
   ]

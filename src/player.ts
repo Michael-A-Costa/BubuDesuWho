@@ -1,13 +1,14 @@
 import { Howl } from 'howler';
 
 export interface PlayerCallbacks {
-  onTick: (currentTime: number, duration: number) => void;
+  onTick: (currentTime: number, duration: number, didSeek: boolean) => void;
 }
 
 let howl: Howl | null = null;
 let animFrameId: number | null = null;
 let callbacks: PlayerCallbacks | null = null;
 let _volume = 0.3;
+let _seekPending = false;
 
 const callSFXPool: HTMLAudioElement[] = [];
 let callSFXChannel = 0;
@@ -27,6 +28,7 @@ export function loadSong(mp3: string, ogg: string): void {
   if (howl) {
     howl.unload();
   }
+  _seekPending = true;
   howl = new Howl({
     src: [ogg, mp3],
     format: ['ogg', 'mp3'],
@@ -38,6 +40,7 @@ export function loadSong(mp3: string, ogg: string): void {
 export function play(seekTo?: number): void {
   if (!howl) return;
   if (seekTo !== undefined) {
+    _seekPending = true;
     howl.seek(seekTo);
     if (!howl.playing()) howl.play();
   } else if (!howl.playing()) {
@@ -47,12 +50,16 @@ export function play(seekTo?: number): void {
 
 export function pause(seekTo?: number): void {
   if (!howl) return;
-  if (seekTo !== undefined) howl.seek(seekTo);
+  if (seekTo !== undefined) {
+    _seekPending = true;
+    howl.seek(seekTo);
+  }
   howl.pause();
 }
 
 export function stop(): void {
   if (!howl) return;
+  _seekPending = true;
   howl.stop();
 }
 
@@ -63,7 +70,7 @@ export function isPlaying(): boolean {
 export function getCurrentTime(): number {
   if (!howl) return 0;
   const t = howl.seek();
-  return typeof t === 'number' ? t : 0;
+  return typeof t === 'number' && isFinite(t) ? t : 0;
 }
 
 export function getDuration(): number {
@@ -94,7 +101,9 @@ function startAnimLoop(): void {
     if (howl && howl.playing() && callbacks) {
       const time = getCurrentTime();
       const dur = getDuration();
-      callbacks.onTick(time, dur);
+      const didSeek = _seekPending;
+      _seekPending = false;
+      callbacks.onTick(time, dur, didSeek);
     }
     animFrameId = requestAnimationFrame(frame);
   }

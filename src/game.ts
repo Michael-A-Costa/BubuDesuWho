@@ -120,7 +120,10 @@ export function loadSong(song: Song): void {
   const base = import.meta.env.BASE_URL;
   const resolveAudio = (path: string) =>
     soundBase ? soundBase + path.replace(/^sound\//, '') : base + path;
-  player.loadSong(song.mp3 ? resolveAudio(song.mp3) : '', resolveAudio(song.ogg));
+  // iOS Safari can't decode Opus-in-Ogg — pass the .m4a sibling so Howler
+  // falls through to AAC when Ogg isn't playable.
+  const m4aPath = song.ogg.replace(/\.ogg$/, '.m4a');
+  player.loadSong(resolveAudio(song.ogg), resolveAudio(m4aPath));
 }
 
 export function makeSlotsFromBase(bases: SlotBase[]): Slot[] {

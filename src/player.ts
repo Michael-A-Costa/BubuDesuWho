@@ -24,14 +24,14 @@ export function initPlayer(cbs: PlayerCallbacks): void {
   startAnimLoop();
 }
 
-export function loadSong(mp3: string, ogg: string): void {
+export function loadSong(ogg: string, m4a: string): void {
   if (howl) {
     howl.unload();
   }
   _seekPending = true;
   howl = new Howl({
-    src: [ogg, mp3],
-    format: ['ogg', 'mp3'],
+    src: [ogg, m4a],
+    format: ['ogg', 'm4a'],
     html5: true,
     volume: _volume,
   });

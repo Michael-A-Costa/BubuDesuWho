@@ -20,7 +20,6 @@ export type LineEntry = string | LineObject;
 export interface SongConfig {
   name: string;
   ogg: string;
-  mp3?: string;
   id: string;
   group: GroupName;
   mapping?: MappingEntry[];

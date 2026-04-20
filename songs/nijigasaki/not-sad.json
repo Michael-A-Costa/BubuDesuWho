@@ -3,6 +3,8 @@
   "ogg": "sound/not_sad.ogg",
   "id": "not-sad",
   "group": "nijigasaki",
+  "released": "2021-07-14",
+  "subunit": "qu4rtz",
   "added": "2026-04",
   "generated": "2026-04-18T01:40:44Z",
   "hidden": false,

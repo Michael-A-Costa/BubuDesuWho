@@ -1,4 +1,4 @@
-import { Song, Slot, LyricToken, GroupName, SortMode } from './types';
+import { Song, Slot, LyricToken, GroupName } from './types';
 import { toTimeStr, escapeRegExp, parseURLParams } from './utils';
 import { getGroupColor } from './labels';
 import {
@@ -6,13 +6,17 @@ import {
   toggleThemed, cycleLyricsMode, setLyricsMode, toggleCalls, toggleCallSFX,
   toggleJpLyrics, hasJpLyrics,
   toggleGlobalReveal, checkChoices, checkSlot, resetChoices, loadSong,
-  restoreChoices, getDiffLabel, getNumSlotsDiff, makeASSObjectURL,
-  tick, initGameState, updateMeter, refreshPaletteColors,
-  setEditMode, setSlotSingers, setSlotDiff, setSlotLyric, insertMappingAfter, deleteSlot, exportEditedConfig,
+  restoreChoices, getDiffLabel, getNumSlotsDiff,
+  tick, initGameState, updateMeter, refreshPaletteColors, revealLyrics,
 } from './game';
-import { getSongs, loadConfig, loadChangelog } from './config';
+import {
+  setEditMode, setSlotSingers, setSlotDiff, setSlotLyric,
+  insertMappingAfter, deleteSlot, exportEditedConfig, makeASSObjectURL,
+} from './game-edit';
+import { loadConfig, loadChangelog } from './config';
 import * as player from './player';
 import { setStorage, getStorage, loadHistory } from './storage';
+import { buildMenu, highlightSongInMenu, attachInstantTip } from './ui-menu';
 
 let preMuteVolume: number | null = null;
 
@@ -116,23 +120,6 @@ function updateThemeToggleLabel(): void {
   btn.title = isDark ? 'Switch to light mode' : 'Switch to dark mode';
 }
 
-function attachInstantTip(el: HTMLElement, text: string): void {
-  let tip: HTMLElement | null = null;
-  el.addEventListener('mouseenter', () => {
-    tip = document.createElement('div');
-    tip.className = 'slot-tooltip';
-    tip.textContent = text;
-    document.body.appendChild(tip);
-    const rect = el.getBoundingClientRect();
-    tip.style.top = `${rect.bottom + window.scrollY + 4}px`;
-    tip.style.left = `${rect.left + window.scrollX + rect.width / 2 - tip.offsetWidth / 2}px`;
-  });
-  el.addEventListener('mouseleave', () => {
-    tip?.remove();
-    tip = null;
-  });
-}
-
 function selectSong(song: Song): void {
   loadSong(song);
 
@@ -177,6 +164,7 @@ function selectSong(song: Song): void {
   // generate slots and lyrics
   generateSlots(state.slots, song.group);
   generateLyrics(state.lyrics);
+  revealLyrics();
 
   // lyrics button visibility
   const lyricsBtn = document.getElementById('lyrics-button');
@@ -498,8 +486,13 @@ function generateLyrics(lyrics: LyricToken[]): void {
           if (pauseBtn) pauseBtn.style.display = 'inline-block';
 
           const entry = state.reverseMap[lyric.mapping.id];
-          if (entry?.slot?.element) {
-            entry.slot.element.scrollIntoView({ block: 'center', behavior: 'smooth' });
+          const slotEl = entry?.slot?.element;
+          const slotsContainer = document.getElementById('slots-container');
+          const slotsEl = document.getElementById('slots');
+          if (slotEl && slotsContainer && slotsEl) {
+            const slotTop = slotEl.offsetTop - slotsEl.offsetTop;
+            const target = slotTop - (slotsContainer.clientHeight - slotEl.offsetHeight) / 2;
+            slotsContainer.scrollTo({ top: Math.max(0, target), behavior: 'smooth' });
           }
         }
       });
@@ -508,230 +501,6 @@ function generateLyrics(lyrics: LyricToken[]): void {
       currentCol.appendChild(el);
     }
   }
-}
-
-// ─── Menu ───────────────────────────────────────────────────────────
-export function buildMenu(songs: Song[]): void {
-  // restore group from storage
-  const savedGroup = getStorage('group') as GroupName | null;
-  if (savedGroup) state.group = savedGroup;
-
-  const savedSort = getStorage('sort') as SortMode | null;
-  if (savedSort && ['index', 'date', 'alpha'].includes(savedSort)) state.sortMode = savedSort;
-  // migrate legacy 'group' sort mode
-  if ((getStorage('sort') as string) === 'group') {
-    state.sortMode = 'date';
-    state.groupBySubunit = true;
-  }
-  const savedGroupBy = getStorage('groupBySubunit');
-  if (savedGroupBy != null) state.groupBySubunit = savedGroupBy === 'true';
-
-  switchGroup(state.group, songs);
-  updateSortButton();
-  updateGroupToggle();
-
-  // open menu on large screens
-  toggleMenu(window.innerWidth >= 1200);
-
-  document.getElementById('menu-button')?.addEventListener('click', () => toggleMenu());
-
-  document.querySelectorAll<HTMLElement>('.group-button').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const group = btn.dataset.value as GroupName;
-      switchGroup(group, songs);
-    });
-  });
-
-  document.querySelectorAll<HTMLButtonElement>('.sort-btn').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const mode = btn.dataset.sort as SortMode;
-      state.sortMode = mode === state.sortMode ? 'index' : mode;
-      setStorage('sort', state.sortMode);
-      updateSortButton();
-      switchGroup(state.group, songs);
-    });
-  });
-
-  document.getElementById('group-toggle')?.addEventListener('click', () => {
-    state.groupBySubunit = !state.groupBySubunit;
-    setStorage('groupBySubunit', String(state.groupBySubunit));
-    updateGroupToggle();
-    switchGroup(state.group, songs);
-  });
-
-  document.getElementById('menu-search')?.addEventListener('keyup', (e) => {
-    const query = (e.target as HTMLInputElement).value;
-    searchMenu(query);
-  });
-}
-
-function updateSortButton(): void {
-  document.querySelectorAll<HTMLButtonElement>('.sort-btn').forEach((btn) => {
-    btn.classList.toggle('active', btn.dataset.sort === state.sortMode);
-  });
-}
-
-function updateGroupToggle(): void {
-  document.getElementById('group-toggle')?.classList.toggle('active', state.groupBySubunit);
-}
-
-const SUBUNIT_ORDER: Record<string, number> = {
-  '': 0, 'cyaron': 1, 'azalea': 2, 'guilty-kiss': 3,
-  '1st-years': 4, '2nd-years': 5, '3rd-years': 6, 'saint-aqours-snow': 7, 'aqours-miku': 8,
-};
-const SUBUNIT_LABELS: Record<string, string> = {
-  '': 'Aqours', 'cyaron': 'CYaRon!', 'azalea': 'AZALEA', 'guilty-kiss': 'Guilty Kiss',
-  '1st-years': '1st Years', '2nd-years': '2nd Years', '3rd-years': '3rd Years',
-  'saint-aqours-snow': 'Saint Aqours Snow', 'aqours-miku': 'Aqours & Miku',
-};
-
-function sortSongs(filtered: Song[]): Song[] {
-  const sorted = filtered.slice();
-
-  if (state.sortMode === 'index' && !state.groupBySubunit) return sorted;
-
-  const byDate = (a: Song, b: Song) =>
-    (a.released ?? '9999').localeCompare(b.released ?? '9999') || a.name.localeCompare(b.name);
-  const byAlpha = (a: Song, b: Song) => a.name.localeCompare(b.name);
-  const base = state.sortMode === 'alpha' ? byAlpha : state.sortMode === 'date' ? byDate : () => 0;
-
-  if (state.groupBySubunit) {
-    sorted.sort((a, b) => {
-      const ga = SUBUNIT_ORDER[a.subunit ?? ''] ?? 99;
-      const gb = SUBUNIT_ORDER[b.subunit ?? ''] ?? 99;
-      return ga - gb || base(a, b);
-    });
-  } else {
-    sorted.sort(base);
-  }
-  return sorted;
-}
-
-function switchGroup(group: GroupName, songs: Song[]): void {
-  state.group = group;
-  setStorage('group', group);
-
-  // highlight active group button
-  document.querySelectorAll<HTMLElement>('.group-button').forEach((btn) => {
-    btn.classList.toggle('active', btn.dataset.value === group);
-  });
-
-  // set group class on html + sidebar for group-specific default colors
-  const htmlEl = document.documentElement;
-  htmlEl.classList.remove('group-muse', 'group-aqours', 'group-wug', 'group-nijigasaki');
-  htmlEl.classList.add(`group-${group}`);
-  const sidebar = document.getElementById('sidebar');
-  if (sidebar) {
-    sidebar.classList.remove('group-muse', 'group-aqours', 'group-wug', 'group-nijigasaki');
-    sidebar.classList.add(`group-${group}`);
-  }
-
-  // rebuild song list
-  document.querySelectorAll('.select-option, .sort-section-header').forEach((el) => el.remove());
-  const nav = document.querySelector('.sidebar-nav');
-  if (!nav) return;
-
-  // filter songs for this group
-  const filtered: Song[] = [];
-  for (const song of songs) {
-    if (song.hidden) continue;
-    if (song.menu != null ? song.menu !== group : song.group !== group) continue;
-    filtered.push(song);
-  }
-
-  const sorted = sortSongs(filtered);
-  let lastSection = '';
-
-  for (const song of sorted) {
-    // insert section headers in group mode
-    if (state.groupBySubunit) {
-      const section = song.subunit ?? '';
-      if (section !== lastSection) {
-        const header = document.createElement('li');
-        header.className = 'sort-section-header';
-        header.textContent = SUBUNIT_LABELS[section] ?? section;
-        nav.appendChild(header);
-        lastSection = section;
-      }
-    }
-
-    const i = songs.indexOf(song);
-    const li = document.createElement('li');
-    li.className = 'select-option';
-
-    const a = document.createElement('a');
-    a.id = `select${i}`;
-    a.href = `play.html#${song.id}`;
-
-    const nameSpan = document.createElement('span');
-    nameSpan.className = 'song-name';
-    if (song.note === 'unsynced') {
-      const mark = document.createElement('span');
-      mark.className = 'unsynced-mark';
-      mark.textContent = '≈';
-      attachInstantTip(mark, 'Lyric timing approximate');
-      nameSpan.appendChild(mark);
-    }
-    nameSpan.appendChild(document.createTextNode(song.name));
-    a.appendChild(nameSpan);
-
-    const attrsSpan = document.createElement('span');
-    attrsSpan.className = 'song-attrs';
-    if (song.lyrics && (Array.isArray(song.lyrics) ? song.lyrics.length > 0 : song.lyrics.length > 0)) {
-      const icon = document.createElement('span');
-      icon.className = 'glyphicon glyphicon-align-right';
-      attrsSpan.appendChild(icon);
-    }
-    a.appendChild(attrsSpan);
-
-    li.appendChild(a);
-    nav.appendChild(li);
-  }
-
-  const searchInput = document.getElementById('menu-search') as HTMLInputElement | null;
-  if (searchInput) searchMenu(searchInput.value);
-}
-
-function searchMenu(query: string): void {
-  const regex = new RegExp(escapeRegExp(query), 'i');
-  document.querySelectorAll<HTMLElement>('.select-option').forEach((el) => {
-    el.style.display = regex.test(el.textContent ?? '') ? '' : 'none';
-  });
-  // hide section headers whose songs are all hidden
-  document.querySelectorAll<HTMLElement>('.sort-section-header').forEach((hdr) => {
-    let hasVisible = false;
-    let el = hdr.nextElementSibling as HTMLElement | null;
-    while (el && !el.classList.contains('sort-section-header')) {
-      if (el.classList.contains('select-option') && el.style.display !== 'none') hasVisible = true;
-      el = el.nextElementSibling as HTMLElement | null;
-    }
-    hdr.style.display = hasVisible ? '' : 'none';
-  });
-}
-
-function highlightSongInMenu(id: string): void {
-  document.querySelectorAll('.sidebar-nav a').forEach((a) => a.classList.remove('active'));
-  const songs = getSongs();
-  const idx = songs.findIndex((s) => s.id === id);
-  if (idx >= 0) {
-    const el = document.getElementById(`select${idx}`);
-    el?.classList.add('active');
-    el?.scrollIntoView({ block: 'center', behavior: 'smooth' });
-  }
-}
-
-export function toggleMenu(show?: boolean): void {
-  const main = document.querySelector<HTMLElement>('.main');
-  const menuBtn = document.getElementById('menu-button');
-  const sidebar = document.getElementById('sidebar');
-  if (!main || !menuBtn || !sidebar) return;
-
-  const isOpen = main.classList.contains('with-menu');
-  const shouldOpen = show ?? !isOpen;
-
-  main.classList.toggle('with-menu', shouldOpen);
-  menuBtn.classList.toggle('with-menu', shouldOpen);
-  sidebar.classList.toggle('sidebar-collapsed', !shouldOpen);
 }
 
 // ─── Control Bindings ───────────────────────────────────────────────

@@ -3,6 +3,8 @@
   "ogg": "sound/super_nova.ogg",
   "id": "super-nova",
   "group": "nijigasaki",
+  "released": "2020-02-12",
+  "subunit": "diverdiva",
   "added": "2026-04",
   "generated": "2026-04-17T15:22:40Z",
   "hidden": false,

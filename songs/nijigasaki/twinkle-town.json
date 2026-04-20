@@ -3,6 +3,8 @@
   "ogg": "sound/twinkle_town.ogg",
   "id": "twinkle-town",
   "group": "nijigasaki",
+  "released": "2021-05-26",
+  "subunit": "qu4rtz",
   "added": "2026-04",
   "generated": "2026-04-18T01:41:02Z",
   "hidden": false,

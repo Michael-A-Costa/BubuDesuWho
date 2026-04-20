@@ -3,6 +3,8 @@
   "ogg": "sound/power_spot.ogg",
   "id": "power-spot",
   "group": "nijigasaki",
+  "released": "2020-12-25",
+  "subunit": "diverdiva",
   "added": "2026-04",
   "generated": "2026-04-17T15:22:33Z",
   "hidden": false,

@@ -3,6 +3,8 @@
   "ogg": "sound/happy_nyan_days.ogg",
   "id": "happy-nyan-days",
   "group": "nijigasaki",
+  "released": "2021-02-25",
+  "subunit": "a-zu-na",
   "added": "2026-04",
   "generated": "2026-04-17T21:50:27Z",
   "hidden": false,

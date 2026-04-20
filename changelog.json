@@ -1,7 +1,103 @@
 [
   {
+    "date": "04/19/2026",
+    "change": "Re-encoded all audio from the original FLAC sources to OGG Opus, replacing the existing lower quality OGG Vorbis files with much higher fidelity versions"
+  },
+  {
+    "date": "04/19/2026",
+    "change": "All-member lines now get a group-colored glow the moment a song loads, so you can spot the chorus sections at a glance"
+  },
+  {
+    "date": "04/17/2026",
+    "change": "Added an <em>Official</em> color palette toggle that uses the official member colors alongside the original theme"
+  },
+  {
+    "date": "04/17/2026",
+    "change": "Bubudle: added a subunit selector — filter clips by CYaRon, Guilty Kiss, AZALEA, Printemps, lily white, BiBi, and the Nijigasaki subunits"
+  },
+  {
+    "date": "04/17/2026",
+    "change": "Sidebar search bar now sticks to the top of the menu so it stays in view while you scroll the full song list"
+  },
+  {
+    "date": "04/16/2026",
+    "change": "Added <strong>Nijigasaki High School Idol Club</strong> — a brand-new group with 24 songs, album covers, per-member color themes, and subunit shortcuts (all new to the site, none of these were on the original)"
+  },
+  {
+    "date": "04/16/2026",
+    "change": "Songs with approximated (unsynced) timings now show a <code>timing approx</code> badge so you know which mappings are still rough"
+  },
+  {
+    "date": "04/13/2026",
+    "change": "Bubudle: added a <code>Skip</code> button to give up on a clip and reveal the answer"
+  },
+  {
+    "date": "04/12/2026",
+    "change": "Full UI redesign — modernized layout, typography, and spacing across every page"
+  },
+  {
+    "date": "04/12/2026",
+    "change": "Bubudle: split clip difficulty and song difficulty into separate filters so you can pick exactly the pool you want (Normal/Hard/Insane for each axis)"
+  },
+  {
+    "date": "04/09/2026",
+    "change": "Menu search bar now autofocuses so you can start typing as soon as a page loads"
+  },
+  {
+    "date": "04/08/2026",
+    "change": "Site rebranded to <strong>BubuDesuWho</strong> — a tribute to gacha4life's original GanbaWhoby, which inspired this rebuild"
+  },
+  {
+    "date": "04/08/2026",
+    "change": "Added album cover art to every song entry in the menu"
+  },
+  {
+    "date": "04/08/2026",
+    "change": "Bubudle: added volume slider, seek bar, persistent state, and <code>Bad Timestamp</code> / <code>Flag Difficulty</code> / <code>Flag Singer</code> buttons that save locally and export to a <code>.txt</code> for filing GitHub issues"
+  },
+  {
+    "date": "04/08/2026",
+    "change": "Added <strong>Bubudle</strong> — a brand-new Wordle-inspired mini-game that plays a random lyric clip and asks you to guess the singer(s), with progressive hints (lyric snippet → clip difficulty → song difficulty → theme) and streak tracking"
+  },
+  {
     "date": "04/07/2026",
-    "change": "Added a ton of new songs and improvements!"
+    "change": "Japanese lyrics now display alongside the romaji for songs where they've been collected — useful for readers who prefer kanji/kana"
+  },
+  {
+    "date": "04/07/2026",
+    "change": "Selected answer buttons now tint with each member's signature character color (Honoka orange, Chika orange, Kanan green, Ayumu pink, etc.) instead of a single generic highlight"
+  },
+  {
+    "date": "04/07/2026",
+    "change": "Added an in-browser <code>Edit</code> mode — adjust slot timings, difficulty, and singer assignments directly on the play page, then download the corrected config as JSON to attach to a bug report"
+  },
+  {
+    "date": "04/07/2026",
+    "change": "Added a per-slot <code>Check</code> button so you can verify one line at a time instead of waiting to submit the whole song"
+  },
+  {
+    "date": "04/07/2026",
+    "change": "Added dark mode (moon toggle in the top-right of every page) with theme-aware colors across slots and lyrics"
+  },
+  {
+    "date": "04/07/2026",
+    "change": "Added menu sort toggles — choose <code>Date</code>, <code>A-Z</code>, or <code>Group</code> grouping for the song list"
+  },
+  {
+    "date": "04/07/2026",
+    "change": "Saint Aqours Snow now has its own slot template with Sarah and Leah as first-class answer buttons for the crossover songs"
+  },
+  {
+    "date": "04/07/2026",
+    "change": "Added a <em>Contributing</em> section on the About page with direct GitHub issue links and instructions for flagging or fixing bad data"
+  },
+  {
+    "date": "04/01/2026",
+    "change": "Song library grew from 110 to 251 playable songs — <strong>+55 μ's</strong> (46 → 101), <strong>+62 Aqours</strong> (57 → 119), <strong>+24 Nijigasaki</strong> (brand new group)"
+  },
+  {
+    "date": "04/01/2026",
+    "change": "<strong>GanbaWhoby revived.</strong> Brand-new site launched as a tribute to <a href=\"https://nanodesu.moe/ganbawhoby/\">gacha4life's original</a> — preserving the game, adding a full modern UI, and massively expanding the song library"
   },
   {
     "date": "02/25/2018",

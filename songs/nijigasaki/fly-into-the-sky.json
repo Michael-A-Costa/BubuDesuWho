@@ -3,6 +3,8 @@
   "ogg": "sound/fly_into_the_sky.ogg",
   "id": "fly-into-the-sky",
   "group": "nijigasaki",
+  "released": "2021-05-26",
+  "subunit": "diverdiva",
   "added": "2026-04",
   "generated": "2026-04-17T15:21:53Z",
   "hidden": false,

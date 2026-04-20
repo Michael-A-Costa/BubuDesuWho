@@ -3,6 +3,8 @@
   "ogg": "sound/makeup_session_abc.ogg",
   "id": "make-up-session-abc",
   "group": "nijigasaki",
+  "released": "2021-02-25",
+  "subunit": "qu4rtz",
   "added": "2026-04",
   "generated": "2026-04-18T01:40:27Z",
   "hidden": false,

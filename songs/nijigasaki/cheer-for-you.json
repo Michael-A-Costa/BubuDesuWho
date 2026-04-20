@@ -3,6 +3,8 @@
   "ogg": "sound/cheer_for_you.ogg",
   "id": "cheer-for-you",
   "group": "nijigasaki",
+  "released": "2020-02-12",
+  "subunit": "a-zu-na",
   "added": "2026-04",
   "generated": "2026-04-17T15:21:47Z",
   "hidden": false,

@@ -2475,3 +2475,153 @@ html.dark-mode .edit-mode .navbar {
     padding: 0 0 4px 0;
   }
 }
+
+/* ---------- Submission page ---------- */
+.submission-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-end;
+  margin: 12px 0;
+}
+.submission-field {
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+  flex: 1 1 200px;
+  margin-bottom: 0;
+}
+.submission-label {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  opacity: 0.8;
+}
+.submission-actions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.submission-filename-preview {
+  font-size: 12px;
+  opacity: 0.7;
+  margin: 4px 0 0;
+  font-family: monospace;
+}
+.submission-empty {
+  opacity: 0.6;
+  font-style: italic;
+  padding: 16px 0;
+}
+.submission-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.submission-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 8px;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 4px;
+}
+.submission-entry-lyric {
+  align-items: stretch;
+}
+.submission-entry-main {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+.submission-entry-text {
+  font-size: 14px;
+}
+.submission-chip-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-start;
+}
+.submission-member-grid,
+.submission-shortcut-grid {
+  display: flex;
+  gap: 6px;
+}
+.submission-shortcut-grid {
+  padding-left: 12px;
+  border-left: 1px dashed rgba(128, 128, 128, 0.35);
+}
+.submission-member-col,
+.submission-shortcut-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 88px;
+}
+.submission-chip {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: 1.5px solid;
+  background: transparent;
+  cursor: pointer;
+  line-height: 1.3;
+  text-align: center;
+  transition: background-color 0.1s, color 0.1s;
+  white-space: nowrap;
+}
+.submission-chip-shortcut {
+  font-style: italic;
+  opacity: 0.85;
+}
+.submission-chip-shortcut.selected {
+  background: rgba(128, 128, 128, 0.25);
+  opacity: 1;
+  border-color: currentColor;
+}
+.submission-chip.selected {
+  font-weight: bold;
+}
+.submission-entry-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 0 0 auto;
+}
+.submission-entry-separator {
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  background: rgba(128, 128, 128, 0.08);
+  font-size: 12px;
+  opacity: 0.75;
+}
+.submission-separator-label {
+  flex: 1 1 auto;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+@media (max-width: 640px) {
+  .submission-entry-lyric {
+    flex-direction: column;
+  }
+  .submission-entry-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .submission-member-col,
+  .submission-shortcut-col {
+    min-width: 72px;
+  }
+  .submission-shortcut-grid {
+    padding-left: 0;
+    border-left: none;
+    border-top: 1px dashed rgba(128, 128, 128, 0.35);
+    padding-top: 8px;
+    margin-top: 4px;
+  }
+}

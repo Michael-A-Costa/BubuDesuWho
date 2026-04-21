@@ -149,7 +149,10 @@ function selectSong(song: Song): void {
   const coverEl = document.getElementById('song-cover') as HTMLImageElement | null;
   if (coverEl) {
     if (song.cover) {
-      coverEl.src = import.meta.env.BASE_URL + song.cover;
+      const coverBase = import.meta.env.VITE_COVER_BASE;
+      coverEl.src = coverBase
+        ? coverBase + song.cover.replace(/^css\/images\/covers\//, '')
+        : import.meta.env.BASE_URL + song.cover;
       coverEl.style.display = '';
     } else {
       coverEl.src = '';

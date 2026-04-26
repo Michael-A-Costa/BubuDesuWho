@@ -134,6 +134,9 @@ function preprocessSong(cfg: SongConfig): Song {
     if (m.ans != null && (m.ans.length === 0 || m.ans.indexOf(0) !== -1)) {
       m.ans = findSingers(cfg.mapping ?? []).slice();
     }
+    if (m.ans != null && m.ans.length > 1) {
+      m.ans = [...m.ans].sort((a, b) => a - b);
+    }
   });
 
   const mapping = cfg.mapping ?? [];

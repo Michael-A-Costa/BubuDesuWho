@@ -1,649 +1,191 @@
 {
-  "group": "aqours",
+  "group": "seventeen",
   "legacy": true,
   "released": "2017-06-21",
   "subunit": "guilty-kiss",
-  "name": "Shadow gate to love",
+  "name": "Shadow\r",
   "id": "shadow",
   "mp3": "sound/shadow_gate_to_love.mp3",
-  "ogg": "sound/shadow_gate_to_love.ogg",
-  "mapping": [
+  "ogg": "sound/kpop/shadow.ogg",
+  "mapping": [{"range": [20, 25.1], "ans": [3]}, {"range": [25.1, 27.8], "ans": [3]}, {"range": [29.3, 38], "ans": [9]}, {"range": [38, 38.7]}, {"range": [38.7, 43], "ans": [6, 9], "diff": 2}, {"range": [43, 46.4], "ans": [3]}, {"range": [46.4, 48], "ans": [3]}, {"range": [48, 52], "ans": [6, 9], "diff": 2}, {"range": [52, 55.5], "ans": [3]}, {"range": [55.5, 57], "ans": [3]}, {"range": [57, 63.8], "ans": [3, 6, 9]}, {"range": [63.8, 66.1], "ans": [3, 6, 9]}, {"range": [66.1, 70.7], "ans": [3, 6, 9]}, {"range": [70.7, 75.2], "ans": [3, 6, 9]}, {"range": [79, 82], "ans": [3, 6, 9]}, {"range": [84.4, 89], "ans": [9]}, {"range": [89, 92], "ans": [9]}, {"range": [93.7, 101.9], "ans": [6]}, {"range": [101.9, 102.7]}, {"range": [102.7, 107], "ans": [3, 6], "diff": 2}, {"range": [107, 110.3], "ans": [9]}, {"range": [110.3, 111.9], "ans": [9]}, {"range": [111.9, 116.3], "ans": [3, 6], "diff": 2}, {"range": [116.3, 121], "ans": [9]}, {"range": [122, 123.8], "ans": [9]}, {"range": [123.8, 130.7], "ans": [3, 6, 9]}, {"range": [130.7, 133], "ans": [3, 6, 9]}, {"range": [133, 137.7], "ans": [3, 6, 9]}, {"range": [137.7, 142], "ans": [3, 6, 9]}, {"range": [153.5, 162.2], "ans": [3]}, {"range": [164, 169.5], "ans": [9]}, {"range": [170.3, 171.6], "ans": [6]}, {"range": [174, 180.9], "ans": [3, 6, 9]}, {"range": [180.9, 183.4], "ans": [3, 6, 9]}, {"range": [183.4, 187.8], "ans": [3, 6, 9]}, {"range": [187.8, 192.5], "ans": [3, 6, 9]}, {"range": [192.5, 194.9], "ans": [3, 9], "diff": 2}, {"range": [193.7, 194.7], "ans": [6]}, {"range": [194.9, 197.1], "ans": [3, 9], "diff": 2}, {"range": [196, 197], "ans": [6]}, {"range": [197.1, 199.3], "ans": [3, 9], "diff": 2}, {"range": [199.3, 201.7], "ans": [3, 9], "diff": 2}, {"range": [201, 207.4], "ans": [6]}, {"range": [201.7, 206.4], "ans": [3, 9], "diff": 2}, {"range": [206.4, 208.2], "ans": [3, 9], "diff": 2}, {"range": [208.2, 209.7], "ans": [3]}, {"range": [209.7, 210.7], "ans": [3, 9], "diff": 2}, {"range": [210.7, 213], "ans": [3, 6, 9]}, {"range": [216.6, 219.5], "ans": [3, 6, 9]}, {"range": [221, 224.3], "ans": [3, 6, 9]}, {"range": [225.9, 228.8], "ans": [3, 6, 9]}, {"range": [227.7, 230.7], "ans": [3]}, {"range": [230.5, 234], "ans": [3, 6, 9]}],
+  "slots": [{"command": "group", "members": [0, 1]}, {"command": "group", "members": [5, 6]}, {"command": "group", "members": [8, 9]}, {"command": "group", "members": [15, 16]}, {"command": "group", "members": [20, 21]}, {"command": "group", "members": [23, 24]}, {"command": "group", "members": [36, 38, 40, 41, 43, 44]}, {"command": "group", "members": [37, 39]}],
+  "lyrics": ["{Nanika ga tarinai sou omotta toki wa}", "{Kurai kaidan mite goran}", "{Hikari sasanai sono basho de hiraku tobira ga aru kara} {(You need me)}", "", "{Jakou no tsuyosa matou me ni} {sasowarete mite}", "{Himete ita} {ganbou ga kobore kakeru yoru wa} {shigekiteki kamo}", "{Saa, doushitai?}", "", "{Watashi no kage ga anata no yume o nomikomita garu}", "{Koishite mo ii yo}", "{Tameiki no naka wana o shikaketa}", "{Tabun kiiteru no shibiretekita desho?}", "", "{Oh baby shadow gate!}", "", "{Dare demo mieru wake janai no yo}", "{Eranda anata dake}", "{Hikari kobanda sono basho de hiraku tobira mitsuketara} {(You want me)}", "", "{Jumon wa itsuka shite mitai} {kisu no kazu nano}", "{Moshikashite}...{nante omotteru fujun'na yoru wa} {shigekiteki da wa}", "{Saa, doushiyou ka?}", "", "{Watashi to anata ura to omote no mujun o kakaete}", "{Koi ni kawaru no yo}", "{Kireina uso nara yurusareru hazu}", "{Dakara anata mo ai o sasayaite}", "", "{Sono tobira ga kieru mae ni anata ni kitto aeru}", "{Sou ne ashioto kikoeru} {saa, ima nano!}", "", "{Watashi no kage ga anata no yume o nomikomitagaru}", "{Koishite mo ii yo}", "{Tameiki no naka wana o shikaketa}", "{Tabun kiiteru no shibiretekita desho?}", "", "{Watashi to anata} {(Oh baby)} {ura to omote no} {(Shadow gate, shadow gate)} {mujun o kakaete}", "{Koi ni kawaru no yo}", "{(Oh yeah...)}", "{Kireina uso nara yurusareru hazu}", "{Dakara anata mo} {watashi ga} {yumemiru} {ai o sasayaite}", "", "{Oh baby Shadow gate!} {Koishite ii yo}", "{Oh baby Shadow gate!} {(Shadow gate!)} {Koishite ii yo }"],
+  "generated": "2026-04-25T17:03:48Z",
+  "added": "2026-04",
+  "album": "SEVENTEEN 4th Album ‘Face the Sun’",
+  "cover": "css/images/covers/shadow.jpg",
+  "language": "ko",
+  "lines": [
     {
-      "range": [
-        20,
-        25.1
-      ],
-      "ans": [
-        3
+      "lyric_hangul": "저 멀리 뜨거운 해 떠오르지 않길 원했어 (oh, whoa)",
+      "lyric_translation": "N/A",
+      "parts": [
+        {"lyric": "Jeo meolli tteugeoun hae", "range": [12.57, 14.39], "ans": [3]},
+        {"lyric": "Tteooreuji ankil weonhaesseo (Oh wuh)", "range": [14.39, 19.18], "ans": [3]}
       ]
     },
     {
-      "range": [
-        25.1,
-        27.8
-      ],
-      "ans": [
-        3
+      "lyric_hangul": "빛의 반대편 그늘진 모든 게 싫어서 (oh, whoa)",
+      "parts": [
+        {"lyric": "Biche bandaepyeon", "range": [19.18, 20.3], "ans": [13]},
+        {"lyric": "Geuneuljin modeun ge shireoseo (Oh wuh)", "range": [20.3, 25.2], "ans": [13]}
       ]
     },
-    {
-      "range": [
-        29.3,
-        38
-      ],
-      "ans": [
-        9
-      ]
-    },
-    {
-      "range": [
-        38,
-        38.7
-      ]
-    },
-    {
-      "range": [
-        38.7,
-        43
-      ],
-      "ans": [
-        6,
-        9
-      ],
-      "diff": 2
-    },
-    {
-      "range": [
-        43,
-        46.4
-      ],
-      "ans": [
-        3
-      ]
-    },
-    {
-      "range": [
-        46.4,
-        48
-      ],
-      "ans": [
-        3
-      ]
-    },
-    {
-      "range": [
-        48,
-        52
-      ],
-      "ans": [
-        6,
-        9
-      ],
-      "diff": 2
-    },
-    {
-      "range": [
-        52,
-        55.5
-      ],
-      "ans": [
-        3
-      ]
-    },
-    {
-      "range": [
-        55.5,
-        57
-      ],
-      "ans": [
-        3
-      ]
-    },
-    {
-      "range": [
-        57,
-        63.8
-      ],
-      "ans": [
-        3,
-        6,
-        9
-      ]
-    },
-    {
-      "range": [
-        63.8,
-        66.1
-      ],
-      "ans": [
-        3,
-        6,
-        9
-      ]
-    },
-    {
-      "range": [
-        66.1,
-        70.7
-      ],
-      "ans": [
-        3,
-        6,
-        9
-      ]
-    },
-    {
-      "range": [
-        70.7,
-        75.2
-      ],
-      "ans": [
-        3,
-        6,
-        9
-      ]
-    },
-    {
-      "range": [
-        79,
-        82
-      ],
-      "ans": [
-        3,
-        6,
-        9
-      ]
-    },
-    {
-      "range": [
-        84.4,
-        89
-      ],
-      "ans": [
-        9
-      ]
-    },
-    {
-      "range": [
-        89,
-        92
-      ],
-      "ans": [
-        9
-      ]
-    },
-    {
-      "range": [
-        93.7,
-        101.9
-      ],
-      "ans": [
-        6
-      ]
-    },
-    {
-      "range": [
-        101.9,
-        102.7
-      ]
-    },
-    {
-      "range": [
-        102.7,
-        107
-      ],
-      "ans": [
-        3,
-        6
-      ],
-      "diff": 2
-    },
-    {
-      "range": [
-        107,
-        110.3
-      ],
-      "ans": [
-        9
-      ]
-    },
-    {
-      "range": [
-        110.3,
-        111.9
-      ],
-      "ans": [
-        9
-      ]
-    },
-    {
-      "range": [
-        111.9,
-        116.3
-      ],
-      "ans": [
-        3,
-        6
-      ],
-      "diff": 2
-    },
-    {
-      "range": [
-        116.3,
-        121
-      ],
-      "ans": [
-        9
-      ]
-    },
-    {
-      "range": [
-        122,
-        123.8
-      ],
-      "ans": [
-        9
-      ]
-    },
-    {
-      "range": [
-        123.8,
-        130.7
-      ],
-      "ans": [
-        3,
-        6,
-        9
-      ]
-    },
-    {
-      "range": [
-        130.7,
-        133
-      ],
-      "ans": [
-        3,
-        6,
-        9
-      ]
-    },
-    {
-      "range": [
-        133,
-        137.7
-      ],
-      "ans": [
-        3,
-        6,
-        9
-      ]
-    },
-    {
-      "range": [
-        137.7,
-        142
-      ],
-      "ans": [
-        3,
-        6,
-        9
-      ]
-    },
-    {
-      "range": [
-        153.5,
-        162.2
-      ],
-      "ans": [
-        3
-      ]
-    },
-    {
-      "range": [
-        164,
-        169.5
-      ],
-      "ans": [
-        9
-      ]
-    },
-    {
-      "range": [
-        170.3,
-        171.6
-      ],
-      "ans": [
-        6
-      ]
-    },
-    {
-      "range": [
-        174,
-        180.9
-      ],
-      "ans": [
-        3,
-        6,
-        9
-      ]
-    },
-    {
-      "range": [
-        180.9,
-        183.4
-      ],
-      "ans": [
-        3,
-        6,
-        9
-      ]
-    },
-    {
-      "range": [
-        183.4,
-        187.8
-      ],
-      "ans": [
-        3,
-        6,
-        9
-      ]
-    },
-    {
-      "range": [
-        187.8,
-        192.5
-      ],
-      "ans": [
-        3,
-        6,
-        9
-      ]
-    },
-    {
-      "range": [
-        192.5,
-        194.9
-      ],
-      "ans": [
-        3,
-        9
-      ],
-      "diff": 2
-    },
-    {
-      "range": [
-        193.7,
-        194.7
-      ],
-      "ans": [
-        6
-      ]
-    },
-    {
-      "range": [
-        194.9,
-        197.1
-      ],
-      "ans": [
-        3,
-        9
-      ],
-      "diff": 2
-    },
-    {
-      "range": [
-        196,
-        197
-      ],
-      "ans": [
-        6
-      ]
-    },
-    {
-      "range": [
-        197.1,
-        199.3
-      ],
-      "ans": [
-        3,
-        9
-      ],
-      "diff": 2
-    },
-    {
-      "range": [
-        199.3,
-        201.7
-      ],
-      "ans": [
-        3,
-        9
-      ],
-      "diff": 2
-    },
-    {
-      "range": [
-        201,
-        207.4
-      ],
-      "ans": [
-        6
-      ]
-    },
-    {
-      "range": [
-        201.7,
-        206.4
-      ],
-      "ans": [
-        3,
-        9
-      ],
-      "diff": 2
-    },
-    {
-      "range": [
-        206.4,
-        208.2
-      ],
-      "ans": [
-        3,
-        9
-      ],
-      "diff": 2
-    },
-    {
-      "range": [
-        208.2,
-        209.7
-      ],
-      "ans": [
-        3
-      ]
-    },
-    {
-      "range": [
-        209.7,
-        210.7
-      ],
-      "ans": [
-        3,
-        9
-      ],
-      "diff": 2
-    },
-    {
-      "range": [
-        210.7,
-        213
-      ],
-      "ans": [
-        3,
-        6,
-        9
-      ]
-    },
-    {
-      "range": [
-        216.6,
-        219.5
-      ],
-      "ans": [
-        3,
-        6,
-        9
-      ]
-    },
-    {
-      "range": [
-        221,
-        224.3
-      ],
-      "ans": [
-        3,
-        6,
-        9
-      ]
-    },
-    {
-      "range": [
-        225.9,
-        228.8
-      ],
-      "ans": [
-        3,
-        6,
-        9
-      ]
-    },
-    {
-      "range": [
-        227.7,
-        230.7
-      ],
-      "ans": [
-        3
-      ]
-    },
-    {
-      "range": [
-        230.5,
-        234
-      ],
-      "ans": [
-        3,
-        6,
-        9
-      ]
-    }
-  ],
-  "slots": [
-    {
-      "command": "group",
-      "members": [
-        0,
-        1
-      ]
-    },
-    {
-      "command": "group",
-      "members": [
-        5,
-        6
-      ]
-    },
-    {
-      "command": "group",
-      "members": [
-        8,
-        9
-      ]
-    },
-    {
-      "command": "group",
-      "members": [
-        15,
-        16
-      ]
-    },
-    {
-      "command": "group",
-      "members": [
-        20,
-        21
-      ]
-    },
-    {
-      "command": "group",
-      "members": [
-        23,
-        24
-      ]
-    },
-    {
-      "command": "group",
-      "members": [
-        36,
-        38,
-        40,
-        41,
-        43,
-        44
-      ]
-    },
-    {
-      "command": "group",
-      "members": [
-        37,
-        39
-      ]
-    }
-  ],
-  "lyrics": [
-    "{Nanika ga tarinai sou omotta toki wa}",
-    "{Kurai kaidan mite goran}",
-    "{Hikari sasanai sono basho de hiraku tobira ga aru kara} {(You need me)}",
     "",
-    "{Jakou no tsuyosa matou me ni} {sasowarete mite}",
-    "{Himete ita} {ganbou ga kobore kakeru yoru wa} {shigekiteki kamo}",
-    "{Saa, doushitai?}",
+    {
+      "lyric_hangul": "걸음걸이마다 따라와서, 시선은 항상 그곳에 있어",
+      "parts": [
+        {"lyric": "Georeumgeorimada ttarawaseo", "range": [25.17, 28.72], "ans": [5]},
+        {"lyric": "Shiseoneun hangsang geugose isseo", "range": [28.72, 32.04], "ans": [5]}
+      ]
+    },
+    {
+      "lyric_hangul": "도망치는 내 모습이 너무 싫었어 (oh, whoa)",
+      "parts": [
+        {"lyric": "Domangchineun nae moseubi", "range": [32.04, 34.64], "ans": [2]},
+        {"lyric": "Neomu shireosseo (Oh wuh)", "range": [34.64, 38.87], "ans": [2]}
+      ]
+    },
     "",
-    "{Watashi no kage ga anata no yume o nomikomita garu}",
-    "{Koishite mo ii yo}",
-    "{Tameiki no naka wana o shikaketa}",
-    "{Tabun kiiteru no shibiretekita desho?}",
+    {"lyric": "Eoneusae urin dalmagago isseosseo", "lyric_hangul": "어느새 우린 닮아가고 있었어", "lyric_translation": "", "range": [38.87, 41.96], "ans": [10]},
+    {"lyric": "Machi dekalkomaniin geotcheoreom", "lyric_hangul": "마치 데칼코마니인 것처럼", "lyric_translation": "", "range": [41.96, 45.02], "ans": [7]},
+    {"lyric": "Neowa maju hago shipeun mame", "lyric_hangul": "너와 마주 하고 싶은 맘에", "lyric_translation": "", "range": [45.02, 49.31], "ans": [10]},
     "",
-    "{Oh baby shadow gate!}",
+    {"lyric": "Shadow my Shadow my Shadow", "lyric_hangul": "Shadow, my shadow, my shadow", "lyric_translation": "", "range": [49.31, 51.85], "ans": [9]},
+    {"lyric": "Neol namege boiji anheuryeo", "lyric_hangul": "널 남에게 보이지 않으려", "lyric_translation": "", "range": [51.85, 55.34], "ans": [9]},
+    {
+      "lyric_hangul": "Shadow, my shadow, my shadow",
+      "parts": [
+        {"lyric": "Shadow my Shadow my Shadow", "range": [55.34, 56.56], "ans": [6]},
+        {"lyric": "Shadow my Shadow my Shadow", "range": [55.86, 58.18], "ans": [1]}
+      ]
+    },
     "",
-    "{Dare demo mieru wake janai no yo}",
-    "{Eranda anata dake}",
-    "{Hikari kobanda sono basho de hiraku tobira mitsuketara} {(You want me)}",
+    {
+      "lyric_hangul": "미워하고 아파도 했어",
+      "parts": [
+        {"lyric": "Miweohago apado haesseo", "range": [58.18, 59.65], "ans": [6]},
+        {"lyric": "Miweohago apado haesseo", "range": [58.95, 61.5], "ans": [1]}
+      ]
+    },
+    {
+      "lyric_hangul": "Shadow, my shadow, my shadow",
+      "parts": [
+        {"lyric": "Shadow my Shadow my Shadow", "range": [61.5, 62.83], "ans": [6]},
+        {"lyric": "Shadow my Shadow my Shadow", "range": [62.13, 63.49], "ans": [1]}
+      ]
+    },
     "",
-    "{Jumon wa itsuka shite mitai} {kisu no kazu nano}",
-    "{Moshikashite}...{nante omotteru fujun'na yoru wa} {shigekiteki da wa}",
-    "{Saa, doushiyou ka?}",
+    {
+      "lyric_hangul": "Oh, 이제 난 알아 너 또한 나인걸",
+      "parts": [
+        {"lyric": "Oh ije nan ara neo ttohan naingeol", "range": [63.09, 64.42], "ans": [11]},
+        {"lyric": "Oh ije nan ara neo ttohan naingeol", "range": [63.72, 65.92], "ans": [4]}
+      ]
+    },
+    {
+      "lyric_hangul": "숨기고 싶지 않아, I want to hold your hand",
+      "parts": [
+        {"lyric": "Sumgigo shipji ana I want to hold your hand", "range": [65.92, 67.8], "ans": [11]},
+        {"lyric": "Sumgigo shipji ana I want to hold your hand", "range": [67.1, 69.06], "ans": [4]}
+      ]
+    },
     "",
-    "{Watashi to anata ura to omote no mujun o kakaete}",
-    "{Koi ni kawaru no yo}",
-    "{Kireina uso nara yurusareru hazu}",
-    "{Dakara anata mo ai o sasayaite}",
+    {
+      "lyric_hangul": "나의 어두움마저 밝게 빛나고 말 테니까",
+      "parts": [
+        {"lyric": "Naye eoduummajeo balkge binnago mal tenikka", "range": [68.68, 70.99], "ans": [8]},
+        {"lyric": "Naye eoduummajeo balkge binnago mal tenikka", "range": [70.29, 74.45], "ans": [2]}
+      ]
+    },
+    {
+      "lyric_hangul": "Baby, I'm a shadow of you",
+      "parts": [
+        {"lyric": "Baby I’m a shadow of you", "range": [74.45, 75.72], "ans": [8]},
+        {"lyric": "Baby I’m a shadow of you", "range": [75.02, 76.39], "ans": [2]}
+      ]
+    },
     "",
-    "{Sono tobira ga kieru mae ni anata ni kitto aeru}",
-    "{Sou ne ashioto kikoeru} {saa, ima nano!}",
+    {
+      "lyric_hangul": "달렸어 네게서 도망치려 숨었어 빛이 없는 곳으로",
+      "parts": [
+        {"lyric": "Dallyeosseo negeseo domangchiryeo", "range": [76.08, 79.93], "ans": [7]},
+        {"lyric": "Sumeosseo bichi eomneun goseuro", "range": [79.23, 82.44], "ans": [4]}
+      ]
+    },
+    {
+      "lyric_hangul": "도망치는 마음으로 나는 run, run, run, whoa",
+      "parts": [
+        {"lyric": "Domangchineun maeumeuro naneun", "range": [82.23, 85.05], "ans": [10]},
+        {"lyric": "Run Run Run Oh", "range": [85.05, 88.49], "ans": [10]}
+      ]
+    },
     "",
-    "{Watashi no kage ga anata no yume o nomikomitagaru}",
-    "{Koishite mo ii yo}",
-    "{Tameiki no naka wana o shikaketa}",
-    "{Tabun kiiteru no shibiretekita desho?}",
+    {
+      "lyric_hangul": "숨소리마저 똑같아서, 내 마음이 널 듣고 싶어 해",
+      "parts": [
+        {"lyric": "Sumsorimajeo ttokkataseo", "range": [88.49, 91.45], "ans": [3]},
+        {"lyric": "Nae maeumi neol deutgo shipeo hae", "range": [91.45, 94.97], "ans": [3]}
+      ]
+    },
+    {
+      "lyric_hangul": "도망치는 내 모습이 너무 싫었어 (oh, whoa)",
+      "parts": [
+        {"lyric": "Domangchineun nae moseubi", "range": [94.97, 97.85], "ans": [7]},
+        {"lyric": "Neomu shireosseo (Oh wuh)", "range": [97.85, 102.07], "ans": [7]}
+      ]
+    },
     "",
-    "{Watashi to anata} {(Oh baby)} {ura to omote no} {(Shadow gate, shadow gate)} {mujun o kakaete}",
-    "{Koi ni kawaru no yo}",
-    "{(Oh yeah...)}",
-    "{Kireina uso nara yurusareru hazu}",
-    "{Dakara anata mo} {watashi ga} {yumemiru} {ai o sasayaite}",
+    {"lyric": "Eoneusae urin dalmagago isseosseo", "lyric_hangul": "어느새 우린 닮아가고 있었어", "lyric_translation": "", "range": [102.07, 105.25], "ans": [12]},
+    {"lyric": "Machi dekalkomaniin geotcheoreom", "lyric_hangul": "마치 데칼코마니인 것처럼", "lyric_translation": "", "range": [105.25, 108.16], "ans": [4]},
+    {"lyric": "Neowa maju hago shipeun mame", "lyric_hangul": "너와 마주 하고 싶은 맘에", "lyric_translation": "", "range": [108.16, 112.56], "ans": [6]},
+    {"lyric": "Shadow my Shadow my Shadow", "lyric_hangul": "Shadow, my shadow, my shadow", "lyric_translation": "", "range": [112.56, 114.85], "ans": [5]},
     "",
-    "{Oh baby Shadow gate!} {Koishite ii yo}",
-    "{Oh baby Shadow gate!} {(Shadow gate!)} {Koishite ii yo }"
+    "[next-col]",
+    {"lyric": "Neol namege boiji anheuryeo", "lyric_hangul": "널 남에게 보이지 않으려", "lyric_translation": "", "range": [114.85, 118.56], "ans": [5]},
+    {"lyric": "Shadow my Shadow my Shadow", "lyric_hangul": "Shadow, my shadow, my shadow", "lyric_translation": "", "range": [118.56, 121.22], "ans": [12]},
+    {"lyric": "Miweohago apado haesseo", "lyric_hangul": "미워하고 아파도 했어", "lyric_translation": "", "range": [121.22, 125.03], "ans": [12]},
+    "",
+    {"lyric": "Shadow my Shadow my Shadow", "lyric_hangul": "Shadow, my shadow, my shadow", "lyric_translation": "", "range": [125.03, 126.25], "ans": [12]},
+    {"lyric": "Oh ije nan ara neo ttohan naingeol", "lyric_hangul": "Oh, 이제 난 알아 너 또한 나인걸", "lyric_translation": "", "range": [126.25, 129.23], "ans": [8]},
+    {"lyric": "Sumgigo shipji ana I want to hold your hand", "lyric_hangul": "숨기고 싶지 않아, I want to hold your hand", "lyric_translation": "", "range": [129.23, 132.04], "ans": [8]},
+    {"lyric": "Naye eoduummajeo balkge binnago mal tenikka", "lyric_hangul": "나의 어두움마저 밝게 빛나고 말 테니까", "lyric_translation": "", "range": [132.04, 137.52], "ans": [11]},
+    {"lyric": "Baby I’m a shadow of you", "lyric_hangul": "Baby, I'm a shadow of you", "lyric_translation": "", "range": [137.52, 139.23], "ans": [11]},
+    {"lyric": "Stay with me eoneu sunganedo", "lyric_hangul": "Stay with me 어느 순간에도", "lyric_translation": "", "range": [139.23, 142.22], "ans": [9]},
+    {"lyric": "Gateun bit gateun geurimja dweeo", "lyric_hangul": "같은 빛 같은 그림자 되어", "lyric_translation": "", "range": [142.22, 145.45], "ans": [1]},
+    {"lyric": "Eoneu goseseodo neoreul anko", "lyric_hangul": "어느 곳에서도 너를 안고", "lyric_translation": "", "range": [145.45, 150.0], "ans": [1]},
+    "",
+    {
+      "lyric_hangul": "Yeah, 검은색 칠해진 널 외면하기만 했어",
+      "parts": [
+        {"lyric": "Geomeunsaek chilhaejin", "range": [150.0, 151.2], "ans": [13]},
+        {"lyric": "Neol wemyeonhagiman haesseo", "range": [151.2, 152.89], "ans": [13]}
+      ]
+    },
+    {
+      "lyric_hangul": "서로의 똑같은 모습을 잠시 잊은 채로",
+      "parts": [
+        {"lyric": "Seoroye ttokkateun moseubeul", "range": [152.89, 154.81], "ans": [13]},
+        {"lyric": "Jamshi ijeun chaero", "range": [154.81, 155.97], "ans": [13]}
+      ]
+    },
+    {
+      "lyric_hangul": "부정하기 바빴었던 어제 드넓은 지구 한가운데",
+      "parts": [
+        {"lyric": "Bujeonghagi bappasseotteon eoje", "range": [155.97, 158.09], "ans": [13]},
+        {"lyric": "Deuneolpeun jigu hangaunde", "range": [158.09, 160.63], "ans": [13]}
+      ]
+    },
+    "",
+    {
+      "lyric_hangul": "우리의 관계는 유일해, 같은 발맞춰 달려 everywhere (my shadow)",
+      "parts": [
+        {"lyric": "Uriye gwangyeneun yuilhae", "range": [160.63, 162.29], "ans": [13]},
+        {"lyric": "Gateun balmatchweo dallyeo Everywhere", "range": [162.29, 165.53], "ans": [13]}
+      ]
+    },
+    {"lyric": "Shadow my Shadow my Shadow", "lyric_hangul": "Shadow, my shadow, my shadow", "lyric_translation": "", "range": [169.22, 171.81], "ans": [9]},
+    {"lyric": "Shadow, my shadow, my shadow", "lyric_hangul": "Shadow, my shadow, my shadow", "lyric_translation": "", "range": [175.49, 176.71], "ans": []},
+    {"lyric": "Baby, I'm a shadow of you", "lyric_hangul": "Baby, I'm a shadow of you", "lyric_translation": "", "range": [188.19, 192.17], "ans": []}
   ]
 }

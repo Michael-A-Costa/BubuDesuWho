@@ -67,6 +67,7 @@ export const state: GameState = {
   calls: false,
   callSFX: false,
   globalReveal: false,
+  hints: false,
   loaded: null,
   assObjectURL: '',
   lastProgressUpdate: null,
@@ -495,6 +496,11 @@ export function toggleGlobalReveal(val?: boolean): void {
   for (const slot of state.slots) toggleReveal(slot, state.globalReveal);
 }
 
+export function toggleHints(val?: boolean): void {
+  state.hints = val ?? !state.hints;
+  document.body.classList.toggle('hints-on', state.hints);
+}
+
 // ─── Difficulty ─────────────────────────────────────────────────────
 export function toggleDiff(val?: number): void {
   if (val != null) {
@@ -767,6 +773,10 @@ function loadPlaySettings(): void {
 
   const jpLyrics = getStorage('jpLyrics');
   state.jpLyrics = jpLyrics === 'true';
+
+  const hints = getStorage('hints');
+  state.hints = hints === 'true';
+  document.body.classList.toggle('hints-on', state.hints);
 }
 
 export function restoreChoices(): void {

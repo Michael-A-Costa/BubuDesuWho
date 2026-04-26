@@ -2,7 +2,9 @@ import { Song, Slot, SlotState, LineObject, MappingEntry, GroupName, MEMBER_MAPP
 import { loadConfig } from './config';
 import { state, initGameState, loadSong, checkSlot, toggleChoice, toggleReveal } from './game';
 import { initThemeToggle, switchTheme, buildSlotSkeleton } from './ui';
+import { initKofi } from './kofi';
 import { buildMenu, toggleMenu } from './ui-menu';
+import { hasGroup } from './groups';
 import * as player from './player';
 import { getStorage, setStorage } from './storage';
 import {
@@ -13,6 +15,14 @@ import {
   HINT_YEARS,
 } from './bubudle-config';
 import { appendToLog, renderLog, hasLogEntries } from './bubudle-log';
+import {
+  AppMode, DailyScope,
+  currentDateEst, msUntilNextEstMidnight, formatHms, pickDailyIndex,
+  loadDailyResult, saveDailyResult,
+} from './bubudle-daily';
+
+const APP_MODE: AppMode = import.meta.env.VITE_APP_MODE === 'kpop' ? 'kpop' : 'anime';
+type BubudleMode = 'infinite' | 'daily';
 
 interface LyricCandidate {
   lyric: string;
@@ -232,6 +242,65 @@ let songDiff: SongDifficulty = 'all';
 let subunitInclude: string[] = [];
 let subunitExclude: string[] = [];
 
+let bubudleMode: BubudleMode = 'infinite';
+let dailyScope: DailyScope = { kind: 'group', group: 'aqours' };
+let infiniteAll = false;
+let allSongs: Song[] = [];
+let countdownTimer: number | null = null;
+let lastInfiniteGroup: GroupName = 'aqours';
+
+/** Groups intentionally excluded from Bubudle (still playable via play.html). */
+const BUBUDLE_EXCLUDED_GROUPS: ReadonlySet<string> = new Set(['wug']);
+
+function isExcluded(group: string | undefined): boolean {
+  return !!group && BUBUDLE_EXCLUDED_GROUPS.has(group);
+}
+
+function isAllScope(): boolean {
+  return bubudleMode === 'daily' ? dailyScope.kind === 'mode' : infiniteAll;
+}
+
+function populateAllButton(): void {
+  const btn = document.getElementById('bubudle-all-group-button');
+  if (!btn) return;
+  const sources: string[] = [];
+  document.querySelectorAll<HTMLElement>('.group-button[data-value]').forEach((gb) => {
+    const slug = gb.dataset.value!;
+    if (!hasGroup(slug)) return;   // off-mode group — skip its icon
+    if (isExcluded(slug)) return;
+    const img = gb.querySelector<HTMLImageElement>('img.group-icon');
+    if (img?.src) sources.push(img.getAttribute('src')!);
+  });
+  if (sources.length === 0) return;
+  btn.innerHTML = '';
+  const grid = document.createElement('span');
+  grid.className = 'group-button-all-grid';
+  for (const src of sources) {
+    const im = document.createElement('img');
+    im.className = 'group-icon-mini';
+    im.src = src;
+    im.alt = '';
+    grid.appendChild(im);
+  }
+  btn.appendChild(grid);
+}
+
+function loadDailyScope(): DailyScope {
+  const raw = getStorage('bubudle-daily-scope');
+  if (!raw) return { kind: 'group', group: bubudleGroup };
+  if (raw.startsWith('mode:')) {
+    const mode = raw.slice(5);
+    if (mode === 'anime' || mode === 'kpop') return { kind: 'mode', mode };
+  }
+  if (raw.startsWith('group:')) return { kind: 'group', group: raw.slice(6) };
+  return { kind: 'group', group: bubudleGroup };
+}
+
+function saveDailyScope(): void {
+  const key = dailyScope.kind === 'mode' ? `mode:${dailyScope.mode}` : `group:${dailyScope.group}`;
+  setStorage('bubudle-daily-scope', key);
+}
+
 export async function initBubudlePage(): Promise<void> {
   player.initPlayer({
     onTick(currentTime, _duration, _didSeek) {
@@ -249,32 +318,92 @@ export async function initBubudlePage(): Promise<void> {
   loadSubunitFilter();
   const songs = await loadConfig();
   if (songs.length === 0) return;
+  allSongs = songs;
 
   // Build sidebar menu (links go to play.html#song)
   buildMenu(songs);
   bubudleGroup = state.group;
+
+  // Hide excluded groups from the bubudle sidebar.
+  document.querySelectorAll<HTMLElement>('.group-button[data-value]').forEach((btn) => {
+    if (isExcluded(btn.dataset.value)) btn.style.display = 'none';
+  });
+
+  // If state.group landed on an excluded group (e.g. saved 'wug' from before), snap to first allowed group.
+  if (isExcluded(bubudleGroup)) {
+    const firstAllowed = Array.from(document.querySelectorAll<HTMLElement>('.group-button[data-value]'))
+      .map(b => b.dataset.value!)
+      .find(slug => hasGroup(slug) && !isExcluded(slug));
+    if (firstAllowed) bubudleGroup = firstAllowed as GroupName;
+  }
   applyGroupClass(bubudleGroup);
   toggleMenu(window.innerWidth >= 1200);
   initThemeToggle();
+  initKofi();
   initVolume();
   initSeekSlider();
 
-  buildCandidatePool(songs);
+  populateAllButton();
+  lastInfiniteGroup = bubudleGroup;
+  infiniteAll = getStorage('bubudle-infinite-all') === '1';
+  bubudleMode = readModeFromUrlOrStorage();
+  dailyScope = loadDailyScope();
+  if (dailyScope.kind === 'group' && isExcluded(dailyScope.group)) {
+    dailyScope = { kind: 'group', group: bubudleGroup };
+  }
+
+  if (bubudleMode === 'infinite' && infiniteAll) {
+    buildCandidatePoolAll(songs);
+  } else {
+    buildCandidatePool(songs);
+  }
   rebuildSingerPicker();
   rebuildSubunitFilter();
 
   // Switch bubudle group when sidebar group button is clicked
   document.querySelectorAll<HTMLElement>('.group-button').forEach((btn) => {
     btn.addEventListener('click', () => {
-      bubudleGroup = btn.dataset.value as GroupName;
-      applyGroupClass(bubudleGroup);
-      loadSubunitFilter();
-      buildCandidatePool(songs);
-      rebuildSingerPicker();
+      const value = btn.dataset.value;
+      if (!value) return;   // 'All' button has no data-value; handled separately
+      if (bubudleMode === 'daily') {
+        dailyScope = { kind: 'group', group: value as GroupName };
+        saveDailyScope();
+        loadDailyForScope();
+      } else {
+        infiniteAll = false;
+        setStorage('bubudle-infinite-all', '');
+        bubudleGroup = value as GroupName;
+        lastInfiniteGroup = bubudleGroup;
+        applyGroupClass(bubudleGroup);
+        loadSubunitFilter();
+        buildCandidatePool(songs);
+        rebuildSingerPicker();
+        rebuildSubunitFilter();
+        recentHistory.clear();
+        applyModeUI();
+        pickRandom(false, true);
+      }
+    });
+  });
+
+  document.querySelectorAll<HTMLElement>('.bubudle-mode-tab').forEach((btn) => {
+    btn.addEventListener('click', () => switchMode(btn.dataset.mode as BubudleMode));
+  });
+
+  document.getElementById('bubudle-all-group-button')?.addEventListener('click', () => {
+    if (bubudleMode === 'daily') {
+      dailyScope = { kind: 'mode', mode: APP_MODE };
+      saveDailyScope();
+      loadDailyForScope();
+    } else {
+      infiniteAll = true;
+      setStorage('bubudle-infinite-all', '1');
+      buildCandidatePoolAll(songs);
       rebuildSubunitFilter();
       recentHistory.clear();
-      pickRandom(false, true);
-    });
+      applyModeUI();
+      pickRandom();
+    }
   });
 
   streak = parseInt(getStorage('bubudle-streak') ?? '0', 10) || 0;
@@ -305,17 +434,19 @@ export async function initBubudlePage(): Promise<void> {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
       if (!checked) checkAnswer();
-      else pickRandom();
+      else if (bubudleMode === 'infinite') pickRandom();
     } else if (e.key === 'c') {
       if (!checked) checkAnswer();
-      else pickRandom();
+      else if (bubudleMode === 'infinite') pickRandom();
     } else if (e.key === ' ') {
       e.preventDefault();
       playClip();
     }
   });
 
-  pickRandom(true);
+  applyModeUI();
+  if (bubudleMode === 'daily') loadDailyForScope();
+  else pickRandom(true);
 
   if (hasLogEntries()) renderLog();
 }
@@ -333,10 +464,23 @@ function arrEq(a: number[], b: number[]): boolean {
 }
 
 function buildCandidatePool(songs: Song[]): void {
+  collectCandidates(songs, (s) => {
+    const menu = (s.menu ?? s.group) as string;
+    return menu === bubudleGroup && !isExcluded(menu);
+  });
+  updatePoolCount();
+}
+
+function buildCandidatePoolAll(songs: Song[]): void {
+  collectCandidates(songs, (s) => !isExcluded((s.menu ?? s.group) as string));
+  updatePoolCount();
+}
+
+function collectCandidates(songs: Song[], include: (s: Song) => boolean): void {
   candidates = [];
   for (const song of songs) {
     if (!song.lines || song.hidden) continue;
-    if ((song.menu ?? song.group) !== bubudleGroup) continue;
+    if (!include(song)) continue;
 
     const allSingers = new Set<number>();
     for (const line of song.lines) {
@@ -374,7 +518,6 @@ function buildCandidatePool(songs: Song[]): void {
       }
     }
   }
-  updatePoolCount();
 }
 
 const PICKER_EXTRA_MEMBERS: Partial<Record<GroupName, Record<number, string>>> = {
@@ -536,8 +679,13 @@ function eligibleCandidates(): LyricCandidate[] {
     if (!clipOk) return false;
     if (diffFilter !== 0 && c.diff !== diffFilter) return false;
     const key = c.allSingers.join(',');
-    if (includeSet && !includeSet.has(key)) return false;
-    if (excludeSet && excludeSet.has(key)) return false;
+    // Saint Snow ("10,11") subunit filter also covers saint-aqours-snow songs
+    // (their allSingers usually span 1–11, so wouldn't match the "10,11" key on their own).
+    const saintSnowMatch = c.song.group === 'saint-aqours-snow';
+    const matchesKey = (set: Set<string>): boolean =>
+      set.has(key) || (saintSnowMatch && set.has('10,11'));
+    if (includeSet && !matchesKey(includeSet)) return false;
+    if (excludeSet && matchesKey(excludeSet)) return false;
     return true;
   });
 }
@@ -558,105 +706,93 @@ function updatePoolCount(): void {
   if (el) el.textContent = `${eligibleCandidates().length}`;
 }
 
+function showEmptyPool(): void {
+  const container = document.getElementById('slots')!;
+  container.innerHTML = '<div class="text-center" style="padding:2em;opacity:0.6">No lyrics available for this group yet</div>';
+  document.getElementById('bubudle-lyric')!.textContent = '';
+  document.getElementById('bubudle-lyric-jp')!.textContent = '';
+  resetHints();
+}
+
 function pickRandom(initial = false, tryRestore = false): void {
-  let restoredAnswered = false;
   const pool = eligibleCandidates();
   updatePoolCount();
-  if (pool.length === 0) {
-    const container = document.getElementById('slots')!;
-    container.innerHTML = '<div class="text-center" style="padding:2em;opacity:0.6">No lyrics available for this group yet</div>';
-    document.getElementById('bubudle-lyric')!.textContent = '';
-    document.getElementById('bubudle-lyric-jp')!.textContent = '';
-    resetHints();
-    return;
-  }
+  if (pool.length === 0) { showEmptyPool(); return; }
+
+  let restoredAnswered = false;
+  let chosen: LyricCandidate;
   if (initial || tryRestore) {
     const restored = restoreCurrent();
-    if (restored) {
-      current = restored.candidate;
-      restoredAnswered = restored.answered;
-    } else {
-      current = pickFromPool(pool);
-    }
+    if (restored) { chosen = restored.candidate; restoredAnswered = restored.answered; }
+    else { chosen = pickFromPool(pool); }
   } else {
-    current = pickFromPool(pool);
+    chosen = pickFromPool(pool);
   }
-  saveCurrent(current, restoredAnswered);
+  saveCurrent(chosen, restoredAnswered);
+  renderCandidate(chosen, restoredAnswered, initial);
+}
+
+function renderCandidate(c: LyricCandidate, answered: boolean, initial = false): void {
+  // In any all-groups scope, the picked song determines the displayed group.
+  if (isAllScope()) {
+    const displayGroup = (c.song.menu ?? c.song.group) as GroupName;
+    if (displayGroup !== bubudleGroup) {
+      bubudleGroup = displayGroup;
+      applyGroupClass(bubudleGroup);
+      rebuildSingerPicker();
+    }
+  }
+
+  current = c;
   checked = false;
   wrongCount = 0;
   previousGuesses = [];
-  clipRange = calcClipRange(current.range);
+  clipRange = calcClipRange(c.range);
   updateLyricMarker();
 
   // Load audio first — loadSong sets state.group/singers from the song config,
   // so we override those after with values derived from the actual lyrics.
-  const song = current.song;
-  loadSong(song);
+  loadSong(c.song);
 
-  songSingers = current.allSingers;
+  songSingers = c.allSingers;
   const baseIds = Object.keys(MEMBER_MAPPING[bubudleGroup]).map(Number).sort((a, b) => a - b);
-  const extras = current.allSingers.filter(s => !baseIds.includes(s));
+  const extras = c.allSingers.filter(s => !baseIds.includes(s));
   state.singers = [...baseIds, ...extras];
-  state.group = current.song.group;
+  state.group = c.song.group;
   state.editMode = false;
   state.lyrics = [];
   state.reverseMap = {};
 
-  // Create a fake mapping entry for this lyric line
-  const diff = current.diff;
-  const mapping: MappingEntry = {
-    range: current.range,
-    ans: current.ans,
-    diff,
-    id: 0,
-  };
-
+  const diff = c.diff;
+  const mapping: MappingEntry = { range: c.range, ans: c.ans, diff, id: 0 };
   currentSlot = {
-    id: 0,
-    mapping,
-    range: current.range,
-    ans: current.ans,
-    diff,
-    active: false,
-    revealed: false,
-    choices: [],
-    state: SlotState.Idle,
-    element: null,
+    id: 0, mapping, range: c.range, ans: c.ans, diff,
+    active: false, revealed: false, choices: [], state: SlotState.Idle, element: null,
   };
-
   state.slots = [currentSlot];
   state.mapping = [mapping];
 
-  // Build slot dynamically based on actual singers
   const container = document.getElementById('slots')!;
   container.innerHTML = '';
   const el = createBubudleSlot(currentSlot, state.singers);
   currentSlot.element = el;
   container.appendChild(el);
 
-  // Update lyric card
-  document.getElementById('bubudle-lyric')!.textContent = current.lyric;
+  document.getElementById('bubudle-lyric')!.textContent = c.lyric;
   const jpEl = document.getElementById('bubudle-lyric-jp')!;
-  if (current.lyricJp) {
-    jpEl.textContent = current.lyricJp;
-    jpEl.style.display = '';
-  } else {
-    jpEl.textContent = '';
-    jpEl.style.display = 'none';
-  }
+  if (c.lyricJp) { jpEl.textContent = c.lyricJp; jpEl.style.display = ''; }
+  else { jpEl.textContent = ''; jpEl.style.display = 'none'; }
 
-  // Reset all hint lines
   resetHints();
 
-  // Auto-narrow singers when either difficulty is normal
-  if (!restoredAnswered && (bubudleDiff === 'normal' || songDiff === '1')) {
+  // Auto-narrow only in infinite (daily locks filters to 'all', so this would never trigger anyway)
+  if (!answered && bubudleMode === 'infinite' && (bubudleDiff === 'normal' || songDiff === '1')) {
     if (songSingers.length < state.singers.length) {
       state.singers = songSingers;
       narrowToSingers(currentSlot, songSingers);
       revealHint('bubudle-hint-narrow', 'Singers', 'Narrowed to subunit');
     } else {
-      // Full group — remove 3 random incorrect members
-      const incorrect = state.singers.filter(s => !current!.ans.includes(s));
+      const incorrect = state.singers.filter(s => !c.ans.includes(s));
       const shuffled = incorrect.sort(() => Math.random() - 0.5);
       const toRemove = shuffled.slice(0, Math.min(2, shuffled.length));
       disableMembers(currentSlot, toRemove);
@@ -664,7 +800,6 @@ function pickRandom(initial = false, tryRestore = false): void {
     }
   }
 
-  // Update difficulty badges
   const diffBadge = document.getElementById('bubudle-diff')!;
   const diffLabels = ['', 'Normal', 'Hard', 'Insane'];
   const diffClasses = ['', 'diff-normal', 'diff-hard', 'diff-insane'];
@@ -677,27 +812,195 @@ function pickRandom(initial = false, tryRestore = false): void {
   clipBadge.textContent = `Clip: ${clipLabels[bubudleDiff]}`;
   clipBadge.className = 'bubudle-diff ' + clipClasses[bubudleDiff];
 
-  // Reset theme and title
   switchTheme(null);
   document.getElementById('song-title')!.textContent = 'Bubudle';
 
-  if (restoredAnswered) {
-    // Already answered — show resolved state
+  const nextDisplay = bubudleMode === 'daily' ? 'none' : '';
+  const skipDisplay = bubudleMode === 'daily' ? 'none' : '';
+  if (answered) {
     checked = true;
-    revealSongName(current.song);
-    switchTheme(current.song.id);
+    revealSongName(c.song);
+    switchTheme(c.song.id);
     toggleReveal(currentSlot!, true);
     document.getElementById('bubudle-check-bottom')!.style.display = 'none';
     document.getElementById('bubudle-skip-bottom')!.style.display = 'none';
-    document.getElementById('bubudle-next-bottom')!.style.display = '';
+    document.getElementById('bubudle-next-bottom')!.style.display = nextDisplay;
   } else {
-    // Show check + skip, hide next
     document.getElementById('bubudle-check-bottom')!.style.display = '';
-    document.getElementById('bubudle-skip-bottom')!.style.display = '';
+    document.getElementById('bubudle-skip-bottom')!.style.display = skipDisplay;
     document.getElementById('bubudle-next-bottom')!.style.display = 'none';
   }
 
   if (!initial) playClip(true);
+}
+
+// ─── Daily mode ──────────────────────────────────────────────────
+
+function readModeFromUrlOrStorage(): BubudleMode {
+  const param = new URLSearchParams(location.search).get('mode');
+  if (param === 'daily' || param === 'infinite') return param;
+  const stored = getStorage('bubudle-mode');
+  return stored === 'daily' ? 'daily' : 'infinite';
+}
+
+function updateUrlMode(mode: BubudleMode): void {
+  const url = new URL(location.href);
+  if (mode === 'daily') url.searchParams.set('mode', 'daily');
+  else url.searchParams.delete('mode');
+  history.replaceState(null, '', url.toString());
+}
+
+function applyModeUI(): void {
+  document.querySelectorAll<HTMLElement>('.bubudle-mode-tab').forEach((b) => {
+    b.classList.toggle('active', b.dataset.mode === bubudleMode);
+  });
+
+  const isDaily = bubudleMode === 'daily';
+  const allActive = isAllScope();
+  const setDisplay = (id: string, hide: boolean) => {
+    const el = document.getElementById(id);
+    if (el) el.style.display = hide ? 'none' : '';
+  };
+  setDisplay('bubudle-difficulty', isDaily);
+  setDisplay('bubudle-song-difficulty', isDaily);
+  // Subunit filter is irrelevant in any all-groups scope (and in daily where filters are locked).
+  setDisplay('bubudle-subunit-filter', isDaily || allActive);
+  setDisplay('bubudle-all-group-li', false);   // All button always visible
+  setDisplay('bubudle-daily-banner', !isDaily);
+  setDisplay('bubudle-skip-bottom', isDaily);
+  setDisplay('bubudle-bad-timestamp', isDaily);
+  setDisplay('bubudle-flag-diff', isDaily);
+  setDisplay('bubudle-flag-singer', isDaily);
+
+  document.getElementById('bubudle-all-group-button')?.classList.toggle('active', allActive);
+
+  // Pool counter row (parent of #bubudle-pool-count) is its own toggle div — hide it in daily.
+  const poolBtn = document.getElementById('bubudle-pool-count');
+  const poolWrap = poolBtn?.closest('.bubudle-difficulty-toggle') as HTMLElement | null;
+  if (poolWrap) poolWrap.style.display = isDaily ? 'none' : '';
+
+  if (!isDaily && countdownTimer !== null) {
+    clearInterval(countdownTimer);
+    countdownTimer = null;
+  }
+}
+
+function switchMode(mode: BubudleMode): void {
+  if (mode === bubudleMode) return;
+  if (bubudleMode === 'infinite' && !infiniteAll) lastInfiniteGroup = bubudleGroup;
+  bubudleMode = mode;
+  setStorage('bubudle-mode', mode);
+  updateUrlMode(mode);
+  applyModeUI();
+  if (mode === 'daily') {
+    if (dailyScope.kind === 'group') dailyScope = { kind: 'group', group: bubudleGroup };
+    saveDailyScope();
+    loadDailyForScope();
+  } else {
+    // Restore infinite filters from storage (they were locked during daily)
+    const savedDiff = getStorage('bubudle-diff') as BubudleDifficulty | null;
+    if (savedDiff && savedDiff in RANGE_CAPS) bubudleDiff = savedDiff;
+    const savedSdiff = getStorage('bubudle-sdiff') as SongDifficulty | null;
+    if (savedSdiff && ['all', '1', '2', '3'].includes(savedSdiff)) songDiff = savedSdiff;
+    syncDifficultyButtons();
+
+    if (infiniteAll) {
+      buildCandidatePoolAll(allSongs);
+    } else {
+      bubudleGroup = lastInfiniteGroup;
+      applyGroupClass(bubudleGroup);
+      loadSubunitFilter();
+      buildCandidatePool(allSongs);
+      rebuildSubunitFilter();
+    }
+    rebuildSingerPicker();
+    recentHistory.clear();
+    pickRandom(false, !infiniteAll);
+  }
+}
+
+function syncDifficultyButtons(): void {
+  document.querySelectorAll<HTMLElement>('.bubudle-diff-btn').forEach((b) =>
+    b.classList.toggle('active', b.dataset.bdiff === bubudleDiff)
+  );
+  document.querySelectorAll<HTMLElement>('.bubudle-sdiff-btn').forEach((b) =>
+    b.classList.toggle('active', b.dataset.sdiff === songDiff)
+  );
+}
+
+function loadDailyForScope(): void {
+  // Lock filters
+  bubudleDiff = 'all';
+  songDiff = 'all';
+  subunitInclude = [];
+  subunitExclude = [];
+  recentHistory.clear();
+
+  if (dailyScope.kind === 'group') {
+    bubudleGroup = dailyScope.group;
+    applyGroupClass(bubudleGroup);
+    rebuildSingerPicker();
+    buildCandidatePool(allSongs);
+  } else {
+    buildCandidatePoolAll(allSongs);
+  }
+
+  const pool = eligibleCandidates();
+  if (pool.length === 0) {
+    showEmptyPool();
+    updateDailyBanner();
+    startCountdown();
+    return;
+  }
+
+  const date = currentDateEst();
+  const idx = pickDailyIndex(dailyScope, date, pool.length);
+  const candidate = pool[idx];
+
+  const stored = loadDailyResult(dailyScope, date);
+  renderCandidate(candidate, !!stored, true);
+
+  if (stored) {
+    previousGuesses = stored.guesses.slice();
+    wrongCount = stored.wrongCount;
+    renderGuesses();
+  }
+
+  updateDailyBanner();
+  startCountdown();
+}
+
+function dailyLabelFor(scope: DailyScope): string {
+  if (scope.kind === 'group') return `Today's ${scope.group} daily`;
+  return `Today's ${scope.mode === 'kpop' ? 'K-pop' : 'anime'} daily`;
+}
+
+function updateDailyBanner(): void {
+  const labelEl = document.getElementById('bubudle-daily-label');
+  if (labelEl) labelEl.textContent = dailyLabelFor(dailyScope);
+}
+
+function startCountdown(): void {
+  if (countdownTimer !== null) clearInterval(countdownTimer);
+  const tick = () => {
+    const ms = msUntilNextEstMidnight();
+    const el = document.getElementById('bubudle-daily-countdown');
+    if (el) el.textContent = formatHms(ms);
+    if (ms <= 0 && bubudleMode === 'daily') loadDailyForScope();
+  };
+  tick();
+  countdownTimer = window.setInterval(tick, 1000);
+}
+
+function persistDailyResult(correct: boolean): void {
+  if (bubudleMode !== 'daily' || !current) return;
+  saveDailyResult(dailyScope, currentDateEst(), {
+    guesses: previousGuesses.slice(),
+    correct,
+    songId: current.song.id,
+    range: current.range,
+    wrongCount,
+  });
 }
 
 function playClip(forcePlay = false): void {
@@ -742,10 +1045,11 @@ function checkAnswer(): void {
     revealSongName(current.song);
     switchTheme(current.song.id);
     saveCurrent(current, true);
+    persistDailyResult(true);
 
     document.getElementById('bubudle-check-bottom')!.style.display = 'none';
     document.getElementById('bubudle-skip-bottom')!.style.display = 'none';
-    document.getElementById('bubudle-next-bottom')!.style.display = '';
+    document.getElementById('bubudle-next-bottom')!.style.display = bubudleMode === 'daily' ? 'none' : '';
     if (!player.isPlaying()) playClip(true);
     return;
   }
@@ -800,16 +1104,18 @@ function checkAnswer(): void {
 
     revealSongName(current.song);
     saveCurrent(current, true);
+    persistDailyResult(false);
 
     document.getElementById('bubudle-check-bottom')!.style.display = 'none';
     document.getElementById('bubudle-skip-bottom')!.style.display = 'none';
-    document.getElementById('bubudle-next-bottom')!.style.display = '';
+    document.getElementById('bubudle-next-bottom')!.style.display = bubudleMode === 'daily' ? 'none' : '';
   }
 
   if (!player.isPlaying()) playClip(true);
 }
 
 function skipAnswer(): void {
+  if (bubudleMode === 'daily') return;
   if (!current || !currentSlot || checked) return;
 
   checked = true;

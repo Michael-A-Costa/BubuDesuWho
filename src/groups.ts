@@ -29,9 +29,16 @@ export function memberIdsOf(slug: string): number[] {
   return g.members.map(m => m.id).sort((a, b) => a - b);
 }
 
-/** Lookup a single member's display name. */
+/** Lookup a single member's display name. Falls back to supplementaryMembers
+ *  (per-group guest artists) so lines crediting a featured singer can still
+ *  render a labelled slot. */
 export function memberName(slug: string, id: number): string | undefined {
-  return registry.get(slug)?.members.find(m => m.id === id)?.name;
+  const g = registry.get(slug);
+  if (!g) return undefined;
+  return (
+    g.members.find(m => m.id === id)?.name
+    ?? g.supplementaryMembers?.find(m => m.id === id)?.name
+  );
 }
 
 /** Resolve an `ans` array to a label: exact subunit match → subunit name; full group → group name. */
@@ -68,11 +75,17 @@ function arraysEqual(a: number[], b: number[]): boolean {
 
 function makeGroupMap<V>(valueOfMember: (m: Group['members'][number]) => V): Record<string, Record<number, V>> {
   const makeInner = (g: Group): Record<number, V> => {
+    // Lookup-by-id includes supplementaryMembers so featured-artist slots can
+    // resolve a name/color. Iteration (ownKeys) returns only the main roster
+    // so "all members" views don't surface guests.
+    const findMember = (id: number) =>
+      g.members.find(mm => mm.id === id)
+      ?? g.supplementaryMembers?.find(mm => mm.id === id);
     return new Proxy({} as Record<number, V>, {
       get(_, prop) {
         const id = typeof prop === 'string' ? Number(prop) : (prop as unknown as number);
         if (Number.isNaN(id)) return undefined;
-        const m = g.members.find(mm => mm.id === id);
+        const m = findMember(id);
         return m ? valueOfMember(m) : undefined;
       },
       ownKeys() {
@@ -83,7 +96,7 @@ function makeGroupMap<V>(valueOfMember: (m: Group['members'][number]) => V): Rec
       },
       has(_, prop) {
         const id = typeof prop === 'string' ? Number(prop) : (prop as unknown as number);
-        return !Number.isNaN(id) && g.members.some(m => m.id === id);
+        return !Number.isNaN(id) && findMember(id) !== undefined;
       },
     });
   };

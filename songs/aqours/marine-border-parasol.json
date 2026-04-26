@@ -10,7 +10,7 @@
   "slots": [
 
   ],
-  "generated": "2026-04-15T01:44:02Z",
+  "generated": "2026-04-25T02:51:22Z",
   "lines": [
     {"lyric": "Nayami naki hito wa inai",
       "lyric_jp": "悩みなきひとはいない",
@@ -64,7 +64,7 @@
       "range": [73.41, 77.13], "ans": []},
     {"lyric": "Doko de mata aeru ka wa shiokaze ga shitteru",
       "lyric_jp": "どこかでまた会えるかは 潮風が知ってる",
-      "range": [77.13, 85.27], "ans": []},
+      "range": [77.13, 85.25], "ans": []},
     "",
     {"lyric": "Sandaru wo te ni motte",
       "lyric_jp": "サンダルを手に持って",
@@ -133,7 +133,7 @@
         {"lyric": "Atsui natsu wo",
           "range": [168.66, 172.65], "ans": [2]},
         {"lyric": "Atsuku kakenuketa",
-          "range": [171.95, 177.37], "ans": []}
+          "range": [171.95, 176.52], "ans": []}
       ]
     },
     "",
@@ -157,9 +157,9 @@
       "lyric_jp": "夏はまたくるから 違う夏がくるね",
       "parts": [
         {"lyric": "Natsu wa mata kuru kara",
-          "range": [202.68, 205.68], "ans": [2, 3], "diff": 2},
+          "range": [202.68, 205.66], "ans": [2, 3], "diff": 2},
         {"lyric": "Chigau natsu ga kuru ne",
-          "range": [205.68, 210.92], "ans": [1]}
+          "range": [205.66, 210.9], "ans": [1]}
       ]
     },
     "",
@@ -202,6 +202,6 @@
       "range": [268.25, 272.4], "ans": [1]},
     {"lyric": "Futari to deaeta koto ga, kiseki da yo!”",
       "lyric_jp": "二人と出会いたことが奇跡だよ",
-      "range": [272.4, 285.88], "ans": [1]}
+      "range": [272.4, 277.1], "ans": [1]}
   ]
 }

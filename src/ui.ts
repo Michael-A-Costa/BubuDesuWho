@@ -6,7 +6,7 @@ import {
   state, toggleChoice, toggleReveal, toggleDiff, toggleAutoscroll,
   toggleThemed, cycleLyricsMode, setLyricsMode, toggleCalls, toggleCallSFX,
   toggleJpLyrics, hasJpLyrics,
-  toggleGlobalReveal, checkChoices, checkSlot, resetChoices, loadSong,
+  toggleGlobalReveal, toggleHints, checkChoices, checkSlot, resetChoices, loadSong,
   restoreChoices, getDiffLabel, getNumSlotsDiff,
   tick, initGameState, updateMeter, refreshPaletteColors, revealLyrics,
 } from './game';
@@ -172,6 +172,9 @@ function selectSong(song: Song): void {
   generateSlots(state.slots, song.group);
   generateLyrics(state.lyrics);
   revealLyrics();
+
+  document.getElementById('slots-container')?.scrollTo({ top: 0 });
+  document.getElementById('lyrics-container')?.scrollTo({ top: 0 });
 
   // lyrics button visibility
   const lyricsBtn = document.getElementById('lyrics-button');
@@ -386,6 +389,12 @@ export function createSlotElement(slot: Slot, group: GroupName): HTMLElement {
   } else {
     timeRange.textContent = `${toTimeStr(slot.range[0], 1, 0.7)} - ${toTimeStr(slot.range[1], 1, 0.7)}`;
   }
+
+  // singer-count hint badge — visibility controlled by body.hints-on
+  const hintBadge = document.createElement('span');
+  hintBadge.className = 'label label-info singers-count';
+  hintBadge.textContent = `Singers: ${slot.ans.length}`;
+  clone.querySelector('.slot-header')!.appendChild(hintBadge);
 
   // jump button
   clone.querySelector('.jump-button')!.addEventListener('click', () => {
@@ -607,6 +616,14 @@ function bindPlayControls(): void {
     setStorage('themed', String(state.themed));
     if (state.themed && state.song) switchTheme(state.song.id);
     else switchTheme(null);
+  });
+
+  const hintsBtn = document.getElementById('global-hints');
+  hintsBtn?.classList.toggle('active', state.hints);
+  hintsBtn?.addEventListener('click', () => {
+    toggleHints();
+    hintsBtn.classList.toggle('active', state.hints);
+    setStorage('hints', String(state.hints));
   });
 
   // Reveal button — inline popover confirmation (matches original bootstrap-confirmation)
@@ -943,11 +960,12 @@ export function switchTheme(theme: string | null): void {
 
   // --play-btn-bg is defined on #player-bar.theme-*, but #kofi-button lives
   // up in the header. Mirror the resolved value onto <html> so any element
-  // can read it via var(--play-btn-bg).
+  // can read it via var(--play-btn-bg). Clear the inline style first so the
+  // probed value reflects the new theme rule (not last call's inherited value).
+  htmlEl.style.removeProperty('--play-btn-bg');
   const bar = document.getElementById('player-bar');
   const barBg = bar ? getComputedStyle(bar).getPropertyValue('--play-btn-bg').trim() : '';
   if (barBg) htmlEl.style.setProperty('--play-btn-bg', barBg);
-  else htmlEl.style.removeProperty('--play-btn-bg');
 
   // wrap each word in song title with <span class="word"> for per-word theming
   const titleEl = document.getElementById('song-title');

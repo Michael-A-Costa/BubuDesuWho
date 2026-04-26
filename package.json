@@ -25,6 +25,10 @@
   "description": "",
   "devDependencies": {
     "@anthropic-ai/sdk": "^0.82.0",
+    "@capacitor/android": "^8.3.1",
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^8.3.1",
+    "@capacitor/core": "^8.3.1",
     "@types/howler": "^2.2.12",
     "howler": "^2.2.4",
     "playwright": "^1.59.1",

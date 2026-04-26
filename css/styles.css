@@ -23,7 +23,7 @@ Design tokens — light mode defaults
   --shadow-medium:   rgba(0,0,0,0.08) 0px 4px 8px;
   --radius-pill:     9999px;
   --radius-card:     6px;
-  --player-bar-h:    72px;
+  --player-bar-h:    52px;
   --sidebar-bg:      #5291BF;
   --sidebar-link:    #7BBBF7;
   --sidebar-active:  #076CC4;
@@ -591,7 +591,7 @@ html.dark-mode nav.navbar {
   padding: 0 12px;
   border: none;
   border-radius: 999px;
-  background: var(--play-btn-bg, var(--accent, #29abe0));
+  background: var(--play-btn-bg, var(--group-accent-color, var(--accent, #29abe0)));
   cursor: pointer;
   transition: filter 0.15s ease, transform 0.15s ease;
 }
@@ -912,7 +912,7 @@ Sidebar
   position: fixed;
   height: 100%;
   margin: 0;
-  z-index: 2000;
+  z-index: 3500;
   transition: all 0.4s ease 0s;
   display: flex;
   flex-direction: column;
@@ -1192,6 +1192,18 @@ html.dark-mode #game-area {
   margin-bottom: 10px;
 }
 
+.slot-header .singers-count {
+  display: none;
+  font-size: 13px;
+  padding: 4px 8px;
+  margin-bottom: 8px;
+}
+body.hints-on .slot-header .singers-count {
+  display: block;
+  width: fit-content;
+  clear: both;
+}
+
 template {
   display: none;
 }
@@ -1288,6 +1300,11 @@ html.dark-mode .slot.slot-correct.slot-active {
 .slot-subunits {
   margin-top: 1px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+/* TWICE has exactly 9 members — force 3×3 instead of letting auto-fit pack
+   them into 4 columns (which gives an uneven 3/2/2/2 layout). */
+html.group-twice .slot-members {
+  grid-template-columns: repeat(3, 1fr);
 }
 .slot-members > .btn,
 .slot-subunits > .btn {
@@ -2822,3 +2839,118 @@ Full Combo banner — SIF-style celebration on 100%
     100% { opacity: 0; }
   }
 }
+@media (max-width: 1100px) {
+  .full-combo-banner {
+    left: 70%;
+    transform: translateX(-40%);
+  }
+}
+
+/* ─── Bubudle: Daily / Infinite mode toggle ─────────────────────── */
+.bubudle-mode-toggle {
+  display: inline-flex;
+  gap: 2px;
+  margin-right: 12px;
+  vertical-align: middle;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  padding: 1px;
+}
+.bubudle-mode-tab {
+  font-size: 0.75em !important;
+  opacity: 0.55;
+  background: transparent;
+  border: none !important;
+  padding: 2px 10px !important;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.bubudle-mode-tab:hover { opacity: 0.85; }
+.bubudle-mode-tab.active {
+  opacity: 1;
+  background: var(--group-accent, #337ab7);
+  color: #fff;
+}
+
+.bubudle-daily-banner {
+  margin: 0 auto 10px;
+  max-width: 720px;
+  padding: 6px 14px;
+  border-radius: 4px;
+  background: rgba(51, 122, 183, 0.12);
+  border: 1px solid rgba(51, 122, 183, 0.35);
+  font-size: 0.85em;
+  text-align: center;
+  color: inherit;
+}
+.bubudle-daily-label {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.bubudle-daily-sep {
+  margin: 0 8px;
+  opacity: 0.5;
+}
+#bubudle-daily-countdown {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+/* "All" group button — mini-icon mosaic of every displayed group */
+.btn.group-button.group-button-all {
+  width: 100%;
+  height: 60px;
+  padding: 4px 6px;
+  background: linear-gradient(135deg,
+    rgba(255, 182, 193, 0.35),
+    rgba(173, 216, 230, 0.35),
+    rgba(255, 218, 185, 0.35));
+  border-color: rgba(180, 180, 200, 0.5) !important;
+  position: relative;
+  overflow: hidden;
+}
+.btn.group-button.group-button-all:hover {
+  background: linear-gradient(135deg,
+    rgba(255, 182, 193, 0.55),
+    rgba(173, 216, 230, 0.55),
+    rgba(255, 218, 185, 0.55));
+}
+.btn.group-button.group-button-all.active {
+  background: linear-gradient(135deg, #ffb6c1, #add8e6, #ffdab9);
+  border-color: #999 !important;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.4);
+}
+.group-button-all-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.group-icon-mini {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 2px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  transition: transform 120ms ease;
+}
+.btn.group-button.group-button-all:hover .group-icon-mini {
+  transform: scale(1.1);
+}
+
+/* Per-group accent — used as a fallback for the Ko-fi button when no song
+   theme is active (between Bubudle picks). */
+html.group-muse              { --group-accent-color: #E4007F; }   /* μ's pink */
+html.group-aqours            { --group-accent-color: #00A0E9; }   /* Aqours blue */
+html.group-saint-aqours-snow { --group-accent-color: #00A0E9; }
+html.group-aqours-miku       { --group-accent-color: #00A0E9; }
+html.group-nijigasaki        { --group-accent-color: #F39800; }   /* Niji orange/yellow */
+html.group-wug               { --group-accent-color: #E60012; }   /* WUG red */
+html.group-seventeen         { --group-accent-color: #F1B8C5; }   /* Seventeen rose quartz */
+html.group-twice             { --group-accent-color: #FF82A9; }   /* Twice apricot pink */
+html.group-stray-kids        { --group-accent-color: #C2091B; }   /* Stray Kids red */

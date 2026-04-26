@@ -26,6 +26,9 @@
     <li><a class="select-info" href="changelog.html">Changelog</a></li>
     <li><a class="select-info" href="stats.html">Stats</a></li>
     <li><a class="select-info active" href="bubudle.html">Bubudle</a></li>
+    <li id="bubudle-all-group-li" style="display:none">
+      <button id="bubudle-all-group-button" type="button" class="btn btn-primary group-button group-button-all" title="Today's daily across all groups">All</button>
+    </li>
     <li>
       <button id="muse-group-button" type="button" class="btn btn-primary group-button" data-value="muse"><img class="group-icon" src="css/images/muse.png"></img></button><button id="aqours-group-button" type="button" class="btn btn-primary group-button" data-value="aqours"><img class="group-icon" src="css/images/aqours.png"></img></button>
     </li>
@@ -33,7 +36,7 @@
       <button id="wug-group-button" type="button" class="btn btn-primary group-button" data-value="wug"><img class="group-icon" src="css/images/wug.png"></img></button><button id="nijigasaki-group-button" type="button" class="btn btn-primary group-button" data-value="nijigasaki"><img class="group-icon" src="css/images/nijigasaki.png"></img></button>
     </li>
     <li>
-      <button id="seventeen-group-button" type="button" class="btn btn-primary group-button" data-value="seventeen"><img class="group-icon" src="css/images/seventeen.png"></img></button>
+      <button id="seventeen-group-button" type="button" class="btn btn-primary group-button" data-value="seventeen"><img class="group-icon" src="css/images/seventeen.png"></img></button><button id="twice-group-button" type="button" class="btn btn-primary group-button" data-value="twice"><img class="group-icon" src="css/images/twice.png"></img></button><button id="stray-kids-group-button" type="button" class="btn btn-primary group-button" data-value="stray-kids"><img class="group-icon" src="css/images/stray-kids.png"></img></button>
     </li>
     <li class="has-feedback">
       <input class="form-control" id="menu-search" autofocus></input>
@@ -54,6 +57,10 @@
       <div class="song-title-row">
         <h2 id="song-title">Bubudle</h2>
         <div class="song-title-utils">
+          <div id="bubudle-mode-toggle" class="bubudle-mode-toggle">
+            <button type="button" class="btn btn-xs bubudle-mode-tab active" data-mode="infinite">Infinite</button>
+            <button type="button" class="btn btn-xs bubudle-mode-tab" data-mode="daily">Daily</button>
+          </div>
           <div id="bubudle-difficulty" class="bubudle-difficulty-toggle">
             <span class="bubudle-toggle-label">Clip:</span>
             <button type="button" class="btn btn-xs bubudle-diff-btn" data-bdiff="all">All</button>
@@ -76,6 +83,10 @@
             <span id="bubudle-pool-help" class="glyphicon glyphicon-question-sign bubudle-diff-help"></span>
           </div>
           <button id="theme-toggle" type="button" class="btn btn-default" title="Switch to light mode">&#9790;</button>
+          <span class="kofi-button-wrap">
+            <button id="kofi-button" type="button" title="Support on Ko-fi"><img src="https://storage.ko-fi.com/cdn/cup-border.png" alt="Ko-fi"></button>
+            <button id="kofi-dismiss" type="button" title="Hide until reload" aria-label="Hide Ko-fi button">×</button>
+          </span>
         </div>
       </div>
       <div id="bubudle-subunit-filter" class="bubudle-difficulty-toggle bubudle-subunit-row" style="display:none">
@@ -86,6 +97,11 @@
 
   <div id="game-area" class="container-fluid"><div class="row">
     <div id="slots-container" class="col-xs-12">
+      <div id="bubudle-daily-banner" class="bubudle-daily-banner" style="display:none">
+        <span id="bubudle-daily-label" class="bubudle-daily-label"></span>
+        <span class="bubudle-daily-sep">·</span>
+        <span class="bubudle-daily-countdown-wrap">Next daily in <span id="bubudle-daily-countdown">--:--:--</span></span>
+      </div>
       <div id="bubudle-lyric-card" class="bubudle-lyric-card">
         <div class="bubudle-card-left">
           <div id="bubudle-lyric" class="bubudle-lyric-text"></div>
@@ -140,6 +156,17 @@
   </div></div>
 </div>
 
+
+<!-- Hidden shim so switchTheme() can read the per-song --play-btn-bg from the
+     same #player-bar.theme-X CSS rules that drive the play page. -->
+<div id="player-bar" hidden></div>
+
+<div id="kofi-modal" hidden>
+  <div class="kofi-modal-content">
+    <button class="kofi-modal-close" type="button" aria-label="Close">×</button>
+    <iframe id="kofi-iframe" src="about:blank" title="Support on Ko-fi"></iframe>
+  </div>
+</div>
 
 <template id="muse-slot-template">
   <div class="row slot">

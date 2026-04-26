@@ -124,6 +124,17 @@ function subunitLabel(group: GroupName, subunit: string): string {
   return SUBUNIT_LABELS[subunit] ?? subunit;
 }
 
+const IS_KPOP = import.meta.env.VITE_APP_MODE === 'kpop';
+
+function sectionKey(song: Song): string {
+  return IS_KPOP ? (song.album ?? '') : (song.subunit ?? '');
+}
+
+function sectionLabel(group: GroupName, key: string): string {
+  if (IS_KPOP) return key || '(No album)';
+  return subunitLabel(group, key);
+}
+
 function sortSongs(filtered: Song[]): Song[] {
   const sorted = filtered.slice();
 
@@ -135,11 +146,29 @@ function sortSongs(filtered: Song[]): Song[] {
   const base = state.sortMode === 'alpha' ? byAlpha : state.sortMode === 'date' ? byDate : () => 0;
 
   if (state.groupBySubunit) {
-    sorted.sort((a, b) => {
-      const ga = SUBUNIT_ORDER[a.subunit ?? ''] ?? 99;
-      const gb = SUBUNIT_ORDER[b.subunit ?? ''] ?? 99;
-      return ga - gb || base(a, b);
-    });
+    if (IS_KPOP) {
+      // Album order = earliest release date in that album (chronological).
+      const albumDate = new Map<string, string>();
+      for (const s of filtered) {
+        const k = sectionKey(s);
+        const d = s.released ?? '9999';
+        const prev = albumDate.get(k);
+        if (prev == null || d.localeCompare(prev) < 0) albumDate.set(k, d);
+      }
+      sorted.sort((a, b) => {
+        const ka = sectionKey(a);
+        const kb = sectionKey(b);
+        const da = albumDate.get(ka) ?? '9999';
+        const db = albumDate.get(kb) ?? '9999';
+        return da.localeCompare(db) || ka.localeCompare(kb) || base(a, b);
+      });
+    } else {
+      sorted.sort((a, b) => {
+        const ga = SUBUNIT_ORDER[a.subunit ?? ''] ?? 99;
+        const gb = SUBUNIT_ORDER[b.subunit ?? ''] ?? 99;
+        return ga - gb || base(a, b);
+      });
+    }
   } else {
     sorted.sort(base);
   }
@@ -175,15 +204,15 @@ function switchGroup(group: GroupName, songs: Song[]): void {
   }
 
   const sorted = sortSongs(filtered);
-  let lastSection = '';
+  let lastSection: string | null = null;
 
   for (const song of sorted) {
     if (state.groupBySubunit) {
-      const section = song.subunit ?? '';
+      const section = sectionKey(song);
       if (section !== lastSection) {
         const header = document.createElement('li');
         header.className = 'sort-section-header';
-        header.textContent = subunitLabel(group, section);
+        header.textContent = sectionLabel(group, section);
         nav.appendChild(header);
         lastSection = section;
       }

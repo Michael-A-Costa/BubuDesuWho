@@ -9,7 +9,7 @@
   "slots": [
 
   ],
-  "generated": "2026-04-15T01:44:51Z",
+  "generated": "2026-04-25T02:51:32Z",
   "lines": [
     {"lyric": "“san hai”",
       "lyric_jp": "",
@@ -216,9 +216,9 @@
       "range": [288.64, 292.82], "ans": []},
     {"lyric": "Sun sun sun sun sunshine (pachipachi)",
       "lyric_jp": "サンサンサンサンサンシャイン パチパチ",
-      "range": [292.82, 296.63], "ans": []},
+      "range": [292.82, 296.6], "ans": []},
     {"lyric": "Sun sun sun sun sunshine",
       "lyric_jp": "サンサンサンサンサンシャイン",
-      "range": [296.63, 301.66], "ans": []}
+      "range": [296.6, 301.66], "ans": []}
   ]
 }

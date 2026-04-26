@@ -34,7 +34,7 @@ export const SHORTCUT_GROUPS: Record<string, ShortcutGroup[]> = {
     { label: '2nd years', members: [1, 2, 3] },
     { label: '3rd years', members: [7, 8, 9] },
     { label: 'Aqours', members: [1, 2, 3, 4, 5, 6, 7, 8, 9], extraOnly: true },
-    { label: 'Saint Snow', members: [10, 11] },
+    { label: 'Saint Snow', members: [10, 11], subunit: true },
   ],
   nijigasaki: [
     { label: 'DiverDiva', members: [4, 5], subunit: true },
@@ -68,7 +68,7 @@ export const MEMBER_COLUMNS: Record<string, number[][]> = {
 
 export const HINT_SUBUNITS: Record<string, Record<string, string>> = {
   muse: { '1,3,8': 'Printemps', '4,5,7': 'lily white', '2,6,9': 'BiBi' },
-  aqours: { '1,2,5': 'CYaRon', '3,6,9': 'Guilty Kiss', '4,7,8': 'AZALEA' },
+  aqours: { '1,2,5': 'CYaRon', '3,6,9': 'Guilty Kiss', '4,7,8': 'AZALEA', '10,11': 'Saint Snow' },
   nijigasaki: { '4,5': 'DiverDiva', '1,3,7': 'A·ZU·NA', '2,6,8,9': 'QU4RTZ', '10,11,12': 'R3BIRTH' },
 };
 export const HINT_YEARS: Record<string, string[]> = {

@@ -35,6 +35,7 @@ export interface SongConfig {
   added?: string;
   released?: string;
   subunit?: string;
+  album?: string;
   menu?: GroupName;
   cover?: string;
   note?: 'unsynced';
@@ -86,6 +87,10 @@ export interface Group {
   /** Script of the native-lyric lane: 'ja' (lyric_jp), 'ko' (lyric_hangul), or null. */
   nativeScript?: 'ja' | 'ko' | null;
   members: GroupMember[];
+  /** Per-group "guest" artists who only appear on specific songs (e.g. featured rappers).
+   *  Resolved by id-lookup (memberName/MEMBER_MAPPING/MEMBER_COLORS) but excluded from
+   *  the group's main-roster iterations (group browse, full-group label, member count). */
+  supplementaryMembers?: GroupMember[];
   subunits?: Subunit[];
   /** List of song JSON filenames to load (relative to songs/<slug>/). */
   songs?: string[];
@@ -166,6 +171,7 @@ export interface GameState {
   calls: boolean;
   callSFX: boolean;
   globalReveal: boolean;
+  hints: boolean;
   loaded: Date | null;
   assObjectURL: string;
   lastProgressUpdate: number | null;

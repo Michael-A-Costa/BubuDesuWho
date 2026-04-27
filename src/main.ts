@@ -1,4 +1,7 @@
+import { inject } from '@vercel/analytics';
 import { initPlayPage, initAboutPage, initChangelogPage, initStatsPage } from './ui';
+
+if (import.meta.env.VITE_VERCEL_ANALYTICS) inject();
 
 // detect which page we're on and initialize accordingly
 const path = location.pathname;

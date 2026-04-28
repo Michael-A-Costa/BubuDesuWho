@@ -1,7 +1,14 @@
 import { inject } from '@vercel/analytics';
+import { injectSpeedInsights } from '@vercel/speed-insights';
 import { initAboutPage, initChangelogPage, initStatsPage } from './ui-about';
 
-if (import.meta.env.VITE_VERCEL_ANALYTICS) inject();
+// Vercel Analytics + Speed Insights — only on the Vercel production host.
+// Skips localhost, GH Pages, and preview deploys (which would inflate counts).
+const VERCEL_HOSTS = new Set(['bubudesuwho.vercel.app', 'whoranghae.vercel.app']);
+if (VERCEL_HOSTS.has(location.hostname)) {
+  inject();
+  injectSpeedInsights();
+}
 
 // Cloudflare Web Analytics — only on the GH Pages deploys it's registered for.
 // Off Vercel/local because the beacon endpoint is commonly blocked, producing

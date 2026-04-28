@@ -1,6 +1,7 @@
 import { defineConfig, Plugin } from 'vite';
 import { resolve } from 'path';
 import { cpSync } from 'fs';
+import { execFileSync } from 'child_process';
 
 function copyAssetsPlugin(): Plugin {
   return {
@@ -20,11 +21,24 @@ function copyAssetsPlugin(): Plugin {
   };
 }
 
+function resolveBuildVersion(): string {
+  if (process.env.VERCEL_GIT_COMMIT_SHA) return process.env.VERCEL_GIT_COMMIT_SHA;
+  if (process.env.GITHUB_SHA) return process.env.GITHUB_SHA;
+  try {
+    return execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
+  } catch {
+    return String(Date.now());
+  }
+}
+
 export default defineConfig(({ command }) => ({
   root: '.',
   base: '/',
   publicDir: false,
   plugins: [copyAssetsPlugin()],
+  define: {
+    __BUILD_VERSION__: JSON.stringify(resolveBuildVersion()),
+  },
   build: {
     outDir: 'dist',
     rollupOptions: {
@@ -34,6 +48,12 @@ export default defineConfig(({ command }) => ({
         changelog: resolve(__dirname, 'changelog.html'),
         stats: resolve(__dirname, 'stats.html'),
         bubudle: resolve(__dirname, 'bubudle.html'),
+      },
+      output: {
+        manualChunks(id: string) {
+          if (id.includes('node_modules/howler')) return 'howler';
+          return undefined;
+        },
       },
     },
   },

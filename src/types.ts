@@ -148,6 +148,23 @@ export interface Song extends SongConfig {
   slotsBase: SlotBase[];
   lyricsBase: LyricToken[];
   calls: MappingEntry[];
+  hasLyrics?: boolean;
+}
+
+/** Slim song shape served by loadIndex() — enough to render the sidebar
+ *  without pulling every song's mapping/lyrics. Song satisfies this. */
+export interface MenuSong {
+  id: string;
+  name: string;
+  group: GroupName;
+  menu?: GroupName;
+  hidden?: boolean;
+  note?: 'unsynced';
+  subunit?: string;
+  album?: string;
+  released?: string;
+  cover?: string;
+  hasLyrics?: boolean;
 }
 
 export interface SlotBase {

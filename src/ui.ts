@@ -1,6 +1,5 @@
-import { Song, Slot, LyricToken, GroupName } from './types';
-import { toTimeStr, escapeRegExp, parseURLParams } from './utils';
-import { getGroupColor } from './labels';
+import { Song, Slot, LyricToken, GroupName, MenuSong } from './types';
+import { toTimeStr, parseURLParams } from './utils';
 import { getGroup } from './groups';
 import {
   state, toggleChoice, toggleReveal, toggleDiff, toggleAutoscroll,
@@ -14,11 +13,16 @@ import {
   setEditMode, setSlotSingers, setSlotDiff, setSlotLyric,
   insertMappingAfter, deleteSlot, exportEditedConfig, makeASSObjectURL,
 } from './game-edit';
-import { loadConfig, loadChangelog } from './config';
+import { loadIndex, loadSongById } from './config';
 import * as player from './player';
-import { setStorage, getStorage, loadHistory } from './storage';
+import { setStorage, getStorage } from './storage';
 import { buildMenu, highlightSongInMenu, attachInstantTip } from './ui-menu';
+import { initThemeToggle } from './ui-about';
 import { initKofi } from './kofi';
+
+// Re-export so bubudle.ts / submission.ts (which already import from './ui')
+// keep working. Non-play entries should import from './ui-about' directly.
+export { initThemeToggle } from './ui-about';
 
 let preMuteVolume: number | null = null;
 
@@ -32,10 +36,10 @@ export async function initPlayPage(): Promise<void> {
   });
 
   initGameState();
-  const songs = await loadConfig();
-  if (songs.length === 0) return;
+  const menuSongs = await loadIndex();
+  if (menuSongs.length === 0) return;
 
-  buildMenu(songs);
+  buildMenu(menuSongs);
   bindPlayControls();
   bindKeyboard();
   bindEditToggle();
@@ -46,8 +50,8 @@ export async function initPlayPage(): Promise<void> {
   // load song from hash or default
   const hashParts = location.hash.slice(1).split('?');
   const songId = hashParts[0];
-  const song = songs.find((s) => s.id === songId) ?? songs[0];
-  selectSong(song);
+  const initial = menuSongs.find((s) => s.id === songId) ?? menuSongs[0];
+  await selectMenuSong(initial, menuSongs);
 
   // parse URL params (?t=, ?lyrics=, ?edit=)
   const queryStr = hashParts[1] || location.search.substring(1);
@@ -69,8 +73,8 @@ export async function initPlayPage(): Promise<void> {
 
   window.addEventListener('hashchange', () => {
     const id = location.hash.slice(1).split('?')[0];
-    const s = songs.find((x) => x.id === id);
-    if (s) selectSong(s);
+    const s = menuSongs.find((x) => x.id === id);
+    if (s) void selectMenuSong(s, menuSongs);
   });
 
   window.addEventListener('resize', resizeGameArea);
@@ -78,6 +82,25 @@ export async function initPlayPage(): Promise<void> {
   initThemeToggle();
   initPaletteToggle();
   initKofi();
+}
+
+let pendingSongId: string | null = null;
+
+async function selectMenuSong(menuSong: MenuSong, all: MenuSong[]): Promise<void> {
+  pendingSongId = menuSong.id;
+  // Eagerly highlight so the click feels instant — even before audio resolves.
+  highlightSongInMenu(menuSong.id);
+  const song = await loadSongById(menuSong.id);
+  // Bail if the user picked a different song while this one was loading.
+  if (pendingSongId !== menuSong.id || !song) return;
+  selectSong(song);
+
+  // Prefetch immediate neighbors so next/prev navigation is instant on warm cache.
+  const idx = all.indexOf(menuSong);
+  if (idx >= 0) {
+    if (idx + 1 < all.length) void loadSongById(all[idx + 1].id);
+    if (idx > 0) void loadSongById(all[idx - 1].id);
+  }
 }
 
 export function initPaletteToggle(): void {
@@ -100,27 +123,6 @@ function updatePaletteToggleLabel(): void {
   const isOfficial = document.documentElement.classList.contains('palette-official');
   btn.title = isOfficial ? 'Switch to default color palette' : 'Switch to official color palette';
   btn.classList.toggle('active', isOfficial);
-}
-
-export function initThemeToggle(): void {
-  const savedTheme = getStorage('theme');
-  if (savedTheme === 'dark') {
-    document.documentElement.classList.add('dark-mode');
-  }
-  updateThemeToggleLabel();
-  document.getElementById('theme-toggle')?.addEventListener('click', () => {
-    const isDark = document.documentElement.classList.toggle('dark-mode');
-    setStorage('theme', isDark ? 'dark' : 'light');
-    updateThemeToggleLabel();
-  });
-}
-
-function updateThemeToggleLabel(): void {
-  const btn = document.getElementById('theme-toggle');
-  if (!btn) return;
-  const isDark = document.documentElement.classList.contains('dark-mode');
-  btn.textContent = isDark ? '☀' : '🌙';
-  btn.title = isDark ? 'Switch to light mode' : 'Switch to dark mode';
 }
 
 function selectSong(song: Song): void {
@@ -829,6 +831,16 @@ function bindKeyboard(): void {
     } else if (e.key === 'c') {
       checkChoices();
       e.preventDefault();
+    } else if (/^[1-9]$/.test(e.key)) {
+      const activeSlot = state.slots.find((s) => s.active && s.diff <= state.diff);
+      if (!activeSlot?.element) return;
+      const btn = activeSlot.element.querySelector<HTMLElement>(
+        `.slot-body button.choice[data-value="${e.key}"]`,
+      );
+      if (btn && !btn.classList.contains('disabled')) {
+        toggleChoice(btn, activeSlot);
+        e.preventDefault();
+      }
     }
   });
 }
@@ -1088,81 +1100,3 @@ function deactivateEditMode(): void {
   }
 }
 
-// ─── Page: About ────────────────────────────────────────────────────
-export async function initAboutPage(): Promise<void> {
-  const songs = await loadConfig();
-  buildMenu(songs);
-  initThemeToggle();
-}
-
-// ─── Page: Changelog ────────────────────────────────────────────────
-export async function initChangelogPage(): Promise<void> {
-  const songs = await loadConfig();
-  buildMenu(songs);
-  initThemeToggle();
-
-  const data = await loadChangelog();
-  const container = document.getElementById('changelog');
-  if (!container) return;
-
-  // link song names in changelog entries
-  for (const song of songs) {
-    const repl = `<a href="#${song.id}" class="change-song-name ${getGroupColor(song.group) ?? ''}">${song.name}</a>`;
-    for (const entry of data) {
-      entry.change = entry.change.replace(new RegExp(escapeRegExp(song.name), 'g'), repl);
-    }
-  }
-
-  for (const entry of data) {
-    const li = document.createElement('li');
-    li.className = 'change-entry';
-    li.innerHTML = `<span class="change-date">${entry.date}</span>: <span class="change-content">${entry.change}</span>`;
-    container.appendChild(li);
-  }
-}
-
-// ─── Page: Stats ────────────────────────────────────────────────────
-export async function initStatsPage(): Promise<void> {
-  const songs = await loadConfig();
-  buildMenu(songs);
-  initThemeToggle();
-
-  const container = document.getElementById('stats-history');
-  if (!container) return;
-
-  const hist = loadHistory();
-  const nameToSong = new Map(songs.map((s) => [s.name, s]));
-
-  for (let i = hist.length - 1; i >= 0; i--) {
-    const entry = hist[i];
-    const song = nameToSong.get(entry.songName);
-
-    const li = document.createElement('li');
-    li.className = 'history-entry';
-
-    const dateSpan = document.createElement('span');
-    dateSpan.className = 'history-date';
-    dateSpan.textContent = entry.date;
-
-    const nameA = document.createElement('a');
-    nameA.className = 'history-song-name';
-    nameA.textContent = entry.songName;
-    if (song) {
-      nameA.href = `play.html#${song.id}`;
-      const color = getGroupColor(song.group);
-      if (color) nameA.classList.add(color);
-    }
-
-    let correct = 0;
-    for (const [choices, ans] of entry.slots) {
-      if (choices.length === ans.length && choices.every((v, j) => v === ans[j])) correct++;
-    }
-    const resultSpan = document.createElement('span');
-    resultSpan.className = 'history-result';
-    resultSpan.textContent = `(${correct}/${entry.slots.length})`;
-    if (correct === entry.slots.length) resultSpan.classList.add('all-correct');
-
-    li.append(dateSpan, ': ', nameA, ' ', resultSpan);
-    container.appendChild(li);
-  }
-}

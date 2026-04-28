@@ -1,20 +1,26 @@
 import {
-  SongConfig, Song, MappingEntry, SlotBase, SlotDetail, LyricToken, Group,
+  SongConfig, Song, MenuSong, MappingEntry, SlotBase, SlotDetail, LyricToken, Group,
 } from './types';
 import { arrayEqual } from './utils';
 import { registerGroup } from './groups';
 
-let songs: Song[] = [];
+declare const __BUILD_VERSION__: string;
+const V = `?v=${__BUILD_VERSION__}`;
+
+const songCache = new Map<string, Song>();
+const indexCache = new Map<string, { file: string; cover?: string; menu: MenuSong }>();
+let indexPromise: Promise<MenuSong[]> | null = null;
+const inFlight = new Map<string, Promise<Song | undefined>>();
 
 async function loadGroups(base: string, mode: 'anime' | 'kpop'): Promise<void> {
-  const resp = await fetch(base + `songs/groups.${mode}.json?t=` + Date.now());
+  const resp = await fetch(base + `songs/groups.${mode}.json` + V);
   if (!resp.ok) {
     console.warn(`songs/groups.${mode}.json missing (${resp.status}); registry will be empty`);
     return;
   }
   const { groups: slugs } = await resp.json() as { groups: string[] };
   await Promise.all(slugs.map(async (slug) => {
-    const gr = await fetch(base + 'songs/' + slug + '/group.json?t=' + Date.now());
+    const gr = await fetch(base + 'songs/' + slug + '/group.json' + V);
     if (!gr.ok) {
       console.warn(`songs/${slug}/group.json missing (${gr.status})`);
       return;
@@ -24,43 +30,94 @@ async function loadGroups(base: string, mode: 'anime' | 'kpop'): Promise<void> {
   }));
 }
 
-export async function loadConfig(): Promise<Song[]> {
-  const base = import.meta.env.BASE_URL;
-  const raw: SongConfig[] = [];
+type IndexEntry = string | (MenuSong & { file: string });
 
-  const mode = import.meta.env.VITE_APP_MODE === 'kpop' ? 'kpop' : 'anime';
-  await loadGroups(base, mode);
-
-  const indexResp = await fetch(base + `songs/index.${mode}.json?t=` + Date.now());
-  const indexEntries: (string | { file: string; cover?: string })[] = await indexResp.json();
-  const results = await Promise.allSettled(
-    indexEntries.map(async (entry) => {
-      const file = typeof entry === 'string' ? entry : entry.file;
-      const cover = typeof entry === 'object' ? entry.cover : undefined;
-      const r = await fetch(base + 'songs/' + file + '?t=' + Date.now());
-      if (!r.ok) throw new Error(`${r.status} ${file}`);
-      const cfg = await r.json() as SongConfig;
-      if (cover && !cfg.cover) cfg.cover = cover;
-      return cfg;
-    }),
-  );
-  for (const result of results) {
-    if (result.status === 'fulfilled') raw.push(result.value);
-    else console.warn('Failed to load song:', result.reason);
-  }
-
-  // Deduplicate by id — preserves songs/index.json order
-  const seen = new Map<string, SongConfig>();
-  for (const cfg of raw) {
-    if (cfg.id) seen.set(cfg.id, cfg);
-  }
-
-  songs = Array.from(seen.values()).map(preprocessSong);
-  return songs;
+function getMode(): 'anime' | 'kpop' {
+  return import.meta.env.VITE_APP_MODE === 'kpop' ? 'kpop' : 'anime';
 }
 
-export function getSongs(): Song[] {
-  return songs;
+async function ensureIndex(): Promise<MenuSong[]> {
+  if (indexPromise) return indexPromise;
+  const base = import.meta.env.BASE_URL;
+  const mode = getMode();
+  indexPromise = (async () => {
+    await loadGroups(base, mode);
+    const indexResp = await fetch(base + `songs/index.${mode}.json` + V);
+    const entries = await indexResp.json() as IndexEntry[];
+    const out: MenuSong[] = [];
+    const stale: string[] = [];
+    for (const e of entries) {
+      if (typeof e === 'object' && e.id) {
+        const { file, ...menu } = e;
+        indexCache.set(e.id, { file, cover: menu.cover, menu });
+        out.push(menu);
+      } else {
+        stale.push(typeof e === 'string' ? e : (e as { file?: string }).file ?? '?');
+      }
+    }
+    if (stale.length) {
+      console.warn(
+        `loadIndex: ${stale.length} entries lack menu fields and were skipped — `
+        + `run \`node scripts/build-index.js\` to refresh songs/index.${mode}.json. `
+        + `Skipped: ${stale.slice(0, 5).join(', ')}${stale.length > 5 ? ', …' : ''}`,
+      );
+    }
+    return out;
+  })();
+  return indexPromise;
+}
+
+/** Lightweight loader for non-play pages. Returns just the menu fields per
+ *  song without fetching every song JSON — see docs/audio/loading-perf-site.md. */
+export function loadIndex(): Promise<MenuSong[]> {
+  return ensureIndex();
+}
+
+/** Fetch and preprocess a single song by id. Used by the play page to avoid
+ *  pulling the full catalog on entry. Memoized; concurrent calls share. */
+export function loadSongById(id: string): Promise<Song | undefined> {
+  const cached = songCache.get(id);
+  if (cached) return Promise.resolve(cached);
+  const existing = inFlight.get(id);
+  if (existing) return existing;
+
+  const p = (async () => {
+    await ensureIndex();
+    const entry = indexCache.get(id);
+    if (!entry) {
+      console.warn(`loadSongById: no index entry for "${id}"`);
+      return undefined;
+    }
+    const base = import.meta.env.BASE_URL;
+    const r = await fetch(base + 'songs/' + entry.file + V);
+    if (!r.ok) {
+      console.warn(`loadSongById: failed to fetch ${entry.file} (${r.status})`);
+      return undefined;
+    }
+    const cfg = await r.json() as SongConfig;
+    if (entry.cover && !cfg.cover) cfg.cover = entry.cover;
+    const song = preprocessSong(cfg);
+    songCache.set(id, song);
+    return song;
+  })();
+
+  inFlight.set(id, p);
+  p.finally(() => inFlight.delete(id));
+  return p;
+}
+
+/** Bulk loader — fetches every song. Used by Bubudle which needs the full
+ *  lyric catalog to build candidate pools. The play page uses loadSongById. */
+export async function loadConfig(): Promise<Song[]> {
+  await ensureIndex();
+  const ids = Array.from(indexCache.keys());
+  const results = await Promise.allSettled(ids.map((id) => loadSongById(id)));
+  const out: Song[] = [];
+  for (const r of results) {
+    if (r.status === 'fulfilled' && r.value) out.push(r.value);
+    else if (r.status === 'rejected') console.warn('Failed to load song:', r.reason);
+  }
+  return out;
 }
 
 interface NormalizedJp {
@@ -124,7 +181,7 @@ function normalizeLines(cfg: SongConfig): NormalizedJp | undefined {
   return { jpTexts, jpRanges, jpParts };
 }
 
-function preprocessSong(cfg: SongConfig): Song {
+export function preprocessSong(cfg: SongConfig): Song {
   const normalized = normalizeLines(cfg);
 
   // assign IDs to mappings
@@ -158,6 +215,10 @@ function preprocessSong(cfg: SongConfig): Song {
     calls,
     slotsBase,
     lyricsBase,
+    // Match the manifest derivation in scripts/build-index.js: a song "has
+    // lyrics" only if it carries at least one mapped line. String-only
+    // separators (e.g. "(intro)") produce text tokens but no mapping.
+    hasLyrics: mapping.length > 0,
   };
 }
 

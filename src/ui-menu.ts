@@ -1,7 +1,6 @@
-import { Song, GroupName, SortMode } from './types';
+import { MenuSong, GroupName, SortMode } from './types';
 import { escapeRegExp } from './utils';
-import { state } from './game';
-import { getSongs } from './config';
+import { state } from './game-state';
 import { getAllGroups, hasGroup } from './groups';
 import { setStorage, getStorage } from './storage';
 
@@ -32,7 +31,7 @@ export function attachInstantTip(el: HTMLElement, text: string): void {
   });
 }
 
-export function buildMenu(songs: Song[]): void {
+export function buildMenu(songs: MenuSong[]): void {
   const savedGroup = getStorage('group') as GroupName | null;
   if (savedGroup) state.group = savedGroup;
 
@@ -126,7 +125,7 @@ function subunitLabel(group: GroupName, subunit: string): string {
 
 const IS_KPOP = import.meta.env.VITE_APP_MODE === 'kpop';
 
-function sectionKey(song: Song): string {
+function sectionKey(song: MenuSong): string {
   return IS_KPOP ? (song.album ?? '') : (song.subunit ?? '');
 }
 
@@ -135,14 +134,14 @@ function sectionLabel(group: GroupName, key: string): string {
   return subunitLabel(group, key);
 }
 
-function sortSongs(filtered: Song[]): Song[] {
+function sortSongs(filtered: MenuSong[]): MenuSong[] {
   const sorted = filtered.slice();
 
   if (state.sortMode === 'index' && !state.groupBySubunit) return sorted;
 
-  const byDate = (a: Song, b: Song) =>
+  const byDate = (a: MenuSong, b: MenuSong) =>
     (a.released ?? '9999').localeCompare(b.released ?? '9999') || a.name.localeCompare(b.name);
-  const byAlpha = (a: Song, b: Song) => a.name.localeCompare(b.name);
+  const byAlpha = (a: MenuSong, b: MenuSong) => a.name.localeCompare(b.name);
   const base = state.sortMode === 'alpha' ? byAlpha : state.sortMode === 'date' ? byDate : () => 0;
 
   if (state.groupBySubunit) {
@@ -175,7 +174,7 @@ function sortSongs(filtered: Song[]): Song[] {
   return sorted;
 }
 
-function switchGroup(group: GroupName, songs: Song[]): void {
+function switchGroup(group: GroupName, songs: MenuSong[]): void {
   state.group = group;
   setStorage('group', group);
 
@@ -196,7 +195,7 @@ function switchGroup(group: GroupName, songs: Song[]): void {
   const nav = document.querySelector('.sidebar-nav');
   if (!nav) return;
 
-  const filtered: Song[] = [];
+  const filtered: MenuSong[] = [];
   for (const song of songs) {
     if (song.hidden) continue;
     if (song.menu != null ? song.menu !== group : song.group !== group) continue;
@@ -218,12 +217,11 @@ function switchGroup(group: GroupName, songs: Song[]): void {
       }
     }
 
-    const i = songs.indexOf(song);
     const li = document.createElement('li');
     li.className = 'select-option';
 
     const a = document.createElement('a');
-    a.id = `select${i}`;
+    a.dataset.songId = song.id;
     a.href = `play.html#${song.id}`;
 
     const nameSpan = document.createElement('span');
@@ -240,7 +238,7 @@ function switchGroup(group: GroupName, songs: Song[]): void {
 
     const attrsSpan = document.createElement('span');
     attrsSpan.className = 'song-attrs';
-    if (song.lyrics && (Array.isArray(song.lyrics) ? song.lyrics.length > 0 : song.lyrics.length > 0)) {
+    if (song.hasLyrics) {
       const icon = document.createElement('span');
       icon.className = 'glyphicon glyphicon-align-right';
       attrsSpan.appendChild(icon);
@@ -273,13 +271,9 @@ function searchMenu(query: string): void {
 
 export function highlightSongInMenu(id: string): void {
   document.querySelectorAll('.sidebar-nav a').forEach((a) => a.classList.remove('active'));
-  const songs = getSongs();
-  const idx = songs.findIndex((s) => s.id === id);
-  if (idx >= 0) {
-    const el = document.getElementById(`select${idx}`);
-    el?.classList.add('active');
-    el?.scrollIntoView({ block: 'center', behavior: 'smooth' });
-  }
+  const el = document.querySelector<HTMLElement>(`.sidebar-nav a[data-song-id="${CSS.escape(id)}"]`);
+  el?.classList.add('active');
+  el?.scrollIntoView({ block: 'center', behavior: 'smooth' });
 }
 
 export function toggleMenu(show?: boolean): void {

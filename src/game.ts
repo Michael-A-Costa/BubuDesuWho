@@ -1,5 +1,5 @@
 import {
-  Song, Slot, SlotBase, SlotState, LyricToken, GameState, MappingEntry,
+  Song, Slot, SlotBase, SlotState, LyricToken, MappingEntry,
   MEMBER_COLORS, MEMBER_COLORS_OFFICIAL, MEMBER_MAPPING,
 } from './types';
 import { arrayEqual } from './utils';
@@ -8,6 +8,11 @@ import {
   getStorage, saveHistory, loadChoicesForSong, saveChoicesForSong,
 } from './storage';
 import * as player from './player';
+import { state } from './game-state';
+
+// Re-exported so existing imports (`import { state } from './game'`) keep
+// working while non-player consumers can switch to the leaner `./game-state`.
+export { state } from './game-state';
 
 const AUTOSAVE_INTERVAL = 2000;
 
@@ -52,36 +57,6 @@ export function refreshPaletteColors(): void {
 }
 
 // ─── State ──────────────────────────────────────────────────────────
-export const state: GameState = {
-  group: 'aqours',
-  song: null,
-  mapping: [],
-  singers: [],
-  slots: [],
-  lyrics: [],
-  reverseMap: {},
-  diff: 1,
-  autoscroll: true,
-  themed: true,
-  lyricsMode: 0,
-  calls: false,
-  callSFX: false,
-  globalReveal: false,
-  hints: false,
-  loaded: null,
-  assObjectURL: '',
-  lastProgressUpdate: null,
-  lastThemeUpdate: null,
-  scrollSlotLock: null,
-  scrollLyricLock: null,
-  sortMode: 'index',
-  groupBySubunit: false,
-  editMode: false,
-  jpLyrics: false,
-  callSFXch: 0,
-  controls: { lastSlotScroll: 0, lastLyricScroll: 0 },
-};
-
 let autosaveTimer: ReturnType<typeof setInterval> | null = null;
 
 // ─── Initialization ─────────────────────────────────────────────────

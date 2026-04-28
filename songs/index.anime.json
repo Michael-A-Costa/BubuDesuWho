@@ -1,998 +1,253 @@
 [
-  {
-    "file": "muse/borarara.json",
-    "cover": "css/images/covers/borarara.png"
-  },
-  {
-    "file": "legacy/koitan.json",
-    "cover": "css/images/covers/koitan.png"
-  },
-  {
-    "file": "muse/rabumaji.json",
-    "cover": "css/images/covers/rabumaji.png"
-  },
-  {
-    "file": "muse/ssh.json",
-    "cover": "css/images/covers/ssh.png"
-  },
-  {
-    "file": "legacy/diapuri.json",
-    "cover": "css/images/covers/diapuri.png"
-  },
-  {
-    "file": "legacy/rabunobe.json",
-    "cover": "css/images/covers/rabunobe.png"
-  },
-  {
-    "file": "legacy/shirarara.json",
-    "cover": "css/images/covers/shirarara.png"
-  },
-  {
-    "file": "legacy/anone.json",
-    "cover": "css/images/covers/anone.png"
-  },
-  {
-    "file": "legacy/mafesu1.json",
-    "cover": "css/images/covers/mafesu1.png"
-  },
-  {
-    "file": "muse/mogyu.json",
-    "cover": "css/images/covers/mogyu.png"
-  },
-  {
-    "file": "legacy/aiban.json",
-    "cover": "css/images/covers/aiban.png"
-  },
-  {
-    "file": "legacy/wonrush.json",
-    "cover": "css/images/covers/wonrush.png"
-  },
-  {
-    "file": "legacy/rabupi.json",
-    "cover": "css/images/covers/rabupi.png"
-  },
-  {
-    "file": "legacy/bokuima.json",
-    "cover": "css/images/covers/bokuima.png"
-  },
-  {
-    "file": "legacy/start.json",
-    "cover": "css/images/covers/start.png"
-  },
-  {
-    "file": "legacy/binetsu.json",
-    "cover": "css/images/covers/binetsu.png"
-  },
-  {
-    "file": "legacy/kimikuse.json",
-    "cover": "css/images/covers/kimikuse.png"
-  },
-  {
-    "file": "muse/cp.json",
-    "cover": "css/images/covers/cp.png"
-  },
-  {
-    "file": "legacy/natsuowa.json",
-    "cover": "css/images/covers/natsuowa.png"
-  },
-  {
-    "file": "legacy/pgp.json",
-    "cover": "css/images/covers/pgp.png"
-  },
-  {
-    "file": "legacy/anbara.json",
-    "cover": "css/images/covers/anbara.png"
-  },
-  {
-    "file": "legacy/puwa.json",
-    "cover": "css/images/covers/puwa.png"
-  },
-  {
-    "file": "legacy/eien.json",
-    "cover": "css/images/covers/eien.png"
-  },
-  {
-    "file": "legacy/nairabu.json",
-    "cover": "css/images/covers/nairabu.png"
-  },
-  {
-    "file": "legacy/akisora.json",
-    "cover": "css/images/covers/akisora.png"
-  },
-  {
-    "file": "legacy/happiness.json",
-    "cover": "css/images/covers/happiness.png"
-  },
-  {
-    "file": "legacy/yokan.json",
-    "cover": "css/images/covers/yokan.png"
-  },
-  {
-    "file": "legacy/torabasu.json",
-    "cover": "css/images/covers/torabasu.png"
-  },
-  {
-    "file": "legacy/onajihoshi.json",
-    "cover": "css/images/covers/onajihoshi.png"
-  },
-  {
-    "file": "legacy/silent.json",
-    "cover": "css/images/covers/silent.png"
-  },
-  {
-    "file": "legacy/cheerday.json",
-    "cover": "css/images/covers/cheerday.png"
-  },
-  {
-    "file": "legacy/saipara.json",
-    "cover": "css/images/covers/saipara.png"
-  },
-  {
-    "file": "legacy/otohime.json",
-    "cover": "css/images/covers/otohime.png"
-  },
-  {
-    "file": "legacy/museum.json",
-    "cover": "css/images/covers/museum.png"
-  },
-  {
-    "file": "legacy/angel.json",
-    "cover": "css/images/covers/angel.png"
-  },
-  {
-    "file": "legacy/hellohoshi.json",
-    "cover": "css/images/covers/hellohoshi.png"
-  },
-  {
-    "file": "legacy/sds.json",
-    "cover": "css/images/covers/sds.png"
-  },
-  {
-    "file": "legacy/heartbeat.json",
-    "cover": "css/images/covers/heartbeat.png"
-  },
-  {
-    "file": "muse/bokuhika.json",
-    "cover": "css/images/covers/bokuhika.png"
-  },
-  {
-    "file": "legacy/fsuta.json",
-    "cover": "css/images/covers/fsuta.png"
-  },
-  {
-    "file": "legacy/waowao.json",
-    "cover": "css/images/covers/waowao.png"
-  },
-  {
-    "file": "legacy/orion.json",
-    "cover": "css/images/covers/orion.png"
-  },
-  {
-    "file": "legacy/omoide.json",
-    "cover": "css/images/covers/omoide.png"
-  },
-  {
-    "file": "legacy/shunjou.json",
-    "cover": "css/images/covers/shunjou.png"
-  },
-  {
-    "file": "legacy/sakkaku.json",
-    "cover": "css/images/covers/sakkaku.png"
-  },
-  {
-    "file": "legacy/pf.json",
-    "cover": "css/images/covers/pf.png"
-  },
-  {
-    "file": "aqours/kimikoko.json",
-    "cover": "css/images/covers/kimikoko.png"
-  },
-  {
-    "file": "aqours/legacy/step.json",
-    "cover": "css/images/covers/step.png"
-  },
-  {
-    "file": "aqours/legacy/heroes.json",
-    "cover": "css/images/covers/heroes.png"
-  },
-  {
-    "file": "aqours/legacy/koiaqua.json",
-    "cover": "css/images/covers/koiaqua.png"
-  },
-  {
-    "file": "aqours/legacy/mattete.json",
-    "cover": "css/images/covers/mattete.png"
-  },
-  {
-    "file": "legacy/todohoshi.json",
-    "cover": "css/images/covers/todohoshi.png"
-  },
-  {
-    "file": "legacy/genki.json",
-    "cover": "css/images/covers/genki.png"
-  },
-  {
-    "file": "aqours/legacy/yozora-test.json",
-    "cover": "css/images/covers/yozora-test.png"
-  },
-  {
-    "file": "aqours/legacy/yozora.json",
-    "cover": "css/images/covers/yozora.png"
-  },
-  {
-    "file": "legacy/strawberry.json",
-    "cover": "css/images/covers/strawberry.png"
-  },
-  {
-    "file": "aqours/legacy/guilty.json",
-    "cover": "css/images/covers/guilty.png"
-  },
-  {
-    "file": "legacy/toriko.json",
-    "cover": "css/images/covers/toriko.png"
-  },
-  {
-    "file": "legacy/tokimeki.json",
-    "cover": "css/images/covers/tokimeki.png"
-  },
-  {
-    "file": "legacy/aozora.json",
-    "cover": "css/images/covers/aozora.png"
-  },
-  {
-    "file": "legacy/humming.json",
-    "cover": "css/images/covers/humming.png"
-  },
-  {
-    "file": "legacy/kimeta.json",
-    "cover": "css/images/covers/kimeta.png"
-  },
-  {
-    "file": "legacy/daisuki.json",
-    "cover": "css/images/covers/daisuki.png"
-  },
-  {
-    "file": "aqours/legacy/yumeuta.json",
-    "cover": "css/images/covers/yumeuta.png"
-  },
-  {
-    "file": "legacy/ondo.json",
-    "cover": "css/images/covers/ondo.png"
-  },
-  {
-    "file": "aqours/legacy/yumetera.json",
-    "cover": "css/images/covers/yumetera.png"
-  },
-  {
-    "file": "aqours/legacy/mijuku.json",
-    "cover": "css/images/covers/mijuku.png"
-  },
-  {
-    "file": "legacy/pops.json",
-    "cover": "css/images/covers/pops.png"
-  },
-  {
-    "file": "aqours/legacy/sorahare.json",
-    "cover": "css/images/covers/sorahare.png"
-  },
-  {
-    "file": "aqours/legacy/omoi.json",
-    "cover": "css/images/covers/omoi.png"
-  },
-  {
-    "file": "aqours/legacy/mirai.json",
-    "cover": "css/images/covers/mirai.png"
-  },
-  {
-    "file": "aqours/legacy/jingle.json",
-    "cover": "css/images/covers/jingle.png"
-  },
-  {
-    "file": "legacy/seinaru.json",
-    "cover": "css/images/covers/seinaru.png"
-  },
-  {
-    "file": "aqours/legacy/waku.json",
-    "cover": "css/images/covers/waku.png"
-  },
-  {
-    "file": "aqours/legacy/daydream.json",
-    "cover": "css/images/covers/daydream.png"
-  },
-  {
-    "file": "aqours/legacy/cinderella.json",
-    "cover": "css/images/covers/cinderella.png"
-  },
-  {
-    "file": "aqours/legacy/thrilling.json",
-    "cover": "css/images/covers/thrilling.png"
-  },
-  {
-    "file": "legacy/taiyou.json",
-    "cover": "css/images/covers/taiyou.png"
-  },
-  {
-    "file": "aqours/legacy/mukougawa.json",
-    "cover": "css/images/covers/mukougawa.png"
-  },
-  {
-    "file": "aqours/legacy/tuning.json",
-    "cover": "css/images/covers/tuning.png"
-  },
-  {
-    "file": "legacy/fever.json",
-    "cover": "css/images/covers/fever.png"
-  },
-  {
-    "file": "aqours/legacy/hapitore.json",
-    "cover": "css/images/covers/hapitore.png"
-  },
-  {
-    "file": "aqours/legacy/sky.json",
-    "cover": "css/images/covers/sky.png"
-  },
-  {
-    "file": "legacy/shoujo.json",
-    "cover": "css/images/covers/shoujo.png"
-  },
-  {
-    "file": "legacy/kinhappi.json",
-    "cover": "css/images/covers/kinhappi.png"
-  },
-  {
-    "file": "legacy/kaigan.json",
-    "cover": "css/images/covers/kaigan.png"
-  },
-  {
-    "file": "aqours/legacy/ginkaku.json",
-    "cover": "css/images/covers/ginkaku.png"
-  },
-  {
-    "file": "legacy/innoba.json",
-    "cover": "css/images/covers/innoba.png"
-  },
-  {
-    "file": "aqours/legacy/kowareya.json",
-    "cover": "css/images/covers/kowareya.png"
-  },
-  {
-    "file": "aqours/legacy/shadow.json",
-    "cover": "css/images/covers/shadow.png"
-  },
-  {
-    "file": "legacy/landing.json",
-    "cover": "css/images/covers/landing.png"
-  },
-  {
-    "file": "legacy/natsubira.json",
-    "cover": "css/images/covers/natsubira.png"
-  },
-  {
-    "file": "legacy/manatsumono.json",
-    "cover": "css/images/covers/manatsumono.png"
-  },
-  {
-    "file": "legacy/jimoai.json",
-    "cover": "css/images/covers/jimoai.png"
-  },
-  {
-    "file": "aqours/legacy/natsuoto.json",
-    "cover": "css/images/covers/natsuoto.png"
-  },
-  {
-    "file": "wug/tachiagare.json"
-  },
-  {
-    "file": "wug/7war.json"
-  },
-  {
-    "file": "wug/gokusuma.json"
-  },
-  {
-    "file": "wug/sugaokiss.json"
-  },
-  {
-    "file": "legacy/shoujokyoku.json"
-  },
-  {
-    "file": "wug/btb.json"
-  },
-  {
-    "file": "wug/wugzoo.json"
-  },
-  {
-    "file": "aqours/legacy/miraboku.json",
-    "cover": "css/images/covers/miraboku.png"
-  },
-  {
-    "file": "aqours/legacy/kimihito.json",
-    "cover": "css/images/covers/kimihito.png"
-  },
-  {
-    "file": "aqours/legacy/yuukimi.json",
-    "cover": "css/images/covers/yuukimi.png"
-  },
-  {
-    "file": "aqours/legacy/mylist.json",
-    "cover": "css/images/covers/mylist.png"
-  },
-  {
-    "file": "aqours/legacy/maimai.json",
-    "cover": "css/images/covers/maimai.png"
-  },
-  {
-    "file": "aqours/legacy/mirawave.json",
-    "cover": "css/images/covers/mirawave.png"
-  },
-  {
-    "file": "aqours/legacy/awakepower.json",
-    "cover": "css/images/covers/awakepower.png"
-  },
-  {
-    "file": "aqours/legacy/waterblue.json",
-    "cover": "css/images/covers/waterblue.png"
-  },
-  {
-    "file": "aqours/legacy/stories.json",
-    "cover": "css/images/covers/stories.png"
-  },
-  {
-    "file": "aqours/bokuhashi.json",
-    "cover": "css/images/covers/bokuhashi.png"
-  },
-  {
-    "file": "aqours/banzai-digital-trippers.json",
-    "cover": "css/images/covers/banzai-digital-trippers.png"
-  },
-  {
-    "file": "aqours/yume-mirai-mugendai.json",
-    "cover": "css/images/covers/yume-mirai-mugendai.png"
-  },
-  {
-    "file": "aqours/ku-ru-ku-ru-cruller.json",
-    "cover": "css/images/covers/ku-ru-ku-ru-cruller.png"
-  },
-  {
-    "file": "aqours/brightest-melody.json",
-    "cover": "css/images/covers/brightest-melody.png"
-  },
-  {
-    "file": "aqours/next-sparkling.json",
-    "cover": "css/images/covers/next-sparkling.png"
-  },
-  {
-    "file": "aqours/thank-you-friends.json",
-    "cover": "css/images/covers/thank-you-friends.png"
-  },
-  {
-    "file": "aqours/hop-stop-nonstop.json",
-    "cover": "css/images/covers/hop-stop-nonstop.png"
-  },
-  {
-    "file": "aqours/hop-step-waai.json",
-    "cover": "css/images/covers/hop-step-waai.png"
-  },
-  {
-    "file": "aqours/jump-up-high.json",
-    "cover": "css/images/covers/jump-up-high.png"
-  },
-  {
-    "file": "aqours/kokoro-magic.json",
-    "cover": "css/images/covers/kokoro-magic.png"
-  },
-  {
-    "file": "aqours/over-the-next-rainbow.json",
-    "cover": "css/images/covers/over-the-next-rainbow.png"
-  },
-  {
-    "file": "aqours/mitaiken-horizon.json",
-    "cover": "css/images/covers/mitaiken-horizon.png"
-  },
-  {
-    "file": "aqours/fantastic-departure.json",
-    "cover": "css/images/covers/fantastic-departure.png"
-  },
-  {
-    "file": "aqours/braveheart-coaster.json",
-    "cover": "css/images/covers/braveheart-coaster.png"
-  },
-  {
-    "file": "aqours/dreamy-color.json",
-    "cover": "css/images/covers/dreamy-color.jpg"
-  },
-  {
-    "file": "aqours/tousou-meisou-mobius-loop.json",
-    "cover": "css/images/covers/tousou-meisou-mobius-loop.png"
-  },
-  {
-    "file": "aqours/marine-border-parasol.json",
-    "cover": "css/images/covers/marine-border-parasol.png"
-  },
-  {
-    "file": "aqours/pirates-desire.json",
-    "cover": "css/images/covers/pirates-desire.png"
-  },
-  {
-    "file": "aqours/deep-resonance.json",
-    "cover": "css/images/covers/deep-resonance.png"
-  },
-  {
-    "file": "aqours/wake-up-challenger.json",
-    "cover": "css/images/covers/wake-up-challenger.png"
-  },
-  {
-    "file": "aqours/bouken-type-a-b-c.json",
-    "cover": "css/images/covers/bouken-type-a-b-c.png"
-  },
-  {
-    "file": "aqours/kokoro-no-hane-yo-kimi-e-tondeke.json",
-    "cover": "css/images/covers/kokoro-no-hane-yo-kimi-e-tondeke.png"
-  },
-  {
-    "file": "aqours/nando-datte-yakusoku.json",
-    "cover": "css/images/covers/nando-datte-yakusoku.png"
-  },
-  {
-    "file": "aqours/jimo-ai-dash.json",
-    "cover": "css/images/covers/jimo-ai-dash.png"
-  },
-  {
-    "file": "aqours/suki-for-you-dream-for-you.json",
-    "cover": "css/images/covers/suki-for-you-dream-for-you.png"
-  },
-  {
-    "file": "aqours/smile-smile-ship-start.json",
-    "cover": "css/images/covers/smile-smile-ship-start.png"
-  },
-  {
-    "file": "aqours/sora-fuji-sunshine.json",
-    "cover": "css/images/covers/sora-fuji-sunshine.png"
-  },
-  {
-    "file": "aqours/ka-ga-ya-ki-ra-ri-ra.json",
-    "cover": "css/images/covers/ka-ga-ya-ki-ra-ri-ra.png"
-  },
-  {
-    "file": "aqours/game-on.json",
-    "cover": "css/images/covers/game-on.png"
-  },
-  {
-    "file": "aqours/genjitsu-mysterium.json",
-    "cover": "css/images/covers/genjitsu-mysterium.png"
-  },
-  {
-    "file": "aqours/silent-pain.json",
-    "cover": "css/images/covers/silent-pain.png"
-  },
-  {
-    "file": "aqours/misty-frosty-love.json",
-    "cover": "css/images/covers/misty-frosty-love.png"
-  },
-  {
-    "file": "aqours/gemstone-de-a-i.json",
-    "cover": "css/images/covers/gemstone-de-a-i.png"
-  },
-  {
-    "file": "aqours/future-flight.json",
-    "cover": "css/images/covers/future-flight.png"
-  },
-  {
-    "file": "aqours/kimi-no-tame-boku-no-tame.json",
-    "cover": "css/images/covers/kimi-no-tame-boku-no-tame.png"
-  },
-  {
-    "file": "aqours/kiseki-hikaru.json",
-    "cover": "css/images/covers/kiseki-hikaru.png"
-  },
-  {
-    "file": "aqours/i-n-g-i-try.json",
-    "cover": "css/images/covers/i-n-g-i-try.png"
-  },
-  {
-    "file": "aqours/namida-times.json",
-    "cover": "css/images/covers/namida-times.png"
-  },
-  {
-    "file": "aqours/not-alone-not-hitori.json",
-    "cover": "css/images/covers/not-alone-not-hitori.png"
-  },
-  {
-    "file": "aqours/bloom-of-colors.json",
-    "cover": "css/images/covers/bloom-of-colors.png"
-  },
-  {
-    "file": "aqours/live-with-a-smile.json",
-    "cover": "css/images/covers/live-with-a-smile.png"
-  },
-  {
-    "file": "aqours/dropout.json",
-    "cover": "css/images/covers/dropout.png"
-  },
-  {
-    "file": "aqours/crash-mind.json",
-    "cover": "css/images/covers/crash-mind.png"
-  },
-  {
-    "file": "aqours/numazu-yassa-yoisa-uta.json",
-    "cover": "css/images/covers/numazu-yassa-yoisa-uta.png"
-  },
-  {
-    "file": "aqours/believe-again.json",
-    "cover": "css/images/covers/believe-again.png"
-  },
-  {
-    "file": "aqours/nameless-love-song.json",
-    "cover": "css/images/covers/nameless-love-song.png"
-  },
-  {
-    "file": "aqours/amazing-travel-dna.json",
-    "cover": "css/images/covers/amazing-travel-dna.png"
-  },
-  {
-    "file": "aqours/changeless.json",
-    "cover": "css/images/covers/changeless.png"
-  },
-  {
-    "file": "aqours/deep-sea-cocoon.json",
-    "cover": "css/images/covers/deep-sea-cocoon.png"
-  },
-  {
-    "file": "aqours/lonely-snow-planet.json",
-    "cover": "css/images/covers/lonely-snow-planet.png"
-  },
-  {
-    "file": "aqours/love-pulsar.json",
-    "cover": "css/images/covers/love-pulsar.png"
-  },
-  {
-    "file": "aqours/new-romantic-sailors.json",
-    "cover": "css/images/covers/new-romantic-sailors.png"
-  },
-  {
-    "file": "aqours/party-party-papapaparty.json",
-    "cover": "css/images/covers/party-party-papapaparty.png"
-  },
-  {
-    "file": "aqours/phantom-rocket-adventure.json",
-    "cover": "css/images/covers/phantom-rocket-adventure.png"
-  },
-  {
-    "file": "aqours/phoenix-dance.json",
-    "cover": "css/images/covers/phoenix-dance.png"
-  },
-  {
-    "file": "aqours/sotsugyou-desu-ne.json",
-    "cover": "css/images/covers/sotsugyou-desu-ne.png"
-  },
-  {
-    "file": "aqours/well-get-the-next-dream.json",
-    "cover": "css/images/covers/well-get-the-next-dream.png"
-  },
-  {
-    "file": "aqours/whistle-of-revolution.json",
-    "cover": "css/images/covers/whistle-of-revolution.png"
-  },
-  {
-    "file": "muse/sentimental-steps.json",
-    "cover": "css/images/covers/sentimental-steps.png"
-  },
-  {
-    "file": "aqours/bokura-no-umi-de-mata-aou.json",
-    "cover": "css/images/covers/bokura-no-umi-de-mata-aou.png"
-  },
-  {
-    "file": "aqours/la-la-yuuki-no-uta.json",
-    "cover": "css/images/covers/la-la-yuuki-no-uta.png"
-  },
-  {
-    "file": "muse/a-song-for-you-you-you.json",
-    "cover": "css/images/covers/a-song-for-you-you-you.png"
-  },
-  {
-    "file": "muse/after-school-navigators.json",
-    "cover": "css/images/covers/after-school-navigators.png"
-  },
-  {
-    "file": "muse/anemone-heart.json",
-    "cover": "css/images/covers/anemone-heart.png"
-  },
-  {
-    "file": "muse/arashi-no-naka-no-koi-dakara.json",
-    "cover": "css/images/covers/arashi-no-naka-no-koi-dakara.png"
-  },
-  {
-    "file": "muse/arifureta-kanashimi-no-hate.json",
-    "cover": "css/images/covers/arifureta-kanashimi-no-hate.png"
-  },
-  {
-    "file": "muse/beat-in-angel.json",
-    "cover": "css/images/covers/beat-in-angel.png"
-  },
-  {
-    "file": "muse/colorful-voice.json",
-    "cover": "css/images/covers/colorful-voice.png"
-  },
-  {
-    "file": "muse/dancing-stars-on-me.json",
-    "cover": "css/images/covers/dancing-stars-on-me.png"
-  },
-  {
-    "file": "muse/datte-datte-aa-mujou.json",
-    "cover": "css/images/covers/datte-datte-aa-mujou.png"
-  },
-  {
-    "file": "muse/diamond-princess-no-yuutsu.json",
-    "cover": "css/images/covers/diamond-princess-no-yuutsu.png"
-  },
-  {
-    "file": "muse/donna-toki-mo-zutto.json",
-    "cover": "css/images/covers/donna-toki-mo-zutto.png"
-  },
-  {
-    "file": "muse/dreamin-go-go.json",
-    "cover": "css/images/covers/dreamin-go-go.png"
-  },
-  {
-    "file": "muse/endless-parade.json",
-    "cover": "css/images/covers/endless-parade.png"
-  },
-  {
-    "file": "muse/garasu-no-hanazono.json",
-    "cover": "css/images/covers/garasu-no-hanazono.png"
-  },
-  {
-    "file": "muse/hello-hoshi-wo-kazoete.json",
-    "cover": "css/images/covers/hello-hoshi-wo-kazoete.png"
-  },
-  {
-    "file": "muse/ill-smile-for-yours.json",
-    "cover": "css/images/covers/ill-smile-for-yours.png"
-  },
-  {
-    "file": "muse/junai-lens.json",
-    "cover": "css/images/covers/junai-lens.png"
-  },
-  {
-    "file": "muse/kaguya-no-shiro-de-odoritai.json",
-    "cover": "css/images/covers/kaguya-no-shiro-de-odoritai.png"
-  },
-  {
-    "file": "muse/kira-kira-sensation.json",
-    "cover": "css/images/covers/kira-kira-sensation.png"
-  },
-  {
-    "file": "muse/kitto-seishun-ga-kikoeru.json",
-    "cover": "css/images/covers/kitto-seishun-ga-kikoeru.png"
-  },
-  {
-    "file": "muse/kodoku-na-heaven.json",
-    "cover": "css/images/covers/kodoku-na-heaven.png"
-  },
-  {
-    "file": "muse/kore-kara.json",
-    "cover": "css/images/covers/kore-kara.png"
-  },
-  {
-    "file": "muse/listen-to-my-heart.json",
-    "cover": "css/images/covers/listen-to-my-heart.png"
-  },
-  {
-    "file": "muse/loneliest-baby.json",
-    "cover": "css/images/covers/loneliest-baby.png"
-  },
-  {
-    "file": "muse/love-wing-bell.json",
-    "cover": "css/images/covers/love-wing-bell.png"
-  },
-  {
-    "file": "muse/loveless-world.json",
-    "cover": "css/images/covers/loveless-world.png"
-  },
-  {
-    "file": "muse/mermaid-festa-vol2-passionate.json",
-    "cover": "css/images/covers/mermaid-festa-vol2-passionate.png"
-  },
-  {
-    "file": "muse/mi-wa-sic-no-mi.json",
-    "cover": "css/images/covers/mi-wa-sic-no-mi.png"
-  },
-  {
-    "file": "muse/moment-ring.json",
-    "cover": "css/images/covers/moment-ring.png"
-  },
-  {
-    "file": "muse/moshimo-kara-kitto.json",
-    "cover": "css/images/covers/moshimo-kara-kitto.png"
-  },
-  {
-    "file": "muse/music-start.json",
-    "cover": "css/images/covers/music-start.png"
-  },
-  {
-    "file": "muse/natsuiro-egao-de-12jump.json",
-    "cover": "css/images/covers/natsuiro-egao-de-12jump.png"
-  },
-  {
-    "file": "muse/nawatobi.json",
-    "cover": "css/images/covers/nawatobi.png"
-  },
-  {
-    "file": "muse/neuron-neuron.json",
-    "cover": "css/images/covers/neuron-neuron.png"
-  },
-  {
-    "file": "muse/no-brand-girls.json",
-    "cover": "css/images/covers/no-brand-girls.png"
-  },
-  {
-    "file": "muse/paradise-live.json",
-    "cover": "css/images/covers/paradise-live.png"
-  },
-  {
-    "file": "muse/private-wars.json",
-    "cover": "css/images/covers/private-wars.png"
-  },
-  {
-    "file": "muse/sayounara-e-sayonara.json",
-    "cover": "css/images/covers/sayounara-e-sayonara.png"
-  },
-  {
-    "file": "muse/shangri-la-shower.json",
-    "cover": "css/images/covers/shangri-la-shower.png"
-  },
-  {
-    "file": "muse/shocking-party.json",
-    "cover": "css/images/covers/shocking-party.png"
-  },
-  {
-    "file": "muse/snow-halation.json",
-    "cover": "css/images/covers/snow-halation.png"
-  },
-  {
-    "file": "muse/soldier-game.json",
-    "cover": "css/images/covers/soldier-game.png"
-  },
-  {
-    "file": "muse/someday-of-my-life.json",
-    "cover": "css/images/covers/someday-of-my-life.png"
-  },
-  {
-    "file": "muse/sore-wa-bokutachi-no-kiseki.json",
-    "cover": "css/images/covers/sore-wa-bokutachi-no-kiseki.png"
-  },
-  {
-    "file": "muse/spicaterrible.json",
-    "cover": "css/images/covers/spicaterrible.png"
-  },
-  {
-    "file": "muse/storm-in-lover.json",
-    "cover": "css/images/covers/storm-in-lover.png"
-  },
-  {
-    "file": "muse/super-lovesuper-live.json",
-    "cover": "css/images/covers/super-lovesuper-live.png"
-  },
-  {
-    "file": "muse/susumetomorrow.json",
-    "cover": "css/images/covers/susumetomorrow.png"
-  },
-  {
-    "file": "muse/takaramonozu.json",
-    "cover": "css/images/covers/takaramonozu.png"
-  },
-  {
-    "file": "muse/wild-stars.json",
-    "cover": "css/images/covers/wild-stars.png"
-  },
-  {
-    "file": "muse/wonder-zone.json"
-  },
-  {
-    "file": "muse/yume-no-tobira.json",
-    "cover": "css/images/covers/yume-no-tobira.png"
-  },
-  {
-    "file": "muse/yuujou-no-change.json",
-    "cover": "css/images/covers/yuujou-no-change.png"
-  },
-  {
-    "file": "muse/yuuki-no-reason.json",
-    "cover": "css/images/covers/yuuki-no-reason.png"
-  },
-  {
-    "file": "nijigasaki/beautiful-moonlight.json",
-    "cover": "css/images/covers/beautiful-moonlight.jpg"
-  },
-  {
-    "file": "nijigasaki/cheer-for-you.json",
-    "cover": "css/images/covers/cheer-for-you.jpg"
-  },
-  {
-    "file": "nijigasaki/dream-land-dream-world.json",
-    "cover": "css/images/covers/dream-land-dream-world.jpg"
-  },
-  {
-    "file": "nijigasaki/fly-into-the-sky.json",
-    "cover": "css/images/covers/fly-into-the-sky.jpg"
-  },
-  {
-    "file": "nijigasaki/happy-nyan-days.json",
-    "cover": "css/images/covers/happy-nyan-days.jpg"
-  },
-  {
-    "file": "nijigasaki/hurray-hurray.json",
-    "cover": "css/images/covers/hurray-hurray.jpg"
-  },
-  {
-    "file": "nijigasaki/just-believe.json",
-    "cover": "css/images/covers/just-believe.jpg"
-  },
-  {
-    "file": "nijigasaki/l-l-l-love-the-life-we-live.json",
-    "cover": "css/images/covers/l-l-l-love-the-life-we-live.jpg"
-  },
-  {
-    "file": "nijigasaki/love-triangle.json",
-    "cover": "css/images/covers/love-triangle.jpg"
-  },
-  {
-    "file": "nijigasaki/make-up-session-abc.json",
-    "cover": "css/images/covers/make-up-session-abc.jpg"
-  },
-  {
-    "file": "nijigasaki/maze-town.json",
-    "cover": "css/images/covers/maze-town.jpg"
-  },
-  {
-    "file": "nijigasaki/mirai-harmony.json",
-    "cover": "css/images/covers/mirai-harmony.png"
-  },
-  {
-    "file": "nijigasaki/neo-sky-neo-map.json",
-    "cover": "css/images/covers/neo-sky-neo-map.jpg"
-  },
-  {
-    "file": "nijigasaki/not-sad.json",
-    "cover": "css/images/covers/not-sad.jpg"
-  },
-  {
-    "file": "nijigasaki/power-spot.json",
-    "cover": "css/images/covers/power-spot.jpg"
-  },
-  {
-    "file": "nijigasaki/saika--saika-.json",
-    "cover": "css/images/covers/saika--saika-.jpg"
-  },
-  {
-    "file": "nijigasaki/sing-smile.json",
-    "cover": "css/images/covers/sing-smile.jpg"
-  },
-  {
-    "file": "nijigasaki/super-nova.json",
-    "cover": "css/images/covers/super-nova.jpg"
-  },
-  {
-    "file": "nijigasaki/sweet-eyes.json",
-    "cover": "css/images/covers/sweet-eyes.jpg"
-  },
-  {
-    "file": "nijigasaki/tokimeki-runners-chapter-17-ver.json",
-    "cover": "css/images/covers/tokimeki-runners-chapter-17-ver.jpeg"
-  },
-  {
-    "file": "nijigasaki/tokimeki-runners.json",
-    "cover": "css/images/covers/tokimeki-runners.jpg"
-  },
-  {
-    "file": "nijigasaki/twinkle-town.json",
-    "cover": "css/images/covers/twinkle-town.jpg"
-  },
-  {
-    "file": "nijigasaki/yume-ga-koko-kara-hajimaru-yo.json",
-    "cover": "css/images/covers/yume-ga-koko-kara-hajimaru-yo.jpg"
-  },
-  {
-    "file": "nijigasaki/zensoku-dreamer.json",
-    "cover": "css/images/covers/zensoku-dreamer.jpg"
-  }
+  {"file":"muse/borarara.json","id":"borarara","name":"Bokura no LIVE Kimi to no LIFE","group":"muse","cover":"css/images/covers/borarara.png","hasLyrics":true},
+  {"file":"legacy/koitan.json","id":"koitan","name":"Baby Maybe Koi no Button","group":"muse","cover":"css/images/covers/koitan.png","hasLyrics":true},
+  {"file":"muse/rabumaji.json","id":"rabumaji","name":"Love Marginal","group":"muse","cover":"css/images/covers/rabumaji.png","hasLyrics":true},
+  {"file":"muse/ssh.json","id":"ssh","name":"Sweet&Sweet Holiday","group":"muse","cover":"css/images/covers/ssh.png","hasLyrics":true},
+  {"file":"legacy/diapuri.json","id":"diapuri","name":"Diamond Princess no Yuuutsu","group":"muse","cover":"css/images/covers/diapuri.png","hasLyrics":true},
+  {"file":"legacy/rabunobe.json","id":"rabunobe","name":"Love Novels","group":"muse","cover":"css/images/covers/rabunobe.png","hasLyrics":true},
+  {"file":"legacy/shirarara.json","id":"shirarara","name":"Shiranai Love*Oshiete Love","group":"muse","cover":"css/images/covers/shirarara.png","hasLyrics":true},
+  {"file":"legacy/anone.json","id":"anone","name":"A-NO-NE-GA-N-BA-RE!","group":"muse","cover":"css/images/covers/anone.png","hasLyrics":true},
+  {"file":"legacy/mafesu1.json","id":"mafesu1","name":"Mermaid festa vol.1","group":"muse","cover":"css/images/covers/mafesu1.png","hasLyrics":true},
+  {"file":"muse/mogyu.json","id":"mogyu","name":" Mogyutto \"love\" de Sekkin Chuu!","group":"muse","cover":"css/images/covers/mogyu.png","hasLyrics":true},
+  {"file":"legacy/aiban.json","id":"aiban","name":"Aishiteru Banzai!","group":"muse","cover":"css/images/covers/aiban.png","hasLyrics":true},
+  {"file":"legacy/wonrush.json","id":"wonrush","name":"Wonderful Rush","group":"muse","cover":"css/images/covers/wonrush.png","hasLyrics":true},
+  {"file":"legacy/rabupi.json","id":"rabupi","name":"Oh,Love&Peace","group":"muse","cover":"css/images/covers/rabupi.png","hasLyrics":true},
+  {"file":"legacy/bokuima.json","id":"bokuima","name":"Bokura wa Ima no Naka de","group":"muse","cover":"css/images/covers/bokuima.png","hasLyrics":true},
+  {"file":"legacy/start.json","id":"start","name":"START:DASH!! (9 Member Ver.)","group":"muse","cover":"css/images/covers/start.png","hasLyrics":true},
+  {"file":"legacy/binetsu.json","id":"binetsu","name":"Binetsu Kara Mystery","group":"muse","cover":"css/images/covers/binetsu.png","hasLyrics":true},
+  {"file":"legacy/kimikuse.json","id":"kimikuse","name":"Kimi no Kuse ni!","group":"muse","cover":"css/images/covers/kimikuse.png","hasLyrics":true},
+  {"file":"muse/cp.json","id":"cp","name":"Cutie Panther","group":"muse","cover":"css/images/covers/cp.png","hasLyrics":true},
+  {"file":"legacy/natsuowa.json","id":"natsuowa","name":"Natsu, Owaranai de","group":"muse","cover":"css/images/covers/natsuowa.png","hasLyrics":true},
+  {"file":"legacy/pgp.json","id":"pgp","name":"Pure Girls Project","group":"muse","cover":"css/images/covers/pgp.png","hasLyrics":true},
+  {"file":"legacy/anbara.json","id":"anbara","name":"UNBALANCED LOVE","group":"muse","cover":"css/images/covers/anbara.png","hasLyrics":true},
+  {"file":"legacy/puwa.json","id":"puwa","name":"Puwa Puwa-O!","group":"muse","cover":"css/images/covers/puwa.png","hasLyrics":true},
+  {"file":"legacy/eien.json","id":"eien","name":"Eien Friends","group":"muse","cover":"css/images/covers/eien.png","hasLyrics":true},
+  {"file":"legacy/nairabu.json","id":"nairabu","name":"Nightingale Love Song","group":"muse","cover":"css/images/covers/nairabu.png","hasLyrics":true},
+  {"file":"legacy/akisora.json","id":"akisora","name":"Aki no Anata no Sora Tooku","group":"muse","cover":"css/images/covers/akisora.png","hasLyrics":true},
+  {"file":"legacy/happiness.json","id":"happiness","name":"Futari Happiness","group":"muse","cover":"css/images/covers/happiness.png","hasLyrics":true},
+  {"file":"legacy/yokan.json","id":"yokan","name":"Fuyu ga Kureta Yokan","group":"muse","cover":"css/images/covers/yokan.png","hasLyrics":true},
+  {"file":"legacy/torabasu.json","id":"torabasu","name":"Trouble Busters","group":"muse","cover":"css/images/covers/torabasu.png","hasLyrics":true},
+  {"file":"legacy/onajihoshi.json","id":"onajihoshi","name":"Onaji Hoshi ga Mitai","group":"muse","cover":"css/images/covers/onajihoshi.png","hasLyrics":true},
+  {"file":"legacy/silent.json","id":"silent","name":"Silent Tonight","group":"muse","cover":"css/images/covers/silent.png","hasLyrics":true},
+  {"file":"legacy/cheerday.json","id":"cheerday","name":"CheerDay CheerGirl!","group":"muse","cover":"css/images/covers/cheerday.png","hasLyrics":true},
+  {"file":"legacy/saipara.json","id":"saipara","name":"Saitei de Saikou no Paradiso","group":"muse","cover":"css/images/covers/saipara.png","hasLyrics":true},
+  {"file":"legacy/otohime.json","id":"otohime","name":"Otohime Heart de Love Kyuuden","group":"muse","cover":"css/images/covers/otohime.png","hasLyrics":true},
+  {"file":"legacy/museum.json","id":"museum","name":"MUSEUM de Dou Shitai?","group":"muse","cover":"css/images/covers/museum.png","hasLyrics":true},
+  {"file":"legacy/angel.json","id":"angel","name":"Angelic Angel","group":"muse","cover":"css/images/covers/angel.png","hasLyrics":true},
+  {"file":"legacy/hellohoshi.json","id":"hellohoshi","name":"Hello, Hoshi o Kazoete","group":"muse","cover":"css/images/covers/hellohoshi.png","hasLyrics":true},
+  {"file":"legacy/sds.json","id":"sds","name":"SUNNY DAY SONG","group":"muse","cover":"css/images/covers/sds.png","hasLyrics":true},
+  {"file":"legacy/heartbeat.json","id":"heartbeat","name":"?←HEARTBEAT","group":"muse","cover":"css/images/covers/heartbeat.png","hasLyrics":true},
+  {"file":"muse/bokuhika.json","id":"bokuhika","name":"Bokutachi wa Hitotsu no Hikari","group":"muse","cover":"css/images/covers/bokuhika.png","hasLyrics":true},
+  {"file":"legacy/fsuta.json","id":"fsuta","name":"Future Style","group":"muse","cover":"css/images/covers/fsuta.png","hasLyrics":true},
+  {"file":"legacy/waowao.json","id":"waowao","name":"WAO-WAO Powerful Day!","group":"muse","cover":"css/images/covers/waowao.png","hasLyrics":true},
+  {"file":"legacy/orion.json","id":"orion","name":"NO EXIT ORION","group":"muse","cover":"css/images/covers/orion.png","hasLyrics":true},
+  {"file":"legacy/omoide.json","id":"omoide","name":"Omoide Ijou ni Naritakute","group":"muse","cover":"css/images/covers/omoide.png","hasLyrics":true},
+  {"file":"legacy/shunjou.json","id":"shunjou","name":"Shunjou Romantic","group":"muse","cover":"css/images/covers/shunjou.png","hasLyrics":true},
+  {"file":"legacy/sakkaku.json","id":"sakkaku","name":"Sakkaku CROSSROADS","group":"muse","cover":"css/images/covers/sakkaku.png","hasLyrics":true},
+  {"file":"legacy/pf.json","id":"pf","name":"PSYCHIC FIRE","group":"muse","cover":"css/images/covers/pf.png","hasLyrics":true},
+  {"file":"aqours/kimikoko.json","id":"kimikoko","name":"Kimi no Kokoro wa Kagayaiteru kai?","group":"aqours","cover":"css/images/covers/kimikoko.png","hasLyrics":true},
+  {"file":"aqours/legacy/step.json","id":"step","name":"Step! ZERO to ONE","group":"aqours","released":"2015-10-07","cover":"css/images/covers/step.png","hasLyrics":true},
+  {"file":"aqours/legacy/heroes.json","id":"heroes","name":"Aqours☆HEROES","group":"aqours","released":"2015-10-07","cover":"css/images/covers/heroes.png","hasLyrics":true},
+  {"file":"aqours/legacy/koiaqua.json","id":"koiaqua","name":"Koi ni Naritai AQUARIUM","group":"aqours","released":"2016-04-27","cover":"css/images/covers/koiaqua.png","hasLyrics":true},
+  {"file":"aqours/legacy/mattete.json","id":"mattete","name":"Mattete Ai no Uta","group":"aqours","released":"2016-04-27","cover":"css/images/covers/mattete.png","hasLyrics":true},
+  {"file":"legacy/todohoshi.json","id":"todohoshi","name":"Todokanai Hoshi da to Shitemo","group":"aqours","released":"2016-04-27","cover":"css/images/covers/todohoshi.png","hasLyrics":true},
+  {"file":"legacy/genki.json","id":"genki","name":"Genki Zenkai DAY! DAY! DAY!","group":"aqours","subunit":"cyaron","released":"2016-05-11","cover":"css/images/covers/genki.png","hasLyrics":true},
+  {"file":"aqours/legacy/yozora-test.json","id":"yozora-test","name":"Yozora wa Nandemo Shitteru no?","group":"aqours","hidden":true,"cover":"css/images/covers/yozora-test.png","hasLyrics":true},
+  {"file":"aqours/legacy/yozora.json","id":"yozora","name":"Yozora wa Nandemo Shitteru no?","group":"aqours","subunit":"cyaron","released":"2016-05-11","cover":"css/images/covers/yozora.png","hasLyrics":true},
+  {"file":"legacy/strawberry.json","id":"strawberry","name":"Strawberry Trapper","group":"aqours","subunit":"guilty-kiss","released":"2016-06-08","cover":"css/images/covers/strawberry.png","hasLyrics":true},
+  {"file":"aqours/legacy/guilty.json","id":"guilty","name":"Guilty Night, Guilty Kiss!","group":"aqours","subunit":"guilty-kiss","released":"2016-06-08","cover":"css/images/covers/guilty.png","hasLyrics":true},
+  {"file":"legacy/toriko.json","id":"toriko","name":"Torikoriko PLEASE!!","group":"aqours","subunit":"cyaron","released":"2016-05-25","cover":"css/images/covers/toriko.png","hasLyrics":true},
+  {"file":"legacy/tokimeki.json","id":"tokimeki","name":"Tokimeki Bunruigaku","group":"aqours","subunit":"azalea","released":"2016-05-25","cover":"css/images/covers/tokimeki.png","hasLyrics":true},
+  {"file":"legacy/aozora.json","id":"aozora","name":"Aozora Jumping Heart","group":"aqours","released":"2016-07-20","cover":"css/images/covers/aozora.png","hasLyrics":true},
+  {"file":"legacy/humming.json","id":"humming","name":"Humming Friend","group":"aqours","released":"2016-07-20","cover":"css/images/covers/humming.png","hasLyrics":true},
+  {"file":"legacy/kimeta.json","id":"kimeta","name":"Kimeta yo Hand in Hand","group":"aqours","subunit":"2nd-years","released":"2016-08-03","cover":"css/images/covers/kimeta.png","hasLyrics":true},
+  {"file":"legacy/daisuki.json","id":"daisuki","name":"Daisuki Dattara Daijoubu!","group":"aqours","subunit":"2nd-years","released":"2016-08-03","cover":"css/images/covers/daisuki.png","hasLyrics":true},
+  {"file":"aqours/legacy/yumeuta.json","id":"yumeuta","name":"Yume Kataru yori Yume Utaou","group":"aqours","released":"2016-08-24","cover":"css/images/covers/yumeuta.png","hasLyrics":true},
+  {"file":"legacy/ondo.json","id":"ondo","name":"Sunshine Pikkapika Ondo","group":"aqours","released":"2016-08-24","cover":"css/images/covers/ondo.png","hasLyrics":true},
+  {"file":"aqours/legacy/yumetera.json","id":"yumetera","name":"Yume de Yozora wo Terashitai","group":"aqours","released":"2016-09-14","cover":"css/images/covers/yumetera.png","hasLyrics":true},
+  {"file":"aqours/legacy/mijuku.json","id":"mijuku","name":"Mijuku DREAMER","group":"aqours","released":"2016-09-14","cover":"css/images/covers/mijuku.png","hasLyrics":true},
+  {"file":"legacy/pops.json","id":"pops","name":"Pops heart de Odorun damon!","group":"aqours","released":"2016-09-27","cover":"css/images/covers/pops.png","hasLyrics":true},
+  {"file":"aqours/legacy/sorahare.json","id":"sorahare","name":"Sora mo Kokoro mo Hareru kara","group":"aqours","subunit":"2nd-years","released":"2016-10-26","cover":"css/images/covers/sorahare.png","hasLyrics":true},
+  {"file":"aqours/legacy/omoi.json","id":"omoi","name":"Omoi yo Hitotsu ni Nare","group":"aqours","released":"2016-11-09","cover":"css/images/covers/omoi.png","hasLyrics":true},
+  {"file":"aqours/legacy/mirai.json","id":"mirai","name":"MIRAI TICKET","group":"aqours","released":"2016-11-09","cover":"css/images/covers/mirai.png","hasLyrics":true},
+  {"file":"aqours/legacy/jingle.json","id":"jingle","name":"Jingle Bells ga Tomaranai","group":"aqours","released":"2016-11-23","cover":"css/images/covers/jingle.png","hasLyrics":true},
+  {"file":"legacy/seinaru.json","id":"seinaru","name":"Seinaru Hi no Inori","group":"aqours","released":"2016-11-23","cover":"css/images/covers/seinaru.png","hasLyrics":true},
+  {"file":"aqours/legacy/waku.json","id":"waku","name":"Waku-Waku-Week!","group":"aqours","subunit":"1st-years","released":"2016-11-25","cover":"css/images/covers/waku.png","hasLyrics":true},
+  {"file":"aqours/legacy/daydream.json","id":"daydream","name":"Daydream Warrior","group":"aqours","released":"2016-12-22","cover":"css/images/covers/daydream.png","hasLyrics":true},
+  {"file":"aqours/legacy/cinderella.json","id":"cinderella","name":"G Senjou no Cinderella","group":"aqours","subunit":"3rd-years","released":"2017-01-27","cover":"css/images/covers/cinderella.png","hasLyrics":true},
+  {"file":"aqours/legacy/thrilling.json","id":"thrilling","name":"Thrilling One Way","group":"aqours","subunit":"cyaron","released":"2017-02-24","cover":"css/images/covers/thrilling.png","hasLyrics":true},
+  {"file":"legacy/taiyou.json","id":"taiyou","name":"Taiyou o Oikakero!","group":"aqours","subunit":"cyaron","released":"2017-03-24","cover":"css/images/covers/taiyou.png","hasLyrics":true},
+  {"file":"aqours/legacy/mukougawa.json","id":"mukougawa","name":"P.S. no Mukougawa","group":"aqours","subunit":"azalea","released":"2017-03-24","cover":"css/images/covers/mukougawa.png","hasLyrics":true},
+  {"file":"aqours/legacy/tuning.json","id":"tuning","name":"LONELY TUNING","group":"aqours","subunit":"guilty-kiss","released":"2017-03-24","cover":"css/images/covers/tuning.png","hasLyrics":true},
+  {"file":"legacy/fever.json","id":"fever","name":"Guilty Eyes Fever","group":"aqours","subunit":"guilty-kiss","released":"2017-03-24","cover":"css/images/covers/fever.png","hasLyrics":true},
+  {"file":"aqours/legacy/hapitore.json","id":"hapitore","name":"HAPPY PARTY TRAIN","group":"aqours","released":"2017-04-05","cover":"css/images/covers/hapitore.png","hasLyrics":true},
+  {"file":"aqours/legacy/sky.json","id":"sky","name":"SKY JOURNEY","group":"aqours","released":"2017-04-05","cover":"css/images/covers/sky.png","hasLyrics":true},
+  {"file":"legacy/shoujo.json","id":"shoujo","name":"Shoujo Ijou no Koi ga Shitai","group":"aqours","released":"2017-04-05","cover":"css/images/covers/shoujo.png","hasLyrics":true},
+  {"file":"legacy/kinhappi.json","id":"kinhappi","name":"Kinmirai Happy End","group":"aqours","subunit":"cyaron","released":"2017-05-10","cover":"css/images/covers/kinhappi.png","hasLyrics":true},
+  {"file":"legacy/kaigan.json","id":"kaigan","name":"Kaigandoori de Matteru yo","group":"aqours","subunit":"azalea","released":"2017-05-10","cover":"css/images/covers/kaigan.png","hasLyrics":true},
+  {"file":"aqours/legacy/ginkaku.json","id":"ginkaku","name":"GALAXY HidE and SeeK","group":"aqours","subunit":"azalea","released":"2017-05-31","cover":"css/images/covers/ginkaku.png","hasLyrics":true},
+  {"file":"legacy/innoba.json","id":"innoba","name":"INNOCENT BIRD","group":"aqours","subunit":"azalea","released":"2017-05-31","cover":"css/images/covers/innoba.png","hasLyrics":true},
+  {"file":"aqours/legacy/kowareya.json","id":"kowareya","name":"Kowareyasuki","group":"aqours","subunit":"azalea","released":"2017-06-21","cover":"css/images/covers/kowareya.png","hasLyrics":true},
+  {"file":"aqours/legacy/shadow.json","id":"shadow","name":"Shadow gate to love","group":"aqours","subunit":"guilty-kiss","released":"2017-06-21","cover":"css/images/covers/shadow.png","hasLyrics":true},
+  {"file":"legacy/landing.json","id":"landing","name":"Landing action Yeah!!","group":"aqours","released":"2017-06-30","cover":"css/images/covers/landing.png","hasLyrics":true},
+  {"file":"legacy/natsubira.json","id":"natsubira","name":"Natsu e no Tobira Never end ver.","group":"aqours","released":"2017-08-02","cover":"css/images/covers/natsubira.png","hasLyrics":true},
+  {"file":"legacy/manatsumono.json","id":"manatsumono","name":"Manatsu wa Dare no Mono?","group":"aqours","released":"2017-08-02","cover":"css/images/covers/manatsumono.png","hasLyrics":true},
+  {"file":"legacy/jimoai.json","id":"jimoai","name":"Jimo Ai ♡ Mantan ☆ Summer Life","group":"aqours","released":"2017-08-02","cover":"css/images/covers/jimoai.png","hasLyrics":true},
+  {"file":"aqours/legacy/natsuoto.json","id":"natsuoto","name":"Natsu no Owari no Amaoto ga","group":"aqours","released":"2017-08-02","cover":"css/images/covers/natsuoto.png","hasLyrics":true},
+  {"file":"wug/tachiagare.json","id":"tachiagare","name":"Tachiagare","group":"wug","hasLyrics":true},
+  {"file":"wug/7war.json","id":"7war","name":"7 Girls War","group":"wug","hasLyrics":true},
+  {"file":"wug/gokusuma.json","id":"gokusuma","name":"Gokujou Smile","group":"wug","hasLyrics":true},
+  {"file":"wug/sugaokiss.json","id":"sugaokiss","name":"Sugao de KISS ME","group":"wug","hasLyrics":true},
+  {"file":"legacy/shoujokyoku.json","id":"shoujokyoku","name":"Shoujo Koukyoukyoku","group":"wug","hasLyrics":true},
+  {"file":"wug/btb.json","id":"btb","name":"Beyond the Bottom","group":"wug","hasLyrics":true},
+  {"file":"wug/wugzoo.json","id":"wugzoo","name":"WUG Zoo Zoo","group":"wug","hasLyrics":true},
+  {"file":"aqours/legacy/miraboku.json","id":"miraboku","name":"Mirai no Bokura wa Shitteru yo","group":"aqours","released":"2017-10-25","cover":"css/images/covers/miraboku.png","hasLyrics":true},
+  {"file":"aqours/legacy/kimihito.json","id":"kimihito","name":"Kimi no Hitomi wo Meguru Bouken","group":"aqours","released":"2017-10-25","cover":"css/images/covers/kimihito.png","hasLyrics":true},
+  {"file":"aqours/legacy/yuukimi.json","id":"yuukimi","name":"Yuuki wa doko ni? Kimi no Mune ni!","group":"aqours","released":"2017-11-15","cover":"css/images/covers/yuukimi.png","hasLyrics":true},
+  {"file":"aqours/legacy/mylist.json","id":"mylist","name":"\"MY LIST\" to you","group":"aqours","released":"2017-11-15","cover":"css/images/covers/mylist.png","hasLyrics":true},
+  {"file":"aqours/legacy/maimai.json","id":"maimai","name":"MY Mai☆TONIGHT","group":"aqours","released":"2017-11-29","cover":"css/images/covers/maimai.png","hasLyrics":true},
+  {"file":"aqours/legacy/mirawave.json","id":"mirawave","name":"MIRACLE WAVE","group":"aqours","released":"2017-11-29","cover":"css/images/covers/mirawave.png","hasLyrics":true},
+  {"file":"aqours/legacy/awakepower.json","id":"awakepower","name":"Awaken the power","group":"saint-aqours-snow","menu":"aqours","subunit":"saint-aqours-snow","released":"2017-12-20","cover":"css/images/covers/awakepower.png","hasLyrics":true},
+  {"file":"aqours/legacy/waterblue.json","id":"waterblue","name":"WATER BLUE NEW WORLD","group":"aqours","released":"2018-01-17","cover":"css/images/covers/waterblue.png","hasLyrics":true},
+  {"file":"aqours/legacy/stories.json","id":"stories","name":"WONDERFUL STORIES","group":"aqours","released":"2018-01-17","cover":"css/images/covers/stories.png","hasLyrics":true},
+  {"file":"aqours/bokuhashi.json","id":"bokuhashi","name":"Bokura no Hashitte Kita Michi wa...","group":"aqours","released":"2019-01-23","cover":"css/images/covers/bokuhashi.png","hasLyrics":true},
+  {"file":"aqours/banzai-digital-trippers.json","id":"banzai-digital-trippers","name":"BANZAI! digital trippers","group":"aqours-miku","menu":"aqours","subunit":"aqours-miku","released":"2022-08-24","cover":"css/images/covers/banzai-digital-trippers.png","hasLyrics":true},
+  {"file":"aqours/yume-mirai-mugendai.json","id":"yume-mirai-mugendai","name":"Yume + Mirai = Mugendai","group":"aqours","released":"2022-06-30","cover":"css/images/covers/yume-mirai-mugendai.png","hasLyrics":true},
+  {"file":"aqours/ku-ru-ku-ru-cruller.json","id":"ku-ru-ku-ru-cruller","name":"KU-RU-KU-RU Cruller!","group":"aqours","released":"2021-09-22","cover":"css/images/covers/ku-ru-ku-ru-cruller.png","hasLyrics":true},
+  {"file":"aqours/brightest-melody.json","id":"brightest-melody","name":"Brightest Melody","group":"aqours","released":"2019-02-06","cover":"css/images/covers/brightest-melody.png","hasLyrics":true},
+  {"file":"aqours/next-sparkling.json","id":"next-sparkling","name":"Next SPARKLING!!","group":"aqours","released":"2019-01-23","cover":"css/images/covers/next-sparkling.png","hasLyrics":true},
+  {"file":"aqours/thank-you-friends.json","id":"thank-you-friends","name":"Thank you, FRIENDS!!","group":"aqours","released":"2018-08-01","cover":"css/images/covers/thank-you-friends.png","hasLyrics":true},
+  {"file":"aqours/hop-stop-nonstop.json","id":"hop-stop-nonstop","name":"Hop? Stop? Nonstop!","group":"aqours","released":"2019-01-30","cover":"css/images/covers/hop-stop-nonstop.png","hasLyrics":true},
+  {"file":"aqours/hop-step-waai.json","id":"hop-step-waai","name":"Hop・Step・Waai!","group":"aqours","released":"2018-06-30","cover":"css/images/covers/hop-step-waai.png","hasLyrics":true},
+  {"file":"aqours/jump-up-high.json","id":"jump-up-high","name":"Jump up HIGH!!","group":"aqours","subunit":"guilty-kiss","released":"2019-06-30","cover":"css/images/covers/jump-up-high.png","hasLyrics":true},
+  {"file":"aqours/kokoro-magic.json","id":"kokoro-magic","name":"KOKORO Magic \"A to Z\"","group":"aqours","released":"2019-10-30","cover":"css/images/covers/kokoro-magic.png","hasLyrics":true},
+  {"file":"aqours/over-the-next-rainbow.json","id":"over-the-next-rainbow","name":"Over The Next Rainbow","group":"saint-aqours-snow","menu":"aqours","subunit":"saint-aqours-snow","released":"2019-02-06","cover":"css/images/covers/over-the-next-rainbow.png","hasLyrics":true},
+  {"file":"aqours/mitaiken-horizon.json","id":"mitaiken-horizon","name":"Mitaiken HORIZON","group":"aqours","released":"2019-09-25","cover":"css/images/covers/mitaiken-horizon.png","hasLyrics":true},
+  {"file":"aqours/fantastic-departure.json","id":"fantastic-departure","name":"Fantastic Departure!","group":"aqours","released":"2020-07-22","cover":"css/images/covers/fantastic-departure.png","hasLyrics":true},
+  {"file":"aqours/braveheart-coaster.json","id":"braveheart-coaster","name":"Braveheart Coaster","group":"aqours","subunit":"cyaron","released":"2019-12-04","cover":"css/images/covers/braveheart-coaster.png","hasLyrics":true},
+  {"file":"aqours/dreamy-color.json","id":"dreamy-color","name":"DREAMY COLOR","group":"aqours","released":"2021-06-30","cover":"css/images/covers/dreamy-color.jpg","hasLyrics":true},
+  {"file":"aqours/tousou-meisou-mobius-loop.json","id":"tousou-meisou-mobius-loop","name":"Tousou Meisou Mobius Loop","group":"aqours","subunit":"3rd-years","released":"2019-01-30","cover":"css/images/covers/tousou-meisou-mobius-loop.png","hasLyrics":true},
+  {"file":"aqours/marine-border-parasol.json","id":"marine-border-parasol","name":"Marine Border Parasol","group":"aqours","subunit":"2nd-years","released":"2018-11-24","cover":"css/images/covers/marine-border-parasol.png","hasLyrics":true},
+  {"file":"aqours/pirates-desire.json","id":"pirates-desire","name":"Aqours Pirates Desire","group":"aqours","released":"2020-07-22","cover":"css/images/covers/pirates-desire.png","hasLyrics":true},
+  {"file":"aqours/deep-resonance.json","id":"deep-resonance","name":"Deep Resonance","group":"aqours","released":"2019-09-25","cover":"css/images/covers/deep-resonance.png","hasLyrics":true},
+  {"file":"aqours/wake-up-challenger.json","id":"wake-up-challenger","name":"Wake up, Challenger!!","group":"aqours","released":"2019-10-30","cover":"css/images/covers/wake-up-challenger.png","hasLyrics":true},
+  {"file":"aqours/bouken-type-a-b-c.json","id":"bouken-type-a-b-c","name":"Bouken Type A, B, C!!","group":"aqours","released":"2019-07-26","cover":"css/images/covers/bouken-type-a-b-c.png","hasLyrics":true},
+  {"file":"aqours/kokoro-no-hane-yo-kimi-e-tondeke.json","id":"kokoro-no-hane-yo-kimi-e-tondeke","name":"Kokoro no Hane yo Kimi e Tondeke!","group":"aqours","released":"2021-03-31","cover":"css/images/covers/kokoro-no-hane-yo-kimi-e-tondeke.png","hasLyrics":true},
+  {"file":"aqours/nando-datte-yakusoku.json","id":"nando-datte-yakusoku","name":"Nando Datte Yakusoku!","group":"aqours","released":"2022-04-13","cover":"css/images/covers/nando-datte-yakusoku.png","hasLyrics":true},
+  {"file":"aqours/jimo-ai-dash.json","id":"jimo-ai-dash","name":"JIMO-AI Dash!","group":"aqours","released":"2020-08-26","cover":"css/images/covers/jimo-ai-dash.png","hasLyrics":true},
+  {"file":"aqours/suki-for-you-dream-for-you.json","id":"suki-for-you-dream-for-you","name":"SUKI for you, DREAM for you!","group":"aqours","released":"2021-09-22","cover":"css/images/covers/suki-for-you-dream-for-you.png","hasLyrics":true},
+  {"file":"aqours/smile-smile-ship-start.json","id":"smile-smile-ship-start","name":"smile smile ship Start!","group":"aqours","released":"2021-03-31","cover":"css/images/covers/smile-smile-ship-start.png","hasLyrics":true},
+  {"file":"aqours/sora-fuji-sunshine.json","id":"sora-fuji-sunshine","name":"SORA, FUJI, SUNSHINE!","group":"aqours","released":"2023-06-30","cover":"css/images/covers/sora-fuji-sunshine.png","hasLyrics":true},
+  {"file":"aqours/ka-ga-ya-ki-ra-ri-ra.json","id":"ka-ga-ya-ki-ra-ri-ra","name":"KA-GA-YA-KI-RA-RI-RA","group":"aqours-miku","menu":"aqours","subunit":"aqours-miku","released":"2022-08-24","cover":"css/images/covers/ka-ga-ya-ki-ra-ri-ra.png","hasLyrics":true},
+  {"file":"aqours/game-on.json","id":"game-on","name":"GAME ON!","group":"aqours","released":"2023-07-26","cover":"css/images/covers/game-on.png","hasLyrics":true},
+  {"file":"aqours/genjitsu-mysterium.json","id":"genjitsu-mysterium","name":"Genjitsu Mysterium","group":"aqours","released":"2023-07-26","cover":"css/images/covers/genjitsu-mysterium.png","hasLyrics":true},
+  {"file":"aqours/silent-pain.json","id":"silent-pain","name":"SILENT PAIN","group":"aqours","released":"2023-08-02","cover":"css/images/covers/silent-pain.png","hasLyrics":true},
+  {"file":"aqours/misty-frosty-love.json","id":"misty-frosty-love","name":"Misty Frosty Love","group":"aqours","subunit":"2nd-years","released":"2020-12-09","cover":"css/images/covers/misty-frosty-love.png","hasLyrics":true},
+  {"file":"aqours/gemstone-de-a-i.json","id":"gemstone-de-a-i","name":"GEMSTONE \"DE-A-I\"","group":"aqours","released":"2025-03-29","cover":"css/images/covers/gemstone-de-a-i.png","hasLyrics":true},
+  {"file":"aqours/future-flight.json","id":"future-flight","name":"Future flight","group":"aqours","released":"2020-10-07","cover":"css/images/covers/future-flight.png","hasLyrics":true},
+  {"file":"aqours/kimi-no-tame-boku-no-tame.json","id":"kimi-no-tame-boku-no-tame","name":"Kimi no Tame Boku no Tame","group":"aqours","note":"unsynced","released":"2023-08-02","cover":"css/images/covers/kimi-no-tame-boku-no-tame.png","hasLyrics":true},
+  {"file":"aqours/kiseki-hikaru.json","id":"kiseki-hikaru","name":"Kiseki Hikaru","group":"aqours","released":"2018-06-22","cover":"css/images/covers/kiseki-hikaru.png","hasLyrics":true},
+  {"file":"aqours/i-n-g-i-try.json","id":"i-n-g-i-try","name":"i-n-g, I TRY!!","group":"aqours","released":"2019-07-26","cover":"css/images/covers/i-n-g-i-try.png","hasLyrics":true},
+  {"file":"aqours/namida-times.json","id":"namida-times","name":"Namida×","group":"aqours","note":"unsynced","released":"2021-10-07","cover":"css/images/covers/namida-times.png","hasLyrics":true},
+  {"file":"aqours/not-alone-not-hitori.json","id":"not-alone-not-hitori","name":"not ALONE not HITORI","group":"aqours","released":"2021-11-24","cover":"css/images/covers/not-alone-not-hitori.png","hasLyrics":true},
+  {"file":"aqours/bloom-of-colors.json","id":"bloom-of-colors","name":"BLOOM OF COLORS","group":"aqours","released":"2024-03-27","cover":"css/images/covers/bloom-of-colors.png","hasLyrics":true},
+  {"file":"aqours/live-with-a-smile.json","id":"live-with-a-smile","name":"LIVE with a smile! (Aqours Ver.)","group":"aqours","released":"2021-11-03","cover":"css/images/covers/live-with-a-smile.png","hasLyrics":true},
+  {"file":"aqours/dropout.json","id":"dropout","name":"DROPOUT!?","group":"saint-aqours-snow","menu":"aqours","subunit":"saint-aqours-snow","released":"2017-12-20","cover":"css/images/covers/dropout.png","hasLyrics":true},
+  {"file":"aqours/crash-mind.json","id":"crash-mind","name":"CRASH MIND","group":"saint-aqours-snow","menu":"aqours","subunit":"saint-aqours-snow","released":"2017-12-20","cover":"css/images/covers/crash-mind.png","hasLyrics":true},
+  {"file":"aqours/numazu-yassa-yoisa-uta.json","id":"numazu-yassa-yoisa-uta","name":"Numazu Yassa Yoisa Uta","group":"aqours","released":"2024-02-28","cover":"css/images/covers/numazu-yassa-yoisa-uta.png","hasLyrics":true},
+  {"file":"aqours/believe-again.json","id":"believe-again","name":"Believe again","group":"saint-aqours-snow","menu":"aqours","subunit":"saint-aqours-snow","released":"2019-02-06","cover":"css/images/covers/believe-again.png","hasLyrics":true},
+  {"file":"aqours/nameless-love-song.json","id":"nameless-love-song","name":"Nameless Love Song","group":"aqours","cover":"css/images/covers/nameless-love-song.png","hasLyrics":true},
+  {"file":"aqours/amazing-travel-dna.json","id":"amazing-travel-dna","name":"Amazing Travel DNA","group":"aqours","cover":"css/images/covers/amazing-travel-dna.png","hasLyrics":true},
+  {"file":"aqours/changeless.json","id":"changeless","name":"CHANGELESS","group":"aqours","cover":"css/images/covers/changeless.png","hasLyrics":true},
+  {"file":"aqours/deep-sea-cocoon.json","id":"deep-sea-cocoon","name":"Deep Sea Cocoon","group":"aqours","cover":"css/images/covers/deep-sea-cocoon.png","hasLyrics":true},
+  {"file":"aqours/lonely-snow-planet.json","id":"lonely-snow-planet","name":"Lonely Snow Planet","group":"saint-aqours-snow","cover":"css/images/covers/lonely-snow-planet.png","hasLyrics":true},
+  {"file":"aqours/love-pulsar.json","id":"love-pulsar","name":"Love Pulsar","group":"aqours","cover":"css/images/covers/love-pulsar.png","hasLyrics":true},
+  {"file":"aqours/new-romantic-sailors.json","id":"new-romantic-sailors","name":"New Romantic Sailors","group":"aqours","cover":"css/images/covers/new-romantic-sailors.png","hasLyrics":true},
+  {"file":"aqours/party-party-papapaparty.json","id":"party-party-papapaparty","name":"Party! Party! PaPaPaParty!","group":"aqours","cover":"css/images/covers/party-party-papapaparty.png","hasLyrics":true},
+  {"file":"aqours/phantom-rocket-adventure.json","id":"phantom-rocket-adventure","name":"Phantom Rocket Adventure","group":"aqours","cover":"css/images/covers/phantom-rocket-adventure.png","hasLyrics":true},
+  {"file":"aqours/phoenix-dance.json","id":"phoenix-dance","name":"PHOENIX DANCE","group":"aqours","cover":"css/images/covers/phoenix-dance.png","hasLyrics":true},
+  {"file":"aqours/sotsugyou-desu-ne.json","id":"sotsugyou-desu-ne","name":"Sotsugyou Desu ne","group":"aqours","cover":"css/images/covers/sotsugyou-desu-ne.png","hasLyrics":true},
+  {"file":"aqours/well-get-the-next-dream.json","id":"well-get-the-next-dream","name":"We'll get the next dream!!!","group":"aqours","cover":"css/images/covers/well-get-the-next-dream.png","hasLyrics":true},
+  {"file":"aqours/whistle-of-revolution.json","id":"whistle-of-revolution","name":"Whistle of Revolution","group":"aqours","cover":"css/images/covers/whistle-of-revolution.png","hasLyrics":true},
+  {"file":"muse/sentimental-steps.json","id":"sentimental-steps","name":"SENTIMENTAL StepS","group":"muse","cover":"css/images/covers/sentimental-steps.png","hasLyrics":true},
+  {"file":"aqours/bokura-no-umi-de-mata-aou.json","id":"bokura-no-umi-de-mata-aou","name":"Bokura no Umi de Mata Aou","group":"aqours","hidden":true,"note":"unsynced","released":"2024-06-30","cover":"css/images/covers/bokura-no-umi-de-mata-aou.png","hasLyrics":true},
+  {"file":"aqours/la-la-yuuki-no-uta.json","id":"la-la-yuuki-no-uta","name":"La la Yuuki no Uta","group":"aqours","note":"unsynced","released":"2023-10-11","cover":"css/images/covers/la-la-yuuki-no-uta.png","hasLyrics":true},
+  {"file":"muse/a-song-for-you-you-you.json","id":"a-song-for-you-you-you","name":"A song for You! You You!!","group":"muse","cover":"css/images/covers/a-song-for-you-you-you.png","hasLyrics":true},
+  {"file":"muse/after-school-navigators.json","id":"after-school-navigators","name":"After School NAVIGATORS","group":"muse","cover":"css/images/covers/after-school-navigators.png","hasLyrics":true},
+  {"file":"muse/anemone-heart.json","id":"anemone-heart","name":"Anemone heart","group":"muse","cover":"css/images/covers/anemone-heart.png","hasLyrics":true},
+  {"file":"muse/arashi-no-naka-no-koi-dakara.json","id":"arashi-no-naka-no-koi-dakara","name":"Arashi no Naka no Koi Dakara","group":"muse","cover":"css/images/covers/arashi-no-naka-no-koi-dakara.png","hasLyrics":true},
+  {"file":"muse/arifureta-kanashimi-no-hate.json","id":"arifureta-kanashimi-no-hate","name":"Arifureta Kanashimi no Hate","group":"muse","cover":"css/images/covers/arifureta-kanashimi-no-hate.png","hasLyrics":true},
+  {"file":"muse/beat-in-angel.json","id":"beat-in-angel","name":"Beat in Angel","group":"muse","cover":"css/images/covers/beat-in-angel.png","hasLyrics":true},
+  {"file":"muse/colorful-voice.json","id":"colorful-voice","name":"COLORFUL VOICE","group":"muse","cover":"css/images/covers/colorful-voice.png","hasLyrics":true},
+  {"file":"muse/dancing-stars-on-me.json","id":"dancing-stars-on-me","name":"Dancing stars on me!","group":"muse","cover":"css/images/covers/dancing-stars-on-me.png","hasLyrics":true},
+  {"file":"muse/datte-datte-aa-mujou.json","id":"datte-datte-aa-mujou","name":"Datte Datte Aa Mujou","group":"muse","cover":"css/images/covers/datte-datte-aa-mujou.png","hasLyrics":true},
+  {"file":"muse/diamond-princess-no-yuutsu.json","id":"diamond-princess-no-yuutsu","name":"Diamond Princess no Yuutsu","group":"muse","cover":"css/images/covers/diamond-princess-no-yuutsu.png","hasLyrics":true},
+  {"file":"muse/donna-toki-mo-zutto.json","id":"donna-toki-mo-zutto","name":"Donna Toki mo Zutto","group":"muse","cover":"css/images/covers/donna-toki-mo-zutto.png","hasLyrics":true},
+  {"file":"muse/dreamin-go-go.json","id":"dreamin-go-go","name":"Dreamin' Go! Go!!","group":"muse","cover":"css/images/covers/dreamin-go-go.png","hasLyrics":true},
+  {"file":"muse/endless-parade.json","id":"endless-parade","name":"ENDLESS PARADE","group":"muse","cover":"css/images/covers/endless-parade.png","hasLyrics":true},
+  {"file":"muse/garasu-no-hanazono.json","id":"garasu-no-hanazono","name":"Garasu no Hanazono","group":"muse","cover":"css/images/covers/garasu-no-hanazono.png","hasLyrics":true},
+  {"file":"muse/hello-hoshi-wo-kazoete.json","id":"hello-hoshi-wo-kazoete","name":"Hello, Hoshi wo Kazoete","group":"muse","cover":"css/images/covers/hello-hoshi-wo-kazoete.png","hasLyrics":true},
+  {"file":"muse/ill-smile-for-yours.json","id":"ill-smile-for-yours","name":"I'll smile for yours","group":"muse","cover":"css/images/covers/ill-smile-for-yours.png","hasLyrics":true},
+  {"file":"muse/junai-lens.json","id":"junai-lens","name":"Junai Lens","group":"muse","cover":"css/images/covers/junai-lens.png","hasLyrics":true},
+  {"file":"muse/kaguya-no-shiro-de-odoritai.json","id":"kaguya-no-shiro-de-odoritai","name":"Kaguya no Shiro de Odoritai","group":"muse","cover":"css/images/covers/kaguya-no-shiro-de-odoritai.png","hasLyrics":true},
+  {"file":"muse/kira-kira-sensation.json","id":"kira-kira-sensation","name":"KiRa-KiRa Sensation!","group":"muse","cover":"css/images/covers/kira-kira-sensation.png","hasLyrics":true},
+  {"file":"muse/kitto-seishun-ga-kikoeru.json","id":"kitto-seishun-ga-kikoeru","name":"Kitto Seishun ga Kikoeru","group":"muse","cover":"css/images/covers/kitto-seishun-ga-kikoeru.png","hasLyrics":true},
+  {"file":"muse/kodoku-na-heaven.json","id":"kodoku-na-heaven","name":"Kodoku na Heaven","group":"muse","cover":"css/images/covers/kodoku-na-heaven.png","hasLyrics":true},
+  {"file":"muse/kore-kara.json","id":"kore-kara","name":"Kore Kara","group":"muse","cover":"css/images/covers/kore-kara.png","hasLyrics":true},
+  {"file":"muse/listen-to-my-heart.json","id":"listen-to-my-heart","name":"Listen to my heart!!","group":"muse","cover":"css/images/covers/listen-to-my-heart.png","hasLyrics":true},
+  {"file":"muse/loneliest-baby.json","id":"loneliest-baby","name":"LONELIEST BABY","group":"muse","cover":"css/images/covers/loneliest-baby.png","hasLyrics":true},
+  {"file":"muse/love-wing-bell.json","id":"love-wing-bell","name":"Love wing bell","group":"muse","cover":"css/images/covers/love-wing-bell.png","hasLyrics":true},
+  {"file":"muse/loveless-world.json","id":"loveless-world","name":"LOVELESS WORLD","group":"muse","cover":"css/images/covers/loveless-world.png","hasLyrics":true},
+  {"file":"muse/mermaid-festa-vol2-passionate.json","id":"mermaid-festa-vol2-passionate","name":"Mermaid festa vol.2 ~Passionate~","group":"muse","cover":"css/images/covers/mermaid-festa-vol2-passionate.png","hasLyrics":true},
+  {"file":"muse/mi-wa-sic-no-mi.json","id":"mi-wa-sic-no-mi","name":"Mi wa μ’sic no Mi","group":"muse","cover":"css/images/covers/mi-wa-sic-no-mi.png","hasLyrics":true},
+  {"file":"muse/moment-ring.json","id":"moment-ring","name":"MOMENT RING","group":"muse","cover":"css/images/covers/moment-ring.png","hasLyrics":true},
+  {"file":"muse/moshimo-kara-kitto.json","id":"moshimo-kara-kitto","name":"Moshimo Kara Kitto","group":"muse","cover":"css/images/covers/moshimo-kara-kitto.png","hasLyrics":true},
+  {"file":"muse/music-start.json","id":"music-start","name":"Music S.T.A.R.T!!","group":"muse","cover":"css/images/covers/music-start.png","hasLyrics":true},
+  {"file":"muse/natsuiro-egao-de-12jump.json","id":"natsuiro-egao-de-12jump","name":"Natsuiro Egao de 1,2,Jump!","group":"muse","cover":"css/images/covers/natsuiro-egao-de-12jump.png","hasLyrics":true},
+  {"file":"muse/nawatobi.json","id":"nawatobi","name":"Nawatobi","group":"muse","cover":"css/images/covers/nawatobi.png","hasLyrics":true},
+  {"file":"muse/neuron-neuron.json","id":"neuron-neuron","name":"NEURON, NEURON!!","group":"muse","cover":"css/images/covers/neuron-neuron.png"},
+  {"file":"muse/no-brand-girls.json","id":"no-brand-girls","name":"No brand girls","group":"muse","cover":"css/images/covers/no-brand-girls.png","hasLyrics":true},
+  {"file":"muse/paradise-live.json","id":"paradise-live","name":"Paradise Live","group":"muse","cover":"css/images/covers/paradise-live.png","hasLyrics":true},
+  {"file":"muse/private-wars.json","id":"private-wars","name":"Private Wars","group":"muse","cover":"css/images/covers/private-wars.png","hasLyrics":true},
+  {"file":"muse/sayounara-e-sayonara.json","id":"sayounara-e-sayonara","name":"Sayounara e Sayonara!","group":"muse","cover":"css/images/covers/sayounara-e-sayonara.png","hasLyrics":true},
+  {"file":"muse/shangri-la-shower.json","id":"shangri-la-shower","name":"Shangri-La Shower","group":"muse","cover":"css/images/covers/shangri-la-shower.png","hasLyrics":true},
+  {"file":"muse/shocking-party.json","id":"shocking-party","name":"Shocking Party","group":"muse","cover":"css/images/covers/shocking-party.png","hasLyrics":true},
+  {"file":"muse/snow-halation.json","id":"snow-halation","name":"Snow halation","group":"muse","cover":"css/images/covers/snow-halation.png","hasLyrics":true},
+  {"file":"muse/soldier-game.json","id":"soldier-game","name":"soldier game","group":"muse","cover":"css/images/covers/soldier-game.png","hasLyrics":true},
+  {"file":"muse/someday-of-my-life.json","id":"someday-of-my-life","name":"Someday of my life","group":"muse","cover":"css/images/covers/someday-of-my-life.png"},
+  {"file":"muse/sore-wa-bokutachi-no-kiseki.json","id":"sore-wa-bokutachi-no-kiseki","name":"Sore wa Bokutachi no Kiseki","group":"muse","cover":"css/images/covers/sore-wa-bokutachi-no-kiseki.png","hasLyrics":true},
+  {"file":"muse/spicaterrible.json","id":"spicaterrible","name":"Spicaterrible","group":"muse","cover":"css/images/covers/spicaterrible.png","hasLyrics":true},
+  {"file":"muse/storm-in-lover.json","id":"storm-in-lover","name":"Storm in Lover","group":"muse","cover":"css/images/covers/storm-in-lover.png","hasLyrics":true},
+  {"file":"muse/super-lovesuper-live.json","id":"super-lovesuper-live","name":"Super LOVE=Super LIVE!","group":"muse","cover":"css/images/covers/super-lovesuper-live.png","hasLyrics":true},
+  {"file":"muse/susumetomorrow.json","id":"susumetomorrow","name":"Susume→Tomorrow","group":"muse","cover":"css/images/covers/susumetomorrow.png","hasLyrics":true},
+  {"file":"muse/takaramonozu.json","id":"takaramonozu","name":"Takaramonozu","group":"muse","cover":"css/images/covers/takaramonozu.png","hasLyrics":true},
+  {"file":"muse/wild-stars.json","id":"wild-stars","name":"WILD STARS","group":"muse","cover":"css/images/covers/wild-stars.png","hasLyrics":true},
+  {"file":"muse/wonder-zone.json","id":"wonder-zone","name":"Wonder zone","group":"muse","hasLyrics":true},
+  {"file":"muse/yume-no-tobira.json","id":"yume-no-tobira","name":"Yume no Tobira","group":"muse","cover":"css/images/covers/yume-no-tobira.png","hasLyrics":true},
+  {"file":"muse/yuujou-no-change.json","id":"yuujou-no-change","name":"Yuujou No Change","group":"muse","cover":"css/images/covers/yuujou-no-change.png","hasLyrics":true},
+  {"file":"muse/yuuki-no-reason.json","id":"yuuki-no-reason","name":"Yuuki no Reason","group":"muse","cover":"css/images/covers/yuuki-no-reason.png","hasLyrics":true},
+  {"file":"nijigasaki/beautiful-moonlight.json","id":"beautiful-moonlight","name":"Beautiful Moonlight","group":"nijigasaki","subunit":"qu4rtz","released":"2020-02-12","cover":"css/images/covers/beautiful-moonlight.jpg","hasLyrics":true},
+  {"file":"nijigasaki/cheer-for-you.json","id":"cheer-for-you","name":"Cheer for you!!","group":"nijigasaki","subunit":"a-zu-na","released":"2020-02-12","cover":"css/images/covers/cheer-for-you.jpg","hasLyrics":true},
+  {"file":"nijigasaki/dream-land-dream-world.json","id":"dream-land-dream-world","name":"Dream Land! Dream World!","group":"nijigasaki","subunit":"a-zu-na","released":"2020-02-12","cover":"css/images/covers/dream-land-dream-world.jpg","hasLyrics":true},
+  {"file":"nijigasaki/fly-into-the-sky.json","id":"fly-into-the-sky","name":"Fly into the sky","group":"nijigasaki","subunit":"diverdiva","released":"2021-05-26","cover":"css/images/covers/fly-into-the-sky.jpg","hasLyrics":true},
+  {"file":"nijigasaki/happy-nyan-days.json","id":"happy-nyan-days","name":"Happy Nyan! Days","group":"nijigasaki","subunit":"a-zu-na","released":"2021-02-25","cover":"css/images/covers/happy-nyan-days.jpg","hasLyrics":true},
+  {"file":"nijigasaki/hurray-hurray.json","id":"hurray-hurray","name":"Hurray Hurray","group":"nijigasaki","released":"2021-06-25","cover":"css/images/covers/hurray-hurray.jpg","hasLyrics":true},
+  {"file":"nijigasaki/just-believe.json","id":"just-believe","name":"Just Believe!!!","group":"nijigasaki","released":"2020-09-02","cover":"css/images/covers/just-believe.jpg","hasLyrics":true},
+  {"file":"nijigasaki/l-l-l-love-the-life-we-live.json","id":"l-l-l-love-the-life-we-live","name":"L! L! L! (Love the Life We Live)","group":"nijigasaki","released":"2021-10-13","cover":"css/images/covers/l-l-l-love-the-life-we-live.jpg","hasLyrics":true},
+  {"file":"nijigasaki/love-triangle.json","id":"love-triangle","name":"Love Triangle","group":"nijigasaki","subunit":"diverdiva","released":"2020-02-12","cover":"css/images/covers/love-triangle.jpg","hasLyrics":true},
+  {"file":"nijigasaki/make-up-session-abc.json","id":"make-up-session-abc","name":"Make-up Session ABC","group":"nijigasaki","subunit":"qu4rtz","released":"2021-02-25","cover":"css/images/covers/make-up-session-abc.jpg","hasLyrics":true},
+  {"file":"nijigasaki/maze-town.json","id":"maze-town","name":"Maze Town","group":"nijigasaki","subunit":"a-zu-na","released":"2021-06-16","cover":"css/images/covers/maze-town.jpg","hasLyrics":true},
+  {"file":"nijigasaki/mirai-harmony.json","id":"mirai-harmony","name":"Mirai Harmony","group":"nijigasaki","released":"2020-07-29","cover":"css/images/covers/mirai-harmony.png","hasLyrics":true},
+  {"file":"nijigasaki/neo-sky-neo-map.json","id":"neo-sky-neo-map","name":"NEO SKY, NEO MAP!","group":"nijigasaki","released":"2020-11-04","cover":"css/images/covers/neo-sky-neo-map.jpg","hasLyrics":true},
+  {"file":"nijigasaki/not-sad.json","id":"not-sad","name":"Not Sad","group":"nijigasaki","subunit":"qu4rtz","released":"2021-07-14","cover":"css/images/covers/not-sad.jpg","hasLyrics":true},
+  {"file":"nijigasaki/power-spot.json","id":"power-spot","name":"POWER SPOT!!","group":"nijigasaki","subunit":"diverdiva","released":"2020-12-25","cover":"css/images/covers/power-spot.jpg","hasLyrics":true},
+  {"file":"nijigasaki/saika--saika-.json","id":"saika--saika-","name":"Saika -saika-","group":"nijigasaki","subunit":"diverdiva","released":"2021-03-26","cover":"css/images/covers/saika--saika-.jpg","hasLyrics":true},
+  {"file":"nijigasaki/sing-smile.json","id":"sing-smile","name":"Sing & Smile!!","group":"nijigasaki","note":"unsynced","subunit":"qu4rtz","released":"2020-02-12","cover":"css/images/covers/sing-smile.jpg","hasLyrics":true},
+  {"file":"nijigasaki/super-nova.json","id":"super-nova","name":"SUPER NOVA","group":"nijigasaki","subunit":"diverdiva","released":"2020-02-12","cover":"css/images/covers/super-nova.jpg","hasLyrics":true},
+  {"file":"nijigasaki/sweet-eyes.json","id":"sweet-eyes","name":"Sweet Eyes","group":"nijigasaki","released":"2020-10-21","cover":"css/images/covers/sweet-eyes.jpg","hasLyrics":true},
+  {"file":"nijigasaki/tokimeki-runners-chapter-17-ver.json","id":"tokimeki-runners-chapter-17-ver","name":"TOKIMEKI Runners (Chapter 17 Ver.)","group":"nijigasaki","hidden":true,"released":"2020-09-02","cover":"css/images/covers/tokimeki-runners-chapter-17-ver.jpeg","hasLyrics":true},
+  {"file":"nijigasaki/tokimeki-runners.json","id":"tokimeki-runners","name":"TOKIMEKI Runners","group":"nijigasaki","released":"2018-11-21","cover":"css/images/covers/tokimeki-runners.jpg","hasLyrics":true},
+  {"file":"nijigasaki/twinkle-town.json","id":"twinkle-town","name":"Twinkle Town","group":"nijigasaki","note":"unsynced","subunit":"qu4rtz","released":"2021-05-26","cover":"css/images/covers/twinkle-town.jpg","hasLyrics":true},
+  {"file":"nijigasaki/yume-ga-koko-kara-hajimaru-yo.json","id":"yume-ga-koko-kara-hajimaru-yo","name":"Yume ga Koko kara Hajimaru yo","group":"nijigasaki","released":"2021-01-13","cover":"css/images/covers/yume-ga-koko-kara-hajimaru-yo.jpg","hasLyrics":true},
+  {"file":"nijigasaki/zensoku-dreamer.json","id":"zensoku-dreamer","name":"Zensoku Dreamer","group":"nijigasaki","released":"2020-11-04","cover":"css/images/covers/zensoku-dreamer.jpg","hasLyrics":true}
 ]

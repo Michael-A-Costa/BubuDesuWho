@@ -81,8 +81,8 @@ describe('preprocessSong', () => {
     // string — they drive the quiz but have no displayable lyric text.
     const cfg = baseCfg({
       mapping: [
-        { range: [0, 1], ans: [1] },
-        { range: [1, 2], ans: [2] },
+        { id: 0, range: [0, 1], ans: [1] },
+        { id: 0, range: [1, 2], ans: [2] },
       ],
     });
     const song = preprocessSong(cfg);
@@ -94,8 +94,8 @@ describe('preprocessSong', () => {
     const cfg = baseCfg({
       lyrics: '{a} {b}',
       mapping: [
-        { range: [0, 1], ans: [1] },
-        { range: [1, 2], ans: [2] },
+        { id: 0, range: [0, 1], ans: [1] },
+        { id: 0, range: [1, 2], ans: [2] },
       ],
     });
     const song = preprocessSong(cfg);

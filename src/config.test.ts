@@ -76,6 +76,32 @@ describe('preprocessSong', () => {
     expect(song.lyricsBase.filter((t) => t.type === 'newline')).toHaveLength(0);
   });
 
+  it('reports hasLyrics=false for legacy songs with mapping but no lyrics field', () => {
+    // Some legacy songs ship `mapping` (timing + answers) without a `lyrics`
+    // string — they drive the quiz but have no displayable lyric text.
+    const cfg = baseCfg({
+      mapping: [
+        { range: [0, 1], ans: [1] },
+        { range: [1, 2], ans: [2] },
+      ],
+    });
+    const song = preprocessSong(cfg);
+    expect(song.hasLyrics).toBe(false);
+    expect(song.slotsBase).toHaveLength(2);
+  });
+
+  it('reports hasLyrics=true for legacy songs with both lyrics and mapping', () => {
+    const cfg = baseCfg({
+      lyrics: '{a} {b}',
+      mapping: [
+        { range: [0, 1], ans: [1] },
+        { range: [1, 2], ans: [2] },
+      ],
+    });
+    const song = preprocessSong(cfg);
+    expect(song.hasLyrics).toBe(true);
+  });
+
   it('drops slots flagged via slots: [{ command: "ignore", slots: [...] }]', () => {
     const cfg = baseCfg({
       lines: [

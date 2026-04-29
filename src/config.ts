@@ -222,10 +222,10 @@ export function preprocessSong(cfg: SongConfig): Song {
     calls,
     slotsBase,
     lyricsBase,
-    // Match the manifest derivation in scripts/build-index.js: a song "has
-    // lyrics" only if it carries at least one mapped line. String-only
-    // separators (e.g. "(intro)") produce text tokens but no mapping.
-    hasLyrics: mapping.length > 0,
+    // Match scripts/build-index.js: "has lyrics" means the song carries
+    // displayable lyric text. Legacy songs with mapping-only (timing +
+    // answers, no `lyrics` field) don't qualify.
+    hasLyrics: lyricsBase.some((t) => t.type === 'lyric'),
   };
 }
 

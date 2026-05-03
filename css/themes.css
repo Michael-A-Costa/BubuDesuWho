@@ -44,7 +44,7 @@ Each theme sets --t-* variables on html.theme-X.
 #menu-button[class*="theme-"]         { color: var(--t-menu-btn-color, var(--menu-btn-color)); }
 #player-bar[class*="theme-"]          { background: var(--t-player-bg, var(--player-bar-bg)); border-top-color: var(--t-player-border, var(--player-bar-border)); }
 #player-bar[class*="theme-"] #progress-bar { background: var(--t-check-bg, var(--progress-fill)); }
-#player-bar[class*="theme-"] #volume-bar   { background: var(--t-check-bg, var(--progress-fill)); }
+#player-bar[class*="theme-"] #volume-slider { --vol-fill: var(--t-check-bg, var(--progress-fill)); }
 
 /* Sidebar — derive colors from existing theme vars */
 html[class*="theme-"] #sidebar                         { background: var(--t-navbar-bg); }

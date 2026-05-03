@@ -4,8 +4,8 @@ import { getGroup } from './groups';
 import {
   state, toggleChoice, toggleReveal, toggleDiff, toggleAutoscroll,
   toggleThemed, cycleLyricsMode, setLyricsMode, toggleCalls, toggleCallSFX,
-  toggleJpLyrics, hasJpLyrics,
-  toggleGlobalReveal, toggleHints, checkChoices, checkSlot, resetChoices, loadSong,
+  toggleJpLyrics, hasJpLyrics, getSongTitle,
+  toggleGlobalReveal, toggleHints, toggleInline, checkChoices, checkSlot, resetChoices, loadSong,
   restoreChoices, getDiffLabel, getNumSlotsDiff,
   tick, initGameState, updateMeter, refreshPaletteColors, revealLyrics,
 } from './game';
@@ -139,10 +139,16 @@ function selectSong(song: Song): void {
   if (pauseBtn) pauseBtn.style.display = 'none';
 
   const brand = import.meta.env.VITE_APP_MODE === 'kpop' ? 'Whoranghae' : 'BubuDesuWho';
-  document.title = `${brand} - ${song.name}`;
+  document.title = `${brand} - ${getSongTitle(song)}`;
   const titleEl = document.getElementById('song-title');
   if (titleEl) {
-    titleEl.textContent = song.name;
+    titleEl.textContent = '';
+    const titleText = document.createElement('span');
+    titleText.className = 'song-title-text';
+    titleText.dataset.songName = song.name;
+    if (song.name_jp) titleText.dataset.songNameJp = song.name_jp;
+    titleText.textContent = getSongTitle(song);
+    titleEl.appendChild(titleText);
     if (song.note === 'unsynced') {
       const badge = document.createElement('span');
       badge.className = 'unsynced-badge';
@@ -409,12 +415,25 @@ export function createSlotElement(slot: Slot, group: GroupName): HTMLElement {
 
   // show-lyrics tooltip (?) — gather lyrics for this slot
   const showLyrics = clone.querySelector<HTMLElement>('.show-lyrics');
+  const slotLyrics = state.lyrics.filter(
+    (l) => l.mapping && l.src === 'mapping' && state.reverseMap[l.mapping.id]?.slot === slot,
+  );
+  const slotLyricLines = slotLyrics.map((l) => l.text ?? '').filter(Boolean);
+
+  // Inline lyric snippet — visibility controlled by body.inline-on
+  if (slotLyricLines.length > 0) {
+    const inlineLyric = document.createElement('div');
+    inlineLyric.className = 'col-xs-12 slot-lyric-inline';
+    const full = slotLyricLines.join(' / ');
+    const MAX = 80;
+    inlineLyric.textContent = full.length > MAX ? full.slice(0, MAX).trimEnd() + '…' : full;
+    inlineLyric.title = full;
+    clone.querySelector('.slot-body .row')!.prepend(inlineLyric);
+  }
+
   if (showLyrics) {
-    const slotLyrics = state.lyrics.filter(
-      (l) => l.mapping && l.src === 'mapping' && state.reverseMap[l.mapping.id]?.slot === slot,
-    );
-    if (slotLyrics.length > 0) {
-      const lines = slotLyrics.map((l) => l.text ?? '');
+    if (slotLyricLines.length > 0) {
+      const lines = slotLyricLines;
       showLyrics.dataset.tooltip = lines.join(' / ');
 
       // Instant tooltip on hover using a positioned div
@@ -628,6 +647,14 @@ function bindPlayControls(): void {
     setStorage('hints', String(state.hints));
   });
 
+  const inlineBtn = document.getElementById('global-inline');
+  inlineBtn?.classList.toggle('active', state.inline);
+  inlineBtn?.addEventListener('click', () => {
+    toggleInline();
+    inlineBtn.classList.toggle('active', state.inline);
+    setStorage('inline', String(state.inline));
+  });
+
   // Reveal button — inline popover confirmation (matches original bootstrap-confirmation)
   const revealBtn = document.getElementById('global-reveal');
   const revealOffBtn = document.getElementById('global-reveal-off');
@@ -766,11 +793,10 @@ function bindPlayControls(): void {
     if (seekTooltip) seekTooltip.style.display = 'none';
   });
 
-  // volume slider — click to set
-  document.getElementById('volume-slider')?.addEventListener('click', (e) => {
-    const el = e.currentTarget as HTMLElement;
-    const rect = el.getBoundingClientRect();
-    const vol = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+  // volume slider — drag to set
+  const volumeSlider = document.getElementById('volume-slider') as HTMLInputElement | null;
+  volumeSlider?.addEventListener('input', () => {
+    const vol = parseInt(volumeSlider.value, 10) / 100;
     preMuteVolume = null;
     player.setVolume(vol);
     setStorage('volume', String(vol));
@@ -889,8 +915,12 @@ function updateProgressDisplay(currentTime: number, duration: number): void {
 }
 
 function updateVolumeDisplay(vol: number): void {
-  const bar = document.getElementById('volume-bar');
-  if (bar) bar.style.width = `${vol * 100}%`;
+  const pct = Math.round(vol * 100);
+  const slider = document.getElementById('volume-slider') as HTMLInputElement | null;
+  if (slider) {
+    slider.value = String(pct);
+    slider.style.setProperty('--vol-pct', `${pct}%`);
+  }
   const icon = document.querySelector('.jp-mute .glyphicon');
   if (icon) {
     icon.classList.toggle('glyphicon-volume-down', vol > 0);
@@ -939,6 +969,12 @@ function applyLyricsMode(mode: number): void {
     if (resetBtn) resetBtn.style.display = 'none';
     if (state.calls) applyCallMode(true);
   }
+
+  // Width of the singer columns just changed — refit button labels after
+  // the browser commits the new layout. The CSS transition runs ~0.4s, so
+  // refit on rAF (immediate) and again post-transition for the final size.
+  requestAnimationFrame(fitSlotButtonText);
+  setTimeout(fitSlotButtonText, 450);
 }
 
 function applyCallMode(enable?: boolean): void {
@@ -998,6 +1034,65 @@ function resizeGameArea(): void {
   const lyricsContainer = document.getElementById('lyrics-container');
   if (slotsContainer) slotsContainer.style.height = `${winH - navH}px`;
   if (lyricsContainer) lyricsContainer.style.height = `${winH - navH}px`;
+  fitSlotButtonText();
+}
+
+/**
+ * Per-button text autofit. Resets each #slots button to its CSS-default
+ * font size, then shrinks (down to 9px) only the ones whose text would
+ * otherwise overflow. Called on slot build, lyrics-panel toggle, and
+ * window resize — all the moments column width can change.
+ *
+ * Reads and writes are batched so the browser only has to reflow twice
+ * even with many slots; text width isn't perfectly linear with font-size
+ * so we do a corrective second pass for any button still overflowing.
+ *
+ * Each shrunk button gets its pre-shrink height pinned via min-height so
+ * font scaling never pulls the row height down — only the glyphs change.
+ */
+function fitSlotButtonText(): void {
+  const slots = document.getElementById('slots');
+  if (!slots) return;
+  const MIN_PX = 9;
+  const buttons = Array.from(slots.querySelectorAll<HTMLButtonElement>('button.btn'));
+  if (buttons.length === 0) return;
+
+  buttons.forEach((b) => {
+    b.style.fontSize = '';
+    b.style.minHeight = '';
+  });
+
+  const data = buttons.map((b) => {
+    if (b.offsetParent === null) return null; // hidden by diff filter
+    return {
+      naturalFs: parseFloat(window.getComputedStyle(b).fontSize),
+      naturalH: b.offsetHeight,
+      scrollW: b.scrollWidth,
+      clientW: b.clientWidth,
+    };
+  });
+
+  const targets = data.map((d) => {
+    if (!d) return null;
+    if (d.scrollW <= d.clientW) return null;
+    return Math.max(MIN_PX, d.naturalFs * (d.clientW / d.scrollW));
+  });
+  buttons.forEach((b, i) => {
+    const t = targets[i];
+    const d = data[i];
+    if (t == null || d == null) return;
+    b.style.fontSize = `${t}px`;
+    b.style.minHeight = `${d.naturalH}px`;
+  });
+
+  buttons.forEach((b, i) => {
+    const t = targets[i];
+    const d = data[i];
+    if (t == null || d == null || t <= MIN_PX) return;
+    if (b.scrollWidth <= b.clientWidth) return;
+    const tighter = Math.max(MIN_PX, t * (b.clientWidth / b.scrollWidth));
+    b.style.fontSize = `${tighter}px`;
+  });
 }
 
 /** Parse time param: "30" → 30, "1m30" → 90 */

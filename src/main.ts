@@ -1,6 +1,7 @@
 import { inject } from '@vercel/analytics';
 import { injectSpeedInsights } from '@vercel/speed-insights';
-import { initAboutPage, initChangelogPage, initStatsPage } from './ui-about';
+import { initAboutPage, initChangelogPage } from './ui-about';
+import { initBuddy } from './buddy';
 
 // Vercel Analytics + Speed Insights — only on the Vercel production host.
 // Skips localhost, GH Pages, and preview deploys (which would inflate counts).
@@ -26,6 +27,9 @@ if (cfToken) {
   document.head.appendChild(s);
 }
 
+// Favorite-member buddy portrait (every page, no-op when no favorite set).
+initBuddy();
+
 // detect which page we're on and initialize accordingly
 const path = location.pathname;
 
@@ -40,7 +44,7 @@ if (path.endsWith('play.html')) {
 } else if (path.endsWith('changelog.html')) {
   initChangelogPage();
 } else if (path.endsWith('stats.html')) {
-  initStatsPage();
+  import('./stats').then(m => m.initStatsPage());
 } else {
   // index.html or /
   initAboutPage();

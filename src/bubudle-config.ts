@@ -12,7 +12,12 @@ export const MEMBER_NICKNAMES: Record<string, Record<number, string>> = {
   nijigasaki: {
     1: 'Yurippe', 2: 'Mayuchi', 3: 'Kaorin', 4: 'Miyutan',
     5: 'Murapon', 6: 'Akarin', 7: 'Tomoriru', 8: 'Chunrun', 9: 'Chiemii',
-    10: 'Moepii', 11: 'Homin', 12: 'Niinya', 13: 'Konomin',
+    10: 'Moepii', 11: 'Niinya', 12: 'Homin', 13: 'Konomin',
+  },
+  liella: {
+    1: 'Sayurin', 2: 'Li-chan', 3: 'Nakonako', 4: 'Paychan',
+    5: 'Nagichan', 6: 'Nonchan', 7: 'Yabuchan', 8: 'Kumachan', 9: 'Emorin',
+    10: 'Yuina', 11: 'Saku-chan',
   },
 };
 
@@ -42,8 +47,8 @@ export const SHORTCUT_GROUPS: Record<string, ShortcutGroup[]> = {
     { label: 'QU4RTZ', members: [2, 6, 8, 9], subunit: true },
     { label: 'R3BIRTH', members: [10, 11, 12], subunit: true },
     { label: '1st years', members: [2, 3, 9, 10] },
-    { label: '2nd years', members: [1, 5, 7, 11] },
-    { label: '3rd years', members: [4, 6, 8, 12] },
+    { label: '2nd years', members: [1, 5, 7, 12] },
+    { label: '3rd years', members: [4, 6, 8, 11] },
   ],
 };
 
@@ -61,8 +66,13 @@ export const MEMBER_COLUMNS: Record<string, number[][]> = {
   ],
   nijigasaki: [
     [1, 4, 7, 10, 13],  // Ayumu, Karin, Setsuna, Shioriko, Yu
-    [2, 5, 8, 11],      // Kasumi, Ai, Emma, Lanzhu
-    [3, 6, 9, 12],      // Shizuku, Kanata, Rina, Mia
+    [2, 5, 8, 11],      // Kasumi, Ai, Emma, Mia
+    [3, 6, 9, 12],      // Shizuku, Kanata, Rina, Lanzhu
+  ],
+  liella: [
+    [1, 2, 3, 4],   // Kanon, Keke, Chisato, Sumire
+    [5, 6, 7, 8],   // Ren, Kinako, Mei, Shiki
+    [9, 10, 11],    // Natsumi, Wien, Tomari
   ],
 };
 
@@ -74,5 +84,5 @@ export const HINT_SUBUNITS: Record<string, Record<string, string>> = {
 export const HINT_YEARS: Record<string, string[]> = {
   muse: ['1,3,4', '5,6,8', '2,7,9'],
   aqours: ['1,2,3', '4,5,6', '7,8,9'],
-  nijigasaki: ['2,3,9,10', '1,5,7,11', '4,6,8,12'],
+  nijigasaki: ['2,3,9,10', '1,5,7,12', '4,6,8,11'],
 };

@@ -12,7 +12,7 @@
     { "id": 6, "name": "Yoshiko",  "nameNative": "善子",     "color": "#898989", "colorOfficial": "#C1CAD4" },
     { "id": 7, "name": "Dia",      "nameNative": "ダイヤ",   "color": "#F23B4C", "colorOfficial": "#DB0839" },
     { "id": 8, "name": "Kanan",    "nameNative": "果南",     "color": "#13E8AE", "colorOfficial": "#27C1B7" },
-    { "id": 9, "name": "Mari",     "nameNative": "マリ",     "color": "#AE58EB", "colorOfficial": "#C252C6" }
+    { "id": 9, "name": "Mari",     "nameNative": "マリ",     "color": "#AE58EB", "colorOfficial": "#C252C6", "aliases": ["鞠莉"] }
   ],
   "subunits": [
     { "name": "CYaRon",       "memberIds": [1, 2, 5] },

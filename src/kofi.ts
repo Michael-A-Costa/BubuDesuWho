@@ -15,6 +15,28 @@ const navEntry = performance.getEntriesByType('navigation')[0] as
   | undefined;
 if (navEntry?.type === 'reload') sessionStorage.removeItem(DISMISS_KEY);
 
+// Mobile parks the Ko-fi button after the Edit button in misc-controls so the
+// title row stays compact; desktop returns it to song-title-utils.
+function attachKofiToBreakpoint(wrap: HTMLElement): void {
+  const desktop = document.querySelector<HTMLElement>('.song-title-utils');
+  const mobileHost = document.getElementById('misc-controls');
+  const editBtn = document.getElementById('edit-toggle');
+  if (!desktop || !mobileHost || !editBtn) return;
+
+  const mql = window.matchMedia('(max-width: 600px)');
+  const place = (): void => {
+    if (mql.matches) {
+      if (wrap.parentElement !== mobileHost || wrap.previousElementSibling !== editBtn) {
+        editBtn.after(wrap);
+      }
+    } else if (wrap.parentElement !== desktop) {
+      desktop.appendChild(wrap);
+    }
+  };
+  place();
+  mql.addEventListener('change', place);
+}
+
 export function initKofi(): void {
   const btn = document.getElementById('kofi-button');
   const wrap = document.querySelector<HTMLElement>('.kofi-button-wrap');
@@ -23,6 +45,7 @@ export function initKofi(): void {
   const iframe = document.getElementById('kofi-iframe') as HTMLIFrameElement | null;
   if (!btn || !modal || !iframe) return;
 
+  if (wrap) attachKofiToBreakpoint(wrap);
   if (wrap && sessionStorage.getItem(DISMISS_KEY) === '1') wrap.hidden = true;
   dismiss?.addEventListener('click', (e) => {
     e.stopPropagation();

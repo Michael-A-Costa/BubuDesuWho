@@ -7,7 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#fb96be">
 
-<title>BubuDesuWho - History</title>
+<script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.classList.add('dark-mode')}catch(e){}</script>
+
+<title>BubuDesuWho - Stats</title>
 
 <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
 <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
@@ -20,25 +22,7 @@
 <body>
 
 <div id="sidebar" class="sidebar-collapsed">
-  <ul class="sidebar-nav">
-    <li><a class="select-info" href="index.html">About</a></li>
-    <li><a class="select-info" href="changelog.html">Changelog</a></li>
-    <li><a class="select-info active" href="stats.html">Stats</a></li>
-    <li><a class="select-info" href="bubudle.html">Bubudle</a></li>
-    <li>
-      <button id="muse-group-button" type="button" class="btn btn-primary group-button" data-value="muse"><img class="group-icon" loading="lazy" src="css/images/muse.png"></img></button><button id="aqours-group-button" type="button" class="btn btn-primary group-button" data-value="aqours"><img class="group-icon" loading="lazy" src="css/images/aqours.png"></img></button>
-    </li>
-    <li>
-      <button id="wug-group-button" type="button" class="btn btn-primary group-button" data-value="wug"><img class="group-icon" loading="lazy" src="css/images/wug.png"></img>
-    </li>
-    <li class="has-feedback">
-      <input class="form-control" id="menu-search" autofocus></input>
-      <span class="glyphicon glyphicon-search form-control-feedback"></span>
-    </li>
-    <li class="sort-toggle-wrap">
-      <button type="button" class="sort-btn active" data-sort="date">Date</button><button type="button" class="sort-btn" data-sort="alpha">A–Z</button><button type="button" class="group-toggle-btn" id="group-toggle">Group</button>
-    </li>
-  </ul>
+  <!-- @include partials/sidebar-nav.html -->
 </div>
 
 <div class="main">
@@ -53,19 +37,59 @@
   </div>
   </nav>
 
-  <div class="container"><div class="row"><div class="col-xs-12 info-content">
-      <h2>History</h2>
-      <ul id="stats-history">
-      </ul>
-      <hr>
+  <div class="container"><div class="row"><div class="col-xs-12 stats-page">
+
+    <section id="stats-empty" class="stats-empty hidden">
+      <p class="stats-empty-quote">"You haven't played anything yet."</p>
+      <p class="stats-empty-cta">
+        <a id="stats-empty-link" href="play.html" class="btn btn-primary btn-lg">Play a random song&nbsp;→</a>
+      </p>
+    </section>
+
+    <div id="stats-body">
+
+      <header class="stats-ribbon">
+        <div class="stat-cell">
+          <span class="stat-num" id="stat-plays">0</span>
+          <span class="stat-label">Plays</span>
+        </div>
+        <span class="stat-rule" aria-hidden="true"></span>
+        <div class="stat-cell">
+          <span class="stat-num" id="stat-accuracy">0%</span>
+          <span class="stat-label">Lines correct</span>
+        </div>
+        <span class="stat-rule" aria-hidden="true"></span>
+        <div class="stat-cell">
+          <span class="stat-num" id="stat-streak">0</span>
+          <span class="stat-label">Streak</span>
+        </div>
+      </header>
+
+      <section id="mastery-section" class="stats-section">
+        <h2 class="stats-section-title">Member Mastery <span class="stats-section-hint">— of the lines you tried, % you got right</span></h2>
+        <div id="member-mastery" class="member-strip"></div>
+      </section>
+
+      <section id="total-mastery-section" class="stats-section">
+        <h2 class="stats-section-title">Total Mastery <span class="stats-section-hint">— of every line they sang, % you got right</span></h2>
+        <div id="total-mastery" class="member-strip"></div>
+      </section>
+
+      <section class="stats-section">
+        <h2 class="stats-section-title">Setlist</h2>
+        <div id="setlist-filters" class="setlist-filters"></div>
+        <ul id="setlist" class="setlist" data-filter="all"></ul>
+      </section>
+
+      <section id="untried-section" class="stats-section">
+        <h2 class="stats-section-title">Songs you haven't tried</h2>
+        <ul id="untried-list" class="untried-list"></ul>
+      </section>
+
+    </div>
+
   </div></div></div>
 </div>
-
-<template id="history-entry-template">
-  <li class="history-entry">
-    <span class="history-date"></span>: <a class="history-song-name"></a> <span class='history-result'></span>
-  </li>
-</template>
 
 <script type="module" src="/src/main.ts"></script>
 <script>

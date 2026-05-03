@@ -1,6 +1,6 @@
 import { MenuSong, GroupName, SortMode } from './types';
 import { escapeRegExp } from './utils';
-import { state } from './game-state';
+import { state, getSongTitle } from './game-state';
 import { getAllGroups, hasGroup } from './groups';
 import { setStorage, getStorage } from './storage';
 
@@ -60,6 +60,7 @@ export function buildMenu(songs: MenuSong[]): void {
 
   document.getElementById('menu-button')?.addEventListener('click', () => toggleMenu());
   setupMobileMenuButton();
+  setupMobileCheckButton();
 
   document.querySelectorAll<HTMLElement>('.group-button').forEach((btn) => {
     const slug = btn.dataset.value as GroupName | undefined;
@@ -238,7 +239,14 @@ function switchGroup(group: GroupName, songs: MenuSong[]): void {
       attachInstantTip(mark, 'Lyric timing approximate');
       nameSpan.appendChild(mark);
     }
-    nameSpan.appendChild(document.createTextNode(song.name));
+    // Wrap the name in a text span carrying both name + name_jp so the
+    // global JP toggle can swap them without rebuilding the menu.
+    const nameText = document.createElement('span');
+    nameText.className = 'song-name-text';
+    nameText.dataset.songName = song.name;
+    if (song.name_jp) nameText.dataset.songNameJp = song.name_jp;
+    nameText.textContent = getSongTitle(song);
+    nameSpan.appendChild(nameText);
     a.appendChild(nameSpan);
 
     const attrsSpan = document.createElement('span');
@@ -289,6 +297,19 @@ export function setupMobileMenuButton(): void {
   btn.setAttribute('aria-label', 'Toggle menu');
   btn.innerHTML = '<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>';
   btn.addEventListener('click', () => toggleMenu());
+  document.body.appendChild(btn);
+}
+
+export function setupMobileCheckButton(): void {
+  if (document.getElementById('check-button-bottom')) return;
+  const checkBtn = document.getElementById('check');
+  if (!checkBtn) return;
+  const btn = document.createElement('button');
+  btn.id = 'check-button-bottom';
+  btn.type = 'button';
+  btn.setAttribute('aria-label', 'Check');
+  btn.innerHTML = '<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>';
+  btn.addEventListener('click', () => checkBtn.click());
   document.body.appendChild(btn);
 }
 

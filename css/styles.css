@@ -5,7 +5,7 @@ Design tokens — light mode defaults
 ===============================================*/
 
 :root {
-  --bg-base:         #ffffff;
+  --bg-base:         #fafbfc;
   --bg-surface:      #EAF9FF;
   --bg-interactive:  #ffffff;
   --bg-elevated:     #9ED0FF;
@@ -48,7 +48,6 @@ Design tokens — light mode defaults
   --meter-bg:        #cccccc;
   --progress-track:  #dddddd;
   --progress-fill:   #3276b1;
-  --volume-track:    #dddddd;
   --volume-fill:     #5cb85c;
   --player-bar-bg:   #f5f5f5;
   --player-bar-border: #cccccc;
@@ -103,7 +102,6 @@ html.dark-mode {
   --meter-bg:        #1f1f1f;
   --progress-track:  #4d4d4d;
   --progress-fill:   #1ed760;
-  --volume-track:    #4d4d4d;
   --volume-fill:     #b3b3b3;
   --player-bar-bg:   #181818;
   --player-bar-border: #4d4d4d;
@@ -136,6 +134,8 @@ a.muse-pink:hover { color: #70073A; }
   text-shadow: 3px 0px 3px #00a1e9,
                0px 3px 3px #00a1e9;
 }
+.liella-purple    { color: #A3469D; }
+a.liella-purple:hover { color: #5C2058; }
 
 .chika-orange     { color: #F0A20B; }
 .you-blue         { color: #49B9F9; }
@@ -300,6 +300,17 @@ Group filter buttons (sidebar)
   background-color: #FFD28A;
   border-color: #F39800;
 }
+#liella-group-button {
+  padding: 5px;
+}
+#liella-group-button:focus,
+.hoverable #liella-group-button:hover:not(.active) {
+  background-color: #F0DEEE;
+}
+#liella-group-button.active {
+  background-color: #E5C9E2;
+  border-color: #A3469D;
+}
 /* Generic fallback — groups without a hardcoded #<slug>-group-button rule
    get their tint from inline --group-accent vars (set from group.json). */
 .group-button:focus,
@@ -439,6 +450,14 @@ html.dark-mode .hoverable #nijigasaki-group-button:hover:not(.active) {
 html.dark-mode #nijigasaki-group-button.active {
   background-color: #3a2810;
   border-color: #F39800;
+}
+html.dark-mode #liella-group-button:focus,
+html.dark-mode .hoverable #liella-group-button:hover:not(.active) {
+  background-color: #1f1019;
+}
+html.dark-mode #liella-group-button.active {
+  background-color: #2a1428;
+  border-color: #A3469D;
 }
 html.dark-mode .sidebar-nav .has-feedback {
   background: var(--bg-surface);
@@ -751,7 +770,8 @@ html.dark-mode .main {
   cursor: pointer;
 }
 
-#menu-button-bottom {
+#menu-button-bottom,
+#check-button-bottom {
   display: none;
   position: fixed;
   bottom: 16px;
@@ -770,11 +790,22 @@ html.dark-mode .main {
   align-items: center;
   justify-content: center;
 }
-body:has(#player-bar) #menu-button-bottom {
+#check-button-bottom {
+  right: 80px;
+  background: var(--t-check-bg, var(--accent));
+  border-color: var(--t-check-dark, var(--accent-dark));
+  color: #fff;
+}
+html.dark-mode #check-button-bottom {
+  color: #000;
+}
+body:has(#player-bar) #menu-button-bottom,
+body:has(#player-bar) #check-button-bottom {
   bottom: calc(var(--player-bar-h) + 16px);
 }
 @media (max-width: 1199px) {
-  #menu-button-bottom {
+  #menu-button-bottom,
+  #check-button-bottom {
     display: flex;
   }
 }
@@ -1097,6 +1128,7 @@ html.dark-mode #sidebar.group-nijigasaki {
 html.dark-mode #sidebar.group-nijigasaki .sidebar-nav li a:not(.select-info) {
   background-color: var(--bg-base);
   border-bottom-color: var(--border);
+  color: var(--text-base);
 }
 html.dark-mode #sidebar.group-nijigasaki .sidebar-nav li a.active:not(.select-info) {
   background-color: var(--bg-surface);
@@ -1118,6 +1150,56 @@ html.group-nijigasaki:not(.dark-mode) {
 html.group-nijigasaki:not(.dark-mode) .lyric.lyric-active:not([class*="theme-"]) {
   text-shadow: 3px 0px 3px #FFD28A,
                0px 3px 3px #FFD28A;
+}
+
+/* Liella! group — purple sidebar defaults (skipped when a per-song theme is set) */
+html:not([class*="theme-"]) #sidebar.group-liella {
+  background-color: #A3469D;
+}
+html:not([class*="theme-"]) #sidebar.group-liella .sidebar-nav li a:not(.select-info) {
+  background-color: #E5C9E2;
+  border-bottom-color: #A3469D;
+  color: #3D1A3A;
+}
+html:not([class*="theme-"]) #sidebar.group-liella .sidebar-nav li a.active:not(.select-info) {
+  background-color: #C384BF;
+}
+.hoverable:not([class*="theme-"]) #sidebar.group-liella .sidebar-nav li a:not(.select-info):hover {
+  background-color: rgba(229,201,226,0.75);
+}
+.hoverable:not([class*="theme-"]) #sidebar.group-liella .sidebar-nav li a.active:not(.select-info):hover {
+  background-color: rgba(163,70,157,0.50);
+}
+
+/* Dark mode: neutralize Liella! purple sidebar */
+html.dark-mode #sidebar.group-liella {
+  background-color: var(--bg-base);
+}
+html.dark-mode #sidebar.group-liella .sidebar-nav li a:not(.select-info) {
+  background-color: var(--bg-base);
+  border-bottom-color: var(--border);
+  color: var(--text-base);
+}
+html.dark-mode #sidebar.group-liella .sidebar-nav li a.active:not(.select-info) {
+  background-color: var(--bg-surface);
+}
+html.dark-mode .hoverable #sidebar.group-liella .sidebar-nav li a:not(.select-info):hover {
+  background-color: var(--bg-elevated);
+}
+html.dark-mode .hoverable #sidebar.group-liella .sidebar-nav li a.active:not(.select-info):hover {
+  background-color: var(--bg-elevated);
+}
+
+/* Liella! group — purple game area defaults (per-song themes layer on top via --t-* vars) */
+html.group-liella:not(.dark-mode) {
+  --slot-idle:    #F5E4F2;
+  --slot-active:  #E5C0E0;
+  --lyrics-bg:    #F5E4F2;
+  --lyrics-color: #4A1845;
+}
+html.group-liella:not(.dark-mode) .lyric.lyric-active:not([class*="theme-"]):not([class*="ans"]) {
+  text-shadow: 3px 0px 3px #E5C0E0,
+               0px 3px 3px #E5C0E0;
 }
 
 /* Dark mode sidebar */
@@ -1232,19 +1314,31 @@ body.hints-on .slot-header .singers-count {
   clear: both;
 }
 
+.slot-body .slot-lyric-inline {
+  display: none;
+  font-size: 14px;
+  font-style: italic;
+  opacity: 0.85;
+  padding: 4px 12px 8px;
+  line-height: 1.3;
+  word-break: break-word;
+}
+body.inline-on .slot-body .slot-lyric-inline {
+  display: block;
+}
+
 template {
   display: none;
 }
 
 .slot {
-  transition: background-color 0.6s ease;
+  transition: background-color 0.3s ease-out;
   background-color: var(--slot-idle);
   border-radius: var(--radius-card);
   padding: 8px;
   margin-top: 10px;
 }
 .slot.slot-active {
-  transition: background-color 0.3s ease-out;
   background-color: var(--slot-active);
 }
 .slot.slot-wrong {
@@ -1264,10 +1358,9 @@ template {
 html.dark-mode .slot {
   border-left: 3px solid transparent;
   box-shadow: var(--shadow-medium);
-  transition: background-color 0.6s ease, border-color 0.6s ease;
+  transition: background-color 0.3s ease-out, border-color 0.3s ease-out;
 }
 html.dark-mode .slot.slot-active {
-  transition: background-color 0.3s ease-out, border-color 0.3s ease-out;
   border-left-color: var(--accent-dark);
 }
 html.dark-mode .slot.slot-wrong {
@@ -1342,16 +1435,6 @@ html.group-twice .slot-members {
 .slot-subunits > .btn {
   margin: 0;
   width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-/* Setsuna (Tomoriru) is the longest nijigasaki label — trim horizontal
-   padding so it stays on one line. */
-html.group-nijigasaki #slots button[data-value="7"].btn {
-  padding-left: 2px;
-  padding-right: 2px;
 }
 
 .slot-header {
@@ -1456,9 +1539,11 @@ html.dark-mode .slot-header .reveal-off-button {
 }
 
 #slots button.btn {
-   white-space: normal;
-   padding: 6px;
+   white-space: nowrap;
+   overflow: hidden;
+   padding: 6px 2px;
 }
+
 
 html.dark-mode #slots button.btn {
   text-transform: none;
@@ -1595,7 +1680,11 @@ html.dark-mode .lyric.lyric-active {
                0px 0px 4px #0c5ba0;
   color: white;
 }
-html.dark-mode .lyric.lyric-active.karaoke {
+/* Selector intentionally omits the `html` qualifier so its specificity (0,4,0)
+   matches the per-member `.group-X.ansN` glow rules below — those appear later
+   in the file and win on source order, keeping member lyrics colored in dark
+   mode. The hardcoded `.ans-all` rules (0,4,1) still override this. */
+.dark-mode .lyric.lyric-active.karaoke {
   text-shadow: 0px 0px 6px var(--accent),
                0px 0px 4px var(--accent);
 }
@@ -1668,6 +1757,11 @@ html.group-nijigasaki:not(.dark-mode) .lyric.lyric-active.ans-all:not([class*="t
       0px 0px 10px #45AE4D,
       0px 0px 12px #49B9F9,
       0px 0px 15px #AE58EB;
+}
+html.group-liella .lyric.lyric-active.ans-all,
+html.group-liella:not(.dark-mode) .lyric.lyric-active.ans-all:not([class*="theme-"]) {
+  color: #ffffff;
+  text-shadow: 0px 0px 6px #6B2865, 0px 0px 6px #6B2865, 0px 0px 6px #6B2865, 0px 0px 15px #C684C0;
 }
 
 /* Member glow colors — same in both modes */
@@ -1920,6 +2014,52 @@ html.palette-official .lyric.lyric-active.group-saint-aqours-snow.ans11 {
   text-shadow: 0px 0px 1px white, 0px 0px 2px white, 0px 0px 7px black, 0px 0px 15px black;
 }
 
+/* Liella! per-member glow colors */
+.lyric.lyric-active.group-liella.ans1 {
+  color: #ffffff;
+  text-shadow: 0px 0px 6px #994C17, 0px 0px 6px #994C17, 0px 0px 6px #994C17, 0px 0px 15px #FF7F27;
+}
+.lyric.lyric-active.group-liella.ans2 {
+  color: #ffffff;
+  text-shadow: 0px 0px 6px #4D9995, 0px 0px 6px #4D9995, 0px 0px 6px #4D9995, 0px 0px 15px #A0FFF9;
+}
+.lyric.lyric-active.group-liella.ans3 {
+  color: #ffffff;
+  text-shadow: 0px 0px 6px #994256, 0px 0px 6px #994256, 0px 0px 6px #994256, 0px 0px 15px #FF6E90;
+}
+.lyric.lyric-active.group-liella.ans4 {
+  color: #ffffff;
+  text-shadow: 0px 0px 6px #45923D, 0px 0px 6px #45923D, 0px 0px 6px #45923D, 0px 0px 15px #74F466;
+}
+.lyric.lyric-active.group-liella.ans5 {
+  color: #ffffff;
+  text-shadow: 0px 0px 6px #2C2C99, 0px 0px 6px #2C2C99, 0px 0px 6px #2C2C99, 0px 0px 15px #4949D6;
+}
+.lyric.lyric-active.group-liella.ans6 {
+  color: #ffffff;
+  text-shadow: 0px 0px 6px #999227, 0px 0px 6px #999227, 0px 0px 6px #999227, 0px 0px 15px #FFF442;
+}
+.lyric.lyric-active.group-liella.ans7 {
+  color: #ffffff;
+  text-shadow: 0px 0px 6px #991F1F, 0px 0px 6px #991F1F, 0px 0px 6px #991F1F, 0px 0px 15px #FF3535;
+}
+.lyric.lyric-active.group-liella.ans8 {
+  color: #ffffff;
+  text-shadow: 0px 0px 6px #6A9984, 0px 0px 6px #6A9984, 0px 0px 6px #6A9984, 0px 0px 15px #B2FFDD;
+}
+.lyric.lyric-active.group-liella.ans9 {
+  color: #ffffff;
+  text-shadow: 0px 0px 6px #993075, 0px 0px 6px #993075, 0px 0px 6px #993075, 0px 0px 15px #FF51C4;
+}
+.lyric.lyric-active.group-liella.ans10 {
+  color: #ffffff;
+  text-shadow: 0px 0px 6px #46848B, 0px 0px 6px #46848B, 0px 0px 6px #46848B, 0px 0px 15px #76DDE9;
+}
+.lyric.lyric-active.group-liella.ans11 {
+  color: #ffffff;
+  text-shadow: 0px 0px 6px #885E97, 0px 0px 6px #885E97, 0px 0px 6px #885E97, 0px 0px 15px #E49DFD;
+}
+
 
 /*===============================================
 Player bar (fixed bottom, Spotify-style)
@@ -2041,14 +2181,40 @@ html.dark-mode #player-bar {
 }
 
 #player-bar #volume-slider {
+  --vol-fill: var(--volume-fill);
+  --vol-pct: 30%;
   width: 175px;
-  height: 4px;
-  margin-left: 0;
-  background: var(--volume-track);
+  height: 16px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
 }
-
-#player-bar #volume-bar {
-  background: var(--volume-fill);
+#player-bar #volume-slider::-webkit-slider-runnable-track {
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(to right, var(--vol-fill) var(--vol-pct), var(--progress-track) var(--vol-pct));
+}
+#player-bar #volume-slider::-moz-range-track {
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(to right, var(--vol-fill) var(--vol-pct), var(--progress-track) var(--vol-pct));
+}
+#player-bar #volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  margin-top: -4px;
+  border-radius: 50%;
+  border: none;
+  background: var(--vol-fill);
+}
+#player-bar #volume-slider::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: var(--vol-fill);
 }
 
 #player-bar .jp-current-time {
@@ -2101,6 +2267,22 @@ html.dark-mode #player-bar .jp-pause:hover {
 #player-bar .jp-stop:hover,
 #player-bar .jp-mute:hover {
   background-color: var(--btn-bg-hover);
+}
+
+/* Dark mode: keep accent-driven controls (seekbar, volume, Ko-fi, mobile Check)
+   on the Spotify-green --accent regardless of the active song theme. */
+html.dark-mode #player-bar #progress-bar {
+  background: var(--accent);
+}
+html.dark-mode #player-bar #volume-slider {
+  --vol-fill: var(--accent);
+}
+html.dark-mode #kofi-button {
+  background: var(--accent);
+}
+html.dark-mode #check-button-bottom {
+  background: var(--accent);
+  border-color: var(--accent-dark);
 }
 
 
@@ -3000,3 +3182,560 @@ html.group-seventeen         { --group-accent-color: #F1B8C5; }   /* Seventeen r
 html.group-twice             { --group-accent-color: #FF82A9; }   /* Twice apricot pink */
 html.group-stray-kids        { --group-accent-color: #C2091B; }   /* Stray Kids red */
 html.group-bts               { --group-accent-color: #8E6FF7; }   /* BTS purple ("I purple you") */
+
+
+/*===============================================
+Stats page — editorial / liner-notes redesign
+===============================================*/
+
+.stats-page {
+  padding-top: 24px;
+  padding-bottom: 80px;
+  color: var(--text-base);
+}
+
+.stats-page .hidden { display: none !important; }
+
+/* ── Empty state ───────────────────────────────────────────── */
+.stats-empty {
+  text-align: center;
+  padding: 80px 16px 60px;
+}
+.stats-empty-quote {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 1.6em;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+  line-height: 1.4;
+}
+.stats-empty-cta { margin: 0; }
+
+/* ── Section frame ─────────────────────────────────────────── */
+.stats-section {
+  margin-top: 44px;
+}
+.stats-section-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.55em;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--text-base);
+  margin: 0 0 18px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+.stats-section-hint {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.7em;
+  color: var(--text-muted);
+  letter-spacing: 0;
+}
+
+/* ── Header ribbon ─────────────────────────────────────────── */
+.stats-ribbon {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 28px;
+  padding: 28px 16px 20px;
+  margin-bottom: 4px;
+}
+.stat-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 90px;
+}
+.stat-num {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  font-size: 3.2em;
+  line-height: 1;
+  color: var(--text-base);
+  font-variant-numeric: tabular-nums;
+}
+.stat-label {
+  margin-top: 8px;
+  font-size: 0.62em;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--text-muted);
+}
+.stat-rule {
+  width: 1px;
+  background: var(--border);
+  align-self: stretch;
+  margin: 6px 0;
+}
+
+@media (max-width: 600px) {
+  .stats-ribbon {
+    flex-direction: column;
+    gap: 0;
+    padding: 20px 16px 12px;
+  }
+  .stat-cell {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    padding: 10px 6px;
+    border-bottom: 1px solid var(--border);
+  }
+  .stat-cell:last-child { border-bottom: none; }
+  .stat-num { font-size: 2.1em; }
+  .stat-label { margin-top: 0; }
+  .stat-rule { display: none; }
+}
+
+/* ── Member Mastery strip ──────────────────────────────────── */
+.member-strip {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+  gap: 18px 12px;
+  padding: 4px 0 8px;
+}
+@media (max-width: 600px) {
+  .member-strip {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 12px;
+    padding: 4px 4px 14px;
+    margin-right: -16px;
+    padding-right: 16px;
+  }
+  .member-strip::-webkit-scrollbar { height: 4px; }
+  .member-strip::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+  .member-dial {
+    flex: 0 0 88px;
+    scroll-snap-align: start;
+  }
+}
+
+.member-dial {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  --c: var(--text-muted);
+}
+.member-arc {
+  width: 84px;
+  height: 84px;
+  display: block;
+  transform: rotate(-90deg);
+}
+.member-arc .arc-track {
+  fill: none;
+  stroke: var(--meter-bg);
+  stroke-width: 4;
+}
+.member-arc .arc-fill {
+  fill: none;
+  stroke: var(--c);
+  stroke-width: 4;
+  stroke-linecap: butt;
+  transition: stroke-dasharray 0.6s ease-out;
+}
+
+.member-portrait {
+  position: absolute;
+  top: 8px;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 0 2px var(--bg-base);
+}
+.member-portrait img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.member-initial {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 1.9em;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+  letter-spacing: -0.02em;
+}
+
+.member-name {
+  margin-top: 8px;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: var(--text-base);
+  line-height: 1.1;
+}
+.member-pct {
+  margin-top: 2px;
+  font-size: 0.75em;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+}
+
+/* Favorite-toggle heart on each dial */
+.member-fav {
+  position: absolute;
+  top: 0px;
+  right: 2px;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  opacity: 0.45;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.15s ease, color 0.15s ease, transform 0.15s ease;
+  z-index: 2;
+}
+.member-fav svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  pointer-events: none;
+}
+.member-fav:hover,
+.member-fav:focus-visible {
+  opacity: 1;
+  color: var(--c);
+  transform: scale(1.1);
+  outline: none;
+}
+.member-dial.is-favorite .member-fav {
+  opacity: 1;
+  color: var(--c);
+}
+.member-dial.is-favorite .member-portrait {
+  box-shadow:
+    inset 0 0 0 2px var(--bg-base),
+    0 0 0 2px var(--c),
+    0 0 8px 2px color-mix(in srgb, var(--c) 50%, transparent);
+}
+
+/* ── Setlist filter chips ──────────────────────────────────── */
+.setlist-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 8px;
+  margin: 0 0 14px;
+}
+.setlist-filters .chip {
+  font: inherit;
+  font-size: 0.78em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+.setlist-filters .chip:hover {
+  border-color: var(--border-light);
+  color: var(--text-base);
+}
+.setlist-filters .chip.active {
+  background: var(--text-base);
+  color: var(--bg-base);
+  border-color: var(--text-base);
+}
+.setlist-filters .chip.active.muse-pink        { background: #FF238E; border-color: #FF238E; color: #fff; }
+.setlist-filters .chip.active.aqours-blue      { background: #4CC4FF; border-color: #4CC4FF; color: #fff; }
+.setlist-filters .chip.active.aqours-lightblue { background: #00a1e9; border-color: #00a1e9; color: #fff; text-shadow: none; }
+.setlist-filters .chip.active.liella-purple    { background: #A3469D; border-color: #A3469D; color: #fff; }
+
+/* ── Setlist rows ──────────────────────────────────────────── */
+.setlist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.setlist-row {
+  --c: var(--border-light);
+  display: grid;
+  grid-template-columns: 4.5em 1fr auto auto auto;
+  align-items: center;
+  gap: 10px 14px;
+  padding: 10px 4px 10px 14px;
+  border-bottom: 1px solid var(--border);
+  border-left: 2px solid var(--c);
+  transition: background-color 0.12s ease;
+}
+.setlist-row:hover { background: var(--bg-surface); }
+
+/* Per-group accent — single source of truth feeds stripe + filled dots.
+   Hexes mirror html.group-X { --group-accent-color } above. */
+.setlist-row[data-group="muse"]              { --c: #E4007F; }
+.setlist-row[data-group="aqours"],
+.setlist-row[data-group="aqours-miku"]       { --c: #00A0E9; }
+.setlist-row[data-group="saint-aqours-snow"] { --c: #00A0E9; }
+/* Saint Aqours Snow uses the white-on-blue glow color class, but glow-on-row
+   reads as noisy on the setlist — flatten to a solid blue for song + tag. */
+.setlist-row[data-group="saint-aqours-snow"] .setlist-song.aqours-lightblue,
+.setlist-row[data-group="saint-aqours-snow"] .setlist-tag.aqours-lightblue {
+  color: #00A0E9;
+  text-shadow: none;
+}
+.setlist-row[data-group="liella"]            { --c: #A3469D; }
+.setlist-row[data-group="nijigasaki"]        { --c: #F39800; }
+.setlist-row[data-group="wug"]               { --c: #E60012; }
+.setlist-row[data-group="seventeen"]         { --c: #F1B8C5; }
+.setlist-row[data-group="twice"]             { --c: #FF82A9; }
+.setlist-row[data-group="stray-kids"]        { --c: #C2091B; }
+.setlist-row[data-group="bts"]               { --c: #8E6FF7; }
+
+.setlist-row.filtered-out { display: none; }
+
+.setlist-date {
+  font-size: 0.78em;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+.setlist-song {
+  font-weight: 600;
+  font-size: 1.08em;
+  color: var(--text-base);
+  text-decoration: none;
+}
+.setlist-song:hover { text-decoration: none; opacity: 0.85; }
+
+.setlist-tag {
+  font-size: 0.62em;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-weight: 600;
+  padding-bottom: 1px;
+  border-bottom: 1px solid currentColor;
+  color: var(--text-muted);
+}
+
+.setlist-meter {
+  display: inline-flex;
+  gap: 3px;
+}
+.setlist-meter .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--meter-bg);
+}
+.setlist-meter .dot.filled { background: var(--c); }
+
+.setlist-score {
+  font-size: 0.85em;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+}
+.setlist-score.all-correct { color: var(--accent); font-weight: 600; }
+html.dark-mode .setlist-score.all-correct { color: var(--accent); }
+
+.setlist-star {
+  font-size: 0.95em;
+  color: #E6D617;            /* Hanamaru yellow — sparkles for a perfect run */
+  text-shadow: 0 0 6px rgba(230, 214, 23, 0.45);
+  margin-left: 0.35em;
+}
+html.dark-mode .setlist-star {
+  color: #FFE94A;
+  text-shadow: 0 0 8px rgba(255, 233, 74, 0.4);
+}
+
+@media (max-width: 600px) {
+  .setlist-row {
+    grid-template-columns: 4em 1fr auto auto;
+    grid-template-areas:
+      "date  song  meter  score"
+      ".     tag   .      .";
+    column-gap: 10px;
+    row-gap: 2px;
+    padding: 9px 4px 9px 12px;
+  }
+  .setlist-date  { grid-area: date; }
+  .setlist-song  { grid-area: song; }
+  .setlist-tag   { grid-area: tag; justify-self: start; }
+  .setlist-meter { grid-area: meter; }
+  .setlist-score { grid-area: score; }
+  .setlist-star  { display: none; }
+}
+
+/* ── Untried songs ─────────────────────────────────────────── */
+.untried-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  columns: 2;
+  column-gap: 24px;
+}
+@media (max-width: 600px) {
+  .untried-list { columns: 1; }
+}
+.untried-list li {
+  break-inside: avoid;
+  padding: 6px 0;
+  font-size: 1.05em;
+}
+.untried-song {
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding-left: 14px;
+}
+.untried-song::before {
+  content: "›";
+  position: absolute;
+  left: 0;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+.untried-song:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+/* ── Favorite-member buddy ─────────────────────────────────── */
+.buddy {
+  position: fixed;
+  right: 12px;
+  bottom: -5px;
+  width: 168px;
+  height: 220px;
+  z-index: 9000;
+  pointer-events: none;
+  transition: width 0.2s ease, height 0.2s ease;
+}
+.buddy.size-small  { width: 110px; height: 150px; }
+.buddy.size-medium { width: 168px; height: 220px; }
+.buddy.size-large  { width: 240px; height: 320px; }
+.buddy.size-xl     { width: 320px; height: 440px; }
+.buddy.leaving .buddy-frame {
+  animation: buddy-out 0.24s ease-in both;
+}
+/* Inner frame carries every animation that affects the picture; buttons
+   live on the outer wrap so they stay rock-still. */
+.buddy-frame {
+  position: absolute;
+  inset: 0;
+  /* padding-bottom: 10%; */
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.25));
+  animation: buddy-in 0.4s ease-out both, buddy-bob 4.5s ease-in-out 0.5s infinite;
+}
+.buddy.anim-off .buddy-frame {
+  animation: buddy-in 0.4s ease-out both;
+}
+.buddy-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom center;
+  pointer-events: auto;
+  transition: transform 0.16s ease-in;
+}
+.buddy-frame.flipping .buddy-img {
+  transform: scaleX(0);
+  transition: transform 0.16s ease-in;
+}
+.buddy-close,
+.buddy-size-btn,
+.buddy-idol-btn,
+.buddy-anim-btn {
+  position: absolute;
+  bottom: 8px;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 13px;
+  line-height: 22px;
+  text-align: center;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  pointer-events: auto;
+  opacity: 0;
+  transition: opacity 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+.buddy-close    { right: 0;   font-size: 16px; line-height: 18px; }
+.buddy-size-btn { right: 26px; }
+.buddy-anim-btn { right: 52px; }
+.buddy-idol-btn { right: 78px; font-style: italic; }
+.buddy-idol-btn.on,
+.buddy-anim-btn.on {
+  background: #ffd84a;
+  color: #1a1a1a;
+}
+.buddy-idol-btn.locked {
+  cursor: not-allowed;
+  opacity: 0.35 !important;
+  background: rgba(0, 0, 0, 0.35);
+}
+.buddy:hover .buddy-close,
+.buddy:hover .buddy-size-btn,
+.buddy:hover .buddy-idol-btn,
+.buddy:hover .buddy-anim-btn,
+.buddy-close:focus-visible,
+.buddy-size-btn:focus-visible,
+.buddy-idol-btn:focus-visible,
+.buddy-anim-btn:focus-visible {
+  opacity: 1;
+}
+.buddy-idol-btn.locked:hover { background: rgba(0, 0, 0, 0.35); }
+.buddy-close:hover,
+.buddy-size-btn:hover,
+.buddy-idol-btn:not(.locked):hover,
+.buddy-anim-btn:hover {
+  background: rgba(0, 0, 0, 0.75);
+}
+.buddy-idol-btn.on:hover,
+.buddy-anim-btn.on:hover { background: #ffc81e; }
+@keyframes buddy-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes buddy-out {
+  from { opacity: 1; transform: translateY(0); }
+  to   { opacity: 0; transform: translateY(20px); }
+}
+@keyframes buddy-bob {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-4px); }
+}
+@media (max-width: 600px) {
+  .buddy { right: 8px; bottom: 8px; }
+  .buddy.size-small  { width: 90px;  height: 120px; }
+  .buddy.size-medium { width: 130px; height: 170px; }
+  .buddy.size-large  { width: 180px; height: 240px; }
+  .buddy.size-xl     { width: 240px; height: 320px; }
+  .buddy-close,
+  .buddy-size-btn,
+  .buddy-idol-btn,
+  .buddy-anim-btn { opacity: 1; }
+  .buddy-idol-btn.locked { opacity: 0.35 !important; }
+}
+

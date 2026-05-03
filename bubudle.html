@@ -6,6 +6,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.classList.add('dark-mode')}catch(e){}</script>
+
 <title>Bubudle</title>
 
 <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
@@ -21,31 +23,7 @@
 <body class="bubudle-page">
 
 <div id="sidebar" class="sidebar-collapsed">
-  <ul class="sidebar-nav">
-    <li><a class="select-info" href="index.html">About</a></li>
-    <li><a class="select-info" href="changelog.html">Changelog</a></li>
-    <li><a class="select-info" href="stats.html">Stats</a></li>
-    <li><a class="select-info active" href="bubudle.html">Bubudle</a></li>
-    <li id="bubudle-all-group-li" style="display:none">
-      <button id="bubudle-all-group-button" type="button" class="btn btn-primary group-button group-button-all" title="Today's daily across all groups">All</button>
-    </li>
-    <li>
-      <button id="muse-group-button" type="button" class="btn btn-primary group-button" data-value="muse"><img class="group-icon" loading="lazy" src="css/images/muse.png"></img></button><button id="aqours-group-button" type="button" class="btn btn-primary group-button" data-value="aqours"><img class="group-icon" loading="lazy" src="css/images/aqours.png"></img></button>
-    </li>
-    <li>
-      <button id="wug-group-button" type="button" class="btn btn-primary group-button" data-value="wug"><img class="group-icon" loading="lazy" src="css/images/wug.png"></img></button><button id="nijigasaki-group-button" type="button" class="btn btn-primary group-button" data-value="nijigasaki"><img class="group-icon" loading="lazy" src="css/images/nijigasaki.png"></img></button>
-    </li>
-    <li>
-      <button id="seventeen-group-button" type="button" class="btn btn-primary group-button" data-value="seventeen"><img class="group-icon" loading="lazy" src="css/images/seventeen.png"></img></button><button id="twice-group-button" type="button" class="btn btn-primary group-button" data-value="twice"><img class="group-icon" loading="lazy" src="css/images/twice.png"></img></button><button id="stray-kids-group-button" type="button" class="btn btn-primary group-button" data-value="stray-kids"><img class="group-icon" loading="lazy" src="css/images/stray-kids.png"></img></button><button id="bts-group-button" type="button" class="btn btn-primary group-button" data-value="bts"><img class="group-icon" loading="lazy" src="css/images/bts.png"></img></button>
-    </li>
-    <li class="has-feedback">
-      <input class="form-control" id="menu-search" autofocus></input>
-      <span class="glyphicon glyphicon-search form-control-feedback"></span>
-    </li>
-    <li class="sort-toggle-wrap">
-      <button type="button" class="sort-btn active" data-sort="date">Date</button><button type="button" class="sort-btn" data-sort="alpha">A–Z</button><button type="button" class="group-toggle-btn" id="group-toggle">Group</button>
-    </li>
-  </ul>
+  <!-- @include partials/sidebar-nav.html -->
   <img id="song-cover" src="" alt="" decoding="async" fetchpriority="high" style="display:none">
 </div>
 
@@ -309,6 +287,38 @@
       <div class="col-xs-4 col-sm-3 btn-group-vertical">
         <button type="button" class="btn btn-primary choice" data-value="6">Kaya (Kaya-tan)</button>
         <button type="button" class="btn btn-primary choice" data-value="7">Miyu (Myu)</button>
+      </div>
+    </div></div>
+  </div>
+</template>
+
+<template id="liella-slot-template">
+  <div class="row slot">
+    <div class="col-xs-12 col-md-2 slot-header">
+      <span class="label label-default timerange"></span>
+      <span class="jump-button glyphicon glyphicon-play" title="Jump" aria-hidden="true"></span>
+      <span class="check-slot-button glyphicon glyphicon-ok" aria-hidden="true" title="Check this line"></span>
+      <span class="reveal-button glyphicon glyphicon-search" title="Reveal answer" aria-hidden="true"></span>
+      <span class="reveal-off-button glyphicon glyphicon-search" title="Unreveal" aria-hidden="true"></span>
+      <span class="show-lyrics glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+    </div>
+    <div class="col-xs-12 col-md-10 slot-body"><div class="row">
+      <div class="col-xs-4 col-sm-offset-1 col-sm-3 btn-group-vertical">
+        <button type="button" class="btn btn-primary choice" data-value="1">Kanon (Sayurin)</button>
+        <button type="button" class="btn btn-primary choice" data-value="2">Keke (Li-chan)</button>
+        <button type="button" class="btn btn-primary choice" data-value="3">Chisato (Nakonako)</button>
+        <button type="button" class="btn btn-primary choice" data-value="4">Sumire (Paychan)</button>
+      </div>
+      <div class="col-xs-4 col-sm-3 btn-group-vertical">
+        <button type="button" class="btn btn-primary choice" data-value="5">Ren (Nagichan)</button>
+        <button type="button" class="btn btn-primary choice" data-value="6">Kinako (Nonchan)</button>
+        <button type="button" class="btn btn-primary choice" data-value="7">Mei (Yabuchan)</button>
+        <button type="button" class="btn btn-primary choice" data-value="8">Shiki (Kumachan)</button>
+      </div>
+      <div class="col-xs-4 col-sm-3 btn-group-vertical">
+        <button type="button" class="btn btn-primary choice" data-value="9">Natsumi (Emorin)</button>
+        <button type="button" class="btn btn-primary choice" data-value="10">Wien (Yuina)</button>
+        <button type="button" class="btn btn-primary choice" data-value="11">Tomari (Saku-chan)</button>
       </div>
     </div></div>
   </div>

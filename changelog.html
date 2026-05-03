@@ -7,6 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#fb96be">
 
+<script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.classList.add('dark-mode')}catch(e){}</script>
+
 <title>BubuDesuWho - Changelog</title>
 
 <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
@@ -20,25 +22,7 @@
 <body>
 
 <div id="sidebar" class="sidebar-collapsed">
-  <ul class="sidebar-nav">
-    <li><a class="select-info" href="index.html">About</a></li>
-    <li><a class="select-info active" href="changelog.html">Changelog</a></li>
-    <li><a class="select-info" href="stats.html">Stats</a></li>
-    <li><a class="select-info" href="bubudle.html">Bubudle</a></li>
-    <li>
-      <button id="muse-group-button" type="button" class="btn btn-primary group-button" data-value="muse"><img class="group-icon" loading="lazy" src="css/images/muse.png"></img></button><button id="aqours-group-button" type="button" class="btn btn-primary group-button" data-value="aqours"><img class="group-icon" loading="lazy" src="css/images/aqours.png"></img></button>
-    </li>
-    <li>
-      <button id="wug-group-button" type="button" class="btn btn-primary group-button" data-value="wug"><img class="group-icon" loading="lazy" src="css/images/wug.png"></img>
-    </li>
-    <li class="has-feedback">
-      <input class="form-control" id="menu-search" autofocus></input>
-      <span class="glyphicon glyphicon-search form-control-feedback"></span>
-    </li>
-    <li class="sort-toggle-wrap">
-      <button type="button" class="sort-btn active" data-sort="date">Date</button><button type="button" class="sort-btn" data-sort="alpha">A–Z</button><button type="button" class="group-toggle-btn" id="group-toggle">Group</button>
-    </li>
-  </ul>
+  <!-- @include partials/sidebar-nav.html -->
 </div>
 
 <div class="main">

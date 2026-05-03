@@ -8,11 +8,11 @@ import {
   getStorage, saveHistory, loadChoicesForSong, saveChoicesForSong,
 } from './storage';
 import * as player from './player';
-import { state } from './game-state';
+import { state, getSongTitle } from './game-state';
 
 // Re-exported so existing imports (`import { state } from './game'`) keep
 // working while non-player consumers can switch to the leaner `./game-state`.
-export { state } from './game-state';
+export { state, getSongTitle } from './game-state';
 
 const AUTOSAVE_INTERVAL = 2000;
 
@@ -107,7 +107,7 @@ export function loadSong(song: Song): void {
   const soundBase = isIOS && iosBase ? iosBase : import.meta.env.VITE_SOUND_BASE;
   const base = import.meta.env.BASE_URL;
   const resolveAudio = (path: string) =>
-    soundBase ? soundBase + path.replace(/^sound\/(?:kpop\/)?/, '') : base + path;
+    soundBase ? soundBase + path.replace(/^sound\/(?:[^/]+\/)?/, '') : base + path;
   // iOS Safari can't decode Opus-in-Ogg — pass the .m4a sibling so Howler
   // falls through to AAC when Ogg isn't playable.
   const m4aPath = song.ogg.replace(/\.ogg$/, '.m4a');
@@ -258,7 +258,9 @@ function highlightLyrics(time: number): void {
 function activateSlot(slot: Slot): void {
   slot.element?.classList.add('slot-active');
   slot.active = true;
-  if (state.autoscroll && slot.diff <= state.diff) scrollSlot(slot);
+  if (state.autoscroll && slot.diff <= state.diff) {
+    requestAnimationFrame(() => scrollSlot(slot));
+  }
 }
 
 function deactivateSlot(slot: Slot): void {
@@ -284,12 +286,15 @@ function scrollSlot(slot: Slot): void {
   const scrollTop = container.scrollTop;
   const scrollBottom = scrollTop + 0.7 * container.clientHeight;
 
+  // Instant scroll (not 'smooth') — smooth-scroll's compositor work over
+  // its 300–1000ms duration overlapped with slot-activation transitions and
+  // caused intermittent paint flicker. Snapping the scroll position avoids it.
   if (slotPos < scrollTop) {
-    container.scrollTo({ top: slotPos, behavior: 'smooth' });
+    container.scrollTo({ top: slotPos, behavior: 'auto' });
   } else if (slotPos > scrollBottom) {
     container.scrollTo({
       top: slotPos - (scrollBottom - scrollTop) / 1.4,
-      behavior: 'smooth',
+      behavior: 'auto',
     });
   }
 
@@ -314,11 +319,11 @@ function scrollLyric(lyric: LyricToken): void {
   const scrollBottom = scrollTop + 0.6 * container.clientHeight;
 
   if (lyricPos < scrollTop) {
-    container.scrollTo({ top: lyricPos, behavior: 'smooth' });
+    container.scrollTo({ top: lyricPos, behavior: 'auto' });
   } else if (lyricPos > scrollBottom) {
     container.scrollTo({
       top: lyricPos - (scrollBottom - scrollTop) / 1.2,
-      behavior: 'smooth',
+      behavior: 'auto',
     });
   }
 
@@ -476,6 +481,11 @@ export function toggleHints(val?: boolean): void {
   document.body.classList.toggle('hints-on', state.hints);
 }
 
+export function toggleInline(val?: boolean): void {
+  state.inline = val ?? !state.inline;
+  document.body.classList.toggle('inline-on', state.inline);
+}
+
 // ─── Difficulty ─────────────────────────────────────────────────────
 export function toggleDiff(val?: number): void {
   if (val != null) {
@@ -591,6 +601,19 @@ export function hasJpLyrics(): boolean {
   return state.lyrics.some((l) => l.textJp != null && l.textJp !== '');
 }
 
+/** Walk all elements that were rendered with both name+name_jp data
+ *  attributes and rewrite their textContent to match the current toggle.
+ *  Called from toggleJpLyrics so sidebar / header / results all stay in
+ *  sync without re-rendering. */
+function refreshSongTitleElements(): void {
+  const els = document.querySelectorAll<HTMLElement>('[data-song-name-jp]');
+  els.forEach((el) => {
+    const en = el.dataset.songName ?? '';
+    const jp = el.dataset.songNameJp ?? '';
+    el.textContent = state.jpLyrics && jp ? jp : en;
+  });
+}
+
 export function toggleJpLyrics(val?: boolean): void {
   state.jpLyrics = val ?? !state.jpLyrics;
   for (const lyric of state.lyrics) {
@@ -607,6 +630,12 @@ export function toggleJpLyrics(val?: boolean): void {
     }
     // Reset per-sub-part tracking; revealLyrics below re-applies correct classes.
     lyric.activeJpPartId = undefined;
+  }
+  refreshSongTitleElements();
+  // Also keep the document title (browser tab) in sync with the toggle.
+  if (state.song) {
+    const brand = import.meta.env.VITE_APP_MODE === 'kpop' ? 'Whoranghae' : 'BubuDesuWho';
+    document.title = `${brand} - ${getSongTitle(state.song)}`;
   }
   revealLyrics();
 }
@@ -752,6 +781,10 @@ function loadPlaySettings(): void {
   const hints = getStorage('hints');
   state.hints = hints === 'true';
   document.body.classList.toggle('hints-on', state.hints);
+
+  const inline = getStorage('inline');
+  state.inline = inline === 'true';
+  document.body.classList.toggle('inline-on', state.inline);
 }
 
 export function restoreChoices(): void {

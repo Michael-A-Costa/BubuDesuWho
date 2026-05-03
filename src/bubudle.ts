@@ -1,6 +1,6 @@
 import { Song, Slot, SlotState, LineObject, MappingEntry, GroupName, MEMBER_MAPPING } from './types';
 import { loadConfig } from './config';
-import { state, initGameState, loadSong, checkSlot, toggleChoice, toggleReveal } from './game';
+import { state, initGameState, loadSong, checkSlot, toggleChoice, toggleReveal, getSongTitle } from './game';
 import { initThemeToggle, switchTheme, buildSlotSkeleton } from './ui';
 import { initKofi } from './kofi';
 import { buildMenu, toggleMenu } from './ui-menu';
@@ -163,17 +163,26 @@ function createBubudleSlot(slot: Slot, singers: number[]): HTMLElement {
     }
   }
 
-  // Build layout: col1 | shortcutsLeft | col2 | shortcutsRight | col3
-  // Using same Bootstrap grid as the templates
-  row.appendChild(makeCol('col-xs-4 col-sm-offset-1 col-sm-2 btn-group-vertical', memberCols[0]));
+  // Build layout: col1 | shortcutsLeft | col2 | shortcutsRight | col3.
+  // With shortcut cols: 3 member cols at col-sm-2 + 2 shortcut cols at col-sm-2
+  // = 10/12 grid width. Pulls on cols 1 and 2 slide them past the inserted
+  // shortcut cols so visual order stays members-shortcuts-members-shortcuts-members.
+  // Without shortcut cols (e.g. liella): widen member cols to col-sm-3 so the row
+  // still fills 10/12 and stays centered, and drop the pulls (nothing to slide past).
+  const hasShortcutCols = leftShortcutBtns.length > 0 || rightShortcutBtns.length > 0;
+  const memberW = hasShortcutCols ? 'col-sm-2' : 'col-sm-3';
+  const col1Pull = leftShortcutBtns.length > 0 ? ' col-sm-pull-2' : '';
+  const col2Pull = (leftShortcutBtns.length > 0 ? 2 : 0) + (rightShortcutBtns.length > 0 ? 2 : 0);
+  const col2PullCls = col2Pull > 0 ? ` col-sm-pull-${col2Pull}` : '';
+  row.appendChild(makeCol(`col-xs-4 col-sm-offset-1 ${memberW} btn-group-vertical`, memberCols[0]));
   if (leftShortcutBtns.length > 0) {
     row.appendChild(makeCol('hidden-xs col-sm-push-4 col-sm-2 btn-group-vertical', leftShortcutBtns));
   }
-  row.appendChild(makeCol('col-xs-4 col-sm-pull-2 col-sm-2 btn-group-vertical', memberCols[1]));
+  row.appendChild(makeCol(`col-xs-4${col1Pull} ${memberW} btn-group-vertical`, memberCols[1]));
   if (rightShortcutBtns.length > 0) {
     row.appendChild(makeCol('hidden-xs col-sm-push-2 col-sm-2 btn-group-vertical', rightShortcutBtns));
   }
-  row.appendChild(makeCol('col-xs-4 col-sm-pull-4 col-sm-2 btn-group-vertical', memberCols[2]));
+  row.appendChild(makeCol(`col-xs-4${col2PullCls} ${memberW} btn-group-vertical`, memberCols[2]));
 
   // Mobile-only row: shortcuts laid out horizontally below the member grid.
   // Desktop uses the hidden-xs shortcut cols above; xs swaps to this block.
@@ -453,7 +462,7 @@ export async function initBubudlePage(): Promise<void> {
 
 function applyGroupClass(group: GroupName): void {
   const html = document.documentElement;
-  html.classList.remove('group-muse', 'group-aqours', 'group-wug', 'group-nijigasaki');
+  html.classList.remove('group-muse', 'group-aqours', 'group-wug', 'group-nijigasaki', 'group-liella');
   html.classList.add(`group-${group}`);
 }
 
@@ -1258,7 +1267,9 @@ function revealSongName(song: Song): void {
   value.className = 'hint-value';
   const a = document.createElement('a');
   a.href = `play.html#${song.id}`;
-  a.textContent = song.name;
+  a.dataset.songName = song.name;
+  if (song.name_jp) a.dataset.songNameJp = song.name_jp;
+  a.textContent = getSongTitle(song);
   value.appendChild(a);
   el.appendChild(label);
   el.appendChild(value);

@@ -1,6 +1,6 @@
 import { loadIndex, loadChangelog } from './config';
 import { buildMenu } from './ui-menu';
-import { getStorage, setStorage, loadHistory } from './storage';
+import { getStorage, setStorage } from './storage';
 import { getGroupColor } from './labels';
 import { escapeRegExp } from './utils';
 
@@ -84,47 +84,3 @@ export async function initChangelogPage(): Promise<void> {
   }
 }
 
-export async function initStatsPage(): Promise<void> {
-  const songs = await loadIndex();
-  buildMenu(songs);
-  initThemeToggle();
-
-  const container = document.getElementById('stats-history');
-  if (!container) return;
-
-  const hist = loadHistory();
-  const nameToSong = new Map(songs.map((s) => [s.name, s]));
-
-  for (let i = hist.length - 1; i >= 0; i--) {
-    const entry = hist[i];
-    const song = nameToSong.get(entry.songName);
-
-    const li = document.createElement('li');
-    li.className = 'history-entry';
-
-    const dateSpan = document.createElement('span');
-    dateSpan.className = 'history-date';
-    dateSpan.textContent = entry.date;
-
-    const nameA = document.createElement('a');
-    nameA.className = 'history-song-name';
-    nameA.textContent = entry.songName;
-    if (song) {
-      nameA.href = `play.html#${song.id}`;
-      const color = getGroupColor(song.group);
-      if (color) nameA.classList.add(color);
-    }
-
-    let correct = 0;
-    for (const [choices, ans] of entry.slots) {
-      if (choices.length === ans.length && choices.every((v, j) => v === ans[j])) correct++;
-    }
-    const resultSpan = document.createElement('span');
-    resultSpan.className = 'history-result';
-    resultSpan.textContent = `(${correct}/${entry.slots.length})`;
-    if (correct === entry.slots.length) resultSpan.classList.add('all-correct');
-
-    li.append(dateSpan, ': ', nameA, ' ', resultSpan);
-    container.appendChild(li);
-  }
-}

@@ -39,7 +39,7 @@
     "",
     {"lyric": "Mebaeta Tokimeki wakeaitakute",
       "lyric_jp": "芽生えたときめき 分け合いたくて",
-      "range": [49.26, 54.61], "ans": [11, 12], "diff": 2},
+      "range": [49.26, 54.61], "ans": [12, 11], "diff": 2},
     {"lyric": "Motto Motto todoketai yo ima",
       "lyric_jp": "もっともっと 届けたいよ 今",
       "range": [54.61, 59.98], "ans": [5, 7], "diff": 2},
@@ -76,10 +76,10 @@
     "",
     {"lyric": "Itsudatte sutaato shita tte iinda ne",
       "lyric_jp": "いつだってスタートしたっていいんだね",
-      "range": [90.52, 96.33], "ans": [11]},
+      "range": [90.52, 96.33], "ans": [12]},
     {"lyric": "Tobira wa itsudemo hiraiteru kara",
       "lyric_jp": "扉はいつでも開いてるから",
-      "range": [96.33, 101.45], "ans": [12]},
+      "range": [96.33, 101.45], "ans": [11]},
     "",
     {"lyric": "Jiyuu ni oyogou",
       "lyric_jp": "自由に泳ごう",
@@ -132,14 +132,14 @@
       "range": [156.18, 167], "ans": [2, 3, 9, 10], "diff": 3},
     {"lyric": "Doko Ni itemo hitori janai ne",
       "lyric_jp": "どこにいても ひとりじゃないね",
-      "range": [167, 172.78], "ans": [1, 5, 7, 12], "diff": 3},
+      "range": [167, 172.78], "ans": [1, 5, 7, 11], "diff": 3},
     {
       "lyric_jp": "わたしたち夢で繋がってるんだ",
       "parts": [
         {"lyric": "Watashitachi",
-          "range": [172.78, 174.28], "ans": [4, 6, 8, 11], "diff": 3},
+          "range": [172.78, 174.28], "ans": [4, 6, 8, 12], "diff": 3},
         {"lyric": "Yume de tsunagatterunda",
-          "range": [174.28, 180], "ans": [4, 6, 8, 11], "diff": 3}
+          "range": [174.28, 180], "ans": [4, 6, 8, 12], "diff": 3}
       ]
     },
     "",
@@ -148,7 +148,7 @@
       "range": [194.38, 197.55], "ans": [1]},
     {"lyric": "Omoi Kasanaru shunkan",
       "lyric_jp": "思い重なる瞬間",
-      "range": [197.55, 202.89], "ans": [1, 5, 7, 12], "diff": 3},
+      "range": [197.55, 202.89], "ans": [1, 5, 7, 11], "diff": 3},
     "",
     {"lyric": "Love The Life We Live!!",
       "lyric_jp": "Love the life we live!!",

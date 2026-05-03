@@ -1,0 +1,25 @@
+{
+  "slug": "liella",
+  "name": "Liella!",
+  "nameNative": "Liella!",
+  "nativeScript": "ja",
+  "members": [
+    { "id": 1,  "name": "Kanon",   "nameNative": "かのん",   "color": "#FF7F27", "colorOfficial": "#FF7F27" },
+    { "id": 2,  "name": "Keke",    "nameNative": "可可",     "color": "#A0FFF9", "colorOfficial": "#A0FFF9" },
+    { "id": 3,  "name": "Chisato", "nameNative": "千砂都",   "color": "#FF6E90", "colorOfficial": "#FF6E90" },
+    { "id": 4,  "name": "Sumire",  "nameNative": "すみれ",   "color": "#74F466", "colorOfficial": "#74F466" },
+    { "id": 5,  "name": "Ren",     "nameNative": "恋",       "color": "#0000A0", "colorOfficial": "#0000A0" },
+    { "id": 6,  "name": "Kinako",  "nameNative": "きな子",   "color": "#FFF442", "colorOfficial": "#FFF442" },
+    { "id": 7,  "name": "Mei",     "nameNative": "メイ",     "color": "#FF3535", "colorOfficial": "#FF3535" },
+    { "id": 8,  "name": "Shiki",   "nameNative": "四季",     "color": "#B2FFDD", "colorOfficial": "#B2FFDD" },
+    { "id": 9,  "name": "Natsumi", "nameNative": "夏美",     "color": "#FF51C4", "colorOfficial": "#FF51C4" },
+    { "id": 10, "name": "Wien",    "nameNative": "ウィーン", "color": "#E49DFD", "colorOfficial": "#E49DFD", "aliases": ["ウィーン・マルガレーテ", "マルガレーテ"] },
+    { "id": 11, "name": "Tomari",  "nameNative": "冬毬",     "color": "#76DDE9", "colorOfficial": "#76DDE9", "aliases": ["鬼塚冬毬", "鬼塚"] }
+  ],
+  "subunits": [
+    { "name": "CatChu!",       "memberIds": [1, 4, 7] },
+    { "name": "KALEIDOSCORE",  "memberIds": [2, 5, 10] },
+    { "name": "5yncri5e!",     "memberIds": [3, 6, 8, 9, 11] }
+  ],
+  "colorClass": "liella-purple"
+}

@@ -1,0 +1,367 @@
+{
+  "name": "MONSTER GIRLS",
+  "ogg": "sound/monster_girls.ogg",
+  "id": "monster-girls",
+  "group": "nijigasaki",
+  "language": "ja",
+  "added": "2026-05",
+  "generated": "2026-05-01T20:50:13Z",
+  "hidden": false,
+  "slots": [],
+  "lines": [
+    {"lyric": "Shin jidai We are the \"Monster girls\"",
+      "lyric_jp": "新時代 we are the \"Monster girls\"",
+      "range": [10.42, 15.44], "ans": [11]},
+    {
+      "lyric": "Saa Go on everybody!",
+      "lyric_jp": "さあ go on everybody!",
+      "parts": [
+        {"lyric": "Saa Ride on everybody!",
+          "lyric_jp": "さあRide on everybody！",
+          "range": [15.44, 16.79], "ans": [11]},
+        {"lyric": "Saa Go on everybody!",
+          "lyric_jp": "さあGo on everybody！",
+          "range": [16.09, 18.26], "ans": [10]}
+      ]
+    },
+    {"lyric": "Sara naru New world We are the stars!",
+      "lyric_jp": "更なる new world we are the stars!",
+      "range": [18.26, 21.82], "ans": [10]},
+    "",
+    {
+      "lyric": "Shuu juu现开谁 so拦 juu!",
+      "lyric_jp": "就从现在开始 谁也阻拦不住！",
+      "parts": [
+        {"lyric": "Shuu juu genzai kaishi... dare ya so fujuu!!!",
+          "lyric_jp": "就从現在開始...　誰也阻不住！！！",
+          "range": [21.82, 22.6], "ans": [12]},
+        {"lyric": "(Ji u c o ng xi a nz a i kā i kishǐ i kish... Shu i yě y zǔ y z b u zh u!!!)",
+          "lyric_jp": "(Jiù cóng xiànzài kāishǐ... Shuí yě zǔ bù zhù!!!)",
+          "range": [22.6, 26.61], "ans": [12]}
+      ]
+    },
+    {
+      "lyric": "You know who it is",
+      "lyric_jp": "You know who it is",
+      "parts": [
+        {"lyric": "You know who it is?",
+          "lyric_jp": "You know who it is?",
+          "range": [26.61, 27.78], "ans": [11]},
+        {"lyric": "Ware们 (Wǒ (Wmen sh i)",
+          "lyric_jp": "我们是(Wǒmen shì)",
+          "range": [27.08, 28.04], "ans": [10, 11, 12]}
+      ]
+    },
+    {"lyric": "Wǒmen shì \"Monster girls\"",
+      "lyric_jp": "我们是 \"Monster girls\"",
+      "range": [28.04, 30.57], "ans": [10, 11, 12]},
+    "",
+    {"lyric": "Come on come on...",
+      "lyric_jp": "Come on come on...",
+      "range": [30.57, 34.29], "ans": []},
+    {"lyric": "Kono sekai wa maru de sabaibaru",
+      "lyric_jp": "この世界はまるでサバイバル",
+      "range": [44.67, 48.45], "ans": [10]},
+    {"lyric": "Tsugi no emono wa koko ni aru mitai",
+      "lyric_jp": "谁能留在舞台上？",
+      "range": [48.45, 49.8], "ans": [12]},
+    {"lyric": "Say! Loud! Loud! Loud!",
+      "lyric_jp": "Say! Loud! Loud! Loud!",
+      "range": [49.8, 51.21], "ans": [12]},
+    {"lyric": "Me ga kuramu hodo Super cute & cool",
+      "lyric_jp": "目が眩む程 super cute & cool",
+      "range": [51.21, 54.65], "ans": [11]},
+    {"lyric": "Kikasete",
+      "lyric_jp": "聞かせて",
+      "range": [54.65, 55.52], "ans": [10]},
+    {"lyric": "Tsugi no emono wa koko ni aru mitai",
+      "lyric_jp": "谁能留在舞台上？",
+      "range": [55.52, 57.56], "ans": [12]},
+    {"lyric": "Say! Loud! Loud! Loud!",
+      "lyric_jp": "Say! Loud! Loud! Loud!",
+      "range": [57.56, 59.26], "ans": [12]},
+    {"lyric": "Toppu supiido de kakeagaru kono rizumu",
+      "lyric_jp": "トップスピードで駆け上がるこのリズム",
+      "range": [59.26, 64.18], "ans": [11]},
+    {"lyric": "Furiotosarenai you ni ne?",
+      "lyric_jp": "振り落とされないようにね？",
+      "range": [64.18, 65.94], "ans": [10]},
+    {"lyric": "Narase!",
+      "lyric_jp": "我们的时代",
+      "range": [65.94, 68.25], "ans": [12]},
+    {"lyric": "Ain't nobody outstrip us, baby",
+      "lyric_jp": "Ain't nobody outstrip us, baby",
+      "range": [68.25, 71.16], "ans": [12]},
+    {
+      "lyric": "follow, follow me now Kamase!",
+      "lyric_jp": "Follow, follow me now かませ！",
+      "parts": [
+        {"lyric": "Follow, follow me now",
+          "lyric_jp": "Follow, follow me now",
+          "range": [71.16, 74.19], "ans": [11]},
+        {"lyric": "Kamase!",
+          "lyric_jp": "かませ！",
+          "range": [74.19, 74.57], "ans": [11]}
+      ]
+    },
+    {
+      "lyric": "Monster girls!! Saisoku de ajiwau",
+      "lyric_jp": "Monster girls!! 最速で味わう",
+      "parts": [
+        {"lyric": "Monster girls!!",
+          "lyric_jp": "Monster girls！！",
+          "range": [74.47, 77.4], "ans": [10, 11, 12]},
+        {"lyric": "Saisoku de ajiwa u",
+          "lyric_jp": "最速で味わう",
+          "range": [76.7, 78.1], "ans": [10]}
+      ]
+    },
+    {
+      "lyric": "Monster girls!! Kyou no oishii tokoro",
+      "lyric_jp": "Monster girls!! 今日のオイシイところ",
+      "parts": [
+        {"lyric": "Monster girls!!",
+          "lyric_jp": "Monster girls！！",
+          "range": [78.1, 80.92], "ans": [10, 11, 12]},
+        {"lyric": "Kyou no oishii tokoro",
+          "lyric_jp": "今日のオイシイところ",
+          "range": [80.22, 81.76], "ans": [12]}
+      ]
+    },
+    {
+      "lyric": "Monster girls!! Kimi no heart mo tsukamaechau",
+      "lyric_jp": "Monster girls!! 君のheartも捕まえちゃう",
+      "parts": [
+        {"lyric": "Monster girls!!",
+          "lyric_jp": "Monster girls！！",
+          "range": [81.76, 85.45], "ans": [10, 11, 12]},
+        {"lyric": "Kun no heart mo tsukama echau",
+          "lyric_jp": "君のheartも捕まえちゃう",
+          "range": [84.75, 87.15], "ans": [11]}
+      ]
+    },
+    {"lyric": "Hold on! Hanasanai wa",
+      "lyric_jp": "Hold on! 離さないわ",
+      "range": [87.15, 89.13], "ans": [10, 11, 12]},
+    "",
+    {"lyric": "Takamaru Bring the noise",
+      "lyric_jp": "高まる bring the noise",
+      "range": [89.13, 93.3], "ans": [12]},
+    {"lyric": "Furuwaseru Speakers \"boom! boom!\"",
+      "lyric_jp": "震わせる speakers \"Boom! Boom!\"",
+      "range": [93.3, 96.44], "ans": [11]},
+    "",
+    {"lyric": "Monster girls!! Kimi no heart mo tsukamaechau",
+      "lyric_jp": "Monster girls!! 君のheartも捕まえちゃう",
+      "range": [96.44, 101.99], "ans": [10]},
+    {"lyric": "Hold on hanasanai wa",
+      "lyric_jp": "Hold on 離さないわ",
+      "range": [101.99, 106.13], "ans": [10, 11, 12]},
+    "",
+    {"lyric": "Toki ni fui o tsuku kono sutairu",
+      "lyric_jp": "時に不意をつくこのスタイル",
+      "range": [111.02, 114.54], "ans": [11]},
+    {"lyric": "Ware sou给惊",
+      "lyric_jp": "我想给你惊喜",
+      "range": [114.54, 116.06], "ans": [12]},
+    {"lyric": "Like a electronic flash!!",
+      "lyric_jp": "Like a electronic flash!!",
+      "range": [116.06, 117.75], "ans": [12]},
+    {"lyric": "In a moment saikyou no inpakuto",
+      "lyric_jp": "In a moment 最強のインパクト",
+      "range": [117.75, 121.35], "ans": [10]},
+    {"lyric": "Ikashiteru",
+      "lyric_jp": "イカしてる",
+      "range": [121.35, 121.93], "ans": [11]},
+    {"lyric": "Ware sou给惊",
+      "lyric_jp": "我想给你惊喜",
+      "range": [121.93, 124.1], "ans": [12]},
+    {"lyric": "Like a electronic flash!!",
+      "lyric_jp": "Like a electronic flash!!",
+      "range": [124.1, 125.61], "ans": [12]},
+    {"lyric": "Tsugi no emono wa koko ni aru mitai",
+      "lyric_jp": "次の獲物はここにあるみたい",
+      "range": [125.61, 130.35], "ans": [11]},
+    {"lyric": "Hold on! Hanasanai wa",
+      "lyric_jp": "在那里等我吧",
+      "range": [130.35, 132.41], "ans": [12]},
+    {"lyric": "Hibiku sairen saa koe o kikasete baby",
+      "lyric_jp": "響くサイレン さあ声を聞かせてbaby",
+      "range": [132.41, 137.53], "ans": [10]},
+    {
+      "lyric": "We are We are the one! Narase!",
+      "lyric_jp": "We are we are the one! 鳴らせ！",
+      "parts": [
+        {"lyric": "We are We are the one!",
+          "lyric_jp": "We are We are the one！",
+          "range": [137.53, 140.75], "ans": [11]},
+        {"lyric": "Nara se!",
+          "lyric_jp": "鳴らせ！",
+          "range": [140.06, 140.8], "ans": [10]}
+      ]
+    },
+    {
+      "lyric": "Monster girls!! Tsumeato ga hikaru",
+      "lyric_jp": "Monster girls!! ツメ痕が光る",
+      "parts": [
+        {"lyric": "Monster girls!!",
+          "lyric_jp": "Monster girls！！",
+          "range": [140.75, 143.84], "ans": [10, 11, 12]},
+        {"lyric": "Tsume ato ga hikaru",
+          "lyric_jp": "ツメ痕が光る",
+          "range": [143.14, 144.51], "ans": [12]}
+      ]
+    },
+    {
+      "lyric": "Monster girls!! Mitaiken eria ni",
+      "lyric_jp": "Monster girls!! 未体験エリアに",
+      "parts": [
+        {"lyric": "Monster girls!!",
+          "lyric_jp": "Monster girls！！",
+          "range": [144.5, 147.55], "ans": [10, 11, 12]},
+        {"lyric": "Mitaiken eria ni",
+          "lyric_jp": "未体験エリアに",
+          "range": [146.85, 148.26], "ans": [11]}
+      ]
+    },
+    {
+      "lyric": "Monster girls!! Kimi o izanaou nando datte",
+      "lyric_jp": "Monster girls!! 君を誘おう何度だって",
+      "parts": [
+        {"lyric": "Monster girls!!",
+          "lyric_jp": "Monster girls！！",
+          "range": [148.26, 152.57], "ans": [10, 11, 12]},
+        {"lyric": "Kun o sasoo u nando datte",
+          "lyric_jp": "君を誘おう何度だって",
+          "range": [151.87, 153.43], "ans": [10]}
+      ]
+    },
+    {"lyric": "Mou modorenai wa",
+      "lyric_jp": "もう戻れないわ",
+      "range": [153.43, 157.38], "ans": [10, 11, 12]},
+    "",
+    {"lyric": "Can't stop the feeling",
+      "lyric_jp": "Can't stop the feeling",
+      "range": [157.38, 161.03], "ans": [11]},
+    {"lyric": "Can't stop the feeling",
+      "lyric_jp": "Can't stop the feeling",
+      "range": [161.03, 164.46], "ans": [11]},
+    {
+      "lyric": "谁 so拦 juu ah!",
+      "lyric_jp": "谁也阻拦不住 ah!",
+      "parts": [
+        {"lyric": "Dare ya so fujuu (Shu i yě y zǔ y z b u zh u)",
+          "lyric_jp": "誰也阻不住(Shuí yě zǔ bù zhù)",
+          "range": [166.87, 167.91], "ans": [12]},
+        {"lyric": "Ah..!",
+          "lyric_jp": "Ah..！",
+          "range": [167.91, 170.52], "ans": [12]}
+      ]
+    },
+    {"lyric": "Attouteki sonzaikan",
+      "lyric_jp": "圧倒的存在感",
+      "range": [170.52, 172.2], "ans": [11]},
+    {"lyric": "Kainarasu koto wa dekinai wa",
+      "lyric_jp": "飼いならすことはできないわ",
+      "range": [172.2, 173.95], "ans": [11]},
+    {"lyric": "Level up! Level up! Level up!",
+      "lyric_jp": "Level up! Level up! Level up!",
+      "range": [173.95, 175.03], "ans": [11]},
+    {"lyric": "Sara ni koko kara kasoku tomaranai shinka",
+      "lyric_jp": "さらにここから加速 止まれない進化",
+      "range": [175.03, 178.28], "ans": [10]},
+    {
+      "lyric": "Kazuki chou mai吧 (let's go)",
+      "lyric_jp": "一起跳舞吧！(let's go)",
+      "parts": [
+        {"lyric": "Kazuki chou mai吧 (Yī (Yqǐ (Yq ti a owǔ ow ba!)",
+          "lyric_jp": "一起跳舞吧！(Yīqǐ tiàowǔ ba!)",
+          "range": [178.28, 179.93], "ans": [12]},
+        {"lyric": "(Let‘ s go)",
+          "lyric_jp": "(Let‘s go)",
+          "range": [179.23, 180.09], "ans": [10]}
+      ]
+    },
+    {
+      "lyric": "Yīqǐ chàng ba! (Right now)",
+      "lyric_jp": "一起唱吧！(right now)",
+      "parts": [
+        {"lyric": "Kazuki shou吧 (Yī (Yqǐ (Yq ch a ng ba)",
+          "lyric_jp": "一起唱吧！(Yīqǐ chàng ba)",
+          "range": [180.09, 180.88], "ans": [12]},
+        {"lyric": "(Right now)",
+          "lyric_jp": "(Right now)",
+          "range": [180.18, 181.77], "ans": [10]}
+      ]
+    },
+    {"lyric": "Stand on top we can take it",
+      "lyric_jp": "Stand on top we can take it",
+      "range": [181.18, 182.32], "ans": [11]},
+    {"lyric": "Nobanashi wa Danger.. Danger..",
+      "lyric_jp": "野放しは danger, danger",
+      "range": [182.32, 184.69], "ans": [11]},
+    "",
+    {
+      "lyric": "Put your hands in the air! Ima hitotsu ni naru",
+      "lyric_jp": "Put your hands in the air! 今ひとつになる",
+      "parts": [
+        {"lyric": "Put your hands in the air!",
+          "lyric_jp": "Put your hands in the air！",
+          "range": [184.69, 188.5], "ans": [10, 11, 12]},
+        {"lyric": "Ima hitotsuninaru",
+          "lyric_jp": "今ひとつになる",
+          "range": [187.8, 188.95], "ans": [12]}
+      ]
+    },
+    {
+      "lyric": "Hands in the air! Come on saigo made Kamase!",
+      "lyric_jp": "Hands in the air! Come on 最後まで かませ！",
+      "parts": [
+        {"lyric": "Hands in the air!",
+          "lyric_jp": "Hands in the air！",
+          "range": [188.95, 190.81], "ans": [10, 11, 12]},
+        {"lyric": "Come on saigo made",
+          "lyric_jp": "Come on　最後まで",
+          "range": [190.25, 192.47], "ans": [10]},
+        {"lyric": "Kamase!",
+          "lyric_jp": "かませ！",
+          "range": [193.4, 194.38], "ans": [12]}
+      ]
+    },
+    {"lyric": "Monster girls!! Saisoku de ajiwau",
+      "lyric_jp": "Monster girls!! 最速で味わう",
+      "range": [194.38, 198.0], "ans": [10, 11, 12]},
+    {"lyric": "Monster girls!! Kyou no oishii tokoro",
+      "lyric_jp": "Monster girls!! 今日のオイシイところ",
+      "range": [198.0, 201.73], "ans": [10, 11, 12]},
+    {"lyric": "Monster girls!! Kimi no heart mo tsukamaechau",
+      "lyric_jp": "Monster girls!! 君のheartも捕まえちゃう",
+      "range": [201.73, 207.13], "ans": [10, 11, 12]},
+    {"lyric": "Hold on! Hanasanai wa",
+      "lyric_jp": "Hold on! 離さないわ",
+      "range": [207.13, 209.16], "ans": [10, 11, 12]},
+    "",
+    {"lyric": "Takamaru Bring the noise",
+      "lyric_jp": "高まる bring the noise",
+      "range": [209.16, 213.26], "ans": [10]},
+    {"lyric": "Furuwaseru Speakers \"boom! boom!\"",
+      "lyric_jp": "震わせる speakers \"Boom! Boom!\"",
+      "range": [213.26, 216.41], "ans": [11]},
+    "",
+    {
+      "lyric": "Monster girls!! Kimi no heart mo tsukamaechau",
+      "lyric_jp": "Monster girls!! 君のheartも捕まえちゃう",
+      "parts": [
+        {"lyric": "Monster girls!!",
+          "lyric_jp": "Monster girls！！",
+          "range": [216.41, 220.2], "ans": [10, 11, 12]},
+        {"lyric": "Kun no heart mo tsukama echau",
+          "lyric_jp": "君のheartも捕まえちゃう",
+          "range": [219.5, 221.83], "ans": [12]}
+      ]
+    },
+    {"lyric": "Hold on hanasanai wa",
+      "lyric_jp": "Hold on 離さないわ",
+      "range": [221.83, 226.03], "ans": [10, 11, 12]}
+  ]
+}

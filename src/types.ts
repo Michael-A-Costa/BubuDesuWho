@@ -21,6 +21,9 @@ export type LineEntry = string | LineObject;
 /** Raw song config as loaded from config.json */
 export interface SongConfig {
   name: string;
+  /** Optional JP-original title; when present, the JP toggle swaps the
+   *  rendered title between `name` (romanized) and `name_jp`. */
+  name_jp?: string;
   ogg: string;
   id: string;
   group: GroupName;
@@ -156,6 +159,7 @@ export interface Song extends SongConfig {
 export interface MenuSong {
   id: string;
   name: string;
+  name_jp?: string;
   group: GroupName;
   menu?: GroupName;
   hidden?: boolean;
@@ -189,6 +193,7 @@ export interface GameState {
   callSFX: boolean;
   globalReveal: boolean;
   hints: boolean;
+  inline: boolean;
   loaded: Date | null;
   assObjectURL: string;
   lastProgressUpdate: number | null;

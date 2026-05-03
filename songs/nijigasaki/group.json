@@ -14,8 +14,8 @@
     { "id": 8,  "name": "Emma",     "nameNative": "エマ",   "color": "#84C36E", "colorOfficial": "#84C36E" },
     { "id": 9,  "name": "Rina",     "nameNative": "璃奈",   "color": "#9CA5B9", "colorOfficial": "#9CA5B9" },
     { "id": 10, "name": "Shioriko", "nameNative": "栞子",   "color": "#37B484", "colorOfficial": "#37B484" },
-    { "id": 11, "name": "Lanzhu",   "nameNative": "ランジュ","color": "#F8C8C4", "colorOfficial": "#F8C8C4" },
-    { "id": 12, "name": "Mia",      "nameNative": "ミア",   "color": "#A9A898", "colorOfficial": "#A9A898" },
+    { "id": 11, "name": "Mia",      "nameNative": "ミア",   "color": "#A9A898", "colorOfficial": "#A9A898" },
+    { "id": 12, "name": "Lanzhu",   "nameNative": "ランジュ","color": "#F8C8C4", "colorOfficial": "#F8C8C4", "aliases": ["鐘嵐珠"] },
     { "id": 13, "name": "Yu",       "nameNative": "優",     "color": "#1D1D1D", "colorOfficial": "#1D1D1D" }
   ],
   "subunits": [
@@ -24,7 +24,7 @@
     { "name": "QU4RTZ",    "memberIds": [2, 6, 8, 9] },
     { "name": "R3BIRTH",   "memberIds": [10, 11, 12] },
     { "name": "1st years", "memberIds": [2, 3, 9, 10] },
-    { "name": "2nd years", "memberIds": [1, 5, 7, 11] },
-    { "name": "3rd years", "memberIds": [4, 6, 8, 12] }
+    { "name": "2nd years", "memberIds": [1, 5, 7, 12] },
+    { "name": "3rd years", "memberIds": [4, 6, 8, 11] }
   ]
 }

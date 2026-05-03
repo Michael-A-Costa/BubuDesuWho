@@ -7,6 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#fb96be">
 
+<script>try{if(localStorage.getItem('theme')==='dark')document.documentElement.classList.add('dark-mode')}catch(e){}</script>
+
 <title>BubuDesuWho</title>
 
 <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
@@ -20,28 +22,7 @@
 <body>
 
 <div id="sidebar" class="sidebar-collapsed">
-  <ul class="sidebar-nav">
-    <li><a class="select-info active" href="index.html">About</a></li>
-    <li><a class="select-info" href="changelog.html">Changelog</a></li>
-    <li><a class="select-info" href="stats.html">Stats</a></li>
-    <li><a class="select-info" href="bubudle.html">Bubudle</a></li>
-    <li>
-      <button id="muse-group-button" type="button" class="btn btn-primary group-button" data-value="muse"><img class="group-icon" loading="lazy" src="css/images/muse.png"></img></button><button id="aqours-group-button" type="button" class="btn btn-primary group-button" data-value="aqours"><img class="group-icon" loading="lazy" src="css/images/aqours.png"></img></button>
-    </li>
-    <li>
-      <button id="wug-group-button" type="button" class="btn btn-primary group-button" data-value="wug"><img class="group-icon" loading="lazy" src="css/images/wug.png"></img></button><button id="nijigasaki-group-button" type="button" class="btn btn-primary group-button" data-value="nijigasaki"><img class="group-icon" loading="lazy" src="css/images/nijigasaki.png"></img></button>
-    </li>
-    <li>
-      <button id="seventeen-group-button" type="button" class="btn btn-primary group-button" data-value="seventeen"><img class="group-icon" loading="lazy" src="css/images/seventeen.png"></img></button><button id="twice-group-button" type="button" class="btn btn-primary group-button" data-value="twice"><img class="group-icon" loading="lazy" src="css/images/twice.png"></img></button><button id="stray-kids-group-button" type="button" class="btn btn-primary group-button" data-value="stray-kids"><img class="group-icon" loading="lazy" src="css/images/stray-kids.png"></img></button><button id="bts-group-button" type="button" class="btn btn-primary group-button" data-value="bts"><img class="group-icon" loading="lazy" src="css/images/bts.png"></img></button>
-    </li>
-    <li class="has-feedback">
-      <input class="form-control" id="menu-search" autofocus></input>
-      <span class="glyphicon glyphicon-search form-control-feedback"></span>
-    </li>
-    <li class="sort-toggle-wrap">
-      <button type="button" class="sort-btn active" data-sort="date">Date</button><button type="button" class="sort-btn" data-sort="alpha">A–Z</button><button type="button" class="group-toggle-btn" id="group-toggle">Group</button>
-    </li>
-  </ul>
+  <!-- @include partials/sidebar-nav.html -->
 </div>
 
 <div class="main">
@@ -67,8 +48,9 @@
       <hr>
       <p><strong>BubuDesuWho</strong> tests your ability to recognize individual singers in
       <span class="muse-pink">μ's</span>,
-      <span class='aqours-blue'>Aqours</span>, and
-      <span style="color:#F39800">Nijigasaki</span> songs. New to
+      <span class='aqours-blue'>Aqours</span>,
+      <span style="color:#F39800">Nijigasaki</span>, and
+      <span class="liella-purple">Liella!</span> songs. New to
       Love Live? Start with the
       <a href="https://lovelive.fandom.com/wiki/Love_Live!_Wiki">Love Live! Wiki</a>.</p>
 

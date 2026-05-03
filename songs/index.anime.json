@@ -204,7 +204,7 @@
   {"file":"muse/moshimo-kara-kitto.json","id":"moshimo-kara-kitto","name":"Moshimo Kara Kitto","group":"muse","cover":"css/images/covers/moshimo-kara-kitto.png","hasLyrics":true},
   {"file":"muse/music-start.json","id":"music-start","name":"Music S.T.A.R.T!!","group":"muse","cover":"css/images/covers/music-start.png","hasLyrics":true},
   {"file":"muse/natsuiro-egao-de-12jump.json","id":"natsuiro-egao-de-12jump","name":"Natsuiro Egao de 1,2,Jump!","group":"muse","cover":"css/images/covers/natsuiro-egao-de-12jump.png","hasLyrics":true},
-  {"file":"muse/nawatobi.json","id":"nawatobi","name":"Nawatobi","group":"muse","cover":"css/images/covers/nawatobi.png","hasLyrics":true},
+  {"file":"muse/nawatobi.json","id":"nawatobi","name":"Nawatobi","group":"muse","hidden":true,"cover":"css/images/covers/nawatobi.png","hasLyrics":true},
   {"file":"muse/neuron-neuron.json","id":"neuron-neuron","name":"NEURON, NEURON!!","group":"muse","cover":"css/images/covers/neuron-neuron.png"},
   {"file":"muse/no-brand-girls.json","id":"no-brand-girls","name":"No brand girls","group":"muse","cover":"css/images/covers/no-brand-girls.png","hasLyrics":true},
   {"file":"muse/paradise-live.json","id":"paradise-live","name":"Paradise Live","group":"muse","cover":"css/images/covers/paradise-live.png","hasLyrics":true},

@@ -148,14 +148,21 @@ function aggregateMembers(plays: PlayAggregate[], catalogTotals: CatalogTotals):
   const stats = new Map<string, MemberStat>();
 
   // Numerator + Member-Mastery denominator: drawn from play history.
+  // `correctAttempted` is deduped per (songId, slotIdx) so replaying the same
+  // song doesn't double-count a member's correct line — Total Mastery is a
+  // coverage metric, not an attempt-count. `attempted` is left non-deduped
+  // because it's only feeding the cached buddy idolization gate, which
+  // doesn't care about replays.
+  const correctSlotKeys = new Map<string, Set<string>>();
   for (const p of plays) {
     if (!p.group) continue;
     if (!getGroup(p.group)) continue;
-    for (const [chosen, ans] of p.entry.slots) {
+    const songId = p.song?.id;
+    p.entry.slots.forEach(([chosen, ans], slotIdx) => {
       const attempted = chosen.length > 0;
       const chosenSet = new Set(chosen);
       for (const id of ans) {
-        const canon = canonicalMember(p.group, id);
+        const canon = canonicalMember(p.group!, id);
         const canonGroup = getGroup(canon.group);
         if (!canonGroup) continue;
         const key = `${canon.group}:${canon.id}`;
@@ -171,10 +178,18 @@ function aggregateMembers(plays: PlayAggregate[], catalogTotals: CatalogTotals):
           s.attempted += 1;
           // chosen ids are in the song's group id-space; canonicalization
           // preserves the id where applicable, so direct membership still works.
-          if (chosenSet.has(id)) s.correctAttempted += 1;
+          if (chosenSet.has(id) && songId) {
+            let bag = correctSlotKeys.get(key);
+            if (!bag) { bag = new Set(); correctSlotKeys.set(key, bag); }
+            bag.add(`${songId}:${slotIdx}`);
+          }
         }
       }
-    }
+    });
+  }
+  for (const [key, bag] of correctSlotKeys) {
+    const s = stats.get(key);
+    if (s) s.correctAttempted = bag.size;
   }
 
   // Recovery snapshot (one-shot seed left over from the 2026-05-02 wipe).
@@ -203,7 +218,12 @@ function aggregateMembers(plays: PlayAggregate[], catalogTotals: CatalogTotals):
   // extension groups (aqours-miku, saint-aqours-snow) fold into the parent's
   // member entry. Members the user has never tried (no history) still get
   // populated here so Total Mastery can show full-roster coverage gates.
+  // WUG is an easter-egg group with sparse coverage — exclude it from totals
+  // so its members don't pad the Total Mastery strip with low-data dials.
+  // (Member Mastery still picks them up if the user has actually played WUG.)
+  const TOTALS_EXCLUDED_GROUPS = new Set<string>(['wug']);
   for (const [groupSlug, members] of Object.entries(catalogTotals)) {
+    if (TOTALS_EXCLUDED_GROUPS.has(groupSlug)) continue;
     const group = getGroup(groupSlug);
     if (!group) continue;
     for (const [idStr, count] of Object.entries(members)) {
@@ -222,6 +242,16 @@ function aggregateMembers(plays: PlayAggregate[], catalogTotals: CatalogTotals):
         stats.set(key, s);
       }
       s.totalLines += count;
+    }
+  }
+
+  // Snapshot's pre-wipe `correct` is a raw incident count (replays included)
+  // with no per-slot keys, so we can't dedupe it after the fact. Cap the
+  // combined numerator at the catalog denominator so Total Mastery stays
+  // bounded at 100%.
+  for (const s of stats.values()) {
+    if (s.totalLines > 0 && s.correctAttempted > s.totalLines) {
+      s.correctAttempted = s.totalLines;
     }
   }
 
@@ -281,8 +311,7 @@ function renderMastery(plays: PlayAggregate[], catalogTotals: CatalogTotals): vo
     group: s.group, id: s.id,
     correct: s.correctAttempted, attempted: s.attempted, totalLines: s.totalLines,
   }))));
-  renderMasteryInto('member-mastery', 'mastery-section', sortedForMode(all, 'attempted'), 'attempted');
-  renderMasteryInto('total-mastery',  'total-mastery-section', sortedForMode(all, 'total'),     'total');
+  renderMasteryInto('total-mastery', 'total-mastery-section', sortedForMode(all, 'total'), 'total');
 }
 
 function renderMasteryInto(containerId: string, sectionId: string, stats: MemberStat[], mode: MasteryMode): void {

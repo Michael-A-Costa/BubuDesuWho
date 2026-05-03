@@ -56,12 +56,7 @@
         <span class="stat-rule" aria-hidden="true"></span>
         <div class="stat-cell">
           <span class="stat-num" id="stat-accuracy">0%</span>
-          <span class="stat-label">Lines correct</span>
-        </div>
-        <span class="stat-rule" aria-hidden="true"></span>
-        <div class="stat-cell">
-          <span class="stat-num" id="stat-streak">0</span>
-          <span class="stat-label">Streak</span>
+          <span class="stat-label">Lines completed</span>
         </div>
       </header>
 
@@ -85,6 +80,12 @@
       </section>
 
     </div>
+
+    <section class="stats-iohist">
+      <button id="stats-export" type="button" class="btn btn-default btn-sm" title="Download a backup of your plays, buddy, streak, and settings">Export profile</button>
+      <button id="stats-import" type="button" class="btn btn-default btn-sm" title="Restore from a profile backup (plays merge, settings replace)">Import profile…</button>
+      <input id="stats-import-file" type="file" accept="application/json,.json" hidden>
+    </section>
 
   </div></div></div>
 </div>

@@ -1,43 +1,41 @@
 import { loadIndex } from './config';
 import { buildMenu } from './ui-menu';
 import { initThemeToggle } from './ui-about';
-import { loadHistory, HistRecord, getStorage, setStorage } from './storage';
+import { loadHistory, HistRecord, setStorage, exportProfileDoc, importProfileDoc } from './storage';
 import { getGroup } from './groups';
 import { getGroupColor } from './labels';
 import { MenuSong, GroupName } from './types';
 import { getFavorite, setFavorite, clearFavorite } from './favorite';
 import { resetBuddy } from './buddy';
 
-// One-time recovery seed (after the 2026-05-02 wipe). Holds per-member raw
-// counts that get added on top of whatever the user accumulates from then on.
-// Format: { members: [{ group, id, correct, total }, ...] }
-interface MasterySnapshot {
-  members: { group: GroupName; id: number; correct: number; total: number }[];
-}
-function loadMasterySnapshot(): MasterySnapshot | null {
-  const raw = getStorage('hist-mastery-snapshot');
-  if (!raw) return null;
-  try { return JSON.parse(raw) as MasterySnapshot; } catch { return null; }
-}
-
-// Per-(group, member) total slot-ans appearances across the entire catalog —
-// built at deploy time by scripts/build-index.js. Used as the denominator for
-// Total Mastery so it reflects every line the member sang, not just lines from
-// songs the user has played.
-type CatalogTotals = Record<GroupName, Record<string, number>>;
+// Catalog-wide stats baked at deploy time by scripts/build-index.js.
+//   byMember: per-(group, member) slot-ans appearances → Total Mastery dials.
+//   slotCountByGroup: per-group slot count over non-hidden songs → ribbon
+//     "Lines completed". Per-group (not a scalar) so future per-group views
+//     can use it; the ribbon just sums it.
+type CatalogByMember = Record<GroupName, Record<string, number>>;
+type CatalogSlotsByGroup = Partial<Record<GroupName, number>>;
+interface CatalogTotals { slotCountByGroup: CatalogSlotsByGroup; byMember: CatalogByMember }
 async function loadCatalogTotals(): Promise<CatalogTotals> {
   const base = (import.meta.env.VITE_CONTENT_BASE || import.meta.env.BASE_URL) as string;
   const mode = import.meta.env.VITE_APP_MODE === 'kpop' ? 'kpop' : 'anime';
+  const empty: CatalogTotals = { slotCountByGroup: {}, byMember: {} };
   try {
     const resp = await fetch(`${base}songs/totals.${mode}.json`);
-    if (!resp.ok) return {};
-    return await resp.json() as CatalogTotals;
-  } catch { return {}; }
+    if (!resp.ok) return empty;
+    const json = await resp.json() as CatalogTotals;
+    return { slotCountByGroup: json.slotCountByGroup ?? {}, byMember: json.byMember ?? {} };
+  } catch { return empty; }
 }
 
 const MEMBER_DIAL_MIN_TOTAL = 3;
 const UNTRIED_SAMPLE = 6;
 const PORTRAIT_BASE = 'css/images/members/';
+// WUG is an easter-egg group with sparse coverage — excluded from catalog-
+// wide totals (Total Mastery dials and the ribbon's "Lines completed") so it
+// neither pads the dial strip with low-data members nor inflates the ribbon
+// denominator with lines most users will never reach.
+const TOTALS_EXCLUDED_GROUPS = new Set<string>(['wug']);
 
 interface MemberStat {
   group: GroupName;
@@ -74,6 +72,8 @@ export async function initStatsPage(): Promise<void> {
   const songsByName = new Map(songs.map(s => [s.name, s]));
   const plays = hist.map(buildPlay(songsByName));
 
+  wireProfileIO();
+
   if (plays.length === 0) {
     renderEmpty(songs);
     return;
@@ -82,11 +82,66 @@ export async function initStatsPage(): Promise<void> {
   document.getElementById('stats-empty')?.classList.add('hidden');
   document.getElementById('stats-body')?.classList.remove('hidden');
 
-  renderRibbon(plays);
+  renderRibbon(plays, catalogTotals);
   renderMastery(plays, catalogTotals);
   renderSetlist(plays);
   renderUntried(songs, plays);
   wireResetBuddy();
+}
+
+function wireProfileIO(): void {
+  const exportBtn = document.getElementById('stats-export') as HTMLButtonElement | null;
+  const importBtn = document.getElementById('stats-import') as HTMLButtonElement | null;
+  const fileInput = document.getElementById('stats-import-file') as HTMLInputElement | null;
+  if (!exportBtn || !importBtn || !fileInput) return;
+
+  exportBtn.addEventListener('click', () => {
+    const mode = import.meta.env.VITE_APP_MODE === 'kpop' ? 'kpop' : 'anime';
+    const doc = exportProfileDoc(mode);
+    if (doc.keyCount === 0) {
+      alert('Nothing to export yet — play a song or change a setting first.');
+      return;
+    }
+    const blob = new Blob([JSON.stringify(doc, null, 2) + '\n'], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    const stamp = doc.exportedAt.slice(0, 10);
+    a.download = `bubudesuwho-${mode}-profile-${stamp}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  });
+
+  importBtn.addEventListener('click', () => fileInput.click());
+
+  fileInput.addEventListener('change', async () => {
+    const file = fileInput.files?.[0];
+    if (!file) return;
+    try {
+      const text = await file.text();
+      const doc = JSON.parse(text);
+      const result = importProfileDoc(doc);
+
+      const parts: string[] = [];
+      if (result.histAdded > 0) parts.push(`${result.histAdded} new plays`);
+      if (result.prefsReplaced > 0) parts.push(`${result.prefsReplaced} setting${result.prefsReplaced === 1 ? '' : 's'}`);
+      const histTail = result.histSkipped > 0 ? ` (${result.histSkipped} duplicate plays skipped)` : '';
+
+      if (parts.length === 0) {
+        alert(`No changes — profile already matches what's on this device.${histTail}`);
+        return;
+      }
+      const summary = `Imported ${parts.join(' + ')}${histTail}. Reload to apply?`;
+      if (confirm(summary)) location.reload();
+    } catch (err) {
+      const reason = err instanceof Error ? err.message : 'Unknown error.';
+      alert(`Import failed: ${reason}`);
+    } finally {
+      fileInput.value = '';
+    }
+  });
 }
 
 function wireResetBuddy(): void {
@@ -192,37 +247,11 @@ function aggregateMembers(plays: PlayAggregate[], catalogTotals: CatalogTotals):
     if (s) s.correctAttempted = bag.size;
   }
 
-  // Recovery snapshot (one-shot seed left over from the 2026-05-02 wipe).
-  // Old shape stored {correct, total} which mapped to attempted-correct/attempted.
-  // We treat those as "attempted only" data — the unanswered-line history is gone.
-  const snapshot = loadMasterySnapshot();
-  if (snapshot) {
-    for (const seed of snapshot.members) {
-      const group = getGroup(seed.group);
-      if (!group) continue;
-      const m = group.members.find(mm => mm.id === seed.id)
-             ?? group.supplementaryMembers?.find(mm => mm.id === seed.id);
-      if (!m) continue;
-      const key = `${seed.group}:${seed.id}`;
-      let s = stats.get(key);
-      if (!s) {
-        s = { group: seed.group, groupName: group.name, id: seed.id, name: m.name, color: m.color, correctAttempted: 0, attempted: 0, totalLines: 0 };
-        stats.set(key, s);
-      }
-      s.correctAttempted += seed.correct;
-      s.attempted        += seed.total;
-    }
-  }
-
   // Total-Mastery denominator: catalog-wide slot count, canonicalized so
   // extension groups (aqours-miku, saint-aqours-snow) fold into the parent's
   // member entry. Members the user has never tried (no history) still get
   // populated here so Total Mastery can show full-roster coverage gates.
-  // WUG is an easter-egg group with sparse coverage — exclude it from totals
-  // so its members don't pad the Total Mastery strip with low-data dials.
-  // (Member Mastery still picks them up if the user has actually played WUG.)
-  const TOTALS_EXCLUDED_GROUPS = new Set<string>(['wug']);
-  for (const [groupSlug, members] of Object.entries(catalogTotals)) {
+  for (const [groupSlug, members] of Object.entries(catalogTotals.byMember)) {
     if (TOTALS_EXCLUDED_GROUPS.has(groupSlug)) continue;
     const group = getGroup(groupSlug);
     if (!group) continue;
@@ -275,33 +304,39 @@ function denomFor(s: MemberStat, mode: MasteryMode): number {
   return mode === 'attempted' ? s.attempted : s.totalLines;
 }
 
-function computeStreak(plays: PlayAggregate[]): number {
-  // Newest-first streak: hist is oldest→newest, plays mirrors that.
-  let streak = 0;
-  for (let i = plays.length - 1; i >= 0; i--) {
-    if (plays[i].allCorrect) streak++;
-    else break;
+function aggregateCompletion(plays: PlayAggregate[], catalogTotals: CatalogTotals): number {
+  // Ribbon "Lines completed" — coverage across the whole catalog.
+  // Numerator: distinct (songId, slotIdx) pairs you got correct in any play
+  // (replays don't help; hidden songs excluded so we stay bounded ≤ 100%).
+  // Denominator: catalog slotCount baked at build time over non-hidden songs.
+  const correctSlots = new Set<string>();
+  for (const p of plays) {
+    if (!p.song || p.song.hidden) continue;
+    if (p.song.group && TOTALS_EXCLUDED_GROUPS.has(p.song.group)) continue;
+    const songId = p.song.id;
+    p.entry.slots.forEach(([chosen, ans], slotIdx) => {
+      if (chosen.length === 0) return;
+      if (chosen.length !== ans.length) return;
+      for (let j = 0; j < chosen.length; j++) if (chosen[j] !== ans[j]) return;
+      correctSlots.add(`${songId}:${slotIdx}`);
+    });
   }
-  return streak;
-}
-
-function aggregateAccuracy(plays: PlayAggregate[]): number {
-  // Ribbon "Lines correct" — match Member Mastery's denominator: of the
-  // lines you actually tried, what fraction did you get right.
-  let correct = 0, total = 0;
-  for (const p of plays) { correct += p.correctAttempted; total += p.attempted; }
-  return total === 0 ? 0 : Math.round((correct / total) * 100);
+  let total = 0;
+  for (const [g, n] of Object.entries(catalogTotals.slotCountByGroup)) {
+    if (TOTALS_EXCLUDED_GROUPS.has(g)) continue;
+    total += n ?? 0;
+  }
+  if (total === 0) return 0;
+  return Math.min(100, Math.round((correctSlots.size / total) * 100));
 }
 
 // ─── Rendering ──────────────────────────────────────────────────────
 
-function renderRibbon(plays: PlayAggregate[]): void {
+function renderRibbon(plays: PlayAggregate[], catalogTotals: CatalogTotals): void {
   const playsCell = document.getElementById('stat-plays');
   const accCell = document.getElementById('stat-accuracy');
-  const streakCell = document.getElementById('stat-streak');
-  if (playsCell) playsCell.textContent = plays.length >= 100 ? '100+' : String(plays.length);
-  if (accCell) accCell.textContent = `${aggregateAccuracy(plays)}%`;
-  if (streakCell) streakCell.textContent = String(computeStreak(plays));
+  if (playsCell) playsCell.textContent = plays.length >= 10000 ? '10k+' : String(plays.length);
+  if (accCell) accCell.textContent = `${aggregateCompletion(plays, catalogTotals)}%`;
 }
 
 function renderMastery(plays: PlayAggregate[], catalogTotals: CatalogTotals): void {

@@ -30,24 +30,47 @@ export function initPlayer(cbs: PlayerCallbacks): void {
 // time playback actually starts until it sticks.
 let _pendingSeek: number | null = null;
 
-export function loadSong(ogg: string, m4a: string): void {
-  if (howl) {
-    howl.unload();
-  }
-  _seekPending = true;
-  _pendingSeek = null;
-  howl = new Howl({
+// Backup source (GitHub-direct) to retry from if the primary (Cloudflare worker)
+// fails to load. Tried at most once per song so a genuine 404 can't loop.
+let _fallback: { ogg: string; m4a: string } | null = null;
+let _triedFallback = false;
+
+function makeHowl(ogg: string, m4a: string): Howl {
+  const h = new Howl({
     src: [ogg, m4a],
     format: ['ogg', 'm4a'],
     html5: true,
     volume: _volume,
   });
-  howl.on('play', () => {
+  h.on('play', () => {
     if (_pendingSeek === null) return;
     _seekPending = true;
     howl!.seek(_pendingSeek);
     _pendingSeek = null;
   });
+  h.on('loaderror', () => {
+    if (_triedFallback || !_fallback) return;
+    _triedFallback = true;
+    const fb = _fallback;
+    const wasPlaying = h.playing();
+    const pos = (h.seek() as number) || 0;
+    h.unload();
+    howl = makeHowl(fb.ogg, fb.m4a);
+    if (pos > 0) _pendingSeek = pos;
+    if (wasPlaying) howl.play();
+  });
+  return h;
+}
+
+export function loadSong(ogg: string, m4a: string, fallback?: { ogg: string; m4a: string }): void {
+  if (howl) {
+    howl.unload();
+  }
+  _seekPending = true;
+  _pendingSeek = null;
+  _fallback = fallback ?? null;
+  _triedFallback = false;
+  howl = makeHowl(ogg, m4a);
 }
 
 export function play(seekTo?: number): void {

@@ -6,7 +6,7 @@ import { mapToLabel } from './labels';
 import { slotState, applySlotClasses } from './answer';
 import { prefs } from './prefs';
 import {
-  getStorage, saveHistory, loadChoicesForSong, saveChoicesForSong,
+  getStorage, setStorage, saveHistory, loadChoicesForSong, saveChoicesForSong,
 } from './storage';
 import * as player from './player';
 import { state, getSongTitle, getActivePool, setActivePool } from './game-state';
@@ -100,21 +100,36 @@ export function loadSong(song: Song): void {
   const savedDiff = getStorage('diff');
   if (savedDiff) state.diff = Math.min(parseInt(savedDiff, 10), getMaxDiff());
 
-  // load audio — VITE_SOUND_BASE overrides for external hosting (e.g. GitHub Releases).
-  // iOS Safari rejects the GH Releases Content-Type/Disposition, so route iOS through
-  // VITE_IOS_AUDIO_BASE (a Cloudflare Worker that rewrites the headers) when present.
+  // load audio — by default every client streams through the Cloudflare audio worker
+  // (VITE_SOUND_BASE) so all traffic flows through Cloudflare for analytics; the worker
+  // proxies the GitHub Releases origin and rewrites the Content-Type/Disposition iOS
+  // Safari rejects. VITE_SOUND_BASE_GH is the GitHub-direct base kept as a backup:
+  // visiting with ?sound=gh (persisted; ?sound=cf clears it) serves NON-iOS clients
+  // straight from GitHub. iOS always stays on the worker — GH Releases' headers break
+  // iOS Safari playback. Falls back to local sound/ when no base is set (dev).
   const isIOS =
     /iPad|iPhone|iPod/.test(navigator.userAgent) ||
     (navigator.userAgent.includes('Mac') && 'ontouchend' in document);
-  const iosBase = import.meta.env.VITE_IOS_AUDIO_BASE;
-  const soundBase = isIOS && iosBase ? iosBase : import.meta.env.VITE_SOUND_BASE;
+  const soundPref = new URLSearchParams(location.search).get('sound');
+  if (soundPref === 'gh' || soundPref === 'cf') setStorage('soundSrc', soundPref);
+  const ghBase = import.meta.env.VITE_SOUND_BASE_GH;
+  const useGh = !isIOS && getStorage('soundSrc') === 'gh' && !!ghBase;
+  const soundBase = useGh ? ghBase : import.meta.env.VITE_SOUND_BASE;
   const base = import.meta.env.BASE_URL;
-  const resolveAudio = (path: string) =>
-    soundBase ? soundBase + path.replace(/^sound\/(?:[^/]+\/)?/, '') : base + path;
+  const resolveWith = (b: string | undefined, path: string) =>
+    b ? b + path.replace(/^sound\/(?:[^/]+\/)?/, '') : base + path;
+  const resolveAudio = (path: string) => resolveWith(soundBase, path);
   // iOS Safari can't decode Opus-in-Ogg — pass the .m4a sibling so Howler
   // falls through to AAC when Ogg isn't playable.
   const m4aPath = song.ogg.replace(/\.ogg$/, '.m4a');
-  player.loadSong(resolveAudio(song.ogg), resolveAudio(m4aPath));
+  // Auto-retry: non-iOS clients on the worker fall back to GitHub-direct if the
+  // worker load fails. (iOS can't use GH direct; GH-direct clients have no further
+  // fallback.)
+  const fallback =
+    !isIOS && !useGh && ghBase
+      ? { ogg: resolveWith(ghBase, song.ogg), m4a: resolveWith(ghBase, m4aPath) }
+      : undefined;
+  player.loadSong(resolveAudio(song.ogg), resolveAudio(m4aPath), fallback);
 }
 
 export function makeSlotsFromBase(bases: SlotBase[]): Slot[] {

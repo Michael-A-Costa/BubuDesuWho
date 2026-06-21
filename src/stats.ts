@@ -1,7 +1,7 @@
 import { loadIndex } from './config';
 import { buildMenu } from './ui-menu';
 import { initThemeToggle } from './ui-about';
-import { loadHistory, HistRecord, saveMasteryCache, exportProfileDoc, importProfileDoc } from './storage';
+import { loadHistory, HistRecord, saveMasteryCache, masteryPct, exportProfileDoc, importProfileDoc } from './storage';
 import { getGroup } from './groups';
 import { getGroupColor } from './labels';
 import { MenuSong, GroupName } from './types';
@@ -367,7 +367,7 @@ function buildDial(s: MemberStat, mode: MasteryMode): HTMLElement {
   const num = s.correctAttempted;
   // Clamp: catalog drift (slots removed since a play) or snapshot-seeded
   // attempted with no matching catalog entry can push num past denom.
-  const pct = Math.min(100, Math.round((num / denom) * 100));
+  const pct = masteryPct(num, denom);
   const tile = document.createElement('div');
   tile.className = 'member-dial';
   tile.style.setProperty('--c', s.color);

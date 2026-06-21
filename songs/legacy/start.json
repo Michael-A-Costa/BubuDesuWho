@@ -3,8 +3,8 @@
   "id": "start",
   "group": "muse",
   "legacy": true,
-  "mp3": "sound/start_dash_9.mp3",
-  "ogg": "sound/start_dash_9.ogg",
+  "mp3": "sound/start_dash.mp3",
+  "ogg": "sound/start_dash.ogg",
   "mapping": [
     {
       "range": [

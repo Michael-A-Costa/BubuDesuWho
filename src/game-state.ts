@@ -12,6 +12,24 @@ export function getSongTitle(song: { name: string; name_jp?: string }): string {
   return song.name;
 }
 
+// ─── Active pool ────────────────────────────────────────────────────
+// The members in play for the current mode (CONTEXT.md §Active pool). It is
+// reset wholesale on each (re)load — the play page sets it from the song
+// roster, Bubudle from the current clip's singers, and Bubudle narrows it on a
+// hint. Going through this one write path keeps every mutation in a single,
+// greppable seam instead of scattered `state.singers = …` assignments, and
+// gives the named concept somewhere to grow an invariant later.
+
+/** Read the active pool — the canonical input to reveal decisions. */
+export function getActivePool(): number[] {
+  return state.singers;
+}
+
+/** Replace the active pool. The only sanctioned way to write `state.singers`. */
+export function setActivePool(members: number[]): void {
+  state.singers = members;
+}
+
 export const state: GameState = {
   group: 'aqours',
   song: null,

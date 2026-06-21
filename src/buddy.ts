@@ -1,5 +1,5 @@
 import { getFavorite } from './favorite';
-import { getStorage, setStorage, loadMasteryCache } from './storage';
+import { getStorage, setStorage, loadMasteryCache, masteryPct } from './storage';
 
 // Floating "buddy" portrait of the user's favorited member. Mounts on every
 // page (called from main.ts). Currently only Aqours has portraits available
@@ -114,8 +114,8 @@ function savePos(p: BuddyPos): void {
 // Falls back to 0 if the user hasn't visited the stats page this session.
 function totalMasteryPct(group: string, id: number): number {
   const m = loadMasteryCache().find(x => x.group === group && x.id === id);
-  if (!m || m.totalLines < 1) return 0;
-  return Math.round((m.correct / m.totalLines) * 100);
+  if (!m) return 0;
+  return masteryPct(m.correct, m.totalLines);
 }
 
 export function initBuddy(): void {

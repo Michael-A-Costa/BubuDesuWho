@@ -9,13 +9,14 @@ import {
   getStorage, saveHistory, loadChoicesForSong, saveChoicesForSong,
 } from './storage';
 import * as player from './player';
-import { state, getSongTitle } from './game-state';
+import { state, getSongTitle, getActivePool, setActivePool } from './game-state';
 import { slotFor } from './slot-graph';
 import { revealClasses, applyClasses, Reveal } from './reveal';
+import { lyricPresentation, applyLyricPresentation } from './lyric-view';
 
 // Re-exported so existing imports (`import { state } from './game'`) keep
 // working while non-player consumers can switch to the leaner `./game-state`.
-export { state, getSongTitle } from './game-state';
+export { state, getSongTitle, getActivePool, setActivePool } from './game-state';
 
 const AUTOSAVE_INTERVAL = 2000;
 
@@ -82,7 +83,7 @@ export function loadSong(song: Song): void {
   state.song = song;
   state.group = song.group;
   state.mapping = song.mapping ?? [];
-  state.singers = song.singers;
+  setActivePool(song.singers);
   state.assObjectURL = '';
   state.slots = makeSlotsFromBase(song.slotsBase);
   state.lyrics = makeLyricsFromBase(song.lyricsBase);
@@ -570,16 +571,7 @@ export function toggleJpLyrics(val?: boolean): void {
   state.jpLyrics = val ?? !state.jpLyrics;
   for (const lyric of state.lyrics) {
     if (!lyric.element || lyric.type !== 'lyric') continue;
-    if (state.jpLyrics && lyric.textJp != null) {
-      if (lyric.textJp === '') {
-        lyric.element.style.display = 'none';
-      } else {
-        lyric.element.textContent = lyric.textJp;
-      }
-    } else {
-      lyric.element.textContent = lyric.text ?? '';
-      lyric.element.style.display = '';
-    }
+    applyLyricPresentation(lyric.element, lyricPresentation(lyric, state.jpLyrics));
     // Reset per-sub-part tracking; revealLyrics below re-applies correct classes.
     lyric.activeJpPartId = undefined;
   }
@@ -601,7 +593,7 @@ function revealForMapping(mapping: MappingEntry): Reveal {
   const slot = slotFor(mapping.id);
   return revealClasses(mapping, {
     songRoster: state.song?.singers ?? [],
-    activePool: state.singers,
+    activePool: getActivePool(),
     slotRevealed: !!slot && (slot.revealed || slot.state === SlotState.Correct),
     colors: getGroupColors(state.group),
     title: mapping.ans ? mapToLabel(state.group, mapping.ans) : '',

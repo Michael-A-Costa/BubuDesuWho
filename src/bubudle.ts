@@ -1,6 +1,6 @@
 import { Song, Slot, SlotState, LineObject, MappingEntry, GroupName, MEMBER_MAPPING } from './types';
 import { loadConfig } from './config';
-import { state, initGameState, loadSong, checkSlot, toggleChoice, toggleReveal, getSongTitle } from './game';
+import { state, initGameState, loadSong, checkSlot, toggleChoice, toggleReveal, getSongTitle, getActivePool, setActivePool } from './game';
 import { initThemeToggle, switchTheme, buildSlotSkeleton } from './ui';
 import { initKofi } from './kofi';
 import { buildMenu, toggleMenu } from './ui-menu';
@@ -13,7 +13,13 @@ import {
   MEMBER_COLUMNS,
   HINT_SUBUNITS,
   HINT_YEARS,
+  BubudleDifficulty,
+  SongDifficulty,
+  parseBubudleDiff,
+  parseSongDiff,
 } from './bubudle-config';
+import { eligibleCandidates as filterEligible } from './candidate-pool';
+import { bubudleGridLayout } from './bubudle-grid';
 import { appendToLog, renderLog, hasLogEntries } from './bubudle-log';
 import {
   AppMode, DailyScope,
@@ -89,29 +95,15 @@ function createBubudleSlot(slot: Slot, singers: number[]): HTMLElement {
   body.appendChild(row);
   el.appendChild(body);
 
-  const baseIdSet = new Set(Object.keys(MEMBER_MAPPING[bubudleGroup]).map(Number));
-  const extraMembers = singers.filter(s => !baseIdSet.has(s));
+  const layout = bubudleGridLayout(bubudleGroup, singers, Object.keys(MEMBER_MAPPING[bubudleGroup] ?? {}).map(Number));
+  const hasSubunits = layout.hasSubunits;
   const memberMapping = MEMBER_MAPPING[state.group] ?? MEMBER_MAPPING[bubudleGroup];
 
-  const predefined = MEMBER_COLUMNS[bubudleGroup];
-  const cols: number[][] = predefined
-    ? predefined.map(col => col.filter(id => singers.includes(id)))
-    : (() => {
-        const base = singers.filter(s => baseIdSet.has(s));
-        const n = Math.ceil(base.length / 3);
-        return [base.slice(0, n), base.slice(n, n * 2), base.slice(n * 2)];
-      })();
-
-  // Applicable shortcuts — only include if all members present in singer set
-  const hasExtras = extraMembers.length > 0;
-  const shortcuts = (SHORTCUT_GROUPS[bubudleGroup] ?? []).filter(g =>
-    g.members.every(m => singerSet.has(m)) && (!g.extraOnly || hasExtras));
-  const shortcutsLeft = shortcuts.filter(g => g.subunit);
-  const shortcutsRight = shortcuts.filter(g => !g.subunit);
-
-  // If there are extra members but no subunit shortcuts, put extras in the left shortcut col
-  // and year/group shortcuts in the right
-  const hasSubunits = shortcutsLeft.length > 0;
+  const labelFor = (id: number): string => {
+    const name = memberMapping[id] ?? `#${id}`;
+    const nick = (MEMBER_NICKNAMES[bubudleGroup] ?? {})[id];
+    return nick ? `${name} (${nick})` : name;
+  };
 
   function makeBtn(value: string, label: string): HTMLButtonElement {
     const btn = document.createElement('button');
@@ -130,29 +122,14 @@ function createBubudleSlot(slot: Slot, singers: number[]): HTMLElement {
   }
 
   // Member columns (3 cols of individual members)
-  const memberCols = cols.map(ids => {
-    const buttons = ids.map(id => {
-      const name = memberMapping[id] ?? `#${id}`;
-      const nick = (MEMBER_NICKNAMES[bubudleGroup] ?? {})[id];
-      const label = nick ? `${name} (${nick})` : name;
-      return makeBtn(String(id), label);
-    });
-    return buttons;
-  });
+  const memberCols = layout.memberCols.map(ids => ids.map(id => makeBtn(String(id), labelFor(id))));
 
   // Extra member buttons
-  const extraBtns = extraMembers.map(id => {
-    const name = memberMapping[id] ?? `#${id}`;
-    const nick = (MEMBER_NICKNAMES[bubudleGroup] ?? {})[id];
-    const label = nick ? `${name} (${nick})` : name;
-    return makeBtn(String(id), label);
-  });
+  const extraBtns = layout.extras.map(id => makeBtn(String(id), labelFor(id)));
 
   // Shortcut buttons
-  const leftShortcutBtns = (hasSubunits ? shortcutsLeft : shortcuts.filter(g => g.members.some(m => m > 9)))
-    .map(g => makeBtn(g.members.join(','), g.label));
-  const rightShortcutBtns = (hasSubunits ? shortcutsRight : shortcuts.filter(g => g.members.every(m => m <= 9)))
-    .map(g => makeBtn(g.members.join(','), g.label));
+  const leftShortcutBtns = layout.leftShortcuts.map(g => makeBtn(g.members.join(','), g.label));
+  const rightShortcutBtns = layout.rightShortcuts.map(g => makeBtn(g.members.join(','), g.label));
 
   // Add extra member buttons to whichever shortcut column has room
   if (extraBtns.length > 0) {
@@ -233,19 +210,8 @@ let previousGuesses: string[] = [];
 let clipRange: [number, number] = [0, 0];
 let songSingers: number[] = [];
 
-type BubudleDifficulty = 'all' | 'normal' | 'hard' | 'insane';
 let bubudleDiff: BubudleDifficulty = 'normal';
 
-// Lyric range duration thresholds per difficulty (seconds)
-// All: any length, Normal: clips > 2s, Hard: clips <= 2s, Insane: clips <= 1s
-const RANGE_CAPS: Record<BubudleDifficulty, number> = {
-  all: Infinity,
-  normal: 2,
-  hard: 2,
-  insane: 1,
-};
-
-type SongDifficulty = 'all' | '1' | '2' | '3';
 let songDiff: SongDifficulty = 'all';
 
 let subunitInclude: string[] = [];
@@ -679,24 +645,11 @@ function candidateKey(c: LyricCandidate): string {
 }
 
 function eligibleCandidates(): LyricCandidate[] {
-  const cap = RANGE_CAPS[bubudleDiff];
-  const diffFilter = songDiff === 'all' ? 0 : parseInt(songDiff, 10);
-  const includeSet = subunitInclude.length > 0 ? new Set(subunitInclude) : null;
-  const excludeSet = subunitExclude.length > 0 ? new Set(subunitExclude) : null;
-  return candidates.filter(c => {
-    const dur = c.range[1] - c.range[0];
-    const clipOk = bubudleDiff === 'all' ? true : bubudleDiff === 'normal' ? dur > cap : dur <= cap;
-    if (!clipOk) return false;
-    if (diffFilter !== 0 && c.diff !== diffFilter) return false;
-    const key = c.allSingers.join(',');
-    // Saint Snow ("10,11") subunit filter also covers saint-aqours-snow songs
-    // (their allSingers usually span 1–11, so wouldn't match the "10,11" key on their own).
-    const saintSnowMatch = c.song.group === 'saint-aqours-snow';
-    const matchesKey = (set: Set<string>): boolean =>
-      set.has(key) || (saintSnowMatch && set.has('10,11'));
-    if (includeSet && !matchesKey(includeSet)) return false;
-    if (excludeSet && matchesKey(excludeSet)) return false;
-    return true;
+  return filterEligible(candidates, {
+    clipDiff: bubudleDiff,
+    songDiff,
+    subunitInclude,
+    subunitExclude,
   });
 }
 
@@ -767,7 +720,7 @@ function renderCandidate(c: LyricCandidate, answered: boolean, initial = false):
   songSingers = c.allSingers;
   const baseIds = Object.keys(MEMBER_MAPPING[bubudleGroup]).map(Number).sort((a, b) => a - b);
   const extras = c.allSingers.filter(s => !baseIds.includes(s));
-  state.singers = [...baseIds, ...extras];
+  setActivePool([...baseIds, ...extras]);
   state.group = c.song.group;
   state.editMode = false;
   state.lyrics = [];
@@ -796,12 +749,12 @@ function renderCandidate(c: LyricCandidate, answered: boolean, initial = false):
 
   // Auto-narrow only in infinite (daily locks filters to 'all', so this would never trigger anyway)
   if (!answered && bubudleMode === 'infinite' && (bubudleDiff === 'normal' || songDiff === '1')) {
-    if (songSingers.length < state.singers.length) {
-      state.singers = songSingers;
+    if (songSingers.length < getActivePool().length) {
+      setActivePool(songSingers);
       narrowToSingers(currentSlot, songSingers);
       revealHint('bubudle-hint-narrow', 'Singers', 'Narrowed to subunit');
     } else {
-      const incorrect = state.singers.filter(s => !c.ans.includes(s));
+      const incorrect = getActivePool().filter(s => !c.ans.includes(s));
       const shuffled = incorrect.sort(() => Math.random() - 0.5);
       const toRemove = shuffled.slice(0, Math.min(2, shuffled.length));
       disableMembers(currentSlot, toRemove);
@@ -907,10 +860,10 @@ function switchMode(mode: BubudleMode): void {
     loadDailyForScope();
   } else {
     // Restore infinite filters from storage (they were locked during daily)
-    const savedDiff = getStorage('bubudle-diff') as BubudleDifficulty | null;
-    if (savedDiff && savedDiff in RANGE_CAPS) bubudleDiff = savedDiff;
-    const savedSdiff = getStorage('bubudle-sdiff') as SongDifficulty | null;
-    if (savedSdiff && ['all', '1', '2', '3'].includes(savedSdiff)) songDiff = savedSdiff;
+    const savedDiff = parseBubudleDiff(getStorage('bubudle-diff'));
+    if (savedDiff) bubudleDiff = savedDiff;
+    const savedSdiff = parseSongDiff(getStorage('bubudle-sdiff'));
+    if (savedSdiff) songDiff = savedSdiff;
     syncDifficultyButtons();
 
     if (infiniteAll) {
@@ -981,7 +934,7 @@ function loadDailyForScope(): void {
 
 function dailyLabelFor(scope: DailyScope): string {
   if (scope.kind === 'group') return `Today's ${scope.group} daily`;
-  return `Today's ${scope.mode === 'kpop' ? 'K-pop' : 'anime'} daily`;
+  return `Today's ${scope.mode === 'kpop' ? 'K-pop' : 'Love Live'} daily`;
 }
 
 function updateDailyBanner(): void {
@@ -1075,8 +1028,8 @@ function checkAnswer(): void {
     resetSlotForRetry(currentSlot);
   } else if (wrongCount === 2) {
     // Hint 2: narrow down to the song's actual singers (subgroup), then label
-    if (songSingers.length < state.singers.length) {
-      state.singers = songSingers;
+    if (songSingers.length < getActivePool().length) {
+      setActivePool(songSingers);
       narrowToSingers(currentSlot, songSingers);
     }
 
@@ -1316,14 +1269,14 @@ function renderGuesses(): void {
 }
 
 function initBubudleDifficulty(): void {
-  const saved = getStorage('bubudle-diff') as BubudleDifficulty | null;
-  if (saved && saved in RANGE_CAPS) bubudleDiff = saved;
+  const saved = parseBubudleDiff(getStorage('bubudle-diff'));
+  if (saved) bubudleDiff = saved;
 
   // Sync button state
   document.querySelectorAll<HTMLElement>('.bubudle-diff-btn').forEach((btn) => {
     btn.classList.toggle('active', btn.dataset.bdiff === bubudleDiff);
     btn.addEventListener('click', () => {
-      bubudleDiff = btn.dataset.bdiff as BubudleDifficulty;
+      bubudleDiff = parseBubudleDiff(btn.dataset.bdiff) ?? bubudleDiff;
       setStorage('bubudle-diff', bubudleDiff);
       recentHistory.clear();
       document.querySelectorAll<HTMLElement>('.bubudle-diff-btn').forEach((b) =>
@@ -1355,13 +1308,13 @@ function initBubudleDifficulty(): void {
 }
 
 function initSongDifficulty(): void {
-  const saved = getStorage('bubudle-sdiff') as SongDifficulty | null;
-  if (saved && ['all', '1', '2', '3'].includes(saved)) songDiff = saved;
+  const saved = parseSongDiff(getStorage('bubudle-sdiff'));
+  if (saved) songDiff = saved;
 
   document.querySelectorAll<HTMLElement>('.bubudle-sdiff-btn').forEach((btn) => {
     btn.classList.toggle('active', btn.dataset.sdiff === songDiff);
     btn.addEventListener('click', () => {
-      songDiff = btn.dataset.sdiff as SongDifficulty;
+      songDiff = parseSongDiff(btn.dataset.sdiff) ?? songDiff;
       setStorage('bubudle-sdiff', songDiff);
       recentHistory.clear();
       document.querySelectorAll<HTMLElement>('.bubudle-sdiff-btn').forEach((b) =>

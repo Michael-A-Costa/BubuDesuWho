@@ -86,3 +86,29 @@ export const HINT_YEARS: Record<string, string[]> = {
   aqours: ['1,2,3', '4,5,6', '7,8,9'],
   nijigasaki: ['2,3,9,10', '1,5,7,12', '4,6,8,11'],
 };
+
+// ─── Difficulty vocabulary ──────────────────────────────────────────
+// Single source for the two difficulty axes. The names live here (pure,
+// testable) so the storage reads and the DOM-dataset reads in bubudle.ts
+// funnel through one validator instead of an unchecked `as` cast.
+
+export const BUBUDLE_DIFFICULTIES = ['all', 'normal', 'hard', 'insane'] as const;
+export type BubudleDifficulty = (typeof BUBUDLE_DIFFICULTIES)[number];
+
+export const SONG_DIFFICULTIES = ['all', '1', '2', '3'] as const;
+export type SongDifficulty = (typeof SONG_DIFFICULTIES)[number];
+
+/** Validate an arbitrary string (storage value or DOM dataset) against the
+ *  clip-difficulty vocabulary. Returns null for anything unrecognised. */
+export function parseBubudleDiff(s: string | null | undefined): BubudleDifficulty | null {
+  return s != null && (BUBUDLE_DIFFICULTIES as readonly string[]).includes(s)
+    ? (s as BubudleDifficulty)
+    : null;
+}
+
+/** Validate against the song-difficulty vocabulary. Null for anything else. */
+export function parseSongDiff(s: string | null | undefined): SongDifficulty | null {
+  return s != null && (SONG_DIFFICULTIES as readonly string[]).includes(s)
+    ? (s as SongDifficulty)
+    : null;
+}

@@ -1,5 +1,5 @@
 import { describe, expect, it, beforeEach } from 'vitest';
-import { saveMasteryCache, loadMasteryCache, type MasteryCacheEntry } from './storage';
+import { saveMasteryCache, loadMasteryCache, masteryPct, type MasteryCacheEntry } from './storage';
 
 // vitest runs in node with no localStorage — install a minimal in-memory stub.
 function installLocalStorage(): void {
@@ -36,5 +36,26 @@ describe('mastery cache', () => {
       .localStorage.setItem('mastery-cache', '{not json');
     expect(() => loadMasteryCache()).not.toThrow();
     expect(loadMasteryCache()).toEqual([]);
+  });
+});
+
+describe('masteryPct', () => {
+  it('returns 0 when total is below 1 (no division by zero)', () => {
+    expect(masteryPct(0, 0)).toBe(0);
+    expect(masteryPct(5, 0)).toBe(0);
+  });
+
+  it('rounds the ratio to a whole percent', () => {
+    expect(masteryPct(8, 20)).toBe(40);
+    expect(masteryPct(1, 3)).toBe(33);
+    expect(masteryPct(2, 3)).toBe(67);
+  });
+
+  it('clamps above 100 (catalog drift guard)', () => {
+    expect(masteryPct(25, 20)).toBe(100);
+  });
+
+  it('matches a fully-mastered member at exactly 100', () => {
+    expect(masteryPct(20, 20)).toBe(100);
   });
 });

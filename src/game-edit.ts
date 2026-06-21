@@ -1,6 +1,7 @@
 import { Slot, SlotState, MappingEntry, LinePart } from './types';
 import { arrayEqual, toTimeStr } from './utils';
 import { state, makeSlotsFromBase } from './game';
+import { withInsertedAfter, withRemovedAt } from './mapping-edit';
 
 export function setEditMode(val: boolean): void {
   state.editMode = val;
@@ -44,8 +45,7 @@ export function insertMappingAfter(slot: Slot): MappingEntry {
     id: 0,
   };
   const mapIdx = state.mapping.indexOf(slot.mapping);
-  state.mapping.splice(mapIdx + 1, 0, newEntry);
-  state.mapping.forEach((m, i) => { m.id = i; });
+  state.mapping = withInsertedAfter(state.mapping, mapIdx, newEntry);
 
   const newSlot: Slot = {
     id: 0,
@@ -71,8 +71,7 @@ export function insertMappingAfter(slot: Slot): MappingEntry {
 
 export function deleteSlot(slot: Slot): void {
   const mapIdx = state.mapping.indexOf(slot.mapping);
-  if (mapIdx !== -1) state.mapping.splice(mapIdx, 1);
-  state.mapping.forEach((m, i) => { m.id = i; });
+  state.mapping = withRemovedAt(state.mapping, mapIdx);
 
   // Reassign (not in-place splice) so the slot graph picks up the new list.
   const slotIdx = state.slots.indexOf(slot);

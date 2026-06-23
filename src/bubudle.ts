@@ -4,7 +4,7 @@ import { state, initGameState, loadSong, checkSlot, toggleChoice, toggleReveal, 
 import { initThemeToggle, switchTheme, buildSlotSkeleton } from './ui';
 import { initKofi } from './kofi';
 import { buildMenu, toggleMenu } from './ui-menu';
-import { hasGroup } from './groups';
+import { hasGroup, getGroup } from './groups';
 import * as player from './player';
 import { getStorage, setStorage } from './storage';
 import {
@@ -260,7 +260,21 @@ function populateAllButton(): void {
   btn.appendChild(grid);
 }
 
+// A shared/bookmarked daily link can pin the scope via ?daily=<group> (e.g.
+// ?mode=daily&daily=nijigasaki) or ?daily=all for the whole-mode daily. This
+// takes precedence over the visitor's saved scope so the link lands on exactly
+// the daily it advertises.
+function readDailyScopeFromUrl(): DailyScope | null {
+  const param = new URLSearchParams(location.search).get('daily');
+  if (!param) return null;
+  if (param === 'all') return { kind: 'mode', mode: APP_MODE };
+  if (hasGroup(param) && !isExcluded(param)) return { kind: 'group', group: param as GroupName };
+  return null;
+}
+
 function loadDailyScope(): DailyScope {
+  const fromUrl = readDailyScopeFromUrl();
+  if (fromUrl) return fromUrl;
   const raw = getStorage('bubudle-daily-scope');
   if (!raw) return { kind: 'group', group: bubudleGroup };
   if (raw.startsWith('mode:')) {
@@ -808,7 +822,19 @@ function readModeFromUrlOrStorage(): BubudleMode {
 function updateUrlMode(mode: BubudleMode): void {
   const url = new URL(location.href);
   if (mode === 'daily') url.searchParams.set('mode', 'daily');
-  else url.searchParams.delete('mode');
+  else { url.searchParams.delete('mode'); url.searchParams.delete('daily'); }
+  history.replaceState(null, '', url.toString());
+}
+
+// Keep the ?daily=<scope> param in sync with the active daily scope so the URL
+// in the address bar is always a shareable link to the daily being shown.
+function updateUrlScope(): void {
+  const url = new URL(location.href);
+  if (bubudleMode === 'daily') {
+    url.searchParams.set('daily', dailyScope.kind === 'group' ? dailyScope.group : 'all');
+  } else {
+    url.searchParams.delete('daily');
+  }
   history.replaceState(null, '', url.toString());
 }
 
@@ -906,6 +932,8 @@ function loadDailyForScope(): void {
   } else {
     buildCandidatePoolAll(allSongs);
   }
+  saveDailyScope();
+  updateUrlScope();
 
   const pool = eligibleCandidates();
   if (pool.length === 0) {
@@ -933,7 +961,7 @@ function loadDailyForScope(): void {
 }
 
 function dailyLabelFor(scope: DailyScope): string {
-  if (scope.kind === 'group') return `Today's ${scope.group} daily`;
+  if (scope.kind === 'group') return `Today's ${getGroup(scope.group)?.name ?? scope.group} daily`;
   return `Today's ${scope.mode === 'kpop' ? 'K-pop' : 'Love Live'} daily`;
 }
 

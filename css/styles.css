@@ -2740,10 +2740,19 @@ html.dark-mode .edit-mode .navbar {
   font-size: 0.8em;
 }
 .bubudle-guess {
-  color: var(--text-muted, #999);
-  text-decoration: line-through;
-  opacity: 0.7;
+  margin: 2px 0;
 }
+.bubudle-guess-chip {
+  display: inline-block;
+  padding: 1px 7px;
+  margin: 1px 2px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.95em;
+}
+.bubudle-guess-chip.guess-hit  { background: #6aaa64; }
+.bubudle-guess-chip.guess-near { background: #c9b458; }
+.bubudle-guess-chip.guess-miss { background: #787c7e; }
 
 .bubudle-controls {
   text-align: center;

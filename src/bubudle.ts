@@ -26,6 +26,7 @@ import {
   currentDateEst, msUntilNextEstMidnight, formatHms, pickDailyIndex,
   loadDailyResult, saveDailyResult,
 } from './bubudle-daily';
+import { classifyGuess, parseGuessKey, buildShareText } from './bubudle-share';
 
 const APP_MODE: AppMode = import.meta.env.VITE_APP_MODE === 'kpop' ? 'kpop' : 'anime';
 type BubudleMode = 'infinite' | 'daily';
@@ -209,6 +210,7 @@ let wrongCount = 0;
 let previousGuesses: string[] = [];
 let clipRange: [number, number] = [0, 0];
 let songSingers: number[] = [];
+let dailyResultCorrect: boolean | null = null;
 
 let bubudleDiff: BubudleDifficulty = 'normal';
 
@@ -403,6 +405,7 @@ export async function initBubudlePage(): Promise<void> {
   document.getElementById('bubudle-check-bottom')!.addEventListener('click', checkAnswer);
   document.getElementById('bubudle-skip-bottom')!.addEventListener('click', skipAnswer);
   document.getElementById('bubudle-next-bottom')!.addEventListener('click', () => pickRandom());
+  document.getElementById('bubudle-share')?.addEventListener('click', shareDailyResult);
   document.getElementById('bubudle-play')!.addEventListener('click', () => playClip());
   document.getElementById('bubudle-bad-timestamp')!.addEventListener('click', reportBadTimestamp);
   document.getElementById('bubudle-flag-diff')!.addEventListener('click', () => {
@@ -724,6 +727,8 @@ function renderCandidate(c: LyricCandidate, answered: boolean, initial = false):
   checked = false;
   wrongCount = 0;
   previousGuesses = [];
+  dailyResultCorrect = null;
+  updateShareButton();
   clipRange = calcClipRange(c.range);
   updateLyricMarker();
 
@@ -954,6 +959,8 @@ function loadDailyForScope(): void {
     previousGuesses = stored.guesses.slice();
     wrongCount = stored.wrongCount;
     renderGuesses();
+    dailyResultCorrect = stored.correct;
+    updateShareButton();
   }
 
   updateDailyBanner();
@@ -968,6 +975,59 @@ function dailyLabelFor(scope: DailyScope): string {
 function updateDailyBanner(): void {
   const labelEl = document.getElementById('bubudle-daily-label');
   if (labelEl) labelEl.textContent = dailyLabelFor(dailyScope);
+}
+
+function shareLabelFor(scope: DailyScope): string {
+  if (scope.kind === 'group') return getGroup(scope.group)?.name ?? scope.group;
+  return scope.mode === 'kpop' ? 'K-pop' : 'Love Live';
+}
+
+function shareUrlFor(scope: DailyScope): string {
+  const base = `${location.host}${location.pathname}`;
+  return scope.kind === 'group' ? `${base}?daily=${scope.group}` : base;
+}
+
+function updateShareButton(): void {
+  const btn = document.getElementById('bubudle-share');
+  if (!btn) return;
+  const show = bubudleMode === 'daily' && checked && dailyResultCorrect !== null;
+  btn.style.display = show ? '' : 'none';
+}
+
+function shareDailyResult(): void {
+  if (!current || dailyResultCorrect === null) return;
+  const text = buildShareText({
+    label: shareLabelFor(dailyScope),
+    date: currentDateEst(),
+    guesses: previousGuesses.map(parseGuessKey),
+    ans: current.ans,
+    songSingers,
+    correct: dailyResultCorrect,
+    streak,
+    url: shareUrlFor(dailyScope),
+  });
+  const btn = document.getElementById('bubudle-share');
+  const flash = () => {
+    if (!btn) return;
+    const orig = btn.textContent;
+    btn.textContent = 'Copied!';
+    setTimeout(() => { btn.textContent = orig; }, 1500);
+  };
+  if (navigator.clipboard?.writeText) {
+    navigator.clipboard.writeText(text).then(flash).catch(() => fallbackCopy(text, flash));
+  } else {
+    fallbackCopy(text, flash);
+  }
+}
+
+function fallbackCopy(text: string, done: () => void): void {
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.opacity = '0';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); done(); } finally { ta.remove(); }
 }
 
 function startCountdown(): void {
@@ -1036,6 +1096,8 @@ function checkAnswer(): void {
     switchTheme(current.song.id);
     saveCurrent(current, true);
     persistDailyResult(true);
+    dailyResultCorrect = true;
+    updateShareButton();
 
     document.getElementById('bubudle-check-bottom')!.style.display = 'none';
     document.getElementById('bubudle-skip-bottom')!.style.display = 'none';
@@ -1098,6 +1160,8 @@ function checkAnswer(): void {
     revealSongName(current.song);
     saveCurrent(current, true);
     persistDailyResult(false);
+    dailyResultCorrect = false;
+    updateShareButton();
 
     document.getElementById('bubudle-check-bottom')!.style.display = 'none';
     document.getElementById('bubudle-skip-bottom')!.style.display = 'none';
@@ -1290,9 +1354,12 @@ function renderGuesses(): void {
   const group = current.song.group;
   const names = MEMBER_MAPPING[group] || {};
   el.innerHTML = '<span class="hint-label">Guessed:</span>' +
-    previousGuesses.map(g => {
-      const label = g.split(',').map(n => names[parseInt(n, 10)] || n).join(', ');
-      return `<div class="bubudle-guess">${label}</div>`;
+    previousGuesses.map((g) => {
+      const members = parseGuessKey(g);
+      const marks = classifyGuess(members, current!.ans, songSingers);
+      const chips = members.map((m, i) =>
+        `<span class="bubudle-guess-chip guess-${marks[i]}">${names[m] || m}</span>`).join('');
+      return `<div class="bubudle-guess">${chips}</div>`;
     }).join('');
 }
 
